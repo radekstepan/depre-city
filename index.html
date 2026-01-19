@@ -533,6 +533,9 @@
             Object.values(inputs).forEach(input => {
                 input.addEventListener('input', calculate);
                 input.addEventListener('change', calculate);
+                if (input.type === 'checkbox') {
+                    input.addEventListener('click', calculate);
+                }
             });
 
             // Initial Calc
