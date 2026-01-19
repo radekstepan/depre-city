@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DepreCity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcfcfc;
+            color: #2e2e2e;
+        }
+        h1, h2, h3, h4, h5 {
+            font-family: 'Merriweather', serif;
+        }
+        .prose-custom p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            color: #4b5563;
+            font-size: 1.125rem;
+        }
+        .prose-custom h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #111827;
+        }
+        .prose-custom ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .prose-custom li {
+            margin-bottom: 0.5rem;
+            color: #4b5563;
+        }
+        /* Range slider styling */
+        input[type=range] {
+            -webkit-appearance: none; 
+            background: transparent; 
+        }
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+        }
+        input[type=range]:focus {
+            outline: none; 
+        }
+        .highlight-box {
+            background-color: #fffbeb;
+            border-left: 4px solid #d97706;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 0.5rem 0.5rem 0;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="w-full py-6 border-b border-gray-100 bg-white sticky top-0 z-50 opacity-95">
+        <div class="max-w-4xl mx-auto px-6 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tight text-gray-900 font-serif">Valuation<span class="text-amber-600">Dynamics</span></div>
+            <div class="space-x-6 text-sm font-medium text-gray-500">
+                <a href="#calculator" class="hover:text-amber-600 transition">The Calculator</a>
+                <a href="#report" class="hover:text-amber-600 transition">The Report</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="pt-20 pb-16 px-6 bg-white">
+        <div class="max-w-3xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+                The True Cost of Ownership.
+            </h1>
+            <p class="text-xl text-gray-500 font-light leading-relaxed">
+                Townhouse acquisition in Coquitlam and Port Moody is a multidimensional calculus. 
+                Stop using simple price-per-square-foot. Use the <strong>Discount Function</strong>.
+            </p>
+        </div>
+    </header>
+
+    <!-- Calculator Section -->
+    <section id="calculator" class="py-12 bg-gray-50 border-y border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 md:px-6">
+            
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+                <div class="p-6 md:p-8 border-b border-gray-100 bg-gray-50 flex justify-between items-center">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900">Valuation Calculator</h2>
+                        <p class="text-sm text-gray-500 mt-1">Based on the "Comprehensive Valuation Function"</p>
+                    </div>
+                    <div class="hidden md:block text-right">
+                        <span class="text-xs font-bold uppercase tracking-wider text-gray-400">Target Area</span>
+                        <div class="font-serif font-bold text-gray-700">Tri-Cities, BC</div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-0">
+                    
+                    <!-- Inputs -->
+                    <div class="col-span-12 md:col-span-7 p-6 md:p-8 space-y-6 border-r border-gray-100">
+                        
+                        <!-- Property Basics -->
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-3">Property Basics</label>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Unit Size (sqft)</label>
+                                    <input type="number" id="inputArea" value="1500" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Year Built</label>
+                                    <input type="number" id="inputYear" value="1985" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Market Data -->
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-3 mt-4">Market Benchmarks</label>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">New Build ($/sqft)</label>
+                                    <input type="number" id="inputBenchmark" value="725" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition">
+                                    <p class="text-xs text-gray-400 mt-1">Current market rate for new stock</p>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Land Value ($/sqft)</label>
+                                    <input type="number" id="inputLandVal" value="400" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition">
+                                    <p class="text-xs text-gray-400 mt-1">The value floor (dirt value)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- The Drag Factors -->
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-3 mt-4">Obsolescence & Risk</label>
+                            
+                            <div class="space-y-4">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-1">Subject Strata Fee ($)</label>
+                                        <input type="number" id="inputFeeSubject" value="600" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition">
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-1">Benchmark Fee ($)</label>
+                                        <input type="number" id="inputFeeNew" value="525" class="w-full p-2 bg-gray-50 border border-gray-200 rounded text-gray-500 cursor-not-allowed" readonly>
+                                        <p class="text-xs text-gray-400 mt-1">Calc: $0.35/sqft (New Build avg)</p>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">CapEx / Levies Forecast ($)</label>
+                                    <input type="number" id="inputLevies" value="25000" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition">
+                                    <p class="text-xs text-gray-400 mt-1">Immediate renovations + projected levies (Depreciation Report)</p>
+                                </div>
+
+                                <div class="flex items-center space-x-3 pt-2">
+                                    <input type="checkbox" id="checkRainscreen" class="h-4 w-4 text-amber-600 focus:ring-amber-500 border-gray-300 rounded">
+                                    <label for="checkRainscreen" class="text-sm text-gray-700 select-none">Property is fully Rainscreened</label>
+                                </div>
+                                <div id="leakyRiskWarning" class="hidden text-xs text-red-600 font-medium bg-red-50 p-2 rounded">
+                                    ⚠️ High Risk Era (1985-2000) & Not Rainscreened. $100k Penalty applied.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Outputs -->
+                    <div class="col-span-12 md:col-span-5 bg-gray-900 text-white p-6 md:p-8 flex flex-col justify-center">
+                        <div class="mb-8">
+                            <span class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2">Estimated Fair Value</span>
+                            <div class="text-4xl md:text-5xl font-serif font-bold text-white tracking-tight" id="outputPrice">$0</div>
+                            <div class="text-gray-400 text-sm mt-1" id="outputPsqft">$0 / sqft</div>
+                        </div>
+
+                        <div class="space-y-4 border-t border-gray-700 pt-6">
+                            
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-400">Base Replacement Cost</span>
+                                <span class="text-gray-200" id="detailBase">$0</span>
+                            </div>
+
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-400">Age Depreciation</span>
+                                <span class="text-red-400" id="detailAge">-$0</span>
+                            </div>
+
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-400">Strata Fee Penalty (NPV)</span>
+                                <span class="text-red-400" id="detailStrata">-$0</span>
+                            </div>
+
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-400">CapEx / Risk Adjustment</span>
+                                <span class="text-red-400" id="detailRisk">-$0</span>
+                            </div>
+
+                            <div class="pt-4 mt-2 border-t border-gray-700">
+                                <p class="text-xs text-gray-500 leading-relaxed italic">
+                                    * This valuation assumes the depreciation curve stops at Land Value ($<span id="txtLandVal">400</span>/sqft). The Strata Penalty capitalizes the monthly excess cost at a 5% cap rate.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <main id="report" class="max-w-3xl mx-auto px-6 py-16">
+        
+        <!-- Executive Summary -->
+        <div class="prose-custom">
+            <h2 class="text-3xl font-bold text-gray-900 font-serif mb-6">Executive Summary</h2>
+            <p>
+                The acquisition of strata-titled townhouse properties within the Coquitlam and Port Moody sub-markets represents a sophisticated valuation challenge. Unlike detached freehold properties where land value drives price, or high-rise condos where assets are commoditized, townhouses occupy a complex middle ground.
+            </p>
+            <p>
+                Our findings indicate that standard linear depreciation models are insufficient. The market exhibits a <strong>non-linear "S-curve" of value</strong>, heavily distorted by the "Leaky Condo" crisis and rapid land appreciation in transit corridors.
+            </p>
+            <div class="highlight-box">
+                <p class="font-medium text-gray-900 m-0">
+                    The most resilient value lies not in the newest builds, which suffer from "premium decay," nor in the cheapest vintage units, but in "stabilized" properties where depreciation has flattened and land value dominates the equity profile.
+                </p>
+            </div>
+        </div>
+
+        <!-- The Eras -->
+        <div class="mt-16">
+            <h2 class="text-3xl font-bold text-gray-900 font-serif mb-8">1. The Geologic Layers</h2>
+            <p class="text-gray-600 mb-8 text-lg">Understanding the era of construction is the prerequisite to applying any mathematical discount.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Card 1 -->
+                <div class="p-6 border border-gray-200 rounded-lg bg-white hover:border-amber-200 transition">
+                    <div class="text-xs font-bold text-amber-600 uppercase mb-2">1965–1979</div>
+                    <h3 class="text-xl font-bold text-gray-900 font-serif mb-2">The Garden City Era</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        College Park & Glenayre. Characterized by land abundance and low density. These assets are <strong>"Land Rich."</strong> Valuation is driven by the dirt, not the structure.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-6 border border-gray-200 rounded-lg bg-white hover:border-amber-200 transition">
+                    <div class="text-xs font-bold text-red-500 uppercase mb-2">1980–1999</div>
+                    <h3 class="text-xl font-bold text-gray-900 font-serif mb-2">The Leaky Era</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Defined by face-sealed stucco and the Leaky Condo Crisis. Valuation relies heavily on <strong>Rainscreen Status</strong>. A 1995 unit rainscreened in 2005 is often better than a 2004 original.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-6 border border-gray-200 rounded-lg bg-white hover:border-amber-200 transition">
+                    <div class="text-xs font-bold text-blue-600 uppercase mb-2">2000–2015</div>
+                    <h3 class="text-xl font-bold text-gray-900 font-serif mb-2">Smart Growth</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Suter Brook & Newport. Walkable, amenity-rich. Valuation is driven by <strong>Utility & Lifestyle</strong>. Introduce "Strata Complexity" costs (elevators, pools).
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="p-6 border border-gray-200 rounded-lg bg-white hover:border-amber-200 transition">
+                    <div class="text-xs font-bold text-green-600 uppercase mb-2">2016–Present</div>
+                    <h3 class="text-xl font-bold text-gray-900 font-serif mb-2">Modern Densification</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Burke Mountain. Vertical row homes. Valuation risk is <strong>Premium Decay</strong>—the rapid loss of GST and developer margins in the first 5 years.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Physics of Depreciation -->
+        <div class="mt-20 prose-custom">
+            <h2 class="text-3xl font-bold text-gray-900 font-serif mb-6">2. The Physics of Depreciation</h2>
+            <p>
+                Depreciation is not merely wear and tear. It is the sum of three vectors:
+            </p>
+            
+            <div class="my-8 bg-white border-l-4 border-gray-300 pl-6 py-2">
+                <h4 class="font-bold text-gray-900 text-lg">$$D_{total} = D_{phys} + D_{func} + D_{ext}$$</h4>
+            </div>
+
+            <ul class="space-y-4">
+                <li>
+                    <strong class="text-gray-900">Physical ($D_{phys}$):</strong> The decay of the fabric (roof, pipes, framing). Can be curable (paint) or incurable (foundation).
+                </li>
+                <li>
+                    <strong class="text-gray-900">Functional ($D_{func}$):</strong> Layouts no longer aligned with taste (e.g., closed kitchens, 8ft ceilings).
+                </li>
+                <li>
+                    <strong class="text-gray-900">External ($D_{ext}$):</strong> Loss of value due to factors outside boundaries. In condos, this is <strong>Strata Drag</strong>. If an older complex costs $0.60/sqft to operate vs $0.35/sqft for a new one, that excess cost destroys capital value.
+                </li>
+            </ul>
+
+            <div class="mt-12 mb-12">
+                <canvas id="depreciationChart" width="100" height="50"></canvas>
+                <p class="text-center text-xs text-gray-400 mt-2">Figure 1: The Non-Linear Depreciation Curve of Tri-Cities Townhomes</p>
+            </div>
+        </div>
+
+        <!-- Case Studies Table -->
+        <div class="mt-16">
+            <h2 class="text-3xl font-bold text-gray-900 font-serif mb-8">3. Case Studies</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full text-left text-sm whitespace-nowrap">
+                    <thead class="uppercase tracking-wider border-b-2 border-gray-200 font-bold text-gray-500 bg-gray-50">
+                        <tr>
+                            <th scope="col" class="px-6 py-4">Metric</th>
+                            <th scope="col" class="px-6 py-4 text-amber-700">Vintage (1977)</th>
+                            <th scope="col" class="px-6 py-4 text-blue-700">Stabilized (1995)</th>
+                            <th scope="col" class="px-6 py-4 text-gray-700">Trap (1968)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100 bg-white">
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium text-gray-900">Example Unit</td>
+                            <td class="px-6 py-4">Cardiff Way</td>
+                            <td class="px-6 py-4">Heritage Grand</td>
+                            <td class="px-6 py-4">Chateau Place</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium text-gray-900">List Price</td>
+                            <td class="px-6 py-4">$899,000</td>
+                            <td class="px-6 py-4">$620,000</td>
+                            <td class="px-6 py-4">$575,000</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium text-gray-900">Price / Sqft</td>
+                            <td class="px-6 py-4">$512</td>
+                            <td class="px-6 py-4">$696</td>
+                            <td class="px-6 py-4">$441</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium text-gray-900">Primary Risk</td>
+                            <td class="px-6 py-4">Systems (Pipes/Roof)</td>
+                            <td class="px-6 py-4">Interior Obsolescence</td>
+                            <td class="px-6 py-4">Levies & Underfunding</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="px-6 py-4 font-bold text-gray-900">Model Valuation</td>
+                            <td class="px-6 py-4 font-bold">$821,500</td>
+                            <td class="px-6 py-4 font-bold">$623,295*</td>
+                            <td class="px-6 py-4 font-bold text-red-600">$359,110</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-xs text-gray-500 mt-4">* Includes "Lifestyle Location" multiplier for Newport Village proximity.</p>
+        </div>
+
+        <!-- Conclusion -->
+        <div class="mt-16 border-t border-gray-200 pt-10">
+            <h2 class="text-2xl font-bold text-gray-900 font-serif mb-4">Final Recommendation</h2>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                The data indicates that the "Vintage" units in Port Moody offer the best intrinsic value due to high land ratios, provided you have cash reserves. The "Modern" units offer a safe lifestyle but carry a premium that will decay. 
+            </p>
+            <p class="text-gray-600 leading-relaxed">
+                <strong>The Sweet Spot:</strong> A rainscreened 1990s unit in a prime location often represents the mathematical "efficient frontier"—balancing price, location, and stabilized condition.
+            </p>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 text-center text-sm">
+        <p>&copy; 2026 Valuation Dynamics. Based on Market Analysis of Coquitlam/Port Moody.</p>
+    </footer>
+
+    <!-- Logic Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // --- Chart.js Visualization ---
+            const ctx = document.getElementById('depreciationChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['New', '5 Years', '10 Years', '20 Years', '30 Years', '40 Years', '50 Years', '60 Years'],
+                    datasets: [
+                        {
+                            label: 'Market Price per Sqft',
+                            data: [1000, 850, 750, 650, 700, 600, 500, 450], // S-Curve data points
+                            borderColor: '#d97706',
+                            backgroundColor: 'rgba(217, 119, 6, 0.1)',
+                            tension: 0.4,
+                            fill: true,
+                            pointRadius: 4,
+                            pointBackgroundColor: '#fff',
+                            pointBorderWidth: 2
+                        },
+                        {
+                            label: 'Land Value Floor',
+                            data: [400, 400, 400, 400, 400, 400, 400, 400],
+                            borderColor: '#9ca3af',
+                            borderDash: [5, 5],
+                            pointRadius: 0,
+                            fill: false
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { position: 'bottom' },
+                        tooltip: { mode: 'index', intersect: false }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: { display: true, text: 'Price / SqFt' }
+                        }
+                    }
+                }
+            });
+
+            // --- Calculator Logic ---
+            const inputs = {
+                area: document.getElementById('inputArea'),
+                year: document.getElementById('inputYear'),
+                benchmark: document.getElementById('inputBenchmark'),
+                landVal: document.getElementById('inputLandVal'),
+                feeSubject: document.getElementById('inputFeeSubject'),
+                feeNew: document.getElementById('inputFeeNew'),
+                levies: document.getElementById('inputLevies'),
+                rainscreen: document.getElementById('checkRainscreen')
+            };
+
+            const outputs = {
+                price: document.getElementById('outputPrice'),
+                psqft: document.getElementById('outputPsqft'),
+                base: document.getElementById('detailBase'),
+                age: document.getElementById('detailAge'),
+                strata: document.getElementById('detailStrata'),
+                risk: document.getElementById('detailRisk'),
+                txtLandVal: document.getElementById('txtLandVal'),
+                riskWarning: document.getElementById('leakyRiskWarning')
+            };
+
+            function formatCurrency(num) {
+                return new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD', maximumFractionDigits: 0 }).format(num);
+            }
+
+            function calculate() {
+                // 1. Get Values
+                const area = parseFloat(inputs.area.value) || 0;
+                const yearBuilt = parseFloat(inputs.year.value) || 2000;
+                const benchmarkSqft = parseFloat(inputs.benchmark.value) || 0;
+                const landValueSqft = parseFloat(inputs.landVal.value) || 0;
+                const feeSubject = parseFloat(inputs.feeSubject.value) || 0;
+                const levies = parseFloat(inputs.levies.value) || 0;
+                const isRainscreened = inputs.rainscreen.checked;
+                const currentYear = new Date().getFullYear();
+
+                // Auto-calc Benchmark Fee
+                const benchmarkFee = area * 0.35;
+                inputs.feeNew.value = benchmarkFee.toFixed(0);
+
+                // Update text spans
+                outputs.txtLandVal.innerText = landValueSqft;
+
+                // 2. Base Calculation (Replacement Cost New approximation logic via Benchmark)
+                // Note: The text suggests separating land and structure, but also gives a simplified user formula:
+                // Target = P_base - (Age * 1.5%)
+                
+                let baseValue = area * benchmarkSqft;
+                
+                // 3. Age Depreciation
+                let age = currentYear - yearBuilt;
+                if (age < 0) age = 0;
+                
+                // 1.5% per year
+                let depreciationRate = (age * 1.5) / 100;
+                
+                // Calculate Depreciated Value
+                // Logic: Stop if drops below land value
+                let landValueTotal = area * landValueSqft;
+                let rawDepreciatedValue = baseValue * (1 - depreciationRate);
+                
+                let valueAfterAge = Math.max(rawDepreciatedValue, landValueTotal);
+                let ageDeduction = baseValue - valueAfterAge;
+
+                // 4. Strata Penalty (The "Drag")
+                let monthlyExcess = feeSubject - benchmarkFee;
+                let strataPenalty = 0;
+                
+                // Only penalize if fee is higher. If lower, it might be a risk (underfunded), 
+                // but the formula specifically calculates penalty on EXCESSS. 
+                // However, the text says "If fees are $200/mo higher... deduct". 
+                // If fees are suspiciously low (Case Study B), the user should enter high Levies.
+                if (monthlyExcess > 0) {
+                    // Capitalize at 5%
+                    strataPenalty = (monthlyExcess * 12) / 0.05;
+                }
+
+                // 5. Risk / Leaky Era logic
+                let riskAdjustment = levies;
+                let leakyPenalty = 0;
+                
+                // Leaky Condo Era logic: 1985-2000
+                if (yearBuilt >= 1985 && yearBuilt <= 2000 && !isRainscreened) {
+                    leakyPenalty = 100000;
+                    outputs.riskWarning.classList.remove('hidden');
+                } else {
+                    outputs.riskWarning.classList.add('hidden');
+                }
+
+                riskAdjustment += leakyPenalty;
+
+                // 6. Final Tally
+                let finalValue = valueAfterAge - strataPenalty - riskAdjustment;
+
+                // 7. Render
+                outputs.price.innerText = formatCurrency(finalValue);
+                outputs.psqft.innerText = formatCurrency(finalValue / area) + " / sqft";
+                
+                outputs.base.innerText = formatCurrency(baseValue);
+                outputs.age.innerText = "-" + formatCurrency(ageDeduction);
+                outputs.strata.innerText = "-" + formatCurrency(strataPenalty);
+                outputs.risk.innerText = "-" + formatCurrency(riskAdjustment);
+            }
+
+            // Attach Listeners
+            Object.values(inputs).forEach(input => {
+                input.addEventListener('input', calculate);
+                input.addEventListener('change', calculate);
+            });
+
+            // Initial Calc
+            calculate();
+        });
+    </script>
+</body>
+</html>
