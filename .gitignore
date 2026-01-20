@@ -31,3 +31,5 @@ yarn-error.log*
 # Cache
 .cache/
 .temp/
+
+repomix-output.xml

@@ -50,28 +50,37 @@ This project is optimized for Netlify.
 
 ## 🤖 How to Update Market Data (AI Workflow)
 
-This engine runs on "Ground Truth" data located in `src/data/listings.json`. You can use an LLM (ChatGPT, Gemini, Claude) to scrape/generate this data for you.
+This engine runs on "Ground Truth" data located in `src/data/listings.json`. You can use Google Deep Research, ChatGPT Pro, or Gemini Advanced to scrape/research real-time data for you.
 
-### Copy & Paste this Prompt into Gemini/ChatGPT:
+### Copy & Paste this Prompt into Google Deep Research / Gemini:
 
-> "I need a dataset of 20 recent sold or active townhouse listings in **Port Moody and Coquitlam, BC**. 
-> 
-> Please format the output strictly as a JSON array of objects with no other text. 
-> 
-> Each object must have these exact fields:
-> - `address` (string)
-> - `city` (string: "Port Moody" or "Coquitlam")
-> - `sqft` (number: interior size)
-> - `year` (number: year built)
-> - `fee` (number: monthly strata fee)
-> - `price` (number: list or sold price)
-> - `rainscreen` (boolean: true if built after 2005, or if listing mentions 'rainscreened'. false otherwise)
-> 
-> Do not include any code blocks or explanations, just the raw JSON array."
+```text
+**Role:** Act as a Senior Real Estate Data Analyst.
+
+**Task:** Conduct deep research to compile a dataset of 25-30 **real, recent (past 3-6 months)** townhouse listings (Sold or Active) in **Port Moody** and **Coquitlam, BC**.
+
+**Sources:** Verify data using REW.ca, Zolo.ca, Redfin, or BC Assessment.
+
+**Data Requirements:**
+1.  **Diversity:** Ensure a mix of older wood-frame units (1980-2000) and newer concrete/composite builds (2010-2024).
+2.  **Rainscreen Logic:** If the Year Built is >= 2005, set `rainscreen` to `true`. If older, only set to `true` if the listing explicitly states "fully rainscreened".
+3.  **Output Format:** Provide the result **strictly** as a raw JSON array of objects (no markdown code blocks, no intro text).
+
+**Required JSON Schema per Object:**
+{
+  "address": "String (e.g. '123 Newport Dr')",
+  "city": "String (Exactly 'Port Moody' or 'Coquitlam')",
+  "sqft": Number (Interior size),
+  "year": Number (Year built),
+  "fee": Number (Monthly strata fee in CAD),
+  "price": Number (Sold price preferred, or List price),
+  "rainscreen": Boolean
+}
+```
 
 ### Steps:
-1.  Run the prompt.
-2.  Copy the JSON output.
-3.  Paste it into `src/data/listings.json`.
+1.  Run the prompt above in your AI research tool.
+2.  Copy the raw JSON output.
+3.  Paste it strictly into `src/data/listings.json` (replacing the entire file content).
 4.  Run `yarn build`. 
-5.  The site will automatically recalculate the Regression Model, Location Premiums, and Confidence Scores based on the new data.
+5.  The site will automatically recalculate the Regression Model, Location Premiums, and Confidence Scores based on the new real-world data.
