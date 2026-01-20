@@ -1,0 +1,14 @@
+[
+  { "address": "123 Newport Dr", "city": "Port Moody", "sqft": 1450, "year": 2008, "fee": 610, "price": 985000, "rainscreen": true },
+  { "address": "55 Hawthorn Dr", "city": "Port Moody", "sqft": 1800, "year": 1998, "fee": 550, "price": 1150000, "rainscreen": false },
+  { "address": "888 Burke Mtn", "city": "Coquitlam", "sqft": 1600, "year": 2018, "fee": 450, "price": 1050000, "rainscreen": true },
+  { "address": "400 Guildford Way", "city": "Coquitlam", "sqft": 1100, "year": 1995, "fee": 520, "price": 720000, "rainscreen": true },
+  { "address": "2200 Citadel Hgts", "city": "Coquitlam", "sqft": 2100, "year": 1988, "fee": 480, "price": 950000, "rainscreen": false },
+  { "address": "3300 Dewdney Trunk", "city": "Port Moody", "sqft": 980, "year": 2012, "fee": 490, "price": 810000, "rainscreen": true },
+  { "address": "15 Forest Park", "city": "Port Moody", "sqft": 1350, "year": 2005, "fee": 580, "price": 920000, "rainscreen": true },
+  { "address": "900 Austin Ave", "city": "Coquitlam", "sqft": 1250, "year": 2020, "fee": 390, "price": 980000, "rainscreen": true },
+  { "address": "500 Rochester", "city": "Coquitlam", "sqft": 1050, "year": 1978, "fee": 410, "price": 650000, "rainscreen": true },
+  { "address": "77 Klahanie Dr", "city": "Port Moody", "sqft": 1100, "year": 2009, "fee": 510, "price": 890000, "rainscreen": true },
+  { "address": "1200 Eastwood", "city": "Coquitlam", "sqft": 1650, "year": 1990, "fee": 560, "price": 880000, "rainscreen": false },
+  { "address": "500 Ioco Rd", "city": "Port Moody", "sqft": 1400, "year": 2015, "fee": 440, "price": 1080000, "rainscreen": true }
+]
