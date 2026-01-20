@@ -1,0 +1,1 @@
+Please create or place 16x16, 48x48, and 128x128 PNG icons in this folder named icon16.png, icon48.png, and icon128.png for the extension to load correctly without warnings.
