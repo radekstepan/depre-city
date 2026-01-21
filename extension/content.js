@@ -27,9 +27,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
       const h1 = document.querySelector('h1')?.innerText || "listing";
       const slug = h1.replace(/[^a-z0-9]/gi, '_').toLowerCase();
 
-      // Add a small delay for user feedback
-      setTimeout(() => showToast("HTML Captured! Downloading...", "success"), 500);
-      
+      // Send response immediately (before setTimeout)
       sendResponse({ 
         success: true, 
         payload: {
@@ -37,6 +35,9 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
             filename: `${slug}.html`
         }
       });
+
+      // Add UI feedback after response sent
+      setTimeout(() => showToast("HTML Captured! Downloading...", "success"), 500);
 
     } catch (error) {
       console.error("DepreCity Scrape Error:", error);

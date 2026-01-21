@@ -9,18 +9,23 @@ import Calculator from '../components/Calculator.astro';
 import Footer from '../components/Footer.astro';
 
 // --- Build Time Analysis ---
-const dataDir = path.join(process.cwd(), 'src/data');
+const dataDir = path.join(process.cwd(), 'data/json');
 let listings: Listing[] = [];
 
 try {
-    const files = fs.readdirSync(dataDir).filter(f => f.endsWith('.json'));
-    listings = files.map(file => {
-        const filePath = path.join(dataDir, file);
-        try {
-            const json = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-            return Array.isArray(json) ? json : [json];
-        } catch (e) { return []; }
-    }).flat();
+    if (fs.existsSync(dataDir)) {
+        const files = fs.readdirSync(dataDir).filter(f => f.endsWith('.json'));
+        listings = files.map(file => {
+            const filePath = path.join(dataDir, file);
+            try {
+                const json = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+                return Array.isArray(json) ? json : [json];
+            } catch (e) { return []; }
+        }).flat();
+        console.log(`Loaded ${listings.length} listings from ${files.length} JSON files.`);
+    } else {
+        console.warn(`Warning: data/json directory not found. Run 'yarn process' to generate data.`);
+    }
 } catch (e) { console.error("Error reading data:", e); }
 
 const model = generateMarketModel(listings);

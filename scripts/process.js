@@ -4,8 +4,8 @@ import { JSDOM } from 'jsdom';
 import 'dotenv/config';
 
 // --- Configuration ---
-const RAW_DIR = path.join(process.cwd(), 'raw_data');
-const OUT_DIR = path.join(process.cwd(), 'src/data');
+const HTML_DIR = path.join(process.cwd(), 'data/html');
+const JSON_DIR = path.join(process.cwd(), 'data/json');
 
 // --- Helper: Env Resolution ---
 const resolveEnv = (key) => process.env[key];
@@ -198,23 +198,37 @@ function parseHtml(htmlContent, filename) {
 
 // --- Main Execution ---
 async function main() {
-    if (!fs.existsSync(RAW_DIR)) {
-        console.error(`Error: raw_data directory not found at ${RAW_DIR}`);
+    if (!fs.existsSync(HTML_DIR)) {
+        console.error(`Error: data/html directory not found at ${HTML_DIR}`);
         console.error("Please place your downloaded HTML files there.");
         process.exit(1);
     }
     
     // Ensure output dir exists
-    if (!fs.existsSync(OUT_DIR)) {
-        fs.mkdirSync(OUT_DIR, { recursive: true });
+    if (!fs.existsSync(JSON_DIR)) {
+        fs.mkdirSync(JSON_DIR, { recursive: true });
     }
 
-    const files = fs.readdirSync(RAW_DIR).filter(f => f.endsWith('.html'));
-    console.log(`Found ${files.length} HTML files to process.`);
+    const htmlFiles = fs.readdirSync(HTML_DIR).filter(f => f.endsWith('.html'));
+    console.log(`Found ${htmlFiles.length} HTML files in data/html.`);
 
-    for (const file of files) {
-        const rawPath = path.join(RAW_DIR, file);
-        const html = fs.readFileSync(rawPath, 'utf-8');
+    // Check which files need to be processed
+    const filesToProcess = htmlFiles.filter(file => {
+        const jsonFileName = file.replace('.html', '.json');
+        const jsonPath = path.join(JSON_DIR, jsonFileName);
+        return !fs.existsSync(jsonPath);
+    });
+
+    if (filesToProcess.length === 0) {
+        console.log("All HTML files have already been processed. No new files to process.");
+        return;
+    }
+
+    console.log(`Processing ${filesToProcess.length} new files...`);
+
+    for (const file of filesToProcess) {
+        const htmlPath = path.join(HTML_DIR, file);
+        const html = fs.readFileSync(htmlPath, 'utf-8');
         
         console.log(`Processing ${file}...`);
         
@@ -235,10 +249,10 @@ async function main() {
 
         // 3. Save
         const outName = file.replace('.html', '.json');
-        fs.writeFileSync(path.join(OUT_DIR, outName), JSON.stringify(listing, null, 2));
+        fs.writeFileSync(path.join(JSON_DIR, outName), JSON.stringify(listing, null, 2));
     }
     
-    console.log(`\nSuccess! Processed data saved to ${OUT_DIR}`);
+    console.log(`\nSuccess! Processed ${filesToProcess.length} files. JSON data saved to ${JSON_DIR}`);
 }
 
 main();
