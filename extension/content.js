@@ -1,160 +1,82 @@
 // This script runs inside the web page context
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-  // Simple ping to check if script is alive
   if (request.action === "PING") {
     sendResponse({ status: "OK" });
     return true;
   }
 
   if (request.action === "SCRAPE_LISTING") {
+    showToast("Snapshottng HTML...", "info");
     try {
-      const data = parseListing();
-      sendResponse({ success: true, data: data });
+      // 1. Inject Metadata for the processor to find later
+      const meta = document.createElement('meta');
+      meta.name = "x-deprecity-source-url";
+      meta.content = window.location.href;
+      document.head.appendChild(meta);
+
+      const scrapedAt = document.createElement('meta');
+      scrapedAt.name = "x-deprecity-scraped-at";
+      scrapedAt.content = new Date().toISOString();
+      document.head.appendChild(scrapedAt);
+
+      // 2. Capture full HTML
+      const fullHtml = document.documentElement.outerHTML;
+
+      // 3. Determine Filename Slug
+      const h1 = document.querySelector('h1')?.innerText || "listing";
+      const slug = h1.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+
+      // Add a small delay for user feedback
+      setTimeout(() => showToast("HTML Captured! Downloading...", "success"), 500);
+      
+      sendResponse({ 
+        success: true, 
+        payload: {
+            html: fullHtml,
+            filename: `${slug}.html`
+        }
+      });
+
     } catch (error) {
       console.error("DepreCity Scrape Error:", error);
+      showToast("Error Snapshotting Page", "error");
       sendResponse({ success: false, error: error.message });
     }
   }
-  return true; // Keep channel open for async response
+  return true; 
 });
 
-/**
- * Parses Zealty.ca and similar real estate pages
- */
-function parseListing() {
-  let listing = {
-    address: "Unknown Address",
-    city: "Unknown City",
-    sqft: 0,
-    year: 0,
-    fee: 0,
-    price: 0,
-    rainscreen: false,
-    _sourceUrl: window.location.href,
-    _scrapedAt: new Date().toISOString()
-  };
+// --- UI Feedback Helper ---
+function showToast(message, type = "info") {
+  const existing = document.getElementById("deprecity-toast");
+  if (existing) existing.remove();
 
-  // 1. Try to get high-fidelity data from JSON-LD (Schema.org)
-  const jsonLdScripts = document.querySelectorAll('script[type="application/ld+json"]');
-  let jsonLd = null;
+  const toast = document.createElement("div");
+  toast.id = "deprecity-toast";
+  toast.style.position = "fixed";
+  toast.style.top = "20px";
+  toast.style.right = "20px";
+  toast.style.padding = "12px 20px";
+  toast.style.borderRadius = "8px";
+  toast.style.color = "white";
+  toast.style.fontWeight = "bold";
+  toast.style.zIndex = "999999";
+  toast.style.boxShadow = "0 4px 12px rgba(0,0,0,0.15)";
+  toast.style.fontFamily = "sans-serif";
+  toast.style.fontSize = "14px";
+  toast.style.transition = "opacity 0.3s ease";
 
-  for (const script of jsonLdScripts) {
-    try {
-      const json = JSON.parse(script.textContent);
-      // Look for RealEstateListing or valid schema context
-      if (json['@type'] === 'RealEstateListing' || 
-          (json['@context'] === 'https://schema.org' && json['@type'] === 'Product') ||
-          json['@type'] === 'House') {
-        jsonLd = json;
-        // If it's a Product, sometimes nested offers
-        break;
-      }
-    } catch (e) {
-      // Ignore parse errors
-    }
-  }
+  if (type === "success") toast.style.backgroundColor = "#10b981"; // Green
+  else if (type === "error") toast.style.backgroundColor = "#ef4444"; // Red
+  else toast.style.backgroundColor = "#d97706"; // Amber
 
-  // 2. Populate from JSON-LD if available
-  if (jsonLd) {
-    // Handle flattened 'House' type vs nested 'mainEntity'
-    const entity = jsonLd.mainEntity || jsonLd;
+  toast.textContent = message;
+  document.body.appendChild(toast);
 
-    // Address
-    if (entity.address) {
-      listing.address = entity.address.streetAddress || listing.address;
-      listing.city = entity.address.addressLocality || listing.city;
-    }
-    
-    // Sqft
-    if (entity.floorSize) {
-      // floorSize can be object {value: '1565'} or just string/number
-      const val = typeof entity.floorSize === 'object' ? entity.floorSize.value : entity.floorSize;
-      listing.sqft = Number(val);
-    }
-    
-    // Price
-    let offers = jsonLd.offers || entity.offers;
-    if (offers) {
-      // Sometimes offers is an array
-      const offer = Array.isArray(offers) ? offers[0] : offers;
-      if (offer && offer.price) {
-        listing.price = Number(offer.price);
-      }
-    }
-  }
-
-  // 3. DOM Scrape Fallbacks (Table Data) for specific fields often missing in JSON-LD
-  
-  const getTableValue = (labels) => {
-    // Select all table cells
-    const tds = Array.from(document.querySelectorAll('td'));
-    for (const td of tds) {
-      const text = td.textContent.trim().toLowerCase();
-      // Check if this TD matches one of our target labels
-      if (labels.some(l => text.includes(l.toLowerCase()))) {
-        // The value is in the NEXT sibling TD
-        const nextTd = td.nextElementSibling;
-        if (nextTd) return nextTd.textContent.trim();
-      }
-    }
-    return null;
-  };
-
-  // 3a. Year Built
-  // Often labeled "Year Built" or inside "Age" like "4 years (2021)"
-  let yearStr = getTableValue(['Year Built']);
-  if (yearStr) {
-    listing.year = parseInt(yearStr.replace(/[^0-9]/g, ''), 10);
-  } else {
-    const ageStr = getTableValue(['Age']);
-    if (ageStr) {
-      // Matches "(2021)" inside string
-      const match = ageStr.match(/\((\d{4})\)/); 
-      if (match) listing.year = parseInt(match[1], 10);
-    }
-  }
-
-  // 3b. Maintenance Fee
-  const feeStr = getTableValue(['Maintenance Fee', 'Strata Fee', 'Maint. Fee']);
-  if (feeStr) {
-    // Remove '$' and ','
-    listing.fee = Number(feeStr.replace(/[^0-9.]/g, ''));
-  }
-
-  // 3c. Backup Price (if JSON-LD failed)
-  if (!listing.price) {
-    const priceStr = getTableValue(['Sold Price', 'Price', 'Asking Price']);
-    if (priceStr) {
-      const cleanPrice = priceStr.split('\n')[0].replace(/[^0-9]/g, '');
-      listing.price = Number(cleanPrice);
-    }
-  }
-
-  // 3d. Backup Address/City (if JSON-LD failed)
-  if (listing.address === "Unknown Address") {
-    const h1 = document.querySelector('h1');
-    if (h1) {
-      // Common Format: "2834 HOPE STREET, Port Moody, BC, V3H 0L6"
-      const parts = h1.textContent.split(',');
-      if (parts.length > 0) listing.address = parts[0].trim();
-      if (parts.length > 1) listing.city = parts[1].trim();
-    }
-  }
-
-  // 4. Rainscreen Logic
-  // Check description text
-  const description = (jsonLd?.description || document.querySelector('.prose')?.textContent || "").toLowerCase();
-  const hasRainscreenText = description.includes('rainscreen') || description.includes('rain screen');
-  
-  // Heuristic: If Year >= 2005 (post-crisis code) OR text found
-  listing.rainscreen = (listing.year >= 2005) || hasRainscreenText;
-
-  // Final sanity check for nulls to avoid NaN in calculator
-  listing.sqft = listing.sqft || 0;
-  listing.year = listing.year || 0;
-  listing.fee = listing.fee || 0;
-  listing.price = listing.price || 0;
-
-  return listing;
+  // Auto remove
+  setTimeout(() => {
+    toast.style.opacity = "0";
+    setTimeout(() => toast.remove(), 300);
+  }, 3000);
 }

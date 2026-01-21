@@ -1,11 +1,14 @@
 {
   "manifest_version": 3,
   "name": "DepreCity Scraper",
-  "description": "Extracts real estate listing data for the DepreCity valuation model.",
-  "version": "1.0",
-  "permissions": ["activeTab", "scripting"],
+  "description": "One-click scrape of real estate data.",
+  "version": "1.1",
+  "permissions": ["activeTab", "scripting", "downloads"],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
-    "default_popup": "popup.html"
+    "default_title": "Scrape Listing"
   },
   "content_scripts": [
     {
