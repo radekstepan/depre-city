@@ -7,6 +7,7 @@ export interface DeepData {
   hasAC: boolean;
   isRainscreened: boolean;
   outdoorSpace: 'balcony' | 'yard' | 'rooftop' | 'none';
+  condition: number; // 1 (Poor) to 5 (New/Reno)
 }
 
 /**
@@ -43,7 +44,8 @@ export async function extractDeepData(
       "isEndUnit": boolean,
       "hasAC": boolean (look for air conditioning, heat pump, A/C),
       "isRainscreened": boolean (true if "rainscreened", "rain screen", or built > 2005),
-      "outdoorSpace": "balcony" | "yard" | "rooftop" | "none"
+      "outdoorSpace": "balcony" | "yard" | "rooftop" | "none",
+      "condition": number (1-5 score: 1=Needs Work, 2=Original/Dated, 3=Average/Maintained, 4=Updated, 5=Brand New/Fully Reno)
     }
   `;
 
@@ -88,6 +90,7 @@ function getDefaultDeepData(): DeepData {
     isEndUnit: false,
     hasAC: false,
     isRainscreened: false,
-    outdoorSpace: 'none'
+    outdoorSpace: 'none',
+    condition: 3
   };
 }

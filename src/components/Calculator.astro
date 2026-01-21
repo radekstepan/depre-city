@@ -2,17 +2,28 @@
 interface Props {
     intercept: number;
     coefSqft: number;
-    coefYear: number;
-    coefParking: number;
-    coefBathroom: number;
-    coefEndUnit: number;
+    coefAge: number;
+    coefBath: number;
+    coefFee: number;
+    coefCondition: number;
+    coefRainscreen: number;
     coefAC: number;
+    coefEndUnit: number;
+    coefDoubleGarage: number;
+    coefTandemGarage: number;
+    coefBurkeMtn: number;
     coefCityPM: number;
     feeSlope: number;
     feeIntercept: number;
+    stdError: number;
 }
 
-const { intercept, coefSqft, coefYear, coefParking, coefBathroom, coefEndUnit, coefAC, coefCityPM, feeSlope, feeIntercept } = Astro.props;
+const { 
+    intercept, coefSqft, coefAge, coefBath,
+    coefFee, coefCondition, coefRainscreen,
+    coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, 
+    coefBurkeMtn, coefCityPM, feeSlope, feeIntercept, stdError
+} = Astro.props;
 ---
 
 <section id="calculator" class="py-12 bg-gray-50 border-y border-gray-200">
@@ -31,15 +42,16 @@ const { intercept, coefSqft, coefYear, coefParking, coefBathroom, coefEndUnit, c
                     <!-- Core -->
                     <div class="grid grid-cols-2 gap-4">
                         <div>
-                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">City</label>
-                            <select id="inputCity" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
-                                <option value="0">Coquitlam / PoCo</option>
-                                <option value="1">Port Moody</option>
+                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Location</label>
+                            <select id="inputLoc" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                                <option value="0">Coquitlam (Central/Maillardville)</option>
+                                <option value="1">Burke Mountain (Premium)</option>
+                                <option value="2">Port Moody</option>
                             </select>
                         </div>
                         <div>
                             <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Year Built</label>
-                            <input type="number" id="inputYear" value="2010" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                            <input type="number" id="inputYear" value="2015" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
                         </div>
                     </div>
 
@@ -55,19 +67,35 @@ const { intercept, coefSqft, coefYear, coefParking, coefBathroom, coefEndUnit, c
                         </div>
                     </div>
 
+                    <!-- Quality / Fees -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Strata Fee ($)</label>
+                            <input type="number" id="inputFee" value="350" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Condition (1-5)</label>
+                            <select id="inputCondition" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                                <option value="1">1 - Needs Work</option>
+                                <option value="2">2 - Original/Dated</option>
+                                <option value="3" selected>3 - Average</option>
+                                <option value="4">4 - Updated</option>
+                                <option value="5">5 - Brand New/Reno</option>
+                            </select>
+                        </div>
+                    </div>
+
                     <!-- Deep Data -->
                     <div>
                         <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Parking Situation</label>
                         <select id="inputParking" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
-                            <option value="2">Underground Stall(s) (Standard)</option>
-                            <option value="0">Street Parking Only (Discount)</option>
-                            <option value="3">Carport (Covered)</option>
-                            <option value="4">Tandem Garage (Private)</option>
-                            <option value="6">Double Side-by-Side Garage (Premium)</option>
+                            <option value="std">Underground / Carport / Street</option>
+                            <option value="tandem">Tandem Private Garage</option>
+                            <option value="double">Double Side-by-Side Garage</option>
                         </select>
                     </div>
 
-                    <div class="flex gap-4">
+                    <div class="flex flex-wrap gap-4">
                         <div class="flex items-center space-x-2">
                             <input type="checkbox" id="checkEndUnit" class="h-4 w-4 text-amber-600 rounded">
                             <label for="checkEndUnit" class="text-sm text-gray-700">End Unit</label>
@@ -76,22 +104,11 @@ const { intercept, coefSqft, coefYear, coefParking, coefBathroom, coefEndUnit, c
                             <input type="checkbox" id="checkAC" class="h-4 w-4 text-amber-600 rounded">
                             <label for="checkAC" class="text-sm text-gray-700">Air Conditioning</label>
                         </div>
-                    </div>
-
-                    <!-- Risk / Fees -->
-                    <div class="pt-4 border-t border-gray-100">
-                         <div class="grid grid-cols-2 gap-4">
-                            <div>
-                                <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-1">Strata Fee ($)</label>
-                                <input type="number" id="inputFee" value="450" class="w-full p-2 border border-gray-300 rounded text-sm">
-                            </div>
-                            <div>
-                                <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-1">Expected Fee</label>
-                                <input type="text" id="outputExpFee" readonly class="w-full p-2 bg-gray-50 border border-gray-200 rounded text-sm text-gray-500">
-                            </div>
+                        <div class="flex items-center space-x-2">
+                            <input type="checkbox" id="checkRain" class="h-4 w-4 text-amber-600 rounded">
+                            <label for="checkRain" class="text-sm text-gray-700">Rainscreened</label>
                         </div>
                     </div>
-
                 </div>
 
                 <!-- Outputs -->
@@ -99,7 +116,14 @@ const { intercept, coefSqft, coefYear, coefParking, coefBathroom, coefEndUnit, c
                     <div class="mb-8">
                         <span class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2">Predicted Value</span>
                         <div class="text-4xl md:text-5xl font-serif font-bold text-white tracking-tight" id="outputPrice">$0</div>
-                        <div class="text-gray-400 text-sm mt-1" id="outputPsqft">$0 / sqft</div>
+                        
+                        <!-- Range Display -->
+                        <div class="mt-2 flex items-center space-x-2">
+                            <div class="h-1.5 w-1.5 rounded-full bg-amber-500"></div>
+                            <div class="text-sm text-gray-300 font-mono" id="outputRange">Range: $0 - $0</div>
+                        </div>
+                        
+                        <div class="text-gray-500 text-xs mt-2" id="outputPsqft">$0 / sqft</div>
                     </div>
 
                     <div class="space-y-3 border-t border-gray-700 pt-6 text-sm">
@@ -116,7 +140,19 @@ const { intercept, coefSqft, coefYear, coefParking, coefBathroom, coefEndUnit, c
                             <span class="text-amber-400" id="valAge">+$0</span>
                         </div>
                         <div class="flex justify-between">
-                            <span class="text-gray-400">Features (Pkg, A/C...)</span>
+                            <span class="text-gray-400">Strata Fee Impact</span>
+                            <span class="text-red-400" id="valFee">-$0</span>
+                        </div>
+                         <div class="flex justify-between">
+                            <span class="text-gray-400">Bathrooms</span>
+                            <span class="text-green-400" id="valBath">+$0</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">Condition/Rainscreen</span>
+                            <span class="text-green-400" id="valQuality">+$0</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">Features</span>
                             <span class="text-green-400" id="valFeatures">+$0</span>
                         </div>
                         <div class="flex justify-between">
@@ -129,3 +165,125 @@ const { intercept, coefSqft, coefYear, coefParking, coefBathroom, coefEndUnit, c
         </div>
     </div>
 </section>
+
+<script define:vars={{ intercept, coefSqft, coefAge, coefBath, coefFee, coefCondition, coefRainscreen, coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, coefBurkeMtn, coefCityPM, feeSlope, feeIntercept, stdError }}>
+    document.addEventListener('DOMContentLoaded', () => {
+        
+        const inputs = {
+            loc: document.getElementById('inputLoc'),
+            year: document.getElementById('inputYear'),
+            area: document.getElementById('inputArea'),
+            bath: document.getElementById('inputBath'),
+            fee: document.getElementById('inputFee'),
+            condition: document.getElementById('inputCondition'),
+            parking: document.getElementById('inputParking'),
+            endUnit: document.getElementById('checkEndUnit'),
+            ac: document.getElementById('checkAC'),
+            rain: document.getElementById('checkRain')
+        };
+
+        const outputs = {
+            price: document.getElementById('outputPrice'),
+            range: document.getElementById('outputRange'),
+            psqft: document.getElementById('outputPsqft'),
+            valSize: document.getElementById('valSize'),
+            valAge: document.getElementById('valAge'),
+            valFee: document.getElementById('valFee'),
+            valBath: document.getElementById('valBath'),
+            valQuality: document.getElementById('valQuality'),
+            valFeatures: document.getElementById('valFeatures'),
+            valLoc: document.getElementById('valLoc')
+        };
+
+        function format(num) {
+            return new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD', maximumFractionDigits: 0 }).format(num);
+        }
+
+        function calculate() {
+            // Get Values
+            const locVal = parseInt(inputs.loc.value);
+            const year = parseFloat(inputs.year.value);
+            const area = parseFloat(inputs.area.value);
+            const bath = parseFloat(inputs.bath.value);
+            const fee = parseFloat(inputs.fee.value) || 0;
+            const condition = parseInt(inputs.condition.value);
+            
+            const parkType = inputs.parking.value;
+            const isEnd = inputs.endUnit.checked ? 1 : 0;
+            const isAC = inputs.ac.checked ? 1 : 0;
+            const isRain = inputs.rain.checked ? 1 : 0;
+
+            const currentYear = new Date().getFullYear();
+            const age = currentYear - year;
+
+            // Compute Component Values
+            const valSize = area * coefSqft;
+            const valAge = age * coefAge;
+            const valBath = bath * coefBath;
+            const valFee = fee * coefFee;
+            const valCondition = condition * coefCondition;
+            const valRain = isRain * coefRainscreen;
+            const valEnd = isEnd * coefEndUnit;
+            const valAC = isAC * coefAC;
+            
+            // Parking Logic
+            let valParking = 0;
+            if (parkType === 'double') valParking = coefDoubleGarage;
+            if (parkType === 'tandem') valParking = coefTandemGarage;
+
+            // Location Logic
+            let valLoc = 0;
+            if (locVal === 1) valLoc = coefBurkeMtn; // Burke
+            if (locVal === 2) valLoc = coefCityPM;   // PM
+
+            // Total Prediction
+            let predictedPrice = intercept + valSize + valAge + valBath + valFee + valCondition + valRain + valEnd + valAC + valParking + valLoc;
+
+            // Range Calculation (95% approx)
+            const lowerBound = predictedPrice - (2 * stdError);
+            const upperBound = predictedPrice + (2 * stdError);
+
+            // Render
+            outputs.price.innerText = format(predictedPrice);
+            outputs.range.innerText = `${format(lowerBound)} — ${format(upperBound)}`;
+            outputs.psqft.innerText = format(predictedPrice / area) + " / sqft";
+
+            outputs.valSize.innerText = (valSize > 0 ? "+" : "") + format(valSize);
+            outputs.valAge.innerText = (valAge > 0 ? "+" : "") + format(valAge);
+            outputs.valFee.innerText = (valFee > 0 ? "+" : "") + format(valFee);
+            outputs.valBath.innerText = (valBath > 0 ? "+" : "") + format(valBath);
+            outputs.valQuality.innerText = "+" + format(valCondition + valRain);
+            outputs.valFeatures.innerText = "+" + format(valParking + valEnd + valAC);
+            outputs.valLoc.innerText = "+" + format(valLoc);
+
+            // Dispatch event for charts
+            const event = new CustomEvent('deprecity:model-update', {
+                detail: {
+                    price: predictedPrice,
+                    sqft: area,
+                    year: year
+                }
+            });
+            document.dispatchEvent(event);
+        }
+
+        // Attach Listeners
+        Object.values(inputs).forEach(input => {
+            input.addEventListener('input', calculate);
+            input.addEventListener('change', calculate);
+        });
+
+        // Initial calculation - wait for charts to be ready
+        const tryCalculate = () => {
+            if (document.getElementById('chartPriceSize')) {
+                calculate();
+            } else {
+                // Charts not ready yet, wait for them
+                document.addEventListener('charts-ready', () => calculate(), { once: true });
+            }
+        };
+        
+        // Try immediately or wait a moment
+        setTimeout(tryCalculate, 50);
+    });
+</script>

@@ -1,8 +1,9 @@
 ---
 interface Props {
     sampleSize: number;
+    modelConfidence: number;
 }
-const { sampleSize } = Astro.props;
+const { sampleSize, modelConfidence } = Astro.props;
 ---
 
 <header class="pt-20 pb-16 px-6 bg-white">
@@ -14,8 +15,12 @@ const { sampleSize } = Astro.props;
             Townhouse value is driven by more than just square footage. 
             Our <strong>Multivariate OLS Model</strong> isolates the value of specific features like private garages, end units, and location premiums.
         </p>
-        <div class="mt-6 inline-flex items-center gap-2 px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full border border-blue-100">
-            <span>N = {sampleSize} | Variable Coefficients Active</span>
+        <div class="mt-6 inline-flex items-center gap-2 px-4 py-1.5 bg-blue-50 text-blue-700 text-xs font-medium rounded-full border border-blue-100">
+            <span>N = {sampleSize}</span>
+            <span class="text-blue-300">|</span>
+            <span>R² = {(modelConfidence * 100).toFixed(1)}%</span>
+            <span class="text-blue-300">|</span>
+            <span>Variable Coefficients Active</span>
         </div>
     </div>
 </header>

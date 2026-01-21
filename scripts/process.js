@@ -2,22 +2,35 @@ import fs from 'fs';
 import path from 'path';
 import { JSDOM } from 'jsdom';
 import 'dotenv/config';
+import cliProgress from 'cli-progress';
+import chalk from 'chalk';
 
 // --- Configuration ---
 const HTML_DIR = path.join(process.cwd(), 'data/html');
 const JSON_DIR = path.join(process.cwd(), 'data/json');
 
 // --- Helper: Env Resolution ---
-const resolveEnv = (key) => process.env[key];
+const resolveEnv = (key) => {
+    const value = process.env[key];
+    if (!value) return undefined;
+    
+    // If the value points to another env var, use that
+    if (process.env[value]) {
+        return process.env[value];
+    }
+    
+    // Otherwise use the value as-is
+    return value;
+};
 
 // --- Helper: LLM Extraction ---
 async function extractDeepData(description, features = []) {
     const apiKey = resolveEnv('LLM_API_KEY');
     const baseURL = resolveEnv('LLM_API_URL');
-    const modelName = resolveEnv('LLM_MODEL_NAME') || "gpt-3.5-turbo";
+    const modelName = resolveEnv('LLM_MODEL_NAME');
 
     if (!apiKey) {
-        console.warn("⚠️ No LLM_API_KEY. Skipping deep enrichment.");
+        // Silent return for progress bar cleanliness
         return null;
     }
 
@@ -33,7 +46,8 @@ async function extractDeepData(description, features = []) {
       "isEndUnit": boolean,
       "hasAC": boolean,
       "isRainscreened": boolean,
-      "outdoorSpace": "balcony" | "yard" | "rooftop" | "none"
+      "outdoorSpace": "balcony" | "yard" | "rooftop" | "none",
+      "condition": number (1-5 score: 1=Needs Work, 2=Original/Dated, 3=Average/Maintained, 4=Updated, 5=Brand New/Fully Reno)
     }
     `;
 
@@ -46,18 +60,20 @@ async function extractDeepData(description, features = []) {
             },
             body: JSON.stringify({
                 model: modelName,
-                messages: [{role: "user", content: prompt}],
-                temperature: 0
+                messages: [{role: "user", content: prompt}]
             })
         });
 
-        if (!res.ok) throw new Error(res.statusText);
+        if (!res.ok) {
+            const errorBody = await res.text();
+            throw new Error(`${res.status} ${res.statusText}: ${errorBody}`);
+        }
         const data = await res.json();
         let content = data.choices[0].message.content;
         content = content.replace(/```json/g, '').replace(/```/g, '').trim();
         return JSON.parse(content);
     } catch (e) {
-        console.error("LLM Error:", e.message);
+        // Return null on failure but don't log to console to avoid breaking progress bar
         return null;
     }
 }
@@ -151,13 +167,22 @@ function parseHtml(htmlContent, filename) {
         return null;
     };
 
-    const yearStr = getTableValue(['Year Built']);
-    if (yearStr) listing.year = parseInt(yearStr.replace(/[^0-9]/g, ''), 10);
-    else {
-        const ageStr = getTableValue(['Age']);
-        if (ageStr) {
-            const match = ageStr.match(/\((\d{4})\)/);
-            if (match) listing.year = parseInt(match[1], 10);
+    // Try multiple sources for year
+    let yearStr = getTableValue(['Year Built']);
+    if (yearStr) {
+        listing.year = parseInt(yearStr.replace(/[^0-9]/g, ''), 10);
+    } else {
+        // Try extracting from embedded JSON data (for Zealty.ca - handles both escaped and unescaped quotes)
+        const scriptMatches = htmlContent.match(/yearBuilt\\?["']?:(\d{4})/);
+        if (scriptMatches) {
+            listing.year = parseInt(scriptMatches[1], 10);
+        } else {
+            // Fallback to Age field
+            const ageStr = getTableValue(['Age']);
+            if (ageStr) {
+                const match = ageStr.match(/\((\d{4})\)/);
+                if (match) listing.year = parseInt(match[1], 10);
+            }
         }
     }
 
@@ -188,9 +213,10 @@ function parseHtml(htmlContent, filename) {
         if (priceStr) listing.price = cleanNumber(priceStr.split('\n')[0]);
     }
 
-    // Basic Rainscreen Logic (Pre-LLM)
+    // Basic Rainscreen Logic (Pre-LLM fallback)
     const desc = (listing.description || "").toLowerCase();
     listing.rainscreen = (listing.year >= 2005) || desc.includes('rainscreen') || desc.includes('rain screen');
+    listing.condition = 3; // Default average
 
     return listing;
 }
@@ -199,7 +225,7 @@ function parseHtml(htmlContent, filename) {
 // --- Main Execution ---
 async function main() {
     if (!fs.existsSync(HTML_DIR)) {
-        console.error(`Error: data/html directory not found at ${HTML_DIR}`);
+        console.error(chalk.red(`Error: data/html directory not found at ${HTML_DIR}`));
         console.error("Please place your downloaded HTML files there.");
         process.exit(1);
     }
@@ -210,8 +236,7 @@ async function main() {
     }
 
     const htmlFiles = fs.readdirSync(HTML_DIR).filter(f => f.endsWith('.html'));
-    console.log(`Found ${htmlFiles.length} HTML files in data/html.`);
-
+    
     // Check which files need to be processed
     const filesToProcess = htmlFiles.filter(file => {
         const jsonFileName = file.replace('.html', '.json');
@@ -220,39 +245,72 @@ async function main() {
     });
 
     if (filesToProcess.length === 0) {
-        console.log("All HTML files have already been processed. No new files to process.");
+        console.log(chalk.green("All HTML files have already been processed. No new files to process."));
         return;
     }
 
-    console.log(`Processing ${filesToProcess.length} new files...`);
+    console.log(chalk.cyan(`\nFound ${filesToProcess.length} new files to process in ${HTML_DIR}\n`));
+
+    // Initialize Progress Bar
+    const b1 = new cliProgress.SingleBar({
+        format: chalk.blue('{bar}') + ' {percentage}% | {value}/{total} Files | ' + chalk.yellow('{status}') + ' | {file}',
+        barCompleteChar: '\u2588',
+        barIncompleteChar: '\u2591',
+        hideCursor: true,
+        clearOnComplete: false
+    });
+
+    b1.start(filesToProcess.length, 0, { status: 'Initializing', file: '...' });
+
+    let llmSuccessCount = 0;
+    let llmFailCount = 0;
 
     for (const file of filesToProcess) {
-        const htmlPath = path.join(HTML_DIR, file);
-        const html = fs.readFileSync(htmlPath, 'utf-8');
-        
-        console.log(`Processing ${file}...`);
+        const shortName = file.length > 25 ? file.substring(0, 22) + '...' : file;
         
         // 1. Basic Parse
+        b1.update(null, { status: 'Parsing HTML', file: shortName });
+        const htmlPath = path.join(HTML_DIR, file);
+        const html = fs.readFileSync(htmlPath, 'utf-8');
         const listing = parseHtml(html, file);
         
         // 2. LLM Enrichment
         if (listing.description) {
-            process.stdout.write("  -> Enriching with LLM... ");
+            b1.update(null, { status: 'Enriching (LLM)', file: shortName });
+            
             const deepData = await extractDeepData(listing.description, listing.features);
             if (deepData) {
+                // Map specific deep data fields
                 Object.assign(listing, deepData);
-                console.log("Done.");
+                
+                // Map boolean isRainscreened to listing.rainscreen if present
+                if (typeof deepData.isRainscreened === 'boolean') {
+                    listing.rainscreen = deepData.isRainscreened;
+                }
+                
+                llmSuccessCount++;
             } else {
-                console.log("Skipped (API Error or Missing Key).");
+                llmFailCount++;
             }
         }
 
         // 3. Save
+        b1.update(null, { status: 'Saving JSON', file: shortName });
         const outName = file.replace('.html', '.json');
         fs.writeFileSync(path.join(JSON_DIR, outName), JSON.stringify(listing, null, 2));
+        
+        b1.increment();
     }
     
-    console.log(`\nSuccess! Processed ${filesToProcess.length} files. JSON data saved to ${JSON_DIR}`);
+    b1.stop();
+    
+    console.log(chalk.green(`\n\u2714 Success! Processed ${filesToProcess.length} files.`));
+    if (resolveEnv('LLM_API_KEY')) {
+        console.log(chalk.gray(`  LLM Stats: ${llmSuccessCount} enriched, ${llmFailCount} skipped/failed.`));
+    } else {
+        console.log(chalk.yellow(`  LLM Skipped: No API Key provided.`));
+    }
+    console.log(`  Data saved to ${chalk.underline(JSON_DIR)}`);
 }
 
 main();

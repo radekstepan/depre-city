@@ -10,6 +10,7 @@ export interface Listing extends Partial<DeepData> {
     fee: number;
     price: number;
     rainscreen: boolean;
+    condition?: number; // 1-5
     // Scraper fields
     description?: string;
     features?: string[];
@@ -23,22 +24,30 @@ export interface MarketModel {
     generatedAt: string;
     sampleSize: number;
     
-    // Multivariate Coefficients
+    // Core Coefficients
     intercept: number;
     coefSqft: number;
-    coefYear: number;
-    coefParking: number; // Value of a "better" parking spot (0-4 scale)
-    coefBathroom: number;
-    coefEndUnit: number;
-    coefAC: number;
-    coefCityPM: number; // Port Moody premium (dummy var)
+    coefAge: number;
+    coefBath: number;
+    coefFee: number;
+    coefCondition: number;
+    coefRainscreen: number;
     
-    // Legacy support for charts
-    baseRateCoq: number;
-    premiumPM: number;
+    // Feature Coefficients (Dummy Variables)
+    coefAC: number;
+    coefEndUnit: number;
+    coefDoubleGarage: number; 
+    coefTandemGarage: number;
+    
+    // Location Coefficients
+    coefBurkeMtn: number;     
+    coefCityPM: number;
+    
+    // Metrics
     feeIntercept: number;
     feeSlope: number;
-    modelConfidence: number;
+    modelConfidence: number; // R-squared
+    stdError: number;        // Standard Error of the Estimate (for Range)
 }
 
 export function generateMarketModel(data: Listing[]): MarketModel {
@@ -50,46 +59,72 @@ export function generateMarketModel(data: Listing[]): MarketModel {
     // Y: Price
     const y = validData.map(d => d.price);
 
-    // X: Features [Intercept=1, Sqft, Year, ParkingScore, Baths, EndUnit, HasAC, IsPortMoody]
+    const currentYear = new Date().getFullYear();
+
+    // X: Features
     const X = validData.map(d => {
-        // Encode Parking: Street=0, Other=1, Underground=2, Carport=3, Tandem=4, Double=6
-        let parkingScore = 1;
-        if (d.parkingType === 'street') parkingScore = 0;
-        if (d.parkingType === 'underground') parkingScore = 2;
-        if (d.parkingType === 'carport') parkingScore = 3;
-        if (d.parkingType === 'garage_tandem') parkingScore = 4;
-        if (d.parkingType === 'garage_double') parkingScore = 6;
-        if (!d.parkingType && d.parking) parkingScore = d.parking; // Fallback to raw count
+        const age = currentYear - d.year;
+        
+        // 1. Core Drivers
+        const baths = d.bathrooms || 1;
+        const fee = d.fee || 0;
+        const condition = d.condition || 3; // Default to 'Average' if missing
+        const isRainscreen = d.rainscreen ? 1 : 0;
+
+        // 2. Parking Dummies (0/1 flags)
+        const isDouble = d.parkingType === 'garage_double' ? 1 : 0;
+        const isTandem = d.parkingType === 'garage_tandem' ? 1 : 0;
+
+        // 3. Location Logic
+        const fullText = (d.address + " " + d.city + " " + (d.description || "")).toLowerCase();
+        
+        // Detect Premium Sub-areas
+        const isBurke = fullText.includes('burke') || 
+                        fullText.includes('smiling creek') || 
+                        fullText.includes('partington') || 
+                        fullText.includes('gislason') || 
+                        fullText.includes('mitchell') || 
+                        fullText.includes('princeton') ? 1 : 0;
 
         const isPM = d.city.toLowerCase().includes('port moody') ? 1 : 0;
+        
         const isEnd = d.isEndUnit ? 1 : 0;
         const hasAC = d.hasAC ? 1 : 0;
-        const baths = d.bathrooms || 1;
 
-        return [1, d.sqft, d.year, parkingScore, baths, isEnd, hasAC, isPM];
+        // Feature Vector Order:
+        // [0:Intercept, 1:Sqft, 2:Age, 3:Bath, 4:Fee, 5:Condition, 6:Rainscreen, 7:AC, 8:End, 9:DoubleG, 10:TandemG, 11:Burke, 12:PM]
+        return [1, d.sqft, age, baths, fee, condition, isRainscreen, hasAC, isEnd, isDouble, isTandem, isBurke, isPM];
     });
 
     // Run Regression
-    // Betas: [Intercept, Sqft, Year, Parking, Bath, End, AC, CityPM]
     const betas = solveOLS(X, y);
 
-    // Fallback if regression fails (all zeros)
+    // Fallback if matrix singular or empty
     if (betas.every(b => b === 0) && validData.length > 0) {
-        // Fallback to simple averages
-        const avgPrice = ss.mean(y);
-        betas[0] = avgPrice;
+        betas[0] = ss.mean(y);
     }
 
-    // --- Legacy / Visualization Metrics ---
-    const coqData = validData.filter(d => d.city.toLowerCase().includes('coquitlam') && !d.city.toLowerCase().includes('port coquitlam'));
-    const pmData = validData.filter(d => d.city.toLowerCase().includes('port moody'));
+    // --- Calculate Model Accuracy (R-squared & Std Error) ---
+    let rss = 0; // Residual Sum of Squares
+    let tss = 0; // Total Sum of Squares
+    const yMean = ss.mean(y);
+
+    X.forEach((row, i) => {
+        const predicted = row.reduce((sum, val, idx) => sum + val * betas[idx], 0);
+        const actual = y[i];
+        rss += Math.pow(actual - predicted, 2);
+        tss += Math.pow(actual - yMean, 2);
+    });
+
+    const r2 = tss > 0 ? 1 - (rss / tss) : 0;
     
-    // Base Rate (Raw average for Coquitlam)
-    const baseRateCoq = coqData.length > 0 
-        ? Math.round(ss.mean(coqData.map(d => d.price / d.sqft)))
-        : 0;
-        
-    // Fee Regression
+    // Standard Error of the Estimate (SEE)
+    // Degrees of freedom = n - p - 1 (where p is predictors excluding intercept)
+    const p = X[0].length - 1;
+    const n = validData.length;
+    const stdError = n > p + 1 ? Math.sqrt(rss / (n - p - 1)) : 0;
+
+    // Fee Regression (Linear) - for calculating "Expected Fee"
     const feePoints = validData.filter(d => d.fee > 0).map(d => [d.sqft, d.fee]);
     const feeReg = feePoints.length > 2 ? ss.linearRegression(feePoints) : { m: 0, b: 0 };
 
@@ -97,21 +132,25 @@ export function generateMarketModel(data: Listing[]): MarketModel {
         generatedAt: new Date().toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' }),
         sampleSize: validData.length,
         
-        // Regression Coefficients
+        // Coefficients
         intercept: Math.round(betas[0]),
         coefSqft: Math.round(betas[1]),
-        coefYear: Math.round(betas[2]),
-        coefParking: Math.round(betas[3]),
-        coefBathroom: Math.round(betas[4]),
-        coefEndUnit: Math.round(betas[5]),
-        coefAC: Math.round(betas[6]),
-        coefCityPM: Math.round(betas[7]),
+        coefAge: Math.round(betas[2]),
+        coefBath: Math.round(betas[3]),
+        coefFee: Math.round(betas[4]),
+        coefCondition: Math.round(betas[5]),
+        coefRainscreen: Math.round(betas[6]),
+        coefAC: Math.round(betas[7]),
+        coefEndUnit: Math.round(betas[8]),
+        coefDoubleGarage: Math.round(betas[9]),
+        coefTandemGarage: Math.round(betas[10]),
+        coefBurkeMtn: Math.round(betas[11]),
+        coefCityPM: Math.round(betas[12]),
 
-        // Legacy / Visuals
-        baseRateCoq,
-        premiumPM: 1.10, // Hardcoded for visual chart line only, calculator uses betas
+        // Metrics
         feeIntercept: feeReg.b,
         feeSlope: feeReg.m,
-        modelConfidence: 0.85 // Placeholder for R2 of multivariate
+        modelConfidence: r2,
+        stdError: Math.round(stdError)
     };
 }

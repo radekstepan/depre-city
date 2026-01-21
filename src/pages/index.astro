@@ -6,6 +6,7 @@ import type { Listing } from '../utils/analysis';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
 import Calculator from '../components/Calculator.astro';
+import Charts from '../components/Charts.astro';
 import Footer from '../components/Footer.astro';
 
 // --- Build Time Analysis ---
@@ -30,9 +31,12 @@ try {
 
 const model = generateMarketModel(listings);
 const { 
-    generatedAt, sampleSize, 
-    intercept, coefSqft, coefYear, coefParking, coefBathroom, coefEndUnit, coefAC, coefCityPM,
-    baseRateCoq, premiumPM, feeSlope, feeIntercept 
+    generatedAt, sampleSize, modelConfidence,
+    intercept, coefSqft, coefAge, coefBath,
+    coefFee, coefCondition, coefRainscreen,
+    coefAC, coefEndUnit,
+    coefDoubleGarage, coefTandemGarage, coefBurkeMtn, coefCityPM,
+    feeSlope, feeIntercept, stdError
 } = model;
 ---
 
@@ -57,105 +61,29 @@ const {
 <body class="antialiased">
 
     <Header generatedAt={generatedAt} />
-    <Hero sampleSize={sampleSize} />
+    <Hero sampleSize={sampleSize} modelConfidence={modelConfidence} />
+    
     <Calculator
         intercept={intercept}
         coefSqft={coefSqft}
-        coefYear={coefYear}
-        coefParking={coefParking}
-        coefBathroom={coefBathroom}
-        coefEndUnit={coefEndUnit}
+        coefAge={coefAge}
+        coefBath={coefBath}
+        coefFee={coefFee}
+        coefCondition={coefCondition}
+        coefRainscreen={coefRainscreen}
         coefAC={coefAC}
+        coefEndUnit={coefEndUnit}
+        coefDoubleGarage={coefDoubleGarage}
+        coefTandemGarage={coefTandemGarage}
+        coefBurkeMtn={coefBurkeMtn}
         coefCityPM={coefCityPM}
         feeSlope={feeSlope}
         feeIntercept={feeIntercept}
+        stdError={stdError}
     />
+    
+    <Charts listings={listings} model={model} />
+    
     <Footer />
-
-    <!-- Client-Side Logic -->
-    <script define:vars={{ intercept, coefSqft, coefYear, coefParking, coefBathroom, coefEndUnit, coefAC, coefCityPM, feeSlope, feeIntercept }}>
-        document.addEventListener('DOMContentLoaded', () => {
-            
-            const inputs = {
-                city: document.getElementById('inputCity'),
-                year: document.getElementById('inputYear'),
-                area: document.getElementById('inputArea'),
-                bath: document.getElementById('inputBath'),
-                parking: document.getElementById('inputParking'),
-                endUnit: document.getElementById('checkEndUnit'),
-                ac: document.getElementById('checkAC'),
-                fee: document.getElementById('inputFee')
-            };
-
-            const outputs = {
-                price: document.getElementById('outputPrice'),
-                psqft: document.getElementById('outputPsqft'),
-                valSize: document.getElementById('valSize'),
-                valAge: document.getElementById('valAge'),
-                valFeatures: document.getElementById('valFeatures'),
-                valLoc: document.getElementById('valLoc'),
-                expFee: document.getElementById('outputExpFee')
-            };
-
-            function format(num) {
-                return new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD', maximumFractionDigits: 0 }).format(num);
-            }
-
-            function calculate() {
-                // Get Values
-                const cityPM = parseInt(inputs.city.value);
-                const year = parseFloat(inputs.year.value);
-                const area = parseFloat(inputs.area.value);
-                const bath = parseFloat(inputs.bath.value);
-                const parkingScore = parseFloat(inputs.parking.value);
-                const isEnd = inputs.endUnit.checked ? 1 : 0;
-                const isAC = inputs.ac.checked ? 1 : 0;
-
-                // 1. Multivariate Regression Formula
-                // Price = Intercept + (Sqft*B1) + (Year*B2) + (Pkg*B3) + (Bath*B4) + (End*B5) + (AC*B6) + (City*B7)
-                
-                const valSize = area * coefSqft;
-                const valAge = year * coefYear;
-                const valParking = parkingScore * coefParking;
-                const valBath = bath * coefBathroom;
-                const valEnd = isEnd * coefEndUnit;
-                const valAC = isAC * coefAC;
-                const valCity = cityPM * coefCityPM;
-
-                let predictedPrice = intercept + valSize + valAge + valParking + valBath + valEnd + valAC + valCity;
-
-                // 2. Strata Fee Adjustment (NPV Penalty)
-                // Benchmark Fee based on regression
-                const benchmarkFee = (area * feeSlope) + feeIntercept;
-                outputs.expFee.value = format(benchmarkFee) + "/mo";
-                
-                const actualFee = parseFloat(inputs.fee.value) || benchmarkFee;
-                const excessFee = actualFee - benchmarkFee;
-                
-                // Capitalize excess fee at 5% (The "Drag")
-                if (excessFee > 0) {
-                    const penalty = (excessFee * 12) / 0.05;
-                    predictedPrice -= penalty;
-                }
-
-                // Render
-                outputs.price.innerText = format(predictedPrice);
-                outputs.psqft.innerText = format(predictedPrice / area) + " / sqft";
-
-                outputs.valSize.innerText = (valSize > 0 ? "+" : "") + format(valSize);
-                outputs.valAge.innerText = (valAge > 0 ? "+" : "") + format(valAge);
-                outputs.valFeatures.innerText = "+" + format(valParking + valBath + valEnd + valAC);
-                outputs.valLoc.innerText = "+" + format(valCity);
-            }
-
-            // Attach Listeners
-            Object.values(inputs).forEach(input => {
-                input.addEventListener('input', calculate);
-                input.addEventListener('change', calculate);
-            });
-
-            calculate();
-        });
-    </script>
 </body>
 </html>

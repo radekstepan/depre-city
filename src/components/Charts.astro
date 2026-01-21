@@ -1,0 +1,413 @@
+---
+import type { Listing, MarketModel } from '../utils/analysis';
+
+interface Props {
+    listings: Listing[];
+    model: MarketModel;
+}
+
+const { listings, model } = Astro.props;
+
+// 1. Prepare Market Data
+const marketPoints = listings
+    .filter(l => l.price > 100000 && l.sqft > 0 && l.year > 0)
+    .map(l => ({
+        x: l.sqft,
+        y: l.price,
+        year: l.year,
+        address: l.address,
+        url: l._sourceUrl
+    }));
+
+// 2. Prepare Accuracy Data
+const currentYear = new Date().getFullYear();
+const accuracyPoints = listings
+    .filter(l => l.price > 100000 && l.sqft > 300)
+    .map(l => {
+        const age = currentYear - l.year;
+        
+        const isDouble = l.parkingType === 'garage_double' ? 1 : 0;
+        const isTandem = l.parkingType === 'garage_tandem' ? 1 : 0;
+
+        const fullText = (l.address + " " + l.city + " " + (l.description || "")).toLowerCase();
+        const isBurke = fullText.includes('burke') || 
+                        fullText.includes('smiling creek') || 
+                        fullText.includes('partington') ||
+                        fullText.includes('gislason') ||
+                        fullText.includes('mitchell') ||
+                        fullText.includes('princeton') ? 1 : 0;
+
+        const isPM = l.city.toLowerCase().includes('port moody') ? 1 : 0;
+        const isEnd = l.isEndUnit ? 1 : 0;
+        const hasAC = l.hasAC ? 1 : 0;
+        const baths = l.bathrooms || 1;
+        const fee = l.fee || 0;
+        const condition = l.condition || 3;
+        const isRainscreen = l.rainscreen ? 1 : 0;
+
+        const predicted = model.intercept + 
+            (l.sqft * model.coefSqft) +
+            (age * model.coefAge) +
+            (baths * model.coefBath) +
+            (fee * model.coefFee) +
+            (condition * model.coefCondition) +
+            (isRainscreen * model.coefRainscreen) +
+            (hasAC * model.coefAC) +
+            (isEnd * model.coefEndUnit) +
+            (isDouble * model.coefDoubleGarage) +
+            (isTandem * model.coefTandemGarage) +
+            (isBurke * model.coefBurkeMtn) +
+            (isPM * model.coefCityPM);
+
+        return {
+            actual: l.price,
+            predicted: Math.round(predicted),
+            address: l.address,
+            url: l._sourceUrl,
+            diff: Math.abs(l.price - predicted)
+        };
+    });
+
+// 3. Prepare Feature Impact Data
+// We normalize some continuous variables (Age, Fee) to "units of impact" to make them comparable on the chart.
+const featureImpacts = [
+    { label: 'Double Garage', value: model.coefDoubleGarage },
+    { label: 'Tandem Garage', value: model.coefTandemGarage },
+    { label: 'End Unit', value: model.coefEndUnit },
+    { label: 'Air Con', value: model.coefAC },
+    { label: 'Rainscreen', value: model.coefRainscreen },
+    { label: 'Burke Mtn', value: model.coefBurkeMtn },
+    { label: 'Port Moody', value: model.coefCityPM },
+    { label: 'Extra Bath', value: model.coefBath },
+    { label: 'Condition (+1 Lvl)', value: model.coefCondition },
+    { label: 'Newer (10 Yrs)', value: model.coefAge * -10 }, // Value of being 10 years newer
+    { label: 'Lower Fee ($100)', value: model.coefFee * -100 } // Value of $100 lower maintenance fee
+].sort((a, b) => Math.abs(b.value) - Math.abs(a.value)); // Sort by magnitude
+---
+
+<section id="charts" class="py-12 bg-white border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 md:px-6">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-8">
+            <div>
+                <h2 class="text-2xl font-bold text-gray-900 font-serif">Market Analysis</h2>
+                <p class="text-sm text-gray-500 mt-1">
+                    Model Confidence (R²): <strong class="text-amber-600">{(model.modelConfidence * 100).toFixed(1)}%</strong>.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Primary Chart: Feature Value Analysis -->
+        <div class="mb-10 bg-gray-50/50 p-6 rounded-xl border border-gray-100">
+            <h3 class="text-sm font-bold text-gray-800 uppercase tracking-wide mb-2">Estimated Feature Value ($)</h3>
+            <p class="text-xs text-gray-400 mb-6">Dollar value impact of specific features, holding all other variables constant.</p>
+            <div class="relative h-96 w-full">
+                <canvas id="chartImpact"></canvas>
+            </div>
+        </div>
+
+        <!-- Secondary Diagnostics: 3 Columns -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Price vs Size -->
+            <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
+                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wide mb-4 text-center">Value by Size (Sqft)</h3>
+                <div class="relative h-48 w-full">
+                    <canvas id="chartPriceSize"></canvas>
+                </div>
+            </div>
+
+            <!-- Price vs Age -->
+            <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
+                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wide mb-4 text-center">Value by Age (Year Built)</h3>
+                <div class="relative h-48 w-full">
+                    <canvas id="chartPriceAge"></canvas>
+                </div>
+            </div>
+
+            <!-- Predicted vs Actual -->
+             <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
+                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wide mb-4 text-center">Accuracy: Pred vs Actual</h3>
+                <div class="relative h-48 w-full">
+                    <canvas id="chartAccuracy"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script define:vars={{ marketPoints, accuracyPoints, featureImpacts }}>
+document.addEventListener('DOMContentLoaded', () => {
+    // Shared Config
+    const commonOptions = {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: { display: false },
+            tooltip: {
+                backgroundColor: 'rgba(17, 24, 39, 0.95)',
+                titleFont: { family: 'Inter', size: 13, weight: '600' },
+                bodyFont: { family: 'Inter', size: 12 },
+                padding: 12,
+                cornerRadius: 8,
+                displayColors: false,
+                callbacks: {
+                    label: (ctx) => {
+                        const p = ctx.raw;
+                        // Bar Chart - check if it's the feature impact chart
+                        if (typeof p === 'number') { 
+                             return `Value: ${new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD', maximumFractionDigits: 0 }).format(p)}`;
+                        }
+                        // Scatter Label with predictions
+                        if (p.predicted !== undefined) {
+                            return [
+                                `${p.address}`,
+                                `Actual: $${p.actual.toLocaleString()}`,
+                                `Pred:   $${p.predicted.toLocaleString()}`
+                            ];
+                        }
+                        // Regular scatter points
+                        return p.address ? `${p.address}: $${p.y.toLocaleString()}` : `Current Property: $${p.y.toLocaleString()}`;
+                    }
+                }
+            },
+            title: {
+                display: false
+            }
+        },
+        onClick: (event, elements, chart) => {
+            if (elements.length > 0) {
+                const dataIndex = elements[0].index;
+                const dataset = chart.data.datasets[elements[0].datasetIndex];
+                const point = dataset.data[dataIndex];
+                if (point && point.url) {
+                    window.open(point.url, '_blank');
+                }
+            }
+        },
+        scales: {
+            y: {
+                ticks: {
+                    callback: (val) => '$' + val / 1000 + 'k',
+                    font: { size: 10, family: 'Inter' },
+                    color: '#9ca3af'
+                },
+                grid: { color: '#f3f4f6', drawBorder: false }
+            },
+            x: {
+                ticks: {
+                    font: { size: 10, family: 'Inter' },
+                    color: '#9ca3af'
+                },
+                grid: { color: '#f3f4f6', drawBorder: false }
+            }
+        },
+        elements: {
+            point: {
+                radius: 3,
+                hoverRadius: 6,
+                backgroundColor: '#cbd5e1'
+            }
+        }
+    };
+
+    // --- Chart 1: Feature Impact (Bar) ---
+    const ctxImpact = document.getElementById('chartImpact').getContext('2d');
+    const chartImpact = new Chart(ctxImpact, {
+        type: 'bar',
+        data: {
+            labels: featureImpacts.map(f => f.label),
+            datasets: [{
+                data: featureImpacts.map(f => f.value),
+                backgroundColor: featureImpacts.map(f => f.value > 0 ? '#10b981' : '#ef4444'),
+                borderRadius: 4,
+                barThickness: 20
+            }]
+        },
+        options: {
+            ...commonOptions,
+            indexAxis: 'y', // Horizontal
+            interaction: {
+                mode: 'y', // Hovering anywhere on the horizontal row triggers tooltip
+                axis: 'y',
+                intersect: false
+            },
+            scales: {
+                x: {
+                    grid: { color: '#e5e7eb', borderDash: [4, 4] },
+                    ticks: { 
+                        font: { size: 11, family: 'Inter' },
+                        color: '#6b7280',
+                        callback: (val) => '$' + val/1000 + 'k' 
+                    }
+                },
+                y: {
+                    grid: { display: false },
+                    ticks: { 
+                        font: { size: 12, family: 'Inter', weight: '500' },
+                        color: '#111827',
+                        autoSkip: false
+                    }
+                }
+            }
+        }
+    });
+
+    // --- Chart 2: Price vs Size ---
+    const ctxSize = document.getElementById('chartPriceSize').getContext('2d');
+    const chartSize = new Chart(ctxSize, {
+        type: 'scatter',
+        data: {
+            datasets: [
+                {
+                    label: 'Market',
+                    data: marketPoints.map(p => ({ x: p.x, y: p.y, address: p.address, year: p.year, url: p.url })),
+                    backgroundColor: '#cbd5e1',
+                    borderWidth: 0
+                },
+                {
+                    label: 'Subject',
+                    data: [],
+                    backgroundColor: '#d97706',
+                    borderColor: '#ffffff',
+                    borderWidth: 2,
+                    pointRadius: 6,
+                    order: 0
+                }
+            ]
+        },
+        options: {
+            ...commonOptions,
+            onClick: (event, elements, chart) => {
+                if (elements.length > 0) {
+                    const dataIndex = elements[0].index;
+                    const dataset = chart.data.datasets[elements[0].datasetIndex];
+                    const point = dataset.data[dataIndex];
+                    if (point && point.url) {
+                        window.open(point.url, '_blank');
+                    }
+                }
+            },
+            scales: {
+                ...commonOptions.scales,
+                x: { ...commonOptions.scales.x, ticks: { ...commonOptions.scales.x.ticks, maxTicksLimit: 6 } }
+            }
+        }
+    });
+
+    // --- Chart 3: Price vs Age ---
+    const ctxAge = document.getElementById('chartPriceAge').getContext('2d');
+    const chartAge = new Chart(ctxAge, {
+        type: 'scatter',
+        data: {
+            datasets: [
+                {
+                    label: 'Market',
+                    data: marketPoints.map(p => ({ x: p.year, y: p.y, address: p.address, url: p.url })),
+                    backgroundColor: '#94a3b8',
+                    borderWidth: 0
+                },
+                {
+                    label: 'Subject',
+                    data: [],
+                    backgroundColor: '#d97706',
+                    borderColor: '#ffffff',
+                    borderWidth: 2,
+                    pointRadius: 6,
+                    order: 0
+                }
+            ]
+        },
+        options: {
+            ...commonOptions,
+            onClick: (event, elements, chart) => {
+                if (elements.length > 0) {
+                    const dataIndex = elements[0].index;
+                    const dataset = chart.data.datasets[elements[0].datasetIndex];
+                    const point = dataset.data[dataIndex];
+                    if (point && point.url) {
+                        window.open(point.url, '_blank');
+                    }
+                }
+            },
+            scales: {
+                ...commonOptions.scales,
+                x: { 
+                    ...commonOptions.scales.x, 
+                    ticks: { 
+                        callback: (val) => val.toString().replace(',',''),
+                        maxTicksLimit: 6
+                    }
+                }
+            }
+        }
+    });
+
+    // --- Chart 4: Accuracy (Pred vs Actual) ---
+    const maxVal = Math.max(...accuracyPoints.map(p => p.actual)) * 1.1;
+    
+    const ctxAcc = document.getElementById('chartAccuracy').getContext('2d');
+    const chartAcc = new Chart(ctxAcc, {
+        type: 'scatter',
+        data: {
+            datasets: [
+                {
+                    label: 'Listings',
+                    data: accuracyPoints.map(p => ({ x: p.actual, y: p.predicted, address: p.address, actual: p.actual, predicted: p.predicted, url: p.url })),
+                    backgroundColor: (ctx) => {
+                        const p = ctx.raw;
+                        if (!p) return '#10b981';
+                        const err = Math.abs(p.actual - p.predicted) / p.actual;
+                        return err < 0.05 ? '#10b981' : (err < 0.15 ? '#f59e0b' : '#ef4444');
+                    },
+                    pointRadius: 2.5
+                },
+                {
+                    type: 'line',
+                    label: 'Perfect Fit',
+                    data: [{x: 0, y: 0}, {x: maxVal, y: maxVal}],
+                    borderColor: '#e5e7eb',
+                    borderWidth: 2,
+                    borderDash: [5, 5],
+                    pointRadius: 0,
+                    showLine: true
+                }
+            ]
+        },
+        options: {
+            ...commonOptions,
+            onClick: (event, elements, chart) => {
+                if (elements.length > 0) {
+                    const dataIndex = elements[0].index;
+                    const dataset = chart.data.datasets[elements[0].datasetIndex];
+                    const point = dataset.data[dataIndex];
+                    if (point && point.url) {
+                        window.open(point.url, '_blank');
+                    }
+                }
+            },
+            scales: {
+                ...commonOptions.scales,
+                x: { 
+                    ...commonOptions.scales.x, 
+                    ticks: { callback: (val) => '$' + val/1000 + 'k', maxTicksLimit: 5 }
+                }
+            }
+        }
+    });
+
+    // --- Update Logic ---
+    document.addEventListener('deprecity:model-update', (e) => {
+        const { price, sqft, year } = e.detail;
+
+        // Size Chart
+        chartSize.data.datasets[1].data = [{ x: sqft, y: price, year: year }];
+        chartSize.update('none');
+
+        // Age Chart
+        chartAge.data.datasets[1].data = [{ x: year, y: price, year: year }];
+        chartAge.update('none');
+    });
+    
+    // Signal that charts are ready
+    document.dispatchEvent(new Event('charts-ready'));
+});
+</script>
