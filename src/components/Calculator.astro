@@ -39,137 +39,154 @@ const areaOptions = Object.entries(areaCoefficients)
 
 <section id="calculator" class="py-12 bg-gray-50 border-y border-gray-200">
     <div class="max-w-4xl mx-auto px-4 md:px-6">
-        <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
-            <div class="p-6 md:p-8 border-b border-gray-100 bg-gray-50">
-                <h2 class="text-2xl font-bold text-gray-900">Feature Pricing Calculator</h2>
-                <p class="text-sm text-gray-500 mt-1">Adjust property attributes to see their isolated impact on market value.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-0">
+        <!-- Removed overflow-hidden to allow tooltip to pop out if needed, added specific rounding to children -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-200 flex flex-col md:flex-row">
+            
+            <!-- Inputs -->
+            <div class="w-full md:w-7/12 p-6 md:p-8 space-y-6 border-b md:border-b-0 md:border-r border-gray-100 rounded-t-xl md:rounded-tr-none md:rounded-l-xl bg-white">
+                <div class="mb-6">
+                    <h2 class="text-2xl font-bold text-gray-900">Feature Pricing Calculator</h2>
+                    <p class="text-sm text-gray-500 mt-1">Adjust property attributes to see their isolated impact on market value.</p>
+                </div>
                 
-                <!-- Inputs -->
-                <div class="col-span-12 md:col-span-7 p-6 md:p-8 space-y-6 border-r border-gray-100">
+                <!-- Core -->
+                <div class="space-y-4">
+                    <SearchSelect 
+                        id="inputAreaCoef" 
+                        label="Neighborhood / Area" 
+                        options={areaOptions}
+                        initialValue="0"
+                        placeholder="Search for an area..."
+                    />
                     
-                    <!-- Core -->
-                    <div class="space-y-4">
-                        <SearchSelect 
-                            id="inputAreaCoef" 
-                            label="Neighborhood / Area" 
-                            options={areaOptions}
-                            initialValue="0"
-                            placeholder="Search for an area..."
-                        />
-                        
-                        <div class="grid grid-cols-2 gap-4">
-                            <div>
-                                <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Year Built</label>
-                                <input type="number" id="inputYear" value="2015" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
-                            </div>
-                            <div>
-                                <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Size (sqft)</label>
-                                <input type="number" id="inputArea" value="1500" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Size & Baths -->
                     <div class="grid grid-cols-2 gap-4">
                         <div>
-                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Bathrooms</label>
-                            <input type="number" id="inputBath" value="2.5" step="0.5" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Year Built</label>
+                            <input type="number" id="inputYear" value="2015" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
                         </div>
                         <div>
-                             <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Strata Fee ($)</label>
-                            <input type="number" id="inputFee" value="350" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
-                        </div>
-                    </div>
-
-                    <!-- Quality / Fees -->
-                    <div>
-                        <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Condition (1-5)</label>
-                        <select id="inputCondition" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
-                            <option value="1">1 - Needs Work</option>
-                            <option value="2">2 - Original/Dated</option>
-                            <option value="3" selected>3 - Average</option>
-                            <option value="4">4 - Updated</option>
-                            <option value="5">5 - Brand New/Reno</option>
-                        </select>
-                    </div>
-
-                    <!-- Deep Data -->
-                    <div>
-                        <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Parking Situation</label>
-                        <select id="inputParking" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
-                            <option value="std">Underground / Carport / Street</option>
-                            <option value="tandem">Tandem Private Garage</option>
-                            <option value="double">Double Side-by-Side Garage</option>
-                        </select>
-                    </div>
-
-                    <div class="flex flex-wrap gap-4">
-                        <div class="flex items-center space-x-2">
-                            <input type="checkbox" id="checkEndUnit" class="h-4 w-4 text-amber-600 rounded">
-                            <label for="checkEndUnit" class="text-sm text-gray-700">End Unit</label>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <input type="checkbox" id="checkAC" class="h-4 w-4 text-amber-600 rounded">
-                            <label for="checkAC" class="text-sm text-gray-700">Air Conditioning</label>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <input type="checkbox" id="checkRain" class="h-4 w-4 text-amber-600 rounded">
-                            <label for="checkRain" class="text-sm text-gray-700">Rainscreened</label>
+                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Size (sqft)</label>
+                            <input type="number" id="inputArea" value="1500" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
                         </div>
                     </div>
                 </div>
 
-                <!-- Outputs -->
-                <div class="col-span-12 md:col-span-5 bg-gray-900 text-white p-6 md:p-8 flex flex-col justify-center">
-                    <div class="mb-8">
-                        <span class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2">Predicted Value</span>
-                        <div class="text-4xl md:text-5xl font-serif font-bold text-white tracking-tight" id="outputPrice">$0</div>
-                        
-                        <!-- Range Display -->
-                        <div class="mt-2 flex items-center space-x-2">
-                            <div class="h-1.5 w-1.5 rounded-full bg-amber-500"></div>
-                            <div class="text-sm text-gray-300 font-mono" id="outputRange">Range: $0 - $0</div>
-                        </div>
-                        
-                        <div class="text-gray-500 text-xs mt-2" id="outputPsqft">$0 / sqft</div>
+                <!-- Size & Baths -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Bathrooms</label>
+                        <input type="number" id="inputBath" value="2.5" step="0.5" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
                     </div>
+                    <div>
+                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Strata Fee ($)</label>
+                        <input type="number" id="inputFee" value="350" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                    </div>
+                </div>
 
-                    <div class="space-y-3 border-t border-gray-700 pt-6 text-sm">
+                <!-- Quality / Fees -->
+                <div>
+                    <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Condition (1-5)</label>
+                    <select id="inputCondition" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                        <option value="1">1 - Needs Work</option>
+                        <option value="2">2 - Original/Dated</option>
+                        <option value="3" selected>3 - Average</option>
+                        <option value="4">4 - Updated</option>
+                        <option value="5">5 - Brand New/Reno</option>
+                    </select>
+                </div>
+
+                <!-- Deep Data -->
+                <div>
+                    <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Parking Situation</label>
+                    <select id="inputParking" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                        <option value="std">Underground / Carport / Street</option>
+                        <option value="tandem">Tandem Private Garage</option>
+                        <option value="double">Double Side-by-Side Garage</option>
+                    </select>
+                </div>
+
+                <div class="flex flex-wrap gap-4">
+                    <div class="flex items-center space-x-2">
+                        <input type="checkbox" id="checkEndUnit" class="h-4 w-4 text-amber-600 rounded">
+                        <label for="checkEndUnit" class="text-sm text-gray-700">End Unit</label>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <input type="checkbox" id="checkAC" class="h-4 w-4 text-amber-600 rounded">
+                        <label for="checkAC" class="text-sm text-gray-700">Air Conditioning</label>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <input type="checkbox" id="checkRain" class="h-4 w-4 text-amber-600 rounded">
+                        <label for="checkRain" class="text-sm text-gray-700">Rainscreened</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Outputs -->
+            <div class="w-full md:w-5/12 bg-gray-900 text-white p-6 md:p-8 flex flex-col justify-center rounded-b-xl md:rounded-bl-none md:rounded-r-xl relative">
+                <div class="mb-8">
+                    <span class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2">Predicted Value</span>
+                    <div class="text-4xl md:text-5xl font-serif font-bold text-white tracking-tight" id="outputPrice">$0</div>
+                    
+                    <!-- Range Display with Tooltip -->
+                    <div class="mt-3 flex items-center group relative w-fit z-10">
+                        <div class="flex items-center space-x-2 cursor-default">
+                            <div class="h-1.5 w-1.5 rounded-full bg-amber-500"></div>
+                            <div class="text-sm text-gray-300 font-mono" id="outputRange">$0 — $0</div>
+                        </div>
+                        
+                        <!-- Info Icon -->
+                        <div class="ml-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-600 hover:text-gray-400 transition-colors cursor-help" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+
+                        <!-- Tooltip -->
+                        <div class="absolute top-full left-0 mt-2 hidden group-hover:block w-64 p-3 bg-gray-800 border border-gray-700 rounded-lg shadow-xl text-xs z-50">
+                            <div class="font-semibold text-amber-500 mb-1">80% Confidence Interval</div>
+                            <p class="text-gray-300 leading-relaxed">
+                                Likely trading range (10th to 90th percentile), excluding extreme outliers.
+                            </p>
+                            <!-- Arrow pointing up -->
+                            <div class="absolute -top-1 left-4 w-2 h-2 bg-gray-800 border-t border-l border-gray-700 transform rotate-45"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-gray-500 text-xs mt-2" id="outputPsqft">$0 / sqft</div>
+                </div>
+
+                <div class="space-y-3 border-t border-gray-700 pt-6 text-sm">
+                    <div class="flex justify-between">
+                        <span class="text-gray-400">Base (Intercept)</span>
+                        <span class="text-gray-500">${intercept.toLocaleString()}</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-400">Area Adjustment</span>
+                        <span class="text-green-400" id="valLoc">+$0</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-400">Size Value</span>
+                        <span class="text-green-400" id="valSize">+$0</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-400">Age Impact</span>
+                        <span class="text-amber-400" id="valAge">+$0</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-400">Strata Fee Impact</span>
+                        <span class="text-red-400" id="valFee">-$0</span>
+                    </div>
                         <div class="flex justify-between">
-                            <span class="text-gray-400">Base (Intercept)</span>
-                            <span class="text-gray-500">${intercept.toLocaleString()}</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span class="text-gray-400">Area Adjustment</span>
-                            <span class="text-green-400" id="valLoc">+$0</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span class="text-gray-400">Size Value</span>
-                            <span class="text-green-400" id="valSize">+$0</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span class="text-gray-400">Age Impact</span>
-                            <span class="text-amber-400" id="valAge">+$0</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span class="text-gray-400">Strata Fee Impact</span>
-                            <span class="text-red-400" id="valFee">-$0</span>
-                        </div>
-                         <div class="flex justify-between">
-                            <span class="text-gray-400">Bathrooms</span>
-                            <span class="text-green-400" id="valBath">+$0</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span class="text-gray-400">Condition/Rainscreen</span>
-                            <span class="text-green-400" id="valQuality">+$0</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span class="text-gray-400">Features</span>
-                            <span class="text-green-400" id="valFeatures">+$0</span>
-                        </div>
+                        <span class="text-gray-400">Bathrooms</span>
+                        <span class="text-green-400" id="valBath">+$0</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-400">Condition/Rainscreen</span>
+                        <span class="text-green-400" id="valQuality">+$0</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-400">Features</span>
+                        <span class="text-green-400" id="valFeatures">+$0</span>
                     </div>
                 </div>
             </div>
@@ -242,12 +259,13 @@ const areaOptions = Object.entries(areaCoefficients)
             if (parkType === 'double') valParking = coefDoubleGarage;
             if (parkType === 'tandem') valParking = coefTandemGarage;
 
-            // Total Prediction
+            // Total Prediction (Mean/Median)
             let predictedPrice = intercept + valSize + valAge + valBath + valFee + valCondition + valRain + valEnd + valAC + valParking + areaCoefVal;
 
-            // Range Calculation (95% approx)
-            const lowerBound = predictedPrice - (2 * stdError);
-            const upperBound = predictedPrice + (2 * stdError);
+            // Range Calculation (80% Probability Interval: 10th - 90th Percentile)
+            // Z-score for 10th/90th is approx +/- 1.282
+            const lowerBound = predictedPrice - (1.282 * stdError);
+            const upperBound = predictedPrice + (1.282 * stdError);
 
             // Render
             outputs.price.innerText = format(predictedPrice);
