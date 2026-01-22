@@ -66,16 +66,17 @@ const accuracyPoints = listings
     });
 
 // 3. Prepare Feature Impact Data
-// We normalize some continuous variables (Age, Fee) to "units of impact" to make them comparable on the chart.
+// Separated into Areas and Features
 
-// Get top 3 positive and negative Area impacts for the chart
-const areaImpacts = Object.entries(model.areaCoefficients)
-    .filter(([k, v]) => k !== model.areaReference && Math.abs(v) > 0)
-    .map(([k, v]) => ({ label: k, value: v }))
-    .sort((a, b) => Math.abs(b.value) - Math.abs(a.value))
-    .slice(0, 5); // Take top 5 location impacts
+const areaPoints = Object.entries(model.areaCoefficients)
+    .map(([k, v]) => ({
+        label: k === model.areaReference ? `${k} (Baseline)` : k,
+        value: v,
+        isBaseline: k === model.areaReference
+    }))
+    .sort((a, b) => b.value - a.value); // Sort High to Low
 
-const featureImpacts = [
+const featurePoints = [
     { label: 'Double Garage', value: model.coefDoubleGarage },
     { label: 'Tandem Garage', value: model.coefTandemGarage },
     { label: 'End Unit', value: model.coefEndUnit },
@@ -84,8 +85,7 @@ const featureImpacts = [
     { label: 'Extra Bath', value: model.coefBath },
     { label: 'Condition (+1)', value: model.coefCondition },
     { label: 'Newer (10 Yrs)', value: model.coefAge * -10 },
-    { label: 'Lower Fee ($100)', value: model.coefFee * -100 },
-    ...areaImpacts
+    { label: 'Lower Fee ($100)', value: model.coefFee * -100 }
 ].sort((a, b) => Math.abs(b.value) - Math.abs(a.value)); 
 ---
 
@@ -100,12 +100,24 @@ const featureImpacts = [
             </div>
         </div>
         
-        <!-- Primary Chart: Feature Value Analysis -->
-        <div class="mb-10 bg-gray-50/50 p-6 rounded-xl border border-gray-100">
-            <h3 class="text-sm font-bold text-gray-800 uppercase tracking-wide mb-2">Estimated Feature Value ($)</h3>
-            <p class="text-xs text-gray-400 mb-6">Dollar value impact of specific features (Top 5 Areas included), holding other variables constant.</p>
-            <div class="relative h-[500px] w-full">
-                <canvas id="chartImpact"></canvas>
+        <!-- Primary Charts: Feature Value Analysis -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+            <!-- Neighborhoods -->
+            <div class="bg-gray-50/50 p-6 rounded-xl border border-gray-100">
+                <h3 class="text-sm font-bold text-gray-800 uppercase tracking-wide mb-2">Neighborhood Premiums ($)</h3>
+                <p class="text-xs text-gray-400 mb-6">Price impact relative to the baseline area ({model.areaReference}).</p>
+                <div class="relative h-[500px] w-full">
+                    <canvas id="chartAreas"></canvas>
+                </div>
+            </div>
+
+            <!-- Features -->
+            <div class="bg-gray-50/50 p-6 rounded-xl border border-gray-100">
+                <h3 class="text-sm font-bold text-gray-800 uppercase tracking-wide mb-2">Feature Values ($)</h3>
+                <p class="text-xs text-gray-400 mb-6">Estimated value of specific property attributes.</p>
+                <div class="relative h-[500px] w-full">
+                    <canvas id="chartFeatures"></canvas>
+                </div>
             </div>
         </div>
 
@@ -138,7 +150,7 @@ const featureImpacts = [
     </div>
 </section>
 
-<script define:vars={{ marketPoints, accuracyPoints, featureImpacts }}>
+<script define:vars={{ marketPoints, accuracyPoints, areaPoints, featurePoints }}>
 document.addEventListener('DOMContentLoaded', () => {
     // Shared Config
     const commonOptions = {
@@ -156,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 callbacks: {
                     label: (ctx) => {
                         const p = ctx.raw;
-                        // Bar Chart - check if it's the feature impact chart
+                        // Bar Chart
                         if (typeof p === 'number') { 
                              return `Value: ${new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD', maximumFractionDigits: 0 }).format(p)}`;
                         }
@@ -213,49 +225,68 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // --- Chart 1: Feature Impact (Bar) ---
-    const ctxImpact = document.getElementById('chartImpact').getContext('2d');
-    const chartImpact = new Chart(ctxImpact, {
+    // Shared Bar Options (Horizontal)
+    const barOptions = {
+        ...commonOptions,
+        indexAxis: 'y', // Horizontal
+        interaction: {
+            mode: 'y',
+            axis: 'y',
+            intersect: false
+        },
+        scales: {
+            x: {
+                grid: { color: '#e5e7eb', borderDash: [4, 4] },
+                ticks: { 
+                    font: { size: 11, family: 'Inter' },
+                    color: '#6b7280',
+                    callback: (val) => '$' + val/1000 + 'k' 
+                }
+            },
+            y: {
+                grid: { display: false },
+                ticks: { 
+                    font: { size: 12, family: 'Inter', weight: '500' },
+                    color: '#111827',
+                    autoSkip: false
+                }
+            }
+        }
+    };
+
+    // --- Chart 1: Areas ---
+    const ctxAreas = document.getElementById('chartAreas').getContext('2d');
+    new Chart(ctxAreas, {
         type: 'bar',
         data: {
-            labels: featureImpacts.map(f => f.label),
+            labels: areaPoints.map(f => f.label),
             datasets: [{
-                data: featureImpacts.map(f => f.value),
-                backgroundColor: featureImpacts.map(f => f.value > 0 ? '#10b981' : '#ef4444'),
+                data: areaPoints.map(f => f.value),
+                backgroundColor: areaPoints.map(f => f.isBaseline ? '#9ca3af' : (f.value >= 0 ? '#10b981' : '#ef4444')),
+                borderRadius: 4,
+                barThickness: 16
+            }]
+        },
+        options: barOptions
+    });
+
+    // --- Chart 2: Features ---
+    const ctxFeatures = document.getElementById('chartFeatures').getContext('2d');
+    new Chart(ctxFeatures, {
+        type: 'bar',
+        data: {
+            labels: featurePoints.map(f => f.label),
+            datasets: [{
+                data: featurePoints.map(f => f.value),
+                backgroundColor: featurePoints.map(f => f.value > 0 ? '#10b981' : '#ef4444'),
                 borderRadius: 4,
                 barThickness: 20
             }]
         },
-        options: {
-            ...commonOptions,
-            indexAxis: 'y', // Horizontal
-            interaction: {
-                mode: 'y', // Hovering anywhere on the horizontal row triggers tooltip
-                axis: 'y',
-                intersect: false
-            },
-            scales: {
-                x: {
-                    grid: { color: '#e5e7eb', borderDash: [4, 4] },
-                    ticks: { 
-                        font: { size: 11, family: 'Inter' },
-                        color: '#6b7280',
-                        callback: (val) => '$' + val/1000 + 'k' 
-                    }
-                },
-                y: {
-                    grid: { display: false },
-                    ticks: { 
-                        font: { size: 12, family: 'Inter', weight: '500' },
-                        color: '#111827',
-                        autoSkip: false
-                    }
-                }
-            }
-        }
+        options: barOptions
     });
 
-    // --- Chart 2: Price vs Size ---
+    // --- Chart 3: Price vs Size ---
     const ctxSize = document.getElementById('chartPriceSize').getContext('2d');
     const chartSize = new Chart(ctxSize, {
         type: 'scatter',
@@ -297,7 +328,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- Chart 3: Price vs Age ---
+    // --- Chart 4: Price vs Age ---
     const ctxAge = document.getElementById('chartPriceAge').getContext('2d');
     const chartAge = new Chart(ctxAge, {
         type: 'scatter',
@@ -345,7 +376,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- Chart 4: Accuracy (Pred vs Actual) ---
+    // --- Chart 5: Accuracy (Pred vs Actual) ---
     const maxVal = Math.max(...accuracyPoints.map(p => p.actual)) * 1.1;
     
     const ctxAcc = document.getElementById('chartAccuracy').getContext('2d');
