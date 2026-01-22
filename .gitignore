@@ -34,4 +34,8 @@ yarn-error.log*
 
 repomix-output.xml
 
-data/
+# Data Handling for Netlify
+# We ignore the raw HTML to save space/privacy
+data/html/
+# But we MUST un-ignore the processed JSON so Netlify has data to build the site
+!data/json/
