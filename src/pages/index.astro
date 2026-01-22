@@ -35,7 +35,8 @@ const {
     intercept, coefSqft, coefAge, coefBath,
     coefFee, coefCondition, coefRainscreen,
     coefAC, coefEndUnit,
-    coefDoubleGarage, coefTandemGarage, coefBurkeMtn, coefCityPM,
+    coefDoubleGarage, coefTandemGarage, 
+    areaCoefficients, areaReference,
     feeSlope, feeIntercept, stdError
 } = model;
 ---
@@ -75,8 +76,8 @@ const {
         coefEndUnit={coefEndUnit}
         coefDoubleGarage={coefDoubleGarage}
         coefTandemGarage={coefTandemGarage}
-        coefBurkeMtn={coefBurkeMtn}
-        coefCityPM={coefCityPM}
+        areaCoefficients={areaCoefficients}
+        areaReference={areaReference}
         feeSlope={feeSlope}
         feeIntercept={feeIntercept}
         stdError={stdError}

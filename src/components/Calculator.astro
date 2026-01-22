@@ -1,4 +1,6 @@
 ---
+import SearchSelect from './SearchSelect.astro';
+
 interface Props {
     intercept: number;
     coefSqft: number;
@@ -11,8 +13,8 @@ interface Props {
     coefEndUnit: number;
     coefDoubleGarage: number;
     coefTandemGarage: number;
-    coefBurkeMtn: number;
-    coefCityPM: number;
+    areaCoefficients: Record<string, number>;
+    areaReference: string;
     feeSlope: number;
     feeIntercept: number;
     stdError: number;
@@ -22,8 +24,17 @@ const {
     intercept, coefSqft, coefAge, coefBath,
     coefFee, coefCondition, coefRainscreen,
     coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, 
-    coefBurkeMtn, coefCityPM, feeSlope, feeIntercept, stdError
+    areaCoefficients, areaReference, feeSlope, feeIntercept, stdError
 } = Astro.props;
+
+// Transform area coefficients for the SearchSelect
+const areaOptions = Object.entries(areaCoefficients)
+    .sort((a, b) => b[1] - a[1]) // Sort by value desc
+    .map(([name, val]) => ({
+        label: name === areaReference ? `${name} (Baseline)` : name,
+        value: val, // The value input will store the coefficient directly
+        meta: val
+    }));
 ---
 
 <section id="calculator" class="py-12 bg-gray-50 border-y border-gray-200">
@@ -40,49 +51,49 @@ const {
                 <div class="col-span-12 md:col-span-7 p-6 md:p-8 space-y-6 border-r border-gray-100">
                     
                     <!-- Core -->
-                    <div class="grid grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Location</label>
-                            <select id="inputLoc" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
-                                <option value="0">Coquitlam (Central/Maillardville)</option>
-                                <option value="1">Burke Mountain (Premium)</option>
-                                <option value="2">Port Moody</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Year Built</label>
-                            <input type="number" id="inputYear" value="2015" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                    <div class="space-y-4">
+                        <SearchSelect 
+                            id="inputAreaCoef" 
+                            label="Neighborhood / Area" 
+                            options={areaOptions}
+                            initialValue="0"
+                            placeholder="Search for an area..."
+                        />
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Year Built</label>
+                                <input type="number" id="inputYear" value="2015" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Size (sqft)</label>
+                                <input type="number" id="inputArea" value="1500" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                            </div>
                         </div>
                     </div>
 
                     <!-- Size & Baths -->
                     <div class="grid grid-cols-2 gap-4">
                         <div>
-                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Size (sqft)</label>
-                            <input type="number" id="inputArea" value="1500" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
-                        </div>
-                        <div>
                             <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Bathrooms</label>
                             <input type="number" id="inputBath" value="2.5" step="0.5" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                        </div>
+                        <div>
+                             <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Strata Fee ($)</label>
+                            <input type="number" id="inputFee" value="350" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
                         </div>
                     </div>
 
                     <!-- Quality / Fees -->
-                    <div class="grid grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Strata Fee ($)</label>
-                            <input type="number" id="inputFee" value="350" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Condition (1-5)</label>
-                            <select id="inputCondition" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
-                                <option value="1">1 - Needs Work</option>
-                                <option value="2">2 - Original/Dated</option>
-                                <option value="3" selected>3 - Average</option>
-                                <option value="4">4 - Updated</option>
-                                <option value="5">5 - Brand New/Reno</option>
-                            </select>
-                        </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Condition (1-5)</label>
+                        <select id="inputCondition" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                            <option value="1">1 - Needs Work</option>
+                            <option value="2">2 - Original/Dated</option>
+                            <option value="3" selected>3 - Average</option>
+                            <option value="4">4 - Updated</option>
+                            <option value="5">5 - Brand New/Reno</option>
+                        </select>
                     </div>
 
                     <!-- Deep Data -->
@@ -132,6 +143,10 @@ const {
                             <span class="text-gray-500">${intercept.toLocaleString()}</span>
                         </div>
                         <div class="flex justify-between">
+                            <span class="text-gray-400">Area Adjustment</span>
+                            <span class="text-green-400" id="valLoc">+$0</span>
+                        </div>
+                        <div class="flex justify-between">
                             <span class="text-gray-400">Size Value</span>
                             <span class="text-green-400" id="valSize">+$0</span>
                         </div>
@@ -155,10 +170,6 @@ const {
                             <span class="text-gray-400">Features</span>
                             <span class="text-green-400" id="valFeatures">+$0</span>
                         </div>
-                        <div class="flex justify-between">
-                            <span class="text-gray-400">Location Premium</span>
-                            <span class="text-green-400" id="valLoc">+$0</span>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -166,11 +177,11 @@ const {
     </div>
 </section>
 
-<script define:vars={{ intercept, coefSqft, coefAge, coefBath, coefFee, coefCondition, coefRainscreen, coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, coefBurkeMtn, coefCityPM, feeSlope, feeIntercept, stdError }}>
+<script define:vars={{ intercept, coefSqft, coefAge, coefBath, coefFee, coefCondition, coefRainscreen, coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, stdError }}>
     document.addEventListener('DOMContentLoaded', () => {
         
         const inputs = {
-            loc: document.getElementById('inputLoc'),
+            areaCoef: document.getElementById('inputAreaCoef'), // This is the hidden input from SearchSelect
             year: document.getElementById('inputYear'),
             area: document.getElementById('inputArea'),
             bath: document.getElementById('inputBath'),
@@ -201,7 +212,7 @@ const {
 
         function calculate() {
             // Get Values
-            const locVal = parseInt(inputs.loc.value);
+            const areaCoefVal = parseFloat(inputs.areaCoef.value) || 0;
             const year = parseFloat(inputs.year.value);
             const area = parseFloat(inputs.area.value);
             const bath = parseFloat(inputs.bath.value);
@@ -231,13 +242,8 @@ const {
             if (parkType === 'double') valParking = coefDoubleGarage;
             if (parkType === 'tandem') valParking = coefTandemGarage;
 
-            // Location Logic
-            let valLoc = 0;
-            if (locVal === 1) valLoc = coefBurkeMtn; // Burke
-            if (locVal === 2) valLoc = coefCityPM;   // PM
-
             // Total Prediction
-            let predictedPrice = intercept + valSize + valAge + valBath + valFee + valCondition + valRain + valEnd + valAC + valParking + valLoc;
+            let predictedPrice = intercept + valSize + valAge + valBath + valFee + valCondition + valRain + valEnd + valAC + valParking + areaCoefVal;
 
             // Range Calculation (95% approx)
             const lowerBound = predictedPrice - (2 * stdError);
@@ -254,7 +260,10 @@ const {
             outputs.valBath.innerText = (valBath > 0 ? "+" : "") + format(valBath);
             outputs.valQuality.innerText = "+" + format(valCondition + valRain);
             outputs.valFeatures.innerText = "+" + format(valParking + valEnd + valAC);
-            outputs.valLoc.innerText = "+" + format(valLoc);
+            
+            // Location
+            outputs.valLoc.className = areaCoefVal >= 0 ? "text-green-400" : "text-red-400";
+            outputs.valLoc.innerText = (areaCoefVal > 0 ? "+" : "") + format(areaCoefVal);
 
             // Dispatch event for charts
             const event = new CustomEvent('deprecity:model-update', {
@@ -269,8 +278,10 @@ const {
 
         // Attach Listeners
         Object.values(inputs).forEach(input => {
-            input.addEventListener('input', calculate);
-            input.addEventListener('change', calculate);
+            if(input) {
+                input.addEventListener('input', calculate);
+                input.addEventListener('change', calculate);
+            }
         });
 
         // Initial calculation - wait for charts to be ready

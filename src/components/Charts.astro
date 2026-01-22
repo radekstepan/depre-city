@@ -29,15 +29,13 @@ const accuracyPoints = listings
         const isDouble = l.parkingType === 'garage_double' ? 1 : 0;
         const isTandem = l.parkingType === 'garage_tandem' ? 1 : 0;
 
-        const fullText = (l.address + " " + l.city + " " + (l.description || "")).toLowerCase();
-        const isBurke = fullText.includes('burke') || 
-                        fullText.includes('smiling creek') || 
-                        fullText.includes('partington') ||
-                        fullText.includes('gislason') ||
-                        fullText.includes('mitchell') ||
-                        fullText.includes('princeton') ? 1 : 0;
+        // Reconstruct Location Logic locally or rely on stored?
+        // For simplicity in chart, we do a rough match against coefficients
+        // In a real app, we'd store the computed coefficient on the Listing object during model gen
+        // Here we approximate based on the largest matching key
+        const locationStr = `${l.city} - ${l.subArea || 'Other'}`;
+        const locCoef = model.areaCoefficients[locationStr] || 0;
 
-        const isPM = l.city.toLowerCase().includes('port moody') ? 1 : 0;
         const isEnd = l.isEndUnit ? 1 : 0;
         const hasAC = l.hasAC ? 1 : 0;
         const baths = l.bathrooms || 1;
@@ -56,8 +54,7 @@ const accuracyPoints = listings
             (isEnd * model.coefEndUnit) +
             (isDouble * model.coefDoubleGarage) +
             (isTandem * model.coefTandemGarage) +
-            (isBurke * model.coefBurkeMtn) +
-            (isPM * model.coefCityPM);
+            locCoef;
 
         return {
             actual: l.price,
@@ -70,19 +67,26 @@ const accuracyPoints = listings
 
 // 3. Prepare Feature Impact Data
 // We normalize some continuous variables (Age, Fee) to "units of impact" to make them comparable on the chart.
+
+// Get top 3 positive and negative Area impacts for the chart
+const areaImpacts = Object.entries(model.areaCoefficients)
+    .filter(([k, v]) => k !== model.areaReference && Math.abs(v) > 0)
+    .map(([k, v]) => ({ label: k, value: v }))
+    .sort((a, b) => Math.abs(b.value) - Math.abs(a.value))
+    .slice(0, 5); // Take top 5 location impacts
+
 const featureImpacts = [
     { label: 'Double Garage', value: model.coefDoubleGarage },
     { label: 'Tandem Garage', value: model.coefTandemGarage },
     { label: 'End Unit', value: model.coefEndUnit },
     { label: 'Air Con', value: model.coefAC },
     { label: 'Rainscreen', value: model.coefRainscreen },
-    { label: 'Burke Mtn', value: model.coefBurkeMtn },
-    { label: 'Port Moody', value: model.coefCityPM },
     { label: 'Extra Bath', value: model.coefBath },
-    { label: 'Condition (+1 Lvl)', value: model.coefCondition },
-    { label: 'Newer (10 Yrs)', value: model.coefAge * -10 }, // Value of being 10 years newer
-    { label: 'Lower Fee ($100)', value: model.coefFee * -100 } // Value of $100 lower maintenance fee
-].sort((a, b) => Math.abs(b.value) - Math.abs(a.value)); // Sort by magnitude
+    { label: 'Condition (+1)', value: model.coefCondition },
+    { label: 'Newer (10 Yrs)', value: model.coefAge * -10 },
+    { label: 'Lower Fee ($100)', value: model.coefFee * -100 },
+    ...areaImpacts
+].sort((a, b) => Math.abs(b.value) - Math.abs(a.value)); 
 ---
 
 <section id="charts" class="py-12 bg-white border-b border-gray-200">
@@ -99,8 +103,8 @@ const featureImpacts = [
         <!-- Primary Chart: Feature Value Analysis -->
         <div class="mb-10 bg-gray-50/50 p-6 rounded-xl border border-gray-100">
             <h3 class="text-sm font-bold text-gray-800 uppercase tracking-wide mb-2">Estimated Feature Value ($)</h3>
-            <p class="text-xs text-gray-400 mb-6">Dollar value impact of specific features, holding all other variables constant.</p>
-            <div class="relative h-96 w-full">
+            <p class="text-xs text-gray-400 mb-6">Dollar value impact of specific features (Top 5 Areas included), holding other variables constant.</p>
+            <div class="relative h-[500px] w-full">
                 <canvas id="chartImpact"></canvas>
             </div>
         </div>

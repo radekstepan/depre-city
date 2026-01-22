@@ -39,9 +39,9 @@ export interface MarketModel {
     coefDoubleGarage: number; 
     coefTandemGarage: number;
     
-    // Location Coefficients
-    coefBurkeMtn: number;     
-    coefCityPM: number;
+    // Location Coefficients (Dynamic)
+    areaCoefficients: Record<string, number>;
+    areaReference: string;
     
     // Metrics
     feeIntercept: number;
@@ -50,50 +50,69 @@ export interface MarketModel {
     stdError: number;        // Standard Error of the Estimate (for Range)
 }
 
+function normalizeLocation(city: string, subArea?: string): string {
+    const c = city.trim();
+    const s = subArea ? subArea.trim() : 'Other';
+    // Clean up typical variations if LLM returns "Coquitlam West" as subArea but City is Coquitlam
+    return `${c} - ${s}`;
+}
+
 export function generateMarketModel(data: Listing[]): MarketModel {
     // Filter invalid data
     const validData = data.filter(d => d.price > 100000 && d.sqft > 300 && d.year > 1900);
+
+    // --- Identify Areas ---
+    const allLocations = validData.map(d => normalizeLocation(d.city, d.subArea));
+    
+    // Count frequencies to pick a reference category (Most common)
+    const counts: Record<string, number> = {};
+    allLocations.forEach(loc => counts[loc] = (counts[loc] || 0) + 1);
+    
+    // Sort locations by frequency descending
+    const sortedLocations = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+    const referenceLocation = sortedLocations[0][0]; // Most common area is the baseline
+    const distinctAreas = sortedLocations.map(pair => pair[0]).filter(loc => loc !== referenceLocation);
 
     // --- Prepare Data for OLS ---
     
     // Y: Price
     const y = validData.map(d => d.price);
-
     const currentYear = new Date().getFullYear();
 
     // X: Features
     const X = validData.map(d => {
         const age = currentYear - d.year;
-        
-        // 1. Core Drivers
         const baths = d.bathrooms || 1;
         const fee = d.fee || 0;
-        const condition = d.condition || 3; // Default to 'Average' if missing
+        const condition = d.condition || 3;
         const isRainscreen = d.rainscreen ? 1 : 0;
-
-        // 2. Parking Dummies (0/1 flags)
         const isDouble = d.parkingType === 'garage_double' ? 1 : 0;
         const isTandem = d.parkingType === 'garage_tandem' ? 1 : 0;
-
-        // 3. Location Logic
-        const fullText = (d.address + " " + d.city + " " + (d.description || "")).toLowerCase();
-        
-        // Detect Premium Sub-areas
-        const isBurke = fullText.includes('burke') || 
-                        fullText.includes('smiling creek') || 
-                        fullText.includes('partington') || 
-                        fullText.includes('gislason') || 
-                        fullText.includes('mitchell') || 
-                        fullText.includes('princeton') ? 1 : 0;
-
-        const isPM = d.city.toLowerCase().includes('port moody') ? 1 : 0;
-        
         const isEnd = d.isEndUnit ? 1 : 0;
         const hasAC = d.hasAC ? 1 : 0;
 
+        // Current listing location
+        const loc = normalizeLocation(d.city, d.subArea);
+
+        // Generate One-Hot Encoding for Areas
+        const areaDummies = distinctAreas.map(area => (loc === area ? 1 : 0));
+
         // Feature Vector Order:
-        // [0:Intercept, 1:Sqft, 2:Age, 3:Bath, 4:Fee, 5:Condition, 6:Rainscreen, 7:AC, 8:End, 9:DoubleG, 10:TandemG, 11:Burke, 12:PM]
-        return [1, d.sqft, age, baths, fee, condition, isRainscreen, hasAC, isEnd, isDouble, isTandem, isBurke, isPM];
+        // [0:Intercept, 1:Sqft, 2:Age, 3:Bath, 4:Fee, 5:Condition, 6:Rainscreen, 7:AC, 8:End, 9:DoubleG, 10:TandemG, ...Areas]
+        return [
+            1, 
+            d.sqft, 
+            age, 
+            baths, 
+            fee, 
+            condition, 
+            isRainscreen, 
+            hasAC, 
+            isEnd, 
+            isDouble, 
+            isTandem, 
+            ...areaDummies
+        ];
     });
 
     // Run Regression
@@ -104,27 +123,33 @@ export function generateMarketModel(data: Listing[]): MarketModel {
         betas[0] = ss.mean(y);
     }
 
-    // --- Calculate Model Accuracy (R-squared & Std Error) ---
-    let rss = 0; // Residual Sum of Squares
-    let tss = 0; // Total Sum of Squares
+    // Map coefficients
+    const areaCoefMap: Record<string, number> = {};
+    // Base Case
+    areaCoefMap[referenceLocation] = 0; 
+    // Other Areas
+    distinctAreas.forEach((area, idx) => {
+        // betas index offset is 11 (intercept + 10 features)
+        areaCoefMap[area] = Math.round(betas[11 + idx]);
+    });
+
+    // --- Calculate Model Accuracy ---
+    let rss = 0;
+    let tss = 0;
     const yMean = ss.mean(y);
 
     X.forEach((row, i) => {
         const predicted = row.reduce((sum, val, idx) => sum + val * betas[idx], 0);
-        const actual = y[i];
-        rss += Math.pow(actual - predicted, 2);
-        tss += Math.pow(actual - yMean, 2);
+        rss += Math.pow(y[i] - predicted, 2);
+        tss += Math.pow(y[i] - yMean, 2);
     });
 
     const r2 = tss > 0 ? 1 - (rss / tss) : 0;
-    
-    // Standard Error of the Estimate (SEE)
-    // Degrees of freedom = n - p - 1 (where p is predictors excluding intercept)
     const p = X[0].length - 1;
     const n = validData.length;
     const stdError = n > p + 1 ? Math.sqrt(rss / (n - p - 1)) : 0;
 
-    // Fee Regression (Linear) - for calculating "Expected Fee"
+    // Fee Regression
     const feePoints = validData.filter(d => d.fee > 0).map(d => [d.sqft, d.fee]);
     const feeReg = feePoints.length > 2 ? ss.linearRegression(feePoints) : { m: 0, b: 0 };
 
@@ -132,7 +157,6 @@ export function generateMarketModel(data: Listing[]): MarketModel {
         generatedAt: new Date().toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' }),
         sampleSize: validData.length,
         
-        // Coefficients
         intercept: Math.round(betas[0]),
         coefSqft: Math.round(betas[1]),
         coefAge: Math.round(betas[2]),
@@ -144,10 +168,10 @@ export function generateMarketModel(data: Listing[]): MarketModel {
         coefEndUnit: Math.round(betas[8]),
         coefDoubleGarage: Math.round(betas[9]),
         coefTandemGarage: Math.round(betas[10]),
-        coefBurkeMtn: Math.round(betas[11]),
-        coefCityPM: Math.round(betas[12]),
+        
+        areaCoefficients: areaCoefMap,
+        areaReference: referenceLocation,
 
-        // Metrics
         feeIntercept: feeReg.b,
         feeSlope: feeReg.m,
         modelConfidence: r2,

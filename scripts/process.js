@@ -47,7 +47,8 @@ async function extractDeepData(description, features = []) {
       "hasAC": boolean,
       "isRainscreened": boolean,
       "outdoorSpace": "balcony" | "yard" | "rooftop" | "none",
-      "condition": number (1-5 score: 1=Needs Work, 2=Original/Dated, 3=Average/Maintained, 4=Updated, 5=Brand New/Fully Reno)
+      "condition": number (1-5 score: 1=Needs Work, 2=Original/Dated, 3=Average/Maintained, 4=Updated, 5=Brand New/Fully Reno),
+      "subArea": string (The specific neighborhood name if mentioned. e.g. "Burke Mountain", "Maillardville". Use "Other" if unknown.)
     }
     `;
 
@@ -101,6 +102,7 @@ function parseHtml(htmlContent, filename) {
         // Deep Data Placeholders
         description: "",
         features: [],
+        subArea: null, // Initialize as null to track extraction success
         _sourceUrl: sourceUrl,
         _scrapedAt: scrapedAt,
         _rawFile: filename
@@ -159,6 +161,7 @@ function parseHtml(htmlContent, filename) {
         const tds = Array.from(document.querySelectorAll('td, dt'));
         for (const td of tds) {
             const text = td.textContent.trim().toLowerCase();
+            // Check if any label is in the text
             if (labels.some(l => text.includes(l.toLowerCase()))) {
                 const nextEl = td.nextElementSibling;
                 if (nextEl) return nextEl.textContent.trim();
@@ -172,12 +175,10 @@ function parseHtml(htmlContent, filename) {
     if (yearStr) {
         listing.year = parseInt(yearStr.replace(/[^0-9]/g, ''), 10);
     } else {
-        // Try extracting from embedded JSON data (for Zealty.ca - handles both escaped and unescaped quotes)
         const scriptMatches = htmlContent.match(/yearBuilt\\?["']?:(\d{4})/);
         if (scriptMatches) {
             listing.year = parseInt(scriptMatches[1], 10);
         } else {
-            // Fallback to Age field
             const ageStr = getTableValue(['Age']);
             if (ageStr) {
                 const match = ageStr.match(/\((\d{4})\)/);
@@ -191,6 +192,26 @@ function parseHtml(htmlContent, filename) {
 
     const taxStr = getTableValue(['Property Taxes', 'Gross Taxes']);
     if (taxStr) listing.propertyTax = cleanNumber(taxStr);
+
+    // Extraction of Neighbourhood/Sub-Area
+    let subArea = getTableValue(['Neighbourhood', 'Community', 'Sub-Area']);
+    
+    // Fallback to Breadcrumbs if table extraction failed
+    if (!subArea) {
+        const breadcrumbScript = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
+            .find(s => s.textContent.includes('BreadcrumbList'));
+        if (breadcrumbScript) {
+            try {
+                const bcData = JSON.parse(breadcrumbScript.textContent);
+                const items = bcData.itemListElement || [];
+                // Zealty pattern: Home(1) > Region(2) > City(3) > Area(4) > Postal(5)
+                const areaItem = items.find(i => i.position === 4);
+                if (areaItem && areaItem.name) subArea = areaItem.name;
+            } catch (e) {}
+        }
+    }
+
+    if (subArea) listing.subArea = subArea;
 
     const parkingStr = getTableValue(['Parking', 'Total Parking']);
     if (parkingStr) {
@@ -280,6 +301,12 @@ async function main() {
             
             const deepData = await extractDeepData(listing.description, listing.features);
             if (deepData) {
+                // Determine Priority for subArea
+                // If DOM gave us a specific subArea (not null), we ignore LLM's guess to prevent it overwriting with "Other"
+                if (listing.subArea && listing.subArea !== "Other") {
+                    delete deepData.subArea;
+                }
+
                 // Map specific deep data fields
                 Object.assign(listing, deepData);
                 
@@ -292,6 +319,11 @@ async function main() {
             } else {
                 llmFailCount++;
             }
+        }
+
+        // Final Default if subArea is still missing
+        if (!listing.subArea) {
+            listing.subArea = "Other";
         }
 
         // 3. Save
