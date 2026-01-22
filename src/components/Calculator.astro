@@ -18,35 +18,52 @@ interface Props {
     feeSlope: number;
     feeIntercept: number;
     stdError: number;
+    tStats: {
+        intercept: number;
+        coefSqft: number;
+        coefAge: number;
+        coefBath: number;
+        coefFee: number;
+        coefCondition: number;
+        coefRainscreen: number;
+        coefAC: number;
+        coefEndUnit: number;
+        coefDoubleGarage: number;
+        coefTandemGarage: number;
+        areaCoefficients: Record<string, number>;
+    };
 }
 
 const { 
     intercept, coefSqft, coefAge, coefBath,
     coefFee, coefCondition, coefRainscreen,
     coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, 
-    areaCoefficients, areaReference, feeSlope, feeIntercept, stdError
+    areaCoefficients, areaReference, feeSlope, feeIntercept, stdError,
+    tStats
 } = Astro.props;
 
 // Transform area coefficients for the SearchSelect
 const areaOptions = Object.entries(areaCoefficients)
     .sort((a, b) => b[1] - a[1]) // Sort by value desc
-    .map(([name, val]) => ({
-        label: name === areaReference ? `${name} (Baseline)` : name,
-        value: val, // The value input will store the coefficient directly
-        meta: val
-    }));
+    .map(([name, val]) => {
+        const sig = Math.abs(tStats.areaCoefficients[name]) >= 1.65;
+        return {
+            label: name === areaReference ? `${name} (Baseline)` : `${name} ${sig ? '' : '(Low Sig)'}`,
+            value: val, 
+            meta: val
+        };
+    });
 ---
 
 <section id="calculator" class="py-12 bg-gray-50 border-y border-gray-200">
     <div class="max-w-4xl mx-auto px-4 md:px-6">
-        <!-- Removed overflow-hidden to allow tooltip to pop out if needed, added specific rounding to children -->
         <div class="bg-white rounded-xl shadow-sm border border-gray-200 flex flex-col md:flex-row">
             
             <!-- Inputs -->
             <div class="w-full md:w-7/12 p-6 md:p-8 space-y-6 border-b md:border-b-0 md:border-r border-gray-100 rounded-t-xl md:rounded-tr-none md:rounded-l-xl bg-white">
                 <div class="mb-6">
                     <h2 class="text-2xl font-bold text-gray-900">Feature Pricing Calculator</h2>
-                    <p class="text-sm text-gray-500 mt-1">Adjust property attributes to see their isolated impact on market value.</p>
+                    <p class="text-sm text-gray-500 mt-1">Adjust property attributes. Features with low statistical significance are marked.</p>
                 </div>
                 
                 <!-- Core -->
@@ -156,35 +173,41 @@ const areaOptions = Object.entries(areaCoefficients)
                 </div>
 
                 <div class="space-y-3 border-t border-gray-700 pt-6 text-sm">
-                    <div class="flex justify-between">
+                    <div class="flex justify-between items-center">
                         <span class="text-gray-400">Base (Intercept)</span>
                         <span class="text-gray-500">${intercept.toLocaleString()}</span>
                     </div>
-                    <div class="flex justify-between">
+                    <div class="flex justify-between items-center">
                         <span class="text-gray-400">Area Adjustment</span>
                         <span class="text-green-400" id="valLoc">+$0</span>
                     </div>
-                    <div class="flex justify-between">
+                    <div class="flex justify-between items-center">
                         <span class="text-gray-400">Size Value</span>
                         <span class="text-green-400" id="valSize">+$0</span>
                     </div>
-                    <div class="flex justify-between">
+                    <div class="flex justify-between items-center">
                         <span class="text-gray-400">Age Impact</span>
                         <span class="text-amber-400" id="valAge">+$0</span>
                     </div>
-                    <div class="flex justify-between">
+                    <div class="flex justify-between items-center">
                         <span class="text-gray-400">Strata Fee Impact</span>
                         <span class="text-red-400" id="valFee">-$0</span>
                     </div>
-                        <div class="flex justify-between">
+                    <div class="flex justify-between items-center">
                         <span class="text-gray-400">Bathrooms</span>
-                        <span class="text-green-400" id="valBath">+$0</span>
+                        <div class="flex items-center gap-2">
+                            {Math.abs(tStats.coefBath) < 1.65 && <span class="text-[10px] text-gray-500 uppercase bg-gray-800 px-1 rounded">Low Sig</span>}
+                            <span class="text-green-400" id="valBath">+$0</span>
+                        </div>
                     </div>
-                    <div class="flex justify-between">
+                    <div class="flex justify-between items-center">
                         <span class="text-gray-400">Condition/Rainscreen</span>
-                        <span class="text-green-400" id="valQuality">+$0</span>
+                        <div class="flex items-center gap-2">
+                             {(Math.abs(tStats.coefCondition) < 1.65 && Math.abs(tStats.coefRainscreen) < 1.65) && <span class="text-[10px] text-gray-500 uppercase bg-gray-800 px-1 rounded">Low Sig</span>}
+                             <span class="text-green-400" id="valQuality">+$0</span>
+                        </div>
                     </div>
-                    <div class="flex justify-between">
+                    <div class="flex justify-between items-center">
                         <span class="text-gray-400">Features</span>
                         <span class="text-green-400" id="valFeatures">+$0</span>
                     </div>

@@ -37,7 +37,8 @@ const {
     coefAC, coefEndUnit,
     coefDoubleGarage, coefTandemGarage, 
     areaCoefficients, areaReference,
-    feeSlope, feeIntercept, stdError
+    feeSlope, feeIntercept, stdError,
+    tStats
 } = model;
 ---
 
@@ -81,6 +82,7 @@ const {
         feeSlope={feeSlope}
         feeIntercept={feeIntercept}
         stdError={stdError}
+        tStats={tStats}
     />
     
     <Charts listings={listings} model={model} />

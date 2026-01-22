@@ -42,6 +42,22 @@ export interface MarketModel {
     // Location Coefficients (Dynamic)
     areaCoefficients: Record<string, number>;
     areaReference: string;
+
+    // Significance (T-Statistics)
+    tStats: {
+        intercept: number;
+        coefSqft: number;
+        coefAge: number;
+        coefBath: number;
+        coefFee: number;
+        coefCondition: number;
+        coefRainscreen: number;
+        coefAC: number;
+        coefEndUnit: number;
+        coefDoubleGarage: number;
+        coefTandemGarage: number;
+        areaCoefficients: Record<string, number>;
+    };
     
     // Metrics
     feeIntercept: number;
@@ -116,21 +132,26 @@ export function generateMarketModel(data: Listing[]): MarketModel {
     });
 
     // Run Regression
-    const betas = solveOLS(X, y);
+    const { betas, tStats } = solveOLS(X, y);
 
     // Fallback if matrix singular or empty
     if (betas.every(b => b === 0) && validData.length > 0) {
         betas[0] = ss.mean(y);
     }
 
-    // Map coefficients
+    // Map coefficients & t-stats
     const areaCoefMap: Record<string, number> = {};
+    const areaTStatMap: Record<string, number> = {};
+    
     // Base Case
     areaCoefMap[referenceLocation] = 0; 
+    areaTStatMap[referenceLocation] = 0;
+
     // Other Areas
     distinctAreas.forEach((area, idx) => {
         // betas index offset is 11 (intercept + 10 features)
         areaCoefMap[area] = Math.round(betas[11 + idx]);
+        areaTStatMap[area] = tStats[11 + idx];
     });
 
     // --- Calculate Model Accuracy ---
@@ -171,6 +192,21 @@ export function generateMarketModel(data: Listing[]): MarketModel {
         
         areaCoefficients: areaCoefMap,
         areaReference: referenceLocation,
+
+        tStats: {
+            intercept: tStats[0],
+            coefSqft: tStats[1],
+            coefAge: tStats[2],
+            coefBath: tStats[3],
+            coefFee: tStats[4],
+            coefCondition: tStats[5],
+            coefRainscreen: tStats[6],
+            coefAC: tStats[7],
+            coefEndUnit: tStats[8],
+            coefDoubleGarage: tStats[9],
+            coefTandemGarage: tStats[10],
+            areaCoefficients: areaTStatMap
+        },
 
         feeIntercept: feeReg.b,
         feeSlope: feeReg.m,

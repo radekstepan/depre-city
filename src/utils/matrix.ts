@@ -87,13 +87,20 @@ export class Matrix {
     }
 }
 
+export interface OLSResult {
+    betas: number[];
+    stdErrors: number[];
+    tStats: number[];
+}
+
 /**
  * Solves y = X * beta using Normal Equation: beta = (X'X)^-1 X'y
+ * Also calculates Standard Errors and T-Statistics for the coefficients.
  * @param X - Design matrix (n samples x m features) - Should include column of 1s for intercept
  * @param y - Target vector (n samples x 1)
- * @returns Array of coefficients [intercept, beta1, beta2, ...]
+ * @returns Object containing betas, standard errors, and t-stats
  */
-export function solveOLS(X_data: number[][], y_data: number[]): number[] {
+export function solveOLS(X_data: number[][], y_data: number[]): OLSResult {
     try {
         const X = new Matrix(X_data);
         const y = new Matrix(y_data.map(val => [val]));
@@ -103,7 +110,7 @@ export function solveOLS(X_data: number[][], y_data: number[]): number[] {
         const XtX = Xt.multiply(X);
         
         // (X^T * X)^-1
-        // Add small ridge regularization to diagonal if needed to prevent singular matrix
+        // Add small ridge regularization to diagonal to prevent singular matrix
         for(let i=0; i<XtX.rows; i++) {
             XtX.data[i][i] += 0.0001;
         }
@@ -114,11 +121,46 @@ export function solveOLS(X_data: number[][], y_data: number[]): number[] {
         const term = XtX_inv.multiply(Xt);
         
         // Final result: term * y
-        const beta = term.multiply(y);
+        const betaMatrix = term.multiply(y);
+        const betas = betaMatrix.data.map(row => row[0]);
+
+        // --- Statistics Calculation ---
+        const n = X_data.length;
+        const p = X_data[0].length;
         
-        return beta.data.map(row => row[0]);
+        // Calculate Residuals (y - y_hat)
+        let rss = 0;
+        for (let i = 0; i < n; i++) {
+            let y_hat = 0;
+            for (let j = 0; j < p; j++) {
+                y_hat += X_data[i][j] * betas[j];
+            }
+            rss += Math.pow(y_data[i] - y_hat, 2);
+        }
+
+        // Variance of the error term (Sigma squared)
+        // unbiased estimator: RSS / (n - p)
+        // If n <= p, we return 0 for stats to avoid divide by zero
+        const sigma2 = n > p ? rss / (n - p) : 0;
+
+        const stdErrors: number[] = [];
+        const tStats: number[] = [];
+
+        for (let j = 0; j < p; j++) {
+            // Variance of beta_j = sigma^2 * (XtX_inv)_jj
+            const varBeta = sigma2 * XtX_inv.data[j][j];
+            const se = Math.sqrt(Math.max(0, varBeta));
+            
+            stdErrors.push(se);
+            // t = beta / se
+            tStats.push(se > 1e-10 ? betas[j] / se : 0);
+        }
+
+        return { betas, stdErrors, tStats };
+
     } catch (e) {
         console.error("OLS Solver Error:", e);
-        return new Array(X_data[0].length).fill(0);
+        const zeros = new Array(X_data[0].length).fill(0);
+        return { betas: zeros, stdErrors: zeros, tStats: zeros };
     }
 }

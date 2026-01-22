@@ -29,10 +29,6 @@ const accuracyPoints = listings
         const isDouble = l.parkingType === 'garage_double' ? 1 : 0;
         const isTandem = l.parkingType === 'garage_tandem' ? 1 : 0;
 
-        // Reconstruct Location Logic locally or rely on stored?
-        // For simplicity in chart, we do a rough match against coefficients
-        // In a real app, we'd store the computed coefficient on the Listing object during model gen
-        // Here we approximate based on the largest matching key
         const locationStr = `${l.city} - ${l.subArea || 'Other'}`;
         const locCoef = model.areaCoefficients[locationStr] || 0;
 
@@ -72,20 +68,21 @@ const areaPoints = Object.entries(model.areaCoefficients)
     .map(([k, v]) => ({
         label: k === model.areaReference ? `${k} (Baseline)` : k,
         value: v,
-        isBaseline: k === model.areaReference
+        isBaseline: k === model.areaReference,
+        tStat: model.tStats.areaCoefficients[k] || 0
     }))
     .sort((a, b) => b.value - a.value); // Sort High to Low
 
 const featurePoints = [
-    { label: 'Double Garage', value: model.coefDoubleGarage },
-    { label: 'Tandem Garage', value: model.coefTandemGarage },
-    { label: 'End Unit', value: model.coefEndUnit },
-    { label: 'Air Con', value: model.coefAC },
-    { label: 'Rainscreen', value: model.coefRainscreen },
-    { label: 'Extra Bath', value: model.coefBath },
-    { label: 'Condition (+1)', value: model.coefCondition },
-    { label: 'Newer (10 Yrs)', value: model.coefAge * -10 },
-    { label: 'Lower Fee ($100)', value: model.coefFee * -100 }
+    { label: 'Double Garage', value: model.coefDoubleGarage, tStat: model.tStats.coefDoubleGarage },
+    { label: 'Tandem Garage', value: model.coefTandemGarage, tStat: model.tStats.coefTandemGarage },
+    { label: 'End Unit', value: model.coefEndUnit, tStat: model.tStats.coefEndUnit },
+    { label: 'Air Con', value: model.coefAC, tStat: model.tStats.coefAC },
+    { label: 'Rainscreen', value: model.coefRainscreen, tStat: model.tStats.coefRainscreen },
+    { label: 'Extra Bath', value: model.coefBath, tStat: model.tStats.coefBath },
+    { label: 'Condition (+1)', value: model.coefCondition, tStat: model.tStats.coefCondition },
+    { label: 'Newer (10 Yrs)', value: model.coefAge * -10, tStat: model.tStats.coefAge },
+    { label: 'Lower Fee ($100)', value: model.coefFee * -100, tStat: model.tStats.coefFee }
 ].sort((a, b) => Math.abs(b.value) - Math.abs(a.value)); 
 ---
 
@@ -105,7 +102,7 @@ const featurePoints = [
             <!-- Neighborhoods -->
             <div class="bg-gray-50/50 p-6 rounded-xl border border-gray-100">
                 <h3 class="text-sm font-bold text-gray-800 uppercase tracking-wide mb-2">Neighborhood Premiums ($)</h3>
-                <p class="text-xs text-gray-400 mb-6">Price impact relative to the baseline area ({model.areaReference}).</p>
+                <p class="text-xs text-gray-400 mb-6">Price impact relative to the baseline area ({model.areaReference}). Grey bars indicate low statistical significance (|t| &lt; 1.65).</p>
                 <div class="relative h-[500px] w-full">
                     <canvas id="chartAreas"></canvas>
                 </div>
@@ -114,7 +111,7 @@ const featurePoints = [
             <!-- Features -->
             <div class="bg-gray-50/50 p-6 rounded-xl border border-gray-100">
                 <h3 class="text-sm font-bold text-gray-800 uppercase tracking-wide mb-2">Feature Values ($)</h3>
-                <p class="text-xs text-gray-400 mb-6">Estimated value of specific property attributes.</p>
+                <p class="text-xs text-gray-400 mb-6">Estimated value of specific property attributes. Grey bars indicate low statistical significance.</p>
                 <div class="relative h-[500px] w-full">
                     <canvas id="chartFeatures"></canvas>
                 </div>
@@ -254,6 +251,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    // Helper: Determine Color based on t-stat
+    function getColor(val, tStat, isBaseline) {
+        if (isBaseline) return '#9ca3af'; // Grey for baseline
+        if (Math.abs(tStat) < 1.65) return '#e5e7eb'; // Light grey for insignificant
+        return val >= 0 ? '#10b981' : '#ef4444'; // Green/Red for significant
+    }
+
     // --- Chart 1: Areas ---
     const ctxAreas = document.getElementById('chartAreas').getContext('2d');
     new Chart(ctxAreas, {
@@ -262,7 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
             labels: areaPoints.map(f => f.label),
             datasets: [{
                 data: areaPoints.map(f => f.value),
-                backgroundColor: areaPoints.map(f => f.isBaseline ? '#9ca3af' : (f.value >= 0 ? '#10b981' : '#ef4444')),
+                backgroundColor: areaPoints.map(f => getColor(f.value, f.tStat, f.isBaseline)),
                 borderRadius: 4,
                 barThickness: 16
             }]
@@ -278,7 +282,7 @@ document.addEventListener('DOMContentLoaded', () => {
             labels: featurePoints.map(f => f.label),
             datasets: [{
                 data: featurePoints.map(f => f.value),
-                backgroundColor: featurePoints.map(f => f.value > 0 ? '#10b981' : '#ef4444'),
+                backgroundColor: featurePoints.map(f => getColor(f.value, f.tStat, false)),
                 borderRadius: 4,
                 barThickness: 20
             }]
