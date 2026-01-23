@@ -4,6 +4,12 @@ import { JSDOM } from 'jsdom';
 import 'dotenv/config';
 import cliProgress from 'cli-progress';
 import chalk from 'chalk';
+import readline from 'readline';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 // --- Configuration ---
 const HTML_DIR = path.join(process.cwd(), 'data/html');
@@ -22,6 +28,291 @@ const resolveEnv = (key) => {
     // Otherwise use the value as-is
     return value;
 };
+
+// --- Helper: CLI Flags ---
+const shouldSkipDedup = process.argv.includes('--no-dedup');
+
+// --- Helper: Fast Metadata Extraction ---
+function getMetadataFast(filePath) {
+    const fd = fs.openSync(filePath, 'r');
+    const bufferSize = 8192;
+    const buffer = Buffer.alloc(bufferSize);
+    let content = '';
+    let bytesRead;
+    
+    while ((bytesRead = fs.readSync(fd, buffer, 0, bufferSize, null)) > 0) {
+        content += buffer.toString('utf-8', 0, bytesRead);
+        
+        const sourceUrl = content.match(/<meta name="x-deprecity-source-url" content="([^"]+)">/)?.[1];
+        const scrapedAt = content.match(/<meta name="x-deprecity-scraped-at" content="([^"]+)">/)?.[1];
+        
+        if (sourceUrl !== undefined || scrapedAt !== undefined) {
+            fs.closeSync(fd);
+            return { 
+                sourceUrl: sourceUrl || "", 
+                scrapedAt: scrapedAt || "",
+                content: null
+            };
+        }
+        
+        content = content.slice(-1000);
+    }
+    
+    fs.closeSync(fd);
+    return { sourceUrl: "", scrapedAt: "", content: null };
+}
+
+// --- Helper: Address Extraction ---
+function extractAddress(htmlContent) {
+    const dom = new JSDOM(htmlContent);
+    const document = dom.window.document;
+    
+    const jsonLdScripts = document.querySelectorAll('script[type="application/ld+json"]');
+    for (const script of jsonLdScripts) {
+        try {
+            const json = JSON.parse(script.textContent);
+            const entity = json.mainEntity || json;
+            if (entity.address?.streetAddress) {
+                return entity.address.streetAddress;
+            }
+        } catch (e) {}
+    }
+    
+    const h1 = document.querySelector('h1');
+    if (h1) {
+        return h1.textContent.split(',')[0].trim();
+    }
+    
+    return null;
+}
+
+// --- Helper: URL Normalization ---
+function normalizeUrl(url) {
+    if (!url) return '';
+    try {
+        const u = new URL(url);
+        return u.origin + u.pathname.replace(/\/$/, '').toLowerCase();
+    } catch {
+        return url.toLowerCase().replace(/\/$/, '');
+    }
+}
+
+// --- Helper: Address Normalization ---
+function normalizeAddress(addr) {
+    if (!addr) return '';
+    return addr.toLowerCase()
+        .replace(/\s+/g, ' ')
+        .replace(/^(unit|suite|apt|#)\s*\d+\s*[-,]?\s*/i, '')
+        .trim();
+}
+
+// --- Helper: Find Duplicates ---
+function findDuplicates(htmlFiles) {
+    const urlGroups = new Map();
+    const addrGroups = new Map();
+    
+    for (const file of htmlFiles) {
+        const metadata = getMetadataFast(path.join(HTML_DIR, file));
+        const entry = { file, ...metadata };
+        
+        const normUrl = normalizeUrl(metadata.sourceUrl);
+        if (normUrl) {
+            if (!urlGroups.has(normUrl)) urlGroups.set(normUrl, []);
+            urlGroups.get(normUrl).push(entry);
+        }
+        
+        if (!normUrl && metadata.content === null) {
+            const htmlPath = path.join(HTML_DIR, file);
+            const fd = fs.openSync(htmlPath, 'r');
+            const bufferSize = 32768;
+            const buffer = Buffer.alloc(bufferSize);
+            let content = '';
+            let bytesRead;
+            
+            while ((bytesRead = fs.readSync(fd, buffer, 0, bufferSize, null)) > 0) {
+                content += buffer.toString('utf-8', 0, bytesRead);
+                
+                const address = extractAddress(content);
+                if (address) {
+                    const normAddr = normalizeAddress(address);
+                    entry.address = address;
+                    if (!addrGroups.has(normAddr)) addrGroups.set(normAddr, []);
+                    addrGroups.get(normAddr).push(entry);
+                    break;
+                }
+                
+                if (content.length > 50000) break;
+            }
+            
+            fs.closeSync(fd);
+        }
+    }
+    
+    const urlDupes = [...urlGroups.values()].filter(g => g.length > 1);
+    const addrDupes = [...addrGroups.values()].filter(g => g.length > 1);
+    
+    return { urlDupes, addrDupes };
+}
+
+// --- Helper: Automatic Cleanup ---
+function autoCleanupCopyFiles(htmlFiles) {
+    const copyPattern = / copy\.html$| \(\d+\)\.html$| - Copy\.html$/i;
+    const filesToDelete = htmlFiles.filter(f => copyPattern.test(f));
+    
+    if (filesToDelete.length === 0) return [];
+    
+    console.log(chalk.yellow(`\nAuto-cleaning ${filesToDelete.length} copy files...`));
+    
+    const deletedFiles = [];
+    for (const file of filesToDelete) {
+        const filePath = path.join(HTML_DIR, file);
+        try {
+            fs.unlinkSync(filePath);
+            deletedFiles.push(file);
+            console.log(chalk.gray(`  Deleted: ${file}`));
+        } catch (e) {
+            console.log(chalk.red(`  Failed to delete: ${file}`));
+        }
+    }
+    
+    return deletedFiles;
+}
+
+// --- Helper: Interactive Prompt for Duplicates ---
+function promptForDuplicates(duplicates, applyToAll = null) {
+    return new Promise((resolve) => {
+        const rl = readline.createInterface({
+            input: process.stdin,
+            output: process.stdout
+        });
+
+        const results = {
+            toDelete: [],
+            toSkip: [],
+            toKeep: []
+        };
+
+        let currentIndex = 0;
+        
+        const askNext = () => {
+            if (currentIndex >= duplicates.length) {
+                rl.close();
+                resolve(results);
+                return;
+            }
+
+            const group = duplicates[currentIndex];
+            const identifier = group[0].sourceUrl || group[0].address || 'Unknown';
+            
+            console.log(chalk.cyan(`\nDuplicate Group ${currentIndex + 1}/${duplicates.length}`));
+            console.log(chalk.yellow(`Listing: ${identifier}`));
+            console.log(chalk.gray('─'.repeat(60)));
+            
+            group.forEach((entry, i) => {
+                const timestamp = entry.scrapedAt ? new Date(entry.scrapedAt).toLocaleString() : 'Unknown';
+                const type = entry.sourceUrl ? 'URL' : 'Address';
+                console.log(`  ${i + 1}. ${chalk.white(entry.file)}`);
+                console.log(`     ${type} match | Scraped: ${timestamp}`);
+            });
+            
+            console.log(chalk.gray('─'.repeat(60)));
+            console.log('Options:');
+            console.log('  1. Delete duplicates (keep newest)');
+            console.log('  2. Skip duplicates (keep on disk, don\'t process)');
+            console.log('  3. Keep all (process normally)');
+            if (applyToAll === null) {
+                console.log('  4. Apply choice to all remaining duplicates');
+            }
+            
+            const question = applyToAll !== null 
+                ? `Choice (default: ${applyToAll}): `
+                : '\nYour choice (1-4): ';
+            
+            rl.question(question, (answer) => {
+                let choice;
+                
+                if (applyToAll !== null && answer.trim() === '') {
+                    choice = applyToAll;
+                } else {
+                    choice = answer.trim();
+                }
+
+                if (choice === '4' && applyToAll === null) {
+                    rl.question('Apply which choice to all remaining? (1-3): ', (applyChoice) => {
+                        applyToAll = applyChoice.trim();
+                        processChoice(applyToAll);
+                    });
+                    return;
+                }
+                
+                processChoice(choice);
+            });
+        };
+        
+        const processChoice = (choice) => {
+            const group = duplicates[currentIndex];
+            
+            if (choice === '1') {
+                const sorted = [...group].sort((a, b) => {
+                    const dateA = a.scrapedAt ? new Date(a.scrapedAt) : new Date(0);
+                    const dateB = b.scrapedAt ? new Date(b.scrapedAt) : new Date(0);
+                    return dateB - dateA;
+                });
+                const toKeep = sorted[0];
+                const toDelete = sorted.slice(1);
+                
+                results.toDelete.push(...toDelete.map(e => e.file));
+                results.toKeep.push(toKeep.file);
+                console.log(chalk.gray(`  Keeping: ${toKeep.file} (newest)`));
+            } else if (choice === '2') {
+                const sorted = [...group].sort((a, b) => {
+                    const dateA = a.scrapedAt ? new Date(a.scrapedAt) : new Date(0);
+                    const dateB = b.scrapedAt ? new Date(b.scrapedAt) : new Date(0);
+                    return dateB - dateA;
+                });
+                const toKeep = sorted[0];
+                const toSkip = sorted.slice(1);
+                
+                results.toSkip.push(...toSkip.map(e => e.file));
+                results.toKeep.push(toKeep.file);
+                console.log(chalk.gray(`  Processing: ${toKeep.file} (newest)`));
+                console.log(chalk.gray(`  Skipping: ${toSkip.map(e => e.file).join(', ')}`));
+            } else {
+                results.toKeep.push(...group.map(e => e.file));
+                console.log(chalk.gray(`  Keeping all: ${group.map(e => e.file).join(', ')}`));
+            }
+            
+            currentIndex++;
+            askNext();
+        };
+        
+        askNext();
+    });
+}
+
+// --- Helper: Execute Duplicate Actions ---
+function executeDuplicateActions(actions) {
+    console.log(chalk.cyan('\nExecuting duplicate actions...'));
+    
+    if (actions.toDelete.length > 0) {
+        console.log(chalk.gray(`Deleting ${actions.toDelete.length} files...`));
+        let deletedCount = 0;
+        for (const file of actions.toDelete) {
+            const filePath = path.join(HTML_DIR, file);
+            try {
+                fs.unlinkSync(filePath);
+                deletedCount++;
+            } catch (e) {
+                console.log(chalk.red(`  Failed to delete: ${file}`));
+            }
+        }
+        console.log(chalk.green(`  Deleted ${deletedCount} files`));
+    }
+    
+    if (actions.toSkip.length > 0) {
+        console.log(chalk.yellow(`  Skipping ${actions.toSkip.length} files from processing`));
+    }
+}
 
 // --- Helper: LLM Extraction ---
 async function extractDeepData(description, features = []) {
@@ -251,15 +542,61 @@ async function main() {
         process.exit(1);
     }
     
-    // Ensure output dir exists
     if (!fs.existsSync(JSON_DIR)) {
         fs.mkdirSync(JSON_DIR, { recursive: true });
     }
 
-    const htmlFiles = fs.readdirSync(HTML_DIR).filter(f => f.endsWith('.html'));
+    let htmlFiles = fs.readdirSync(HTML_DIR).filter(f => f.endsWith('.html'));
     
-    // Check which files need to be processed
+    let skippedFiles = new Set();
+    
+    if (!shouldSkipDedup && htmlFiles.length > 0) {
+        console.log(chalk.cyan('\n=== Deduplication Phase ==='));
+        
+        const deletedCopyFiles = autoCleanupCopyFiles(htmlFiles);
+        htmlFiles = htmlFiles.filter(f => !deletedCopyFiles.includes(f));
+        
+        if (htmlFiles.length > 1) {
+            console.log(chalk.gray('Scanning for duplicates...'));
+            const { urlDupes, addrDupes } = findDuplicates(htmlFiles);
+            
+            const seenFiles = new Set();
+            const allDupes = [];
+            
+            for (const group of urlDupes) {
+                const groupFiles = new Set(group.map(g => g.file));
+                const key = [...groupFiles].sort().join('|');
+                if (!seenFiles.has(key)) {
+                    seenFiles.add(key);
+                    allDupes.push(group);
+                }
+            }
+            
+            for (const group of addrDupes) {
+                const groupFiles = new Set(group.map(g => g.file));
+                const key = [...groupFiles].sort().join('|');
+                if (!seenFiles.has(key)) {
+                    seenFiles.add(key);
+                    allDupes.push(group);
+                }
+            }
+            
+            if (allDupes.length > 0) {
+                const totalFiles = allDupes.reduce((acc, g) => acc + g.length, 0);
+                console.log(chalk.yellow(`\nFound ${allDupes.length} duplicate groups (${totalFiles} files)`));
+                const actions = await promptForDuplicates(allDupes);
+                executeDuplicateActions(actions);
+                
+                skippedFiles = new Set(actions.toSkip);
+                htmlFiles = htmlFiles.filter(f => !actions.toDelete.includes(f));
+            } else {
+                console.log(chalk.green('No duplicates found.\n'));
+            }
+        }
+    }
+    
     const filesToProcess = htmlFiles.filter(file => {
+        if (skippedFiles.has(file)) return false;
         const jsonFileName = file.replace('.html', '.json');
         const jsonPath = path.join(JSON_DIR, jsonFileName);
         return !fs.existsSync(jsonPath);
@@ -270,7 +607,8 @@ async function main() {
         return;
     }
 
-    console.log(chalk.cyan(`\nFound ${filesToProcess.length} new files to process in ${HTML_DIR}\n`));
+    console.log(chalk.cyan(`\n=== Processing Phase ===`));
+    console.log(chalk.cyan(`Found ${filesToProcess.length} files to process\n`));
 
     // Initialize Progress Bar
     const b1 = new cliProgress.SingleBar({
