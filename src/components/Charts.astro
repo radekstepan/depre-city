@@ -102,8 +102,8 @@ const featurePoints = [
             <!-- Neighborhoods -->
             <div class="bg-gray-50/50 p-6 rounded-xl border border-gray-100">
                 <h3 class="text-sm font-bold text-gray-800 uppercase tracking-wide mb-2">Neighborhood Premiums ($)</h3>
-                <p class="text-xs text-gray-400 mb-6">Price impact relative to the baseline area ({model.areaReference}). Grey bars indicate low statistical significance (|t| &lt; 1.65).</p>
-                <div class="relative h-[500px] w-full">
+                <p class="text-xs text-gray-400 mb-6">Price impact relative to the baseline area ({model.areaReference}). <span class="text-emerald-600 font-medium">Green</span> is a premium, <span class="text-red-600 font-medium">red</span> is a discount. Grey indicates low significance.</p>
+                <div class="relative w-full" style={`height: ${Math.max(500, areaPoints.length * 28)}px`}>
                     <canvas id="chartAreas"></canvas>
                 </div>
             </div>
@@ -111,7 +111,7 @@ const featurePoints = [
             <!-- Features -->
             <div class="bg-gray-50/50 p-6 rounded-xl border border-gray-100">
                 <h3 class="text-sm font-bold text-gray-800 uppercase tracking-wide mb-2">Feature Values ($)</h3>
-                <p class="text-xs text-gray-400 mb-6">Estimated value of specific property attributes. Grey bars indicate low statistical significance.</p>
+                <p class="text-xs text-gray-400 mb-6">Estimated value of specific property attributes. <span class="text-emerald-600 font-medium">Green</span> is positive, <span class="text-red-600 font-medium">red</span> is negative. Grey indicates low significance.</p>
                 <div class="relative h-[500px] w-full">
                     <canvas id="chartFeatures"></canvas>
                 </div>
@@ -231,6 +231,8 @@ document.addEventListener('DOMContentLoaded', () => {
             axis: 'y',
             intersect: false
         },
+        categoryPercentage: 0.8,
+        barPercentage: 0.9,
         scales: {
             x: {
                 grid: { color: '#e5e7eb', borderDash: [4, 4] },
@@ -251,11 +253,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // Helper: Determine Color based on t-stat
-    function getColor(val, tStat, isBaseline) {
-        if (isBaseline) return '#9ca3af'; // Grey for baseline
-        if (Math.abs(tStat) < 1.65) return '#e5e7eb'; // Light grey for insignificant
-        return val >= 0 ? '#10b981' : '#ef4444'; // Green/Red for significant
+    // Helper: Determine Color based on value and t-stat (3 solid colors, no transparency)
+    function getCoefficientColor(val, tStat) {
+        const isSignificant = Math.abs(tStat) >= 1.65;
+        if (!isSignificant) return '#9ca3af'; // Gray 400
+        return val >= 0 ? '#10b981' : '#ef4444'; // Emerald 500 / Red 500
     }
 
     // --- Chart 1: Areas ---
@@ -266,9 +268,8 @@ document.addEventListener('DOMContentLoaded', () => {
             labels: areaPoints.map(f => f.label),
             datasets: [{
                 data: areaPoints.map(f => f.value),
-                backgroundColor: areaPoints.map(f => getColor(f.value, f.tStat, f.isBaseline)),
-                borderRadius: 4,
-                barThickness: 12
+                backgroundColor: areaPoints.map(f => getCoefficientColor(f.value, f.tStat)),
+                borderRadius: 4
             }]
         },
         options: barOptions
@@ -282,7 +283,7 @@ document.addEventListener('DOMContentLoaded', () => {
             labels: featurePoints.map(f => f.label),
             datasets: [{
                 data: featurePoints.map(f => f.value),
-                backgroundColor: featurePoints.map(f => getColor(f.value, f.tStat, false)),
+                backgroundColor: featurePoints.map(f => getCoefficientColor(f.value, f.tStat)),
                 borderRadius: 4,
                 barThickness: 20
             }]
