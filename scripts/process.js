@@ -415,6 +415,7 @@ function parseHtml(htmlContent, filename) {
         features: [],
         schools: [],
         subArea: null,
+        soldDate: null,
         // Deep Data Placeholders
         parkingType: 'other',
         levels: 1,
@@ -497,6 +498,23 @@ function parseHtml(htmlContent, filename) {
     if (listedPriceEl) {
         const lp = cleanNumber(listedPriceEl.textContent);
         if (lp > 0) listing.listPrice = lp;
+    }
+
+    // --- 3.1 Sold Date ---
+    const tableRows = document.querySelectorAll('.pc-listing-history .table tbody tr');
+    for (const row of tableRows) {
+        const cells = row.querySelectorAll('td');
+        if (cells.length >= 4) {
+            const eventType = cells[3].textContent.trim();
+            if (eventType.toLowerCase() === 'sold') {
+                const sDate = cells[1].textContent.trim();
+                // Basic validation YYYY-MM-DD
+                if (/^\d{4}-\d{2}-\d{2}$/.test(sDate)) {
+                    listing.soldDate = sDate;
+                    break; 
+                }
+            }
+        }
     }
 
     // --- 4. Description ---

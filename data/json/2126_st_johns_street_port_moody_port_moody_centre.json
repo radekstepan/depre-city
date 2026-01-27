@@ -1,0 +1,42 @@
+{
+  "address": "2126 St Johns Street",
+  "city": "Port Moody",
+  "sqft": 1307,
+  "year": 2019,
+  "price": 949000,
+  "listPrice": 969000,
+  "fee": 318,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 3715,
+  "assessment": 1004000,
+  "description": "Urban living in this modern 3 bed, 2 bath townhome by EDGESTONE!  6 years young, w/ balance of 10 year NHW.  Updated features & hardware throughout. Bright open-plan kitchen with over-height ceilings, large quartz island & countertops, gas range, & sleek cabinetry.  Upstairs offers 3 spacious bedrooms, primary with radiant in-floor heating & under-vanity lighting.  Parking isn't an issue, with street side parking & large tandem GARAGE- providing bonus of excellent storage for all the toys, think bikes, kayaks & more, & new durable epoxy flooring recently installed. Well run & pro-active strata w/ low fees, & family friendly community. Commuting options ideal here with Barnet Hy 1 blk away, close to WCE, Rocky Point Park, schools, shopping & legendary Brewers Row!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Port Moody Secondary",
+      "rating": 7.5,
+      "distance": "0.4 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Moody Elementary",
+      "rating": 4.7,
+      "distance": "1.0 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Port Moody Centre",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-moody-real-estate/2126-st-johns-street/home/nM697k5bwEQYbmwe?id_listing=nM697k85L2W3bmwe",
+  "_scrapedAt": "2026-01-27T11:34:23.731Z",
+  "_rawFile": "2126_st_johns_street_port_moody_port_moody_centre.html",
+  "soldDate": "2026-01-17"
+}
