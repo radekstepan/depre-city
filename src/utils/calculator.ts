@@ -10,6 +10,7 @@ export interface CalculatorInputs {
     assessment: number;
     propertyTax: number;
     strataFee: number;
+    listPrice?: number;
     condition: number;
     parkingType: 'std' | 'tandem' | 'double';
     parkingSpots: number;
@@ -36,6 +37,8 @@ export interface ModelCoefficients {
     coefTax: number;
     coefHasTax: number;
     coefFeePerSqft: number;
+    coefListPrice: number;
+    coefHasListPrice: number;
     isLogLinear: boolean;
     stdError: number;
 }
@@ -84,6 +87,10 @@ export function predictPrice(
         ? (inputs.strataFee * 12) / inputs.sqft 
         : 0;
 
+    // List Price
+    const hasListPrice = (inputs.listPrice && inputs.listPrice > 0) ? 1 : 0;
+    const logListPrice = hasListPrice ? Math.log(inputs.listPrice) : 0;
+
     // Parking
     const extraParking = Math.max(0, inputs.parkingSpots - 1);
     let valParkingCoef = 0;
@@ -113,6 +120,8 @@ export function predictPrice(
             (taxPerSqft * coefficients.coefTax) +
             (hasTax * coefficients.coefHasTax) +
             (feePerSqft * coefficients.coefFeePerSqft) +
+            (logListPrice * coefficients.coefListPrice) +
+            (hasListPrice * coefficients.coefHasListPrice) +
             inputs.areaCoefVal;
 
         return Math.exp(logPrice);
@@ -133,6 +142,8 @@ export function predictPrice(
             (hasAssessment * coefficients.coefHasAssessment) +
             (taxPerSqft * coefficients.coefTax) +
             (hasTax * coefficients.coefHasTax) +
+            (logListPrice * coefficients.coefListPrice) +
+            (hasListPrice * coefficients.coefHasListPrice) +
             inputs.areaCoefVal;
     }
 }
@@ -150,6 +161,7 @@ export function getDefaultInputs(): CalculatorInputs {
         assessment: CALCULATOR_DEFAULTS.assessment,
         propertyTax: CALCULATOR_DEFAULTS.propertyTax,
         strataFee: CALCULATOR_DEFAULTS.fee,
+        listPrice: CALCULATOR_DEFAULTS.listPrice,
         condition: CALCULATOR_DEFAULTS.condition,
         parkingType: CALCULATOR_DEFAULTS.parkingType as 'std' | 'tandem' | 'double',
         parkingSpots: CALCULATOR_DEFAULTS.parkingSpots,

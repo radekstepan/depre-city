@@ -21,6 +21,8 @@ describe('Calculator Logic', () => {
         coefTax: -0.002,
         coefHasTax: -0.01,
         coefFeePerSqft: -0.001,
+        coefListPrice: 0,
+        coefHasListPrice: 0,
         isLogLinear: true,
         stdError: 0.15,
     };

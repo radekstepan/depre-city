@@ -28,7 +28,10 @@ describe('Calculator with Real-World Scenarios', () => {
         coefTax: -0.0015,         // Negative per $ of tax/sqft
         coefHasTax: -0.008,       // Having tax impacts negatively
         coefFeePerSqft: -0.0012,  // Negative per $ of fee/sqft
+        coefListPrice: 0,
+        coefHasListPrice: 0,
         isLogLinear: true,
+        stdError: 0.15,
     };
 
     describe('Realistic Property Scenarios', () => {

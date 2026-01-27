@@ -41,6 +41,8 @@ const accuracyPoints = listings
         const hasAssessment = (l.assessment && l.assessment > 0) ? 1 : 0;
         const logAssessment = hasAssessment ? Math.log(l.assessment) : 0;
         const feePerSqft = (l.fee && l.fee > 0 && l.sqft > 0) ? (l.fee * 12) / l.sqft : 0;
+        const hasListPrice = (l.listPrice && l.listPrice > 0) ? 1 : 0;
+        const logListPrice = hasListPrice ? Math.log(l.listPrice) : 0;
 
         // Log Linear Logic: Sum of coefs
         const predictedLog = model.intercept +
@@ -60,7 +62,9 @@ const accuracyPoints = listings
             (hasAssessment * model.coefHasAssessment) +
             (taxPerSqft * model.coefTax) +
             (hasTax * model.coefHasTax) +
-            (feePerSqft * model.coefFeePerSqft);
+            (feePerSqft * model.coefFeePerSqft) +
+            (logListPrice * model.coefListPrice) +
+            (hasListPrice * model.coefHasListPrice);
 
         const predicted = Math.exp(predictedLog);
 

@@ -13,4 +13,5 @@ export const CALCULATOR_DEFAULTS = {
     hasAC: false,
     isRainscreened: true,
     areaCoefVal: 0,
+    listPrice: 889900,
 };

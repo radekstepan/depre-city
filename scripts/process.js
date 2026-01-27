@@ -404,6 +404,7 @@ function parseHtml(htmlContent, filename) {
         sqft: 0,
         year: 0,
         price: 0,
+        listPrice: 0,
         fee: 0,
         bedrooms: 0,
         bathrooms: 0,
@@ -472,7 +473,7 @@ function parseHtml(htmlContent, filename) {
         }
     }
 
-    // --- 3. Sold Price ---
+    // --- 3. Sold Price & List Price ---
     const soldPriceEl = document.querySelector('.price-area .price .sold');
     if (soldPriceEl) {
         const p = cleanNumber(soldPriceEl.textContent);
@@ -489,6 +490,13 @@ function parseHtml(htmlContent, filename) {
                 }
             }
         }
+    }
+    
+    // Extract List Price
+    const listedPriceEl = document.querySelector('.price-area .price .listed');
+    if (listedPriceEl) {
+        const lp = cleanNumber(listedPriceEl.textContent);
+        if (lp > 0) listing.listPrice = lp;
     }
 
     // --- 4. Description ---
