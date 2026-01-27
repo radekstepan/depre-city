@@ -33,11 +33,12 @@ const model = generateMarketModel(listings);
 const {
     generatedAt, sampleSize, modelConfidence,
     intercept, coefSqft, coefAge, coefBath, coefBedrooms,
-    coefFee, coefCondition, coefRainscreen,
+    coefCondition, coefRainscreen,
     coefAC, coefEndUnit,
     coefDoubleGarage, coefTandemGarage, coefExtraParking,
     coefAssessment, coefHasAssessment,
     coefTax, coefHasTax,
+    coefHasFee,
     areaCoefficients, areaReference,
     stdError, tStats, isLogLinear
 } = model;
@@ -72,7 +73,6 @@ const {
         coefAge={coefAge}
         coefBath={coefBath}
         coefBedrooms={coefBedrooms}
-        coefFee={coefFee}
         coefCondition={coefCondition}
         coefRainscreen={coefRainscreen}
         coefAC={coefAC}
@@ -84,6 +84,7 @@ const {
         coefHasAssessment={coefHasAssessment}
         coefTax={coefTax}
         coefHasTax={coefHasTax}
+        coefHasFee={coefHasFee}
         areaCoefficients={areaCoefficients}
         areaReference={areaReference}
         stdError={stdError}

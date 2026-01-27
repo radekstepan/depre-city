@@ -8,7 +8,6 @@ interface Props {
     coefAge: number;
     coefBath: number;
     coefBedrooms: number;
-    coefFee: number;
     coefCondition: number;
     coefRainscreen: number;
     coefAC: number;
@@ -20,6 +19,7 @@ interface Props {
     coefHasAssessment: number;
     coefTax: number;
     coefHasTax: number;
+    coefHasFee: number;
     areaCoefficients: Record<string, number>;
     areaReference: string;
     stdError: number;
@@ -29,9 +29,9 @@ interface Props {
 
 const {
     intercept, coefSqft, coefAge, coefBath, coefBedrooms,
-    coefFee, coefCondition, coefRainscreen,
+    coefCondition, coefRainscreen,
     coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, coefExtraParking,
-    coefAssessment, coefHasAssessment, coefTax, coefHasTax,
+    coefAssessment, coefHasAssessment, coefTax, coefHasTax, coefHasFee,
     areaCoefficients, areaReference, stdError,
     tStats, isLogLinear
 } = Astro.props;
@@ -254,7 +254,9 @@ const parkingOptions = [
                         <span class="text-red-400" id="valTax">-$0</span>
                     </div>
                     <div class="flex justify-between items-center">
-                        <span class="text-gray-400">Fee Adjustment</span>
+                        <div class="flex items-center gap-2">
+                            <span class="text-gray-400">Fee Adjustment</span>
+                        </div>
                         <span class="text-red-400" id="valFee">-$0</span>
                     </div>
                 </div>
@@ -263,7 +265,7 @@ const parkingOptions = [
     </div>
 </section>
 
-<script define:vars={{ intercept, coefSqft, coefAge, coefBath, coefBedrooms, coefFee, coefCondition, coefRainscreen, coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, coefExtraParking, coefAssessment, coefHasAssessment, coefTax, coefHasTax, stdError, isLogLinear, CALCULATOR_DEFAULTS }}>
+<script define:vars={{ intercept, coefSqft, coefAge, coefBath, coefBedrooms, coefCondition, coefRainscreen, coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, coefExtraParking, coefAssessment, coefHasAssessment, coefTax, coefHasTax, coefHasFee, stdError, isLogLinear, CALCULATOR_DEFAULTS }}>
     document.addEventListener('DOMContentLoaded', () => {
 
         const inputs = {
@@ -325,11 +327,11 @@ const parkingOptions = [
             if (overrides.areaCoefVal !== undefined) areaCoefVal = overrides.areaCoefVal;
             if (overrides.year !== undefined) year = overrides.year;
             // ... add others if needed for diff calculation, currently simplified to core vars
-
+            
             const currentYear = new Date().getFullYear();
             const age = currentYear - year;
-            const feePerSqft = area > 0 ? fee / area : 0;
-
+            const hasFee = fee > 0 ? 1 : 0;
+            
             // Assessment
             const hasAssessment = assessment > 0 ? 1 : 0;
             const logAssessment = hasAssessment ? Math.log(assessment) : 0;
@@ -351,7 +353,6 @@ const parkingOptions = [
                     (age * coefAge) +
                     (bath * coefBath) +
                     (beds * coefBedrooms) +
-                    (feePerSqft * coefFee) +
                     (condition * coefCondition) +
                     (isRain * coefRainscreen) +
                     (isEnd * coefEndUnit) +
@@ -362,6 +363,7 @@ const parkingOptions = [
                     (hasAssessment * coefHasAssessment) +
                     (taxPerSqft * coefTax) +
                     (hasTax * coefHasTax) +
+                    (hasFee * coefHasFee) +
                     areaCoefVal;
 
                 return Math.exp(logPrice);
@@ -372,7 +374,6 @@ const parkingOptions = [
                     (age * coefAge) +
                     (bath * coefBath) +
                     (beds * coefBedrooms) +
-                    (feePerSqft * coefFee) +
                     (condition * coefCondition) +
                     (isRain * coefRainscreen) +
                     (isEnd * coefEndUnit) +
@@ -383,6 +384,7 @@ const parkingOptions = [
                     (hasAssessment * coefHasAssessment) +
                     (taxPerSqft * coefTax) +
                     (hasTax * coefHasTax) +
+                    (hasFee * coefHasFee) +
                     areaCoefVal;
             }
         }
@@ -495,12 +497,12 @@ const parkingOptions = [
             outputs.valTax.className = valTax >= 0 ? "text-green-400" : "text-red-400";
             outputs.valTax.innerText = format(valTax);
 
-            // Fee Impact (Value vs $0 fee)
-            // Fee coefficient is usually negative
+            // Fee Impact (Financial Liability Deduction)
+            // Each $1 in monthly fee reduces property value by ~$180 (capitalization factor)
+            // Based on standard mortgage/valuation rules of thumb
             const fee = parseFloat(inputs.fee.value) || CALCULATOR_DEFAULTS.fee;
-            const feePerSqft = area > 0 ? fee / area : 0;
-            const pNoFee = finalPrice / Math.exp(feePerSqft * coefFee);
-            const valFee = finalPrice - pNoFee;
+            const valFee = -fee * 180; // Capitalization factor: $1/mo ≈ $180 value
+            outputs.valFee.className = valFee >= 0 ? "text-green-400" : "text-red-400";
             outputs.valFee.innerText = format(valFee);
 
             // Dispatch event for charts
