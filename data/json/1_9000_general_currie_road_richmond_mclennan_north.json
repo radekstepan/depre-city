@@ -1,0 +1,39 @@
+{
+  "address": "Unit 1 - 9000 General Currie Road",
+  "city": "Richmond",
+  "sqft": 1380,
+  "year": 2016,
+  "price": 969000,
+  "fee": 433,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3660,
+  "description": "Welcome to the sought after WINSTON GARDEN at Richmond city centre. Only 9 years old, this quality built & well kept CORNER UNIT features 9FT CEILING, crown mouldings & open layout w/ 3 bedrooms, 3 baths & a potential 4th bedroom at the flex area with closet & window. Abundance of natural light from over-sized windows, window seats, & extra windows at stairway. Laminated flooring throughout & gourmet kitchen w/ stainless steel appliances, GAS stove, QUARTZ countertops & kitchen island w/ extra seating. Spacious garage & tons of street parking. Desirable Palmer Secondary & Garden City Elementary schools. Convenient central location: 5-minute walk to Garden City Shopping Centre, 5-minute drive to Richmond Ctr/Brighouse Skytrain w/ easy access to Vancouver. Incredible Value and Move-In Ready!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Palmer Secondary",
+      "rating": 8.1,
+      "distance": "0.6 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Garden City Elementary",
+      "rating": 7.9,
+      "distance": "0.7 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "McLennan North",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/1-9000-general-currie-road/home/5xLkv3VeprR7DBNr?id_listing=1DBW7RnmP2L7qlAp",
+  "_scrapedAt": "2026-01-26T10:29:01.832Z",
+  "_rawFile": "1_9000_general_currie_road_richmond_mclennan_north.html"
+}

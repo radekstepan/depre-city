@@ -1,0 +1,39 @@
+{
+  "address": "Unit 4 - 2830 Irma St",
+  "city": "Victoria",
+  "sqft": 2035,
+  "year": 2014,
+  "price": 875000,
+  "fee": 653,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 1,
+  "propertyTax": 4461,
+  "description": "Steps from the Gorge Waterway, this vibrant south-facing townhome is close to parks, the Galloping Goose, shops, transit, and nearby schools and Montessori options. With over 2,000 sq ft, this one-owner home is freshly painted and well maintained, offering in-floor hot-water radiant heat, beautiful tile and hardwood, and construction engineered to extreme earthquake standards. The entry level includes a garage and a flexible bedroom/family room beside a full bath, opening to a generous private patio. The main level features two decks, a powder room, and an open-concept kitchen with high-end cabinets, gas range, large island, and abundant storage, flowing into the dining area and a bright living room with fireplace. Upstairs are two inviting bedrooms, including a vaulted primary with a luxe ensuite and built-ins. Schedule your visit today!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Spectrum Community School",
+      "rating": 4,
+      "distance": "2.6 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Tillicum Elementary",
+      "rating": 3.7,
+      "distance": "1.0 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Burnside",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/victoria-real-estate/4-2830-irma-st/home/AKv53DDDw0W3MnxB?id_listing=amgL7AVpWXV3Z1MW",
+  "_scrapedAt": "2026-01-26T10:30:28.083Z",
+  "_rawFile": "4_2830_irma_st_victoria_burnside.html"
+}

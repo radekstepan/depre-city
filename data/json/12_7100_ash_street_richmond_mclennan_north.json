@@ -1,0 +1,39 @@
+{
+  "address": "Unit 12 - 7100 Ash Street",
+  "city": "Richmond",
+  "sqft": 1416,
+  "year": 2025,
+  "price": 1498000,
+  "fee": 498,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "description": "Introducing Sunpeak-A new benchmark in Boutique Living By Sian Group Nestled in the heart of of Central Richmond, Sunpeak is an exclusive collection of 17 expertly crafted townhomes offering exceptional quality and thoughtful design. These 3 and 4 bedroom residences feature Open designer kitchens with Fisher & Paykel appliances (Gas Stove), elegant quartz backsplash and countertops, custom crown mouldings and tiles. Each unit includes Air Conditioning/Heat pump/HRV system, built in alarm system, built in vacuum, premium blinds, smart toilets, Solar panels already installed and side by side garage's with epoxy flooring. Ideally located just a 5-10 minute walk to all levels of schools, shopping, parks, and transit.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Palmer Secondary",
+      "rating": 8.1,
+      "distance": "1.1 km",
+      "type": "8-12"
+    },
+    {
+      "name": "DeBeck Elementary",
+      "rating": 7.2,
+      "distance": "1.3 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "McLennan North",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/12-7100-ash-street/home/GMnKYqpo9E53w1Qr?id_listing=4KAX7NDODaoYeRPJ",
+  "_scrapedAt": "2026-01-26T10:29:28.131Z",
+  "_rawFile": "12_7100_ash_street_richmond_mclennan_north.html"
+}

@@ -1,0 +1,39 @@
+{
+  "address": "Unit 103 - 680 Seylynn Crescent",
+  "city": "North Vancouver",
+  "sqft": 1493,
+  "year": 2018,
+  "price": 1150000,
+  "fee": 1029,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 5348,
+  "description": "Discover this incredible concrete townhouse at the Compass Seylynn Village, featuring a spacious 3-bed + office, 2.5 baths, an expansive living room perfect for relaxation and entertaining. This fantastic property boasts high end finishings and an open-concept layout with abundant natural light from your west exposure. Enjoy gourmet cooking with your gas cooktop, Bosch appliances and large island. With bedrooms and den on the upper level, unwind in the luxurious primary suite with private patio. Take advantage of the incredible Denna Club a 14,000 SF facility which includes a 25-metre indoor lap pool, hot tub, steam room, dry sauna, epic exercise facility, two multipurpose rooms & a spacious party room. With its unbeatable value and prime location, don't miss this opportunity!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Windsor Secondary",
+      "rating": 6.7,
+      "distance": "2.5 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Lynnmour Elementary School",
+      "rating": 5,
+      "distance": "0.2 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Lynnmour",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/103-680-seylynn-crescent/home/jJKdOYrRGVjY54lW?id_listing=Xawjy4NPqPp3rR18",
+  "_scrapedAt": "2026-01-26T10:20:57.569Z",
+  "_rawFile": "103_680_seylynn_crescent_north_vancouver_lynnmour.html"
+}

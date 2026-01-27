@@ -1,0 +1,39 @@
+{
+  "address": "1187 19th Avenue E",
+  "city": "Vancouver",
+  "sqft": 1472,
+  "year": 2013,
+  "price": 1400000,
+  "fee": 771,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 4790,
+  "description": "Perfect for families! A rare and sought after ‘missing middle’ modern/ character townhouse with 3 beds + den/ 2.5 baths set on a quiet side street in the very popular Cedar Cottage neighbourhood. The home spans three levels with a bright, open main floor designed for daily family living. Windows on both ends provide excellent cross-ventilation, while the living area opens through French doors to a private, south-facing front yard. An efficient kitchen anchors the space. The entire top floor is the primary suite, with vaulted ceilings, ensuite, den, and a sunny south-facing patio. Underground parking with direct unit access and 2 storage rooms. Dickens Elementary catchment. More info on our website: look us up! OPEN HOUSE CANCELLED!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Charles Dickens Elementary",
+      "rating": 5.9,
+      "distance": "0.3 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Sir Charles Tupper Secondary",
+      "rating": 3.7,
+      "distance": "1.1 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Knight",
+  "parkingType": "underground",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/1187-19th-avenue-e/home/BDO1w3WPdNdY8Jg0?id_listing=bEDRYazg4m6y1VaB",
+  "_scrapedAt": "2026-01-26T10:28:58.359Z",
+  "_rawFile": "1187_19th_avenue_e_vancouver_knight.html"
+}

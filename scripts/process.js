@@ -639,6 +639,7 @@ async function main() {
 
     let htmlFiles = fs.readdirSync(HTML_DIR).filter(f => f.endsWith('.html'));
     let skippedFiles = new Set();
+    const existingJsonSkips = [];
     
     // Deduplication Logic
     if (!shouldSkipDedup && htmlFiles.length > 0) {
@@ -676,9 +677,17 @@ async function main() {
     
     const filesToProcess = htmlFiles.filter(file => {
         if (skippedFiles.has(file)) return false;
-        // Always re-process to pick up new school parsing logic
-        return true; 
+        const jsonPath = path.join(JSON_DIR, file.replace(/\.html$/i, '.json'));
+        if (fs.existsSync(jsonPath)) {
+            existingJsonSkips.push(file);
+            return false;
+        }
+        return true;
     });
+
+    if (existingJsonSkips.length > 0) {
+        console.log(chalk.gray(`Skipping ${existingJsonSkips.length} files with existing JSON outputs.`));
+    }
 
     if (filesToProcess.length === 0) {
         console.log(chalk.green("All HTML files processed. No new files."));

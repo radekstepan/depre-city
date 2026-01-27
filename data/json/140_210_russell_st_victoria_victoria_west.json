@@ -1,0 +1,33 @@
+{
+  "address": "Unit 140 - 210 Russell St",
+  "city": "Victoria",
+  "sqft": 1645,
+  "year": 1981,
+  "price": 1236000,
+  "fee": 776,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 6292,
+  "description": "AMAZING LOCATION! Experience waterfront living with breathtaking views of Victoria Harbour and the snow-capped Olympic Mountains from this beautifully maintained townhome. Watch cruise ships come and go, and enjoy stunning sunsets from your sunroom, full-length patio, and all principal rooms. This bright, two-level home features hardwood floors, has a new kitchen with new cabinets, quartz countertops, backsplash, and all new stainless steel appliances including a high end induction cooktop. Other upgrades include a new gas fireplace, laundry room with new full size washer and dryer, sunroom, light fixtures, fresh paint, and much more. An attached single-car garage adds convenience. Located directly on the scenic Songhees Walkway, you're just steps away from downtown, West Bay, historic Esquimalt, and everyday amenities. Set within Rainbow Estates; a well-maintained community on nearly an acre of south-facing waterfront. Live on beautiful Victoria Harbour.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Esquimalt High School",
+      "rating": 4.3,
+      "distance": "1.3 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Victoria West",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/victoria-real-estate/140-210-russell-st/home/56k97wqJKV6YKRjD?id_listing=J6Em7b2w0XB7XBeq",
+  "_scrapedAt": "2026-01-26T10:30:51.421Z",
+  "_rawFile": "140_210_russell_st_victoria_victoria_west.html"
+}

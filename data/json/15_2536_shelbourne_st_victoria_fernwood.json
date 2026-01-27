@@ -1,0 +1,39 @@
+{
+  "address": "Unit 15 - 2536 Shelbourne St",
+  "city": "Victoria",
+  "sqft": 1608,
+  "year": 2025,
+  "price": 960000,
+  "fee": 347,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 0,
+  "description": "Welcome to Emerson by Frame Properties — Victoria’s Only Brand-New & Move-In Ready Townhomes in Oaklands. This three-bedroom home spans 1,393 sq. ft. of open-concept living. Soaring 9-foot ceilings, large windows, and private outdoor space create a bright and efficient layout tailored for a modern lifestyle. Centrally located near schools, shopping, Jubilee Hospital, and parks — just 10 minutes from Downtown Victoria and steps to Fernwood neighbourhood. Built by Frame Properties — with over 60 years and 5,700+ homes across BC — every Emerson home is backed by a 2-5-10 New Home Warranty for lasting peace-of-mind. Move-in Ready Special Promotion - for a limited time, enjoy ZERO STRATA FEES for the first 3 years. Don’t miss out, be one of the first to see this brand new home – Book your private tour today.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Oak Bay High School",
+      "rating": 7,
+      "distance": "1.2 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Oaklands Elementary",
+      "rating": 4.3,
+      "distance": "0.8 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Fernwood",
+  "parkingType": "street",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/victoria-real-estate/15-2536-shelbourne-st/home/DO1w3WqAzdVy8Jg0?id_listing=0A9X3jL1JnDyvgxV",
+  "_scrapedAt": "2026-01-26T10:30:26.030Z",
+  "_rawFile": "15_2536_shelbourne_st_victoria_fernwood.html"
+}

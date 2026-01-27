@@ -1,0 +1,39 @@
+{
+  "address": "Unit 6 - 230 15th Street W",
+  "city": "North Vancouver",
+  "sqft": 1573,
+  "year": 1981,
+  "price": 1050000,
+  "fee": 599,
+  "bedrooms": 4,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 3208,
+  "description": "Welcome to Lamplighter. This well-located 4-bedroom, 2 full bathroom townhome offers 1,573 sq ft of living space across a functional 3-level split layout. The home features a south-facing patios and the convenience of a covered parking stall. The versatile layout suits a variety of lifestyles, with options for updates based on your preferences. The strata is family-oriented, and residents enjoy access to a greenbelt area that provides additional outdoor space. Ideally situated in the heart of Central Lonsdale, you’re close to shops, services, transit, parks, and local schools including Queen Mary Elementary and Carson Graham Secondary. With easy access to major routes, this home offers a practical opportunity for anyone seeking long-term value in a well-established community.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Carson Graham Secondary",
+      "rating": 4.1,
+      "distance": "0.8 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Queen Mary Community Elementary",
+      "rating": 3,
+      "distance": "0.4 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Central Lonsdale",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/6-230-15th-street-w/home/BDO1w3WzXzj78Jg0?id_listing=Z5BX32N6jW53Dar0",
+  "_scrapedAt": "2026-01-26T10:21:06.223Z",
+  "_rawFile": "6_230_15th_street_w_north_vancouver_central_lonsdale.html"
+}

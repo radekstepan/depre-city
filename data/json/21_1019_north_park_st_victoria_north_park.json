@@ -1,0 +1,39 @@
+{
+  "address": "Unit 21 - 1019 North Park St",
+  "city": "Victoria",
+  "sqft": 1310,
+  "year": 2002,
+  "price": 680000,
+  "fee": 653,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 3663,
+  "description": "This bright and spacious three-bedroom, two-bathroom townhome offers the perfect blend of comfort, style, and functionality across three well-designed levels. Soaring vaulted ceilings and abundant natural light create an airy, welcoming atmosphere throughout the home. Set at the back of a quiet, well-landscaped complex surrounded by mature trees, this thoughtfully maintained residence provides plenty of room for both relaxing and entertaining. Enjoy the convenience of a brand-new hot water tank, in-suite laundry, a parking space located directly in front of the unit for easy access, and a sunny backyard patio. Additional highlights include a cozy gas fireplace (with gas included in the strata fees!), generous storage space, dedicated bike storage, and a well-managed, pet-friendly complex with ample visitor parking. This move-in-ready home is ideal for families, professionals, or anyone seeking a bright and comfortable townhome close to all of Victoria’s amenities.",
+  "features": [],
+  "schools": [
+    {
+      "name": "George Jay Elementary",
+      "rating": 3.3,
+      "distance": "0.5 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Victoria High",
+      "rating": 2.2,
+      "distance": "1.5 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "North Park",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/victoria-real-estate/21-1019-north-park-st/home/aD6p78122A03wRQr?id_listing=gAaOyL6aJkz3GxMb",
+  "_scrapedAt": "2026-01-26T10:30:19.439Z",
+  "_rawFile": "21_1019_north_park_st_victoria_north_park.html"
+}

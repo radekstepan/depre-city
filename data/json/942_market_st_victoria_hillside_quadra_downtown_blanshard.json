@@ -1,0 +1,39 @@
+{
+  "address": "942 Market St",
+  "city": "Victoria",
+  "sqft": 1308,
+  "year": 1972,
+  "price": 650000,
+  "fee": 495,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 3112,
+  "description": "This bright, beautifully updated 3-bedroom, 2-bath townhome shines with southwest exposure, filling the home with natural light all day. Set peacefully in the back of complex, with fruit trees around, it offers incredible tranquility just a block from Quadra Village. Enjoy extensive updates throughout, including a stunning new kitchen, renovated bathrooms, refreshed laundry room, engineered hardwood floors and energy efficient thermostats to name a few! The thoughtful layout offers privacy with offset quad-style units and minimal shared walls. The community is friendly and family-oriented, with kids safely playing in the fenced complex. Surrounded by nature, you’re steps to parks like Summit and Topaz, plus Garry oak–lined sports fields at the end of the road. With tons of storage including a bonus upstairs closet-that could be used as small office, large storage closets and sunroom with a lockable shed—this bright, quiet, and move-in-ready home truly has it all!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Quadra Elementary",
+      "rating": 2.9,
+      "distance": "0.6 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Victoria High",
+      "rating": 2.2,
+      "distance": "0.2 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Hillside",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/victoria-real-estate/942-market-st/home/jJKdOYrvLRlY54lW?id_listing=B5bO3xx9V0g3kWVP",
+  "_scrapedAt": "2026-01-26T10:30:49.348Z",
+  "_rawFile": "942_market_st_victoria_hillside_quadra_downtown_blanshard.html"
+}

@@ -1,0 +1,39 @@
+{
+  "address": "Unit 25 - 1286 Tolmie Ave",
+  "city": "Saanich",
+  "sqft": 3245,
+  "year": 2000,
+  "price": 1275000,
+  "fee": 1043,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 5822,
+  "description": "Embrace a lifestyle with comfort and calm at Cedar Hill Links. Surrounded by landscaped gardens and walking trails, this elegant end-unit townhome at 25-1286 Tolmie Ave borders the Cedar Hill Golf Course. Enjoy one-level living filled with natural light, skylit cathedral ceilings, and a private east facing deck with gas BBQ hookup overlooking the golf course. The modern kitchen features premium Viking Pro Series stainless steel appliances, a gas range, Bosch dishwasher and granite countertops, and opens to the inviting living area with a gas FP. The primary suite offers a tranquil retreat with a stylish ensuite. The lower level adds a spacious rec room with pool table, 4pc bath, media room, custom cedar-lined wine room, and ample storage for all your needs. With a double garage, energy efficient heat pump w/AC and pet-friendly policy, this well-managed, centrally located complex blends elegance, privacy, and recreation where every day feels like a resort escape beside the fairways.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Quadra Elementary",
+      "rating": 2.9,
+      "distance": "1.0 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Victoria High",
+      "rating": 2.2,
+      "distance": "1.5 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Victoria",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/saanich-real-estate/25-1286-tolmie-ave/home/amgL7A44p2LyZ1MW?id_listing=jAXw7QlwwbkyQOzg",
+  "_scrapedAt": "2026-01-26T10:30:33.025Z",
+  "_rawFile": "25_1286_tolmie_ave_saanich_victoria.html"
+}

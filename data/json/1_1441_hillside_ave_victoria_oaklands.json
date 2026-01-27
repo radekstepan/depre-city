@@ -1,0 +1,39 @@
+{
+  "address": "Unit 1 - 1441 Hillside Ave",
+  "city": "Victoria",
+  "sqft": 1307,
+  "year": 1991,
+  "price": 730000,
+  "fee": 483,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 4307,
+  "description": "PRICED $65K BELOW ASSESSED VALUE Welcome to this lovely 3 Bed, 1.5 bath townhouse located in the heart of Victoria! Bright and spacious, 1104 sqft, situated within a well maintained, family-oriented complex and has been recently updated with new carpeting and fresh paint throughout. Inviting open-concept living area is perfect for both relaxing and entertaining! You'll appreciate the private, fenced backyard which includes an exposed aggregate patio and a lawn. This home comes with a single garage and the added convenience of visitor parking. Ideally located, this immaculate home is within walking distance of Hillside Mall, close to bus stops and near both Camosun College and UVIC. Enjoy the convenience of urban living with easy access to parks, cafés, and shopping. This beautifully updated townhouse presents an excellent investment opportunity for families, students, or anyone seeking a comfortable and conveniently located home.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Oak Bay High School",
+      "rating": 7,
+      "distance": "2.1 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Oaklands Elementary",
+      "rating": 4.3,
+      "distance": "0.3 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Oaklands",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/victoria-real-estate/1-1441-hillside-ave/home/56k97wqWEDOYKRjD?id_listing=dXze3eV8PKeY8m9K",
+  "_scrapedAt": "2026-01-26T10:30:43.455Z",
+  "_rawFile": "1_1441_hillside_ave_victoria_oaklands.html"
+}

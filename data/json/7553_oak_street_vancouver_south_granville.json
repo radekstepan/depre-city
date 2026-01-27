@@ -1,0 +1,39 @@
+{
+  "address": "7553 Oak Street",
+  "city": "Vancouver",
+  "sqft": 1316,
+  "year": 2023,
+  "price": 1138000,
+  "fee": 630,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 4197,
+  "description": "A stunning townhouse in Terraces at Oak Park new townhomes. This 3-bedroom, 3 bathroom home is located in an amazing Vancouver neighbourhood. Equipped with beautiful quartz countertops, tile backsplash, stainless steel BOSCH appliances with a gas stove, hood fan, fridge and dishwasher. Primary bedroom is on its own, on the upper floor has its own ensuite and EXTRA large patio, which allows for the most privacy for the primary. Located by parks, schools, community centers, golf courses and all, this home is great for families. Give us a call today to view!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sir Winston Churchill Secondary",
+      "rating": 8.2,
+      "distance": "0.5 km",
+      "type": "8-12"
+    },
+    {
+      "name": "David Lloyd George Elementary",
+      "rating": 7,
+      "distance": "0.9 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "South Granville",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/7553-oak-street/home/B5bO3xX8RvV3kWVP?id_listing=ZxwR7MVDv6e3KabB",
+  "_scrapedAt": "2026-01-26T10:28:52.255Z",
+  "_rawFile": "7553_oak_street_vancouver_south_granville.html"
+}

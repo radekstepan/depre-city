@@ -1,0 +1,33 @@
+{
+  "address": "Unit 202 - 788 8th Avenue W",
+  "city": "Vancouver",
+  "sqft": 1111,
+  "year": 1991,
+  "price": 865000,
+  "fee": 827,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 3792,
+  "description": "Investment Opportunity in Fairview Slopes! - Southeast Corner of 8th & Willow Street located within the Broadway Plan. This spacious 3 bedroom, 2 bathroom townhome is flooded with natural light with views of the City & North Shore mountains. Spacious living & dining area with skylight & views from rooftop patio. Walking distance to Whole Foods, Canada Line station, and Cambie's shops & restaurants. 2 parking and 1 storage locker included.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Kitsilano Secondary",
+      "rating": 7.8,
+      "distance": "3.1 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Fairview VW",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "rooftop",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/202-788-8th-avenue-w/home/EeVbOYEnPXdyx2P0?id_listing=aQmD7zVz9MO7J9Bo",
+  "_scrapedAt": "2026-01-26T10:20:45.127Z",
+  "_rawFile": "202_788_8th_avenue_w_vancouver_fairview_vw.html"
+}

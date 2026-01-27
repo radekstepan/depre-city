@@ -1,0 +1,39 @@
+{
+  "address": "323 Keith Road E",
+  "city": "North Vancouver",
+  "sqft": 1373,
+  "year": 1996,
+  "price": 1190000,
+  "fee": 546,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3942,
+  "description": "First time on the market since new & lovingly maintained by original owners!  Tucked away at the back of the complex, this lovely home has a fully fenced south facing back yard, a single car garage, plus a car pad, and ample interior/exterior storage.  It has a traditional 2 level floor plan with the main floor featuring an eat in kitchen, formal DR, a cozy LR opening up to one of 3 outdoor spaces & a powder room for guests. 3 generous size bedrooms upstairs, primary with ensuite, WIC & a private balcony with City and Water Views!  Keith Court is a self-managed complex with a new roof (2019) is located within walking distance to Lonsdale amenities & is in the Ridgeway & Sutherland catchment areas.  Original but mint condition - Move in as is, or update to your style",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sutherland Secondary",
+      "rating": 5.4,
+      "distance": "1.7 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Ridgeway Elementary",
+      "rating": 5.2,
+      "distance": "0.4 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Lower Lonsdale",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/323-keith-road-e/home/gAaOyL84EO5yGxMb?id_listing=4KAX7ND1LMJYeRPJ",
+  "_scrapedAt": "2026-01-26T10:20:25.080Z",
+  "_rawFile": "323_keith_road_e_north_vancouver_lower_lonsdale.html"
+}

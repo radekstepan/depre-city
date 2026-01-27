@@ -1,0 +1,39 @@
+{
+  "address": "5837 Wales Street",
+  "city": "Vancouver",
+  "sqft": 1471,
+  "year": 2018,
+  "price": 1230000,
+  "fee": 481,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3935,
+  "description": "One of the largest & quite possibly the best situated 3 level townhome in Avalon Mews. With lofty ceilings & light streaming in from 3 sides, this generous floorplan is thoughtfully designed for modern life.  Open your front door into an entryway to take off your shoes & hang your coat. Head upstairs to the main level & you'll find a bright, contemporary space perfect for sharing meals, cooking up your favourites, lounging by the TV or hosting friends. 3 comfortable bedrooms, 2 bathrooms & in-suite laundry sit on the private upper floor.   Once home to the Avalon Dairy Farm, Avalon Mews sits in the heart of Killarney - a vibrant area with a strong community amongst neighbours. Conveniently located with shops, amenities, transit, bike paths, parks, schools & the community centre nearby.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Waverley Elementary",
+      "rating": 6.9,
+      "distance": "0.4 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Killarney Secondary",
+      "rating": 5.4,
+      "distance": "0.8 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Killarney VE",
+  "parkingType": "underground",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/5837-wales-street/home/10QqypNbLW63LGlV?id_listing=MWBVyZW45kX7Kemj",
+  "_scrapedAt": "2026-01-26T10:29:25.966Z",
+  "_rawFile": "5837_wales_street_vancouver_killarney_ve.html"
+}

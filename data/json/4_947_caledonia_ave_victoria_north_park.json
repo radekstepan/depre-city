@@ -1,0 +1,39 @@
+{
+  "address": "Unit 4 - 947 Caledonia Ave",
+  "city": "Victoria",
+  "sqft": 1403,
+  "year": 1989,
+  "price": 703000,
+  "fee": 494,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 3597,
+  "description": "This wonderful 3 BR, 2 bathroom townhouse with well laid out 1403 sq.ft. of comfortable living space is situated in centrally located neighbourhood, close to all amenities and steps to downtown!  Very quiet, small 8-unit complex, this unit is furthest from the road and offers many outstanding features including new windows, a fabulous new kitchen & two updated bathrooms. The unit has its own single car attached garage, a rare bonus! The versatile layout spans 3 levels with good a size bedroom on entry level which would make the perfect family room or office.  Elegant open living room with gas fireplace, inline dining area, updated kitchen & full 4-piece bathroom complete second level.  Third level features large master, another bedroom with balcony plus a full 4-piece bathroom.   Park your car in the garage & walk or bike to Crystal Pool, shopping, parks, cafes and restaurants! Enjoy homeownership at an affordable price!",
+  "features": [],
+  "schools": [
+    {
+      "name": "George Jay Elementary",
+      "rating": 3.3,
+      "distance": "0.5 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Victoria High",
+      "rating": 2.2,
+      "distance": "1.3 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "North Park",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/victoria-real-estate/4-947-caledonia-ave/home/EXrx30Xad4W3OklN?id_listing=wJKR7P9869g3XeLP",
+  "_scrapedAt": "2026-01-26T10:30:17.136Z",
+  "_rawFile": "4_947_caledonia_ave_victoria_north_park.html"
+}

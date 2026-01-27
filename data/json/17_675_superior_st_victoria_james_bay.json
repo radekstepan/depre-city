@@ -1,0 +1,39 @@
+{
+  "address": "Unit 17 - 675 Superior St",
+  "city": "Victoria",
+  "sqft": 1418,
+  "year": 2009,
+  "price": 947000,
+  "fee": 579,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 5231,
+  "description": "Directly across from Beacon Hill Park and set back from the street in a quiet corner of the complex, this 3-bed, 2.5-bath brownstone-style townhouse offers refined living across three levels. Featuring an open-concept main floor with gas fireplace, granite kitchen countertops and stainless steel appliances, plus seamless access to a private east-facing patio. The second level provides two generous bedrooms and a full bath, while the top floor is dedicated to a spacious primary retreat with walk-in closet and ensuite. Built in 2009 and exceptionally maintained, the home includes secure underground parking, storage and common EV charger. All within easy walking distance of the Inner Harbour, Parliament, restaurants, grocery stores, cafés and the Dallas Road waterfront.",
+  "features": [],
+  "schools": [
+    {
+      "name": "South Park Family School",
+      "rating": 2.3,
+      "distance": "0.1 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Victoria High",
+      "rating": 2.2,
+      "distance": "2.6 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "James Bay",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/victoria-real-estate/17-675-superior-st/home/DO1w3WqElmjy8Jg0?id_listing=bqB176Z4JZM7ZajD",
+  "_scrapedAt": "2026-01-26T10:30:39.371Z",
+  "_rawFile": "17_675_superior_st_victoria_james_bay.html"
+}

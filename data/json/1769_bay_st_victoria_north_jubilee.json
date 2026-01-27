@@ -1,0 +1,33 @@
+{
+  "address": "1769 Bay St",
+  "city": "Victoria",
+  "sqft": 1582,
+  "year": 1992,
+  "price": 875000,
+  "fee": 525,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 4022,
+  "description": "Fantastic 3 bedroom, 3 bathroom 1582 sq ft Townhome centrally located; close to Urban Grocer, Christies Pub and everyone's favourite, Goodside Pastries. Set back from the road this 2 level home is quiet and peaceful with a glorious south facing patio and garden. You enter into the cozy living room with new electric fireplace (gas available) and vaulted ceiling. Beyond the living room is the open kitchen, family room and dining room with patio doors to the back patio. Also on the main floor you will find the large laundry room/mudroom just off the garage & 2 piece bathroom. Upstairs are three bedrooms (primary with WI closet and ensuite (heated floors)) & a guest bathroom. The current owners have tastefully renovated their home over the years - new maple hardwood, new carpeting and paint throughout; new cupboards, quartz counters, backsplash and stainless appliances in the kitchen; bathrooms with porcelain tile. Homes in this 6 unit strata rarely come to market!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Oak Bay High School",
+      "rating": 7,
+      "distance": "1.0 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "North Jubilee",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/victoria-real-estate/1769-bay-st/home/J6Em7bnn0Rw7XBeq?id_listing=Xawjy4ZKqdp3rR18",
+  "_scrapedAt": "2026-01-26T10:30:23.738Z",
+  "_rawFile": "1769_bay_st_victoria_north_jubilee.html"
+}

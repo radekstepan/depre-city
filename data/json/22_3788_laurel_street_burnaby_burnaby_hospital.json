@@ -1,0 +1,39 @@
+{
+  "address": "Unit 22 - 3788 Laurel Street",
+  "city": "Burnaby",
+  "sqft": 1068,
+  "year": 2009,
+  "price": 900000,
+  "fee": 412,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 3377,
+  "description": "Rarely available and under assessment value! Welcome to The Laurels brought to you by the reputable Listraor Group. This bright 3 level townhome offers functional layout, features 3 bedroom and 2 bathrooms and over height ceiling. Main floor has living space, gourmet kitchen with stainless steel appliances and granite countertops. Two bedrooms on the second level. Master bedroom on the top floor that offers extra privacy with walk out balcony. Back yard has direct access to 2 parking stalls & 1 storage underbuilding. Easy access to highway, Starbucks, Walmart, Canadian Tires, Superstore and the Brentwood mall. School catchment includes French Immersion, Cascade Heights Elementary & Moscrop Secondary. Perfect family home awaits.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Moscrop Secondary",
+      "rating": 8.3,
+      "distance": "1.8 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Cascade Heights Elementary",
+      "rating": 6.6,
+      "distance": "0.9 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Burnaby Hospital",
+  "parkingType": "underground",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/22-3788-laurel-street/home/BDO1w3WoKGn38Jg0?id_listing=bqB176ZKkRK7ZajD",
+  "_scrapedAt": "2026-01-26T10:29:16.371Z",
+  "_rawFile": "22_3788_laurel_street_burnaby_burnaby_hospital.html"
+}

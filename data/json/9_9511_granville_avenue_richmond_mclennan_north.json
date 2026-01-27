@@ -1,0 +1,39 @@
+{
+  "address": "Unit 9 - 9511 Granville Avenue",
+  "city": "Richmond",
+  "sqft": 1391,
+  "year": 2026,
+  "price": 1468000,
+  "fee": 517,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "description": "'INFINITY GARDEN' Another 12-unit Top Quality Brand New Townhome Project built by Western Construction on Granville Avenue (between Garden City Road & No. 4 Road). A very convenient location near Lansdowne Shopping Mall, Canada Line Station & Walmart. Walk to 23-acre Garden City Community Park, Henry Anderson Elementary School, AR MacNeil Secondary School & Kwantleen University. Top of the line appliances, designer kitchen, geothermal heating & cooling, EV-ready garage, 9' ceiling on main floor and 10' ceiling on top floor. Fenced private yard at front entrance & big sundeck on main floor as extra space for family enjoyment. Ready for occupancy in August or September 2026. Only 5% deposit needed until completion date. SHOWINGS by appointment at Developer's office: 250 - 8833 Odlin Crescent",
+  "features": [],
+  "schools": [
+    {
+      "name": "Henry Anderson Elementary",
+      "rating": 8,
+      "distance": "0.2 km",
+      "type": "0-7"
+    },
+    {
+      "name": "MacNeill Secondary",
+      "rating": 3.4,
+      "distance": "0.3 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "McLennan North",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/9-9511-granville-avenue/home/J6Em7bnLVaG7XBeq?id_listing=JRv53KjDAoq7VPW4",
+  "_scrapedAt": "2026-01-26T10:29:18.963Z",
+  "_rawFile": "9_9511_granville_avenue_richmond_mclennan_north.html"
+}

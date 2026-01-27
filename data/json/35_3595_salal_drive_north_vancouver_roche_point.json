@@ -1,0 +1,39 @@
+{
+  "address": "Unit 35 - 3595 Salal Drive",
+  "city": "North Vancouver",
+  "sqft": 1656,
+  "year": 2018,
+  "price": 1370000,
+  "fee": 420,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 5954,
+  "description": "Welcome to a true storybook community where the surrounding neighbourhood and nature provide the perfect lifestyle balance. Ultra wide, architecturally designed and spacious this 1,656 sqft, 3 bedroom, 2.5 bathroom, end-unit townhouse is designed to live like a detached home. East and west exposures coupled with floor to ceiling windows bring in both morning and afternoon light. Ground oriented access with a private driveway lead to an enclosed, attached 2 car dream garage. All 3 spacious bedrooms are located on the same level and indoor/outdoor living is accessible from your main floor This townhome offers a lived experience with zero compromise and loads of custom upgrades including built ins, A/C and an extended patio.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Seycove Secondary Community",
+      "rating": 8.2,
+      "distance": "2.0 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Sherwood Park Elementary",
+      "rating": 4.4,
+      "distance": "1.0 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Roche Point",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/35-3595-salal-drive/home/mZRW7nadweVyEBO9?id_listing=jAXw7QlAOnmyQOzg",
+  "_scrapedAt": "2026-01-26T10:20:34.290Z",
+  "_rawFile": "35_3595_salal_drive_north_vancouver_roche_point.html"
+}

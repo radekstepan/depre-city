@@ -1,0 +1,33 @@
+{
+  "address": "Unit 38 - 7111 Lynnwood Drive",
+  "city": "Richmond",
+  "sqft": 1166,
+  "year": 1997,
+  "price": 810000,
+  "fee": 455,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 2804,
+  "description": "Welcome to Laurelwood, an exceptional townhouse community in the heart of Richmond’s desirable Granville area! This spacious 3-level, 3 beds, 3 baths home offers 1,166sf of thoughtfully designed living space w/ modern updates, warm laminate floors, & a cozy gas fireplace. The bright kitchen features built-in oven, microwave, & ample cabinetry perfect for entertaining. Enjoy outdoor living w/ your private balcony & quiet rear exposure. The single garage + visitor parking provides convenience, while the well-managed complex offers resort-style amenities including a clubhouse, guest suite, playground, & lush gardens. Located minutes to parks, golf, shopping, & transit. School catchment: Donald E McKay Elem & JN Burnett Secondary School.",
+  "features": [],
+  "schools": [
+    {
+      "name": "J N Burnett Secondary",
+      "rating": 7.9,
+      "distance": "0.3 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Granville",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/38-7111-lynnwood-drive/home/damgL7ABlVp3Z1MW?id_listing=10Qqyp5eZW87LGlV",
+  "_scrapedAt": "2026-01-26T10:29:23.756Z",
+  "_rawFile": "38_7111_lynnwood_drive_richmond_granville.html"
+}

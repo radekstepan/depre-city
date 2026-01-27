@@ -1,0 +1,33 @@
+{
+  "address": "Unit 1 - 1728 Gilmore Avenue",
+  "city": "Burnaby",
+  "sqft": 1193,
+  "year": 2019,
+  "price": 1150000,
+  "fee": 568,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3298,
+  "description": "Escala by Ledingham McAllister at  Brentwood! This stunning 1193 sqft, 3 bed, 3 bath corner townhome is bathed in natural light from oversized windows. The open-concept plan is perfect for entertaining. Upgraded designer lighting, a full SS appliance package & custom closet organizers throughout. Large, private patio extends your living space outdoors. Direct parkade access to your 2 side-by-side secure underground parking stalls from your back door. Central location offers an easy walkable lifestyle. Walk to great schools, and parks for the kids and pets! Also, just steps for groceries and restaurants. 15,000 sqft of resort-style amenities: concierge, indoor pool, hot tub, sauna/steam, gym, residents' lounge, & guest suites.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Alpha Secondary",
+      "rating": 4.8,
+      "distance": "1.3 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Brentwood Park",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/1-1728-gilmore-avenue/home/VaD6p78VNP6YwRQr?id_listing=B5bO3x8XOwd3kWVP",
+  "_scrapedAt": "2026-01-26T10:20:15.490Z",
+  "_rawFile": "1_1728_gilmore_avenue_burnaby_brentwood_park.html"
+}

@@ -1,0 +1,39 @@
+{
+  "address": "932 Market St",
+  "city": "Victoria",
+  "sqft": 1478,
+  "year": 1972,
+  "price": 640000,
+  "fee": 495,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 2878,
+  "description": "End unit 3 bed, 2 bath, townhome with a lot of sun exposure, centrally located Quadra Village & Hillside neighbourhood. Best Unit in the Complex: private, quiet corner at the back of the complex. Spacious and bright main level offers open living and dining room, kitchen, laundry room, 2pc bath, separate pantry/storage, as well as a covered, private patio and storage area. Upstairs there are 3 bed, 4PC bath. Laminate & vinyl luxury flooring, newer stove, thermal windows, installed exterior solar blinds on all windows, toilets replaced with low flow water. Heat Pump installed September 2025 for the new buyer to enjoy cooling in summer and warmer winter nights. Located within walking distance to all amenities such as cafés, restaurants, Fairways Market, Mayfair Mall, Topaz Park, Sports Field, playgrounds,  swimming pool, elementary school. Perfect for a small family or first-time buyers. Don't miss it, call your real estate agent now, it won't last long!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Quadra Elementary",
+      "rating": 2.9,
+      "distance": "0.6 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Victoria High",
+      "rating": 2.2,
+      "distance": "0.1 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Hillside",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/victoria-real-estate/932-market-st/home/56k97wqqEd6YKRjD?id_listing=bEDRYaGkBOl71VaB",
+  "_scrapedAt": "2026-01-26T10:30:45.344Z",
+  "_rawFile": "932_market_st_victoria_hillside_quadra_downtown_blanshard.html"
+}

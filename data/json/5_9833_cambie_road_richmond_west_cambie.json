@@ -1,0 +1,39 @@
+{
+  "address": "Unit 5 - 9833 Cambie Road",
+  "city": "Richmond",
+  "sqft": 1211,
+  "year": 2015,
+  "price": 940000,
+  "fee": 337,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 1,
+  "propertyTax": 3146,
+  "description": "Welcome to “The Oaks”, this bright and stylish 3-level corner townhouse in one of the most desirable communities in Richmond! Offers 4 bedrooms and 4 baths, including 3 ensuites. This unit is on the back row of cambie road with beautiful natural light from the North and South. Open-concept kitchen with quartz countertops, BOSCH  appliances. Well-maintained living and dining areas with access to a balcony and a fenced backyard. Main floor includes a bedroom and a full bathroom. Two ensuite bedrooms upstairs plus an extra bedroom and 3-piece bath on the lower level. Quality finishes throughout with stylish cabinetry, wood flooring, and radiant-heated bathroom floors. Near transit, park, shops, supermarket, Aberdeen Center. Open house: Jan 4, Sun, 2:00-4:00pm",
+  "features": [],
+  "schools": [
+    {
+      "name": "R. C. Talmey Elementary",
+      "rating": 6.6,
+      "distance": "0.4 km",
+      "type": "0-7"
+    },
+    {
+      "name": "MacNeill Secondary",
+      "rating": 3.4,
+      "distance": "2.3 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "West Cambie",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/5-9833-cambie-road/home/L5VXv3lddBA3j2q8?id_listing=1DBW7RrPoWR7qlAp",
+  "_scrapedAt": "2026-01-26T10:29:08.460Z",
+  "_rawFile": "5_9833_cambie_road_richmond_west_cambie.html"
+}

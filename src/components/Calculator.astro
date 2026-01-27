@@ -53,6 +53,20 @@ const areaOptions = Object.entries(areaCoefficients)
             meta: val
         };
     });
+
+const conditionOptions = [
+    { label: "1 - Needs Work", value: "1" },
+    { label: "2 - Original/Dated", value: "2" },
+    { label: "3 - Average", value: "3" },
+    { label: "4 - Updated", value: "4" },
+    { label: "5 - Brand New/Reno", value: "5" }
+];
+
+const parkingOptions = [
+    { label: "Underground / Carport / Street", value: "std" },
+    { label: "Tandem Private Garage", value: "tandem" },
+    { label: "Double Side-by-Side Garage", value: "double" }
+];
 ---
 
 <section id="calculator" class="py-12 bg-gray-50 border-y border-gray-200">
@@ -100,32 +114,23 @@ const areaOptions = Object.entries(areaCoefficients)
                     </div>
                 </div>
 
-                <!-- Condition -->
+                <!-- Condition & Parking -->
                 <div class="space-y-4">
-                    <div class="grid grid-cols-1 gap-4">
-                         <div>
-                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Condition (1-5)</label>
-                            <select id="inputCondition" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
-                                <option value="1">1 - Needs Work</option>
-                                <option value="2">2 - Original/Dated</option>
-                                <option value="3" selected>3 - Average</option>
-                                <option value="4">4 - Updated</option>
-                                <option value="5">5 - Brand New/Reno</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Deep Data -->
-                <div class="grid grid-cols-1 gap-4">
-                    <div>
-                        <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Parking</label>
-                        <select id="inputParking" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
-                            <option value="std">Underground / Carport / Street</option>
-                            <option value="tandem">Tandem Private Garage</option>
-                            <option value="double">Double Side-by-Side Garage</option>
-                        </select>
-                    </div>
+                    <SearchSelect 
+                        id="inputCondition" 
+                        label="Condition (1-5)" 
+                        options={conditionOptions}
+                        initialValue="3"
+                        placeholder="Select condition..."
+                    />
+                    
+                    <SearchSelect 
+                        id="inputParking" 
+                        label="Parking" 
+                        options={parkingOptions}
+                        initialValue="std"
+                        placeholder="Select parking..."
+                    />
                 </div>
 
                 <div class="flex flex-wrap gap-4">
@@ -214,13 +219,13 @@ const areaOptions = Object.entries(areaCoefficients)
     document.addEventListener('DOMContentLoaded', () => {
         
         const inputs = {
-            areaCoef: document.getElementById('inputAreaCoef'), // This is the hidden input from SearchSelect
+            areaCoef: document.getElementById('inputAreaCoef'), // Hidden input from SearchSelect
             year: document.getElementById('inputYear'),
             area: document.getElementById('inputArea'),
             bath: document.getElementById('inputBath'),
             fee: document.getElementById('inputFee'),
-            condition: document.getElementById('inputCondition'),
-            parking: document.getElementById('inputParking'),
+            condition: document.getElementById('inputCondition'), // Hidden input from SearchSelect
+            parking: document.getElementById('inputParking'),     // Hidden input from SearchSelect
             endUnit: document.getElementById('checkEndUnit'),
             ac: document.getElementById('checkAC'),
             rain: document.getElementById('checkRain')
@@ -251,7 +256,7 @@ const areaOptions = Object.entries(areaCoefficients)
             const area = parseFloat(inputs.area.value);
             const bath = parseFloat(inputs.bath.value);
             const fee = parseFloat(inputs.fee.value) || 0;
-            const condition = parseInt(inputs.condition.value);
+            const condition = parseInt(inputs.condition.value) || 3;
             
             const parkType = inputs.parking.value;
             const isEnd = inputs.endUnit.checked ? 1 : 0;

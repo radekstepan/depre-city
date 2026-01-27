@@ -1,0 +1,39 @@
+{
+  "address": "Unit 35 - 10333 River Drive",
+  "city": "Richmond",
+  "sqft": 1395,
+  "year": 2025,
+  "price": 939000,
+  "fee": 0,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "description": "Luxury waterfront living at the BRAND NEW Parc Portofino by DAVA Development. Enjoy almost 1400 SF of interior space with tons of natural light and amazing water view. This 3-bedroom, 2.5-bath stacked townhome offers air conditioning for year-round comfort, 9-ft ceiling, a chef-inspired kitchen with sleek quartz countertops & island, premium stainless steel appliances, and spa-inspired baths. Step outside to your 170 SF private garden patio overlooking the beautifully landscaped community gardens. Perfectly situated near the riverfront boardwalk, Tait Park, Bridgeport skytrain station, and Tait Elementary. 2/5/10 New Home Warranty. 2 underground parking stalls with EV rough in included. Completion mid-December. Don't miss this unbeatable assignment opportunity. Call today!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Robert J Tait Elementary",
+      "rating": 5.9,
+      "distance": "0.6 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Cambie Secondary",
+      "rating": 3.3,
+      "distance": "2.3 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Bridgeport RI",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/35-10333-river-drive/home/VLaGyG2a1W0YW1ZD?id_listing=JKdOYrB2MaZY54lW",
+  "_scrapedAt": "2026-01-26T10:29:32.780Z",
+  "_rawFile": "35_10333_river_drive_richmond_bridgeport_ri.html"
+}

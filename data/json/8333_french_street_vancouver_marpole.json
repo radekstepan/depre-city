@@ -1,0 +1,39 @@
+{
+  "address": "8333 French Street",
+  "city": "Vancouver",
+  "sqft": 1004,
+  "year": 2025,
+  "price": 990000,
+  "fee": 392,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 0,
+  "description": "Luxury Town Houses with 'The Row on French'. This unit 3 bed, 2 bath and den, is in Building 4 This project is located in a quiet and beautiful area, in the heart of Marpole. Located minutes away from Oakridge Park, restaurants, golf courses and parks. Featuring a stunning kitchen with Stainless appliances from Bosch, a gas cook top, and quartz counters. The units heating system is a heat pump, which allows you to enjoy air conditioning during the warm months. 1 parking spot and 1 storgage room. Call us for a viewing of this amazing project",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sir Winston Churchill Secondary",
+      "rating": 8.2,
+      "distance": "1.5 km",
+      "type": "8-12"
+    },
+    {
+      "name": "David Lloyd George Elementary",
+      "rating": 7,
+      "distance": "0.2 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Marpole",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/8333-french-street/home/amgL7A4j1qlyZ1MW?id_listing=aD6p780XZ467wRQr",
+  "_scrapedAt": "2026-01-26T10:28:49.546Z",
+  "_rawFile": "8333_french_street_vancouver_marpole.html"
+}

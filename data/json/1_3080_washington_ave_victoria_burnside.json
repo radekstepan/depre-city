@@ -1,0 +1,39 @@
+{
+  "address": "Unit 1 - 3080 Washington Ave",
+  "city": "Victoria",
+  "sqft": 1729,
+  "year": 2023,
+  "price": 974000,
+  "fee": 368,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 4183,
+  "description": "Immaculate, recently built 2 level Townhome tucked away on a tree lined street, in family oriented Neighbourhood near the Gorge Waterway. This stunning corner unit offers 4 spacious bedrooms all on the same floor & 3 bathrooms. As you enter, you’ll be greeted by a beautifully designed open main floor that boasts full-sized living & dining rooms—perfect for both everyday living and entertaining. Your dream kitchen features shaker-style cabinetry, a pantry, and premium appliances, including a gas range and countless other thoughtful details making this kitchen as functional as it is stylish.\r\nVenture upstairs to discover 4 bedrooms that offer versatility for any family's needs. The primary bedroom features a large walk-in closet and an ensuite bathroom that showcases timeless elegance with its feature wall lighting, heated tile floors, and a frameless glass shower. This is a Smart Home with plenty of storage, a laundry closet and a spacious heated garage. Price includes GST",
+  "features": [],
+  "schools": [
+    {
+      "name": "Quadra Elementary",
+      "rating": 2.9,
+      "distance": "1.5 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Victoria High",
+      "rating": 2.2,
+      "distance": "1.4 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burnside",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/victoria-real-estate/1-3080-washington-ave/home/Z5BX32zzjVD3Dar0?id_listing=AKv53DlAzNE3MnxB",
+  "_scrapedAt": "2026-01-26T10:30:35.488Z",
+  "_rawFile": "1_3080_washington_ave_victoria_burnside.html"
+}

@@ -1,0 +1,39 @@
+{
+  "address": "Unit 8 - 3450 Whittier Ave",
+  "city": "Saanich",
+  "sqft": 1483,
+  "year": 0,
+  "price": 899900,
+  "fee": 381,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 1,
+  "propertyTax": 0,
+  "description": "Newly completed, Greyson by award-winning Abstract Developments, is a collection of traditional townhomes nestled away in Victoria’s burgeoning Uptown neighbourhood. Conveniently situated next to the Galloping Goose trail and centred between the city’s outer limits & the downtown core, you are positioned perfectly for seamless connectivity within Victoria and beyond. This elegant 3 Bed, 3.5 Bath home offers 1,403 sq ft of living space with 9’ ceilings, generous windows & natural colours to embody a sense of ease & welcome. The gourmet kitchen showcases two-tone shaker-style matte white & slab style brushed oak cabinetry, quartz countertops and island, stainless steel appliance package and built-in full height pantry. Featuring two private outdoor spaces, including a balcony and patio surrounded by lush landscaping & white picket fences. Includes an EV-ready garage and an optional upgrade for AC.  Move in when you’re ready and take advantage of the 10-year home warranty. Price + GST.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Spectrum Community School",
+      "rating": 4,
+      "distance": "2.2 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Tillicum Elementary",
+      "rating": 3.7,
+      "distance": "0.8 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Victoria",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/saanich-real-estate/8-3450-whittier-ave/home/wJKR7P8ENOO7XeLP?id_listing=LzQ1y50ZXQqYqdeK",
+  "_scrapedAt": "2026-01-26T10:30:30.596Z",
+  "_rawFile": "8_3450_whittier_ave_saanich_victoria.html"
+}

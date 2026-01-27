@@ -1,0 +1,39 @@
+{
+  "address": "Unit 103 - 2306 Emery Court",
+  "city": "North Vancouver",
+  "sqft": 1624,
+  "year": 2025,
+  "price": 1399900,
+  "fee": 587,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 0,
+  "description": "If you're looking for more space or a fresh start, Towns at Lynn could be the perfect fit. Our townhomes feature three full bedrooms, plenty of storage and an open main floor to bring everyone together. A large patio extends your living space for hosting family time and celebrations. You'll have direct-to-home parkade access, fully covered for loading gear in any weather. All residents get access to the Lynn Club-a 10,000 sf indoor and outdoor clubhouse including an indoor pool, a fitness centre, the Mountain Lounge, a kids' playground and an outdoor dining area available from the day you move in.  A Better Home by Mosaic - get in touch with our Towns at Lynn team to learn more.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Eastview Elementary",
+      "rating": 6.8,
+      "distance": "0.5 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Sutherland Secondary",
+      "rating": 5.4,
+      "distance": "1.0 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Lynn Valley",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/103-2306-emery-court/home/5VXv3lXb1rg3j2q8?id_listing=6zqW7dK6dlPy5eZE",
+  "_scrapedAt": "2026-01-26T10:20:36.232Z",
+  "_rawFile": "103_2306_emery_court_north_vancouver_lynn_valley.html"
+}

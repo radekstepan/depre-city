@@ -1,0 +1,39 @@
+{
+  "address": "Unit 8 - 2633 Shelbourne St",
+  "city": "Victoria",
+  "sqft": 1540,
+  "year": 1996,
+  "price": 780000,
+  "fee": 477,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 4112,
+  "description": "Welcome to 8-2633 Shelbourne Street — a quiet, private end-unit townhome in a beautifully maintained boutique complex.\r\n\r\nBright and inviting, this south-facing home features a cozy gas fireplace in the living room, engineered hardwood flooring throughout the main level, and French doors off the kitchen leading to a sunny, secluded patio, perfect for relaxing or entertaining.\r\n\r\nUpstairs offers three spacious bedrooms plus a bonus attic storage/workshop.\r\n\r\nThe location is unbeatable — walking distance to schools, bus routes, and Hillside Centre, and just minutes to the Royal Jubilee Hospital and other amenities.\r\n\r\nThis family- and pet-friendly complex makes this corner unit an ideal choice for young families or a smart investment opportunity.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Oak Bay High School",
+      "rating": 7,
+      "distance": "1.2 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Oaklands Elementary",
+      "rating": 4.3,
+      "distance": "0.6 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "North Jubilee",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/victoria-real-estate/8-2633-shelbourne-st/home/xLkv3V9PKZO7DBNr?id_listing=1DBW7Rnm5ML7qlAp",
+  "_scrapedAt": "2026-01-26T10:30:21.755Z",
+  "_rawFile": "8_2633_shelbourne_st_victoria_north_jubilee.html"
+}

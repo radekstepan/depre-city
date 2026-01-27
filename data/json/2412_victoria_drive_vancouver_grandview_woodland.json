@@ -1,0 +1,39 @@
+{
+  "address": "2412 Victoria Drive",
+  "city": "Vancouver",
+  "sqft": 1606,
+  "year": 2024,
+  "price": 1370000,
+  "fee": 385,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 1,
+  "propertyTax": 5154,
+  "description": "Introducing V8 Townhomes — a boutique collection in the vibrant Grandview Woodland neighbourhood, perfectly positioned at East 8th Avenue and Victoria Drive. This brand-new 3-bedroom, 4-bathroom residence showcases a gourmet kitchen with integrated Fisher & Paykel appliances, white oak engineered hardwood flooring, and premium Riobel and Kohler fixtures. Enjoy multiple outdoor spaces, including private balconies and a rooftop deck. The home also features a legal lock-off suite—ideal as a mortgage helper or guest accommodation. Thoughtfully designed and built with style in mind, V8 offers exceptional value. Just steps to the SkyTrain, Commercial Drive, bus routes, restaurants, and grocery stores, this is connected urban living at its finest.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Laura Secord Elementary",
+      "rating": 6.6,
+      "distance": "0.4 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Vancouver Technical Secondary",
+      "rating": 5.9,
+      "distance": "1.0 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Grandview Woodland",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/2412-victoria-drive/home/MWBVyZ9km24YKemj?id_listing=JRv53KjdarD7VPW4",
+  "_scrapedAt": "2026-01-26T10:20:47.316Z",
+  "_rawFile": "2412_victoria_drive_vancouver_grandview_woodland.html"
+}

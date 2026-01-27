@@ -1,0 +1,33 @@
+{
+  "address": "Unit 6 - 633 Belton Ave",
+  "city": "Victoria",
+  "sqft": 1302,
+  "year": 2025,
+  "price": 849000,
+  "fee": 332,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 0,
+  "description": "*Special Offer,with the Purchase of a new home,get a $12,000 bike credit towards the purchase of a new bike at Bishop's Family Cycles.This beautifully designed 3-bedroom, 2-bath townhome offers the perfect blend of modern style and sustainable living. Charming front porch overlooking the quiet street and a private back patio with direct access to a shared green space.Inside, you’ll find engineered white oak flooring, a Samsung heat pump, heated floors in the primary ensuite, and an electric fireplace. Expansive windows flood the home with natural light, creating a warm and inviting atmosphere.Nestled on a quiet, tree-lined no-through street in Vic West, you’re just minutes from vibrant village life with top coffee shops, parks, the Galloping Goose Trail, and more. Enjoy premium amenities including a best-in-class bike garage with ample space for cargo bikes, plus access to a shared electric vehicle.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Esquimalt High School",
+      "rating": 4.3,
+      "distance": "0.4 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Victoria West",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/victoria-real-estate/6-633-belton-ave/home/JRv53KDEdWXYVPW4?id_listing=B5bO3xx9Klp3kWVP",
+  "_scrapedAt": "2026-01-26T10:30:41.181Z",
+  "_rawFile": "6_633_belton_ave_victoria_victoria_west.html"
+}

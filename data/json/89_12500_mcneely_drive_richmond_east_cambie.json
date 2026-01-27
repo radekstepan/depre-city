@@ -1,0 +1,39 @@
+{
+  "address": "Unit 89 - 12500 Mcneely Drive",
+  "city": "Richmond",
+  "sqft": 1659,
+  "year": 1993,
+  "price": 955000,
+  "fee": 392,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3007,
+  "description": "Welcome to Francisco Village by Polygon—one of Richmond’s most sought-after gated communities. This beautifully renovated townhouse (2018 & 2020) features new paint, appliances, bathrooms, kitchen cabinets, counters, carpets, and quality laminate flooring. Enjoy the modern open layout with 9 ft ceilings, 3 bedrooms, 2.5 baths, a rec room, side-by-side garage, sundecks, and a gas fireplace. Quiet, family-friendly complex with gym, pool, and hot tub. Close to daycare, schools, parks, shops, and easy access to Vancouver. Call today to book your private showing!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Kathleen McNeely Elementary",
+      "rating": 7,
+      "distance": "0.1 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Cambie Secondary",
+      "rating": 3.3,
+      "distance": "0.4 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "East Cambie",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/89-12500-mcneely-drive/home/BXeEn7XjoeMYrPo8?id_listing=aD6p78NzRZ0YwRQr",
+  "_scrapedAt": "2026-01-26T10:28:47.086Z",
+  "_rawFile": "89_12500_mcneely_drive_richmond_east_cambie.html"
+}

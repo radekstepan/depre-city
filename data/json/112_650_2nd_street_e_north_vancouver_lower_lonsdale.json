@@ -1,0 +1,39 @@
+{
+  "address": "Unit 112 - 650 2nd Street E",
+  "city": "North Vancouver",
+  "sqft": 1313,
+  "year": 2023,
+  "price": 1210000,
+  "fee": 632,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3672,
+  "description": "Welcome home to your bright, South facing, front row townhome in Moodyville’s coveted Morrison On The Park w/ beautiful top floor city + water views and impressive upgrades. You’ll love the contemporary design and efficient use of space in this home. The front patio welcomes you and your guests into your open concept Living/Dining area and beautiful chef’s kitchen complete w/ premium SS appliance pkg. Also on the main floor is a multi purpose bdrm or office/den space with the primary and third bdrm on the upper floor. The lower level offers a perfect Rec Room for visitors, WFH space or gym w/ direct access into the parkade and nearby parking stalls + 382 SF storage ROOM w/ endless possibilities for all the gear + tools! $150K+ spent in upgrades incl. AC, XL Storage Rm, HW floors + 2nd pkg!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sutherland Secondary",
+      "rating": 5.4,
+      "distance": "2.1 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Ridgeway Elementary",
+      "rating": 5.2,
+      "distance": "0.8 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Lower Lonsdale",
+  "parkingType": "underground",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/112-650-2nd-street-e/home/AKv53DDgBJd3MnxB?id_listing=GMnKYq0gLAd3w1Qr",
+  "_scrapedAt": "2026-01-26T10:21:04.405Z",
+  "_rawFile": "112_650_2nd_street_e_north_vancouver_lower_lonsdale.html"
+}

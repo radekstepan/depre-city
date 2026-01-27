@@ -71,6 +71,10 @@ const areaPoints = Object.entries(model.areaCoefficients)
     }))
     .sort((a, b) => b.value - a.value);
 
+// Extract Unique Cities for Filter
+const cities = [...new Set(Object.keys(model.areaCoefficients).map(k => k.split(' - ')[0]))].sort();
+const defaultCities = ['Coquitlam', 'Port Coquitlam', 'Port Moody'];
+
 const featurePoints = [
     { label: 'Double Garage', value: model.coefDoubleGarage, tStat: model.tStats.coefDoubleGarage },
     { label: 'Tandem Garage', value: model.coefTandemGarage, tStat: model.tStats.coefTandemGarage },
@@ -100,9 +104,28 @@ const featurePoints = [
             <!-- Neighborhoods -->
             <div class="bg-gray-50/50 p-6 rounded-xl border border-gray-100">
                 <h3 class="text-sm font-bold text-gray-800 uppercase tracking-wide mb-2">Neighborhood Premiums ($)</h3>
-                <p class="text-xs text-gray-400 mb-6">Price impact relative to the baseline area ({model.areaReference}). <span class="text-emerald-600 font-medium">Green</span> is a premium, <span class="text-red-600 font-medium">red</span> is a discount.</p>
-                <div class="relative w-full" style={`height: ${Math.max(400, areaPoints.length * 28)}px`}>
-                    <canvas id="chartAreas"></canvas>
+                <p class="text-xs text-gray-400 mb-4">Price impact relative to the baseline area ({model.areaReference}). <span class="text-emerald-600 font-medium">Green</span> is a premium, <span class="text-red-600 font-medium">red</span> is a discount.</p>
+                
+                <!-- City Filter -->
+                <div class="flex flex-wrap gap-2 mb-4" id="areaFilterContainer">
+                    {cities.map(city => (
+                        <label class="inline-flex items-center px-2 py-1 rounded bg-white border border-gray-200 text-xs cursor-pointer hover:border-amber-300 transition-colors select-none shadow-sm">
+                            <input 
+                                type="checkbox" 
+                                class="form-checkbox h-3 w-3 text-amber-600 rounded mr-2 area-filter-checkbox focus:ring-amber-500" 
+                                value={city}
+                                checked={defaultCities.includes(city)}
+                            />
+                            <span class="text-gray-700 font-medium">{city}</span>
+                        </label>
+                    ))}
+                </div>
+
+                <!-- Scrollable Container -->
+                <div class="relative w-full h-[500px] overflow-y-auto pr-2 border-t border-gray-200 pt-2 custom-scrollbar">
+                    <div class="relative w-full" id="chartAreasContainer" style={`height: ${Math.max(400, areaPoints.length * 28)}px`}>
+                        <canvas id="chartAreas"></canvas>
+                    </div>
                 </div>
             </div>
 
@@ -145,7 +168,7 @@ const featurePoints = [
     </div>
 </section>
 
-<script define:vars={{ marketPoints, accuracyPoints, areaPoints, featurePoints }}>
+<script define:vars={{ marketPoints, accuracyPoints, areaPoints, featurePoints, defaultCities }}>
 document.addEventListener('DOMContentLoaded', () => {
     // Shared Config
     const commonOptions = {
@@ -256,20 +279,58 @@ document.addEventListener('DOMContentLoaded', () => {
         return val >= 0 ? '#10b981' : '#ef4444'; // Emerald 500 / Red 500
     }
 
-    // --- Chart 1: Areas ---
+    // --- Chart 1: Areas (Dynamic Filter) ---
     const ctxAreas = document.getElementById('chartAreas').getContext('2d');
-    new Chart(ctxAreas, {
+    
+    // Initial Filter Logic
+    const getFilteredPoints = () => {
+        const checkedCities = Array.from(document.querySelectorAll('.area-filter-checkbox:checked')).map(cb => cb.value);
+        return areaPoints.filter(p => {
+            const label = p.label; 
+            // Handle "City - SubArea" and "City - SubArea (Baseline)"
+            const city = label.split(' - ')[0]; 
+            return checkedCities.includes(city);
+        });
+    };
+
+    const initialAreaPoints = getFilteredPoints();
+
+    const chartAreas = new Chart(ctxAreas, {
         type: 'bar',
         data: {
-            labels: areaPoints.map(f => f.label),
+            labels: initialAreaPoints.map(f => f.label),
             datasets: [{
-                data: areaPoints.map(f => f.value),
-                backgroundColor: areaPoints.map(f => getCoefficientColor(f.value, f.tStat)),
+                data: initialAreaPoints.map(f => f.value),
+                backgroundColor: initialAreaPoints.map(f => getCoefficientColor(f.value, f.tStat)),
                 borderRadius: 4
             }]
         },
         options: barOptions
     });
+
+    // Update Area Chart Function
+    function updateAreaChart() {
+        const filteredPoints = getFilteredPoints();
+
+        chartAreas.data.labels = filteredPoints.map(p => p.label);
+        chartAreas.data.datasets[0].data = filteredPoints.map(p => p.value);
+        chartAreas.data.datasets[0].backgroundColor = filteredPoints.map(p => getCoefficientColor(p.value, p.tStat));
+        
+        // Resize container dynamically
+        const container = document.getElementById('chartAreasContainer');
+        container.style.height = `${Math.max(400, filteredPoints.length * 28)}px`;
+        
+        chartAreas.update();
+    }
+
+    // Filter Listeners
+    document.querySelectorAll('.area-filter-checkbox').forEach(cb => {
+        cb.addEventListener('change', updateAreaChart);
+    });
+    
+    // Initial resize call
+    updateAreaChart();
+
 
     // --- Chart 2: Features ---
     const ctxFeatures = document.getElementById('chartFeatures').getContext('2d');

@@ -1,0 +1,39 @@
+{
+  "address": "Unit 217 - 8699 Spires Road",
+  "city": "Richmond",
+  "sqft": 1588,
+  "year": 2025,
+  "price": 1439000,
+  "fee": 551,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 0,
+  "description": "Brighouse 22 - Move-in this now! Final 7 of 22 modern, spacious family friendly townhomes in the residential neighbourhood of Richmond-Brighouse ranging from 1,588 - 2,226 sq ft. Over height ceilings on the main level w/ floor to ceiling windows & full size S/S appliances by Bosch and Fisher & Paykel & wide plank laminate flooring throughout main. Dramatic peaked roofs w/ white & grey hardiplank exterior. Forced air heating & cooling system for year round comfort. Located in the heart of Richmond Centre - 10 min walking distance to Richmond Shopping Centre,Richmond Brighouse Skytrain Station, & Garden City Park. Schools: William Cook Elem, Richmond Secondary, & Kwantlen University. 1 pkg & locker included. Call for your private tour! OPEN HOUSE: SUN, JAN 4, 2-4 PM",
+  "features": [],
+  "schools": [
+    {
+      "name": "William Cook Elementary",
+      "rating": 5.8,
+      "distance": "0.2 km",
+      "type": "0-7"
+    },
+    {
+      "name": "MacNeill Secondary",
+      "rating": 3.4,
+      "distance": "1.0 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Brighouse",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/217-8699-spires-road/home/xLkv3V9x0xm7DBNr?id_listing=dXze3eVZOkMY8m9K",
+  "_scrapedAt": "2026-01-26T10:29:30.348Z",
+  "_rawFile": "217_8699_spires_road_richmond_brighouse.html"
+}

@@ -1,0 +1,39 @@
+{
+  "address": "544 46th Avenue E",
+  "city": "Vancouver",
+  "sqft": 1202,
+  "year": 2025,
+  "price": 1180000,
+  "fee": 0,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 0,
+  "description": "Discover a boutique collection of modern farm style homes in the heart of Vancouver’s Sunset neighbourhood.",
+  "features": [],
+  "schools": [
+    {
+      "name": "John Oliver Secondary",
+      "rating": 2.6,
+      "distance": "0.5 km",
+      "type": "8-12"
+    },
+    {
+      "name": "John Henderson Elementary",
+      "rating": 2.4,
+      "distance": "0.6 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Fraser VE",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/544-46th-avenue-e/home/J6Em7bnAkwd7XBeq?id_listing=bEDRYazOopby1VaB",
+  "_scrapedAt": "2026-01-26T10:29:10.938Z",
+  "_rawFile": "544_46th_avenue_e_vancouver_fraser_ve.html"
+}

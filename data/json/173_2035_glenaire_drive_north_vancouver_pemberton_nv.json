@@ -1,0 +1,39 @@
+{
+  "address": "Unit 173 - 2035 Glenaire Drive",
+  "city": "North Vancouver",
+  "sqft": 1603,
+  "year": 2023,
+  "price": 1450000,
+  "fee": 597,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 5655,
+  "description": "Welcome to Ebb and Flow! This stunning 4-bedroom, 3.5-bathroom home offers three levels of living space with a total of 1,603 sqft, plus 469 sqft rooftop deck. Nestled in a prime location of the sought-after Ebb & Flow complex, this home provides direct access from Sandown Place, making it ideal for families.The open-concept kitchen features premium Bosch appliances, including an integrated fridge, gas cooktop, wall oven,complemented by under-cabinet lighting for added convenience. Additional highlights include laminate flooring, a quartz backsplash, a waterfall-edge island, and two side-by-side parking spaces with storage. Enjoy radiant heat throughout and an upgraded heat pump for air conditioning in the summer. Located just minutes from Park Royal, Grouse Mountain, Highway and Downtown!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Carson Graham Secondary",
+      "rating": 4.1,
+      "distance": "2.8 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Norgate Community Elementary",
+      "rating": 1.4,
+      "distance": "1.0 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Pemberton NV",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/173-2035-glenaire-drive/home/gAaOyL8bJN5yGxMb?id_listing=JKdOYrB2M5oY54lW",
+  "_scrapedAt": "2026-01-26T10:20:38.618Z",
+  "_rawFile": "173_2035_glenaire_drive_north_vancouver_pemberton_nv.html"
+}

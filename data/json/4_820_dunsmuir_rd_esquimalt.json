@@ -1,0 +1,39 @@
+{
+  "address": "Unit 4 - 820 Dunsmuir Rd",
+  "city": "Esquimalt",
+  "sqft": 1765,
+  "year": 2024,
+  "price": 1069000,
+  "fee": 474,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 6832,
+  "description": "OH Sat 12-1:30/Sun 1-2:30pm **MOVE-IN READY & NO GST** Coastal luxury, steps from the Songhees Walkway, this is Unit 4 at “West Bay Crest”; a CORNER UNIT in the new, 7-unit high-end townhouse community in Esquimalt, bordering Vic West, built by Long-Term Developments. A 3-bedroom home with the highest level of detail in mind, West Bay Crest weaves quality finishes and meticulous craftsmanship — premium, integrated Fulgor Milano and Fisher & Paykel appliance package, Kohler farmhouse sink, quartz counters/waterfall/backsplash, full-tiled bathrooms, wide-plank engineered oak hardwood floors — with modern, practical convenience — Heat pump, A/C, epoxy floor garage w/ EV outlet, and private patios. One of the most walkable and convenient locations in Greater Victoria, minutes to dining, local artisan shops, Saxe Point Park w/ off-leash dog area, and the renowned Songhees Walkway, walkable to downtown. Experience the contemporary luxury of seaside living at West Bay Crest.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Esquimalt High School",
+      "rating": 4.3,
+      "distance": "0.8 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Macaulay Elementary",
+      "rating": 4,
+      "distance": "1.0 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Other",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/esquimalt-real-estate/4-820-dunsmuir-rd/home/DO1w3Wqa1V6y8Jg0?id_listing=DO1w3W98QGKy8Jg0",
+  "_scrapedAt": "2026-01-26T10:30:53.630Z",
+  "_rawFile": "4_820_dunsmuir_rd_esquimalt.html"
+}
