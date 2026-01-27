@@ -27,6 +27,7 @@ const accuracyPoints = listings
         const age = currentYear - l.year;
         const isDouble = l.parkingType === 'garage_double' ? 1 : 0;
         const isTandem = l.parkingType === 'garage_tandem' ? 1 : 0;
+        const extraParking = Math.max(0, (l.parking || 1) - 1);
         const locationStr = `${l.city} - ${l.subArea || 'Other'}`;
         const locCoef = model.areaCoefficients[locationStr] || 0;
         const isEnd = l.isEndUnit ? 1 : 0;
@@ -50,6 +51,7 @@ const accuracyPoints = listings
             (isEnd * model.coefEndUnit) +
             (isDouble * model.coefDoubleGarage) +
             (isTandem * model.coefTandemGarage) +
+            (extraParking * model.coefExtraParking) +
             locCoef +
             (taxPerSqft * model.coefTax) +
             (hasTax * model.coefHasTax);
@@ -98,6 +100,7 @@ const TSTAT_THRESHOLD = 1.0;
 const allFeatures = [
     { label: 'Double Garage', value: calcImpact(model.coefDoubleGarage), tStat: model.tStats.coefDoubleGarage },
     { label: 'Tandem Garage', value: calcImpact(model.coefTandemGarage), tStat: model.tStats.coefTandemGarage },
+    { label: 'Extra Parking Spot', value: calcLinearImpact(model.coefExtraParking, 1), tStat: model.tStats.coefExtraParking },
     { label: 'End Unit', value: calcImpact(model.coefEndUnit), tStat: model.tStats.coefEndUnit },
     { label: 'Air Con', value: calcImpact(model.coefAC), tStat: model.tStats.coefAC },
     { label: 'Rainscreen', value: calcImpact(model.coefRainscreen), tStat: model.tStats.coefRainscreen },

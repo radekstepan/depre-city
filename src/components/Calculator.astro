@@ -1,5 +1,6 @@
 ---
 import SearchSelect from './SearchSelect.astro';
+import { CALCULATOR_DEFAULTS } from '../config/calculator';
 
 interface Props {
     intercept: number;
@@ -14,6 +15,7 @@ interface Props {
     coefEndUnit: number;
     coefDoubleGarage: number;
     coefTandemGarage: number;
+    coefExtraParking: number;
     coefAssessment: number;
     coefHasAssessment: number;
     coefTax: number;
@@ -28,7 +30,7 @@ interface Props {
 const {
     intercept, coefSqft, coefAge, coefBath, coefBedrooms,
     coefFee, coefCondition, coefRainscreen,
-    coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage,
+    coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, coefExtraParking,
     coefAssessment, coefHasAssessment, coefTax, coefHasTax,
     areaCoefficients, areaReference, stdError,
     tStats, isLogLinear
@@ -102,11 +104,11 @@ const parkingOptions = [
                     <div class="grid grid-cols-2 gap-4">
                         <div>
                             <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Year Built</label>
-                            <input type="number" id="inputYear" value="2009" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                            <input type="number" id="inputYear" value={CALCULATOR_DEFAULTS.year} class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
                         </div>
                         <div>
                             <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Size (sqft)</label>
-                            <input type="number" id="inputArea" value="1377" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                            <input type="number" id="inputArea" value={CALCULATOR_DEFAULTS.sqft} class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
                         </div>
                     </div>
                 </div>
@@ -115,62 +117,67 @@ const parkingOptions = [
                 <div class="grid grid-cols-2 gap-4">
                     <div>
                         <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Bathrooms</label>
-                        <input type="number" id="inputBath" value="3" step="0.5" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                        <input type="number" id="inputBath" value={CALCULATOR_DEFAULTS.bathrooms} step="0.5" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
                     </div>
                     <div>
                         <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Bedrooms</label>
-                        <input type="number" id="inputBeds" value="2.5" step="0.5" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none" placeholder="3 or 2.5 (w/ den)">
+                        <input type="number" id="inputBeds" value={CALCULATOR_DEFAULTS.bedrooms} step="0.5" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none" placeholder="3 or 2.5 (w/ den)">
                     </div>
                 </div>
 
                  <!-- Fee -->
                  <div>
-                     <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Strata Fee ($)</label>
-                     <input type="number" id="inputFee" value="322" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
-                 </div>
+                      <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Strata Fee ($)</label>
+                      <input type="number" id="inputFee" value={CALCULATOR_DEFAULTS.fee} class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                  </div>
 
-                 <!-- Property Tax -->
-                 <div>
-                     <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Property Tax (Annual $)</label>
-                     <input type="number" id="inputPropertyTax" value="3265" step="100" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
-                 </div>
+                  <!-- Property Tax -->
+                  <div>
+                      <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Property Tax (Annual $)</label>
+                      <input type="number" id="inputPropertyTax" value={CALCULATOR_DEFAULTS.propertyTax} step="100" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                  </div>
 
-                 <!-- Assessment -->
-                 <div>
-                     <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">BC Assessment ($)</label>
-                     <input type="number" id="inputAssessment" value="909000" step="10000" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
-                 </div>
+                  <!-- Assessment -->
+                  <div>
+                      <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">BC Assessment ($)</label>
+                      <input type="number" id="inputAssessment" value={CALCULATOR_DEFAULTS.assessment} step="10000" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                  </div>
 
-                <!-- Condition & Parking -->
-                <div class="space-y-4">
-                    <SearchSelect 
-                        id="inputCondition" 
-                        label="Condition (1-5)" 
-                        options={conditionOptions}
-                        initialValue="4"
-                        placeholder="Select condition..."
-                    />
-                    
-                    <SearchSelect 
-                        id="inputParking" 
-                        label="Parking" 
-                        options={parkingOptions}
-                        initialValue="std"
-                        placeholder="Select parking..."
-                    />
-                </div>
+                 <!-- Condition & Parking -->
+                 <div class="space-y-4">
+                      <SearchSelect
+                          id="inputCondition"
+                          label="Condition (1-5)"
+                          options={conditionOptions}
+                          initialValue={CALCULATOR_DEFAULTS.condition.toString()}
+                          placeholder="Select condition..."
+                      />
+
+                      <SearchSelect
+                          id="inputParking"
+                          label="Parking Type"
+                          options={parkingOptions}
+                          initialValue={CALCULATOR_DEFAULTS.parkingType}
+                          placeholder="Select parking..."
+                      />
+
+                      <div>
+                          <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Parking Spots</label>
+                          <input type="number" id="inputParkingSpots" value={CALCULATOR_DEFAULTS.parkingSpots} min="1" step="1" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                      </div>
+                  </div>
 
                 <div class="flex flex-wrap gap-4">
                     <div class="flex items-center space-x-2">
-                        <input type="checkbox" id="checkEndUnit" class="h-4 w-4 text-amber-600 rounded">
+                        <input type="checkbox" id="checkEndUnit" checked={CALCULATOR_DEFAULTS.isEndUnit} class="h-4 w-4 text-amber-600 rounded">
                         <label for="checkEndUnit" class="text-sm text-gray-700">End Unit</label>
                     </div>
                     <div class="flex items-center space-x-2">
-                        <input type="checkbox" id="checkAC" class="h-4 w-4 text-amber-600 rounded">
+                        <input type="checkbox" id="checkAC" checked={CALCULATOR_DEFAULTS.hasAC} class="h-4 w-4 text-amber-600 rounded">
                         <label for="checkAC" class="text-sm text-gray-700">Air Conditioning</label>
                     </div>
                     <div class="flex items-center space-x-2">
-                        <input type="checkbox" id="checkRain" checked class="h-4 w-4 text-amber-600 rounded">
+                        <input type="checkbox" id="checkRain" checked={CALCULATOR_DEFAULTS.isRainscreened} class="h-4 w-4 text-amber-600 rounded">
                         <label for="checkRain" class="text-sm text-gray-700">Rainscreened</label>
                     </div>
                 </div>
@@ -256,7 +263,7 @@ const parkingOptions = [
     </div>
 </section>
 
-<script define:vars={{ intercept, coefSqft, coefAge, coefBath, coefBedrooms, coefFee, coefCondition, coefRainscreen, coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, coefAssessment, coefHasAssessment, coefTax, coefHasTax, stdError, isLogLinear }}>
+<script define:vars={{ intercept, coefSqft, coefAge, coefBath, coefBedrooms, coefFee, coefCondition, coefRainscreen, coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, coefExtraParking, coefAssessment, coefHasAssessment, coefTax, coefHasTax, stdError, isLogLinear, CALCULATOR_DEFAULTS }}>
     document.addEventListener('DOMContentLoaded', () => {
 
         const inputs = {
@@ -270,6 +277,7 @@ const parkingOptions = [
             propertyTax: document.getElementById('inputPropertyTax'),
             condition: document.getElementById('inputCondition'),
             parking: document.getElementById('inputParking'),
+            parkingSpots: document.getElementById('inputParkingSpots'),
             endUnit: document.getElementById('checkEndUnit'),
             ac: document.getElementById('checkAC'),
             rain: document.getElementById('checkRain')
@@ -298,16 +306,17 @@ const parkingOptions = [
         // Helper: Calculate Price given specific overrides
         function predict(overrides = {}) {
             // Defaults
-            let areaCoefVal = parseFloat(inputs.areaCoef.value) || 0;
-            let year = parseFloat(inputs.year.value) || 2000;
-            let area = parseFloat(inputs.area.value) || 1000;
-            let bath = parseFloat(inputs.bath.value) || 2;
-            let beds = parseFloat(inputs.beds.value) || 2;
-            let fee = parseFloat(inputs.fee.value) || 0;
-            let assessment = parseFloat(inputs.assessment.value) || 0;
-            let propertyTax = parseFloat(inputs.propertyTax.value) || 0;
-            let condition = parseInt(inputs.condition.value) || 3;
-            let parkType = inputs.parking.value || 'std';
+            let areaCoefVal = parseFloat(inputs.areaCoef.value) || CALCULATOR_DEFAULTS.areaCoefVal;
+            let year = parseFloat(inputs.year.value) || CALCULATOR_DEFAULTS.year;
+            let area = parseFloat(inputs.area.value) || CALCULATOR_DEFAULTS.sqft;
+            let bath = parseFloat(inputs.bath.value) || CALCULATOR_DEFAULTS.bathrooms;
+            let beds = parseFloat(inputs.beds.value) || CALCULATOR_DEFAULTS.bedrooms;
+            let fee = parseFloat(inputs.fee.value) || CALCULATOR_DEFAULTS.fee;
+            let assessment = parseFloat(inputs.assessment.value) || CALCULATOR_DEFAULTS.assessment;
+            let propertyTax = parseFloat(inputs.propertyTax.value) || CALCULATOR_DEFAULTS.propertyTax;
+            let condition = parseInt(inputs.condition.value) || CALCULATOR_DEFAULTS.condition;
+            let parkType = inputs.parking.value || CALCULATOR_DEFAULTS.parkingType;
+            let parkingSpots = parseFloat(inputs.parkingSpots.value) || CALCULATOR_DEFAULTS.parkingSpots;
             let isEnd = inputs.endUnit.checked ? 1 : 0;
             let isAC = inputs.ac.checked ? 1 : 0;
             let isRain = inputs.rain.checked ? 1 : 0;
@@ -330,6 +339,7 @@ const parkingOptions = [
             const taxPerSqft = (hasTax && area > 0) ? propertyTax / area : 0;
 
             // Parking
+            const extraParking = Math.max(0, (parkingSpots || CALCULATOR_DEFAULTS.parkingSpots) - 1);
             let valParkingCoef = 0;
             if (parkType === 'double') valParkingCoef = coefDoubleGarage;
             if (parkType === 'tandem') valParkingCoef = coefTandemGarage;
@@ -347,6 +357,7 @@ const parkingOptions = [
                     (isEnd * coefEndUnit) +
                     (isAC * coefAC) +
                     valParkingCoef +
+                    (extraParking * coefExtraParking) +
                     (logAssessment * coefAssessment) +
                     (hasAssessment * coefHasAssessment) +
                     (taxPerSqft * coefTax) +
@@ -367,6 +378,7 @@ const parkingOptions = [
                     (isEnd * coefEndUnit) +
                     (isAC * coefAC) +
                     valParkingCoef +
+                    (extraParking * coefExtraParking) +
                     (logAssessment * coefAssessment) +
                     (hasAssessment * coefHasAssessment) +
                     (taxPerSqft * coefTax) +
@@ -378,8 +390,8 @@ const parkingOptions = [
         function calculate() {
             // 1. Calculate Baseline Total
             const finalPrice = predict();
-            const area = parseFloat(inputs.area.value) || 1000;
-            const year = parseFloat(inputs.year.value) || 2000;
+            const area = parseFloat(inputs.area.value) || CALCULATOR_DEFAULTS.sqft;
+            const year = parseFloat(inputs.year.value) || CALCULATOR_DEFAULTS.year;
 
             // 2. Render Main Price
             outputs.price.innerText = format(finalPrice);
@@ -411,7 +423,7 @@ const parkingOptions = [
 
             // Area Value
             // For Log Linear: P_with_area - P_no_area
-            const pNoArea = finalPrice / Math.exp(parseFloat(inputs.areaCoef.value) || 0); // Simplified inverse
+            const pNoArea = finalPrice / Math.exp(parseFloat(inputs.areaCoef.value) || CALCULATOR_DEFAULTS.areaCoefVal); // Simplified inverse
             const valLoc = finalPrice - pNoArea;
             outputs.valLoc.className = valLoc >= 0 ? "text-green-400" : "text-red-400";
             outputs.valLoc.innerText = (valLoc > 0 ? "+" : "") + format(valLoc);
@@ -424,31 +436,34 @@ const parkingOptions = [
 
             // Condition (Compare to condition 3 baseline if desired, or 0)
             // Let's compare to Condition 1 (lowest) to show "Value added by condition"
-            const cond = parseInt(inputs.condition.value) || 3;
+            const cond = parseInt(inputs.condition.value) || CALCULATOR_DEFAULTS.condition;
             // Diff from Cond 1
             const pCond1 = finalPrice / Math.exp((cond - 1) * coefCondition);
             const valCond = finalPrice - pCond1;
             outputs.valCondition.innerText = "+" + format(valCond);
 
             // Baths (Value of EXTRA baths, e.g. above 1)
-            const bath = parseFloat(inputs.bath.value) || 2;
+            const bath = parseFloat(inputs.bath.value) || CALCULATOR_DEFAULTS.bathrooms;
             const p1Bath = finalPrice / Math.exp((bath - 1) * coefBath);
             const valBath = finalPrice - p1Bath;
             outputs.valBath.innerText = "+" + format(valBath);
 
             // Bedrooms (Value of EXTRA bedrooms, e.g. above 2)
-            const beds = parseFloat(inputs.beds.value) || 2;
+            const beds = parseFloat(inputs.beds.value) || CALCULATOR_DEFAULTS.bedrooms;
             const p2Beds = finalPrice / Math.exp((beds - 2) * coefBedrooms);
             const valBeds = finalPrice - p2Beds;
             outputs.valBeds.innerText = "+" + format(valBeds);
 
-            // Parking (Value vs Street)
-            const parkType = inputs.parking.value || 'std';
+            // Parking (Value vs Street + Extra Spots)
+            const parkType = inputs.parking.value || CALCULATOR_DEFAULTS.parkingType;
+            const parkingSpots = parseFloat(inputs.parkingSpots.value) || CALCULATOR_DEFAULTS.parkingSpots;
             let parkCoef = 0;
             if (parkType === 'double') parkCoef = coefDoubleGarage;
             if (parkType === 'tandem') parkCoef = coefTandemGarage;
-            const pStdPark = finalPrice / Math.exp(parkCoef);
-            const valPark = finalPrice - pStdPark;
+            const extraParking = Math.max(0, (parkingSpots || CALCULATOR_DEFAULTS.parkingSpots) - 1);
+            const totalParkingCoef = parkCoef + (extraParking * coefExtraParking);
+            const pNoParking = finalPrice / Math.exp(totalParkingCoef);
+            const valPark = finalPrice - pNoParking;
             outputs.valParking.innerText = "+" + format(valPark);
 
             // Amenities (End + AC + Rain)
@@ -461,7 +476,7 @@ const parkingOptions = [
             outputs.valFeatures.innerText = "+" + format(valAmenities);
 
             // Assessment Impact (Value vs baseline assessment)
-            const assessment = parseFloat(inputs.assessment.value) || 0;
+            const assessment = parseFloat(inputs.assessment.value) || CALCULATOR_DEFAULTS.assessment;
             const hasAssessment = assessment > 0 ? 1 : 0;
             const logAssessment = hasAssessment ? Math.log(assessment) : 0;
             const assessmentCoef = (logAssessment * coefAssessment) + (hasAssessment * coefHasAssessment);
@@ -471,7 +486,7 @@ const parkingOptions = [
             outputs.valAssessment.innerText = (valAssessment > 0 ? "+" : "") + format(valAssessment);
 
             // Tax Impact (Value vs $0 tax)
-            const propertyTax = parseFloat(inputs.propertyTax.value) || 0;
+            const propertyTax = parseFloat(inputs.propertyTax.value) || CALCULATOR_DEFAULTS.propertyTax;
             const hasTax = propertyTax > 0 ? 1 : 0;
             const taxPerSqft = (hasTax && area > 0) ? propertyTax / area : 0;
             const taxCoef = (taxPerSqft * coefTax) + (hasTax * coefHasTax);
@@ -482,7 +497,7 @@ const parkingOptions = [
 
             // Fee Impact (Value vs $0 fee)
             // Fee coefficient is usually negative
-            const fee = parseFloat(inputs.fee.value) || 0;
+            const fee = parseFloat(inputs.fee.value) || CALCULATOR_DEFAULTS.fee;
             const feePerSqft = area > 0 ? fee / area : 0;
             const pNoFee = finalPrice / Math.exp(feePerSqft * coefFee);
             const valFee = finalPrice - pNoFee;

@@ -1,0 +1,16 @@
+export const CALCULATOR_DEFAULTS = {
+    year: 2009,
+    sqft: 1377,
+    bathrooms: 3,
+    bedrooms: 2.5,
+    fee: 322,
+    propertyTax: 3265,
+    assessment: 909000,
+    condition: 4,
+    parkingType: "std",
+    parkingSpots: 1,
+    isEndUnit: false,
+    hasAC: false,
+    isRainscreened: true,
+    areaCoefVal: 0,
+};
