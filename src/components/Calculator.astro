@@ -407,7 +407,8 @@ const parkingOptions = [
                     (hasFee * coefHasFee) +
                     areaCoefVal;
 
-                return Math.exp(logPrice);
+                // Add direct fee capitalization (model only captures binary, not amount)
+                return Math.exp(logPrice) - (fee * 180);
             } else {
                 // Linear fallback
                 return intercept +
@@ -426,7 +427,8 @@ const parkingOptions = [
                     (taxPerSqft * coefTax) +
                     (hasTax * coefHasTax) +
                     (hasFee * coefHasFee) +
-                    areaCoefVal;
+                    areaCoefVal -
+                    (fee * 180); // Direct fee capitalization
             }
         }
 
@@ -555,11 +557,17 @@ const parkingOptions = [
             outputs.valTax.className = valTax >= 0 ? "text-green-400" : "text-red-400";
             updateOutput(outputs.valTax, valTax, 'valTax');
 
-            // Fee Impact (Financial Liability Deduction)
-            // Each $1 in monthly fee reduces property value by ~$180 (capitalization factor)
-            // Based on standard mortgage/valuation rules of thumb
+            // Fee Impact (Model effect + Direct capitalization)
+            // The model only captures if a fee exists (binary), not the amount
+            // So we need to apply direct capitalization for the actual fee amount
             const fee = parseFloat(inputs.fee.value) || CALCULATOR_DEFAULTS.fee;
-            const valFee = -fee * 180; // Capitalization factor: $1/mo ≈ $180 value
+            const hasFee = fee > 0 ? 1 : 0;
+            const feeCoef = hasFee * coefHasFee;
+            const pNoFee = finalPrice / Math.exp(feeCoef);
+            const modelEffect = finalPrice - pNoFee;
+            // Direct capitalization: $1/month in fees ≈ -$180 in property value
+            const directEffect = -fee * 180;
+            const valFee = modelEffect + directEffect;
             outputs.valFee.className = valFee >= 0 ? "text-green-400" : "text-red-400";
             updateOutput(outputs.valFee, valFee, 'valFee');
 
