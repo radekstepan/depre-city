@@ -33,18 +33,20 @@ const accuracyPoints = listings
         const isEnd = l.isEndUnit ? 1 : 0;
         const hasAC = l.hasAC ? 1 : 0;
         const baths = l.bathrooms || 1;
-        const feePerSqft = l.sqft > 0 ? (l.fee || 0) / l.sqft : 0;
         const condition = l.condition || 3;
         const isRainscreen = l.rainscreen ? 1 : 0;
         const hasTax = (l.propertyTax && l.propertyTax > 0) ? 1 : 0;
         const taxPerSqft = (hasTax && l.sqft > 0) ? l.propertyTax / l.sqft : 0;
+        const beds = l.bedrooms || 2;
+        const hasAssessment = (l.assessment && l.assessment > 0) ? 1 : 0;
+        const logAssessment = hasAssessment ? Math.log(l.assessment) : 0;
 
         // Log Linear Logic: Sum of coefs
         const predictedLog = model.intercept +
             (l.sqft * model.coefSqft) +
             (age * model.coefAge) +
             (baths * model.coefBath) +
-            (feePerSqft * model.coefFee) +
+            (beds * model.coefBedrooms) +
             (condition * model.coefCondition) +
             (isRainscreen * model.coefRainscreen) +
             (hasAC * model.coefAC) +
@@ -53,6 +55,8 @@ const accuracyPoints = listings
             (isTandem * model.coefTandemGarage) +
             (extraParking * model.coefExtraParking) +
             locCoef +
+            (logAssessment * model.coefAssessment) +
+            (hasAssessment * model.coefHasAssessment) +
             (taxPerSqft * model.coefTax) +
             (hasTax * model.coefHasTax);
 

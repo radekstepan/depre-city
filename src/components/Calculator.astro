@@ -125,12 +125,6 @@ const parkingOptions = [
                     </div>
                 </div>
 
-                 <!-- Fee -->
-                 <div>
-                      <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Strata Fee ($)</label>
-                      <input type="number" id="inputFee" value={CALCULATOR_DEFAULTS.fee} class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
-                  </div>
-
                   <!-- Property Tax -->
                   <div>
                       <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Property Tax (Annual $)</label>
@@ -252,12 +246,6 @@ const parkingOptions = [
                         </div>
                         <span class="text-red-400" id="valTax">-$0</span>
                     </div>
-                    <div class="flex justify-between items-center">
-                        <div class="flex items-center gap-2">
-                            <span class="text-gray-400">Fee Adjustment</span>
-                        </div>
-                        <span class="text-red-400" id="valFee">-$0</span>
-                    </div>
                 </div>
             </div>
         </div>
@@ -273,7 +261,6 @@ const parkingOptions = [
             area: document.getElementById('inputArea'),
             bath: document.getElementById('inputBath'),
             beds: document.getElementById('inputBeds'),
-            fee: document.getElementById('inputFee'),
             assessment: document.getElementById('inputAssessment'),
             propertyTax: document.getElementById('inputPropertyTax'),
             condition: document.getElementById('inputCondition'),
@@ -289,7 +276,6 @@ const parkingOptions = [
             range: document.getElementById('outputRange'),
             psqft: document.getElementById('outputPsqft'),
             valAge: document.getElementById('valAge'),
-            valFee: document.getElementById('valFee'),
             valTax: document.getElementById('valTax'),
             valAssessment: document.getElementById('valAssessment'),
             valBath: document.getElementById('valBath'),
@@ -354,7 +340,6 @@ const parkingOptions = [
             let area = parseFloat(inputs.area.value) || CALCULATOR_DEFAULTS.sqft;
             let bath = parseFloat(inputs.bath.value) || CALCULATOR_DEFAULTS.bathrooms;
             let beds = parseFloat(inputs.beds.value) || CALCULATOR_DEFAULTS.bedrooms;
-            let fee = parseFloat(inputs.fee.value) || CALCULATOR_DEFAULTS.fee;
             let assessment = parseFloat(inputs.assessment.value) || CALCULATOR_DEFAULTS.assessment;
             let propertyTax = parseFloat(inputs.propertyTax.value) || CALCULATOR_DEFAULTS.propertyTax;
             let condition = parseInt(inputs.condition.value) || CALCULATOR_DEFAULTS.condition;
@@ -371,7 +356,6 @@ const parkingOptions = [
             
             const currentYear = new Date().getFullYear();
             const age = currentYear - year;
-            const hasFee = fee > 0 ? 1 : 0;
             
             // Assessment
             const hasAssessment = assessment > 0 ? 1 : 0;
@@ -425,7 +409,6 @@ const parkingOptions = [
                     (hasAssessment * coefHasAssessment) +
                     (taxPerSqft * coefTax) +
                     (hasTax * coefHasTax) +
-                    (hasFee * coefHasFee) +
                     areaCoefVal;
             }
         }
@@ -436,7 +419,6 @@ const parkingOptions = [
             range: '',
             psqft: 0,
             valAge: 0,
-            valFee: 0,
             valTax: 0,
             valAssessment: 0,
             valBath: 0,
@@ -554,13 +536,6 @@ const parkingOptions = [
             const valTax = finalPrice - pNoTax;
             outputs.valTax.className = valTax >= 0 ? "text-green-400" : "text-red-400";
             updateOutput(outputs.valTax, valTax, 'valTax');
-
-            // Fee Impact (Model coefficient represents avg fee effect)
-            // Display uses direct capitalization for interpretability
-            const fee = parseFloat(inputs.fee.value) || CALCULATOR_DEFAULTS.fee;
-            const valFee = -fee * 180; // $1/month ≈ -$180 property value
-            outputs.valFee.className = valFee >= 0 ? "text-green-400" : "text-red-400";
-            updateOutput(outputs.valFee, valFee, 'valFee');
 
             // Dispatch event for charts
             const event = new CustomEvent('deprecity:model-update', {
