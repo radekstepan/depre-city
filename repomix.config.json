@@ -1,0 +1,45 @@
+{
+  "output": {
+    "filePath": "repomix-output.xml",
+    "style": "xml",
+    "headerText": "Depre-city project with sample data files",
+    "instructionFilePath": ""
+  },
+  "include": [
+    "**/*"
+  ],
+  "ignore": {
+    "useGitignore": true,
+    "useDefaultPatterns": true,
+    "customPatterns": [
+      "node_modules/**",
+      "dist/**",
+      ".git/**",
+      ".astro/**",
+      "yarn.lock",
+      "package-lock.json",
+      "repomix-output.xml",
+      "data/html/1[0-9]*.html",
+      "data/html/2[1-9]*.html",
+      "data/html/3[0-9]*.html",
+      "data/html/4[0-9]*.html",
+      "data/html/5[0-9]*.html",
+      "data/html/6[0-9]*.html",
+      "data/html/7[0-9]*.html",
+      "data/html/8[0-9]*.html",
+      "data/html/9[0-9]*.html",
+      "data/json/1[0-9]*.json",
+      "data/json/2[1-9]*.json",
+      "data/json/3[0-9]*.json",
+      "data/json/4[0-9]*.json",
+      "data/json/5[0-9]*.json",
+      "data/json/6[0-9]*.json",
+      "data/json/7[0-9]*.json",
+      "data/json/8[0-9]*.json",
+      "data/json/9[0-9]*.json"
+    ]
+  },
+  "security": {
+    "enableSecurityCheck": true
+  }
+}
