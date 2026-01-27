@@ -1,0 +1,39 @@
+{
+  "address": "Unit 25 - 8701 16th Avenue",
+  "city": "Burnaby",
+  "sqft": 1889,
+  "year": 1998,
+  "price": 990000,
+  "fee": 320,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3277,
+  "description": "THE CREST 'Englewood Mews' in the heart of East Burnaby. Nice & clean DUPLEX-style townhome. Almost 1900 sqft over 3 levels. 3 bdrms up + basement rec room that can be used as 4th bdrm, total of 4 bathrooms, 2 full & 2 half. Good sized kitchen with granite countertops with eating area & bar. TWO fireplaces. Lots of outdoor place - private patio off living room (for gardening), balconies off family room & primary bdrm. Laminate flooring & a floor plan that just works, real homey feel. DOUBLE garage with ample storage. Complex has newer roof, downspouts & gutters. Easy access to Hwy 1, SFU, & Lougheed Mall. Schools: Armstrong Elementary & Cariboo Hill Secondary. Private schools, John Knox & St. Michaels.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Cariboo Hill Secondary",
+      "rating": 6.4,
+      "distance": "0.7 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Armstrong Elementary",
+      "rating": 4,
+      "distance": "0.4 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "The Crest",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/25-8701-16th-avenue/home/aD6p781nl1V3wRQr?id_listing=aD6p78NzZQVYwRQr",
+  "_scrapedAt": "2026-01-26T08:26:58.553Z",
+  "_rawFile": "25_8701_16th_avenue_burnaby_the_crest.html"
+}

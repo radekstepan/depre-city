@@ -1,0 +1,39 @@
+{
+  "address": "Unit 13 - 9735 University Crescent",
+  "city": "Burnaby",
+  "sqft": 1629,
+  "year": 2021,
+  "price": 920000,
+  "fee": 901,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 2649,
+  "description": "Welcome to ' Fraser'' by Mosaic, located in the heart of University at SFU. This modern 3 Bed + Den Townhome offers 1,629 sf of stylish living with 10’ ceilings on the main and 9’ ceilings on the top floor. Open-concept main level features a Shaker Kitchen w/ KitchenAid S/S appliance package, quartz countertops, oversized windows, radiant in-floor heating, and a Fenced Patio. A huge DEN at the lower floor which can be turned into an office or 4th bedroom. The upper floor features 2 bedrooms as well as a laundry room with storage. The top floor features the master bedroom with a 4 piece ensuite. 1 parking included. Steps away to a leading childcare facility, a highly ranked elementary school, Nesters Market, the Lorne Davies Recreation Complex, and popular hiking trails in Burnaby Mountain.",
+  "features": [],
+  "schools": [
+    {
+      "name": "University Highlands Elementary",
+      "rating": 8.2,
+      "distance": "0.3 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Burnaby Mountain Secondary",
+      "rating": 7.6,
+      "distance": "2.4 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Simon Fraser Univer.",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/13-9735-university-crescent/home/0MWBVyZXwW43Kemj?id_listing=Vwod7vKBEZo35mGN",
+  "_scrapedAt": "2026-01-26T08:07:55.879Z",
+  "_rawFile": "13_9735_university_crescent_burnaby_simon_fraser_univer.html"
+}

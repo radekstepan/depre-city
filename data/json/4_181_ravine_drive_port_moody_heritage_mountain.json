@@ -1,0 +1,39 @@
+{
+  "address": "Unit 4 - 181 Ravine Drive",
+  "city": "Port Moody",
+  "sqft": 2471,
+  "year": 1990,
+  "price": 1250000,
+  "fee": 610,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4940,
+  "description": "Beautiful END-unit townhome with AIR CONDITIONING! This 2,471 sq ft home offers a spacious, family-friendly layout in a private setting, with 3 beds + 3 renovated baths. The main features a bright kitchen w/granite counters, S/S appliances, gas cooktop and new fridge, seamlessly connected to the family room and eating area w/access to a sunny, South-facing balcony. Formal living and dining area w/gas FP and updated surround opens to a serene patio spanning the width of the home. Upstairs are 3 generous bedrooms, including a primary with walk-in closet + 4-piece ensuite. The lower level offers a large rec room with window, den, ample storage, and double car garage. New windows + balcony, and rough-in for 4th bath. Located in a sought-after catchment, including Heritage Woods Secondary.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Heritage Woods Secondary",
+      "rating": 8,
+      "distance": "0.5 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Heritage Mountain Elementary",
+      "rating": 7.9,
+      "distance": "0.3 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Heritage Mountain",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-moody-real-estate/4-181-ravine-drive/home/zVwod7v6mBp75mGN?id_listing=Zaw5YojABdD3n961",
+  "_scrapedAt": "2026-01-26T08:12:18.299Z",
+  "_rawFile": "4_181_ravine_drive_port_moody_heritage_mountain.html"
+}

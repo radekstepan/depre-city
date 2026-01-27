@@ -1,0 +1,39 @@
+{
+  "address": "Unit 13 - 1872 Harbour Street",
+  "city": "Port Coquitlam",
+  "sqft": 1659,
+  "year": 1990,
+  "price": 830300,
+  "fee": 431,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3074,
+  "description": "ABSOLUTE SHOWSTOPPER at Harbour Place Estates! Tastefully renovated and turn key ready! Step inside to a fully renovated chef's kitchen with newer high end appliances, solid cabinetry, modern backsplash and a farmhouse sink that overlooks your open concept and sun-filled living/dinning room combo. Step outside to your professionally manicured backyard oasis that requires no maintenance: Just sit back and relax all year around - Multiple covered areas that includes a retractable pergola and a high end wooden pergola. Step up to the bright and sun filled second floor to 3 generous bedrooms. Primary bedroom has a large ensuite bathroom with skylight and a walk out balcony perfect for your morning coffee! 2 Other bedrooms have a balcony for fresh air! Pride of ownership!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Ecole Riverside Secondary",
+      "rating": 4.6,
+      "distance": "2.7 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Hazel Trembath Elementary",
+      "rating": 3.7,
+      "distance": "0.9 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Citadel PQ",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/13-1872-harbour-street/home/x9w8o3mMjwv3GKjm?id_listing=amgL7Ax6nxpyZ1MW",
+  "_scrapedAt": "2026-01-26T08:23:13.563Z",
+  "_rawFile": "13_1872_harbour_street_port_coquitlam_citadel_pq.html"
+}

@@ -1,0 +1,39 @@
+{
+  "address": "915 Britton Drive",
+  "city": "Port Moody",
+  "sqft": 1053,
+  "year": 1977,
+  "price": 780000,
+  "fee": 363,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 3040,
+  "description": "This fully renovated townhome offers the perfect blend of style, comfort, and convenience in a family-friendly complex. The modern interior features thoughtful updates throughout, while the fully fenced yard provides a safe and private space for kids and pets to play. Located just minutes from the shops at Suter Brook and Newport Village. Outdoor lovers will appreciate the proximity to Rocky Point Park and the trails around Burrard Inlet. Families will love being within walking distance to Seaview Community School, and just a short drive to Moody Middle and Port Moody Secondary. A turnkey home in a connected and vibrant Port Moody neighborhood!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Heritage Woods Secondary",
+      "rating": 8,
+      "distance": "1.4 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Mountain Meadows Elementary",
+      "rating": 7,
+      "distance": "0.4 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "North Shore Pt Moody",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/port-moody-real-estate/915-britton-drive/home/JjAXw7QkV2aYQOzg?id_listing=xLkv3V6Zm0Z3DBNr",
+  "_scrapedAt": "2026-01-26T08:26:32.533Z",
+  "_rawFile": "915_britton_drive_port_moody_north_shore_pt_moody.html"
+}

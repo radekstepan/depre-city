@@ -1,0 +1,39 @@
+{
+  "address": "Unit 101 - 7064 133b Street",
+  "city": "Surrey",
+  "sqft": 1305,
+  "year": 1982,
+  "price": 265000,
+  "fee": 833,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 0,
+  "description": "Suncreek Estates; This is a rare opportunity to find an affordable 1305 square feet of living space 3 Bed rooms 2 Bath rooms ground Level unit is a Perfect First time Home or for living. This is Centrally located with transit at your doorsteps, Walk to your favorite Restaurants, Elementary school 1/2 Block, Princess Margaret Secondary School 5 Minutes walk. Comes with 2 parking spots. Property tax is included in maintence fee. Minimum down payment is required 20% for mortgage.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Princess Margaret Secondary",
+      "rating": 3.9,
+      "distance": "1.0 km",
+      "type": "8-12"
+    },
+    {
+      "name": "W E Kinvig Elementary",
+      "rating": 1.5,
+      "distance": "0.2 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "West Newton",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/101-7064-133b-street/home/xmZRW7nMOPVyEBO9?id_listing=amgL7Ax6BGmyZ1MW",
+  "_scrapedAt": "2026-01-26T09:20:46.534Z",
+  "_rawFile": "101_7064_133b_street_surrey_west_newton.html"
+}

@@ -1,0 +1,39 @@
+{
+  "address": "Unit 24 - 7918 204b Street",
+  "city": "Langley",
+  "sqft": 1407,
+  "year": 2025,
+  "price": 939900,
+  "fee": 267,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "description": "Welcome home to Heath West, a modern community of 67 homes proudly developed by BMG Real Estate. This 4 Bedroom, 3 full bath home features an open layout, large kitchen with beautiful Fischer & Paykel appliances incl. industrial style gas range, double drawer dishwasher. Oversized windows, high efficiency GAS furnace.  FREE A/C + FREE W/D incl for limited time. Two car parking with double side by side garage! Finishes incl. slim shaker cabinets w/ quartz counters, covered deck w/ gas rough in, spacious master & spa inspired ensuite + many more special touches throughout! Heath West is located directly next to Donna Gabriel Robins elementary with a short walk to restaurants, parks and shopping.. Completion estimated end Feb 2026. Sales Centre & Showhome located at 7918 204B Street, Langley.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "0.6 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "0.8 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/24-7918-204b-street/home/XeEn7X6PrbqYrPo8?id_listing=DO1w3W1qxKny8Jg0",
+  "_scrapedAt": "2026-01-26T08:46:16.450Z",
+  "_rawFile": "24_7918_204b_street_langley_willoughby_heights.html"
+}

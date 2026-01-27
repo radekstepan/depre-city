@@ -1,0 +1,39 @@
+{
+  "address": "Unit 152 - 3535 Highland Drive",
+  "city": "Coquitlam",
+  "sqft": 1760,
+  "year": 2025,
+  "price": 1099900,
+  "fee": 293,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 0,
+  "description": "Heartwood, a community by StreetSide Developments - At the heart of it all lies good design. Featuring large open floorplans, ample cupboard space, and elegantly designed wood grain cabinet accents - families can live comfortably and host effortlessly. This C plan home offers 4 bedrooms, with a north facing private patio off the main floor kitchen and a south facing balcony off living & dining area. The lower level features a fourth bedroom with 10ft ceilings and a full bathroom. A side by side finished garage with an efficient heat-pump for heating and COOLING combining comfort, style and functionality - making it an ideal choice for those who want both relaxation and room to entertain. Our Sales Center is located at 3522 Harper Road, open Sat thru Wed 12-5pm. Fall Incentives on now!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "1.7 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "4.3 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/152-3535-highland-drive/home/wJKR7P8EQdO7XeLP?id_listing=Xawjy4NPMAp3rR18",
+  "_scrapedAt": "2026-01-26T08:12:15.605Z",
+  "_rawFile": "152_3535_highland_drive_coquitlam_burke_mountain.html"
+}

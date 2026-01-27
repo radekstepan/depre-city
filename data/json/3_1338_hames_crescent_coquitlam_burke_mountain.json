@@ -1,0 +1,39 @@
+{
+  "address": "Unit 3 - 1338 Hames Crescent",
+  "city": "Coquitlam",
+  "sqft": 1363,
+  "year": 2012,
+  "price": 880000,
+  "fee": 364,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 3235,
+  "description": "FORMER POLYGON SHOWSUITE which means there's a ton of custom upgrades that make this home standout. The location of this 3 Bedroom/2 Bathroom townhome is the best spot in the complex. The front of the home is right across from Galloway Park, while the back looks into common space for ultimate privacy. You'll love the custom millwork throughout - the TV feature wall and built in cabinets, extending into the dining area, the banquette seating and feature shelving off the kitchen, and designer closet doors. Upstairs the primary suite features a custom shelving wall with built-in night stands, double closets and ensuite with double sinks. The garage is double tandem with extra space currently being used as a gym! No size restrictions for your 2 dogs. Don't snooze on this one. Book a showing!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "0.8 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "3.5 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/3-1338-hames-crescent/home/5xLkv3VGEG6YDBNr?id_listing=GMnKYqxbBwK3w1Qr",
+  "_scrapedAt": "2026-01-26T08:12:28.215Z",
+  "_rawFile": "3_1338_hames_crescent_coquitlam_burke_mountain.html"
+}

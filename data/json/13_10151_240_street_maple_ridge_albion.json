@@ -1,0 +1,39 @@
+{
+  "address": "Unit 13 - 10151 240 Street",
+  "city": "Maple Ridge",
+  "sqft": 1821,
+  "year": 2014,
+  "price": 685000,
+  "fee": 285,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3594,
+  "description": "Welcome to this end-unit townhome at Albion Station, featuring upgraded finishes throughout. Enjoy 9ft ceilings, a butcher block island, custom fridge, pull-out shelving, and a stunning brick wall. The Saltillo-tiled entry leads to a primary bedroom with California Closets and a guest room with a Murphy bed. The multi-flex space includes surround sound, smart TV, bar fridge, and steel counters. Outside, unwind on private decks surrounded by lush gardens. Located at the front of the complex, Albion Station offers a close-knit community where neighbors feel like family.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Albion Elementary",
+      "rating": 3.7,
+      "distance": "0.2 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Samuel Robertson Technical Secondary",
+      "rating": 2.3,
+      "distance": "1.2 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Albion",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/13-10151-240th-street/home/L5VXv3ld0vL3j2q8?id_listing=Z5BX321OnnD7Dar0",
+  "_scrapedAt": "2026-01-26T08:46:21.613Z",
+  "_rawFile": "13_10151_240_street_maple_ridge_albion.html"
+}

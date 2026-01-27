@@ -1,0 +1,39 @@
+{
+  "address": "Unit 19 - 5950 Oakdale Road",
+  "city": "Burnaby",
+  "sqft": 1912,
+  "year": 1994,
+  "price": 1390000,
+  "fee": 484,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4047,
+  "description": "This beautiful townhome with A/C is located in the gated community of Heathercrest. Fully renovated in 2023 include laminate flooring, kitchen,and bathroom renovations, plus new appliances — stove, rangehood, W/D, and dishwasher. The basement includes a large entertainment room with a 2-piece washroom and potential to add a shower, ideal for recreation or as an extra bedroom. It offers a private double garage, a bright living area, a fully fenced yard and more. The spacious primary bedroom features a walk-in closet and a 5-piece ensuite, accompanied by two additional bedrooms. Enjoy community amenities such as the swimming pool, hot tub, and gym. Steps to Metrotown, Deer Lake and schools. Open House Nov.30(Sun) 12:30-2pm.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Ecole Marlborough Elementary",
+      "rating": 8,
+      "distance": "0.5 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Burnaby Central Secondary",
+      "rating": 5.7,
+      "distance": "1.6 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Oaklands",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/19-5950-oakdale-road/home/zVwod7vMvXGy5mGN?id_listing=B5bO3x86VmW3kWVP",
+  "_scrapedAt": "2026-01-26T08:48:52.020Z",
+  "_rawFile": "19_5950_oakdale_road_burnaby_oaklands.html"
+}

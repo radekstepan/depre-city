@@ -1,0 +1,39 @@
+{
+  "address": "Unit 4 - 2258 Kelly Avenue",
+  "city": "Port Coquitlam",
+  "sqft": 1651,
+  "year": 2024,
+  "price": 1040000,
+  "fee": 220,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4196,
+  "description": "Welcome to modern Row House located in the heart of Port Coquitlam, offering over 1650 sqf. of living space! Upper level has spacious primary bedroom w/ large walk-in closet & luxurious 5-piece ensuite, along w/ two additional bedrooms & in-unit washer & dryer. Main floor boasts an open-concept layout high ceilings & a sleek kitchen equipped w/ S/S Samsung appliances. Enjoy air conditioning for year-round comfort & a private balcony, perfect for entertaining. Ideally situated within walking distance to Safeway, No Frills, Shaughnessy Station Mall, Westwood Mall, Coquitlam Centre, Elk Park, many restaurants, cafes & more. Commuters will love easy access to Port Coquitlam Station & bus stops. School catchments include Central Elementary, Pitt River Middle, & Riverside Secondary. CALL NOW!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Ecole Riverside Secondary",
+      "rating": 4.6,
+      "distance": "0.7 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Central Community Elementary School",
+      "rating": 2.2,
+      "distance": "0.3 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Central Pt Coquitlam",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/4-2258-kelly-avenue/home/B5bO3xXq1qQ3kWVP?id_listing=bEDRYazOjv5y1VaB",
+  "_scrapedAt": "2026-01-26T08:12:23.648Z",
+  "_rawFile": "4_2258_kelly_avenue_port_coquitlam_central_pt_coquitlam.html"
+}

@@ -1,0 +1,39 @@
+{
+  "address": "Unit 51 - 7947 209 Street",
+  "city": "Langley",
+  "sqft": 1608,
+  "year": 2020,
+  "price": 790000,
+  "fee": 322,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3078,
+  "description": "Welcome to this modern 3 bedrooms, 4-level townhome in desirable Willoughby Heights! Open-concept living with a gourmet kitchen featuring quartz countertops, gas range, premium S/S appliances & a large island perfect for entertaining. Designer laminate floors throughout. Upstairs, the luxurious primary bedroom offers a private balcony, spa-like ensuite with double sinks & an oversized WIC. Enjoy a spacious 553 sq ft private rooftop patio with gas hookup. Double side-by-side garage with storage & EV charger. Complex includes gym, clubhouse & playground. Easy Hwy access & shopping nearby! 2 pets allowed.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Richard Bulpitt Elementary",
+      "rating": 5.8,
+      "distance": "0.4 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.4 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/51-7947-209-street/home/9w8o3m5blmd3GKjm?id_listing=aQmD7zVzx997J9Bo",
+  "_scrapedAt": "2026-01-26T08:46:35.632Z",
+  "_rawFile": "51_7947_209_street_langley_willoughby_heights.html"
+}

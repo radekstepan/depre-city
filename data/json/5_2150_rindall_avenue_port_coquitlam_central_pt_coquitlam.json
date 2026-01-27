@@ -1,0 +1,39 @@
+{
+  "address": "Unit 5 - 2150 Rindall Avenue",
+  "city": "Port Coquitlam",
+  "sqft": 1330,
+  "year": 2025,
+  "price": 1019900,
+  "fee": 320,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "description": "Rindall is a vibrant boutique community of 44 thoughtfully crafted 3 to 4-bedroom townhomes located in the heart of Port Coquitlam. Spaciously designed for families, Rindall offers the benefits of single family living with close proximity to schools, recreation, trails and downtown amenities. This spacious 3 bedroom home offers 2 1/2 bathrooms, yard and balcony. Construction is well under way with completions available beginning Fall 2025. Enjoy 9' ceilings, a cooling system, a 2 car garage, full size kitchen appliances and a quiet neighborhood within walking distance to amenities & schools. All of this from the reputable Woodbridge Homes developer. Final Open House: Dec 20-21, 12-5pm. The sales gallery will be closed from the holidays& reopens Jan 3, 2026, with appts avail during closure.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Ecole Riverside Secondary",
+      "rating": 4.6,
+      "distance": "0.9 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Central Community Elementary School",
+      "rating": 2.2,
+      "distance": "0.3 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Central Pt Coquitlam",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/5-2150-rindall-avenue/home/bqB176War863ZajD?id_listing=XeEn7X4XAqK7rPo8",
+  "_scrapedAt": "2026-01-26T08:08:22.137Z",
+  "_rawFile": "5_2150_rindall_avenue_port_coquitlam_central_pt_coquitlam.html"
+}

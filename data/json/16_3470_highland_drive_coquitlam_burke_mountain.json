@@ -1,0 +1,39 @@
+{
+  "address": "Unit 16 - 3470 Highland Drive",
+  "city": "Coquitlam",
+  "sqft": 1410,
+  "year": 2014,
+  "price": 928000,
+  "fee": 364,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3504,
+  "description": "Unique end unit with 3 bedrooms and 2 . 5 baths in Bridlewood by Polygon located in the heart of Burke Mountain. Next to the world-class hiking & biking trails and surrounded by all kinds of parks. Open- concept main floor boasts a beautiful gigantic quartz countertop island and a privately fenced patio past the French- inspired doors . Bonus third parking spot right beside the unit in addition to an upgraded tandem garage means additional indoor space. Lots of upgrades - laminated hallway stairs, wooden shutters on windows, walk-in closet in primary bedroom, built-in storage throughout, epoxy garage floor, and insulated garage door. Enjoy breath taking views from one of the highest units in Bridlewood. Steps from elementary school & bus stop. Perfect location for a family home. A must see",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "1.5 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "4.1 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/16-3470-highland-drive/home/0ZxwR7MXGx2yKabB?id_listing=LzQ1y50Zd8dYqdeK",
+  "_scrapedAt": "2026-01-26T08:23:17.425Z",
+  "_rawFile": "16_3470_highland_drive_coquitlam_burke_mountain.html"
+}

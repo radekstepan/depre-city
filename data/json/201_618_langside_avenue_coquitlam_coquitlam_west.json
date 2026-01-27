@@ -1,0 +1,39 @@
+{
+  "address": "Unit 201 - 618 Langside Avenue",
+  "city": "Coquitlam",
+  "sqft": 1403,
+  "year": 2013,
+  "price": 1025000,
+  "fee": 461,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3328,
+  "description": "Perfectly located in the heart of Burquitlam, this very clean, freshly painted 3 bed, 3 bath townhome offers a true house-like feel with a large front porch that creates a warm, neighborly vibe. Steps to Skytrain, YMCA, and a beautiful park beside the complex. The main level features an open layout with a modern kitchen, quartz countertops, S/S appliances, and ample cabinet space. Upstairs includes a spacious primary bedroom with ensuite and dual closets, plus two comfortable bedrooms. With 2 parking, 1 storage, and unbeatable walkability, this move-in ready home offers the perfect blend of convenience and community living.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Port Moody Secondary",
+      "rating": 7.5,
+      "distance": "1.9 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Mountain View Elementary",
+      "rating": 4.6,
+      "distance": "0.5 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Coquitlam West",
+  "parkingType": "underground",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/201-618-langside-avenue/home/bqB176WawPa3ZajD?id_listing=Zaw5YojAD8D3n961",
+  "_scrapedAt": "2026-01-26T08:12:30.864Z",
+  "_rawFile": "201_618_langside_avenue_coquitlam_coquitlam_west.html"
+}

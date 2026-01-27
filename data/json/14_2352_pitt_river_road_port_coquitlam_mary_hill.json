@@ -1,0 +1,39 @@
+{
+  "address": "Unit 14 - 2352 Pitt River Road",
+  "city": "Port Coquitlam",
+  "sqft": 1754,
+  "year": 1988,
+  "price": 850000,
+  "fee": 420,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3154,
+  "description": "Beautifully updated and perfectly situated on the quiet side of the complex, this home features a sun-soaked, south-facing private yard! Enjoy peace of mind with fully replaced plumbing and a completely renovated kitchen with new cabinets, hardware, fixtures, tile flooring, lighting, and newer appliances—including fridge, stove, hood fan, and dishwasher. Both bathrooms have been updated, and newer flooring (carpet, laminate, and tile) and lighting run throughout. Includes newer washer and dryer as well. Located in a family-friendly, well-run complex with a newer roof (2018), just steps from the shops and amenities of PoCo Village. Spacious bedrooms and a large rec/bedroom downstairs offer great flexibility. Nothing to do but move in and enjoy!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Ecole Riverside Secondary",
+      "rating": 4.6,
+      "distance": "0.4 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Central Community Elementary School",
+      "rating": 2.2,
+      "distance": "0.3 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Mary Hill",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/14-2352-pitt-river-road/home/weQp5yOdemQ7d0ZE?id_listing=J6Em7b2wGLn7XBeq",
+  "_scrapedAt": "2026-01-26T08:30:30.642Z",
+  "_rawFile": "14_2352_pitt_river_road_port_coquitlam_mary_hill.html"
+}

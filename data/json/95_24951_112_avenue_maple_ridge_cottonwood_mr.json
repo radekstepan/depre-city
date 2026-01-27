@@ -1,0 +1,33 @@
+{
+  "address": "Unit 95 - 24951 112 Avenue",
+  "city": "Maple Ridge",
+  "sqft": 1401,
+  "year": 2025,
+  "price": 769900,
+  "fee": 322,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "description": "Discover Falls, a NEW townhouse community in Epic’s Kanaka Springs masterplan. Set in a serene, park-like setting surrounded by the expansive Kanaka Creek Regional Park, the Falls offers a modern Farmhouse-inspired aesthetic surrounded by nature. This 3 bedroom (*or 4 bedroom*), 2.5 bathroom townhome features a double-car garage with side-by-side parking, gourmet kitchen, private yard and expansive deck, designed for family living. Residents also enjoy exclusive access to The Coho Club — a private resort-style amenity centre with a pool, hot tub, fitness studio, and inviting indoor gathering spaces. Visit our Home Store and tour two fully decorated Show Homes. Move-in Homes Available. Open Daily, 11 AM – 5 PM.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Garibaldi Secondary",
+      "rating": 1.6,
+      "distance": "1.6 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Cottonwood MR",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/95-24951-112-avenue/home/Vwod7vrj8QM75mGN?id_listing=nM697k8QlDO3bmwe",
+  "_scrapedAt": "2026-01-26T08:46:00.197Z",
+  "_rawFile": "95_24951_112_avenue_maple_ridge_cottonwood_mr.html"
+}

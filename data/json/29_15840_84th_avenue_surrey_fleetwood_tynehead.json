@@ -1,0 +1,39 @@
+{
+  "address": "Unit 29 - 15840 84th Avenue",
+  "city": "Surrey",
+  "sqft": 1763,
+  "year": 1993,
+  "price": 808000,
+  "fee": 422,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3451,
+  "description": "This quiet, move-in ready corner unit 3 bdrm, 2.5 bath townhouse at “Fleetwood Gables” offers 1,768 sq ft of bright, well-designed living space. Enjoy a bright, sunny, south-facing, fully fenced private backyard, perfect for relaxing, entertaining, or enjoying morning coffee. The main flr features formal living & dining areas, a large kitchen and an adjoining flex space ideal for a family rm or home office. Nearly every room is filled with abundant natural light. Upstairs, the spacious primary bdrm boasts a deluxe 5 pc ensuite, while the main bath offers a large walk-in shower. Additional highlights include generously sized bdrms and a dbl garage plus driveway parking. Pet-friendly strata in a highly walkable neighbourhood close to shopping, schools and parks.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Walnut Road Elementary",
+      "rating": 7.8,
+      "distance": "0.8 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Fleetwood Park Secondary",
+      "rating": 7,
+      "distance": "0.9 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Fleetwood Tynehead",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/29-15840-84th-avenue/home/amgL7A4Zga9yZ1MW?id_listing=1DBW7RrD8Ad7qlAp",
+  "_scrapedAt": "2026-01-26T09:20:24.623Z",
+  "_rawFile": "29_15840_84th_avenue_surrey_fleetwood_tynehead.html"
+}

@@ -1,0 +1,39 @@
+{
+  "address": "8885 Larkfield Drive",
+  "city": "Burnaby",
+  "sqft": 1887,
+  "year": 1987,
+  "price": 1225000,
+  "fee": 518,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3409,
+  "description": "Welcome home! This fantastic 3-bed, 3-bath corner townhome offers over 1,850 SF of spacious, light-filled living. Recently completely upgraded from top to bottom, the main floor features an open living area featuring a gas fireplace for cozy living. The open concept chef's kitchen with high end appliances, opens to breakfast/dining area and a lovely private extended deck featuring access to a beautiful private garden area. The lower level includes a full bath, large recreation room, and access to the double car garage. Recent updates ensure it is truly move-in ready. Located in a family-friendly complex, children can easily walk to school, families can bike the trails, and you're just minutes from SFU, Costco, and the City of Lougheed. A well-maintained complex with low strata fees!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Burnaby Mountain Secondary",
+      "rating": 7.6,
+      "distance": "1.1 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Forest Grove Elementary",
+      "rating": 6.3,
+      "distance": "0.4 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Forest Hills BN",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/8885-larkfield-drive/home/kbEDRYa1Lb5Y1VaB?id_listing=xLkv3V1No0p7DBNr",
+  "_scrapedAt": "2026-01-26T08:23:40.302Z",
+  "_rawFile": "8885_larkfield_drive_burnaby_forest_hills_bn.html"
+}

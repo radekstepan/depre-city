@@ -1,0 +1,39 @@
+{
+  "address": "Unit 23 - 14285 64 Avenue",
+  "city": "Surrey",
+  "sqft": 1545,
+  "year": 2015,
+  "price": 735000,
+  "fee": 277,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3706,
+  "description": "CORNER Unit ..Welcome to this stunning 3 bed, 2.5 bath townhouse in Aria Living, offering over 1,550 sq. ft. of modern living. Features include a private fenced yard, open-concept layout, high ceilings, quartz countertops, premium appliances, and laminate flooring throughout. The tandem garage provides extra storage space for your convenience. Ideally located within walking distance to Sullivan Heights and Hyland Elementary, with shopping, dining, and amenities just steps away. A perfect blend of comfort and location — don’t miss this gem! Some Photos are Virtual Staged.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sullivan Heights Secondary",
+      "rating": 5.5,
+      "distance": "0.5 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Hyland Elementary",
+      "rating": 4.1,
+      "distance": "0.8 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "East Newton",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/23-14285-64-avenue/home/0MWBVyZGarb7Kemj?id_listing=J6Em7b2wMmB7XBeq",
+  "_scrapedAt": "2026-01-26T09:20:43.798Z",
+  "_rawFile": "23_14285_64_avenue_surrey_east_newton.html"
+}

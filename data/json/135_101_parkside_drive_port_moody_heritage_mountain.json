@@ -1,0 +1,39 @@
+{
+  "address": "Unit 135 - 101 Parkside Drive",
+  "city": "Port Moody",
+  "sqft": 3400,
+  "year": 1991,
+  "price": 1299999,
+  "fee": 664,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 6074,
+  "description": "This 3 level 4 bed, 4 bath duplex-style TOWNHOME is 3400 sq ft and backs on to your PRIVATE YARD OVERLOOKING the GREENBELT in popular 'TREETOPS!' Spacious primary bdrm on the main, complete with walk in closet & 5 pc ensuite overlooking the greenbelt!  There's also a den, formal living with fireplace & dining room w/ vaulted ceilings, kitchen with eating area, adjoining family room with gas fireplace to walk out back yard plus a 2 pc bath completes this floor. Finished basement w/additional bdrm, recreation room, flex room and full bathroom plus 2 storage areas & access to the double garage! The upper floor has 2 large bedrooms and a full bath! Quiet C-D-S & a great complex with amenities that incl an indoor pool, exercise room & clubhouse! .",
+  "features": [],
+  "schools": [
+    {
+      "name": "Heritage Woods Secondary",
+      "rating": 8,
+      "distance": "0.9 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Heritage Mountain Elementary",
+      "rating": 7.9,
+      "distance": "0.5 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Heritage Mountain",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-moody-real-estate/135-101-parkside-drive/home/zVwod7vvdZr75mGN?id_listing=XeEn7XKpzwdyrPo8",
+  "_scrapedAt": "2026-01-26T08:23:49.904Z",
+  "_rawFile": "135_101_parkside_drive_port_moody_heritage_mountain.html"
+}

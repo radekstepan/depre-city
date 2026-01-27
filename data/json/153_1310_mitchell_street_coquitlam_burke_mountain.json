@@ -1,0 +1,39 @@
+{
+  "address": "Unit 153 - 1310 Mitchell Street",
+  "city": "Coquitlam",
+  "sqft": 1763,
+  "year": 2024,
+  "price": 1084000,
+  "fee": 415,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "description": "NO GST!! BRAND NEW SPACIOUS CORNER UNIT TOWNHOUSE at Forester II by Townline.  This spacious 3 bedroom 2.5 bath unit, close to 1,770sf, comes with double side-by-side garage which has ample space. Features include L-shape kitchen with big island, laminate flooring on main floor, very good size living and dining areas, which leads to the balcony, separate foyer area, and has south/north/east exposures which gives lots of natural light.  Upstairs has 3 bedrooms. Primary bedroom fits a king size bed with walk-in-closet and ensuite with double sink, standard size shower and bathtub.  The other 2 bedrooms can easily fit queen size beds.  There is plenty of storage in the garage.  Book your private showing today!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "1.0 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "3.3 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/153-1310-mitchell-street/home/Zaw5Yo5aneL7n961?id_listing=jAXw7QpmK21yQOzg",
+  "_scrapedAt": "2026-01-26T08:23:45.094Z",
+  "_rawFile": "153_1310_mitchell_street_coquitlam_burke_mountain.html"
+}

@@ -1,0 +1,39 @@
+{
+  "address": "Unit 34 - 5201 Oakmount Crescent",
+  "city": "Burnaby",
+  "sqft": 2481,
+  "year": 1997,
+  "price": 1470000,
+  "fee": 483,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4071,
+  "description": "One of the best duplex-style townhomes in the quiet and scenic Oaklands community! Enjoy nature at your doorstep with private access to Deer Lake, while being minutes from Metrotown and the city centre. This well-managed complex features updates including a newer roof and Bosch appliances. The home offers a spacious layout with gas fireplaces in both living and family rooms, built-in surround sound, a finished basement (perfect for a home theatre or extra bedroom), and an oversized garage with built-in cabinets. Upstairs boasts 3 large bedrooms, including a master with a huge walk-in closet. Move-in ready—don’t miss out!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Ecole Marlborough Elementary",
+      "rating": 8,
+      "distance": "0.6 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Burnaby Central Secondary",
+      "rating": 5.7,
+      "distance": "1.3 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Oaklands",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/34-5201-oakmount-crescent/home/5xLkv3Vk5rmYDBNr?id_listing=Zaw5YoVXAkl3n961",
+  "_scrapedAt": "2026-01-26T08:49:14.826Z",
+  "_rawFile": "34_5201_oakmount_crescent_burnaby_oaklands.html"
+}

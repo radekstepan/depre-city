@@ -1,0 +1,39 @@
+{
+  "address": "Unit 206 - 80 Elgin Street",
+  "city": "Port Moody",
+  "sqft": 1430,
+  "year": 2022,
+  "price": 960000,
+  "fee": 466,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4069,
+  "description": "Experience the pinnacle of urban living in the largest home at Sophia Living-1,430 sq ft of stylish comfort in the heart of Port Moody Centre. This spacious 3 Bed, 3 Bath corner townhome offers soaring 9', and luxury vinyl floors throughout. A chef-inspired kitchen features quartz countertops, a generous island, and extended cabinetry with granite-topped built-ins in the dining and living areas. Cozy up by the custom fireplace wall or step out to a full-width balcony with panoramic mountain and partial inlet views. The upper level hosts three spacious bedrooms, including a serene primary with built-ins and a sleek ensuite. Unbeatable location near Moody Centre SkyTrain, Brewery Row & Rocky Point. TWO side-by-side parking stalls included, a storage locker and 2 allocated bike stalls.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Port Moody Secondary",
+      "rating": 7.5,
+      "distance": "0.6 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Moody Elementary",
+      "rating": 4.7,
+      "distance": "0.7 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Port Moody Centre",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-moody-real-estate/206-80-elgin-street/home/Xawjy41npgN7rR18?id_listing=gAaOyLKxzwKYGxMb",
+  "_scrapedAt": "2026-01-26T08:26:50.638Z",
+  "_rawFile": "206_80_elgin_street_port_moody_port_moody_centre.html"
+}

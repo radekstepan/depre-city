@@ -1,0 +1,39 @@
+{
+  "address": "Unit 76 - 1228 Hudson Street",
+  "city": "Coquitlam",
+  "sqft": 2096,
+  "year": 2020,
+  "price": 1265000,
+  "fee": 570,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4791,
+  "description": "Sold firm. Welcome to Aalto by Intracorp — a quality-built, centrally located 4-bed, 3.5-bath duplex. Enjoy bright south-facing living and dining areas, an oversized kitchen island with seating, and chef-grade KitchenAid appliances with modern cabinetry and stone countertops. Upstairs features 3 bedrooms and 2 full baths. The lower level includes a large rec room with balcony access, a guest bedroom, and full bath. Side-by-side double garage is EV-ready. Walk to schools, parks, trails, shopping, and SkyTrain. School catchment: Walton Elementary, Scott Creek Middle, Gleneagle Secondary.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Walton Elementary",
+      "rating": 7.5,
+      "distance": "0.6 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Gleneagle Secondary",
+      "rating": 6.6,
+      "distance": "0.3 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Scott Creek",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/76-1228-hudson-street/home/6zqW7dGk95gy5eZE?id_listing=wJKR7PNkO4BYXeLP",
+  "_scrapedAt": "2026-01-26T08:08:02.247Z",
+  "_rawFile": "76_1228_hudson_street_coquitlam_scott_creek.html"
+}

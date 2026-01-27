@@ -1,0 +1,39 @@
+{
+  "address": "Unit 119 - 707 Robinson Street",
+  "city": "Coquitlam",
+  "sqft": 1266,
+  "year": 2023,
+  "price": 1030000,
+  "fee": 396,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3212,
+  "description": "A stunning 3 bedroom townhome in Coquitlam West. 5-minute walk from Burquitlam SkyTrain station, this home offers perfect blend of convenience and quiet modern living. 9ft ceiling Living room. Gourmet kitchen with quartz countertop, stainless appliances & KitchenAid gas cooktop. Larger patio from kitchen offers perfect spot for BBQ. Primary bedroom features double swing open glass door with extra deep balcony overlooking other surrounding units. 2nd and 3rd bedroom are big enough to provide good space even with a double bed and desk. 2 EV-Ready underground parking stalls. One of them is extra deep so you can easily park big truck or SUV. Standard 4x6 storage underground.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Port Moody Secondary",
+      "rating": 7.5,
+      "distance": "1.7 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Mountain View Elementary",
+      "rating": 4.6,
+      "distance": "0.2 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Coquitlam West",
+  "parkingType": "underground",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/119-707-robinson-street/home/eVbOYEp964D3x2P0?id_listing=6zqW7dzLvQPY5eZE",
+  "_scrapedAt": "2026-01-26T08:23:47.443Z",
+  "_rawFile": "119_707_robinson_street_coquitlam_coquitlam_west.html"
+}

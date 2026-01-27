@@ -1,0 +1,39 @@
+{
+  "address": "Unit 26 - 189 Wood Street",
+  "city": "New Westminster",
+  "sqft": 1678,
+  "year": 2019,
+  "price": 915000,
+  "fee": 361,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 4298,
+  "description": "Welcome to River Mews! This rarely available 3 bed, 3 full bath home features 9ft ceilings and bright, open-concept living. The kitchen includes stainless steel appliances, a gas range, and quartz counters. Large windows bring in tons of natural light, and a full bath on the main floor is a rare bonus. Upstairs offers a spacious primary bedroom with walk-in closet and ensuite, plus two more generous bedrooms and another full bath. Downstairs you'll find a flex space perfect for an office, den, or playroom. Enjoy a fully paved backyard — ideal for summer BBQs or your morning coffee. Close to schools, parks, transit, shops, restaurants, and riverfront trails.",
+  "features": [],
+  "schools": [
+    {
+      "name": "New Westminster Secondary",
+      "rating": 6.7,
+      "distance": "3.3 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Queen Elizabeth Elementary",
+      "rating": 5.7,
+      "distance": "0.6 km",
+      "type": "0-4"
+    }
+  ],
+  "subArea": "Queensborough",
+  "parkingType": "garage_tandem",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/new-westminster-real-estate/26-189-wood-street/home/eVbOYEpwRjV3x2P0?id_listing=wJKR7PNkplpYXeLP",
+  "_scrapedAt": "2026-01-26T08:49:19.479Z",
+  "_rawFile": "26_189_wood_street_new_westminster_queensborough.html"
+}

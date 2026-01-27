@@ -1,0 +1,39 @@
+{
+  "address": "Unit 10 - 3065 Dayanee Springs Boulevard",
+  "city": "Coquitlam",
+  "sqft": 1403,
+  "year": 2007,
+  "price": 1010000,
+  "fee": 353,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3568,
+  "description": "The perfect balance of comfort & convenience!This well maintained 3 bed, 3 bath townhome is nestled in a quiet Coquitlam culdesac & offers inviting spaces throughout. Enjoy a freshly painted interior & a refreshed kitchen with updated countertops & cabinet doors. The open concept main floor opens to a walk out patio & private fenced backyard, ideal 4 daily living & entertaining.Upstairs features 3 comfortable bdrooms, including a welcoming primary suite with ensuite.New blinds throughout the home add style & privacy. The lower level offers a double tandem garage with flexible storage or workspace, plus convenient driveway parking. Residents enjoy Timber Club amenities with pool, hot tub, gym & lounge.Mins to SkyTrain, Coq Ctr, Lafarge Lake & excellent schools.Do not miss this opportunity!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Pinetree Way Elementary",
+      "rating": 7.6,
+      "distance": "0.7 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Pinetree Secondary",
+      "rating": 6.3,
+      "distance": "0.6 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Westwood Plateau",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/10-3065-dayanee-springs-bl-boulevard/home/ZNkKJ3JEG0e7d4V6?id_listing=aQmD7z6gQN47J9Bo",
+  "_scrapedAt": "2026-01-26T08:12:13.076Z",
+  "_rawFile": "10_3065_dayanee_springs_boulevard_coquitlam_westwood_plateau.html"
+}

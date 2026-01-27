@@ -1,0 +1,39 @@
+{
+  "address": "Unit 10 - 12040 68 Avenue",
+  "city": "Surrey",
+  "sqft": 1975,
+  "year": 2007,
+  "price": 789000,
+  "fee": 477,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3688,
+  "description": "West Newton, updated north facing 3 level unit with VIEWS of the City & North Shore Mountains ** LARGE 1975 sqft, 3 bedrooms + RECROOM & 3 bathrooms with an oversized tandem garage (432 sqft) BRIGHT and modern kitchen with a PANTRY, Formal Living/Dining + 4 BALCONIES which are RARE. This unit has a Family room & separate bedrooms & laundry. The basement has a MASSIVE Rec-room that has been updated and can be used as a Bedroom or Office. The low strata fee covers gardening, management, INSURANCE, garage, water, sewer, Rec Centre & exterior REPAIRS. Close to BUS, shopping, Scott Rd, Schools & all other amenities. Call for more information or a viewing.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Tamanawis Secondary",
+      "rating": 4.8,
+      "distance": "1.4 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Beaver Creek Elementary",
+      "rating": 2.3,
+      "distance": "0.8 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "West Newton",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/10-12040-68-avenue/home/6VLaGyG84zG7W1ZD?id_listing=LzQ1y50ZABMYqdeK",
+  "_scrapedAt": "2026-01-26T09:20:54.981Z",
+  "_rawFile": "10_12040_68_avenue_surrey_west_newton.html"
+}

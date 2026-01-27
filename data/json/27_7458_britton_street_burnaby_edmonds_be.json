@@ -1,0 +1,33 @@
+{
+  "address": "Unit 27 - 7458 Britton Street",
+  "city": "Burnaby",
+  "sqft": 1169,
+  "year": 2015,
+  "price": 880000,
+  "fee": 312,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3042,
+  "description": "This 3-story CORNER UNIT boasts open layout with 3 bdrm + 3 baths. 9 foot celing,laminate flooring, large windows throughout main floor. Two good-size bedrooms on the second floor are on opposite ends offering max privacy. Spacious master bedroom on the top floor has vaulted high ceiling, 5pcs resort-style ensuite and tranquil courtyard view. Private yard with beautiful dogwood tree is perfect to enjoy morning coffee or summer breeze. Conveniently located near Edmonds Skytrain Station, High Gate Village, Save On foods, public library, Edmonds Community Centre and more. BONUS 2 parking + 1 locker included. Rental 100% allowed.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Byrne Creek Community Secondary",
+      "rating": 1.9,
+      "distance": "1.1 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Edmonds BE",
+  "parkingType": "underground",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/27-7458-britton-street/home/RdXze3ebzzgY8m9K?id_listing=2Zpj399JGKk3DrK8",
+  "_scrapedAt": "2026-01-26T08:48:33.589Z",
+  "_rawFile": "27_7458_britton_street_burnaby_edmonds_be.html"
+}

@@ -1,0 +1,39 @@
+{
+  "address": "Unit 24 - 3127 Skeena Street",
+  "city": "Port Coquitlam",
+  "sqft": 1891,
+  "year": 2005,
+  "price": 995000,
+  "fee": 395,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3492,
+  "description": "Sharply priced, immaculate 3 bdrm plus rec room(could be 4th bdrm) 4 bathroom townhome  with a renovated kitchen, gleaming quartz counters,  stylish ceramic backsplash, all upgraded appliances, and  engineered hardwood floors!! Upstairs, the primary suite fits all your furniture, the walk-in closet has room for his and her wardrobes plus there are  2 more generous bedrooms and convenient laundry. The accessible  lower level offers a great option for out of town guests/family  w/ full bath + 4th bedroom/sitting area and direct  access to your private fenced yard ideal for kids, pets or entertaining ! A double garage plus extended driveway provides parking for 4 vehicles in an ultraconvenient location-walk to schools, Costco and all of Fremont!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Cedar Drive Elementary",
+      "rating": 4.4,
+      "distance": "0.1 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "1.0 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Riverwood",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/24-3127-skeena-street/home/5xLkv3VndQz3DBNr?id_listing=jAXw7QpZjGbyQOzg",
+  "_scrapedAt": "2026-01-26T08:26:20.203Z",
+  "_rawFile": "24_3127_skeena_street_port_coquitlam_riverwood.html"
+}

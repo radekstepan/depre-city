@@ -1,0 +1,39 @@
+{
+  "address": "Unit 90 - 6299 144 Street",
+  "city": "Surrey",
+  "sqft": 1870,
+  "year": 2009,
+  "price": 820000,
+  "fee": 524,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3790,
+  "description": "Almost 1900 sq ft of spacious living. 3bdrm/ 3bath END unit townhouse plus large rec room. Main floor features open kitchen with s/s appliances, granite countertops, living, dining and family room plus large sundeck perfect for a BBQ and entertaining. Upstairs you will find MBDRM with vaulted ceilings, ensuite with granite and walk in closet plus 2 more bedrooms for the kids plus laundry. Downstairs you will find rec room (easy to convert to 4th bdrm) plus double side by side garage and fenced private backyard. Great location in the complex, on the high side of the street. The 7800sqft Club at Altura features pool, hot tub, billiards, fitness room, guest suites, yoga room, sauna and kids play center. All this in a great central location across from the Bell Center.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sullivan Heights Secondary",
+      "rating": 5.5,
+      "distance": "0.2 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Goldstone Park Elementary",
+      "rating": 5.3,
+      "distance": "0.4 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Sullivan Station",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/90-6299-144-street/home/weQp5yOqx6v3d0ZE?id_listing=5VXv3l2rJGVyj2q8",
+  "_scrapedAt": "2026-01-26T09:20:38.799Z",
+  "_rawFile": "90_6299_144_street_surrey_sullivan_station.html"
+}

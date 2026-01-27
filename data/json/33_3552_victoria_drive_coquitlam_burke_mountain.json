@@ -1,0 +1,39 @@
+{
+  "address": "Unit 33 - 3552 Victoria Drive",
+  "city": "Coquitlam",
+  "sqft": 1829,
+  "year": 2020,
+  "price": 1220000,
+  "fee": 371,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3823,
+  "description": "Don’t miss this stunning corner unit townhouse in Victoria by Mosaic at Burke Mountain. Featuring a contemporary Tudor-style exterior with elegant brick details, this residence blends timeless charm with modern sophistication. The home offers 4 spacious beds and 4 baths, designed with an open-concept living area—perfect for family gatherings and entertaining. High ceiling and oversized windows flood the main floor with natural light, creating a bright and inviting atmosphere throughout.  Enjoy a double side-by-side garage plus two additional parking spaces on the driveway, providing convenience for families and guests alike. Located close to trails, parks, and playgrounds, and just minutes from Burke Mountain Village, this home offers easy access to shops, amenities and schools.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "1.2 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "2.8 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/33-3552-victoria-drive/home/MB5bO3xe65VYkWVP?id_listing=6zqW7dzdlnKY5eZE",
+  "_scrapedAt": "2026-01-26T08:31:04.256Z",
+  "_rawFile": "33_3552_victoria_drive_coquitlam_burke_mountain.html"
+}

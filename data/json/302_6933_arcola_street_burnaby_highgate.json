@@ -1,0 +1,33 @@
+{
+  "address": "Unit 302 - 6933 Arcola Street",
+  "city": "Burnaby",
+  "sqft": 1444,
+  "year": 2021,
+  "price": 999900,
+  "fee": 403,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3557,
+  "description": "Welcome to Arcola by Kingswood - This 3-bed, 3-bath home features an open layout with no wasted space, perfect for modern living. The kitchen is equipped with quartz countertops, shaker-style cabinetry, s/s appliances with a 5-burner gas cooktop, soft-close drawers, & under-cabinet lighting. Upstairs, you will find two generously sized bedrooms, a stylish bathroom, & convenient laundry facilities. Above, the spacious primary suite offers a bright and airy retreat, complete with an ensuite, a walk-in closet, & French doors that open to a private balcony. The lower level is a versatile flex space, ideal for an office, media room, or playroom. Additional features include one underground parking spot with an EV station. Nestled in a family-friendly community, just minutes from everything!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Byrne Creek Community Secondary",
+      "rating": 1.9,
+      "distance": "1.5 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Highgate",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/302-6933-arcola-street/home/aD6p781XkZr3wRQr?id_listing=J6Em7b9nnaLyXBeq",
+  "_scrapedAt": "2026-01-26T08:48:39.462Z",
+  "_rawFile": "302_6933_arcola_street_burnaby_highgate.html"
+}

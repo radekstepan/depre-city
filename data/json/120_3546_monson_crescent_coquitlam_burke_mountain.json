@@ -1,0 +1,39 @@
+{
+  "address": "Unit 120 - 3546 Monson Crescent",
+  "city": "Coquitlam",
+  "sqft": 1263,
+  "year": 2026,
+  "price": 869900,
+  "fee": 237,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "description": "Welcome to VERSANT. A boutique collection of Modern Craftsman-inspired townhomes built by award-winning Infinity Properties. This 3-bed 2.5 bath home features a functional layout for growing families. Large kitchen with custom cabinetry, quartz countertops, SS app w/GAS range and entertaining island with eating bar. Deck off kitchen w/Gas BBQ outlet leads to a RAISED fully fenced BACKYARD. Laminate flooring on main floor, high efficiency gas furnace with AC and Rinnai water heater. Upper floor feat. 3 bedrooms incl. SPACIOUS primary bedroom w/spa inspired ensuite. Enjoy easy access to hiking trails, mountain biking routes + lakes. Only 10 minutes from the Skytrain, West Coast Express + Coquitlam City Centre Shopping + Amenities. Open by appointment only.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "1.0 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "2.8 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/120-3546-monson-crescent/home/nbq6y104e89Yo9DA?id_listing=DO1w3W1qqOoy8Jg0",
+  "_scrapedAt": "2026-01-26T08:12:25.849Z",
+  "_rawFile": "120_3546_monson_crescent_coquitlam_burke_mountain.html"
+}

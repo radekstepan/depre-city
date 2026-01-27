@@ -1,0 +1,39 @@
+{
+  "address": "21066 80a Avenue",
+  "city": "Langley",
+  "sqft": 2241,
+  "year": 2013,
+  "price": 1050000,
+  "fee": 0,
+  "bedrooms": 5,
+  "bathrooms": 4,
+  "parking": 1,
+  "propertyTax": 4280,
+  "description": "Welcome to this charming 5 bed, 4 bath row home in desirable Willoughby Heights. Offering 2,241 sq. ft. of thoughtfully designed living space, the main floor features an open layout with 8'11 ceilings, a bright living and dining area, modern kitchen, and convenient powder room. Upstairs you’ll find 3 spacious bedrooms including a primary retreat with walk-in closet and ensuite, plus a full bathroom. The lower level offers 2 additional bedrooms, a rec room, separate entrance, and easy suite potential. Enjoy outdoor living on the large patio and the convenience of a detached garage. Ideally located, this home is walking distance to Lynn Fripps Elementary and Willoughby Town Centre, with parks, shopping, and amenities nearby—perfect for families or investors alike. BONUS: NO STRATA FEES!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Lynn Fripps Elementary",
+      "rating": 6.6,
+      "distance": "0.4 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.8 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/21066-80a-avenue/home/owJKR7Pel4O3XeLP?id_listing=Zaw5YoVvOqm3n961",
+  "_scrapedAt": "2026-01-26T08:46:26.658Z",
+  "_rawFile": "21066_80a_avenue_langley_willoughby_heights.html"
+}

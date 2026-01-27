@@ -1,0 +1,39 @@
+{
+  "address": "Unit 11 - 2352 Pitt River Road",
+  "city": "Port Coquitlam",
+  "sqft": 1748,
+  "year": 1988,
+  "price": 834000,
+  "fee": 420,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3000,
+  "description": "Centrally located in a family & pet-friendly community! This well-maintained 3 bedroom, 3 bathroom + rec room townhome offers comfort & convenience. Thoughtfully updated, featuring a fully renovated kitchen with stone  countertops, tile backsplash, stainless steel appliances, modern lighting & gorgeous laminate flooring throughout. Downstairs features a second foyer off the garage & a large rec room or 4th bedroom. Access your private deck  from the kitchen leading down to a fully fenced backyard, perfect for kids, pets, & entertaining. Additional highlights include ample storage, 2 parking, quick access to Lougheed Hwy & Hwy 1, all while just steps to K-12 schools, PoCo Trails, transit, the West Coast Express, shopping & recreation! Enter complex off of Lobb ave.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Ecole Riverside Secondary",
+      "rating": 4.6,
+      "distance": "0.4 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Central Community Elementary School",
+      "rating": 2.2,
+      "distance": "0.3 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Mary Hill",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/11-2352-pitt-river-road/home/dXawjy4EJBb7rR18?id_listing=LzQ1y50ZRPmYqdeK",
+  "_scrapedAt": "2026-01-26T08:23:32.593Z",
+  "_rawFile": "11_2352_pitt_river_road_port_coquitlam_mary_hill.html"
+}

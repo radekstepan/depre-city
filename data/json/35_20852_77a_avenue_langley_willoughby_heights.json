@@ -1,0 +1,39 @@
+{
+  "address": "Unit 35 - 20852 77a Avenue",
+  "city": "Langley",
+  "sqft": 1260,
+  "year": 2015,
+  "price": 755000,
+  "fee": 280,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2663,
+  "description": "WELCOME TO ARCADIA! 3 bed + 2.5 Bath townhome in the heart of Willoughby. Radiant in floor heating throughout! Backs onto beautiful and private green belt! Kitchen features stainless steel appliances, NEW gas range, quartz countertops, and a spacious island perfect for entertaining! Offers modern living with a bright, open-concept design. The adjoining dining and living areas boast large windows, creating a warm and inviting atmosphere. Upstairs you’ll find three generous bedrooms, including a primary suite with a walk-through closet and private ensuite. Situated in a family-friendly neighbourhood, a stones throw to Richard Bulpitt Elem, shopping, and Willoughby Town Centre, with easy access to Highway 1 and transit. A perfect blend of comfort, style, and location!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Richard Bulpitt Elementary",
+      "rating": 5.8,
+      "distance": "0.2 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.3 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/35-20852-77a-avenue/home/1DBW7RDQQkdYqlAp?id_listing=eVbOYEk45Br7x2P0",
+  "_scrapedAt": "2026-01-26T08:46:02.715Z",
+  "_rawFile": "35_20852_77a_avenue_langley_willoughby_heights.html"
+}

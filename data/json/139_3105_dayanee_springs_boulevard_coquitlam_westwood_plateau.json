@@ -1,0 +1,39 @@
+{
+  "address": "Unit 139 - 3105 Dayanee Springs Boulevard",
+  "city": "Coquitlam",
+  "sqft": 1580,
+  "year": 2009,
+  "price": 1000000,
+  "fee": 379,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3537,
+  "description": "Whitetail Lane II, one of the most sought-after developments in prestigious Westwood Plateau, built by Polygon Homes. This 3 bedroom + den/office, 2½ bath townhome offers an open floor plan. Main floor features an oversized south-facing windows, 9-ft ceiling & cozy fireplace in the living room, white refaced kitchen cabinets, spacious south-facing balcony & powder room. Upstairs - 3 bedrooms, with beautiful views from primary & 2 full bathrooms. Below - tandem 2-car garage with additional driveway parking, den/office & fenced south-facing backyard. The Timbers Club amenities include a party room, gym, outdoor pool, hot tub, dry sauna, indoor hockey rink, table tennis, crafts & theatre rooms, guest suite & dog grooming room. Steps to Coquitlam Centre Mall, SkyTrain, Lafarge lake & schools.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Pinetree Way Elementary",
+      "rating": 7.6,
+      "distance": "0.7 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Pinetree Secondary",
+      "rating": 6.3,
+      "distance": "0.9 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Westwood Plateau",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/139-3105-dayanee-springs-boulevard/home/gJRv53KGpgX3VPW4?id_listing=J6Em7b2KqRg7XBeq",
+  "_scrapedAt": "2026-01-26T08:12:33.634Z",
+  "_rawFile": "139_3105_dayanee_springs_boulevard_coquitlam_westwood_plateau.html"
+}

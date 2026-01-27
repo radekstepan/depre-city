@@ -1,0 +1,68 @@
+---
+interface Props {
+    schools: Array<{name: string, rating: number, count: number, premium: number}>;
+}
+
+const { schools } = Astro.props;
+---
+
+<section id="schools" class="py-12 bg-white border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 md:px-6">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 font-serif">School Catchment Analysis</h2>
+            <p class="text-sm text-gray-500 mt-1">
+                Estimated price premiums for properties located within specific school catchments. 
+                Derived from the correlation between school ratings and sold prices in the multivariate model.
+            </p>
+        </div>
+
+        <div class="overflow-x-auto">
+            <table class="min-w-full bg-white border border-gray-200 rounded-lg shadow-sm">
+                <thead>
+                    <tr class="bg-gray-50 border-b border-gray-200">
+                        <th class="py-3 px-4 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">School Name</th>
+                        <th class="py-3 px-4 text-center text-xs font-bold text-gray-500 uppercase tracking-wider">Avg Rating</th>
+                        <th class="py-3 px-4 text-right text-xs font-bold text-gray-500 uppercase tracking-wider">Data Points</th>
+                        <th class="py-3 px-4 text-right text-xs font-bold text-gray-500 uppercase tracking-wider">Value Premium</th>
+                        <th class="py-3 px-4 text-left text-xs font-bold text-gray-500 uppercase tracking-wider pl-6">Quality Tier</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                    {schools.map(school => (
+                        <tr class="hover:bg-gray-50/50 transition-colors">
+                            <td class="py-3 px-4 text-sm font-medium text-gray-900">{school.name}</td>
+                            <td class="py-3 px-4 text-sm text-center">
+                                <span class={`inline-block px-2.5 py-0.5 rounded text-xs font-bold border ${
+                                    school.rating >= 7 ? 'bg-green-50 text-green-700 border-green-100' :
+                                    school.rating >= 5 ? 'bg-amber-50 text-amber-700 border-amber-100' :
+                                    'bg-red-50 text-red-700 border-red-100'
+                                }`}>
+                                    {school.rating.toFixed(1)}
+                                </span>
+                            </td>
+                            <td class="py-3 px-4 text-sm text-right text-gray-500 font-mono">{school.count}</td>
+                            <td class="py-3 px-4 text-sm text-right font-mono">
+                                <span class={`${
+                                    school.premium > 0 ? 'text-green-600' : 
+                                    school.premium < 0 ? 'text-red-600' : 'text-gray-400'
+                                }`}>
+                                    {school.premium > 0 ? '+' : ''}{new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD', maximumFractionDigits: 0 }).format(school.premium)}
+                                </span>
+                            </td>
+                            <td class="py-3 px-4 pl-6 text-xs text-gray-400">
+                                {school.rating >= 8 ? 'Top Tier' :
+                                 school.rating >= 6 ? 'Above Average' :
+                                 school.rating >= 4 ? 'Average' : 'Below Average'}
+                            </td>
+                        </tr>
+                    ))}
+                    {schools.length === 0 && (
+                        <tr>
+                            <td colspan="5" class="py-8 text-center text-sm text-gray-400">No school data found in current listings.</td>
+                        </tr>
+                    )}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

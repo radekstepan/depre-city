@@ -1,0 +1,39 @@
+{
+  "address": "Unit 18 - 8450 204 Street",
+  "city": "Langley",
+  "sqft": 1792,
+  "year": 2021,
+  "price": 950000,
+  "fee": 384,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 5095,
+  "description": "Welcome to HOMESTEAD—this 2021-built 3-storey townhome offers 1,792 SF of elegant living with 4 beds/4 baths, and a side-by-side double car garage. Corner unit! Enjoy luxury finishings including intricately designed feature walls with crown-style detailing, vaulted ceilings in the primary bedroom, and spa-inspired bathrooms. The open-concept main floor features KitchenAid S/S appliances and A/C for year-round comfort. Step out to a spacious, fully fenced backyard backing onto a tranquil greenbelt—perfect for privacy and entertaining. Bedroom with full bath on below level is ideal for guests or office. A rare blend of style, space, and serenity! Walking dist. to parks, trails, schools, transit, & mins to Hwy 1. Low strata fees and pet-friendly. Call Elton for viewing.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "1.2 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.8 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/18-8450-204-street/home/damgL7Ad1eLyZ1MW?id_listing=bEDRYaGv4qP71VaB",
+  "_scrapedAt": "2026-01-26T08:45:46.828Z",
+  "_rawFile": "18_8450_204_street_langley_willoughby_heights.html"
+}

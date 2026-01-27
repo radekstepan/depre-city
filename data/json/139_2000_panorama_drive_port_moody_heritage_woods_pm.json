@@ -1,0 +1,39 @@
+{
+  "address": "Unit 139 - 2000 Panorama Drive",
+  "city": "Port Moody",
+  "sqft": 2028,
+  "year": 2003,
+  "price": 1200000,
+  "fee": 687,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4790,
+  "description": "Be amazed by this stunning executive townhome in one of Heritage Wood's premier locations! This 2,028sqft, 3-level, 4-bed + 4-bath TH has been lovingly & gorgeously updated with the most modern of touches: Air-conditioning; high-efficiency furnace & heat pump; new flooring (HW + carpet); S/S appliances, quartz kitchen countertops; re-faced cabinetry; custom storage & closets; new designer paint; window treatments & light fixtures. Other highlights include 4 spacious bedrooms, including large primary suite & guest suites, north-south exposure bathing the home in natural light; large 2-car garage w/ plenty of storage space; and a very short walk to two of the best schools in the province: Aspenwood Elementary & Heritage Woods Secondary. HUGE BONUS: BRAND NEW ROOF!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Heritage Woods Secondary",
+      "rating": 8,
+      "distance": "1.0 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Aspenwood Elementary",
+      "rating": 7.5,
+      "distance": "0.1 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Heritage Woods PM",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-moody-real-estate/139-2000-panorama-drive/home/L4KAX7NQ0mdyeRPJ?id_listing=Xawjy4NWR163rR18",
+  "_scrapedAt": "2026-01-26T08:11:54.196Z",
+  "_rawFile": "139_2000_panorama_drive_port_moody_heritage_woods_pm.html"
+}

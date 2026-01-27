@@ -1,0 +1,39 @@
+{
+  "address": "Unit 17 - 10151 240th Street",
+  "city": "Maple Ridge",
+  "sqft": 1344,
+  "year": 2014,
+  "price": 705000,
+  "fee": 296,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3799,
+  "description": "Albion Station Presents: Beautifully kept 3 Bedroom 3 Bathroom townhouse in quiet area of complex. Main floor features open floorplan with kitchen, dining and living room with cozy electric fireplace. Kitchen features shaker style soft close cabinetry, quartz counters newer stainless steel appliances, and built in desk and bar area. Upstairs you will find spacious primary bedroom, walk through closet, and renovated 5pcs ensuite boasting frameless glass rain shower and double sinks! Two additional bedrooms upstairs and laundry for your convenience. Walk out patio on main floor and fully fenced yard on lower level. New hot water tank and low strata fees. Close to schools, parks and trails!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Albion Elementary",
+      "rating": 3.7,
+      "distance": "0.2 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Samuel Robertson Technical Secondary",
+      "rating": 2.3,
+      "distance": "1.3 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Albion",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/17-10151-240-street/home/510Qqypkov2YLGlV?id_listing=4KAX7NjzOrO7eRPJ",
+  "_scrapedAt": "2026-01-26T08:45:57.499Z",
+  "_rawFile": "17_10151_240th_street_maple_ridge_albion.html"
+}

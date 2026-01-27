@@ -1,0 +1,39 @@
+{
+  "address": "Unit 126 - 1292 Rosenburg Way",
+  "city": "Coquitlam",
+  "sqft": 1378,
+  "year": 2025,
+  "price": 999900,
+  "fee": 158,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "description": "CULMENA a collection of Scandinavian-inspired townhomes on Burke Mountain by Tangerine Developments. This 3 bedroom + 2.5 bath home features open layout with Modern finishings, Fisher & Paykel SS appliances incl. gas range, O/S windows, high efficiency furnace & A/C INCLUDED, fireplace w/ custom cabinetry, tankless water heater. Finishes incl. flat panel cabinetry, quartz counters with waterfall edge in kitchen, large spacious primary & spa inspired ensuite with double vanity! Located moments away from the shops and amenities of future Burke Mountain Village. Move in January 2026.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "1.0 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "3.1 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/126-1292-rosenburg-way/home/GMnKYqpod5e3w1Qr?id_listing=LzQ1y50Zaj4YqdeK",
+  "_scrapedAt": "2026-01-26T08:26:25.856Z",
+  "_rawFile": "126_1292_rosenburg_way_coquitlam_burke_mountain.html"
+}

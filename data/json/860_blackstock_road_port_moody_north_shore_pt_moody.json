@@ -1,0 +1,39 @@
+{
+  "address": "860 Blackstock Road",
+  "city": "Port Moody",
+  "sqft": 1031,
+  "year": 1977,
+  "price": 754000,
+  "fee": 350,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 3222,
+  "description": "This beautifully updated 3 bedroom, 2 bath end-unit townhouse offers over 1,030 sqft of comfortable living in a peaceful, community-oriented complex. Step inside to find a bright, open-concept main floor featuring a spacious living & dining area, warm laminate flooring, & large windows that bring in natural light. The modern kitchen is well-equipped with updated appliances & ample cabinet space, opening to a private, fenced patio - perfect for morning coffee, bbq’s, or letting kids & pets play safely. Upstairs, you’ll find three generous bedrooms, including a primary suite with great closet space and a feature wall. Enjoy the convenience of two parking spots, in-suite laundry, & private backyard.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Heritage Woods Secondary",
+      "rating": 8,
+      "distance": "1.4 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Mountain Meadows Elementary",
+      "rating": 7,
+      "distance": "0.4 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "North Shore Pt Moody",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-moody-real-estate/860-blackstock-road/home/JjAXw7Q6mGb3QOzg?id_listing=1DBW7RnmwEA7qlAp",
+  "_scrapedAt": "2026-01-26T08:07:47.455Z",
+  "_rawFile": "860_blackstock_road_port_moody_north_shore_pt_moody.html"
+}

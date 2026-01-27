@@ -1,0 +1,39 @@
+{
+  "address": "Unit 20 - 2450 Hawthorne Avenue",
+  "city": "Port Coquitlam",
+  "sqft": 1346,
+  "year": 1993,
+  "price": 760000,
+  "fee": 397,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 2609,
+  "description": "FULLY RENOVATED TOP TO BOTTOM! ! Great location steps to Coq River trails & all forms of transportation, schools, the new Community Centre & downtown shops/restaurants. Main floor features open concept living with stylish new kitchen and layout with floating shelves and lots of natural lighting. Neutral finishes and colours throughout & stone accented feature wall with gas fireplace. Deck w/slider off dining rm ideal for BBQ. Two large bdrms & fully updated bath up. Below has your 3rd bdrm w/renovated 3pc ensuite bath & access through sliders to your patio and yard. Garage plus additional parking stall included. Immaculate home!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Ecole Riverside Secondary",
+      "rating": 4.6,
+      "distance": "0.2 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Central Community Elementary School",
+      "rating": 2.2,
+      "distance": "0.4 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Central Pt Coquitlam",
+  "parkingType": "carport",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/20-2450-hawthorne-avenue/home/dXawjy4X9apyrR18?id_listing=mZRW7n2NJAg7EBO9",
+  "_scrapedAt": "2026-01-26T08:26:28.417Z",
+  "_rawFile": "20_2450_hawthorne_avenue_port_coquitlam_central_pt_coquitlam.html"
+}

@@ -1,0 +1,39 @@
+{
+  "address": "Unit 6 - 238 Camata Street",
+  "city": "New Westminster",
+  "sqft": 1759,
+  "year": 2014,
+  "price": 985000,
+  "fee": 528,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4777,
+  "description": "NEW PRICE!  Family sized corner unit, 3 bedroom, 3 bathroom townhouse for sale in Queensborough, New West.  Charming tree lined street, fenced front yard and porch. This very large 1759 sq ft townhome has an open concept floorplan and great light in the living room and dining area. Electric fireplace and feature wall. Large kitchen with island and quartz countertops, stainless steel appliances and balcony off the kitchen eating area and family room.  Powder room on the main level and 2 bathrooms upstairs. Vaulted ceiling in the large primary bedroom that is big enough for a King sized bed. Ensuite bath has double vanity and both a tub and shower. Double garage with side by side parking stalls. A short walk to the Riverfront and close to the Marina. Carpet and shower door just replaced.",
+  "features": [],
+  "schools": [
+    {
+      "name": "New Westminster Secondary",
+      "rating": 6.7,
+      "distance": "2.6 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Queen Elizabeth Elementary",
+      "rating": 5.7,
+      "distance": "1.4 km",
+      "type": "0-4"
+    }
+  ],
+  "subArea": "Queensborough",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/new-westminster-real-estate/6-238-camata-street/home/1DBW7RD6KmEYqlAp?id_listing=DO1w3W9v24wy8Jg0",
+  "_scrapedAt": "2026-01-26T08:48:44.024Z",
+  "_rawFile": "6_238_camata_street_new_westminster_queensborough.html"
+}

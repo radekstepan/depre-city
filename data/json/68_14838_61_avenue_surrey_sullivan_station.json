@@ -1,0 +1,39 @@
+{
+  "address": "Unit 68 - 14838 61 Avenue",
+  "city": "Surrey",
+  "sqft": 1485,
+  "year": 2012,
+  "price": 745000,
+  "fee": 349,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3311,
+  "description": "SEQUOIA showcases this stunning 4 bed, 3 bath home including a versatile rec room at the lower level in Sequoia by Fairborne is a must see. This rare unit features a WALK-OUT fenced private backyard off the kitchen with serene GREENSPACE views. Designed for entertaining, it boasts an open floor plan, massive kitchen with L-shaped island, and high-end S/S appliances. Bright and spacious with plenty of windows, it offers 3 bedrooms up and 2.5 bathrooms. Enjoy fantastic amenities including a party room, guest suite, and gym. Conveniently located near transit and within walking distance to both levels of school, including French Immersion Snokomish Elementary. Open House Jan 3rd and 4th - Sat - Sun - 2:30 - 4:30 PM",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sullivan Heights Secondary",
+      "rating": 5.5,
+      "distance": "0.8 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Cambridge Elementary",
+      "rating": 4.8,
+      "distance": "0.3 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Sullivan Station",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/68-14838-61-avenue/home/mLzQ1y5jWQM7qdeK?id_listing=XeEn7XKpVdgyrPo8",
+  "_scrapedAt": "2026-01-26T09:20:52.373Z",
+  "_rawFile": "68_14838_61_avenue_surrey_sullivan_station.html"
+}

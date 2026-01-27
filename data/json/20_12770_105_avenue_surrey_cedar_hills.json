@@ -1,0 +1,39 @@
+{
+  "address": "Unit 20 - 12770 105 Avenue",
+  "city": "Surrey",
+  "sqft": 1457,
+  "year": 2025,
+  "price": 875000,
+  "fee": 352,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "description": "48 Brand New Townhomes for sale in Center 128. Phase 1 ready to move in and Phase 2 completes in December 2025 onwards. This spacious 3 Bedrooms 2.5 baths townhome has double garage for 2 cars plus storage, 1 EV charger installed. The Unit features forced-air heating with rough in for A/C,  Vinyl plank flooring, carpets in stairs. Kitchen has white cabinets, undermount double sink, gas stove, stainless steel appliances, fridge with ice and water dispenser. Conveniently located near schools, parks, bus stops and within a 3-kilometer radius of 4 SkyTrain stations. Easy access to Hwy 91, 99, & 17. Amenities include 2 Storey clubhouse with full size kitchen, outdoor fire pit and seating area, Outdoor communal BBQ area, Children's playground. Call to Book your viewing.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Prince Charles Elementary",
+      "rating": 2.1,
+      "distance": "1.1 km",
+      "type": "0-7"
+    },
+    {
+      "name": "L A Matheson Secondary",
+      "rating": 1.8,
+      "distance": "2.2 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Cedar Hills",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/20-12770-105-avenue/home/DO1w3WqWrVKy8Jg0?id_listing=XeEn7X4Xdjq7rPo8",
+  "_scrapedAt": "2026-01-26T09:20:49.606Z",
+  "_rawFile": "20_12770_105_avenue_surrey_cedar_hills.html"
+}

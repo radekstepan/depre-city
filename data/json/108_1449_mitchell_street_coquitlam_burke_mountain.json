@@ -1,0 +1,39 @@
+{
+  "address": "Unit 108 - 1449 Mitchell Street",
+  "city": "Coquitlam",
+  "sqft": 1491,
+  "year": 2026,
+  "price": 1198000,
+  "fee": 314,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "description": "This 3 bed 2.5 bath plus den corner home at Polygon's Ridgewood belongs to a limited collection of townhomes nestled in Coquitlam's Burke Mountain neighbourhood. Enjoy 1,491 sq. ft. of living space with overheight main floor ceilings, laminate wood flooring, expansive windows, and your own patio off the dining room. The kitchen boasts custom cabinetry, sleek appliances, stone countertops, full-height marble tile backsplash, and a generous island. Upstairs, the main ensuite features a spa shower with built in bench. Plus, enjoy the convenience of a double car garage and a heat pump air conditioning system. Visit our sales office and two display homes at 3637 Sheffield Avenue, Coquitlam, open noon - 5pm daily (except Friday), to learn more.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "1.9 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "4.3 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/108-1449-mitchell-street/home/nbq6y104zVBYo9DA?id_listing=JRv53KjDeVx7VPW4",
+  "_scrapedAt": "2026-01-26T08:07:44.800Z",
+  "_rawFile": "108_1449_mitchell_street_coquitlam_burke_mountain.html"
+}

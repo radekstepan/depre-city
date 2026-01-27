@@ -1,0 +1,39 @@
+{
+  "address": "47 Eighth Avenue E",
+  "city": "New Westminster",
+  "sqft": 1915,
+  "year": 2024,
+  "price": 1185000,
+  "fee": 0,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 1,
+  "propertyTax": 5487,
+  "description": "The best rowhome in town! This brand new corner home has two primary beds each with an ensuite, two additional beds, a den and two more baths. The main floor is an open concept with a spacious foyer, large windows, high ceilings, a modern living room with an elegant fireplace, fabulous powder bathroom for guests, entertainer's kitchen with s/s appliances and a garburator for added convenience. A cute deck with large sliding doors awaits you for you to have your morning coffee. Upstairs a large primary bedroom is attached a spa-like ensuite. Full size laundry, two additional bedrooms, and a spacious main bathroom are located upstairs with views of a serene park. The basement has a large flex space, a second primary bed and ensuite, perfect for a growing family! EV Ready and close to HWY1.",
+  "features": [],
+  "schools": [
+    {
+      "name": "F W Howay Elementary",
+      "rating": 6.7,
+      "distance": "0.3 km",
+      "type": "0-5"
+    },
+    {
+      "name": "New Westminster Secondary",
+      "rating": 6.7,
+      "distance": "1.6 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "The Heights NW",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/new-westminster-real-estate/47-8th-avenue-e/home/jAXw7QwlN8kYQOzg?id_listing=NkKJ3J1Vpb97d4V6",
+  "_scrapedAt": "2026-01-26T08:30:58.550Z",
+  "_rawFile": "47_eighth_avenue_e_new_westminster_the_heights_nw.html"
+}

@@ -1,0 +1,39 @@
+{
+  "address": "Unit 21 - 2358 Ranger Lane",
+  "city": "Port Coquitlam",
+  "sqft": 1338,
+  "year": 2015,
+  "price": 899000,
+  "fee": 373,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3259,
+  "description": "Welcome to Freemont Indigo! This 1338 sq ft beautifully designed 3-bedroom, 2.5-bathroom townhome offers comfort, style & convenience in one of the area's most sought-after communities. Featuring a spacious tandem garage, this home boasts an open-concept main level with a bright & airy living, dining & kitchen area flooded with natural light. Upstairs, you'll find a generous primary bedroom complete with a private ensuite, double sinks, & closet space, along with two additional bedrooms & a full bathroom. Bonus laundry on upper level. Exclusive access to The River Club - an amenity center offering indoor and outdoor pools, hot tub, sauna, gym & clubhouse. Walking distance to shopping, parks & trails. Open House Sat Nov 8 from 1-3pm!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Blakeburn Elementary",
+      "rating": 6.5,
+      "distance": "1.2 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "1.7 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Riverwood",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/21-2358-ranger-lane/home/b1DBW7RxnR1YqlAp?id_listing=XRla7gb1xANyjEvL",
+  "_scrapedAt": "2026-01-26T08:30:33.910Z",
+  "_rawFile": "21_2358_ranger_lane_port_coquitlam_riverwood.html"
+}

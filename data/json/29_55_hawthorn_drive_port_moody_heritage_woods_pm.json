@@ -1,0 +1,39 @@
+{
+  "address": "Unit 29 - 55 Hawthorn Drive",
+  "city": "Port Moody",
+  "sqft": 2234,
+  "year": 2006,
+  "price": 1280000,
+  "fee": 641,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 5526,
+  "description": "Cobalt Sky! Panoramic SW views of City, Mountains and Valley! This RARELY AVAILABLE 3 level 4 bed 3.5 bath 2234SF END unit townhouse boasts OPEN floor plan, Vaulted foyer, Cozy Living room with Gas Fireplace, Kitchen with island, Dining room has access to a nice covered Patio. 3 bedroom 2 bath plus Laundry upstairs, Primary with Walk-in closet and Ensuite. Ground level walkout basement with 9ft ceiling, Huge Entertainment Room, Bright guest bedroom, full bath and storage room. Double side by side garage, HUGE private fenced yard. Unit is close to many visitor parking spots! Walk to Aspenwood Elementary, Catchment Eagle Mountain Middle and Heritage Woods Secondary! FRESHLY PAINTED and ready to move in!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Heritage Woods Secondary",
+      "rating": 8,
+      "distance": "1.3 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Aspenwood Elementary",
+      "rating": 7.5,
+      "distance": "0.5 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Heritage Woods PM",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-moody-real-estate/29-55-hawthorn-drive/home/damgL7AejrE7Z1MW?id_listing=9w8o3m40xVJ7GKjm",
+  "_scrapedAt": "2026-01-26T08:12:10.833Z",
+  "_rawFile": "29_55_hawthorn_drive_port_moody_heritage_woods_pm.html"
+}

@@ -1,0 +1,33 @@
+{
+  "address": "Unit 117 - 7499 6th Street",
+  "city": "Burnaby",
+  "sqft": 1194,
+  "year": 2018,
+  "price": 900000,
+  "fee": 381,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2704,
+  "description": "Welcome to Gateway Homes in the heart of Burnaby. This 3 bedroom and 2.5 bathroom End Unit has 1194 sqft of living space comes with TWO parking stalls and 1 locker and 1 bike locker. The layout is functional with no wasted space, featuring S/S appliances, laminate flooring, quartz countertop. Upstairs features a unique layout with 2 bedroom on the second floor, and the master bedroom on the third floor, and huge rooftop patio for your entertainment. Close to amenities including transit/Edmonds SkyTrain, shopping, great restaurants, parks, public library, Edmonds Community Centre & Robert Burnaby Outdoor Pool. EV Charge available.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Cariboo Hill Secondary",
+      "rating": 6.4,
+      "distance": "1.7 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "East Burnaby",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/117-7499-6th-street/home/owJKR7PLGxB7XeLP?id_listing=VLaGyGkomLayW1ZD",
+  "_scrapedAt": "2026-01-26T08:49:10.489Z",
+  "_rawFile": "117_7499_6th_street_burnaby_east_burnaby.html"
+}

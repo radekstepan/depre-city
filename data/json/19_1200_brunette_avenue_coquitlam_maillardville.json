@@ -1,0 +1,39 @@
+{
+  "address": "Unit 19 - 1200 Brunette Avenue",
+  "city": "Coquitlam",
+  "sqft": 1506,
+  "year": 1989,
+  "price": 790000,
+  "fee": 430,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 2866,
+  "description": "WOW! Why buy a condo when you can have a townhouse like this one? Come have a look at this beautiful place in an amazing location, walking distance to everything! The bright and lively place has a functional layout, a beautifully well-lit kitchen, three spacious bedrooms, three bathrooms, single car garage and a peaceful backyard perfect for little ones or pets, and great for watching the colorful Canadian seasons. This home has a unique flare to offer with an increasingly rarely available wood burning fireplace. To add to its commendable qualities, this home is conveniently located nearby sports fields, IKEA, Superstore, Canadian Tire, Cineplex and Hwy 7 & Hwy 1. The complex has brand new windows. Come make this one your home!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Alderson Elementary",
+      "rating": 3.5,
+      "distance": "1.1 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Centennial Secondary School",
+      "rating": 3.4,
+      "distance": "1.8 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Maillardville",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/19-1200-brunette-avenue/home/gJRv53KBgnR7VPW4?id_listing=Zaw5YojAMvL3n961",
+  "_scrapedAt": "2026-01-26T08:23:42.924Z",
+  "_rawFile": "19_1200_brunette_avenue_coquitlam_maillardville.html"
+}

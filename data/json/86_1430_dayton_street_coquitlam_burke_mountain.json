@@ -1,0 +1,39 @@
+{
+  "address": "Unit 86 - 1430 Dayton Street",
+  "city": "Coquitlam",
+  "sqft": 2534,
+  "year": 2016,
+  "price": 1262500,
+  "fee": 525,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4731,
+  "description": "DUPLEX-STYLE END UNIT! Incredibly rare opportunity to own this stunning, 2500+ sq/ft 4-bed end-unit townhome with VIEWS in Polygon’s Colborne Lane. Offering spacious and modern living in sought-after Burke Mountain, with a bright and open plan, beautiful finishes, and large windows, providing plenty of natural light. The gourmet kitchen has stylish cabinetry and SS appliances, perfect for entertaining. The spacious primary boasts a private ensuite, while three additional bedrooms provide versatile space for guests or a home office. Side by side laundry with extra storage, massive finished basement, private patio, and ample parking - 2 covered in finished garage with slat walls and epoxy flooring, plus 2 on the driveway. Close to parks, schools, amenities & nature. Truly a rare find.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "1.5 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "4.2 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/86-1430-dayton-street/home/6zqW7dG9PoMy5eZE?id_listing=56k97w0Q6wx3KRjD",
+  "_scrapedAt": "2026-01-26T08:23:20.376Z",
+  "_rawFile": "86_1430_dayton_street_coquitlam_burke_mountain.html"
+}

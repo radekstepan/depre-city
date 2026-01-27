@@ -1,0 +1,39 @@
+{
+  "address": "Unit 167 - 9133 Government Street",
+  "city": "Burnaby",
+  "sqft": 1463,
+  "year": 2007,
+  "price": 900000,
+  "fee": 432,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3339,
+  "description": "Welcome to this spacious 3-bed, 3-bath townhome in the sought-after TERRAMOR community by Polygon. Offering 1,463 sqft of living space, this home features an open concept kitchen with gas range, laminate flooring, in-suite laundry, and an extra-deep 2 car tandem garage with plenty of storage. Upgrades worth $20,000, include updated flooring and carpet, new dishwasher & hood fan, new kitchen countertops and sink, new blinds, and updated bathroom caulking— all adding to the fresh & modern feel. Resort-style amenities include an outdoor pool, hot tub, steam room, full gym, yoga room, & mini golf. Walking distance to SkyTrain with easy access to SFU, Lougheed Mall, Hwy 1, Lougheed Hwy, Costco, & in catchment for Cameron Elementary & Burnaby Mountain Secondary. Open House, Dec 06 - 2 PM - 4 PM",
+  "features": [],
+  "schools": [
+    {
+      "name": "Burnaby Mountain Secondary",
+      "rating": 7.6,
+      "distance": "1.0 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Cameron Elementary",
+      "rating": 6,
+      "distance": "0.6 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Government Road",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/167-9133-government-street/home/weQp5yOnDa1Yd0ZE?id_listing=gAaOyLK5zo5YGxMb",
+  "_scrapedAt": "2026-01-26T08:23:35.144Z",
+  "_rawFile": "167_9133_government_street_burnaby_government_road.html"
+}

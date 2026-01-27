@@ -1,0 +1,39 @@
+{
+  "address": "Unit 21 - 7039 Macpherson Avenue",
+  "city": "Burnaby",
+  "sqft": 1513,
+  "year": 2016,
+  "price": 1085000,
+  "fee": 412,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3456,
+  "description": "Spacious 3-level corner townhouse at Villo Metrotown! Offering 3 bedrooms + large in-suite storage, this functional layout features bright living/dining, a modern kitchen, and direct access from the unit to your parking stall for everyday convenience. Corner positioning brings in extra light and privacy. Steps to Royal Oak SkyTrain, Metrotown, schools, and parks—ideal for family living in a prime Burnaby location! Tenanted, but closing dates are flexible",
+  "features": [],
+  "schools": [
+    {
+      "name": "Maywood Community Elementary",
+      "rating": 5,
+      "distance": "1.3 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Burnaby South Secondary",
+      "rating": 4.2,
+      "distance": "0.4 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Metrotown",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/21-7039-macpherson-avenue/home/K8OgYBVaVbdYJmG2?id_listing=B5bO3xxMvkl3kWVP",
+  "_scrapedAt": "2026-01-26T08:48:49.482Z",
+  "_rawFile": "21_7039_macpherson_avenue_burnaby_metrotown.html"
+}

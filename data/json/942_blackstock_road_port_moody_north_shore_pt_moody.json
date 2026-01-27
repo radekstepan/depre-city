@@ -1,0 +1,39 @@
+{
+  "address": "942 Blackstock Road",
+  "city": "Port Moody",
+  "sqft": 1044,
+  "year": 1977,
+  "price": 740000,
+  "fee": 363,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 3098,
+  "description": "END unit townhouse in popular Woodside Village on Port Moody's North Shore. This family friendly home features over 1000 sqft with 3 beds and full bath upstairs, plus a second full bath on the main. Kitchen with stainless appliances. Easy care parquet and tile floors. Spacious living area with direct access to the private fenced patio/yard complete with storage shed. Easy access to Newport Village, transit and WC Express station. Two allocated parking stalls.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Heritage Woods Secondary",
+      "rating": 8,
+      "distance": "1.4 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Mountain Meadows Elementary",
+      "rating": 7,
+      "distance": "0.3 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "North Shore Pt Moody",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/port-moody-real-estate/942-blackstock-road/home/jJKdOYrzv5KY54lW?id_listing=NkKJ3J1GkJG7d4V6",
+  "_scrapedAt": "2026-01-26T08:23:30.271Z",
+  "_rawFile": "942_blackstock_road_port_moody_north_shore_pt_moody.html"
+}

@@ -1,0 +1,39 @@
+{
+  "address": "4790 Fernglen Place",
+  "city": "Burnaby",
+  "sqft": 1679,
+  "year": 1974,
+  "price": 1030000,
+  "fee": 500,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3158,
+  "description": "Beautifully renovated end-unit townhome in Greentree Village! As an end unit, this home enjoys extra windows, abundant natural light, and added backyard space. Upgrades include new laminate flooring, a fully redesigned kitchen with modern appliances, a newer composite deck, refreshed bathrooms, custom-built shelving/closets/drawers, smart switches/outlets, and a new gas fireplace. Community amenities feature an indoor pool, gym, and party room. Steps to Greentree Village Park/Playground, Deer Lake trails, and BCIT. Minutes to Burnaby Hospital, Christine Sinclair Community Centre, Metrotown, and The Amazing Brentwood. School catchments: Gilpin Elementary (English), Inman, Cascade Heights & Marlborough (French), and Moscrop Secondary (both).",
+  "features": [],
+  "schools": [
+    {
+      "name": "Moscrop Secondary",
+      "rating": 8.3,
+      "distance": "0.6 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Gilpin Elementary",
+      "rating": 6.5,
+      "distance": "0.9 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Greentree Village",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/4790-fernglen-place/home/VaD6p78jR0nYwRQr?id_listing=AKv53DxdLVE3MnxB",
+  "_scrapedAt": "2026-01-26T08:48:41.908Z",
+  "_rawFile": "4790_fernglen_place_burnaby_greentree_village.html"
+}

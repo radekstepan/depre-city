@@ -1,0 +1,39 @@
+{
+  "address": "Unit 37 - 7500 Cumberland Street",
+  "city": "Burnaby",
+  "sqft": 1919,
+  "year": 1995,
+  "price": 1220000,
+  "fee": 463,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3798,
+  "description": "Welcome to “Wildflower” by Polygon! This beautifully maintained end-unit, duplex-style townhome offers 4 bedrooms, 3 full baths, and over 1900 sqft of living space. Perfectly positioned beside a serene greenspace, this home offers remarkable privacy and a quiet, natural outlook. Updates include a fully renovated kitchen with new appliances and lighting, refreshed bathrooms, new decking, roller blinds, and a new roof installed throughout the complex for added peace of mind. Featuring custom California Closets in both the primary walk-in closet and a converted spare bedroom. Lower-level bedroom with renovated full bath is ideal for guests or recreation. Minutes to Crest Plaza, Lougheed & Royal Square Mall, with easy access to major routes. A must-see!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Cariboo Hill Secondary",
+      "rating": 6.4,
+      "distance": "0.5 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Armstrong Elementary",
+      "rating": 4,
+      "distance": "0.7 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "The Crest",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/37-7500-cumberland-street/home/obqB17669D67ZajD?id_listing=2Zpj399JPeq3DrK8",
+  "_scrapedAt": "2026-01-26T08:30:52.808Z",
+  "_rawFile": "37_7500_cumberland_street_burnaby_the_crest.html"
+}

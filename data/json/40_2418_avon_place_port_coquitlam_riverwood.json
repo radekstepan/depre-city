@@ -1,0 +1,39 @@
+{
+  "address": "Unit 40 - 2418 Avon Place",
+  "city": "Port Coquitlam",
+  "sqft": 1478,
+  "year": 2009,
+  "price": 875000,
+  "fee": 358,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3147,
+  "description": "Bright and rarely available end unit at Links by Mosaic! This spacious 3-bed, 3-bath home is one of the larger floor plans in the complex, featuring large windows on three sides for an abundance of natural light. The modern kitchen offers granite countertops, high-end stainless steel appliances, and quality finishes throughout. Enjoy upgraded laminate flooring on the upper level and a new washer/dryer tower & dishwasher (Dec 2024). Ideally situated within the complex—quiet yet just steps to Fremont Village & Save-On-Foods, Costco, Home Depot, Walmart, and more. Walking distance to top schools: Blakeburn Elementary, Terry Fox Secondary, and Archbishop Carney. New roof done in July 2025. A move-in-ready home in a highly sought-after location!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Blakeburn Elementary",
+      "rating": 6.5,
+      "distance": "0.6 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "0.9 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Riverwood",
+  "parkingType": "carport",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/40-2418-avon-place/home/PXRla7gRPxryjEvL?id_listing=gAaOyL6arl53GxMb",
+  "_scrapedAt": "2026-01-26T08:08:24.279Z",
+  "_rawFile": "40_2418_avon_place_port_coquitlam_riverwood.html"
+}

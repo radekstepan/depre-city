@@ -1,0 +1,39 @@
+{
+  "address": "Unit 112 - 678 Citadel Drive",
+  "city": "Port Coquitlam",
+  "sqft": 3018,
+  "year": 2001,
+  "price": 1255000,
+  "fee": 594,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4872,
+  "description": "OPEN HOUSE CANCELLED   This beautiful west-facing duplex-style townhome offers over 3,000 sqft of elegant living with serene Colony Farm views. Enjoy year-round comfort with a 2024 heat pump/central AC and rare parking for 4 vehicles,2 in the garage plus 2 on the extra-long driveway. The impressive 18-ft ceilings in the living room creates a bright, airy feel that complements the open-plan layout. The renovated kitchen features granite counters and opens to a rear BBQ deck off the eating area. Upstairs,you’ll find 3 spacious bedrooms, a Luxurious 16' x 15'Primary suite a walk-in shower,soaker tub, dual sinks.The daylight basement provides exceptional flexibility with a 4th bedroom,Recroom,gamesroom,ideal for guests or hobbies.A private REAR yard & an 18' x 11' patio.Impeccably maintained.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Castle Park Elementary",
+      "rating": 6.5,
+      "distance": "0.8 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Ecole Riverside Secondary",
+      "rating": 4.6,
+      "distance": "3.0 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Citadel PQ",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/112-678-citadel-drive/home/BDO1w3WRXLV78Jg0?id_listing=0A9X3j6Rvla3vgxV",
+  "_scrapedAt": "2026-01-26T08:26:40.466Z",
+  "_rawFile": "112_678_citadel_drive_port_coquitlam_citadel_pq.html"
+}

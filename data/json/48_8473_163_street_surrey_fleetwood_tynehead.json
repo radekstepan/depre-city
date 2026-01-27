@@ -1,0 +1,39 @@
+{
+  "address": "Unit 48 - 8473 163 Street",
+  "city": "Surrey",
+  "sqft": 1507,
+  "year": 2014,
+  "price": 800000,
+  "fee": 423,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3257,
+  "description": "Welcome to The Rockwoods by Anthem Properties—Fleetwood’s most sought-after community! This 4 BED + 3 BATH townhome combines modern style with functional design, featuring nearly 10’ ceilings, a chef-inspired kitchen with granite counters, s/s appliances, and an oversized island perfect for entertaining. The serene primary suite offers a relaxing retreat, while the versatile tandem garage provides added space and convenience. Residents enjoy access to an exclusive clubhouse with a full gym, yoga studio, and social lounge. Ideally located just minutes from Frost Road Elementary, Surrey Christian School, parks, shopping, and the upcoming SkyTrain extension—this home truly has it all!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Frost Road Elementary",
+      "rating": 7.8,
+      "distance": "0.4 km",
+      "type": "0-7"
+    },
+    {
+      "name": "North Surrey Secondary",
+      "rating": 5.7,
+      "distance": "2.5 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Fleetwood Tynehead",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/48-8473-163-street/home/L5VXv3lxmjE3j2q8?id_listing=XRla7gbLEEryjEvL",
+  "_scrapedAt": "2026-01-26T09:20:57.090Z",
+  "_rawFile": "48_8473_163_street_surrey_fleetwood_tynehead.html"
+}

@@ -1,0 +1,39 @@
+{
+  "address": "Unit 4 - 12070 216 Street",
+  "city": "Maple Ridge",
+  "sqft": 1467,
+  "year": 1997,
+  "price": 675000,
+  "fee": 400,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3703,
+  "description": "Piccadilly Place in West Maple Ridge! Spacious, freshly painted family home - white kitchen cabinets & newer s.s. appliances. The family room has a custom built bar, ideal for entertaining or serving up fun milkshakes to the kids. Bright, open living room with cozy gas fireplace. Convenient 2 pc. powder room. UP - large primary bedroom with updated 4 pc. ensuite, walk-in closet AND versatile flex room for working out or an office. Two more sizable bedrooms & another 4 pc. bath. Laundry room with newer W/D. New lighting fixtures brighten every corner of the home.  Step out to a covered patio and private, fenced yard. Tandem garage 36'x10' for 2 cars. Pets welcome, no size restriction. Walk to Glenwood Elementary & MRSS. Parks, shopping, transportation nearby.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Maple Ridge Secondary",
+      "rating": 4.7,
+      "distance": "0.6 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Glenwood Elementary",
+      "rating": 2,
+      "distance": "0.4 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "West Central",
+  "parkingType": "garage_tandem",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/4-12070-216th-street/home/L5VXv3lAwVwYj2q8?id_listing=6zqW7dzd29gY5eZE",
+  "_scrapedAt": "2026-01-26T08:46:11.164Z",
+  "_rawFile": "4_12070_216_street_maple_ridge_west_central.html"
+}

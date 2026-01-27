@@ -1,0 +1,39 @@
+{
+  "address": "Unit 7 - 2979 Panorama Drive",
+  "city": "Coquitlam",
+  "sqft": 2325,
+  "year": 1994,
+  "price": 1180000,
+  "fee": 555,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "description": "MILLION DOLLAR STUNNING VIEWS, priced $100,000 below competitiors. Experience luxury in this meticulously updated 3 level executive townhome in the popular Deercrest Estates! Completely updated from top to bottom featuring all new laminate floors with newly designed kitchen and bathrooms. Beautifully Maintained & offers an Open Floor Plan W/Kitchen adjacent to the Fam. Rm & Eating area W/2-way Fireplace & access to the Private Patio/yard Backing onto Greenspace. The Views also can be enjoyed in the Large Master Bedrm W/ 5 Ensuite which includes a sep. Soaker Tub/Shower &W/I Closet. Finished Basement area is perfect for a Games Rm, Media Rm or Office space & Bonus B/I Storage Cabinets. A/C, ev charger, Gas Stove/Gas BBQ hook up. Open House: Dec 7, Sun 2-4pm",
+  "features": [],
+  "schools": [
+    {
+      "name": "Ecole Panorama Heights Elementary",
+      "rating": 6.9,
+      "distance": "0.3 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Gleneagle Secondary",
+      "rating": 6.6,
+      "distance": "2.1 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Westwood Plateau",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/7-2979-panorama-drive/home/0ZxwR7MGe1zYKabB?id_listing=xLkv3V1NwNQ7DBNr",
+  "_scrapedAt": "2026-01-26T08:11:51.476Z",
+  "_rawFile": "7_2979_panorama_drive_coquitlam_westwood_plateau.html"
+}

@@ -1,0 +1,33 @@
+{
+  "address": "Unit 47 - 7458 Britton Street",
+  "city": "Burnaby",
+  "sqft": 1257,
+  "year": 2014,
+  "price": 967000,
+  "fee": 336,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3266,
+  "description": "Beautiful Corner Unit townhouse centrally located at Edmonds area with 2 parking and 1 locker. Built in 2014. Close proximity to skytrain, grocery stores, restaurants, Edmonds Community centre, library and many more. This 3 level contemporary towhhome boasts stainless steel appliances, quartz countertops and modern cabinetry in the kitchen, powder room and a private yard. 3 bedrooms in total, with the top level holding the large master bedroom with a vaulted ceiling. School catchment: Stride Avenue Community & Byrne Creek Secondary.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Byrne Creek Community Secondary",
+      "rating": 1.9,
+      "distance": "1.1 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Edmonds BE",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/47-7458-britton-street/home/0MWBVyZG12q7Kemj?id_listing=DO1w3W96BAjy8Jg0",
+  "_scrapedAt": "2026-01-26T08:48:36.473Z",
+  "_rawFile": "47_7458_britton_street_burnaby_edmonds_be.html"
+}

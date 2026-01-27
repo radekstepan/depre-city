@@ -1,0 +1,39 @@
+{
+  "address": "Unit 139 - 8138 204 Street",
+  "city": "Langley",
+  "sqft": 1542,
+  "year": 2017,
+  "price": 825000,
+  "fee": 356,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2743,
+  "description": "POLYGON - Ashbury & Oak. Beautiful 3 Bed + Den (4th Bed) / 3 Bath townhome featuring a bright, spacious open-concept layout with 9' ceilings. The ground floor offers a den conveniently located by the front entrance-ideal as a 4th bedroom or a perfect home office for a home-based business. Double side-by-side garage and a fully fenced, oversized front yard for added privacy and outdoor enjoyment. Enjoy an impressive 8,000 sq.ft. resort-style clubhouse with outdoor pool, hot tub, fitness centre, billiards, pet washing station, kids' playroom, and guest suites. Upgrades include brand new carpets and a new fridge. Prime location within walking distance to R.E. Mountain Secondary (IB Program), Yorkson Creek Middle, Lynn Fripps & Uplands Elementary, plus Carvolth Bus Exchange, Town Center.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "0.7 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.2 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/139-8138-204-street/home/0J6Em7bvNdw7XBeq?id_listing=eQp5yOw8xPVyd0ZE",
+  "_scrapedAt": "2026-01-26T08:45:52.133Z",
+  "_rawFile": "139_8138_204_street_langley_willoughby_heights.html"
+}

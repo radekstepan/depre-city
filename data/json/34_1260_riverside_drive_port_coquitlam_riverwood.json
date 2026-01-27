@@ -1,0 +1,39 @@
+{
+  "address": "Unit 34 - 1260 Riverside Drive",
+  "city": "Port Coquitlam",
+  "sqft": 1655,
+  "year": 2002,
+  "price": 1010000,
+  "fee": 408,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4033,
+  "description": "Welcome home to Northview Place in the heart of Port Coquitlam's Riverwood District! Completely renovated from top to bottom in 2019 & lovingly cared for since! This 3 bedroom & flex townhome offers style & functionality with a bright, open living/dining area & a spacious chef's kitchen with quarts countertops, island & stainless steel appliances. Upstairs, the primary suite boasts a walk-in closet & spa-inspired ensuite, with two more large bedrooms. The lower level includes a flex space, ideal for an office, gym or 4th bedroom. Enjoy the fenced yard with grass & balcony for your BBQ. Double garage & ample street parking add convenience. Insuite laundry room with sink. Proactive strata with new roof & new vinyl fence.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Blakeburn Elementary",
+      "rating": 6.5,
+      "distance": "0.6 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "0.3 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Riverwood",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/34-1260-riverside-drive/home/0MWBVyZjdegyKemj?id_listing=MWBVyZW4x9k7Kemj",
+  "_scrapedAt": "2026-01-26T08:08:16.621Z",
+  "_rawFile": "34_1260_riverside_drive_port_coquitlam_riverwood.html"
+}

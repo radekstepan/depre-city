@@ -1,0 +1,39 @@
+{
+  "address": "Unit 42 - 1355 Citadel Drive",
+  "city": "Port Coquitlam",
+  "sqft": 1975,
+  "year": 1989,
+  "price": 978000,
+  "fee": 440,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3525,
+  "description": "Welcome to Citadel Mews! This spacious 4 Bed, 4 Bath, 1,975sq.ft home offers plenty of space for the whole family! A spacious living room w/ inviting views of the backyard greenspace makes for a cozy place to relax with your family. The bright updated kitchen offers a large breakfast bar & S/S appliances. Upstairs boasts 2 large bedrooms & an extra large Primary Bedroom. The updated Ensuite is a must see! 1 more bedroom downstairs could also make a great rec/movie room, or office space. New furnace and A/C installed in 2023, all windows & balcony doors replaced in Spring 2025. This well-located end unit has 3 balconies and backs onto greenspace. Park in the double side-by-side garage, use it for extra storage or a gym as there’s room to park 2 more cars in the driveway!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Ecole Riverside Secondary",
+      "rating": 4.6,
+      "distance": "2.1 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Hazel Trembath Elementary",
+      "rating": 3.7,
+      "distance": "0.4 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Citadel PQ",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/42-1355-citadel-drive/home/BXeEn7XGlxKyrPo8?id_listing=9w8o3m4ek2k7GKjm",
+  "_scrapedAt": "2026-01-26T08:31:09.246Z",
+  "_rawFile": "42_1355_citadel_drive_port_coquitlam_citadel_pq.html"
+}

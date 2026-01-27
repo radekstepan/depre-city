@@ -1,0 +1,39 @@
+{
+  "address": "Unit 39 - 1140 Falcon Drive",
+  "city": "Coquitlam",
+  "sqft": 1876,
+  "year": 1988,
+  "price": 1140000,
+  "fee": 484,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3192,
+  "description": "Gorgeous 2 level 3-bed townhome with double attached garage. Kitchen features a centre island, granite counters, stainless steel appliances, pantry, and espresso/cocktail station. Sunny eating area/family room opens onto a private balcony. Two bedrooms up; 3rd bedroom is below with its own 4-pce bathroom, rec-room, and private patio overlooking greenspace. Extras include: AIR CONDITIONING, built-in window seats with storage & built-in vacuum. Close to skytrain, Newport Village, Rocky Point Park and Coq Town Centre.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Gleneagle Secondary",
+      "rating": 6.6,
+      "distance": "1.0 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Eagle Ridge Elementary",
+      "rating": 6.4,
+      "distance": "0.6 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Eagle Ridge CQ",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/39-1140-falcon-drive/home/x9w8o3mLmLX7GKjm?id_listing=4KAX7NjzGnr7eRPJ",
+  "_scrapedAt": "2026-01-26T08:26:37.949Z",
+  "_rawFile": "39_1140_falcon_drive_coquitlam_eagle_ridge_cq.html"
+}

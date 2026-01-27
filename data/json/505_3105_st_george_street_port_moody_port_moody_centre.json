@@ -1,0 +1,39 @@
+{
+  "address": "Unit 505 - 3105 St George Street",
+  "city": "Port Moody",
+  "sqft": 1343,
+  "year": 2020,
+  "price": 1250000,
+  "fee": 402,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 5148,
+  "description": "Welcome to George Townhomes by Marcon! Located in the heart of Moody Centre, one of Port Moody’s most sought-after neighbourhoods. This quality-built 4 bed, 3.5 bath home offers over 1,300 sq ft of efficient living space overlooking lush trees and a peaceful creek. The entry level features a bright bedroom and full bath, ideal for guests or a home office. The main floor offers a functional open layout with separate kitchen, dining, and living areas plus a balcony with gas hookup. Upstairs includes 3 bedrooms and laundry, with the primary suite boasting heated floors and a custom built-in walk-in closet. Enjoy year-round comfort with a strata-approved heat pump, just minutes from transit, schools, parks, and shopping.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Port Moody Secondary",
+      "rating": 7.5,
+      "distance": "1.9 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Moody Elementary",
+      "rating": 4.7,
+      "distance": "0.7 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Port Moody Centre",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-moody-real-estate/505-3105-st-george-street/home/GMnKYqporr53w1Qr?id_listing=JRv53Kpaq42YVPW4",
+  "_scrapedAt": "2026-01-26T08:08:26.954Z",
+  "_rawFile": "505_3105_st_george_street_port_moody_port_moody_centre.html"
+}

@@ -1,0 +1,39 @@
+{
+  "address": "Unit 62 - 5950 Oakdale Road",
+  "city": "Burnaby",
+  "sqft": 1855,
+  "year": 1994,
+  "price": 1250000,
+  "fee": 489,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3860,
+  "description": "CHECK OUT THE VIRTUAL STAGED TOUR! Welcome to Heathercrest — a secure, gated townhouse community in the heart of Burnaby’s Oaklands area, built by developer Polygon. This spacious home features 3 bedrooms, 3 bathrooms, and a large basement rec room that easily functions as a 4th bedroom. Enjoy the feel of a detached home with its wide layout, double side-by-side garage, and extra driveway parking. Quiet and private setting just minutes to Metrotown, T&T, SkyTrain, and top schools: Marlborough Elementary & Burnaby Central. Showings by appointment only. COURT ORDERED SALE - SOLD AS IS WHERE IS - SCHEDULE A TO ACCOMPANY ALL OFFERS - initial offer can have subjects/conditions - please contact for more info on the court process. STRATA PLAN 1844SF DIGITAL MEASURE Gross Living Area 1957SF",
+  "features": [],
+  "schools": [
+    {
+      "name": "Ecole Marlborough Elementary",
+      "rating": 8,
+      "distance": "0.5 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Burnaby Central Secondary",
+      "rating": 5.7,
+      "distance": "1.4 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Oaklands",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 2,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/62-5950-oakdale-road/home/1DBW7RDOG8dYqlAp?id_listing=56k97wJplaOyKRjD",
+  "_scrapedAt": "2026-01-26T08:48:56.895Z",
+  "_rawFile": "62_5950_oakdale_road_burnaby_oaklands.html"
+}

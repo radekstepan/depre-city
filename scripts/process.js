@@ -19,13 +19,9 @@ const JSON_DIR = path.join(process.cwd(), 'data/json');
 const resolveEnv = (key) => {
     const value = process.env[key];
     if (!value) return undefined;
-    
-    // If the value points to another env var, use that
     if (process.env[value]) {
         return process.env[value];
     }
-    
-    // Otherwise use the value as-is
     return value;
 };
 
@@ -62,11 +58,22 @@ function getMetadataFast(filePath) {
     return { sourceUrl: "", scrapedAt: "", content: null };
 }
 
-// --- Helper: Address Extraction ---
+// --- Helper: Address Extraction (HouseSigma Focused) ---
 function extractAddress(htmlContent) {
     const dom = new JSDOM(htmlContent);
     const document = dom.window.document;
     
+    // Attempt 1: HouseSigma Specific H1
+    const h1Address = document.querySelector('.address-community .address');
+    if (h1Address) {
+        // Remove any spans usually used for SEO or separators
+        const clone = h1Address.cloneNode(true);
+        const spans = clone.querySelectorAll('span');
+        spans.forEach(s => s.remove());
+        return clone.textContent.trim();
+    }
+
+    // Attempt 2: JSON-LD
     const jsonLdScripts = document.querySelectorAll('script[type="application/ld+json"]');
     for (const script of jsonLdScripts) {
         try {
@@ -76,11 +83,6 @@ function extractAddress(htmlContent) {
                 return entity.address.streetAddress;
             }
         } catch (e) {}
-    }
-    
-    const h1 = document.querySelector('h1');
-    if (h1) {
-        return h1.textContent.split(',')[0].trim();
     }
     
     return null;
@@ -321,56 +323,75 @@ async function extractDeepData(description, features = []) {
     const modelName = resolveEnv('LLM_MODEL_NAME');
 
     if (!apiKey) {
-        // Silent return for progress bar cleanliness
         return null;
     }
 
+    if (!baseURL) {
+        throw new Error('LLM_API_KEY found but LLM_API_URL is missing in .env');
+    }
+
     const prompt = `
-    Analyze this Real Estate listing.
+    Analyze this Real Estate listing description and features list to extract technical details.
+    
     Text: "${description}"
     Features: ${features.join(', ')}
 
-    Return STRICT JSON (no markdown):
+    Return STRICT JSON (no markdown blocks) with this schema:
     {
       "parkingType": "underground" | "carport" | "garage_double" | "garage_tandem" | "street" | "other",
       "levels": number (default 1),
       "isEndUnit": boolean,
       "hasAC": boolean,
-      "isRainscreened": boolean,
+      "isRainscreened": boolean (true if mentioned or built > 2005),
       "outdoorSpace": "balcony" | "yard" | "rooftop" | "none",
       "condition": number (1-5 score: 1=Needs Work, 2=Original/Dated, 3=Average/Maintained, 4=Updated, 5=Brand New/Fully Reno),
-      "subArea": string (The specific neighborhood name if mentioned. e.g. "Burke Mountain", "Maillardville". Use "Other" if unknown.)
+      "subArea": string (Specific neighborhood name if found, otherwise 'Other')
     }
     `;
 
-    try {
-        const res = await fetch(`${baseURL}/chat/completions`, {
-            method: 'POST',
-            headers: { 
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${apiKey}`
-            },
-            body: JSON.stringify({
-                model: modelName,
-                messages: [{role: "user", content: prompt}]
-            })
-        });
+    // Removed temperature to support reasoning models that enforce default temperature (e.g. o1)
+    const payload = {
+        model: modelName,
+        messages: [{role: "user", content: prompt}]
+    };
 
-        if (!res.ok) {
-            const errorBody = await res.text();
-            throw new Error(`${res.status} ${res.statusText}: ${errorBody}`);
+    const res = await fetch(`${baseURL}/chat/completions`, {
+        method: 'POST',
+        headers: { 
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${apiKey}`
+        },
+        body: JSON.stringify(payload)
+    });
+
+    if (!res.ok) {
+        const errorBody = await res.text();
+        let formattedError;
+        try {
+            // Try to parse JSON error for better formatting
+            const errorJson = JSON.parse(errorBody);
+            formattedError = JSON.stringify(errorJson, null, 2);
+        } catch (e) {
+            // Fallback to raw text if not JSON
+            formattedError = errorBody;
         }
-        const data = await res.json();
-        let content = data.choices[0].message.content;
-        content = content.replace(/```json/g, '').replace(/```/g, '').trim();
-        return JSON.parse(content);
-    } catch (e) {
-        // Return null on failure but don't log to console to avoid breaking progress bar
-        return null;
+        throw new Error(`${res.status} ${res.statusText}:\n${formattedError}`);
     }
+
+    const data = await res.json();
+    let content = data.choices[0].message.content;
+    content = content.replace(/```json/g, '').replace(/```/g, '').trim();
+    return JSON.parse(content);
 }
 
-// --- Helper: DOM Parsing (Ported from Extension) ---
+// --- Helper: Clean Number String ---
+const cleanNumber = (str) => {
+    if (!str) return 0;
+    const cleaned = str.replace(/[^0-9.]/g, '');
+    return Number(cleaned);
+};
+
+// --- Main Parsing Logic (HouseSigma Optimized) ---
 function parseHtml(htmlContent, filename) {
     const dom = new JSDOM(htmlContent);
     const document = dom.window.document;
@@ -390,145 +411,215 @@ function parseHtml(htmlContent, filename) {
         bathrooms: 0,
         parking: 0,
         propertyTax: 0,
-        // Deep Data Placeholders
         description: "",
         features: [],
-        subArea: null, // Initialize as null to track extraction success
+        schools: [],
+        subArea: null,
+        // Deep Data Placeholders (Filled by DOM or LLM)
+        parkingType: 'other',
+        levels: 1,
+        isEndUnit: false,
+        hasAC: false,
+        rainscreen: false, // Unified field
+        outdoorSpace: 'balcony', // Default to balcony (standard) to avoid "None" outliers
+        condition: 3,
         _sourceUrl: sourceUrl,
         _scrapedAt: scrapedAt,
         _rawFile: filename
     };
 
-    // 1. JSON-LD Extraction
+    // --- 1. JSON-LD Extraction (Primary Source) ---
     const jsonLdScripts = document.querySelectorAll('script[type="application/ld+json"]');
-    let jsonLd = null;
-
     for (const script of jsonLdScripts) {
         try {
             const json = JSON.parse(script.textContent);
-            if (json['@type'] === 'RealEstateListing' || 
-                (json['@context'] === 'https://schema.org' && json['@type'] === 'Product') ||
-                json['@type'] === 'House') {
-                jsonLd = json;
-                break;
+            const types = Array.isArray(json['@type']) ? json['@type'] : [json['@type']];
+            
+            if (types.some(t => ['RealEstateListing', 'SingleFamilyResidence', 'Place', 'Residence'].includes(t))) {
+                if (json.address?.streetAddress && listing.address === "Unknown Address") {
+                    listing.address = json.address.streetAddress;
+                }
+                if (json.address?.addressLocality && listing.city === "Unknown City") {
+                    listing.city = json.address.addressLocality;
+                }
+                if (json.numberOfBedrooms && !listing.bedrooms) listing.bedrooms = Number(json.numberOfBedrooms);
+                if (json.numberOfBathroomsTotal && !listing.bathrooms) listing.bathrooms = Number(json.numberOfBathroomsTotal);
+                if (json.floorSize?.value && !listing.sqft) listing.sqft = Number(json.floorSize.value);
+                if (json.description && !listing.description) listing.description = json.description;
+            }
+            
+            if (types.includes('Product')) {
+                if (json.offers?.price && !listing.price) {
+                    listing.price = Number(json.offers.price);
+                }
             }
         } catch (e) {}
     }
 
-    if (jsonLd) {
-        const entity = jsonLd.mainEntity || jsonLd;
-        if (entity.address) {
-            listing.address = entity.address.streetAddress || listing.address;
-            listing.city = entity.address.addressLocality || listing.city;
+    // --- 2. DOM Address & City ---
+    const h1El = document.querySelector('.address-community .address');
+    if (h1El && listing.address === "Unknown Address") {
+        const h1Clone = h1El.cloneNode(true);
+        h1Clone.querySelectorAll('span').forEach(s => s.remove());
+        listing.address = h1Clone.textContent.trim();
+    }
+    const communityEl = document.querySelector('.address-community .community');
+    if (communityEl) {
+        const locationParts = communityEl.textContent.split('-').map(s => s.trim());
+        if (locationParts.length > 0 && listing.city === "Unknown City") {
+            listing.city = locationParts[0];
         }
-        if (entity.floorSize) {
-            const val = typeof entity.floorSize === 'object' ? entity.floorSize.value : entity.floorSize;
-            listing.sqft = Number(val);
+        if (locationParts.length > 1) {
+            listing.subArea = locationParts[1];
         }
-        if (entity.numberOfBedrooms) listing.bedrooms = Number(entity.numberOfBedrooms);
-        if (entity.numberOfBathroomsTotal) listing.bathrooms = Number(entity.numberOfBathroomsTotal);
-        let offers = jsonLd.offers || entity.offers;
-        if (offers) {
-            const offer = Array.isArray(offers) ? offers[0] : offers;
-            if (offer && offer.price) listing.price = Number(offer.price);
-        }
-        if (entity.description) listing.description = entity.description;
     }
 
-    // 2. DOM Extraction
-    if (!listing.description) {
-        const descEl = document.querySelector('.prose, .description, [itemprop="description"], #listing-description');
-        if (descEl) listing.description = descEl.textContent.trim();
-    }
-
-    const featureEls = document.querySelectorAll('ul.features li, .amenities li, .property-features li');
-    if (featureEls.length > 0) {
-        listing.features = Array.from(featureEls).map(el => el.textContent.trim());
-    }
-
-    const cleanNumber = (str) => str ? Number(str.replace(/[^0-9.]/g, '')) : 0;
-    
-    const getTableValue = (labels) => {
-        const tds = Array.from(document.querySelectorAll('td, dt'));
-        for (const td of tds) {
-            const text = td.textContent.trim().toLowerCase();
-            // Check if any label is in the text
-            if (labels.some(l => text.includes(l.toLowerCase()))) {
-                const nextEl = td.nextElementSibling;
-                if (nextEl) return nextEl.textContent.trim();
-            }
-        }
-        return null;
-    };
-
-    // Try multiple sources for year
-    let yearStr = getTableValue(['Year Built']);
-    if (yearStr) {
-        listing.year = parseInt(yearStr.replace(/[^0-9]/g, ''), 10);
+    // --- 3. Sold Price Specific Extraction ---
+    const soldPriceEl = document.querySelector('.price-area .price .sold');
+    if (soldPriceEl) {
+        const p = cleanNumber(soldPriceEl.textContent);
+        if (p > 0) listing.price = p;
     } else {
-        const scriptMatches = htmlContent.match(/yearBuilt\\?["']?:(\d{4})/);
-        if (scriptMatches) {
-            listing.year = parseInt(scriptMatches[1], 10);
-        } else {
-            const ageStr = getTableValue(['Age']);
-            if (ageStr) {
-                const match = ageStr.match(/\((\d{4})\)/);
-                if (match) listing.year = parseInt(match[1], 10);
+        const priceSelectors = ['.listing-price .price', '.price-section .price', '.listing-status .price'];
+        for (const selector of priceSelectors) {
+            const priceEl = document.querySelector(selector);
+            if (priceEl) {
+                const p = cleanNumber(priceEl.textContent);
+                if (p > 0) {
+                    listing.price = p;
+                    break;
+                }
             }
         }
     }
 
-    const feeStr = getTableValue(['Maintenance Fee', 'Strata Fee']);
-    if (feeStr) listing.fee = cleanNumber(feeStr);
-
-    const taxStr = getTableValue(['Property Taxes', 'Gross Taxes']);
-    if (taxStr) listing.propertyTax = cleanNumber(taxStr);
-
-    // Extraction of Neighbourhood/Sub-Area
-    let subArea = getTableValue(['Neighbourhood', 'Community', 'Sub-Area']);
-    
-    // Fallback to Breadcrumbs if table extraction failed
-    if (!subArea) {
-        const breadcrumbScript = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
-            .find(s => s.textContent.includes('BreadcrumbList'));
-        if (breadcrumbScript) {
-            try {
-                const bcData = JSON.parse(breadcrumbScript.textContent);
-                const items = bcData.itemListElement || [];
-                // Zealty pattern: Home(1) > Region(2) > City(3) > Area(4) > Postal(5)
-                const areaItem = items.find(i => i.position === 4);
-                if (areaItem && areaItem.name) subArea = areaItem.name;
-            } catch (e) {}
+    // --- 4. Description from DOM ---
+    if (!listing.description) {
+        const descSelectors = ['.listing-description p', '.description-content', '.pc-description p'];
+        for (const selector of descSelectors) {
+            const descEl = document.querySelector(selector);
+            if (descEl) {
+                listing.description = descEl.textContent.trim();
+                break;
+            }
         }
     }
 
-    if (subArea) listing.subArea = subArea;
-
-    const parkingStr = getTableValue(['Parking', 'Total Parking']);
-    if (parkingStr) {
-        const match = parkingStr.match(/Total spaces:\s*(\d+)/i) || parkingStr.match(/(\d+)/);
-        if (match) listing.parking = parseInt(match[1]);
-    }
-
-    // Fallbacks
-    if (listing.address === "Unknown Address") {
-        const h1 = document.querySelector('h1');
-        if (h1) {
-            const parts = h1.textContent.split(',');
-            if (parts.length > 0) listing.address = parts[0].trim();
-            if (parts.length > 1) listing.city = parts[1].trim();
+    // --- 5. Key Facts & Deep Data from Details ---
+    const dtElements = document.querySelectorAll('dt');
+    for (const dt of dtElements) {
+        const label = dt.textContent.toLowerCase().trim();
+        const dd = dt.nextElementSibling;
+        if (!dd) continue;
+        const value = dd.textContent.trim();
+        const valLower = value.toLowerCase();
+        
+        if (label.includes('year built') || label.includes('approximate age')) {
+            const yearMatch = value.match(/\d{4}/);
+            if (yearMatch && !listing.year) listing.year = parseInt(yearMatch[0]);
+        }
+        if ((label.includes('size') || label.includes('floor area')) && !listing.sqft) {
+            listing.sqft = cleanNumber(value);
+        }
+        if ((label.includes('maintenance') || label.includes('strata fee')) && !listing.fee) {
+            listing.fee = cleanNumber(value);
+        }
+        if ((label.includes('tax') || label.includes('property tax')) && !listing.propertyTax) {
+            const taxPart = value.split('/')[0];
+            listing.propertyTax = cleanNumber(taxPart);
+        }
+        if (label.includes('parking') && !listing.parking) {
+            const parkMatch = value.match(/(\d+)/);
+            if (parkMatch) listing.parking = parseInt(parkMatch[1]);
+        }
+        
+        // Deep Data
+        if (label.includes('parking features') || label.includes('parking type')) {
+            if (valLower.includes('underground')) listing.parkingType = 'underground';
+            else if (valLower.includes('carport')) listing.parkingType = 'carport';
+            else if (valLower.includes('double')) listing.parkingType = 'garage_double';
+            else if (valLower.includes('tandem')) listing.parkingType = 'garage_tandem';
+            else if (valLower.includes('street')) listing.parkingType = 'street';
+        }
+        if (label.includes('property type') || label.includes('style')) {
+            const lvlMatch = value.match(/(\d+)\s*storey/i);
+            if (lvlMatch) listing.levels = parseInt(lvlMatch[1]);
+        }
+        if (label.includes('cooling') || label.includes('amenities')) {
+            if (valLower.includes('air conditioning') || valLower.includes('central air') || valLower.includes('heat pump')) {
+                listing.hasAC = true;
+            }
         }
     }
-    
-    if (!listing.price) {
-        const priceStr = getTableValue(['Sold Price', 'Price', 'Asking Price']);
-        if (priceStr) listing.price = cleanNumber(priceStr.split('\n')[0]);
+
+    // --- 6. Spec Icons Fallback ---
+    if (!listing.bedrooms || !listing.bathrooms || !listing.parking) {
+        const specItems = document.querySelectorAll('.spec-item, .config-item');
+        for (const item of specItems) {
+            const text = item.textContent.toLowerCase();
+            const numMatch = item.textContent.match(/(\d+)/);
+            if (!numMatch) continue;
+            const num = parseInt(numMatch[1]);
+            if (text.includes('bed') && !listing.bedrooms) listing.bedrooms = num;
+            if (text.includes('bath') && !listing.bathrooms) listing.bathrooms = num;
+            if ((text.includes('garage') || text.includes('parking')) && !listing.parking) listing.parking = num;
+        }
     }
 
-    // Basic Rainscreen Logic (Pre-LLM fallback)
-    const desc = (listing.description || "").toLowerCase();
-    listing.rainscreen = (listing.year >= 2005) || desc.includes('rainscreen') || desc.includes('rain screen');
-    listing.condition = 3; // Default average
+    // --- 7. Description Analysis ---
+    const descLower = (listing.description || "").toLowerCase();
+    if (descLower.includes('corner unit') || descLower.includes('end unit')) listing.isEndUnit = true;
+    
+    // Improved Outdoor Space Detection
+    // Priority: Rooftop > Yard > Balcony/Standard
+    if (descLower.includes('rooftop')) {
+        listing.outdoorSpace = 'rooftop';
+    } else if (descLower.includes('yard') || descLower.includes('garden')) {
+        listing.outdoorSpace = 'yard';
+    } else if (descLower.includes('balcony') || descLower.includes('patio') || descLower.includes('deck') || descLower.includes('terrace') || descLower.includes('solarium') || descLower.includes('sundeck')) {
+        listing.outdoorSpace = 'balcony';
+    }
+    
+    listing.rainscreen = (listing.year >= 2005) || descLower.includes('rainscreen') || descLower.includes('rain screen');
+    if (!listing.hasAC && (descLower.includes('air conditioning') || descLower.includes('a/c') || descLower.includes('heat pump'))) {
+        if (!descLower.includes('rough-in')) listing.hasAC = true;
+    }
+
+    // --- 8. School Extraction (Unique & Improved Regex) ---
+    const schoolElements = document.querySelectorAll('.pc-school-nearby .pc-school');
+    const addedSchools = new Set(); // Dedup set
+    
+    schoolElements.forEach(schoolEl => {
+        const ratingEl = schoolEl.querySelector('.school-rating p em');
+        const nameEl = schoolEl.querySelector('.main-text em');
+        const distanceEl = schoolEl.querySelector('.main-text span');
+        
+        let type = "Unknown";
+        const tags = schoolEl.querySelectorAll('.status-tag');
+        tags.forEach(tag => {
+            const t = tag.textContent.trim();
+            // Improved Regex to capture K-5, 0-6, 9-12
+            if (/[A-Z0-9]+-[A-Z0-9]+/i.test(t)) type = t; 
+        });
+
+        if (nameEl && ratingEl) {
+            const name = nameEl.textContent.trim();
+            // Skip duplicates in this listing
+            if (addedSchools.has(name)) return;
+            
+            const rating = parseFloat(ratingEl.textContent.trim());
+            // Filter out 0 ratings
+            if (rating > 0) {
+                addedSchools.add(name);
+                listing.schools.push({
+                    name: name,
+                    rating: rating,
+                    distance: distanceEl ? distanceEl.textContent.trim() : "",
+                    type
+                });
+            }
+        }
+    });
 
     return listing;
 }
@@ -538,7 +629,7 @@ function parseHtml(htmlContent, filename) {
 async function main() {
     if (!fs.existsSync(HTML_DIR)) {
         console.error(chalk.red(`Error: data/html directory not found at ${HTML_DIR}`));
-        console.error("Please place your downloaded HTML files there.");
+        console.error("Please place your HouseSigma HTML files there.");
         process.exit(1);
     }
     
@@ -547,46 +638,34 @@ async function main() {
     }
 
     let htmlFiles = fs.readdirSync(HTML_DIR).filter(f => f.endsWith('.html'));
-    
     let skippedFiles = new Set();
     
+    // Deduplication Logic
     if (!shouldSkipDedup && htmlFiles.length > 0) {
         console.log(chalk.cyan('\n=== Deduplication Phase ==='));
-        
         const deletedCopyFiles = autoCleanupCopyFiles(htmlFiles);
         htmlFiles = htmlFiles.filter(f => !deletedCopyFiles.includes(f));
         
         if (htmlFiles.length > 1) {
             console.log(chalk.gray('Scanning for duplicates...'));
             const { urlDupes, addrDupes } = findDuplicates(htmlFiles);
-            
             const seenFiles = new Set();
             const allDupes = [];
             
-            for (const group of urlDupes) {
+            [...urlDupes, ...addrDupes].forEach(group => {
                 const groupFiles = new Set(group.map(g => g.file));
                 const key = [...groupFiles].sort().join('|');
                 if (!seenFiles.has(key)) {
                     seenFiles.add(key);
                     allDupes.push(group);
                 }
-            }
-            
-            for (const group of addrDupes) {
-                const groupFiles = new Set(group.map(g => g.file));
-                const key = [...groupFiles].sort().join('|');
-                if (!seenFiles.has(key)) {
-                    seenFiles.add(key);
-                    allDupes.push(group);
-                }
-            }
+            });
             
             if (allDupes.length > 0) {
                 const totalFiles = allDupes.reduce((acc, g) => acc + g.length, 0);
                 console.log(chalk.yellow(`\nFound ${allDupes.length} duplicate groups (${totalFiles} files)`));
                 const actions = await promptForDuplicates(allDupes);
                 executeDuplicateActions(actions);
-                
                 skippedFiles = new Set(actions.toSkip);
                 htmlFiles = htmlFiles.filter(f => !actions.toDelete.includes(f));
             } else {
@@ -597,20 +676,18 @@ async function main() {
     
     const filesToProcess = htmlFiles.filter(file => {
         if (skippedFiles.has(file)) return false;
-        const jsonFileName = file.replace('.html', '.json');
-        const jsonPath = path.join(JSON_DIR, jsonFileName);
-        return !fs.existsSync(jsonPath);
+        // Always re-process to pick up new school parsing logic
+        return true; 
     });
 
     if (filesToProcess.length === 0) {
-        console.log(chalk.green("All HTML files have already been processed. No new files to process."));
+        console.log(chalk.green("All HTML files processed. No new files."));
         return;
     }
 
     console.log(chalk.cyan(`\n=== Processing Phase ===`));
     console.log(chalk.cyan(`Found ${filesToProcess.length} files to process\n`));
 
-    // Initialize Progress Bar
     const b1 = new cliProgress.SingleBar({
         format: chalk.blue('{bar}') + ' {percentage}% | {value}/{total} Files | ' + chalk.yellow('{status}') + ' | {file}',
         barCompleteChar: '\u2588',
@@ -622,53 +699,69 @@ async function main() {
     b1.start(filesToProcess.length, 0, { status: 'Initializing', file: '...' });
 
     let llmSuccessCount = 0;
-    let llmFailCount = 0;
-
-    for (const file of filesToProcess) {
+    
+    for (let i = 0; i < filesToProcess.length; i++) {
+        const file = filesToProcess[i];
         const shortName = file.length > 25 ? file.substring(0, 22) + '...' : file;
         
         // 1. Basic Parse
-        b1.update(null, { status: 'Parsing HTML', file: shortName });
+        b1.update(i, { status: 'Parsing HTML', file: shortName });
         const htmlPath = path.join(HTML_DIR, file);
         const html = fs.readFileSync(htmlPath, 'utf-8');
         const listing = parseHtml(html, file);
         
         // 2. LLM Enrichment
-        if (listing.description) {
-            b1.update(null, { status: 'Enriching (LLM)', file: shortName });
+        if (listing.description && resolveEnv('LLM_API_KEY')) {
+            b1.update(i, { status: 'Enriching (LLM)', file: shortName });
             
-            const deepData = await extractDeepData(listing.description, listing.features);
-            if (deepData) {
-                // Determine Priority for subArea
-                // If DOM gave us a specific subArea (not null), we ignore LLM's guess to prevent it overwriting with "Other"
-                if (listing.subArea && listing.subArea !== "Other") {
-                    delete deepData.subArea;
-                }
-
-                // Map specific deep data fields
-                Object.assign(listing, deepData);
+            try {
+                const deepData = await extractDeepData(listing.description, listing.features);
                 
-                // Map boolean isRainscreened to listing.rainscreen if present
-                if (typeof deepData.isRainscreened === 'boolean') {
-                    listing.rainscreen = deepData.isRainscreened;
+                if (deepData) {
+                    if (listing.subArea && listing.subArea !== "Other") {
+                        delete deepData.subArea;
+                    }
+                    
+                    if (listing.parkingType === 'other' && deepData.parkingType) listing.parkingType = deepData.parkingType;
+                    if (!listing.isEndUnit && deepData.isEndUnit) listing.isEndUnit = deepData.isEndUnit;
+                    if (!listing.hasAC && deepData.hasAC) listing.hasAC = deepData.hasAC;
+                    
+                    if (deepData.outdoorSpace && deepData.outdoorSpace !== 'none') {
+                        if (deepData.outdoorSpace === 'rooftop') listing.outdoorSpace = 'rooftop';
+                        else if (deepData.outdoorSpace === 'yard' && listing.outdoorSpace !== 'rooftop') listing.outdoorSpace = 'yard';
+                        else if (listing.outdoorSpace === 'none') listing.outdoorSpace = 'balcony';
+                    }
+                    
+                    listing.condition = deepData.condition;
+                    if (typeof deepData.isRainscreened === 'boolean') {
+                        listing.rainscreen = listing.rainscreen || deepData.isRainscreened;
+                    }
+                    
+                    llmSuccessCount++;
                 }
+            } catch (error) {
+                // FAILURE CASE: Exit immediately
+                b1.stop();
+                console.log('\n'); // Ensure a clean break from the progress bar
+                console.error(chalk.bgRed.white.bold(' LLM ENRICHMENT FAILED '));
+                console.error(chalk.red(`File: ${file}`));
                 
-                llmSuccessCount++;
-            } else {
-                llmFailCount++;
+                // Print the clean error message (which might be JSON formatted now)
+                console.error(chalk.yellow(error.message));
+                
+                console.log(chalk.gray('─'.repeat(50)));
+                console.log(chalk.white(`Files successfully enriched: ${llmSuccessCount}`));
+                console.log(chalk.white(`Files skipped (remaining): ${filesToProcess.length - (i + 1)}`));
+                process.exit(1);
             }
         }
 
-        // Final Default if subArea is still missing
-        if (!listing.subArea) {
-            listing.subArea = "Other";
-        }
+        if (!listing.subArea) listing.subArea = "Other";
 
         // 3. Save
-        b1.update(null, { status: 'Saving JSON', file: shortName });
+        b1.update(i, { status: 'Saving JSON', file: shortName });
         const outName = file.replace('.html', '.json');
         fs.writeFileSync(path.join(JSON_DIR, outName), JSON.stringify(listing, null, 2));
-        
         b1.increment();
     }
     
@@ -676,9 +769,7 @@ async function main() {
     
     console.log(chalk.green(`\n\u2714 Success! Processed ${filesToProcess.length} files.`));
     if (resolveEnv('LLM_API_KEY')) {
-        console.log(chalk.gray(`  LLM Stats: ${llmSuccessCount} enriched, ${llmFailCount} skipped/failed.`));
-    } else {
-        console.log(chalk.yellow(`  LLM Skipped: No API Key provided.`));
+        console.log(chalk.gray(`  LLM Stats: ${llmSuccessCount} enriched.`));
     }
     console.log(`  Data saved to ${chalk.underline(JSON_DIR)}`);
 }

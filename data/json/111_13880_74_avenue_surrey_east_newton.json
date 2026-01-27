@@ -1,0 +1,39 @@
+{
+  "address": "Unit 111 - 13880 74 Avenue",
+  "city": "Surrey",
+  "sqft": 1300,
+  "year": 1980,
+  "price": 615000,
+  "fee": 376,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 2516,
+  "description": "NEW PRICE. $626.9K.!!Welcome to Wedgewood Estates this 2 story_no many stairs^, 3 BR_ 2bath Townhouse . Great size living room with sliding door to private fenced backyard. Powder room on the main with a separate laundry and good storage area. Three bedrooms upstairs  Backs on a big garden for extra privacy,  with one full bathroom. Family friendly complex close to shopping, restaurants, bus, parks and more! professionally managed with  Low maint. fee of  $376. and huge strata Contingency Fund(CRF)  of $813,000  make it good safe investment.  Easy to show with some notice!, Newer  Hot Water tank many updates just done  including  new paint, new doors, stairs laminate and all new floorings. come see the great Value Open to offers",
+  "features": [],
+  "schools": [
+    {
+      "name": "Frank Hurt Secondary",
+      "rating": 3.7,
+      "distance": "0.5 km",
+      "type": "8-12"
+    },
+    {
+      "name": "M B Sanford Elementary",
+      "rating": 2.2,
+      "distance": "0.9 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "East Newton",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/111-13880-74-avenue/home/0J6Em7bAaMxyXBeq?id_listing=jAXw7QpZZRdyQOzg",
+  "_scrapedAt": "2026-01-26T09:20:32.956Z",
+  "_rawFile": "111_13880_74_avenue_surrey_east_newton.html"
+}

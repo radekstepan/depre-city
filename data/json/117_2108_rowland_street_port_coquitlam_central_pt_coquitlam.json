@@ -1,0 +1,39 @@
+{
+  "address": "Unit 117 - 2108 Rowland Street",
+  "city": "Port Coquitlam",
+  "sqft": 1290,
+  "year": 2008,
+  "price": 737500,
+  "fee": 277,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 2556,
+  "description": "Effortless Townhouse Living in Downtown Port Coquitlam Enjoy spacious 3-bed, 2-bath plus den townhouse has 3 patios & It’s own Private Entrance!  Located in quiet cul-de-sac. Open layout with large kitchen featuring stainless appliances, granite countertops, ample counter & cupboard space.  Beautiful Engineered Hardwood in Living Space & New Carpets in Bedrooms.  Lots of Extra Storage, InSuite laundry & two secured underground tandem parking stalls with private access. This Pet-friendly complex offers a full gym & rec facilities.  Walk to downtown Poco shops, dining, parks, and trails.  Schools: Central Elementary, École Pitt River Community, & Riverside Secondary.  Access to Lougheed Highway, Mary Hill ByPass, West Coast Express.  This home delivers space, style, & unbeatable walkability",
+  "features": [],
+  "schools": [
+    {
+      "name": "Ecole Riverside Secondary",
+      "rating": 4.6,
+      "distance": "0.3 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Central Community Elementary School",
+      "rating": 2.2,
+      "distance": "0.3 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Central Pt Coquitlam",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/117-2108-rowland-street/home/BDO1w3WzpJO78Jg0?id_listing=GMnKYq0g1MR3w1Qr",
+  "_scrapedAt": "2026-01-26T08:11:58.642Z",
+  "_rawFile": "117_2108_rowland_street_port_coquitlam_central_pt_coquitlam.html"
+}

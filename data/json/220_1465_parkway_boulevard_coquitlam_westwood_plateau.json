@@ -1,0 +1,39 @@
+{
+  "address": "Unit 220 - 1465 Parkway Boulevard",
+  "city": "Coquitlam",
+  "sqft": 2238,
+  "year": 1997,
+  "price": 1088000,
+  "fee": 528,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4172,
+  "description": "Popular “Silver Oak” by Polygon – Stunning 4-Bedroom End-Unit Townhouse. This bright and spacious townhouse in the prestigious Westwood Plateau is a must-see! Just steps away from middle and elementary schools, IGA grocery, restaurants, and public transportation, it offers both convenience and style. Vaulted ceilings and huge windows create an airy, light-filled living space. Open-concept layout perfect for entertaining and family living. Spacious primary bedroom with vaulted ceiling and two walk-in closets, plus two additional roomy bedrooms upstairs. Lower-level bedroom or office with a full bathroom provides flexibility for work-from-home or guests. Experience the perfect blend of comfort, functionality, and location in this exceptional Westwood Plateau townhouse.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Ecole Panorama Heights Elementary",
+      "rating": 6.9,
+      "distance": "0.6 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Gleneagle Secondary",
+      "rating": 6.6,
+      "distance": "1.4 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Westwood Plateau",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/220-1465-parkway-boulevard/home/BGMnKYqd6Xj3w1Qr?id_listing=DO1w3W98qAKy8Jg0",
+  "_scrapedAt": "2026-01-26T08:31:18.285Z",
+  "_rawFile": "220_1465_parkway_boulevard_coquitlam_westwood_plateau.html"
+}

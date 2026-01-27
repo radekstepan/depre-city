@@ -1,0 +1,39 @@
+{
+  "address": "Unit 15 - 9584 216 Street",
+  "city": "Langley",
+  "sqft": 2370,
+  "year": 2012,
+  "price": 878750,
+  "fee": 442,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4860,
+  "description": "Welcome to Belmont – Walnut Grove’s premier townhome community! This a rare corner unit that perfectly blends sophistication, comfort, & functionality. Featuring 4 spacious bedrooms (3 upstairs & 1 lower level), bathrooms on every floor, a main floor office, and a flex room downstairs—this layout is ideal for growing families, remote workers, or multi-generational living. Enjoy upgraded, high-end appliances, designer finishes, and thoughtful touches throughout. The home also includes central air conditioning and forced air heating to keep you comfortable year-round. Double s by s garage+2 extra parking spots -a true luxury in townhome living! With its modern updates, versatile floorplan, and unbeatable curb appeal, this is arguably the finest TH in the area. Call today to book your Viewing",
+  "features": [],
+  "schools": [
+    {
+      "name": "Walnut Grove Secondary",
+      "rating": 7.3,
+      "distance": "1.8 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Topham Elementary",
+      "rating": 7.1,
+      "distance": "0.9 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Walnut Grove",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/15-9584-216-street/home/EeVbOYElEa53x2P0?id_listing=XRla7gbDrdGyjEvL",
+  "_scrapedAt": "2026-01-26T08:45:49.802Z",
+  "_rawFile": "15_9584_216_street_langley_walnut_grove.html"
+}

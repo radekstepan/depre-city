@@ -1,0 +1,39 @@
+{
+  "address": "3382 Mason Avenue",
+  "city": "Coquitlam",
+  "sqft": 2656,
+  "year": 2014,
+  "price": 1420000,
+  "fee": 0,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 1,
+  "propertyTax": 4937,
+  "description": "This RARE freehold row home (no strata fees) is right out of a magazine. Built in 2014 & freshly renovated from top to bottom, 3382 Mason is an end unit with no neighbour to the east. The main floor has been completely reimagined with designer finishes & a gorgeous new kitchen, while the primary ensuite is totally custom. No expense spared. The covered south-facing patio has gas BBQ & fire pit & is perfect for year-round entertaining.detached garage off the back lane fits one car (plus extra storage).Upstairs you’ll find 3 bedrooms & 2 full bathrooms, while the lower level offers a flexible layout with a living room, bathroom, laundry & the 4th bedroom (currently a home office/gym).With over 2,600 sq. ft. of stylish living across three levels & priced under $1.45M. OPEN HOUSE CANCELLED",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "0.5 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "3.0 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/3382-mason-avenue/home/VgAaOyLEZXP7GxMb?id_listing=AKv53DlNbAW3MnxB",
+  "_scrapedAt": "2026-01-26T08:26:35.274Z",
+  "_rawFile": "3382_mason_avenue_coquitlam_burke_mountain.html"
+}

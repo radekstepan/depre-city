@@ -1,0 +1,39 @@
+{
+  "address": "3365 Ganymede Drive",
+  "city": "Burnaby",
+  "sqft": 1315,
+  "year": 1971,
+  "price": 758000,
+  "fee": 300,
+  "bedrooms": 4,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 2119,
+  "description": "Welcome to Simon Fraser Village! This beautifully maintained 4-bedroom, 2-bathroom townhouse is surrounded by serene greenbelt in one of Burnaby’s most desirable communities. Offering a functional layout with 3 spacious bedrooms and 1 bath upstairs, plus a fully finished lower level with an additional bedroom, bath, and recreation/flex space, it’s perfect for families, guests, or investors. Enjoy a private fenced yard ideal for entertaining, and take advantage of the well-managed, pet- and rental-friendly complex featuring playgrounds, on-site daycare, and friendly neighbors. Close to Lougheed Mall, SkyTrain, SFU, schools and parks. Parking #111. 2021 Renovations: Hot Water Tank, Furnace, Main Flooring, bathrooms, gas stove and dishwasher. Contingency reserve fund: $1,461,867.77 as of July",
+  "features": [],
+  "schools": [
+    {
+      "name": "Burnaby Mountain Secondary",
+      "rating": 7.6,
+      "distance": "0.2 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Stoney Creek Community Elementary",
+      "rating": 6.8,
+      "distance": "0.7 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Simon Fraser Hills",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/3365-ganymede-drive/home/ZEXrx30j8MZyOklN?id_listing=ZxwR7MV2eaz3KabB",
+  "_scrapedAt": "2026-01-26T08:23:27.446Z",
+  "_rawFile": "3365_ganymede_drive_burnaby_simon_fraser_hills.html"
+}

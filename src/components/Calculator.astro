@@ -37,7 +37,7 @@ interface Props {
 const { 
     intercept, coefSqft, coefAge, coefBath,
     coefFee, coefCondition, coefRainscreen,
-    coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, 
+    coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage,
     areaCoefficients, areaReference, feeSlope, feeIntercept, stdError,
     tStats
 } = Astro.props;
@@ -100,26 +100,32 @@ const areaOptions = Object.entries(areaCoefficients)
                     </div>
                 </div>
 
-                <!-- Quality / Fees -->
-                <div>
-                    <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Condition (1-5)</label>
-                    <select id="inputCondition" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
-                        <option value="1">1 - Needs Work</option>
-                        <option value="2">2 - Original/Dated</option>
-                        <option value="3" selected>3 - Average</option>
-                        <option value="4">4 - Updated</option>
-                        <option value="5">5 - Brand New/Reno</option>
-                    </select>
+                <!-- Condition -->
+                <div class="space-y-4">
+                    <div class="grid grid-cols-1 gap-4">
+                         <div>
+                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Condition (1-5)</label>
+                            <select id="inputCondition" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                                <option value="1">1 - Needs Work</option>
+                                <option value="2">2 - Original/Dated</option>
+                                <option value="3" selected>3 - Average</option>
+                                <option value="4">4 - Updated</option>
+                                <option value="5">5 - Brand New/Reno</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Deep Data -->
-                <div>
-                    <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Parking Situation</label>
-                    <select id="inputParking" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
-                        <option value="std">Underground / Carport / Street</option>
-                        <option value="tandem">Tandem Private Garage</option>
-                        <option value="double">Double Side-by-Side Garage</option>
-                    </select>
+                <div class="grid grid-cols-1 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Parking</label>
+                        <select id="inputParking" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                            <option value="std">Underground / Carport / Street</option>
+                            <option value="tandem">Tandem Private Garage</option>
+                            <option value="double">Double Side-by-Side Garage</option>
+                        </select>
+                    </div>
                 </div>
 
                 <div class="flex flex-wrap gap-4">
@@ -144,28 +150,11 @@ const areaOptions = Object.entries(areaCoefficients)
                     <span class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2">Predicted Value</span>
                     <div class="text-4xl md:text-5xl font-serif font-bold text-white tracking-tight" id="outputPrice">$0</div>
                     
-                    <!-- Range Display with Tooltip -->
+                    <!-- Range Display -->
                     <div class="mt-3 flex items-center group relative w-fit z-10">
                         <div class="flex items-center space-x-2 cursor-default">
                             <div class="h-1.5 w-1.5 rounded-full bg-amber-500"></div>
                             <div class="text-sm text-gray-300 font-mono" id="outputRange">$0 — $0</div>
-                        </div>
-                        
-                        <!-- Info Icon -->
-                        <div class="ml-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-600 hover:text-gray-400 transition-colors cursor-help" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </div>
-
-                        <!-- Tooltip -->
-                        <div class="absolute top-full left-0 mt-2 hidden group-hover:block w-64 p-3 bg-gray-800 border border-gray-700 rounded-lg shadow-xl text-xs z-50">
-                            <div class="font-semibold text-amber-500 mb-1">80% Confidence Interval</div>
-                            <p class="text-gray-300 leading-relaxed">
-                                Likely trading range (10th to 90th percentile), excluding extreme outliers.
-                            </p>
-                            <!-- Arrow pointing up -->
-                            <div class="absolute -top-1 left-4 w-2 h-2 bg-gray-800 border-t border-l border-gray-700 transform rotate-45"></div>
                         </div>
                     </div>
                     
@@ -190,8 +179,15 @@ const areaOptions = Object.entries(areaCoefficients)
                         <span class="text-amber-400" id="valAge">+$0</span>
                     </div>
                     <div class="flex justify-between items-center">
-                        <span class="text-gray-400">Strata Fee Impact</span>
-                        <span class="text-red-400" id="valFee">-$0</span>
+                        <span class="text-gray-400">Condition Value</span>
+                        <div class="flex items-center gap-2">
+                             {Math.abs(tStats.coefCondition) < 1.65 && <span class="text-[10px] text-gray-500 uppercase bg-gray-800 px-1 rounded">Low Sig</span>}
+                             <span class="text-green-400" id="valCondition">+$0</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-400">Parking Value</span>
+                        <span class="text-green-400" id="valParking">+$0</span>
                     </div>
                     <div class="flex justify-between items-center">
                         <span class="text-gray-400">Bathrooms</span>
@@ -201,14 +197,11 @@ const areaOptions = Object.entries(areaCoefficients)
                         </div>
                     </div>
                     <div class="flex justify-between items-center">
-                        <span class="text-gray-400">Condition/Rainscreen</span>
-                        <div class="flex items-center gap-2">
-                             {(Math.abs(tStats.coefCondition) < 1.65 && Math.abs(tStats.coefRainscreen) < 1.65) && <span class="text-[10px] text-gray-500 uppercase bg-gray-800 px-1 rounded">Low Sig</span>}
-                             <span class="text-green-400" id="valQuality">+$0</span>
-                        </div>
+                        <span class="text-gray-400">Strata Fee Impact</span>
+                        <span class="text-red-400" id="valFee">-$0</span>
                     </div>
                     <div class="flex justify-between items-center">
-                        <span class="text-gray-400">Features</span>
+                        <span class="text-gray-400">Amenities (AC, End, Rain)</span>
                         <span class="text-green-400" id="valFeatures">+$0</span>
                     </div>
                 </div>
@@ -241,8 +234,9 @@ const areaOptions = Object.entries(areaCoefficients)
             valAge: document.getElementById('valAge'),
             valFee: document.getElementById('valFee'),
             valBath: document.getElementById('valBath'),
-            valQuality: document.getElementById('valQuality'),
-            valFeatures: document.getElementById('valFeatures'),
+            valCondition: document.getElementById('valCondition'),
+            valParking: document.getElementById('valParking'),
+            valFeatures: document.getElementById('valFeatures'), // Amenities only (AC, End, Rain)
             valLoc: document.getElementById('valLoc')
         };
 
@@ -299,8 +293,13 @@ const areaOptions = Object.entries(areaCoefficients)
             outputs.valAge.innerText = (valAge > 0 ? "+" : "") + format(valAge);
             outputs.valFee.innerText = (valFee > 0 ? "+" : "") + format(valFee);
             outputs.valBath.innerText = (valBath > 0 ? "+" : "") + format(valBath);
-            outputs.valQuality.innerText = "+" + format(valCondition + valRain);
-            outputs.valFeatures.innerText = "+" + format(valParking + valEnd + valAC);
+            
+            outputs.valCondition.innerText = (valCondition > 0 ? "+" : "") + format(valCondition);
+            outputs.valParking.innerText = (valParking > 0 ? "+" : "") + format(valParking);
+            
+            // Amenities: End + AC + Rain
+            const amenitiesTotal = valEnd + valAC + valRain;
+            outputs.valFeatures.innerText = (amenitiesTotal > 0 ? "+" : "") + format(amenitiesTotal);
             
             // Location
             outputs.valLoc.className = areaCoefVal >= 0 ? "text-green-400" : "text-red-400";

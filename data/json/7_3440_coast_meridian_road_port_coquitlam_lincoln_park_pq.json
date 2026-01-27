@@ -1,0 +1,39 @@
+{
+  "address": "Unit 7 - 3440 Coast Meridian Road",
+  "city": "Port Coquitlam",
+  "sqft": 1698,
+  "year": 1989,
+  "price": 825000,
+  "fee": 450,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3258,
+  "description": "This beautifully updated 3 BED+DEN offers nearly 1,700 SQFT of functional living across 3 levels is perfect for families! RENOVATIONS INC: modern kitchen, updated cabinets, countertops, bathrooms, plumbing & light fixtures, flooring, baseboards, blinds, paint & MUCH MORE! UPGRADES INC: roof & gutters, windows & patio doors, hot water tank & new fence. Private fenced yard with an updated composite deck, ideal for relaxing or entertaining. Located in a family-friendly community, MINS AWAY from Hyde Creek Rec Centre, PoCo trails, schools, parks, shopping, transit & easy hwy access! This home offers space, comfort & unbeatable convenience in one of Port Coquitlam’s most sought-after neighbourhoods. A must-see - shows beautifully and move-in ready!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "1.3 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Birchland Elementary",
+      "rating": 2.6,
+      "distance": "0.6 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Lincoln Park PQ",
+  "parkingType": "carport",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/7-3440-coast-meridian-road/home/aQmD7zn2kNr7J9Bo?id_listing=aD6p78NK8EwYwRQr",
+  "_scrapedAt": "2026-01-26T08:12:01.065Z",
+  "_rawFile": "7_3440_coast_meridian_road_port_coquitlam_lincoln_park_pq.html"
+}

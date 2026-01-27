@@ -1,0 +1,39 @@
+{
+  "address": "Unit 13 - 915 Fort Fraser Rise",
+  "city": "Port Coquitlam",
+  "sqft": 2652,
+  "year": 1997,
+  "price": 1390000,
+  "fee": 513,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3836,
+  "description": "Rarely available, this fully reno’d A/C corner unit is in Brittany Place, a quiet 15-unit gated complex w/ flat driveway, dbl garage & concrete tile roof. Over 2,650 sq ft across 3 lvls. Street entry leads to a grand foyer opening to a bright living rm w/ gas FP. Spacious dining rm w/ extra storage & 2nd fridge flows into an updated kitchen w/ island, stylish cabinetry, tile backsplash & newer s/s appl incl gas range. Covered patio & lrg family rm off the kitchen. Upstairs has 3 beds, 2 full baths & laundry. Primary suite offers W/I closet, soaker tub, dbl sinks & lrg shower. Bsmt features 4th bed or office, full bath, flex rm & access to dbl garage. Quality renos throughout—move in & enjoy!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Castle Park Elementary",
+      "rating": 6.5,
+      "distance": "0.7 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Ecole Riverside Secondary",
+      "rating": 4.6,
+      "distance": "2.9 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Citadel PQ",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/13-915-fort-fraser-rise/home/BXeEn7XRKedYrPo8?id_listing=56k97wJpvrRyKRjD",
+  "_scrapedAt": "2026-01-26T08:26:16.816Z",
+  "_rawFile": "13_915_fort_fraser_rise_port_coquitlam_citadel_pq.html"
+}

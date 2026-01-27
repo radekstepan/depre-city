@@ -1,0 +1,39 @@
+{
+  "address": "Unit 46 - 1338 Hames Crescent",
+  "city": "Coquitlam",
+  "sqft": 1359,
+  "year": 2012,
+  "price": 860000,
+  "fee": 364,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 3215,
+  "description": "'Farrington Park' park side wonderful townhomes, built by Polygon, are in the foothills neighborhood on the prestigious Burke Mountain. This gorgeous 3 bedroom 2 bathroom home features a flexible open concept layout with light modern laminate flooring, stainless Steel appliances, gourmet kitchen featuring engineered stone counter tops 7 flat panel cabinetry. new Hot water tank(2022), washer and dryer(2023), dishes washer(2024) and brand new stove. Farrington Park is great for families, next to Galloway Park with a playground, splash pad & sports court. walking distances to Smiling Creek elementary school, and new Secondary school(under construction), clinic and Shoppers, CEFA daycare. minutes to Coquitlam Centre, skytrain, T&T, Costco and community centre. Move in ready, must SEE!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "0.8 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "3.5 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/46-1338-hames-crescent/home/zVwod7v8bd2Y5mGN?id_listing=mZRW7n2g0ZV7EBO9",
+  "_scrapedAt": "2026-01-26T08:30:41.327Z",
+  "_rawFile": "46_1338_hames_crescent_coquitlam_burke_mountain.html"
+}

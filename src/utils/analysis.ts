@@ -11,13 +11,14 @@ export interface Listing extends Partial<DeepData> {
     price: number;
     rainscreen: boolean;
     condition?: number; // 1-5
-    // Scraper fields
     description?: string;
     features?: string[];
     // Legacy fields
     bedrooms?: number;
     bathrooms?: number;
     parking?: number;
+    // New
+    schools?: { name: string, rating: number, type: string, distance: string }[];
 }
 
 export interface MarketModel {
@@ -69,7 +70,6 @@ export interface MarketModel {
 function normalizeLocation(city: string, subArea?: string): string {
     const c = city.trim();
     const s = subArea ? subArea.trim() : 'Other';
-    // Clean up typical variations if LLM returns "Coquitlam West" as subArea but City is Coquitlam
     return `${c} - ${s}`;
 }
 
@@ -79,14 +79,10 @@ export function generateMarketModel(data: Listing[]): MarketModel {
 
     // --- Identify Areas ---
     const allLocations = validData.map(d => normalizeLocation(d.city, d.subArea));
-    
-    // Count frequencies to pick a reference category (Most common)
     const counts: Record<string, number> = {};
     allLocations.forEach(loc => counts[loc] = (counts[loc] || 0) + 1);
-    
-    // Sort locations by frequency descending
     const sortedLocations = Object.entries(counts).sort((a, b) => b[1] - a[1]);
-    const referenceLocation = sortedLocations[0][0]; // Most common area is the baseline
+    const referenceLocation = sortedLocations[0][0];
     const distinctAreas = sortedLocations.map(pair => pair[0]).filter(loc => loc !== referenceLocation);
 
     // --- Prepare Data for OLS ---
@@ -106,11 +102,8 @@ export function generateMarketModel(data: Listing[]): MarketModel {
         const isTandem = d.parkingType === 'garage_tandem' ? 1 : 0;
         const isEnd = d.isEndUnit ? 1 : 0;
         const hasAC = d.hasAC ? 1 : 0;
-
-        // Current listing location
+        
         const loc = normalizeLocation(d.city, d.subArea);
-
-        // Generate One-Hot Encoding for Areas
         const areaDummies = distinctAreas.map(area => (loc === area ? 1 : 0));
 
         // Feature Vector Order:
@@ -131,46 +124,48 @@ export function generateMarketModel(data: Listing[]): MarketModel {
         ];
     });
 
-    // Run Regression
+    // Run Primary Regression (Physical + Location)
     const { betas, tStats } = solveOLS(X, y);
 
-    // Fallback if matrix singular or empty
     if (betas.every(b => b === 0) && validData.length > 0) {
         betas[0] = ss.mean(y);
     }
 
-    // Map coefficients & t-stats
+    // --- Metrics ---
+    
+    // Map coefficients
+    // Indexes:
+    // 0: Intercept
+    // 1-10: Features
+    // 11+: Areas
     const areaCoefMap: Record<string, number> = {};
     const areaTStatMap: Record<string, number> = {};
-    
-    // Base Case
     areaCoefMap[referenceLocation] = 0; 
     areaTStatMap[referenceLocation] = 0;
 
-    // Other Areas
     distinctAreas.forEach((area, idx) => {
         // betas index offset is 11 (intercept + 10 features)
         areaCoefMap[area] = Math.round(betas[11 + idx]);
         areaTStatMap[area] = tStats[11 + idx];
     });
 
-    // --- Calculate Model Accuracy ---
-    let rss = 0;
-    let tss = 0;
+    // R2 Calculation
+    let finalRSS = 0;
+    let finalTSS = 0;
     const yMean = ss.mean(y);
 
     X.forEach((row, i) => {
         const predicted = row.reduce((sum, val, idx) => sum + val * betas[idx], 0);
-        rss += Math.pow(y[i] - predicted, 2);
-        tss += Math.pow(y[i] - yMean, 2);
+        
+        finalRSS += Math.pow(y[i] - predicted, 2);
+        finalTSS += Math.pow(y[i] - yMean, 2);
     });
 
-    const r2 = tss > 0 ? 1 - (rss / tss) : 0;
-    const p = X[0].length - 1;
+    const r2 = finalTSS > 0 ? 1 - (finalRSS / finalTSS) : 0;
+    const p = X[0].length;
     const n = validData.length;
-    const stdError = n > p + 1 ? Math.sqrt(rss / (n - p - 1)) : 0;
+    const stdError = n > p ? Math.sqrt(finalRSS / (n - p)) : 0;
 
-    // Fee Regression
     const feePoints = validData.filter(d => d.fee > 0).map(d => [d.sqft, d.fee]);
     const feeReg = feePoints.length > 2 ? ss.linearRegression(feePoints) : { m: 0, b: 0 };
 

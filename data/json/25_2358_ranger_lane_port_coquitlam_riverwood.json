@@ -1,0 +1,39 @@
+{
+  "address": "Unit 25 - 2358 Ranger Lane",
+  "city": "Port Coquitlam",
+  "sqft": 1325,
+  "year": 2015,
+  "price": 875000,
+  "fee": 373,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3094,
+  "description": "Truly VERY Special location in this COMPLEX! Perfect Family Home, 3 Bedrooms  on Upper floor+ 3 Bath in Fremont INDIGO by Mosaic! This Unit located in private greenbelt area, behind Dominion Park and River CLUB with 12,000+ sq ft of amenities: playground, clubhouse, outdoor pool, lounge with kitchen, basketball, indoor children playroom, gym and scenic trails along the river. Bright Open Concept with spacious and wide Living/Dining/Kitchen area, big Balcony and Powder ROOM on main. High 9' ceiling. 2 car garage &extra Visitor Parking across the unit. CONVENIENCE with Bus to Coquitlam Centre Station in front of complex, Walmart, Costco, all w/in 5 min walk and 7 min drive to #1 HWY. Fremont is truly a family-oriented community with FRIENDLY NEIGHBOURS!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Blakeburn Elementary",
+      "rating": 6.5,
+      "distance": "1.3 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "1.8 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Riverwood",
+  "parkingType": "garage_tandem",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/25-2358-ranger-lane/home/kbEDRYaqXllY1VaB?id_listing=EXrx30eO2gpYOklN",
+  "_scrapedAt": "2026-01-26T08:12:36.230Z",
+  "_rawFile": "25_2358_ranger_lane_port_coquitlam_riverwood.html"
+}

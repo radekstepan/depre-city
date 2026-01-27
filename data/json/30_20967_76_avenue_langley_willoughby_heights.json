@@ -1,0 +1,39 @@
+{
+  "address": "Unit 30 - 20967 76 Avenue",
+  "city": "Langley",
+  "sqft": 1392,
+  "year": 2012,
+  "price": 747500,
+  "fee": 215,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2686,
+  "description": "Ideal for young families! This spacious 3-bedroom home is tucked inside the complex, featuring a sunny south-facing yard that opens onto your own private playground. Recently updated with fresh paint and brand-new carpet, it feels bright and move-in ready. Just steps from Richard Bulpitt Elementary and Willoughby Town Centre—parks, shops, and amenities are all walkable. Located in a family-friendly, well-run strata, you'll enjoy a true sense of community. The main level offers an open, flexible layout with a powder room, while upstairs has 2 full baths. Pet- and rental-friendly too—perfect for your lifestyle!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Richard Bulpitt Elementary",
+      "rating": 5.8,
+      "distance": "0.3 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.5 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/30-20967-76-avenue/home/0Zaw5YoMz0m7n961?id_listing=XRla7gb1qOgyjEvL",
+  "_scrapedAt": "2026-01-26T08:46:05.113Z",
+  "_rawFile": "30_20967_76_avenue_langley_willoughby_heights.html"
+}

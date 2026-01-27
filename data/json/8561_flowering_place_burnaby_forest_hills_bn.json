@@ -1,0 +1,39 @@
+{
+  "address": "8561 Flowering Place",
+  "city": "Burnaby",
+  "sqft": 1776,
+  "year": 1981,
+  "price": 990000,
+  "fee": 519,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3204,
+  "description": "Forest Grove Family Retreat – Spacious, Serene & Stylishly Renovated! Nestled into the quiet nature setting of Forest Grove, this turnkey townhome blends modern style w timeless comfort. Inside you’ll find sleek laminate flooring, elegant fixtures, fresh paint, pot lights, crown moulding, & a gorgeous kitchen complete w skylights & bright eating area. Versatile rec room downstairs, cozy living room on main w wood-burning fireplace, full dining area, & massive patio backing to lush green space. Upstairs, spacious bedrooms provide comfort for the whole family, including a lavish primary ensuite. Enjoy complex amenities: squash court, sauna & pool! Prime location across from Forest Grove Elementary & nearby SFU, Skytrain, Parks, Lougheed Mall + HWY #1!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Burnaby Mountain Secondary",
+      "rating": 7.6,
+      "distance": "1.1 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Forest Grove Elementary",
+      "rating": 6.3,
+      "distance": "0.1 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Forest Hills BN",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/8561-flowering-place/home/VgAaOyLklRzYGxMb?id_listing=1DBW7RnEKjL7qlAp",
+  "_scrapedAt": "2026-01-26T08:30:55.403Z",
+  "_rawFile": "8561_flowering_place_burnaby_forest_hills_bn.html"
+}

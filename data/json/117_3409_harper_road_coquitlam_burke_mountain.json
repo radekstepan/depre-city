@@ -1,0 +1,39 @@
+{
+  "address": "Unit 117 - 3409 Harper Road",
+  "city": "Coquitlam",
+  "sqft": 2019,
+  "year": 2021,
+  "price": 1125000,
+  "fee": 453,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3802,
+  "description": "Welcome to Timber Ridge – the best-priced 4 bed, 4 bath home in Burke Mountain! Offering over 2,000 sq ft of modern living, this 2021-built townhome is surrounded by greenery and perfectly positioned at the top of Burke Mountain, away from traffic and close to trails. Enjoy peace and quiet while still being minutes from new schools, shopping, parks, and transit. Inside, upscale finishes include a gourmet kitchen with Fisher & Paykel appliances, quartz countertops, custom feature wall, and bar fridge. The bright open floorplan is ideal for families or entertaining. Stay comfortable year-round with high-velocity heating, AIR CONDITIONING, and on-demand hot water. The double garage includes roughed-in central vac. This is unbeatable value you won’t find anywhere else in Burke!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "2.0 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "4.7 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/117-3409-harper-road/home/wJKR7P8nXJB7XeLP?id_listing=4KAX7NjAbQP7eRPJ",
+  "_scrapedAt": "2026-01-26T08:26:48.489Z",
+  "_rawFile": "117_3409_harper_road_coquitlam_burke_mountain.html"
+}

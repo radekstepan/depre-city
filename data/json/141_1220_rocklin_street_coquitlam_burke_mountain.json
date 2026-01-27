@@ -1,0 +1,39 @@
+{
+  "address": "Unit 141 - 1220 Rocklin Street",
+  "city": "Coquitlam",
+  "sqft": 1388,
+  "year": 2021,
+  "price": 910000,
+  "fee": 308,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3544,
+  "description": "Bright 3-bed townhome overlooking greenbelt at Rocklin by Woodridge homes. Lovingly cared for by original owners with 9’ ceilings on every floor. Main floor offers large living & dining areas, chef’s kitchen & powder room. Upper floor features 3 bedrooms, 10’8” vaulted ceilings in primary bedroom overlooking private yard, spa-like ensuite with dual vanities, & full size laundry closet w/ additional shelves. 2-car XL tandem garage with lots of storage options. Fenced in 360sqft backyard overlooking greenbelt with built-in gas bib for summer BBQs! Located on the quietest row within the complex with no-through road but easy access to Rocklin St. Walk to daycare, Victoria Park. Amazing family neighborhood w/ upcoming comm centre, pool, library & schools.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "0.9 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "2.7 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/141-1220-rocklin-street/home/B5bO3xXoxmV3kWVP?id_listing=eQp5yOpMq5J7d0ZE",
+  "_scrapedAt": "2026-01-26T08:08:34.612Z",
+  "_rawFile": "141_1220_rocklin_street_coquitlam_burke_mountain.html"
+}

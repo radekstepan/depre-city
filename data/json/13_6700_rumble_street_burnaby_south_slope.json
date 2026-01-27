@@ -1,0 +1,39 @@
+{
+  "address": "Unit 13 - 6700 Rumble Street",
+  "city": "Burnaby",
+  "sqft": 1694,
+  "year": 1991,
+  "price": 1120000,
+  "fee": 583,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3485,
+  "description": "FULLY RENOVATED home in sought-after Francisco Lane, South Slope! Boasting over 1,690 sq ft across 3 levels, this 4 BED + 3 BATH home offers a bright, spacious primary suite w/ a spa-inspired ensuite featuring an illuminated double vanity, quartz counters, tile backsplash & ample storage. Two additional generous bdrms share a beautifully updated bath. The main floor showcases an open living/dining area w/ a GAS fireplace & sliding doors to a large deck. The kitchen incl. a roomy eating area, oversized marble tile, shaker cabinets, S/S appliances, quartz counters & access to the back deck. The lower level features a large bdrm, updated bath, laundry & access to a double SIDE-BY-SIDE garage. Well managed complex with pool, hot tub, gym & maintained grounds. Walking distance to everything!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Taylor Park Elementary",
+      "rating": 8.3,
+      "distance": "0.8 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Byrne Creek Community Secondary",
+      "rating": 1.9,
+      "distance": "1.2 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "South Slope",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/13-6700-rumble-street/home/x9w8o3mLq0X7GKjm?id_listing=XeEn7X4VQxq7rPo8",
+  "_scrapedAt": "2026-01-26T08:49:02.659Z",
+  "_rawFile": "13_6700_rumble_street_burnaby_south_slope.html"
+}

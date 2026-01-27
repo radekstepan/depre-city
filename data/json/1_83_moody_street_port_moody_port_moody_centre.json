@@ -1,0 +1,39 @@
+{
+  "address": "Unit 1 - 83 Moody Street",
+  "city": "Port Moody",
+  "sqft": 1392,
+  "year": 2021,
+  "price": 1200000,
+  "fee": 459,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 3,
+  "propertyTax": 4337,
+  "description": "Welcome to Platform! This beautifully designed 3 bed, 3 bath corner unit townhome is located just steps from Rocky Point Park. Boasting THREE parking spaces, this home offers the perfect blend of style and space in one of Port Moody´s most sought-after neighborhoods. Showcasing an open and airy layout while the gourmet kitchen flows seamlessly into the dining and living areas. Enjoy breathtaking mountain and easterly views from your private rooftop patio. The main level also features a large wraparound patio, ideal for BBQs, gardening, or lounging in the sun. Located just minutes from breweries, cafes, the SkyTrain, and scenic trails, this home offers the best of urban living with nature at your doorstep. BUYER INCENTIVES!! 1) One FULL YEAR of paid strata fees 2) $3500 decor allowance",
+  "features": [],
+  "schools": [
+    {
+      "name": "Port Moody Secondary",
+      "rating": 7.5,
+      "distance": "1.3 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Moody Elementary",
+      "rating": 4.7,
+      "distance": "0.2 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Port Moody Centre",
+  "parkingType": "underground",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-moody-real-estate/1-83-moody-street/home/wJKR7P8XEO97XeLP?id_listing=JRv53KpaoEPYVPW4",
+  "_scrapedAt": "2026-01-26T08:08:05.074Z",
+  "_rawFile": "1_83_moody_street_port_moody_port_moody_centre.html"
+}

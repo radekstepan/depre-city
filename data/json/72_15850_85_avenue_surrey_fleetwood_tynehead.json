@@ -1,0 +1,39 @@
+{
+  "address": "Unit 72 - 15850 85 Avenue",
+  "city": "Surrey",
+  "sqft": 1641,
+  "year": 2021,
+  "price": 945000,
+  "fee": 341,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3637,
+  "description": "Welcome to Fleetwood Village, built by Dawson+Sawyer! This modern, well-kept 4-bedroom, 3.5-bath offers contemporary elegance and functionality. Nestled in a quiet side of the complex with easy access to visitor parking. Perfect for a growing family. The ground-floor bedroom, complete with a full bath, is perfect for guests or a home office. The open-concept design boasts high-quality finishes, making it an ideal choice for a stylish living space. Fleetwood Park/Walnut Road school district, with parks, trails, and shopping nearby. Conveniently located near grocery stores, shopping, and the upcoming SkyTrain station, this home combines comfort and elegance with an ideal location for effortless commuting. Like new. Move-in ready!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Walnut Road Elementary",
+      "rating": 7.8,
+      "distance": "1.2 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Fleetwood Park Secondary",
+      "rating": 7,
+      "distance": "1.2 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Fleetwood Tynehead",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/72-15850-85-avenue/home/XeEn7X6RlgGYrPo8?id_listing=B5bO3xxkgAL3kWVP",
+  "_scrapedAt": "2026-01-26T09:20:12.146Z",
+  "_rawFile": "72_15850_85_avenue_surrey_fleetwood_tynehead.html"
+}

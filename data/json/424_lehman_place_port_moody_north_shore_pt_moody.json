@@ -1,0 +1,39 @@
+{
+  "address": "424 Lehman Place",
+  "city": "Port Moody",
+  "sqft": 1791,
+  "year": 1979,
+  "price": 872000,
+  "fee": 561,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3698,
+  "description": "Beautifully updated 3-bedroom, 2.5-bath townhome in the highly desirable Eagle Point complex in Port Moody. Offering over 1,700 sq ft of functional living space, this home features new AIR CONDITIONING, a renovated kitchen with stone countertops, stainless steel appliances, and stylishly updated bathrooms. Enjoy spacious bedrooms, ample storage, and a private outdoor space perfect for relaxing or entertaining. Nestled in a quiet, family-friendly community with access to a pool and clubhouse. Walk to SkyTrain, shopping, parks, trails, schools, and Eagle Ridge Hospital—everything you need is just steps away. A rare opportunity to own a move-in-ready home in one of Port Moody’s most connected neighbourhoods!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Gleneagle Secondary",
+      "rating": 6.6,
+      "distance": "1.2 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Eagle Ridge Elementary",
+      "rating": 6.4,
+      "distance": "0.5 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "North Shore Pt Moody",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-moody-real-estate/424-lehman-place/home/0ZxwR7MeR1B7KabB?id_listing=aD6p78NBNanYwRQr",
+  "_scrapedAt": "2026-01-26T08:31:20.850Z",
+  "_rawFile": "424_lehman_place_port_moody_north_shore_pt_moody.html"
+}

@@ -1,0 +1,39 @@
+{
+  "address": "Unit 125 - 1225 Mitchell Street",
+  "city": "Coquitlam",
+  "sqft": 1415,
+  "year": 2021,
+  "price": 1050000,
+  "fee": 323,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3671,
+  "description": "Stylish 4-year-old home with 1,415 sq. ft. open-concept living, 9-ft ceilings, and large windows for natural light. The chef’s kitchen boasts quartz counters, a gas range, and custom storage. Enjoy a sunny, fenced backyard backing onto a greenbelt; perfect for peaceful mornings or BBQs. Upstairs are 3 bedrooms, including a vaulted primary suite with walk-in closet and spa-like ensuite. The two other bedrooms are versatile for guests, kids, or a home office. The 530 sq. ft. double garage features Polyaspartic floors, Husky slat organization, EV charging readiness, gas BBQ hookup, and smart upgrades. Set in a quiet, family-friendly community near parks, trails, top schools, and shopping - and still under new home warranty. This home blends modern elegance with everyday convenience.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "0.8 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "2.8 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/125-1225-mitchell-street/home/wJKR7P8QERM7XeLP/",
+  "_scrapedAt": "2026-01-26T07:43:36.168Z",
+  "_rawFile": "125_1225_mitchell_street_coquitlam_burke_mountain.html"
+}

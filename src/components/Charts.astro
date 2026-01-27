@@ -28,7 +28,7 @@ const accuracyPoints = listings
         
         const isDouble = l.parkingType === 'garage_double' ? 1 : 0;
         const isTandem = l.parkingType === 'garage_tandem' ? 1 : 0;
-
+        
         const locationStr = `${l.city} - ${l.subArea || 'Other'}`;
         const locCoef = model.areaCoefficients[locationStr] || 0;
 
@@ -38,7 +38,7 @@ const accuracyPoints = listings
         const fee = l.fee || 0;
         const condition = l.condition || 3;
         const isRainscreen = l.rainscreen ? 1 : 0;
-
+        
         const predicted = model.intercept + 
             (l.sqft * model.coefSqft) +
             (age * model.coefAge) +
@@ -62,8 +62,6 @@ const accuracyPoints = listings
     });
 
 // 3. Prepare Feature Impact Data
-// Separated into Areas and Features
-
 const areaPoints = Object.entries(model.areaCoefficients)
     .map(([k, v]) => ({
         label: k === model.areaReference ? `${k} (Baseline)` : k,
@@ -71,7 +69,7 @@ const areaPoints = Object.entries(model.areaCoefficients)
         isBaseline: k === model.areaReference,
         tStat: model.tStats.areaCoefficients[k] || 0
     }))
-    .sort((a, b) => b.value - a.value); // Sort High to Low
+    .sort((a, b) => b.value - a.value);
 
 const featurePoints = [
     { label: 'Double Garage', value: model.coefDoubleGarage, tStat: model.tStats.coefDoubleGarage },
@@ -82,7 +80,7 @@ const featurePoints = [
     { label: 'Extra Bath', value: model.coefBath, tStat: model.tStats.coefBath },
     { label: 'Condition (+1)', value: model.coefCondition, tStat: model.tStats.coefCondition },
     { label: 'Newer (10 Yrs)', value: model.coefAge * -10, tStat: model.tStats.coefAge },
-    { label: 'Lower Fee ($100)', value: model.coefFee * -100, tStat: model.tStats.coefFee }
+    { label: 'Lower Fee ($100)', value: model.coefFee * -100, tStat: model.tStats.coefFee },
 ].sort((a, b) => Math.abs(b.value) - Math.abs(a.value)); 
 ---
 
@@ -102,8 +100,8 @@ const featurePoints = [
             <!-- Neighborhoods -->
             <div class="bg-gray-50/50 p-6 rounded-xl border border-gray-100">
                 <h3 class="text-sm font-bold text-gray-800 uppercase tracking-wide mb-2">Neighborhood Premiums ($)</h3>
-                <p class="text-xs text-gray-400 mb-6">Price impact relative to the baseline area ({model.areaReference}). <span class="text-emerald-600 font-medium">Green</span> is a premium, <span class="text-red-600 font-medium">red</span> is a discount. Grey indicates low significance.</p>
-                <div class="relative w-full" style={`height: ${Math.max(500, areaPoints.length * 28)}px`}>
+                <p class="text-xs text-gray-400 mb-6">Price impact relative to the baseline area ({model.areaReference}). <span class="text-emerald-600 font-medium">Green</span> is a premium, <span class="text-red-600 font-medium">red</span> is a discount.</p>
+                <div class="relative w-full" style={`height: ${Math.max(400, areaPoints.length * 28)}px`}>
                     <canvas id="chartAreas"></canvas>
                 </div>
             </div>
@@ -111,7 +109,7 @@ const featurePoints = [
             <!-- Features -->
             <div class="bg-gray-50/50 p-6 rounded-xl border border-gray-100">
                 <h3 class="text-sm font-bold text-gray-800 uppercase tracking-wide mb-2">Feature Values ($)</h3>
-                <p class="text-xs text-gray-400 mb-6">Estimated value of specific property attributes. <span class="text-emerald-600 font-medium">Green</span> is positive, <span class="text-red-600 font-medium">red</span> is negative. Grey indicates low significance.</p>
+                <p class="text-xs text-gray-400 mb-6">Estimated value of specific property attributes. Grey indicates low significance (t &lt; 1.65).</p>
                 <div class="relative h-[500px] w-full">
                     <canvas id="chartFeatures"></canvas>
                 </div>
@@ -169,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         if (typeof p === 'number') { 
                              return `Value: ${new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD', maximumFractionDigits: 0 }).format(p)}`;
                         }
-                        // Scatter Label with predictions
+                        // Scatter Label
                         if (p.predicted !== undefined) {
                             return [
                                 `${p.address}`,
@@ -182,9 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 }
             },
-            title: {
-                display: false
-            }
+            title: { display: false }
         },
         onClick: (event, elements, chart) => {
             if (elements.length > 0) {
@@ -253,7 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // Helper: Determine Color based on value and t-stat (3 solid colors, no transparency)
+    // Helper: Determine Color based on value and t-stat
     function getCoefficientColor(val, tStat) {
         const isSignificant = Math.abs(tStat) >= 1.65;
         if (!isSignificant) return '#9ca3af'; // Gray 400
@@ -291,7 +287,7 @@ document.addEventListener('DOMContentLoaded', () => {
         options: barOptions
     });
 
-    // --- Chart 3: Price vs Size ---
+    // --- Chart 4: Price vs Size ---
     const ctxSize = document.getElementById('chartPriceSize').getContext('2d');
     const chartSize = new Chart(ctxSize, {
         type: 'scatter',
@@ -316,16 +312,6 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         options: {
             ...commonOptions,
-            onClick: (event, elements, chart) => {
-                if (elements.length > 0) {
-                    const dataIndex = elements[0].index;
-                    const dataset = chart.data.datasets[elements[0].datasetIndex];
-                    const point = dataset.data[dataIndex];
-                    if (point && point.url) {
-                        window.open(point.url, '_blank');
-                    }
-                }
-            },
             scales: {
                 ...commonOptions.scales,
                 x: { ...commonOptions.scales.x, ticks: { ...commonOptions.scales.x.ticks, maxTicksLimit: 6 } }
@@ -333,7 +319,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- Chart 4: Price vs Age ---
+    // --- Chart 5: Price vs Age ---
     const ctxAge = document.getElementById('chartPriceAge').getContext('2d');
     const chartAge = new Chart(ctxAge, {
         type: 'scatter',
@@ -358,16 +344,6 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         options: {
             ...commonOptions,
-            onClick: (event, elements, chart) => {
-                if (elements.length > 0) {
-                    const dataIndex = elements[0].index;
-                    const dataset = chart.data.datasets[elements[0].datasetIndex];
-                    const point = dataset.data[dataIndex];
-                    if (point && point.url) {
-                        window.open(point.url, '_blank');
-                    }
-                }
-            },
             scales: {
                 ...commonOptions.scales,
                 x: { 
@@ -381,9 +357,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- Chart 5: Accuracy (Pred vs Actual) ---
+    // --- Chart 6: Accuracy ---
     const maxVal = Math.max(...accuracyPoints.map(p => p.actual)) * 1.1;
-    
     const ctxAcc = document.getElementById('chartAccuracy').getContext('2d');
     const chartAcc = new Chart(ctxAcc, {
         type: 'scatter',
@@ -414,16 +389,6 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         options: {
             ...commonOptions,
-            onClick: (event, elements, chart) => {
-                if (elements.length > 0) {
-                    const dataIndex = elements[0].index;
-                    const dataset = chart.data.datasets[elements[0].datasetIndex];
-                    const point = dataset.data[dataIndex];
-                    if (point && point.url) {
-                        window.open(point.url, '_blank');
-                    }
-                }
-            },
             scales: {
                 ...commonOptions.scales,
                 x: { 
@@ -437,17 +402,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Update Logic ---
     document.addEventListener('deprecity:model-update', (e) => {
         const { price, sqft, year } = e.detail;
-
-        // Size Chart
         chartSize.data.datasets[1].data = [{ x: sqft, y: price, year: year }];
         chartSize.update('none');
-
-        // Age Chart
         chartAge.data.datasets[1].data = [{ x: year, y: price, year: year }];
         chartAge.update('none');
     });
     
-    // Signal that charts are ready
     document.dispatchEvent(new Event('charts-ready'));
 });
 </script>

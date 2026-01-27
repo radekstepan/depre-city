@@ -1,0 +1,39 @@
+{
+  "address": "Unit 103 - 15350 Sequoia Drive",
+  "city": "Surrey",
+  "sqft": 3010,
+  "year": 1998,
+  "price": 1070000,
+  "fee": 518,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4386,
+  "description": "THE VILLAGE AT SEQUOIA RIDGE! Coveted END-UNIT in a gated community. Features A/C, double garage + extra-long driveway for 3rd car. Tastefully updated w/ NEW FLOORS, FRESH PAINT & RENOVATED Kitchen (granite/SS). Upstairs boasts a Primary suite w/ VIEWS & luxe ensuite. The finished lower level offers VERSATILITY: A spacious Rec Room currently utilized as a 5th BDRM, plus a private 4th BDRM (windowless) - perfect for a media room, gym, or quiet office. Private patio/garden. Near golf, transit & top schools (Coyote Creek/Fleetwood Park).",
+  "features": [],
+  "schools": [
+    {
+      "name": "Fleetwood Park Secondary",
+      "rating": 7,
+      "distance": "0.6 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Coyote Creek Elementary",
+      "rating": 5,
+      "distance": "0.7 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Fleetwood Tynehead",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/103-15350-sequoia-drive/home/NAKv53D0DBr3MnxB?id_listing=nM697k85amb3bmwe",
+  "_scrapedAt": "2026-01-26T09:20:20.098Z",
+  "_rawFile": "103_15350_sequoia_drive_surrey_fleetwood_tynehead.html"
+}

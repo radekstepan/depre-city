@@ -1,0 +1,39 @@
+{
+  "address": "Unit 122 - 488 Furness Street",
+  "city": "New Westminster",
+  "sqft": 1601,
+  "year": 2022,
+  "price": 1070000,
+  "fee": 383,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4515,
+  "description": "Welcome to Portside by Anthem — a thoughtfully designed collection of 170 townhomes community nestled in the charming, historic heart of Queensborough, New Westminster. Inside, you’ll find beautiful details in the kitchen like timeless tile backsplash, well designed kitchen cabinets and drawers, and all stainless steel appliances. Home includes roller shades throughout and spacious walk-in closets with custom organizers to help keep things effortlessly tidy. Enjoy the ease of a double side by side garage and unwind in a primary bedroom that boasts soaring 11-foot vaulted ceilings. The open-concept main floor is ideal for hosting family and friends, and with your home just steps from the waterfront, it truly becomes a peaceful retreat by the river. Open House Sunday October 26 2-4PM",
+  "features": [],
+  "schools": [
+    {
+      "name": "New Westminster Secondary",
+      "rating": 6.7,
+      "distance": "2.2 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Queen Elizabeth Elementary",
+      "rating": 5.7,
+      "distance": "1.7 km",
+      "type": "0-4"
+    }
+  ],
+  "subArea": "Queensborough",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/new-westminster-real-estate/122-488-furness-street/home/B5bO3xXWd8V3kWVP?id_listing=Xawjy4Npx4q3rR18",
+  "_scrapedAt": "2026-01-26T08:49:22.193Z",
+  "_rawFile": "122_488_furness_street_new_westminster_queensborough.html"
+}

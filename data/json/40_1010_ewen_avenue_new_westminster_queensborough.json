@@ -1,0 +1,39 @@
+{
+  "address": "Unit 40 - 1010 Ewen Avenue",
+  "city": "New Westminster",
+  "sqft": 1423,
+  "year": 2004,
+  "price": 775000,
+  "fee": 384,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3322,
+  "description": "Beautifully updated 3-bedroom, 2.5-bath townhome offering 1,403 sq.ft of bright, functional living space in the heart of New Westminster’s Queensborough community. This home features a host of recent upgrades including fridge, stove, microwave, dishwasher), a washer/dryer, furnace, and main water heater for peace of mind. Enjoy stylish touches like updated lighting, modern fire alarms, and rich hardwood flooring that replaces the original carpet on the main level. With spacious bedrooms, a private patio, and close proximity to schools, parks, shopping, and transit, this move-in-ready home perfectly blends comfort, convenience, and contemporary living. OPEN HOUSE : November 1st, 2:00-4:00PM.",
+  "features": [],
+  "schools": [
+    {
+      "name": "New Westminster Secondary",
+      "rating": 6.7,
+      "distance": "3.6 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Queen Elizabeth Elementary",
+      "rating": 5.7,
+      "distance": "0.2 km",
+      "type": "0-4"
+    }
+  ],
+  "subArea": "Queensborough",
+  "parkingType": "garage_tandem",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/new-westminster-real-estate/40-1010-ewen-avenue/home/1DBW7RDOOqQYqlAp?id_listing=gAaOyLKLmOKYGxMb",
+  "_scrapedAt": "2026-01-26T08:49:04.997Z",
+  "_rawFile": "40_1010_ewen_avenue_new_westminster_queensborough.html"
+}

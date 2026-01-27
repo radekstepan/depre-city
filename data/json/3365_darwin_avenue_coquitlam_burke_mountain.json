@@ -1,0 +1,39 @@
+{
+  "address": "3365 Darwin Avenue",
+  "city": "Coquitlam",
+  "sqft": 2106,
+  "year": 2011,
+  "price": 1210000,
+  "fee": 0,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 1,
+  "propertyTax": 4684,
+  "description": "Welcome to this well-maintained, move-in ready NON-STRATA rowhome in the prestigious Burke Mountain community, where modern living meets everyday convenience with NO STRATA FEES. The open-concept main floor features a bright kitchen with luxurious granite countertops, gas range, and a spacious pantry flowing seamlessly into the living and dining areas and a cozy family room. With four bedrooms and four bathrooms, this home offers plenty of space for your family. The fully finished basement that includes a huge storage space adds flexibility for extended family, a home gym, or a media room. Less than 5-minute drive to Shoppers Drug Mart, TD Bank, Leigh Elementary, Hyde Creek Rec Centre and future Burke Mountain Secondary School. Perfect canvas to create the home you’ve been looking for!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "0.5 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "2.8 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/3365-darwin-avenue/home/gJRv53KPpK2YVPW4?id_listing=VLaGyGko85KyW1ZD",
+  "_scrapedAt": "2026-01-26T08:31:06.609Z",
+  "_rawFile": "3365_darwin_avenue_coquitlam_burke_mountain.html"
+}

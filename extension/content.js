@@ -7,7 +7,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   }
 
   if (request.action === "SCRAPE_LISTING") {
-    showToast("Snapshottng HTML...", "info");
+    showToast("Snapshotting HouseSigma Listing...", "info");
     try {
       // 1. Inject Metadata for the processor to find later
       const meta = document.createElement('meta');
@@ -23,20 +23,35 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
       // 2. Capture full HTML
       const fullHtml = document.documentElement.outerHTML;
 
-      // 3. Determine Filename Slug
-      const h1 = document.querySelector('h1')?.innerText || "listing";
-      const slug = h1.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+      // 3. Determine Filename Slug (HouseSigma Specific)
+      // Tries to find the address h1, cleans it up.
+      let filename = "listing";
+      const addressEl = document.querySelector('.address-community .address') || document.querySelector('h1');
+      
+      if (addressEl) {
+        // HouseSigma puts "Unit 1 - " and spans inside the h1. Get pure text.
+        let rawText = addressEl.innerText; 
+        
+        // Remove "Unit" prefix if present to keep filenames cleaner
+        rawText = rawText.replace(/Unit\s*/i, '');
+        
+        // Replace non-alphanumeric chars with underscores
+        filename = rawText.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+        
+        // Remove duplicate underscores and leading/trailing underscores
+        filename = filename.replace(/_+/g, '_').replace(/^_|_$/g, '');
+      }
 
-      // Send response immediately (before setTimeout)
+      // Send response immediately
       sendResponse({ 
         success: true, 
         payload: {
             html: fullHtml,
-            filename: `${slug}.html`
+            filename: `${filename}.html`
         }
       });
 
-      // Add UI feedback after response sent
+      // Add UI feedback
       setTimeout(() => showToast("HTML Captured! Downloading...", "success"), 500);
 
     } catch (error) {
@@ -62,7 +77,7 @@ function showToast(message, type = "info") {
   toast.style.borderRadius = "8px";
   toast.style.color = "white";
   toast.style.fontWeight = "bold";
-  toast.style.zIndex = "999999";
+  toast.style.zIndex = "9999999"; // High z-index for HouseSigma overlays
   toast.style.boxShadow = "0 4px 12px rgba(0,0,0,0.15)";
   toast.style.fontFamily = "sans-serif";
   toast.style.fontSize = "14px";
@@ -70,7 +85,7 @@ function showToast(message, type = "info") {
 
   if (type === "success") toast.style.backgroundColor = "#10b981"; // Green
   else if (type === "error") toast.style.backgroundColor = "#ef4444"; // Red
-  else toast.style.backgroundColor = "#d97706"; // Amber
+  else toast.style.backgroundColor = "#28a3b3"; // HouseSigma Teal
 
   toast.textContent = message;
   document.body.appendChild(toast);

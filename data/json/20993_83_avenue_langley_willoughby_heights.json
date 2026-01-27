@@ -1,0 +1,39 @@
+{
+  "address": "20993 83 Avenue",
+  "city": "Langley",
+  "sqft": 3370,
+  "year": 2025,
+  "price": 1369047,
+  "fee": 0,
+  "bedrooms": 4,
+  "bathrooms": 5,
+  "parking": 1,
+  "propertyTax": 0,
+  "description": "Welcome to this stunning Row Home in one of Langley's most desired neighborhoods. This beautiful designed, non-strata home offers the freedom of single-family living with NO maintenance or strata fees. Enjoy breathtaking mountain views right from your own home. Featuring the peace of mind of 2-5-10 year home warranty, this home is perfect for families. Spacious and modern with quality finishes throughout, this home provides both comfort and style.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Lynn Fripps Elementary",
+      "rating": 6.6,
+      "distance": "0.2 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "2.0 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/20993-83-avenue/home/damgL7A8ovEyZ1MW?id_listing=GMnKYq0G1k63w1Qr",
+  "_scrapedAt": "2026-01-26T08:46:08.591Z",
+  "_rawFile": "20993_83_avenue_langley_willoughby_heights.html"
+}

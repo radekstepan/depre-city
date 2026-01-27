@@ -1,0 +1,33 @@
+{
+  "address": "Unit 43 - 7156 144 Street",
+  "city": "Surrey",
+  "sqft": 1447,
+  "year": 2011,
+  "price": 736000,
+  "fee": 313,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "description": "Welcome to Zaan Homes—don’t miss one of the top units in this beautiful 65-unit community! This bright corner unit offers a spacious backyard, high-end finishes, and is move-in ready. Enjoy granite countertops, stainless steel appliances, laminate flooring, 9' main-floor ceilings, 2' blinds, and upgraded lighting throughout. Priced to sell & easy to show. Contact for your private viewing.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Frank Hurt Secondary",
+      "rating": 3.7,
+      "distance": "1.4 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "East Newton",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/43-7156-144th-street/home/BDO1w3W5njny8Jg0?id_listing=wJKR7P92KxO3XeLP",
+  "_scrapedAt": "2026-01-26T09:20:35.664Z",
+  "_rawFile": "43_7156_144_street_surrey_east_newton.html"
+}

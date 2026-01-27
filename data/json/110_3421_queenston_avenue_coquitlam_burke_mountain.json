@@ -1,0 +1,39 @@
+{
+  "address": "Unit 110 - 3421 Queenston Avenue",
+  "city": "Coquitlam",
+  "sqft": 1650,
+  "year": 2025,
+  "price": 1100000,
+  "fee": 441,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "description": "Welcome home to Queenston - a collection of 23 craftsman-style executive townhomes designed for families just like yours. The open concept four-bedroom home boasts a gourmet kitchen with large island, gas stove and KitchenAid appliance package. This home offers an an unobstructed view to the Queenston with an expansive back yard leads to the spacious family room on the lower level. OPEN HOUSE: Saturday Jan. 10 ,1 PM - 5 PM; Sunday Jan. 11, 1 pm - 4 pm. Please visit our show home located at #104-3421 Queenston Ave.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "1.2 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "3.9 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/110-3421-queenston-avenue/home/0MWBVyZx8Qq3Kemj?id_listing=bqB176ZPAwa7ZajD",
+  "_scrapedAt": "2026-01-26T08:07:52.921Z",
+  "_rawFile": "110_3421_queenston_avenue_coquitlam_burke_mountain.html"
+}

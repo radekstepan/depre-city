@@ -1,0 +1,39 @@
+{
+  "address": "Unit 71 - 12110 75a Avenue",
+  "city": "Surrey",
+  "sqft": 1481,
+  "year": 2000,
+  "price": 715000,
+  "fee": 310,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 2527,
+  "description": "Welcome to Mandalay Village - perfectly situated in Strawberry Hill, just steps from transit, shopping, entertainment, schools, and the Alex Fraser Bridge exit for an easy commute. This well-maintained 3-bedroom, 2-bath townhouse features a bright and functional layout with a in-law suite on the lower level complete with its own bathroom. Enjoy a private backyard and patio for outdoor relaxation. A single-car garage, and an additional outdoor parking stall. Ideal for families or investors. This home offers unbeatable value and lifestyle in one of Surrey’s most walkable communities. Family-friendly complex with clubhouse and lots of visitor parking.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Princess Margaret Secondary",
+      "rating": 3.9,
+      "distance": "1.7 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Westerman Elementary",
+      "rating": 3.5,
+      "distance": "0.4 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "West Newton",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/71-12110-75a-avenue/home/DnM697kMOnOYbmwe?id_listing=DO1w3W9Z1Mjy8Jg0",
+  "_scrapedAt": "2026-01-26T09:20:30.073Z",
+  "_rawFile": "71_12110_75a_avenue_surrey_west_newton.html"
+}
