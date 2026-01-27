@@ -19,7 +19,7 @@ interface Props {
     coefHasAssessment: number;
     coefTax: number;
     coefHasTax: number;
-    coefHasFee: number;
+    coefFeePerSqft: number;
     areaCoefficients: Record<string, number>;
     areaReference: string;
     stdError: number;
@@ -31,7 +31,7 @@ const {
     intercept, coefSqft, coefAge, coefBath, coefBedrooms,
     coefCondition, coefRainscreen,
     coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, coefExtraParking,
-    coefAssessment, coefHasAssessment, coefTax, coefHasTax, coefHasFee,
+    coefAssessment, coefHasAssessment, coefTax, coefHasTax, coefFeePerSqft,
     areaCoefficients, areaReference, stdError,
     tStats, isLogLinear
 } = Astro.props;
@@ -129,6 +129,12 @@ const parkingOptions = [
                   <div>
                       <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Property Tax (Annual $)</label>
                       <input type="number" id="inputPropertyTax" value={CALCULATOR_DEFAULTS.propertyTax} step="100" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                  </div>
+
+                  <!-- Strata Fee -->
+                  <div>
+                      <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Strata Fee (Monthly $)</label>
+                      <input type="number" id="inputStrataFee" value={CALCULATOR_DEFAULTS.fee} step="10" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
                   </div>
 
                   <!-- Assessment -->
@@ -246,13 +252,20 @@ const parkingOptions = [
                         </div>
                         <span class="text-red-400" id="valTax">-$0</span>
                     </div>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-2">
+                            <span class="text-gray-400">Strata Fee Impact</span>
+                            {Math.abs(tStats.coefFeePerSqft) < 1.65 && <span class="text-[10px] text-gray-500 uppercase bg-gray-800 px-1 rounded">Low Sig</span>}
+                        </div>
+                        <span class="text-red-400" id="valFee">-$0</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<script define:vars={{ intercept, coefSqft, coefAge, coefBath, coefBedrooms, coefCondition, coefRainscreen, coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, coefExtraParking, coefAssessment, coefHasAssessment, coefTax, coefHasTax, coefHasFee, stdError, isLogLinear, CALCULATOR_DEFAULTS }}>
+<script define:vars={{ intercept, coefSqft, coefAge, coefBath, coefBedrooms, coefCondition, coefRainscreen, coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, coefExtraParking, coefAssessment, coefHasAssessment, coefTax, coefHasTax, coefFeePerSqft, stdError, isLogLinear, CALCULATOR_DEFAULTS }}>
     document.addEventListener('DOMContentLoaded', () => {
 
         const inputs = {
@@ -263,6 +276,7 @@ const parkingOptions = [
             beds: document.getElementById('inputBeds'),
             assessment: document.getElementById('inputAssessment'),
             propertyTax: document.getElementById('inputPropertyTax'),
+            strataFee: document.getElementById('inputStrataFee'),
             condition: document.getElementById('inputCondition'),
             parking: document.getElementById('inputParking'),
             parkingSpots: document.getElementById('inputParkingSpots'),
@@ -277,6 +291,7 @@ const parkingOptions = [
             psqft: document.getElementById('outputPsqft'),
             valAge: document.getElementById('valAge'),
             valTax: document.getElementById('valTax'),
+            valFee: document.getElementById('valFee'),
             valAssessment: document.getElementById('valAssessment'),
             valBath: document.getElementById('valBath'),
             valBeds: document.getElementById('valBeds'),
@@ -342,6 +357,7 @@ const parkingOptions = [
             let beds = parseFloat(inputs.beds.value) || CALCULATOR_DEFAULTS.bedrooms;
             let assessment = parseFloat(inputs.assessment.value) || CALCULATOR_DEFAULTS.assessment;
             let propertyTax = parseFloat(inputs.propertyTax.value) || CALCULATOR_DEFAULTS.propertyTax;
+            let strataFee = parseFloat(inputs.strataFee.value) || CALCULATOR_DEFAULTS.fee;
             let condition = parseInt(inputs.condition.value) || CALCULATOR_DEFAULTS.condition;
             let parkType = inputs.parking.value || CALCULATOR_DEFAULTS.parkingType;
             let parkingSpots = parseFloat(inputs.parkingSpots.value) || CALCULATOR_DEFAULTS.parkingSpots;
@@ -364,6 +380,9 @@ const parkingOptions = [
             // Property Tax
             const hasTax = propertyTax > 0 ? 1 : 0;
             const taxPerSqft = (hasTax && area > 0) ? propertyTax / area : 0;
+
+            // Strata Fee (annual fee per sqft)
+            const feePerSqft = (strataFee > 0 && area > 0) ? (strataFee * 12) / area : 0;
 
             // Parking
             const extraParking = Math.max(0, (parkingSpots || CALCULATOR_DEFAULTS.parkingSpots) - 1);
@@ -388,7 +407,7 @@ const parkingOptions = [
                     (hasAssessment * coefHasAssessment) +
                     (taxPerSqft * coefTax) +
                     (hasTax * coefHasTax) +
-                    (hasFee * coefHasFee) +
+                    (feePerSqft * coefFeePerSqft) +
                     areaCoefVal;
 
                 return Math.exp(logPrice);
@@ -420,6 +439,7 @@ const parkingOptions = [
             psqft: 0,
             valAge: 0,
             valTax: 0,
+            valFee: 0,
             valAssessment: 0,
             valBath: 0,
             valBeds: 0,
@@ -536,6 +556,15 @@ const parkingOptions = [
             const valTax = finalPrice - pNoTax;
             outputs.valTax.className = valTax >= 0 ? "text-green-400" : "text-red-400";
             updateOutput(outputs.valTax, valTax, 'valTax');
+
+            // Strata Fee Impact (Value vs $0 fee)
+            const strataFee = parseFloat(inputs.strataFee.value) || CALCULATOR_DEFAULTS.fee;
+            const feePerSqftCalc = (strataFee > 0 && area > 0) ? (strataFee * 12) / area : 0;
+            const feeCoef = feePerSqftCalc * coefFeePerSqft;
+            const pNoFee = finalPrice / Math.exp(feeCoef);
+            const valFee = finalPrice - pNoFee;
+            outputs.valFee.className = valFee >= 0 ? "text-green-400" : "text-red-400";
+            updateOutput(outputs.valFee, valFee, 'valFee');
 
             // Dispatch event for charts
             const event = new CustomEvent('deprecity:model-update', {
