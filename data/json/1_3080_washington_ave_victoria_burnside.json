@@ -9,6 +9,7 @@
   "bathrooms": 3,
   "parking": 1,
   "propertyTax": 4183,
+  "assessment": 921000,
   "description": "Immaculate, recently built 2 level Townhome tucked away on a tree lined street, in family oriented Neighbourhood near the Gorge Waterway. This stunning corner unit offers 4 spacious bedrooms all on the same floor & 3 bathrooms. As you enter, you’ll be greeted by a beautifully designed open main floor that boasts full-sized living & dining rooms—perfect for both everyday living and entertaining. Your dream kitchen features shaker-style cabinetry, a pantry, and premium appliances, including a gas range and countless other thoughtful details making this kitchen as functional as it is stylish.\r\nVenture upstairs to discover 4 bedrooms that offer versatility for any family's needs. The primary bedroom features a large walk-in closet and an ensuite bathroom that showcases timeless elegance with its feature wall lighting, heated tile floors, and a frameless glass shower. This is a Smart Home with plenty of storage, a laundry closet and a spacious heated garage. Price includes GST",
   "features": [],
   "schools": [
@@ -26,7 +27,7 @@
     }
   ],
   "subArea": "Burnside",
-  "parkingType": "garage_double",
+  "parkingType": "other",
   "levels": 1,
   "isEndUnit": true,
   "hasAC": false,

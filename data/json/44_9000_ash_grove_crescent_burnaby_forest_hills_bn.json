@@ -9,6 +9,7 @@
   "bathrooms": 3,
   "parking": 1,
   "propertyTax": 3311,
+  "assessment": 1111000,
   "description": "Welcome to Ash Grove – a quiet, well-maintained community in the heart of North Burnaby! This spacious duplex-style end unit townhome offers nearly 2,300 SF across 3 levels with 3 bedrooms, 2.5 bathrooms, an attached garage, a south-facing patio, and SW-facing balcony. Tucked into the peaceful inner courtyard, the home boasts a functional layout with a large lower-level family room—perfect for growing families. Thoughtfully maintained with key updates including kitchen cabinetry, bathroom renovations (2018), furnace and hot water tank (2017), and hardwood flooring. Just minutes from schools, parks, golf courses, Costco, SkyTrain, Hwy 1, SFU & BCIT. A rare opportunity with strong investment potential in a high-demand area! Please call your realtor to view.",
   "features": [],
   "schools": [
@@ -26,7 +27,7 @@
     }
   ],
   "subArea": "Forest Hills BN",
-  "parkingType": "garage_double",
+  "parkingType": "other",
   "levels": 1,
   "isEndUnit": true,
   "hasAC": false,

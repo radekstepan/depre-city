@@ -9,6 +9,7 @@
   "bathrooms": 2,
   "parking": 1,
   "propertyTax": 3271,
+  "assessment": 942000,
   "description": "Whether you’re trying to get the little ones out of the rain, or welcoming guests into your home, you will appreciate the large foyer where everyone can socialize without bumping into one another. Your bulk Costco purchases, bikes and toys have a place in the garage, and out of site. As you head up the stairs, this feels like “home”, everything on one level including the gorgeous backyard. This lovingly maintained home boasts 3 very generous bedrooms and a massive living/dining room with a cozy gas fireplace for the chilly days ahead. Just a short walk to the Burrard Inlet, Inlet SkyTrain, shopping, restaurants, hospital, parks, trails & rec centre. Say YES to your NEW HOME.  No presentation of offers until Tues, Oct 28 5pm O/H Fri Oct 24 5-7pm, Sat/Sun (Oct 25&26) 2-4pm",
   "features": [],
   "schools": [
@@ -26,7 +27,7 @@
     }
   ],
   "subArea": "Eagle Ridge CQ",
-  "parkingType": "garage_double",
+  "parkingType": "other",
   "levels": 1,
   "isEndUnit": false,
   "hasAC": false,

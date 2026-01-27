@@ -9,6 +9,7 @@
   "bathrooms": 4,
   "parking": 1,
   "propertyTax": 4188,
+  "assessment": 1396000,
   "description": "3 Bed + Office with Lock-Off Suite — Steps from The Drive! Gorgeous, light-filled townhome on a quiet, tree-lined street near Commercial Drive. Bright open layout with abundant natural light, oversized windows, hardwood floors, and a modern kitchen with quartz counters, new appliances, and updated lighting on the main floor. Upstairs offers 2 bedrooms plus a spacious office with French doors (could be a 3rd bedroom), vaulted ceiling in the primary bedroom, ensuite and additional bathroom, and a bright skylight. Lower level features a flexible lock-off suite—perfect for guests, family, or extra income potential. Thoughtful design, clever storage, soundproofing, and a well-run strata. A rare gem in one of East Van’s most vibrant neighbourhoods! BOOK YOUR SHOWING TODAY!",
   "features": [],
   "schools": [
@@ -20,7 +21,7 @@
     }
   ],
   "subArea": "Hastings",
-  "parkingType": "street",
+  "parkingType": "other",
   "levels": 3,
   "isEndUnit": false,
   "hasAC": false,

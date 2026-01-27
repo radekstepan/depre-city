@@ -9,6 +9,7 @@
   "bathrooms": 4,
   "parking": 1,
   "propertyTax": 5587,
+  "assessment": 1210000,
   "description": "NON STRATA END UNIT ROWHOME with basement, LIVE STRATA FREE in this stunning 5 bdrm, 4 bath home w/ separate entrance suite for guests or extended family in sought-after Willoughby. Chef’s kitchen w/ quartz, S/S appliances, open-concept living, sunlit windows, & private yard—perfect for entertaining. Retreat to a luxe primary w/ WIC & spa ensuite. Finished bsmt offers 2 bdrm, rec/media space or private living area. Detached garage + 2 extra parking. Central Location Walk to schools, shops, parks, transit, Quick on/off access to HWY 1 for seamless travel to Vancouver, Surrey, and the Valley, An Immaculate, move-in ready—just unpack & enjoy! Quick Possession available. Don’t miss out—book your private tour & embrace the Willoughby lifestyle!",
   "features": [],
   "schools": [
@@ -26,7 +27,7 @@
     }
   ],
   "subArea": "Willoughby Heights",
-  "parkingType": "other",
+  "parkingType": "garage_double",
   "levels": 1,
   "isEndUnit": true,
   "hasAC": false,

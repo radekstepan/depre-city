@@ -9,6 +9,7 @@
   "bathrooms": 2,
   "parking": 2,
   "propertyTax": 2103,
+  "assessment": 0,
   "description": "Welcome to this beautifully renovated 3-bedroom, 2-bathroom townhome, located in a family-friendly gated community in the heart of Highgate. The bright and spacious living room on the main floor is perfect for gatherings, while the kitchen offers ample counter space and storage. Step outside to your own private backyard, ideal for outdoor living. The second floor includes two generously sized bedrooms, while the top floor is home to the primary bedroom, complete with an ensuite bathroom. This home boasts quartz countertops throughout the kitchen and bathrooms, with full shelving in each closet for added storage. The convenient location offers easy access to Save-On-Foods, shops, restaurants, Edmonds skytrain station, and Edmonds Community Centre.",
   "features": [],
   "schools": [
@@ -32,7 +33,7 @@
   "hasAC": false,
   "rainscreen": false,
   "outdoorSpace": "yard",
-  "condition": 4,
+  "condition": 5,
   "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/7371-magnolia-terrace/home/JjAXw7QzE1b3QOzg?id_listing=Z5BX321Oe6b7Dar0",
   "_scrapedAt": "2026-01-26T08:49:12.765Z",
   "_rawFile": "7371_magnolia_terrace_burnaby_highgate.html"

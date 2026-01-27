@@ -9,6 +9,7 @@
   "bathrooms": 3,
   "parking": 1,
   "propertyTax": 3000,
+  "assessment": 871000,
   "description": "Centrally located in a family & pet-friendly community! This well-maintained 3 bedroom, 3 bathroom + rec room townhome offers comfort & convenience. Thoughtfully updated, featuring a fully renovated kitchen with stone  countertops, tile backsplash, stainless steel appliances, modern lighting & gorgeous laminate flooring throughout. Downstairs features a second foyer off the garage & a large rec room or 4th bedroom. Access your private deck  from the kitchen leading down to a fully fenced backyard, perfect for kids, pets, & entertaining. Additional highlights include ample storage, 2 parking, quick access to Lougheed Hwy & Hwy 1, all while just steps to K-12 schools, PoCo Trails, transit, the West Coast Express, shopping & recreation! Enter complex off of Lobb ave.",
   "features": [],
   "schools": [
@@ -26,7 +27,7 @@
     }
   ],
   "subArea": "Mary Hill",
-  "parkingType": "garage_double",
+  "parkingType": "other",
   "levels": 1,
   "isEndUnit": false,
   "hasAC": false,

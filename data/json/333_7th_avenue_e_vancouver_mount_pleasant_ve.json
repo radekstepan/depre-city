@@ -9,6 +9,7 @@
   "bathrooms": 3,
   "parking": 1,
   "propertyTax": 4381,
+  "assessment": 1387000,
   "description": "Stunning 3-Bed, 2.5-Bath Corner Townhome in Mount Pleasant! Beautifully designed 3-level corner unit offering 1,408 sf of modern living in one of Vancouver’s most desirable neighborhoods. The home features an open-concept main floor with 9’ ceilings, engineered hardwood flooring throughout, and large windows providing excellent natural light. The contemporary kitchen is equipped with custom cabinetry, quartz countertops, SS appliances, a gas stove, and plenty of storage. Enjoy the private patio on the main level, ideal for entertaining, & a view deck off the top-floor loft style bedroom. Prime location with a Walk Score of 94, steps to parks, shops, cafes, restaurants, and transit. Just a 5-minute drive Downtown. A must-see! Book your private showing.",
   "features": [],
   "schools": [
@@ -25,7 +26,7 @@
   "isEndUnit": true,
   "hasAC": false,
   "rainscreen": true,
-  "outdoorSpace": "yard",
+  "outdoorSpace": "balcony",
   "condition": 4,
   "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/333-7th-avenue-e/home/N0A9X3jvPvr3vgxV?id_listing=Vwod7vWRpar35mGN",
   "_scrapedAt": "2026-01-26T10:20:31.857Z",

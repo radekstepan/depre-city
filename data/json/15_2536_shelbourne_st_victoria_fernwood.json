@@ -9,6 +9,7 @@
   "bathrooms": 3,
   "parking": 1,
   "propertyTax": 0,
+  "assessment": 0,
   "description": "Welcome to Emerson by Frame Properties — Victoria’s Only Brand-New & Move-In Ready Townhomes in Oaklands. This three-bedroom home spans 1,393 sq. ft. of open-concept living. Soaring 9-foot ceilings, large windows, and private outdoor space create a bright and efficient layout tailored for a modern lifestyle. Centrally located near schools, shopping, Jubilee Hospital, and parks — just 10 minutes from Downtown Victoria and steps to Fernwood neighbourhood. Built by Frame Properties — with over 60 years and 5,700+ homes across BC — every Emerson home is backed by a 2-5-10 New Home Warranty for lasting peace-of-mind. Move-in Ready Special Promotion - for a limited time, enjoy ZERO STRATA FEES for the first 3 years. Don’t miss out, be one of the first to see this brand new home – Book your private tour today.",
   "features": [],
   "schools": [
@@ -31,7 +32,7 @@
   "isEndUnit": false,
   "hasAC": false,
   "rainscreen": true,
-  "outdoorSpace": "yard",
+  "outdoorSpace": "balcony",
   "condition": 5,
   "_sourceUrl": "https://housesigma.com/bc/victoria-real-estate/15-2536-shelbourne-st/home/DO1w3WqAzdVy8Jg0?id_listing=0A9X3jL1JnDyvgxV",
   "_scrapedAt": "2026-01-26T10:30:26.030Z",

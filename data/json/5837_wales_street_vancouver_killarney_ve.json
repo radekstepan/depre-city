@@ -9,6 +9,7 @@
   "bathrooms": 3,
   "parking": 1,
   "propertyTax": 3935,
+  "assessment": 1211000,
   "description": "One of the largest & quite possibly the best situated 3 level townhome in Avalon Mews. With lofty ceilings & light streaming in from 3 sides, this generous floorplan is thoughtfully designed for modern life.  Open your front door into an entryway to take off your shoes & hang your coat. Head upstairs to the main level & you'll find a bright, contemporary space perfect for sharing meals, cooking up your favourites, lounging by the TV or hosting friends. 3 comfortable bedrooms, 2 bathrooms & in-suite laundry sit on the private upper floor.   Once home to the Avalon Dairy Farm, Avalon Mews sits in the heart of Killarney - a vibrant area with a strong community amongst neighbours. Conveniently located with shops, amenities, transit, bike paths, parks, schools & the community centre nearby.",
   "features": [],
   "schools": [
@@ -28,7 +29,7 @@
   "subArea": "Killarney VE",
   "parkingType": "underground",
   "levels": 3,
-  "isEndUnit": false,
+  "isEndUnit": true,
   "hasAC": false,
   "rainscreen": true,
   "outdoorSpace": "balcony",

@@ -9,6 +9,7 @@
   "bathrooms": 3,
   "parking": 1,
   "propertyTax": 4112,
+  "assessment": 774000,
   "description": "Welcome to 8-2633 Shelbourne Street — a quiet, private end-unit townhome in a beautifully maintained boutique complex.\r\n\r\nBright and inviting, this south-facing home features a cozy gas fireplace in the living room, engineered hardwood flooring throughout the main level, and French doors off the kitchen leading to a sunny, secluded patio, perfect for relaxing or entertaining.\r\n\r\nUpstairs offers three spacious bedrooms plus a bonus attic storage/workshop.\r\n\r\nThe location is unbeatable — walking distance to schools, bus routes, and Hillside Centre, and just minutes to the Royal Jubilee Hospital and other amenities.\r\n\r\nThis family- and pet-friendly complex makes this corner unit an ideal choice for young families or a smart investment opportunity.",
   "features": [],
   "schools": [
@@ -32,7 +33,7 @@
   "hasAC": false,
   "rainscreen": false,
   "outdoorSpace": "yard",
-  "condition": 3,
+  "condition": 4,
   "_sourceUrl": "https://housesigma.com/bc/victoria-real-estate/8-2633-shelbourne-st/home/xLkv3V9PKZO7DBNr?id_listing=1DBW7Rnm5ML7qlAp",
   "_scrapedAt": "2026-01-26T10:30:21.755Z",
   "_rawFile": "8_2633_shelbourne_st_victoria_north_jubilee.html"

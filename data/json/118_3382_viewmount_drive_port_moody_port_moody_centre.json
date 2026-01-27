@@ -9,6 +9,7 @@
   "bathrooms": 3,
   "parking": 1,
   "propertyTax": 3243,
+  "assessment": 901000,
   "description": "This rare end-unit townhome offers unmatched privacy on the quiet side of the complex. Enjoy a private garage, a separate garden-level entrance to a bedroom with ensuite and patio — ideal for guests, in-laws, or a home office.The main floor features an inviting bay window, electric fireplace, engineered h/w & an open-concept kitchen with granite counters, stainless steel appliances, and a convenient powder room. Upstairs, two spacious bedrooms (including a bay-windowed primary with double closets) offer peace & quiet being a corner end unit. Walk to Rocky Point, Brewers Row, SkyTrain, West Coast Express, schools, shops, and more. Perfect for families, professionals, or investors — just add your personal touch to MAKE IT YOUR HOME!",
   "features": [],
   "schools": [
@@ -32,7 +33,7 @@
   "hasAC": false,
   "rainscreen": true,
   "outdoorSpace": "yard",
-  "condition": 4,
+  "condition": 3,
   "_sourceUrl": "https://housesigma.com/bc/port-moody-real-estate/118-3382-viewmount-drive/home/VaD6p78KDmzywRQr?id_listing=56k97wJzQ4xyKRjD",
   "_scrapedAt": "2026-01-26T08:23:23.534Z",
   "_rawFile": "118_3382_viewmount_drive_port_moody_port_moody_centre.html"

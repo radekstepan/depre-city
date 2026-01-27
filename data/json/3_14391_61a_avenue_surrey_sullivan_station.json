@@ -9,6 +9,7 @@
   "bathrooms": 4,
   "parking": 2,
   "propertyTax": 0,
+  "assessment": 0,
   "description": "Experience the perfect blend of luxury and practicality in this exceptional townhouse complex, featuring 19 spacious residences. Each thoughtfully designed home offers 4 bedrooms and 4 bathrooms, ensuring ample space for families of all sizes. Enjoy the convenience of private entrances leading to a fully finished basement—ideal for added privacy, a home office, or extended family living. The open-concept main floor is bathed in natural light, creating a warm and inviting space for entertaining or everyday living. High-end finishes and meticulous craftsmanship enhance every detail, elevating both style and comfort. Located in a highly desirable neighborhood, this limited collection of townhomes offers a rare opportunity to own a modern, beautifully designed home.  Open House Jan 17/18 2-4PM",
   "features": [],
   "schools": [
@@ -32,7 +33,7 @@
   "hasAC": false,
   "rainscreen": true,
   "outdoorSpace": "balcony",
-  "condition": 4,
+  "condition": 5,
   "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/3-14391-61a-avenue/home/eVbOYEpwGzR3x2P0?id_listing=1DBW7RrDRDR7qlAp",
   "_scrapedAt": "2026-01-26T09:20:27.222Z",
   "_rawFile": "3_14391_61a_avenue_surrey_sullivan_station.html"
