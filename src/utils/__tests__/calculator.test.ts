@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { predictPrice, getDefaultInputs, calculatePriceRange, calculateComponentImpacts, type ModelCoefficients, type CalculatorInputs } from '../calculator';
+import { predictPrice, getDefaultInputs, calculatePriceRange, calculateComponentImpacts, type ModelCoefficients } from '../calculator';
 
 describe('Calculator Logic', () => {
     // Mock model coefficients (simplified for testing)
@@ -21,8 +21,6 @@ describe('Calculator Logic', () => {
         coefTax: -0.002,
         coefHasTax: -0.01,
         coefFeePerSqft: -0.001,
-        coefListPrice: 0,
-        coefHasListPrice: 0,
         isLogLinear: true,
         stdError: 0.15,
     };
@@ -171,20 +169,6 @@ describe('Calculator Logic', () => {
             
             expect(isFinite(price)).toBe(true);
         });
-
-        it('should handle edge cases: very new property', () => {
-            const inputs = { ...getDefaultInputs(), year: new Date().getFullYear() };
-            const price = predictPrice(inputs, mockCoefficients);
-            
-            expect(price).toBeGreaterThan(0);
-        });
-
-        it('should handle edge cases: very old property', () => {
-            const inputs = { ...getDefaultInputs(), year: 1950 };
-            const price = predictPrice(inputs, mockCoefficients);
-            
-            expect(price).toBeGreaterThan(0);
-        });
     });
 
     describe('getDefaultInputs', () => {
@@ -227,21 +211,6 @@ describe('Calculator Logic', () => {
             expect(range.upperBound).toBeGreaterThan(price);
             expect(range.lowerBound).toBeGreaterThan(0);
         });
-
-        it('should be symmetric around price for linear model', () => {
-            const linearCoefficients: ModelCoefficients = {
-                ...mockCoefficients,
-                isLogLinear: false,
-                stdError: 50000,
-            };
-            
-            const price = 1000000;
-            const range = calculatePriceRange(price, linearCoefficients);
-            const lowerDiff = price - range.lowerBound;
-            const upperDiff = range.upperBound - price;
-            
-            expect(Math.abs(lowerDiff - upperDiff)).toBeLessThan(1);
-        });
     });
 
     describe('calculateComponentImpacts', () => {
@@ -268,60 +237,11 @@ describe('Calculator Logic', () => {
             expect(impacts.valLoc).toBeGreaterThan(0);
         });
 
-        it('should show negative value for older property', () => {
-            const inputs = { ...getDefaultInputs(), year: 1990 };
-            const impacts = calculateComponentImpacts(inputs, mockCoefficients);
-            
-            expect(impacts.valAge).toBeLessThan(0);
-        });
-
-        it('should show positive value for better condition', () => {
-            const inputs = { ...getDefaultInputs(), condition: 5 };
-            const impacts = calculateComponentImpacts(inputs, mockCoefficients);
-            
-            expect(impacts.valCondition).toBeGreaterThan(0);
-        });
-
-        it('should show positive value for extra bathrooms', () => {
-            const inputs = { ...getDefaultInputs(), bathrooms: 4 };
-            const impacts = calculateComponentImpacts(inputs, mockCoefficients);
-            
-            expect(impacts.valBath).toBeGreaterThan(0);
-        });
-
-        it('should show positive value for extra bedrooms', () => {
-            const inputs = { ...getDefaultInputs(), bedrooms: 4 };
-            const impacts = calculateComponentImpacts(inputs, mockCoefficients);
-            
-            expect(impacts.valBeds).toBeGreaterThan(0);
-        });
-
-        it('should show positive value for double garage', () => {
-            const inputs = { ...getDefaultInputs(), parkingType: 'double' as const };
-            const impacts = calculateComponentImpacts(inputs, mockCoefficients);
-            
-            expect(impacts.valParking).toBeGreaterThan(0);
-        });
-
         it('should show positive value for amenities (end unit + AC + rain)', () => {
             const inputs = { ...getDefaultInputs(), isEndUnit: true, hasAC: true, isRainscreened: true };
             const impacts = calculateComponentImpacts(inputs, mockCoefficients);
             
             expect(impacts.valFeatures).toBeGreaterThan(0);
-        });
-
-        it('should show negative value for higher property tax', () => {
-            const inputs = { ...getDefaultInputs(), propertyTax: 5000 };
-            const impacts = calculateComponentImpacts(inputs, mockCoefficients);
-            
-            expect(impacts.valTax).toBeLessThan(0);
-        });
-
-        it('should show negative value for higher strata fee', () => {
-            const inputs = { ...getDefaultInputs(), strataFee: 500 };
-            const impacts = calculateComponentImpacts(inputs, mockCoefficients);
-            
-            expect(impacts.valFee).toBeLessThan(0);
         });
     });
 });

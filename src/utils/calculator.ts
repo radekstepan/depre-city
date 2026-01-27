@@ -37,8 +37,6 @@ export interface ModelCoefficients {
     coefTax: number;
     coefHasTax: number;
     coefFeePerSqft: number;
-    coefListPrice: number;
-    coefHasListPrice: number;
     isLogLinear: boolean;
     stdError: number;
 }
@@ -63,6 +61,7 @@ export interface ComponentImpacts {
 
 /**
  * Calculate the predicted price using the model coefficients
+ * This calculates "Fair Market Value" (Intrinsic) without List Price bias
  * @param inputs - Calculator form inputs
  * @param coefficients - Model coefficients
  * @returns Predicted price
@@ -86,10 +85,6 @@ export function predictPrice(
     const feePerSqft = (inputs.strataFee > 0 && inputs.sqft > 0) 
         ? (inputs.strataFee * 12) / inputs.sqft 
         : 0;
-
-    // List Price
-    const hasListPrice = (inputs.listPrice && inputs.listPrice > 0) ? 1 : 0;
-    const logListPrice = hasListPrice ? Math.log(inputs.listPrice) : 0;
 
     // Parking
     const extraParking = Math.max(0, inputs.parkingSpots - 1);
@@ -120,8 +115,6 @@ export function predictPrice(
             (taxPerSqft * coefficients.coefTax) +
             (hasTax * coefficients.coefHasTax) +
             (feePerSqft * coefficients.coefFeePerSqft) +
-            (logListPrice * coefficients.coefListPrice) +
-            (hasListPrice * coefficients.coefHasListPrice) +
             inputs.areaCoefVal;
 
         return Math.exp(logPrice);
@@ -142,8 +135,6 @@ export function predictPrice(
             (hasAssessment * coefficients.coefHasAssessment) +
             (taxPerSqft * coefficients.coefTax) +
             (hasTax * coefficients.coefHasTax) +
-            (logListPrice * coefficients.coefListPrice) +
-            (hasListPrice * coefficients.coefHasListPrice) +
             inputs.areaCoefVal;
     }
 }

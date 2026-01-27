@@ -39,7 +39,7 @@ const {
     coefAssessment, coefHasAssessment,
     coefTax, coefHasTax,
     coefFeePerSqft,
-    coefListPrice, coefHasListPrice,
+    listPriceHeat,
     areaCoefficients, areaReference,
     stdError, tStats, isLogLinear
 } = model;
@@ -86,8 +86,9 @@ const {
         coefTax={coefTax}
         coefHasTax={coefHasTax}
         coefFeePerSqft={coefFeePerSqft}
-        coefListPrice={coefListPrice}
-        coefHasListPrice={coefHasListPrice}
+        listPriceHeat={listPriceHeat}
+        coefListPrice={0}
+        coefHasListPrice={0}
         areaCoefficients={areaCoefficients}
         areaReference={areaReference}
         stdError={stdError}

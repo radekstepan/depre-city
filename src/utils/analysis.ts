@@ -39,17 +39,17 @@ export interface MarketModel {
     coefTax: number;
     coefHasTax: number;
     coefFeePerSqft: number; // Annual strata fee per sqft
-    coefListPrice: number; // Log of list price
-    coefHasListPrice: number; // Indicator for missing list price
+
+    // Market Heat (Derived separately, not in regression)
+    listPriceHeat: number; // Avg Sold/List Ratio
 
     // Feature Coefficients (Dummy Variables)
-        coefAC: number;
-        coefEndUnit: number;
-        coefDoubleGarage: number;
-        coefTandemGarage: number;
-        coefExtraParking: number;
-        coefAssessment: number;
-        coefHasAssessment: number;
+    coefAC: number;
+    coefEndUnit: number;
+    coefDoubleGarage: number;
+    coefTandemGarage: number;
+    coefExtraParking: number;
+    coefHasAssessment: number;
 
     // Location Coefficients (Dynamic)
     areaCoefficients: Record<string, number>;
@@ -69,12 +69,11 @@ export interface MarketModel {
         coefTax: number;
         coefHasTax: number;
         coefFeePerSqft: number;
-        coefListPrice: number;
-        coefHasListPrice: number;
         coefAC: number;
         coefEndUnit: number;
         coefDoubleGarage: number;
         coefTandemGarage: number;
+        coefExtraParking: number;
         areaCoefficients: Record<string, number>;
     };
 
@@ -99,6 +98,13 @@ export function generateMarketModel(data: Listing[]): MarketModel {
         }
         return isValid;
     });
+
+    // --- Calculate Market Heat (Sold / List Ratio) ---
+    // We calculate this separately so it doesn't absorb feature variance in the OLS
+    const validListings = validData.filter(d => d.listPrice && d.listPrice > 0);
+    const listPriceHeat = validListings.length > 0
+        ? validListings.reduce((sum, d) => sum + (d.price / d.listPrice!), 0) / validListings.length
+        : 1.0;
 
     // --- Identify Areas ---
     const allLocations = validData.map(d => normalizeLocation(d.city, d.subArea));
@@ -139,15 +145,11 @@ export function generateMarketModel(data: Listing[]): MarketModel {
         const hasTax = (d.propertyTax && d.propertyTax > 0) ? 1 : 0;
         const taxPerSqft = hasTax ? d.propertyTax / d.sqft : 0;
 
-        // List Price: Log-transform and indicator for missing data
-        const hasListPrice = (d.listPrice && d.listPrice > 0) ? 1 : 0;
-        const logListPrice = hasListPrice ? Math.log(d.listPrice) : 0;
-
         const loc = normalizeLocation(d.city, d.subArea);
         const areaDummies = distinctAreas.map(area => (loc === area ? 1 : 0));
 
         // Feature Vector Order:
-        // [0:Intercept, 1:Sqft, 2:Age, 3:Bath, 4:Bedrooms, 5:Condition, 6:Rainscreen, 7:AC, 8:End, 9:DoubleG, 10:TandemG, 11:ExtraParking, 12:LogAssessment, 13:HasAssessment, 14:TaxPerSqft, 15:HasTax, 16:FeePerSqft, 17:LogListPrice, 18:HasListPrice, ...Areas]
+        // [0:Intercept, 1:Sqft, 2:Age, 3:Bath, 4:Bedrooms, 5:Condition, 6:Rainscreen, 7:AC, 8:End, 9:DoubleG, 10:TandemG, 11:ExtraParking, 12:LogAssessment, 13:HasAssessment, 14:TaxPerSqft, 15:HasTax, 16:FeePerSqft, ...Areas]
         return [
             1,
             d.sqft,
@@ -166,8 +168,6 @@ export function generateMarketModel(data: Listing[]): MarketModel {
             taxPerSqft,
             hasTax,
             feePerSqft,
-            logListPrice,
-            hasListPrice,
             ...areaDummies
         ];
     });
@@ -188,9 +188,9 @@ export function generateMarketModel(data: Listing[]): MarketModel {
     areaTStatMap[referenceLocation] = 0;
 
     distinctAreas.forEach((area, idx) => {
-        // betas index offset is 19 (intercept + 18 features)
-        areaCoefMap[area] = betas[19 + idx];
-        areaTStatMap[area] = tStats[19 + idx];
+        // betas index offset is 17 (intercept + 16 features)
+        areaCoefMap[area] = betas[17 + idx];
+        areaTStatMap[area] = tStats[17 + idx];
     });
 
     // R2 Calculation (Log Scale)
@@ -210,14 +210,9 @@ export function generateMarketModel(data: Listing[]): MarketModel {
     const stdError = n > p ? Math.sqrt(finalRSS / (n - p)) : 0;
     
     console.log('Model R²:', r2.toFixed(4));
+    console.log('Market Heat (Sold/List):', (listPriceHeat * 100).toFixed(2) + '%');
     console.log('Extra Parking Coef:', betas[11].toFixed(4), 't-stat:', tStats[11].toFixed(4));
     console.log('Assessment Coef:', betas[12].toFixed(4), 't-stat:', tStats[12].toFixed(4));
-    console.log('Has Assessment Coef:', betas[13].toFixed(4), 't-stat:', tStats[13].toFixed(4));
-    console.log('Tax Per Sqft Coef:', betas[14].toFixed(4), 't-stat:', tStats[14].toFixed(4));
-    console.log('Has Tax Coef:', betas[15].toFixed(4), 't-stat:', tStats[15].toFixed(4));
-    console.log('Fee Per Sqft Coef:', betas[16].toFixed(4), 't-stat:', tStats[16].toFixed(4));
-    console.log('List Price Coef:', betas[17].toFixed(4), 't-stat:', tStats[17].toFixed(4));
-    console.log('Has List Price Coef:', betas[18].toFixed(4), 't-stat:', tStats[18].toFixed(4));
 
     return {
         generatedAt: new Date().toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' }),
@@ -241,8 +236,8 @@ export function generateMarketModel(data: Listing[]): MarketModel {
         coefTax: betas[14],
         coefHasTax: betas[15],
         coefFeePerSqft: betas[16],
-        coefListPrice: betas[17],
-        coefHasListPrice: betas[18],
+        
+        listPriceHeat: listPriceHeat,
 
         areaCoefficients: areaCoefMap,
         areaReference: referenceLocation,
@@ -256,18 +251,16 @@ export function generateMarketModel(data: Listing[]): MarketModel {
             coefCondition: tStats[5],
             coefRainscreen: tStats[6],
             coefAC: tStats[7],
-        coefEndUnit: tStats[8],
-        coefDoubleGarage: tStats[9],
-        coefTandemGarage: tStats[10],
-        coefExtraParking: tStats[11],
-        coefAssessment: tStats[12],
-        coefHasAssessment: tStats[13],
-        coefTax: tStats[14],
-        coefHasTax: tStats[15],
-        coefFeePerSqft: tStats[16],
-        coefListPrice: tStats[17],
-        coefHasListPrice: tStats[18],
-        areaCoefficients: areaTStatMap
+            coefEndUnit: tStats[8],
+            coefDoubleGarage: tStats[9],
+            coefTandemGarage: tStats[10],
+            coefExtraParking: tStats[11],
+            coefAssessment: tStats[12],
+            coefHasAssessment: tStats[13],
+            coefTax: tStats[14],
+            coefHasTax: tStats[15],
+            coefFeePerSqft: tStats[16],
+            areaCoefficients: areaTStatMap
         },
 
         modelConfidence: r2,

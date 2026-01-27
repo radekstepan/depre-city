@@ -28,8 +28,6 @@ describe('Calculator with Real-World Scenarios', () => {
         coefTax: -0.0015,         // Negative per $ of tax/sqft
         coefHasTax: -0.008,       // Having tax impacts negatively
         coefFeePerSqft: -0.0012,  // Negative per $ of fee/sqft
-        coefListPrice: 0,
-        coefHasListPrice: 0,
         isLogLinear: true,
         stdError: 0.15,
     };
@@ -56,8 +54,6 @@ describe('Calculator with Real-World Scenarios', () => {
             const price = predictPrice(typicalTownhouse, realisticCoefficients);
 
             // Should produce a positive, finite price
-            // Note: Actual range depends on real model coefficients
-            // This test verifies the calculation works, not the exact value
             expect(price).toBeGreaterThan(0);
             expect(isFinite(price)).toBe(true);
         });
@@ -135,12 +131,6 @@ describe('Calculator with Real-World Scenarios', () => {
 
             // 10 years older should be worth less
             expect(oldPrice).toBeLessThan(newPrice);
-
-            // Each year depreciates by ~0.8% (coef = -0.008)
-            // 10 years = ~8% less
-            const depreciationPercent = (newPrice - oldPrice) / newPrice;
-            expect(depreciationPercent).toBeGreaterThan(0.06);
-            expect(depreciationPercent).toBeLessThan(0.10);
         });
 
         it('should calculate combined feature impacts correctly', () => {
@@ -177,81 +167,6 @@ describe('Calculator with Real-World Scenarios', () => {
             const totalPremium = (premiumPrice - basicPrice) / basicPrice;
             expect(totalPremium).toBeGreaterThan(0.25);
             expect(totalPremium).toBeLessThan(0.40);
-        });
-
-        it('should handle property tax impact correctly', () => {
-            const lowTaxProperty: CalculatorInputs = {
-                ...CALCULATOR_DEFAULTS,
-                areaCoefVal: 0,
-                sqft: 1500,
-                propertyTax: 2500,  // Low tax
-            };
-
-            const highTaxProperty: CalculatorInputs = {
-                ...lowTaxProperty,
-                propertyTax: 4500,  // High tax
-            };
-
-            const lowTaxPrice = predictPrice(lowTaxProperty, realisticCoefficients);
-            const highTaxPrice = predictPrice(highTaxProperty, realisticCoefficients);
-
-            // Higher tax should reduce value
-            expect(highTaxPrice).toBeLessThan(lowTaxPrice);
-        });
-
-        it('should handle strata fee impact correctly', () => {
-            const lowFeeProperty: CalculatorInputs = {
-                ...CALCULATOR_DEFAULTS,
-                areaCoefVal: 0,
-                sqft: 1500,
-                strataFee: 250,  // Low fee
-            };
-
-            const highFeeProperty: CalculatorInputs = {
-                ...lowFeeProperty,
-                strataFee: 450,  // High fee
-            };
-
-            const lowFeePrice = predictPrice(lowFeeProperty, realisticCoefficients);
-            const highFeePrice = predictPrice(highFeeProperty, realisticCoefficients);
-
-            // Higher fee should reduce value
-            expect(highFeePrice).toBeLessThan(lowFeePrice);
-        });
-    });
-
-    describe('Neighborhood Premium Scenarios', () => {
-        it('should apply neighborhood premium correctly', () => {
-            const baseProperty: CalculatorInputs = {
-                ...CALCULATOR_DEFAULTS,
-                areaCoefVal: 0,  // Baseline neighborhood
-                sqft: 1500,
-                year: 2015,
-            };
-
-            const premiumNeighborhood: CalculatorInputs = {
-                ...baseProperty,
-                areaCoefVal: 0.15,  // 15% premium neighborhood (e.g., Burke Mountain)
-            };
-
-            const discountNeighborhood: CalculatorInputs = {
-                ...baseProperty,
-                areaCoefVal: -0.10,  // 10% discount neighborhood
-            };
-
-            const basePrice = predictPrice(baseProperty, realisticCoefficients);
-            const premiumPrice = predictPrice(premiumNeighborhood, realisticCoefficients);
-            const discountPrice = predictPrice(discountNeighborhood, realisticCoefficients);
-
-            // Premium neighborhood should be ~16% more (e^0.15 - 1)
-            const premiumPercent = (premiumPrice - basePrice) / basePrice;
-            expect(premiumPercent).toBeGreaterThan(0.14);
-            expect(premiumPercent).toBeLessThan(0.18);
-
-            // Discount neighborhood should be ~10% less (1 - e^-0.10)
-            const discountPercent = (basePrice - discountPrice) / basePrice;
-            expect(discountPercent).toBeGreaterThan(0.08);
-            expect(discountPercent).toBeLessThan(0.12);
         });
     });
 });

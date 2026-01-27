@@ -20,8 +20,7 @@ interface Props {
     coefTax: number;
     coefHasTax: number;
     coefFeePerSqft: number;
-    coefListPrice: number;
-    coefHasListPrice: number;
+    listPriceHeat: number;
     areaCoefficients: Record<string, number>;
     areaReference: string;
     stdError: number;
@@ -34,7 +33,7 @@ const {
     coefCondition, coefRainscreen,
     coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, coefExtraParking,
     coefAssessment, coefHasAssessment, coefTax, coefHasTax, coefFeePerSqft,
-    coefListPrice, coefHasListPrice,
+    listPriceHeat,
     areaCoefficients, areaReference, stdError,
     tStats, isLogLinear
 } = Astro.props;
@@ -88,7 +87,7 @@ const parkingOptions = [
         coefCondition, coefRainscreen,
         coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, coefExtraParking,
         coefAssessment, coefHasAssessment, coefTax, coefHasTax, coefFeePerSqft,
-        coefListPrice, coefHasListPrice,
+        listPriceHeat,
         stdError, isLogLinear
     })}
     data-defaults={JSON.stringify(CALCULATOR_DEFAULTS)}
@@ -207,12 +206,27 @@ const parkingOptions = [
             <!-- Outputs -->
             <div class="w-full md:w-5/12 bg-gray-900 text-white p-6 md:p-8 flex flex-col justify-center rounded-b-xl md:rounded-bl-none md:rounded-r-xl relative">
                 <div class="mb-8">
-                    <span class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2">Predicted Value</span>
+                    <span class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2">Fair Market Value</span>
                     <div class="text-4xl md:text-5xl font-serif font-bold text-white tracking-tight" id="outputPrice">$0</div>
                     
+                    <!-- Predicted Close Section (Hidden if no list price) -->
+                    <div id="predictedCloseContainer" class="hidden mt-4 pt-4 border-t border-gray-800">
+                        <div class="flex justify-between items-baseline mb-1">
+                            <span class="text-xs font-bold text-gray-400 uppercase tracking-wide">Predicted Close</span>
+                            <span class="text-xl font-bold text-amber-400" id="outputPredictedClose">$0</span>
+                        </div>
+                        <div class="text-xs text-gray-500 italic mb-2">Based on List Price + Market Heat</div>
+                        
+                        <div class="flex items-center gap-2 text-sm bg-gray-800/50 p-2 rounded">
+                            <span class="text-gray-400">Delta:</span>
+                            <span id="outputDelta" class="font-mono font-bold"></span>
+                        </div>
+                    </div>
+                    
                     <!-- Range Display -->
-                    <div class="mt-3 flex items-center group relative w-fit z-10">
+                    <div class="mt-6 flex items-center group relative w-fit z-10">
                         <div class="flex items-center space-x-2 cursor-default">
+                            <span class="text-xs text-gray-500 uppercase mr-2">Range</span>
                             <div class="text-sm text-gray-300 font-mono" id="outputRange">$0 — $0</div>
                         </div>
                     </div>
@@ -316,6 +330,9 @@ const parkingOptions = [
             price: document.getElementById('outputPrice'),
             range: document.getElementById('outputRange'),
             psqft: document.getElementById('outputPsqft'),
+            predictedClose: document.getElementById('outputPredictedClose'),
+            predictedCloseContainer: document.getElementById('predictedCloseContainer'),
+            delta: document.getElementById('outputDelta'),
             valAge: document.getElementById('valAge'),
             valTax: document.getElementById('valTax'),
             valFee: document.getElementById('valFee'),
@@ -392,6 +409,7 @@ const parkingOptions = [
             price: 0,
             range: '',
             psqft: 0,
+            predictedClose: 0,
             valAge: 0,
             valTax: 0,
             valFee: 0,
@@ -406,16 +424,35 @@ const parkingOptions = [
 
         function calculate() {
             const inputsData = getInputs();
-            const finalPrice = predictPrice(inputsData, model);
+            const fairMarketValue = predictPrice(inputsData, model);
             const area = inputsData.sqft;
             const year = inputsData.year;
 
-            updateOutput(outputs.price, finalPrice, 'price');
-            updateOutput(outputs.psqft, finalPrice / area, 'psqft', (val) => format(val) + " / sqft");
+            // Update Main Price (Fair Market Value)
+            updateOutput(outputs.price, fairMarketValue, 'price');
+            updateOutput(outputs.psqft, fairMarketValue / area, 'psqft', (val) => format(val) + " / sqft");
 
-            const { lowerBound, upperBound } = calculatePriceRange(finalPrice, model);
+            const { lowerBound, upperBound } = calculatePriceRange(fairMarketValue, model);
             const rangeText = `${format(lowerBound)} — ${format(upperBound)}`;
             updateOutput(outputs.range, rangeText, 'range', (val) => val);
+
+            // Calculate Predicted Close (List Price Based)
+            if (inputsData.listPrice && inputsData.listPrice > 0) {
+                const predictedClose = inputsData.listPrice * model.listPriceHeat;
+                outputs.predictedCloseContainer.classList.remove('hidden');
+                updateOutput(outputs.predictedClose, predictedClose, 'predictedClose');
+                
+                // Calculate Delta (Fair Market vs Predicted Close)
+                const delta = fairMarketValue - predictedClose;
+                const deltaPercent = (delta / predictedClose) * 100;
+                const sign = delta >= 0 ? '+' : '';
+                const colorClass = Math.abs(deltaPercent) < 2 ? 'text-gray-300' : (delta > 0 ? 'text-green-400' : 'text-red-400');
+                
+                outputs.delta.textContent = `${sign}${format(delta)} (${sign}${deltaPercent.toFixed(1)}%)`;
+                outputs.delta.className = `font-mono font-bold ${colorClass}`;
+            } else {
+                outputs.predictedCloseContainer.classList.add('hidden');
+            }
 
             const impacts = calculateComponentImpacts(inputsData, model);
             outputs.valLoc.className = impacts.valLoc >= 0 ? "text-green-400" : "text-red-400";
@@ -435,7 +472,7 @@ const parkingOptions = [
 
             const event = new CustomEvent('deprecity:model-update', {
                 detail: {
-                    price: finalPrice,
+                    price: fairMarketValue,
                     sqft: area,
                     year: year
                 }

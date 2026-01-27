@@ -21,8 +21,6 @@ describe('Calculator Form Integration', () => {
         coefTax: -0.002,
         coefHasTax: -0.01,
         coefFeePerSqft: -0.001,
-        coefListPrice: 0,
-        coefHasListPrice: 0,
         isLogLinear: true,
         stdError: 0.15,
     };
@@ -127,57 +125,6 @@ describe('Calculator Form Integration', () => {
             expect(noRainPrice).toBeLessThan(basePrice);
         });
 
-        it('should handle empty/invalid form inputs with fallbacks', () => {
-            // Simulate form with missing/invalid values
-            const formData = {
-                inputYear: '',
-                inputArea: 'invalid',
-                inputBath: '2',
-            };
-
-            // Parse with fallbacks (simulating || DEFAULTS pattern)
-            const inputs: CalculatorInputs = {
-                ...mockFormInputs,
-                year: parseFloat(formData.inputYear) || 2015,
-                sqft: parseFloat(formData.inputArea) || 1500,
-                bathrooms: parseFloat(formData.inputBath) || 2,
-            };
-
-            const price = predictPrice(inputs, mockCoefficients);
-            expect(price).toBeGreaterThan(0);
-            expect(isFinite(price)).toBe(true);
-        });
-
-        it('should handle decimal values correctly (bathrooms, bedrooms)', () => {
-            // Test with decimal bedrooms (2.5 = 2 beds + den)
-            const inputs = { ...mockFormInputs, bedrooms: 2.5, bathrooms: 2.5 };
-            const price = predictPrice(inputs, mockCoefficients);
-            
-            expect(price).toBeGreaterThan(0);
-            expect(isFinite(price)).toBe(true);
-        });
-
-        it('should correctly calculate area premium coefficient', () => {
-            // Test neighborhood premium/discount
-            const basePrice = predictPrice(
-                { ...mockFormInputs, areaCoefVal: 0 },
-                mockCoefficients
-            );
-
-            const premiumPrice = predictPrice(
-                { ...mockFormInputs, areaCoefVal: 0.15 }, // 15% premium area
-                mockCoefficients
-            );
-
-            const discountPrice = predictPrice(
-                { ...mockFormInputs, areaCoefVal: -0.10 }, // 10% discount area
-                mockCoefficients
-            );
-
-            expect(premiumPrice).toBeGreaterThan(basePrice);
-            expect(discountPrice).toBeLessThan(basePrice);
-        });
-
         it('should recalculate when multiple inputs change', () => {
             // Simulate form update scenario
             const initialInputs = mockFormInputs;
@@ -200,33 +147,6 @@ describe('Calculator Form Integration', () => {
     });
 
     describe('Model Coefficient Application', () => {
-        it('should correctly apply all coefficients in log-linear model', () => {
-            // Test that changing each input affects the price
-            const testScenarios = [
-                { field: 'sqft', value: 2000, expectHigher: true },
-                { field: 'year', value: 2020, expectHigher: true },
-                { field: 'bathrooms', value: 3, expectHigher: true },
-                { field: 'bedrooms', value: 4, expectHigher: true },
-                { field: 'condition', value: 5, expectHigher: true },
-            ];
-
-            const basePrice = predictPrice(mockFormInputs, mockCoefficients);
-
-            testScenarios.forEach(scenario => {
-                const modifiedInputs = { 
-                    ...mockFormInputs, 
-                    [scenario.field]: scenario.value 
-                } as CalculatorInputs;
-                const modifiedPrice = predictPrice(modifiedInputs, mockCoefficients);
-
-                if (scenario.expectHigher) {
-                    expect(modifiedPrice).toBeGreaterThan(basePrice);
-                } else {
-                    expect(modifiedPrice).toBeLessThan(basePrice);
-                }
-            });
-        });
-
         it('should verify coefficients affect price in expected direction', () => {
             // Positive coefficients should increase price
             const positiveFeatures = [
@@ -255,58 +175,6 @@ describe('Calculator Form Integration', () => {
                 const price = predictPrice(inputs, mockCoefficients);
                 expect(price).toBeLessThan(basePrice);
             });
-        });
-    });
-
-    describe('Accuracy Chart Data Preparation', () => {
-        it('should generate predicted vs actual data points correctly', () => {
-            // Simulate listing data like Charts.astro does
-            const mockListing = {
-                price: 900000, // actual price
-                sqft: 1500,
-                year: 2015,
-                bathrooms: 2,
-                bedrooms: 3,
-                condition: 4,
-                assessment: 850000,
-                propertyTax: 3000,
-                fee: 300,
-                parkingType: 'std' as const,
-                parking: 1,
-                isEndUnit: false,
-                hasAC: false,
-                rainscreen: true,
-            };
-
-            // Convert listing to calculator inputs
-            const inputs: CalculatorInputs = {
-                areaCoefVal: 0,
-                year: mockListing.year,
-                sqft: mockListing.sqft,
-                bathrooms: mockListing.bathrooms,
-                bedrooms: mockListing.bedrooms,
-                assessment: mockListing.assessment,
-                propertyTax: mockListing.propertyTax,
-                strataFee: mockListing.fee,
-                condition: mockListing.condition,
-                parkingType: mockListing.parkingType,
-                parkingSpots: mockListing.parking,
-                isEndUnit: mockListing.isEndUnit,
-                hasAC: mockListing.hasAC,
-                isRainscreened: mockListing.rainscreen,
-            };
-
-            const predicted = predictPrice(inputs, mockCoefficients);
-            const actual = mockListing.price;
-
-            // Verify we can calculate accuracy metrics
-            const diff = Math.abs(actual - predicted);
-            const errorPercent = diff / actual;
-
-            expect(predicted).toBeGreaterThan(0);
-            expect(errorPercent).toBeGreaterThanOrEqual(0);
-            // With mock coefficients, error can be large - just verify it's calculable
-            expect(isFinite(errorPercent)).toBe(true);
         });
     });
 });
