@@ -87,18 +87,29 @@ const calcImpact = (coef: number) => avgPrice * (Math.exp(coef) - 1);
 // For continuous vars (Age, Fee), show impact of "1 Unit" or "Standard Step"
 const calcLinearImpact = (coef: number, step: number) => avgPrice * (Math.exp(coef * step) - 1);
 
-const featurePoints = [
+// Thresholds for showing features in chart
+const VALUE_THRESHOLD = 1000;
+const TSTAT_THRESHOLD = 1.0;
+
+const allFeatures = [
     { label: 'Double Garage', value: calcImpact(model.coefDoubleGarage), tStat: model.tStats.coefDoubleGarage },
     { label: 'Tandem Garage', value: calcImpact(model.coefTandemGarage), tStat: model.tStats.coefTandemGarage },
     { label: 'End Unit', value: calcImpact(model.coefEndUnit), tStat: model.tStats.coefEndUnit },
     { label: 'Air Con', value: calcImpact(model.coefAC), tStat: model.tStats.coefAC },
     { label: 'Rainscreen', value: calcImpact(model.coefRainscreen), tStat: model.tStats.coefRainscreen },
     { label: 'Extra Bath', value: calcLinearImpact(model.coefBath, 1), tStat: model.tStats.coefBath },
+    { label: 'Extra Bedroom', value: calcLinearImpact(model.coefBedrooms, 1), tStat: model.tStats.coefBedrooms },
     { label: 'Condition (+1)', value: calcLinearImpact(model.coefCondition, 1), tStat: model.tStats.coefCondition },
     { label: 'Newer (10 Yrs)', value: calcLinearImpact(model.coefAge, -10), tStat: model.tStats.coefAge },
+    { label: 'Assessment Align', value: calcImpact(model.coefAssessment), tStat: model.tStats.coefAssessment },
     // Fee per sqft is tiny, so let's normalize to a typical fee shift (e.g. +$0.10/sqft ~ +$150/mo on 1500sqft)
     { label: 'Lower Fee', value: calcLinearImpact(model.coefFee, -0.10), tStat: model.tStats.coefFee },
-].sort((a, b) => Math.abs(b.value) - Math.abs(a.value)); 
+];
+
+// Filter features: show if valuable (impact > threshold) OR reliable (t-stat > threshold)
+const featurePoints = allFeatures
+    .filter(f => Math.abs(f.value) > VALUE_THRESHOLD || Math.abs(f.tStat) > TSTAT_THRESHOLD)
+    .sort((a, b) => Math.abs(b.value) - Math.abs(a.value)); 
 ---
 
 <section id="charts" class="py-12 bg-white border-b border-gray-200">
@@ -146,7 +157,7 @@ const featurePoints = [
             <!-- Features -->
             <div class="bg-gray-50/50 p-6 rounded-xl border border-gray-100">
                 <h3 class="text-sm font-bold text-gray-800 uppercase tracking-wide mb-2">Feature Values ($)</h3>
-                <p class="text-xs text-gray-400 mb-6">Estimated value impact on an average home. Grey indicates low significance.</p>
+                <p class="text-xs text-gray-400 mb-6">Estimated value impact on an average home. Shows features with significant impact (>|${VALUE_THRESHOLD}|) or reliability (|t-stat|>{TSTAT_THRESHOLD}). Grey = low significance.</p>
                 <div class="relative h-[500px] w-full">
                     <canvas id="chartFeatures"></canvas>
                 </div>
