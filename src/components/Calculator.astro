@@ -77,7 +77,18 @@ const parkingOptions = [
 ];
 ---
 
-<section id="calculator" class="py-12 bg-gray-50 border-y border-gray-200">
+<section 
+    id="calculator" 
+    class="py-12 bg-gray-50 border-y border-gray-200"
+    data-model={JSON.stringify({
+        intercept, coefSqft, coefAge, coefBath, coefBedrooms,
+        coefCondition, coefRainscreen,
+        coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, coefExtraParking,
+        coefAssessment, coefHasAssessment, coefTax, coefHasTax, coefFeePerSqft,
+        stdError, isLogLinear
+    })}
+    data-defaults={JSON.stringify(CALCULATOR_DEFAULTS)}
+>
     <div class="max-w-4xl mx-auto px-4 md:px-6">
         <div class="bg-white rounded-xl shadow-sm border border-gray-200 flex flex-col md:flex-row">
             
@@ -265,8 +276,13 @@ const parkingOptions = [
     </div>
 </section>
 
-<script define:vars={{ intercept, coefSqft, coefAge, coefBath, coefBedrooms, coefCondition, coefRainscreen, coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, coefExtraParking, coefAssessment, coefHasAssessment, coefTax, coefHasTax, coefFeePerSqft, stdError, isLogLinear, CALCULATOR_DEFAULTS }}>
+<script>
+    import { predictPrice, calculatePriceRange, calculateComponentImpacts } from '../utils/calculator.js';
+
     document.addEventListener('DOMContentLoaded', () => {
+        const calculatorSection = document.getElementById('calculator');
+        const model = JSON.parse(calculatorSection.dataset.model);
+        const defaults = JSON.parse(calculatorSection.dataset.defaults);
 
         const inputs = {
             areaCoef: document.getElementById('inputAreaCoef'),
@@ -305,23 +321,19 @@ const parkingOptions = [
             return new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD', maximumFractionDigits: 0 }).format(num);
         }
 
-        // Helper function to update output with counting animation
         function updateOutput(element, newValue, key, formatter = format, isPrice = false) {
             const oldValue = previousValues[key];
             
-            // If it's a number and we have a previous value, animate the counting
             if (typeof newValue === 'number' && typeof oldValue === 'number' && oldValue !== 0 && Math.abs(newValue - oldValue) > 0.01) {
                 animateValue(element, oldValue, newValue, 600, formatter);
                 previousValues[key] = newValue;
             } else {
-                // For strings or first-time values, just update directly
                 let formattedNew = typeof formatter === 'function' ? formatter(newValue) : newValue;
                 element.textContent = formattedNew;
                 previousValues[key] = newValue;
             }
         }
         
-        // Animate counting from old value to new value
         function animateValue(element, start, end, duration, formatter) {
             const startTime = performance.now();
             const diff = end - start;
@@ -329,17 +341,13 @@ const parkingOptions = [
             function update(currentTime) {
                 const elapsed = currentTime - startTime;
                 const progress = Math.min(elapsed / duration, 1);
-                
-                // Easing function for smooth animation (ease-out-cubic)
                 const easeProgress = 1 - Math.pow(1 - progress, 3);
-                
                 const current = start + (diff * easeProgress);
                 element.textContent = formatter(current);
                 
                 if (progress < 1) {
                     requestAnimationFrame(update);
                 } else {
-                    // Ensure final value is exact
                     element.textContent = formatter(end);
                 }
             }
@@ -347,89 +355,23 @@ const parkingOptions = [
             requestAnimationFrame(update);
         }
 
-        // Helper: Calculate Price given specific overrides
-        function predict(overrides = {}) {
-            // Defaults
-            let areaCoefVal = parseFloat(inputs.areaCoef.value) || CALCULATOR_DEFAULTS.areaCoefVal;
-            let year = parseFloat(inputs.year.value) || CALCULATOR_DEFAULTS.year;
-            let area = parseFloat(inputs.area.value) || CALCULATOR_DEFAULTS.sqft;
-            let bath = parseFloat(inputs.bath.value) || CALCULATOR_DEFAULTS.bathrooms;
-            let beds = parseFloat(inputs.beds.value) || CALCULATOR_DEFAULTS.bedrooms;
-            let assessment = parseFloat(inputs.assessment.value) || CALCULATOR_DEFAULTS.assessment;
-            let propertyTax = parseFloat(inputs.propertyTax.value) || CALCULATOR_DEFAULTS.propertyTax;
-            let strataFee = parseFloat(inputs.strataFee.value) || CALCULATOR_DEFAULTS.fee;
-            let condition = parseInt(inputs.condition.value) || CALCULATOR_DEFAULTS.condition;
-            let parkType = inputs.parking.value || CALCULATOR_DEFAULTS.parkingType;
-            let parkingSpots = parseFloat(inputs.parkingSpots.value) || CALCULATOR_DEFAULTS.parkingSpots;
-            let isEnd = inputs.endUnit.checked ? 1 : 0;
-            let isAC = inputs.ac.checked ? 1 : 0;
-            let isRain = inputs.rain.checked ? 1 : 0;
-
-            // Apply overrides
-            if (overrides.areaCoefVal !== undefined) areaCoefVal = overrides.areaCoefVal;
-            if (overrides.year !== undefined) year = overrides.year;
-            // ... add others if needed for diff calculation, currently simplified to core vars
-            
-            const currentYear = new Date().getFullYear();
-            const age = currentYear - year;
-            
-            // Assessment
-            const hasAssessment = assessment > 0 ? 1 : 0;
-            const logAssessment = hasAssessment ? Math.log(assessment) : 0;
-
-            // Property Tax
-            const hasTax = propertyTax > 0 ? 1 : 0;
-            const taxPerSqft = (hasTax && area > 0) ? propertyTax / area : 0;
-
-            // Strata Fee (annual fee per sqft)
-            const feePerSqft = (strataFee > 0 && area > 0) ? (strataFee * 12) / area : 0;
-
-            // Parking
-            const extraParking = Math.max(0, (parkingSpots || CALCULATOR_DEFAULTS.parkingSpots) - 1);
-            let valParkingCoef = 0;
-            if (parkType === 'double') valParkingCoef = coefDoubleGarage;
-            if (parkType === 'tandem') valParkingCoef = coefTandemGarage;
-
-            if (isLogLinear) {
-                // ln(Price) = Intercept + Coefs...
-                const logPrice = intercept +
-                    (area * coefSqft) +
-                    (age * coefAge) +
-                    (bath * coefBath) +
-                    (beds * coefBedrooms) +
-                    (condition * coefCondition) +
-                    (isRain * coefRainscreen) +
-                    (isEnd * coefEndUnit) +
-                    (isAC * coefAC) +
-                    valParkingCoef +
-                    (extraParking * coefExtraParking) +
-                    (logAssessment * coefAssessment) +
-                    (hasAssessment * coefHasAssessment) +
-                    (taxPerSqft * coefTax) +
-                    (hasTax * coefHasTax) +
-                    (feePerSqft * coefFeePerSqft) +
-                    areaCoefVal;
-
-                return Math.exp(logPrice);
-            } else {
-                // Linear fallback
-                return intercept +
-                    (area * coefSqft) +
-                    (age * coefAge) +
-                    (bath * coefBath) +
-                    (beds * coefBedrooms) +
-                    (condition * coefCondition) +
-                    (isRain * coefRainscreen) +
-                    (isEnd * coefEndUnit) +
-                    (isAC * coefAC) +
-                    valParkingCoef +
-                    (extraParking * coefExtraParking) +
-                    (logAssessment * coefAssessment) +
-                    (hasAssessment * coefHasAssessment) +
-                    (taxPerSqft * coefTax) +
-                    (hasTax * coefHasTax) +
-                    areaCoefVal;
-            }
+        function getInputs() {
+            return {
+                areaCoefVal: parseFloat(inputs.areaCoef.value) || defaults.areaCoefVal,
+                year: parseFloat(inputs.year.value) || defaults.year,
+                sqft: parseFloat(inputs.area.value) || defaults.sqft,
+                bathrooms: parseFloat(inputs.bath.value) || defaults.bathrooms,
+                bedrooms: parseFloat(inputs.beds.value) || defaults.bedrooms,
+                assessment: parseFloat(inputs.assessment.value) || defaults.assessment,
+                propertyTax: parseFloat(inputs.propertyTax.value) || defaults.propertyTax,
+                strataFee: parseFloat(inputs.strataFee.value) || defaults.fee,
+                condition: parseInt(inputs.condition.value) || defaults.condition,
+                parkingType: inputs.parking.value || defaults.parkingType,
+                parkingSpots: parseFloat(inputs.parkingSpots.value) || defaults.parkingSpots,
+                isEndUnit: inputs.endUnit.checked,
+                hasAC: inputs.ac.checked,
+                isRainscreened: inputs.rain.checked
+            };
         }
 
         // Store previous values for diff display
@@ -450,123 +392,34 @@ const parkingOptions = [
         };
 
         function calculate() {
-            // 1. Calculate Baseline Total
-            const finalPrice = predict();
-            const area = parseFloat(inputs.area.value) || CALCULATOR_DEFAULTS.sqft;
-            const year = parseFloat(inputs.year.value) || CALCULATOR_DEFAULTS.year;
+            const inputsData = getInputs();
+            const finalPrice = predictPrice(inputsData, model);
+            const area = inputsData.sqft;
+            const year = inputsData.year;
 
-            // 2. Render Main Price
             updateOutput(outputs.price, finalPrice, 'price');
             updateOutput(outputs.psqft, finalPrice / area, 'psqft', (val) => format(val) + " / sqft");
-            // 3. Render Range (Log Scale Error)
-            let lowerBound, upperBound;
-            if (isLogLinear) {
-                // Error is multiplicative in log scale
-                // Lower = exp(ln(price) - z*sigma) = price * exp(-z*sigma)
-                // Approx +/- 80% CI (z=1.28)
-                const margin = Math.exp(1.28 * stdError);
-                lowerBound = finalPrice / margin;
-                upperBound = finalPrice * margin;
-            } else {
-                lowerBound = finalPrice - (1.28 * stdError);
-                upperBound = finalPrice + (1.28 * stdError);
-            }
+
+            const { lowerBound, upperBound } = calculatePriceRange(finalPrice, model);
             const rangeText = `${format(lowerBound)} — ${format(upperBound)}`;
             updateOutput(outputs.range, rangeText, 'range', (val) => val);
 
-            // 4. Calculate Component Values by Difference
-            // To find the value of "Location", we compare Current Price vs Price if LocCoef was 0
-            // BUT for additive components (like Bath), we compare Current vs Price if Bath was 0 (or standard 1)
-            
-            // Helper for Value Diff
-            const getDiff = (currentVal, zeroVal) => {
-                return currentVal - zeroVal;
-            };
+            const impacts = calculateComponentImpacts(inputsData, model);
+            outputs.valLoc.className = impacts.valLoc >= 0 ? "text-green-400" : "text-red-400";
+            updateOutput(outputs.valLoc, impacts.valLoc, 'valLoc', (val) => (val > 0 ? "+" : "") + format(val));
+            updateOutput(outputs.valAge, impacts.valAge, 'valAge');
+            updateOutput(outputs.valCondition, impacts.valCondition, 'valCondition', (val) => "+" + format(val));
+            updateOutput(outputs.valBath, impacts.valBath, 'valBath', (val) => "+" + format(val));
+            updateOutput(outputs.valBeds, impacts.valBeds, 'valBeds', (val) => "+" + format(val));
+            updateOutput(outputs.valParking, impacts.valParking, 'valParking', (val) => "+" + format(val));
+            updateOutput(outputs.valFeatures, impacts.valFeatures, 'valFeatures', (val) => "+" + format(val));
+            outputs.valAssessment.className = impacts.valAssessment >= 0 ? "text-green-400" : "text-red-400";
+            updateOutput(outputs.valAssessment, impacts.valAssessment, 'valAssessment', (val) => (val > 0 ? "+" : "") + format(val));
+            outputs.valTax.className = impacts.valTax >= 0 ? "text-green-400" : "text-red-400";
+            updateOutput(outputs.valTax, impacts.valTax, 'valTax');
+            outputs.valFee.className = impacts.valFee >= 0 ? "text-green-400" : "text-red-400";
+            updateOutput(outputs.valFee, impacts.valFee, 'valFee');
 
-            // Area Value
-            // For Log Linear: P_with_area - P_no_area
-            const pNoArea = finalPrice / Math.exp(parseFloat(inputs.areaCoef.value) || CALCULATOR_DEFAULTS.areaCoefVal); // Simplified inverse
-            const valLoc = finalPrice - pNoArea;
-            outputs.valLoc.className = valLoc >= 0 ? "text-green-400" : "text-red-400";
-            updateOutput(outputs.valLoc, valLoc, 'valLoc', (val) => (val > 0 ? "+" : "") + format(val));
-
-            // Age Impact (Compare to 0 age)
-            const age = new Date().getFullYear() - year;
-            const pNew = finalPrice / Math.exp(age * coefAge);
-            const valAge = finalPrice - pNew;
-            updateOutput(outputs.valAge, valAge, 'valAge'); // Usually negative
-
-            // Condition (Compare to condition 3 baseline if desired, or 0)
-            // Let's compare to Condition 1 (lowest) to show "Value added by condition"
-            const cond = parseInt(inputs.condition.value) || CALCULATOR_DEFAULTS.condition;
-            // Diff from Cond 1
-            const pCond1 = finalPrice / Math.exp((cond - 1) * coefCondition);
-            const valCond = finalPrice - pCond1;
-            updateOutput(outputs.valCondition, valCond, 'valCondition', (val) => "+" + format(val));
-
-            // Baths (Value of EXTRA baths, e.g. above 1)
-            const bath = parseFloat(inputs.bath.value) || CALCULATOR_DEFAULTS.bathrooms;
-            const p1Bath = finalPrice / Math.exp((bath - 1) * coefBath);
-            const valBath = finalPrice - p1Bath;
-            updateOutput(outputs.valBath, valBath, 'valBath', (val) => "+" + format(val));
-
-            // Bedrooms (Value of EXTRA bedrooms, e.g. above 2)
-            const beds = parseFloat(inputs.beds.value) || CALCULATOR_DEFAULTS.bedrooms;
-            const p2Beds = finalPrice / Math.exp((beds - 2) * coefBedrooms);
-            const valBeds = finalPrice - p2Beds;
-            updateOutput(outputs.valBeds, valBeds, 'valBeds', (val) => "+" + format(val));
-
-            // Parking (Value vs Street + Extra Spots)
-            const parkType = inputs.parking.value || CALCULATOR_DEFAULTS.parkingType;
-            const parkingSpots = parseFloat(inputs.parkingSpots.value) || CALCULATOR_DEFAULTS.parkingSpots;
-            let parkCoef = 0;
-            if (parkType === 'double') parkCoef = coefDoubleGarage;
-            if (parkType === 'tandem') parkCoef = coefTandemGarage;
-            const extraParking = Math.max(0, (parkingSpots || CALCULATOR_DEFAULTS.parkingSpots) - 1);
-            const totalParkingCoef = parkCoef + (extraParking * coefExtraParking);
-            const pNoParking = finalPrice / Math.exp(totalParkingCoef);
-            const valPark = finalPrice - pNoParking;
-            updateOutput(outputs.valParking, valPark, 'valParking', (val) => "+" + format(val));
-
-            // Amenities (End + AC + Rain)
-            const isEnd = inputs.endUnit.checked ? 1 : 0;
-            const isAC = inputs.ac.checked ? 1 : 0;
-            const isRain = inputs.rain.checked ? 1 : 0;
-            const amenitiesCoef = (isEnd * coefEndUnit) + (isAC * coefAC) + (isRain * coefRainscreen);
-            const pNoAmenities = finalPrice / Math.exp(amenitiesCoef);
-            const valAmenities = finalPrice - pNoAmenities;
-            updateOutput(outputs.valFeatures, valAmenities, 'valFeatures', (val) => "+" + format(val));
-
-            // Assessment Impact (Value vs baseline assessment)
-            const assessment = parseFloat(inputs.assessment.value) || CALCULATOR_DEFAULTS.assessment;
-            const hasAssessment = assessment > 0 ? 1 : 0;
-            const logAssessment = hasAssessment ? Math.log(assessment) : 0;
-            const assessmentCoef = (logAssessment * coefAssessment) + (hasAssessment * coefHasAssessment);
-            const pBaselineAssessment = finalPrice / Math.exp(assessmentCoef);
-            const valAssessment = finalPrice - pBaselineAssessment;
-            outputs.valAssessment.className = valAssessment >= 0 ? "text-green-400" : "text-red-400";
-            updateOutput(outputs.valAssessment, valAssessment, 'valAssessment', (val) => (val > 0 ? "+" : "") + format(val));
-
-            // Tax Impact (Value vs $0 tax)
-            const propertyTax = parseFloat(inputs.propertyTax.value) || CALCULATOR_DEFAULTS.propertyTax;
-            const hasTax = propertyTax > 0 ? 1 : 0;
-            const taxPerSqft = (hasTax && area > 0) ? propertyTax / area : 0;
-            const taxCoef = (taxPerSqft * coefTax) + (hasTax * coefHasTax);
-            const pNoTax = finalPrice / Math.exp(taxCoef);
-            const valTax = finalPrice - pNoTax;
-            outputs.valTax.className = valTax >= 0 ? "text-green-400" : "text-red-400";
-            updateOutput(outputs.valTax, valTax, 'valTax');
-
-            // Strata Fee Impact (Value vs $0 fee)
-            const strataFee = parseFloat(inputs.strataFee.value) || CALCULATOR_DEFAULTS.fee;
-            const feePerSqftCalc = (strataFee > 0 && area > 0) ? (strataFee * 12) / area : 0;
-            const feeCoef = feePerSqftCalc * coefFeePerSqft;
-            const pNoFee = finalPrice / Math.exp(feeCoef);
-            const valFee = finalPrice - pNoFee;
-            outputs.valFee.className = valFee >= 0 ? "text-green-400" : "text-red-400";
-            updateOutput(outputs.valFee, valFee, 'valFee');
-
-            // Dispatch event for charts
             const event = new CustomEvent('deprecity:model-update', {
                 detail: {
                     price: finalPrice,

@@ -41,6 +41,27 @@ The application builds the regression model from the JSON files in `src/data/`.
 yarn dev
 ```
 
+## 🧪 Testing
+
+Run the test suite to verify calculator logic and form integration:
+
+```bash
+# Run all tests
+yarn test:run
+
+# Run tests in watch mode
+yarn test
+
+# Run tests with UI
+yarn test:ui
+```
+
+See [TESTING.md](TESTING.md) for detailed documentation on:
+- How the calculator uses the model
+- How to verify the accuracy chart
+- Adding new tests
+- Troubleshooting
+
 ## 🌐 Deployment
 *   **Build:** `yarn build`
 *   **Output:** `dist/`

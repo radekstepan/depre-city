@@ -8,7 +8,10 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "process": "infisical run -- node scripts/process.js"
+    "process": "infisical run -- node scripts/process.js",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run"
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.1.0",
@@ -22,6 +25,9 @@
     "tailwindcss": "^3.4.0"
   },
   "devDependencies": {
-    "@types/node": "^25.0.9"
+    "@types/node": "^25.0.9",
+    "@vitest/ui": "3.0.5",
+    "happy-dom": "^20.3.9",
+    "vitest": "3.0.5"
   }
 }
