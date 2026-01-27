@@ -41,6 +41,8 @@ export interface MarketModel {
     coefEndUnit: number;
     coefDoubleGarage: number; 
     coefTandemGarage: number;
+    coefAssessment: number;
+    coefHasAssessment: number;
     
     // Location Coefficients (Dynamic)
     areaCoefficients: Record<string, number>;
@@ -57,6 +59,7 @@ export interface MarketModel {
         coefCondition: number;
         coefRainscreen: number;
         coefAssessment: number;
+        coefHasAssessment: number;
         coefAC: number;
         coefEndUnit: number;
         coefDoubleGarage: number;
@@ -110,17 +113,15 @@ export function generateMarketModel(data: Listing[]): MarketModel {
         const isEnd = d.isEndUnit ? 1 : 0;
         const hasAC = d.hasAC ? 1 : 0;
         
-        // Log(Assessment) if available, otherwise 0 (and we rely on other factors)
-        // Note: In a real prod model, you'd impute missing assessments or run two models.
-        // For now, we will exclude assessment from X if > 50% data missing, or just use 0.
-        // To keep it simple for this step, we'll omit assessment from the regression X matrix 
-        // unless we strictly filter for it. Let's stick to physical attributes for the "Universal" model.
+        // Assessment: Log-transform and indicator for missing data
+        const hasAssessment = (d.assessment && d.assessment > 0) ? 1 : 0;
+        const logAssessment = hasAssessment ? Math.log(d.assessment) : 0;
         
         const loc = normalizeLocation(d.city, d.subArea);
         const areaDummies = distinctAreas.map(area => (loc === area ? 1 : 0));
 
         // Feature Vector Order:
-        // [0:Intercept, 1:Sqft, 2:Age, 3:Bath, 4:Bedrooms, 5:FeePerSqft, 6:Condition, 7:Rainscreen, 8:AC, 9:End, 10:DoubleG, 11:TandemG, ...Areas]
+        // [0:Intercept, 1:Sqft, 2:Age, 3:Bath, 4:Bedrooms, 5:FeePerSqft, 6:Condition, 7:Rainscreen, 8:AC, 9:End, 10:DoubleG, 11:TandemG, 12:LogAssessment, 13:HasAssessment, ...Areas]
         return [
             1, 
             d.sqft, 
@@ -134,6 +135,8 @@ export function generateMarketModel(data: Listing[]): MarketModel {
             isEnd, 
             isDouble, 
             isTandem, 
+            logAssessment,
+            hasAssessment,
             ...areaDummies
         ];
     });
@@ -154,9 +157,9 @@ export function generateMarketModel(data: Listing[]): MarketModel {
     areaTStatMap[referenceLocation] = 0;
 
     distinctAreas.forEach((area, idx) => {
-        // betas index offset is 12 (intercept + 11 features)
-        areaCoefMap[area] = betas[12 + idx];
-        areaTStatMap[area] = tStats[12 + idx];
+        // betas index offset is 14 (intercept + 13 features)
+        areaCoefMap[area] = betas[14 + idx];
+        areaTStatMap[area] = tStats[14 + idx];
     });
 
     // R2 Calculation (Log Scale)
@@ -174,6 +177,10 @@ export function generateMarketModel(data: Listing[]): MarketModel {
     const p = X[0].length;
     const n = validData.length;
     const stdError = n > p ? Math.sqrt(finalRSS / (n - p)) : 0;
+    
+    console.log('Model R²:', r2.toFixed(4));
+    console.log('Assessment Coef:', betas[12].toFixed(4), 't-stat:', tStats[12].toFixed(4));
+    console.log('Has Assessment Coef:', betas[13].toFixed(4), 't-stat:', tStats[13].toFixed(4));
 
     return {
         generatedAt: new Date().toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' }),
@@ -192,7 +199,8 @@ export function generateMarketModel(data: Listing[]): MarketModel {
         coefEndUnit: betas[9],
         coefDoubleGarage: betas[10],
         coefTandemGarage: betas[11],
-        coefAssessment: 0, // Placeholder
+        coefAssessment: betas[12],
+        coefHasAssessment: betas[13],
         
         areaCoefficients: areaCoefMap,
         areaReference: referenceLocation,
@@ -210,7 +218,8 @@ export function generateMarketModel(data: Listing[]): MarketModel {
             coefEndUnit: tStats[9],
             coefDoubleGarage: tStats[10],
             coefTandemGarage: tStats[11],
-            coefAssessment: 0,
+            coefAssessment: tStats[12],
+            coefHasAssessment: tStats[13],
             areaCoefficients: areaTStatMap
         },
 

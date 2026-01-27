@@ -14,6 +14,8 @@ interface Props {
     coefEndUnit: number;
     coefDoubleGarage: number;
     coefTandemGarage: number;
+    coefAssessment: number;
+    coefHasAssessment: number;
     areaCoefficients: Record<string, number>;
     areaReference: string;
     stdError: number;
@@ -25,6 +27,7 @@ const {
     intercept, coefSqft, coefAge, coefBath, coefBedrooms,
     coefFee, coefCondition, coefRainscreen,
     coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage,
+    coefAssessment, coefHasAssessment,
     areaCoefficients, areaReference, stdError,
     tStats, isLogLinear
 } = Astro.props;
@@ -97,11 +100,11 @@ const parkingOptions = [
                     <div class="grid grid-cols-2 gap-4">
                         <div>
                             <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Year Built</label>
-                            <input type="number" id="inputYear" value="2015" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                            <input type="number" id="inputYear" value="2009" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
                         </div>
                         <div>
                             <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Size (sqft)</label>
-                            <input type="number" id="inputArea" value="1500" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                            <input type="number" id="inputArea" value="1377" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
                         </div>
                     </div>
                 </div>
@@ -110,19 +113,25 @@ const parkingOptions = [
                 <div class="grid grid-cols-2 gap-4">
                     <div>
                         <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Bathrooms</label>
-                        <input type="number" id="inputBath" value="2.5" step="0.5" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                        <input type="number" id="inputBath" value="3" step="0.5" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
                     </div>
                     <div>
                         <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Bedrooms</label>
-                        <input type="number" id="inputBeds" value="3" step="0.5" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none" placeholder="3 or 2.5 (w/ den)">
+                        <input type="number" id="inputBeds" value="2.5" step="0.5" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none" placeholder="3 or 2.5 (w/ den)">
                     </div>
                 </div>
 
-                <!-- Fee -->
-                <div>
-                    <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Strata Fee ($)</label>
-                    <input type="number" id="inputFee" value="350" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
-                </div>
+                 <!-- Fee -->
+                 <div>
+                     <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Strata Fee ($)</label>
+                     <input type="number" id="inputFee" value="322" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                 </div>
+
+                 <!-- Assessment -->
+                 <div>
+                     <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">BC Assessment ($)</label>
+                     <input type="number" id="inputAssessment" value="909000" step="10000" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                 </div>
 
                 <!-- Condition & Parking -->
                 <div class="space-y-4">
@@ -130,7 +139,7 @@ const parkingOptions = [
                         id="inputCondition" 
                         label="Condition (1-5)" 
                         options={conditionOptions}
-                        initialValue="3"
+                        initialValue="4"
                         placeholder="Select condition..."
                     />
                     
@@ -153,7 +162,7 @@ const parkingOptions = [
                         <label for="checkAC" class="text-sm text-gray-700">Air Conditioning</label>
                     </div>
                     <div class="flex items-center space-x-2">
-                        <input type="checkbox" id="checkRain" class="h-4 w-4 text-amber-600 rounded">
+                        <input type="checkbox" id="checkRain" checked class="h-4 w-4 text-amber-600 rounded">
                         <label for="checkRain" class="text-sm text-gray-700">Rainscreened</label>
                     </div>
                 </div>
@@ -216,6 +225,13 @@ const parkingOptions = [
                         <span class="text-green-400" id="valFeatures">+$0</span>
                     </div>
                     <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-2">
+                            <span class="text-gray-400">BC Assessment Alignment</span>
+                            {Math.abs(tStats.coefAssessment) < 1.65 && <span class="text-[10px] text-gray-500 uppercase bg-gray-800 px-1 rounded">Low Sig</span>}
+                        </div>
+                        <span class="text-green-400" id="valAssessment">+$0</span>
+                    </div>
+                    <div class="flex justify-between items-center">
                         <span class="text-gray-400">Fee Adjustment</span>
                         <span class="text-red-400" id="valFee">-$0</span>
                     </div>
@@ -225,7 +241,7 @@ const parkingOptions = [
     </div>
 </section>
 
-<script define:vars={{ intercept, coefSqft, coefAge, coefBath, coefBedrooms, coefFee, coefCondition, coefRainscreen, coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, stdError, isLogLinear }}>
+<script define:vars={{ intercept, coefSqft, coefAge, coefBath, coefBedrooms, coefFee, coefCondition, coefRainscreen, coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, coefAssessment, coefHasAssessment, stdError, isLogLinear }}>
     document.addEventListener('DOMContentLoaded', () => {
         
         const inputs = {
@@ -235,6 +251,7 @@ const parkingOptions = [
             bath: document.getElementById('inputBath'),
             beds: document.getElementById('inputBeds'),
             fee: document.getElementById('inputFee'),
+            assessment: document.getElementById('inputAssessment'),
             condition: document.getElementById('inputCondition'),
             parking: document.getElementById('inputParking'),
             endUnit: document.getElementById('checkEndUnit'),
@@ -248,6 +265,7 @@ const parkingOptions = [
             psqft: document.getElementById('outputPsqft'),
             valAge: document.getElementById('valAge'),
             valFee: document.getElementById('valFee'),
+            valAssessment: document.getElementById('valAssessment'),
             valBath: document.getElementById('valBath'),
             valBeds: document.getElementById('valBeds'),
             valCondition: document.getElementById('valCondition'),
@@ -269,6 +287,7 @@ const parkingOptions = [
             let bath = parseFloat(inputs.bath.value);
             let beds = parseFloat(inputs.beds.value) || 2;
             let fee = parseFloat(inputs.fee.value) || 0;
+            let assessment = parseFloat(inputs.assessment.value) || 0;
             let condition = parseInt(inputs.condition.value) || 3;
             let parkType = inputs.parking.value;
             let isEnd = inputs.endUnit.checked ? 1 : 0;
@@ -283,6 +302,10 @@ const parkingOptions = [
             const currentYear = new Date().getFullYear();
             const age = currentYear - year;
             const feePerSqft = area > 0 ? fee / area : 0;
+
+            // Assessment
+            const hasAssessment = assessment > 0 ? 1 : 0;
+            const logAssessment = hasAssessment ? Math.log(assessment) : 0;
 
             // Parking
             let valParkingCoef = 0;
@@ -302,6 +325,8 @@ const parkingOptions = [
                     (isEnd * coefEndUnit) + 
                     (isAC * coefAC) + 
                     valParkingCoef + 
+                    (logAssessment * coefAssessment) + 
+                    (hasAssessment * coefHasAssessment) +
                     areaCoefVal;
                 
                 return Math.exp(logPrice);
@@ -318,6 +343,8 @@ const parkingOptions = [
                     (isEnd * coefEndUnit) + 
                     (isAC * coefAC) + 
                     valParkingCoef + 
+                    (logAssessment * coefAssessment) + 
+                    (hasAssessment * coefHasAssessment) +
                     areaCoefVal;
             }
         }
@@ -406,6 +433,16 @@ const parkingOptions = [
             const pNoAmenities = finalPrice / Math.exp(amenitiesCoef);
             const valAmenities = finalPrice - pNoAmenities;
             outputs.valFeatures.innerText = "+" + format(valAmenities);
+
+            // Assessment Impact (Value vs baseline assessment)
+            const assessment = parseFloat(inputs.assessment.value) || 0;
+            const hasAssessment = assessment > 0 ? 1 : 0;
+            const logAssessment = hasAssessment ? Math.log(assessment) : 0;
+            const assessmentCoef = (logAssessment * coefAssessment) + (hasAssessment * coefHasAssessment);
+            const pBaselineAssessment = finalPrice / Math.exp(assessmentCoef);
+            const valAssessment = finalPrice - pBaselineAssessment;
+            outputs.valAssessment.className = valAssessment >= 0 ? "text-green-400" : "text-red-400";
+            outputs.valAssessment.innerText = (valAssessment > 0 ? "+" : "") + format(valAssessment);
 
             // Fee Impact (Value vs $0 fee)
             // Fee coefficient is usually negative
