@@ -30,6 +30,7 @@ export interface MarketModel {
     coefSqft: number;
     coefAge: number;
     coefBath: number;
+    coefBedrooms: number;
     coefFee: number;
     coefCondition: number;
     coefRainscreen: number;
@@ -51,6 +52,7 @@ export interface MarketModel {
         coefSqft: number;
         coefAge: number;
         coefBath: number;
+        coefBedrooms: number;
         coefFee: number;
         coefCondition: number;
         coefRainscreen: number;
@@ -98,6 +100,7 @@ export function generateMarketModel(data: Listing[]): MarketModel {
     const X = validData.map(d => {
         const age = currentYear - d.year;
         const baths = d.bathrooms || 1;
+        const beds = d.bedrooms || 2;
         // Use Fee per Sqft to avoid colinearity with size
         const feePerSqft = d.sqft > 0 ? (d.fee || 0) / d.sqft : 0;
         const condition = d.condition || 3;
@@ -117,12 +120,13 @@ export function generateMarketModel(data: Listing[]): MarketModel {
         const areaDummies = distinctAreas.map(area => (loc === area ? 1 : 0));
 
         // Feature Vector Order:
-        // [0:Intercept, 1:Sqft, 2:Age, 3:Bath, 4:FeePerSqft, 5:Condition, 6:Rainscreen, 7:AC, 8:End, 9:DoubleG, 10:TandemG, ...Areas]
+        // [0:Intercept, 1:Sqft, 2:Age, 3:Bath, 4:Bedrooms, 5:FeePerSqft, 6:Condition, 7:Rainscreen, 8:AC, 9:End, 10:DoubleG, 11:TandemG, ...Areas]
         return [
             1, 
             d.sqft, 
             age, 
             baths, 
+            beds,
             feePerSqft, 
             condition, 
             isRainscreen, 
@@ -150,9 +154,9 @@ export function generateMarketModel(data: Listing[]): MarketModel {
     areaTStatMap[referenceLocation] = 0;
 
     distinctAreas.forEach((area, idx) => {
-        // betas index offset is 11 (intercept + 10 features)
-        areaCoefMap[area] = betas[11 + idx];
-        areaTStatMap[area] = tStats[11 + idx];
+        // betas index offset is 12 (intercept + 11 features)
+        areaCoefMap[area] = betas[12 + idx];
+        areaTStatMap[area] = tStats[12 + idx];
     });
 
     // R2 Calculation (Log Scale)
@@ -180,13 +184,14 @@ export function generateMarketModel(data: Listing[]): MarketModel {
         coefSqft: betas[1],
         coefAge: betas[2],
         coefBath: betas[3],
-        coefFee: betas[4],
-        coefCondition: betas[5],
-        coefRainscreen: betas[6],
-        coefAC: betas[7],
-        coefEndUnit: betas[8],
-        coefDoubleGarage: betas[9],
-        coefTandemGarage: betas[10],
+        coefBedrooms: betas[4],
+        coefFee: betas[5],
+        coefCondition: betas[6],
+        coefRainscreen: betas[7],
+        coefAC: betas[8],
+        coefEndUnit: betas[9],
+        coefDoubleGarage: betas[10],
+        coefTandemGarage: betas[11],
         coefAssessment: 0, // Placeholder
         
         areaCoefficients: areaCoefMap,
@@ -197,13 +202,14 @@ export function generateMarketModel(data: Listing[]): MarketModel {
             coefSqft: tStats[1],
             coefAge: tStats[2],
             coefBath: tStats[3],
-            coefFee: tStats[4],
-            coefCondition: tStats[5],
-            coefRainscreen: tStats[6],
-            coefAC: tStats[7],
-            coefEndUnit: tStats[8],
-            coefDoubleGarage: tStats[9],
-            coefTandemGarage: tStats[10],
+            coefBedrooms: tStats[4],
+            coefFee: tStats[5],
+            coefCondition: tStats[6],
+            coefRainscreen: tStats[7],
+            coefAC: tStats[8],
+            coefEndUnit: tStats[9],
+            coefDoubleGarage: tStats[10],
+            coefTandemGarage: tStats[11],
             coefAssessment: 0,
             areaCoefficients: areaTStatMap
         },

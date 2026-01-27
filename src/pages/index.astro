@@ -32,7 +32,7 @@ try {
 const model = generateMarketModel(listings);
 const { 
     generatedAt, sampleSize, modelConfidence,
-    intercept, coefSqft, coefAge, coefBath,
+    intercept, coefSqft, coefAge, coefBath, coefBedrooms,
     coefFee, coefCondition, coefRainscreen,
     coefAC, coefEndUnit,
     coefDoubleGarage, coefTandemGarage,
@@ -69,6 +69,7 @@ const {
         coefSqft={coefSqft}
         coefAge={coefAge}
         coefBath={coefBath}
+        coefBedrooms={coefBedrooms}
         coefFee={coefFee}
         coefCondition={coefCondition}
         coefRainscreen={coefRainscreen}

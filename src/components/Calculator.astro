@@ -6,6 +6,7 @@ interface Props {
     coefSqft: number;
     coefAge: number;
     coefBath: number;
+    coefBedrooms: number;
     coefFee: number;
     coefCondition: number;
     coefRainscreen: number;
@@ -21,7 +22,7 @@ interface Props {
 }
 
 const { 
-    intercept, coefSqft, coefAge, coefBath,
+    intercept, coefSqft, coefAge, coefBath, coefBedrooms,
     coefFee, coefCondition, coefRainscreen,
     coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage,
     areaCoefficients, areaReference, stdError,
@@ -112,9 +113,15 @@ const parkingOptions = [
                         <input type="number" id="inputBath" value="2.5" step="0.5" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
                     </div>
                     <div>
-                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Strata Fee ($)</label>
-                        <input type="number" id="inputFee" value="350" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                        <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Bedrooms</label>
+                        <input type="number" id="inputBeds" value="3" step="0.5" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none" placeholder="3 or 2.5 (w/ den)">
                     </div>
+                </div>
+
+                <!-- Fee -->
+                <div>
+                    <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Strata Fee ($)</label>
+                    <input type="number" id="inputFee" value="350" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
                 </div>
 
                 <!-- Condition & Parking -->
@@ -194,6 +201,13 @@ const parkingOptions = [
                         </div>
                     </div>
                     <div class="flex justify-between items-center">
+                        <span class="text-gray-400">Bedrooms</span>
+                        <div class="flex items-center gap-2">
+                            {Math.abs(tStats.coefBedrooms) < 1.65 && <span class="text-[10px] text-gray-500 uppercase bg-gray-800 px-1 rounded">Low Sig</span>}
+                            <span class="text-green-400" id="valBeds">+$0</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center">
                         <span class="text-gray-400">Parking Value</span>
                         <span class="text-green-400" id="valParking">+$0</span>
                     </div>
@@ -211,7 +225,7 @@ const parkingOptions = [
     </div>
 </section>
 
-<script define:vars={{ intercept, coefSqft, coefAge, coefBath, coefFee, coefCondition, coefRainscreen, coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, stdError, isLogLinear }}>
+<script define:vars={{ intercept, coefSqft, coefAge, coefBath, coefBedrooms, coefFee, coefCondition, coefRainscreen, coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, stdError, isLogLinear }}>
     document.addEventListener('DOMContentLoaded', () => {
         
         const inputs = {
@@ -219,6 +233,7 @@ const parkingOptions = [
             year: document.getElementById('inputYear'),
             area: document.getElementById('inputArea'),
             bath: document.getElementById('inputBath'),
+            beds: document.getElementById('inputBeds'),
             fee: document.getElementById('inputFee'),
             condition: document.getElementById('inputCondition'),
             parking: document.getElementById('inputParking'),
@@ -234,6 +249,7 @@ const parkingOptions = [
             valAge: document.getElementById('valAge'),
             valFee: document.getElementById('valFee'),
             valBath: document.getElementById('valBath'),
+            valBeds: document.getElementById('valBeds'),
             valCondition: document.getElementById('valCondition'),
             valParking: document.getElementById('valParking'),
             valFeatures: document.getElementById('valFeatures'),
@@ -251,6 +267,7 @@ const parkingOptions = [
             let year = parseFloat(inputs.year.value);
             let area = parseFloat(inputs.area.value);
             let bath = parseFloat(inputs.bath.value);
+            let beds = parseFloat(inputs.beds.value) || 2;
             let fee = parseFloat(inputs.fee.value) || 0;
             let condition = parseInt(inputs.condition.value) || 3;
             let parkType = inputs.parking.value;
@@ -278,6 +295,7 @@ const parkingOptions = [
                     (area * coefSqft) + 
                     (age * coefAge) + 
                     (bath * coefBath) + 
+                    (beds * coefBedrooms) +
                     (feePerSqft * coefFee) + 
                     (condition * coefCondition) + 
                     (isRain * coefRainscreen) + 
@@ -293,6 +311,7 @@ const parkingOptions = [
                     (area * coefSqft) + 
                     (age * coefAge) + 
                     (bath * coefBath) + 
+                    (beds * coefBedrooms) +
                     (feePerSqft * coefFee) + 
                     (condition * coefCondition) + 
                     (isRain * coefRainscreen) + 
@@ -363,6 +382,12 @@ const parkingOptions = [
             const p1Bath = finalPrice / Math.exp((bath - 1) * coefBath);
             const valBath = finalPrice - p1Bath;
             outputs.valBath.innerText = "+" + format(valBath);
+
+            // Bedrooms (Value of EXTRA bedrooms, e.g. above 2)
+            const beds = parseFloat(inputs.beds.value) || 2;
+            const p2Beds = finalPrice / Math.exp((beds - 2) * coefBedrooms);
+            const valBeds = finalPrice - p2Beds;
+            outputs.valBeds.innerText = "+" + format(valBeds);
 
             // Parking (Value vs Street)
             const parkType = inputs.parking.value;
