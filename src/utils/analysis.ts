@@ -18,13 +18,14 @@ export interface Listing extends Partial<DeepData> {
     bathrooms?: number;
     parking?: number;
     assessment?: number; // New field
+    propertyTax?: number; // Annual property tax
     schools?: { name: string, rating: number, type: string, distance: string }[];
 }
 
 export interface MarketModel {
     generatedAt: string;
     sampleSize: number;
-    
+
     // Core Coefficients (Log-Linear: These represent % change, roughly)
     intercept: number;
     coefSqft: number;
@@ -35,15 +36,17 @@ export interface MarketModel {
     coefCondition: number;
     coefRainscreen: number;
     coefAssessment: number; // If available
-    
+    coefTax: number;
+    coefHasTax: number;
+
     // Feature Coefficients (Dummy Variables)
     coefAC: number;
     coefEndUnit: number;
-    coefDoubleGarage: number; 
+    coefDoubleGarage: number;
     coefTandemGarage: number;
     coefAssessment: number;
     coefHasAssessment: number;
-    
+
     // Location Coefficients (Dynamic)
     areaCoefficients: Record<string, number>;
     areaReference: string;
@@ -60,13 +63,15 @@ export interface MarketModel {
         coefRainscreen: number;
         coefAssessment: number;
         coefHasAssessment: number;
+        coefTax: number;
+        coefHasTax: number;
         coefAC: number;
         coefEndUnit: number;
         coefDoubleGarage: number;
         coefTandemGarage: number;
         areaCoefficients: Record<string, number>;
     };
-    
+
     // Metrics
     modelConfidence: number; // R-squared
     stdError: number;        // Standard Error (in Log Scale)
@@ -112,31 +117,37 @@ export function generateMarketModel(data: Listing[]): MarketModel {
         const isTandem = d.parkingType === 'garage_tandem' ? 1 : 0;
         const isEnd = d.isEndUnit ? 1 : 0;
         const hasAC = d.hasAC ? 1 : 0;
-        
+
         // Assessment: Log-transform and indicator for missing data
         const hasAssessment = (d.assessment && d.assessment > 0) ? 1 : 0;
         const logAssessment = hasAssessment ? Math.log(d.assessment) : 0;
-        
+
+        // Property Tax: Per sqft normalization and indicator for missing data
+        const hasTax = (d.propertyTax && d.propertyTax > 0) ? 1 : 0;
+        const taxPerSqft = hasTax ? d.propertyTax / d.sqft : 0;
+
         const loc = normalizeLocation(d.city, d.subArea);
         const areaDummies = distinctAreas.map(area => (loc === area ? 1 : 0));
 
         // Feature Vector Order:
-        // [0:Intercept, 1:Sqft, 2:Age, 3:Bath, 4:Bedrooms, 5:FeePerSqft, 6:Condition, 7:Rainscreen, 8:AC, 9:End, 10:DoubleG, 11:TandemG, 12:LogAssessment, 13:HasAssessment, ...Areas]
+        // [0:Intercept, 1:Sqft, 2:Age, 3:Bath, 4:Bedrooms, 5:FeePerSqft, 6:Condition, 7:Rainscreen, 8:AC, 9:End, 10:DoubleG, 11:TandemG, 12:LogAssessment, 13:HasAssessment, 14:TaxPerSqft, 15:HasTax, ...Areas]
         return [
-            1, 
-            d.sqft, 
-            age, 
-            baths, 
+            1,
+            d.sqft,
+            age,
+            baths,
             beds,
-            feePerSqft, 
-            condition, 
-            isRainscreen, 
-            hasAC, 
-            isEnd, 
-            isDouble, 
-            isTandem, 
+            feePerSqft,
+            condition,
+            isRainscreen,
+            hasAC,
+            isEnd,
+            isDouble,
+            isTandem,
             logAssessment,
             hasAssessment,
+            taxPerSqft,
+            hasTax,
             ...areaDummies
         ];
     });
@@ -153,13 +164,13 @@ export function generateMarketModel(data: Listing[]): MarketModel {
     // Map coefficients
     const areaCoefMap: Record<string, number> = {};
     const areaTStatMap: Record<string, number> = {};
-    areaCoefMap[referenceLocation] = 0; 
+    areaCoefMap[referenceLocation] = 0;
     areaTStatMap[referenceLocation] = 0;
 
     distinctAreas.forEach((area, idx) => {
-        // betas index offset is 14 (intercept + 13 features)
-        areaCoefMap[area] = betas[14 + idx];
-        areaTStatMap[area] = tStats[14 + idx];
+        // betas index offset is 16 (intercept + 15 features)
+        areaCoefMap[area] = betas[16 + idx];
+        areaTStatMap[area] = tStats[16 + idx];
     });
 
     // R2 Calculation (Log Scale)
@@ -181,11 +192,13 @@ export function generateMarketModel(data: Listing[]): MarketModel {
     console.log('Model R²:', r2.toFixed(4));
     console.log('Assessment Coef:', betas[12].toFixed(4), 't-stat:', tStats[12].toFixed(4));
     console.log('Has Assessment Coef:', betas[13].toFixed(4), 't-stat:', tStats[13].toFixed(4));
+    console.log('Tax Per Sqft Coef:', betas[14].toFixed(4), 't-stat:', tStats[14].toFixed(4));
+    console.log('Has Tax Coef:', betas[15].toFixed(4), 't-stat:', tStats[15].toFixed(4));
 
     return {
         generatedAt: new Date().toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' }),
         sampleSize: validData.length,
-        
+
         // Coefficients (floats now)
         intercept: betas[0],
         coefSqft: betas[1],
@@ -201,7 +214,9 @@ export function generateMarketModel(data: Listing[]): MarketModel {
         coefTandemGarage: betas[11],
         coefAssessment: betas[12],
         coefHasAssessment: betas[13],
-        
+        coefTax: betas[14],
+        coefHasTax: betas[15],
+
         areaCoefficients: areaCoefMap,
         areaReference: referenceLocation,
 
@@ -220,6 +235,8 @@ export function generateMarketModel(data: Listing[]): MarketModel {
             coefTandemGarage: tStats[11],
             coefAssessment: tStats[12],
             coefHasAssessment: tStats[13],
+            coefTax: tStats[14],
+            coefHasTax: tStats[15],
             areaCoefficients: areaTStatMap
         },
 

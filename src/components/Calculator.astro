@@ -16,6 +16,8 @@ interface Props {
     coefTandemGarage: number;
     coefAssessment: number;
     coefHasAssessment: number;
+    coefTax: number;
+    coefHasTax: number;
     areaCoefficients: Record<string, number>;
     areaReference: string;
     stdError: number;
@@ -23,11 +25,11 @@ interface Props {
     isLogLinear: boolean;
 }
 
-const { 
+const {
     intercept, coefSqft, coefAge, coefBath, coefBedrooms,
     coefFee, coefCondition, coefRainscreen,
     coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage,
-    coefAssessment, coefHasAssessment,
+    coefAssessment, coefHasAssessment, coefTax, coefHasTax,
     areaCoefficients, areaReference, stdError,
     tStats, isLogLinear
 } = Astro.props;
@@ -125,6 +127,12 @@ const parkingOptions = [
                  <div>
                      <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Strata Fee ($)</label>
                      <input type="number" id="inputFee" value="322" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
+                 </div>
+
+                 <!-- Property Tax -->
+                 <div>
+                     <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Property Tax (Annual $)</label>
+                     <input type="number" id="inputPropertyTax" value="3265" step="100" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
                  </div>
 
                  <!-- Assessment -->
@@ -232,6 +240,13 @@ const parkingOptions = [
                         <span class="text-green-400" id="valAssessment">+$0</span>
                     </div>
                     <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-2">
+                            <span class="text-gray-400">Tax Adjustment</span>
+                            {Math.abs(tStats.coefTax) < 1.65 && <span class="text-[10px] text-gray-500 uppercase bg-gray-800 px-1 rounded">Low Sig</span>}
+                        </div>
+                        <span class="text-red-400" id="valTax">-$0</span>
+                    </div>
+                    <div class="flex justify-between items-center">
                         <span class="text-gray-400">Fee Adjustment</span>
                         <span class="text-red-400" id="valFee">-$0</span>
                     </div>
@@ -241,9 +256,9 @@ const parkingOptions = [
     </div>
 </section>
 
-<script define:vars={{ intercept, coefSqft, coefAge, coefBath, coefBedrooms, coefFee, coefCondition, coefRainscreen, coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, coefAssessment, coefHasAssessment, stdError, isLogLinear }}>
+<script define:vars={{ intercept, coefSqft, coefAge, coefBath, coefBedrooms, coefFee, coefCondition, coefRainscreen, coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, coefAssessment, coefHasAssessment, coefTax, coefHasTax, stdError, isLogLinear }}>
     document.addEventListener('DOMContentLoaded', () => {
-        
+
         const inputs = {
             areaCoef: document.getElementById('inputAreaCoef'),
             year: document.getElementById('inputYear'),
@@ -252,6 +267,7 @@ const parkingOptions = [
             beds: document.getElementById('inputBeds'),
             fee: document.getElementById('inputFee'),
             assessment: document.getElementById('inputAssessment'),
+            propertyTax: document.getElementById('inputPropertyTax'),
             condition: document.getElementById('inputCondition'),
             parking: document.getElementById('inputParking'),
             endUnit: document.getElementById('checkEndUnit'),
@@ -265,6 +281,7 @@ const parkingOptions = [
             psqft: document.getElementById('outputPsqft'),
             valAge: document.getElementById('valAge'),
             valFee: document.getElementById('valFee'),
+            valTax: document.getElementById('valTax'),
             valAssessment: document.getElementById('valAssessment'),
             valBath: document.getElementById('valBath'),
             valBeds: document.getElementById('valBeds'),
@@ -282,14 +299,15 @@ const parkingOptions = [
         function predict(overrides = {}) {
             // Defaults
             let areaCoefVal = parseFloat(inputs.areaCoef.value) || 0;
-            let year = parseFloat(inputs.year.value);
-            let area = parseFloat(inputs.area.value);
-            let bath = parseFloat(inputs.bath.value);
+            let year = parseFloat(inputs.year.value) || 2000;
+            let area = parseFloat(inputs.area.value) || 1000;
+            let bath = parseFloat(inputs.bath.value) || 2;
             let beds = parseFloat(inputs.beds.value) || 2;
             let fee = parseFloat(inputs.fee.value) || 0;
             let assessment = parseFloat(inputs.assessment.value) || 0;
+            let propertyTax = parseFloat(inputs.propertyTax.value) || 0;
             let condition = parseInt(inputs.condition.value) || 3;
-            let parkType = inputs.parking.value;
+            let parkType = inputs.parking.value || 'std';
             let isEnd = inputs.endUnit.checked ? 1 : 0;
             let isAC = inputs.ac.checked ? 1 : 0;
             let isRain = inputs.rain.checked ? 1 : 0;
@@ -307,6 +325,10 @@ const parkingOptions = [
             const hasAssessment = assessment > 0 ? 1 : 0;
             const logAssessment = hasAssessment ? Math.log(assessment) : 0;
 
+            // Property Tax
+            const hasTax = propertyTax > 0 ? 1 : 0;
+            const taxPerSqft = (hasTax && area > 0) ? propertyTax / area : 0;
+
             // Parking
             let valParkingCoef = 0;
             if (parkType === 'double') valParkingCoef = coefDoubleGarage;
@@ -314,37 +336,41 @@ const parkingOptions = [
 
             if (isLogLinear) {
                 // ln(Price) = Intercept + Coefs...
-                const logPrice = intercept + 
-                    (area * coefSqft) + 
-                    (age * coefAge) + 
-                    (bath * coefBath) + 
+                const logPrice = intercept +
+                    (area * coefSqft) +
+                    (age * coefAge) +
+                    (bath * coefBath) +
                     (beds * coefBedrooms) +
-                    (feePerSqft * coefFee) + 
-                    (condition * coefCondition) + 
-                    (isRain * coefRainscreen) + 
-                    (isEnd * coefEndUnit) + 
-                    (isAC * coefAC) + 
-                    valParkingCoef + 
-                    (logAssessment * coefAssessment) + 
+                    (feePerSqft * coefFee) +
+                    (condition * coefCondition) +
+                    (isRain * coefRainscreen) +
+                    (isEnd * coefEndUnit) +
+                    (isAC * coefAC) +
+                    valParkingCoef +
+                    (logAssessment * coefAssessment) +
                     (hasAssessment * coefHasAssessment) +
+                    (taxPerSqft * coefTax) +
+                    (hasTax * coefHasTax) +
                     areaCoefVal;
-                
+
                 return Math.exp(logPrice);
             } else {
                 // Linear fallback
-                return intercept + 
-                    (area * coefSqft) + 
-                    (age * coefAge) + 
-                    (bath * coefBath) + 
+                return intercept +
+                    (area * coefSqft) +
+                    (age * coefAge) +
+                    (bath * coefBath) +
                     (beds * coefBedrooms) +
-                    (feePerSqft * coefFee) + 
-                    (condition * coefCondition) + 
-                    (isRain * coefRainscreen) + 
-                    (isEnd * coefEndUnit) + 
-                    (isAC * coefAC) + 
-                    valParkingCoef + 
-                    (logAssessment * coefAssessment) + 
+                    (feePerSqft * coefFee) +
+                    (condition * coefCondition) +
+                    (isRain * coefRainscreen) +
+                    (isEnd * coefEndUnit) +
+                    (isAC * coefAC) +
+                    valParkingCoef +
+                    (logAssessment * coefAssessment) +
                     (hasAssessment * coefHasAssessment) +
+                    (taxPerSqft * coefTax) +
+                    (hasTax * coefHasTax) +
                     areaCoefVal;
             }
         }
@@ -352,8 +378,8 @@ const parkingOptions = [
         function calculate() {
             // 1. Calculate Baseline Total
             const finalPrice = predict();
-            const area = parseFloat(inputs.area.value);
-            const year = parseFloat(inputs.year.value);
+            const area = parseFloat(inputs.area.value) || 1000;
+            const year = parseFloat(inputs.year.value) || 2000;
 
             // 2. Render Main Price
             outputs.price.innerText = format(finalPrice);
@@ -405,7 +431,7 @@ const parkingOptions = [
             outputs.valCondition.innerText = "+" + format(valCond);
 
             // Baths (Value of EXTRA baths, e.g. above 1)
-            const bath = parseFloat(inputs.bath.value);
+            const bath = parseFloat(inputs.bath.value) || 2;
             const p1Bath = finalPrice / Math.exp((bath - 1) * coefBath);
             const valBath = finalPrice - p1Bath;
             outputs.valBath.innerText = "+" + format(valBath);
@@ -417,7 +443,7 @@ const parkingOptions = [
             outputs.valBeds.innerText = "+" + format(valBeds);
 
             // Parking (Value vs Street)
-            const parkType = inputs.parking.value;
+            const parkType = inputs.parking.value || 'std';
             let parkCoef = 0;
             if (parkType === 'double') parkCoef = coefDoubleGarage;
             if (parkType === 'tandem') parkCoef = coefTandemGarage;
@@ -443,6 +469,16 @@ const parkingOptions = [
             const valAssessment = finalPrice - pBaselineAssessment;
             outputs.valAssessment.className = valAssessment >= 0 ? "text-green-400" : "text-red-400";
             outputs.valAssessment.innerText = (valAssessment > 0 ? "+" : "") + format(valAssessment);
+
+            // Tax Impact (Value vs $0 tax)
+            const propertyTax = parseFloat(inputs.propertyTax.value) || 0;
+            const hasTax = propertyTax > 0 ? 1 : 0;
+            const taxPerSqft = (hasTax && area > 0) ? propertyTax / area : 0;
+            const taxCoef = (taxPerSqft * coefTax) + (hasTax * coefHasTax);
+            const pNoTax = finalPrice / Math.exp(taxCoef);
+            const valTax = finalPrice - pNoTax;
+            outputs.valTax.className = valTax >= 0 ? "text-green-400" : "text-red-400";
+            outputs.valTax.innerText = format(valTax);
 
             // Fee Impact (Value vs $0 fee)
             // Fee coefficient is usually negative

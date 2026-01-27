@@ -35,9 +35,11 @@ const accuracyPoints = listings
         const feePerSqft = l.sqft > 0 ? (l.fee || 0) / l.sqft : 0;
         const condition = l.condition || 3;
         const isRainscreen = l.rainscreen ? 1 : 0;
-        
+        const hasTax = (l.propertyTax && l.propertyTax > 0) ? 1 : 0;
+        const taxPerSqft = (hasTax && l.sqft > 0) ? l.propertyTax / l.sqft : 0;
+
         // Log Linear Logic: Sum of coefs
-        const predictedLog = model.intercept + 
+        const predictedLog = model.intercept +
             (l.sqft * model.coefSqft) +
             (age * model.coefAge) +
             (baths * model.coefBath) +
@@ -48,7 +50,9 @@ const accuracyPoints = listings
             (isEnd * model.coefEndUnit) +
             (isDouble * model.coefDoubleGarage) +
             (isTandem * model.coefTandemGarage) +
-            locCoef;
+            locCoef +
+            (taxPerSqft * model.coefTax) +
+            (hasTax * model.coefHasTax);
 
         const predicted = Math.exp(predictedLog);
 
@@ -102,6 +106,7 @@ const allFeatures = [
     { label: 'Condition (+1)', value: calcLinearImpact(model.coefCondition, 1), tStat: model.tStats.coefCondition },
     { label: 'Newer (10 Yrs)', value: calcLinearImpact(model.coefAge, -10), tStat: model.tStats.coefAge },
     { label: 'Assessment Align', value: calcImpact(model.coefAssessment), tStat: model.tStats.coefAssessment },
+    { label: 'Lower Tax (-$1/sqft)', value: calcLinearImpact(model.coefTax, -1), tStat: model.tStats.coefTax },
     // Fee per sqft is tiny, so let's normalize to a typical fee shift (e.g. +$0.10/sqft ~ +$150/mo on 1500sqft)
     { label: 'Lower Fee', value: calcLinearImpact(model.coefFee, -0.10), tStat: model.tStats.coefFee },
 ];

@@ -10,6 +10,7 @@ export interface DeepData {
   condition: number; // 1 (Poor) to 5 (New/Reno)
   subArea?: string; // Optional because we prefer DOM extraction
   assessment?: number; // Assessed Value (New)
+  propertyTax?: number; // Annual Property Tax (New)
 }
 
 /**
@@ -32,10 +33,10 @@ export async function extractDeepData(
 
   const prompt = `
     Analyze the following Real Estate listing text and extract the specific technical details.
-    
+
     Text:
     "${description}"
-    
+
     Features List:
     ${features.join(', ')}
 
@@ -97,6 +98,7 @@ function getDefaultDeepData(): DeepData {
     outdoorSpace: 'none',
     condition: 3,
     subArea: 'Other',
-    assessment: undefined
+    assessment: undefined,
+    propertyTax: undefined
   };
 }

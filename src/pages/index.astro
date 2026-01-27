@@ -30,13 +30,14 @@ try {
 } catch (e) { console.error("Error reading data:", e); }
 
 const model = generateMarketModel(listings);
-const { 
+const {
     generatedAt, sampleSize, modelConfidence,
     intercept, coefSqft, coefAge, coefBath, coefBedrooms,
     coefFee, coefCondition, coefRainscreen,
     coefAC, coefEndUnit,
     coefDoubleGarage, coefTandemGarage,
     coefAssessment, coefHasAssessment,
+    coefTax, coefHasTax,
     areaCoefficients, areaReference,
     stdError, tStats, isLogLinear
 } = model;
@@ -80,6 +81,8 @@ const {
         coefTandemGarage={coefTandemGarage}
         coefAssessment={coefAssessment}
         coefHasAssessment={coefHasAssessment}
+        coefTax={coefTax}
+        coefHasTax={coefHasTax}
         areaCoefficients={areaCoefficients}
         areaReference={areaReference}
         stdError={stdError}
