@@ -345,11 +345,11 @@ async function extractDeepData(description, features = []) {
       "isRainscreened": boolean (true if mentioned or built > 2005),
       "outdoorSpace": "balcony" | "yard" | "rooftop" | "none",
       "condition": number (1-5 score: 1=Needs Work, 2=Original/Dated, 3=Average/Maintained, 4=Updated, 5=Brand New/Fully Reno),
-      "subArea": string (Specific neighborhood name if found, otherwise 'Other')
+      "subArea": string (Specific neighborhood name if found, otherwise 'Other'),
+      "assessment": number (Assessed Value if present, otherwise null)
     }
     `;
 
-    // Removed temperature to support reasoning models that enforce default temperature (e.g. o1)
     const payload = {
         model: modelName,
         messages: [{role: "user", content: prompt}]
@@ -368,11 +368,9 @@ async function extractDeepData(description, features = []) {
         const errorBody = await res.text();
         let formattedError;
         try {
-            // Try to parse JSON error for better formatting
             const errorJson = JSON.parse(errorBody);
             formattedError = JSON.stringify(errorJson, null, 2);
         } catch (e) {
-            // Fallback to raw text if not JSON
             formattedError = errorBody;
         }
         throw new Error(`${res.status} ${res.statusText}:\n${formattedError}`);
@@ -411,24 +409,25 @@ function parseHtml(htmlContent, filename) {
         bathrooms: 0,
         parking: 0,
         propertyTax: 0,
+        assessment: 0, // NEW: Defaults to 0
         description: "",
         features: [],
         schools: [],
         subArea: null,
-        // Deep Data Placeholders (Filled by DOM or LLM)
+        // Deep Data Placeholders
         parkingType: 'other',
         levels: 1,
         isEndUnit: false,
         hasAC: false,
-        rainscreen: false, // Unified field
-        outdoorSpace: 'balcony', // Default to balcony (standard) to avoid "None" outliers
+        rainscreen: false, 
+        outdoorSpace: 'balcony',
         condition: 3,
         _sourceUrl: sourceUrl,
         _scrapedAt: scrapedAt,
         _rawFile: filename
     };
 
-    // --- 1. JSON-LD Extraction (Primary Source) ---
+    // --- 1. JSON-LD Extraction ---
     const jsonLdScripts = document.querySelectorAll('script[type="application/ld+json"]');
     for (const script of jsonLdScripts) {
         try {
@@ -447,7 +446,6 @@ function parseHtml(htmlContent, filename) {
                 if (json.floorSize?.value && !listing.sqft) listing.sqft = Number(json.floorSize.value);
                 if (json.description && !listing.description) listing.description = json.description;
             }
-            
             if (types.includes('Product')) {
                 if (json.offers?.price && !listing.price) {
                     listing.price = Number(json.offers.price);
@@ -474,7 +472,7 @@ function parseHtml(htmlContent, filename) {
         }
     }
 
-    // --- 3. Sold Price Specific Extraction ---
+    // --- 3. Sold Price ---
     const soldPriceEl = document.querySelector('.price-area .price .sold');
     if (soldPriceEl) {
         const p = cleanNumber(soldPriceEl.textContent);
@@ -493,7 +491,7 @@ function parseHtml(htmlContent, filename) {
         }
     }
 
-    // --- 4. Description from DOM ---
+    // --- 4. Description ---
     if (!listing.description) {
         const descSelectors = ['.listing-description p', '.description-content', '.pc-description p'];
         for (const selector of descSelectors) {
@@ -505,11 +503,15 @@ function parseHtml(htmlContent, filename) {
         }
     }
 
-    // --- 5. Key Facts & Deep Data from Details ---
-    const dtElements = document.querySelectorAll('dt');
+    // --- 5. Key Facts & Deep Data ---
+    const dtElements = document.querySelectorAll('dt, .label');
     for (const dt of dtElements) {
         const label = dt.textContent.toLowerCase().trim();
-        const dd = dt.nextElementSibling;
+        let dd = dt.nextElementSibling;
+        if (!dd && dt.classList.contains('label')) {
+            dd = dt.parentElement.querySelector('.value');
+        }
+
         if (!dd) continue;
         const value = dd.textContent.trim();
         const valLower = value.toLowerCase();
@@ -532,8 +534,6 @@ function parseHtml(htmlContent, filename) {
             const parkMatch = value.match(/(\d+)/);
             if (parkMatch) listing.parking = parseInt(parkMatch[1]);
         }
-        
-        // Deep Data
         if (label.includes('parking features') || label.includes('parking type')) {
             if (valLower.includes('underground')) listing.parkingType = 'underground';
             else if (valLower.includes('carport')) listing.parkingType = 'carport';
@@ -552,7 +552,59 @@ function parseHtml(htmlContent, filename) {
         }
     }
 
-    // --- 6. Spec Icons Fallback ---
+    // --- 6. Robust Assessment Extraction (High Precision Table Scan) ---
+    const assessmentMatches = [];
+
+    // Strategy A: Explicit HouseSigma Assessment Table
+    // Structure: .pc-assessment-history table tbody tr
+    // Columns: Year | Taxes | Land | Building | Total
+    const historyTableRows = document.querySelectorAll('.pc-assessment-history table tbody tr');
+    historyTableRows.forEach(row => {
+        const cells = row.querySelectorAll('td');
+        // We look for 5 columns. The Year is col 0, Total is col 4 (last)
+        if (cells.length >= 5) {
+            const yearTxt = cells[0].textContent.trim();
+            const totalTxt = cells[4].textContent.trim(); // 5th column
+            
+            const year = parseInt(yearTxt);
+            const amount = cleanNumber(totalTxt);
+            
+            if (year > 2000 && amount > 10000) {
+                assessmentMatches.push({ year, amount, source: 'table' });
+            }
+        }
+    });
+
+    // Strategy B: Scan Script Tags (Fallback)
+    if (assessmentMatches.length === 0) {
+        const scripts = document.querySelectorAll('script');
+        scripts.forEach(s => {
+            const txt = s.textContent;
+            // {"year": "2026", ... "total": "1213000"}
+            const pattern = /["']year["']\s*:\s*["'](202[0-9])["'].{0,200}["']total["']\s*:\s*["']?(\d+)["']?/g;
+            let m;
+            while ((m = pattern.exec(txt)) !== null) {
+                assessmentMatches.push({ year: parseInt(m[1]), amount: parseInt(m[2]), source: 'script' });
+            }
+            
+            // { "total": 1213000, ... "year": 2026 }
+            const patternB = /["']total["']\s*:\s*["']?(\d+)["']?.{0,200}["']year["']\s*:\s*["'](202[0-9])["']/g;
+            while ((m = patternB.exec(txt)) !== null) {
+                assessmentMatches.push({ year: parseInt(m[2]), amount: parseInt(m[1]), source: 'script' });
+            }
+        });
+    }
+
+    if (assessmentMatches.length > 0) {
+        // Sort by Year Descending, then Amount Descending
+        assessmentMatches.sort((a, b) => {
+            if (b.year !== a.year) return b.year - a.year; 
+            return b.amount - a.amount;
+        });
+        listing.assessment = assessmentMatches[0].amount;
+    }
+
+    // --- 7. Spec Icons Fallback ---
     if (!listing.bedrooms || !listing.bathrooms || !listing.parking) {
         const specItems = document.querySelectorAll('.spec-item, .config-item');
         for (const item of specItems) {
@@ -566,12 +618,11 @@ function parseHtml(htmlContent, filename) {
         }
     }
 
-    // --- 7. Description Analysis ---
+    // --- 8. Description Analysis ---
     const descLower = (listing.description || "").toLowerCase();
     if (descLower.includes('corner unit') || descLower.includes('end unit')) listing.isEndUnit = true;
     
     // Improved Outdoor Space Detection
-    // Priority: Rooftop > Yard > Balcony/Standard
     if (descLower.includes('rooftop')) {
         listing.outdoorSpace = 'rooftop';
     } else if (descLower.includes('yard') || descLower.includes('garden')) {
@@ -585,30 +636,23 @@ function parseHtml(htmlContent, filename) {
         if (!descLower.includes('rough-in')) listing.hasAC = true;
     }
 
-    // --- 8. School Extraction (Unique & Improved Regex) ---
+    // --- 9. School Extraction ---
     const schoolElements = document.querySelectorAll('.pc-school-nearby .pc-school');
-    const addedSchools = new Set(); // Dedup set
-    
+    const addedSchools = new Set(); 
     schoolElements.forEach(schoolEl => {
         const ratingEl = schoolEl.querySelector('.school-rating p em');
         const nameEl = schoolEl.querySelector('.main-text em');
         const distanceEl = schoolEl.querySelector('.main-text span');
-        
         let type = "Unknown";
         const tags = schoolEl.querySelectorAll('.status-tag');
         tags.forEach(tag => {
             const t = tag.textContent.trim();
-            // Improved Regex to capture K-5, 0-6, 9-12
             if (/[A-Z0-9]+-[A-Z0-9]+/i.test(t)) type = t; 
         });
-
         if (nameEl && ratingEl) {
             const name = nameEl.textContent.trim();
-            // Skip duplicates in this listing
             if (addedSchools.has(name)) return;
-            
             const rating = parseFloat(ratingEl.textContent.trim());
-            // Filter out 0 ratings
             if (rating > 0) {
                 addedSchools.add(name);
                 listing.schools.push({
@@ -730,10 +774,10 @@ async function main() {
                     if (listing.subArea && listing.subArea !== "Other") {
                         delete deepData.subArea;
                     }
-                    
                     if (listing.parkingType === 'other' && deepData.parkingType) listing.parkingType = deepData.parkingType;
                     if (!listing.isEndUnit && deepData.isEndUnit) listing.isEndUnit = deepData.isEndUnit;
                     if (!listing.hasAC && deepData.hasAC) listing.hasAC = deepData.hasAC;
+                    if (!listing.assessment && deepData.assessment) listing.assessment = deepData.assessment;
                     
                     if (deepData.outdoorSpace && deepData.outdoorSpace !== 'none') {
                         if (deepData.outdoorSpace === 'rooftop') listing.outdoorSpace = 'rooftop';
@@ -749,18 +793,11 @@ async function main() {
                     llmSuccessCount++;
                 }
             } catch (error) {
-                // FAILURE CASE: Exit immediately
                 b1.stop();
-                console.log('\n'); // Ensure a clean break from the progress bar
+                console.log('\n'); 
                 console.error(chalk.bgRed.white.bold(' LLM ENRICHMENT FAILED '));
                 console.error(chalk.red(`File: ${file}`));
-                
-                // Print the clean error message (which might be JSON formatted now)
                 console.error(chalk.yellow(error.message));
-                
-                console.log(chalk.gray('─'.repeat(50)));
-                console.log(chalk.white(`Files successfully enriched: ${llmSuccessCount}`));
-                console.log(chalk.white(`Files skipped (remaining): ${filesToProcess.length - (i + 1)}`));
                 process.exit(1);
             }
         }

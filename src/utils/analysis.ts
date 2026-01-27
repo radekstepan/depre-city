@@ -17,7 +17,7 @@ export interface Listing extends Partial<DeepData> {
     bedrooms?: number;
     bathrooms?: number;
     parking?: number;
-    // New
+    assessment?: number; // New field
     schools?: { name: string, rating: number, type: string, distance: string }[];
 }
 
@@ -25,7 +25,7 @@ export interface MarketModel {
     generatedAt: string;
     sampleSize: number;
     
-    // Core Coefficients
+    // Core Coefficients (Log-Linear: These represent % change, roughly)
     intercept: number;
     coefSqft: number;
     coefAge: number;
@@ -33,6 +33,7 @@ export interface MarketModel {
     coefFee: number;
     coefCondition: number;
     coefRainscreen: number;
+    coefAssessment: number; // If available
     
     // Feature Coefficients (Dummy Variables)
     coefAC: number;
@@ -53,6 +54,7 @@ export interface MarketModel {
         coefFee: number;
         coefCondition: number;
         coefRainscreen: number;
+        coefAssessment: number;
         coefAC: number;
         coefEndUnit: number;
         coefDoubleGarage: number;
@@ -61,10 +63,9 @@ export interface MarketModel {
     };
     
     // Metrics
-    feeIntercept: number;
-    feeSlope: number;
     modelConfidence: number; // R-squared
-    stdError: number;        // Standard Error of the Estimate (for Range)
+    stdError: number;        // Standard Error (in Log Scale)
+    isLogLinear: boolean;    // Flag for UI
 }
 
 function normalizeLocation(city: string, subArea?: string): string {
@@ -85,17 +86,20 @@ export function generateMarketModel(data: Listing[]): MarketModel {
     const referenceLocation = sortedLocations[0][0];
     const distinctAreas = sortedLocations.map(pair => pair[0]).filter(loc => loc !== referenceLocation);
 
-    // --- Prepare Data for OLS ---
+    // --- Prepare Data for Log-Linear OLS ---
+    // Model: ln(Price) = Beta0 + Beta1*Sqft + Beta2*Age ...
     
-    // Y: Price
-    const y = validData.map(d => d.price);
     const currentYear = new Date().getFullYear();
+
+    // Y: Natural Log of Price
+    const y = validData.map(d => Math.log(d.price));
 
     // X: Features
     const X = validData.map(d => {
         const age = currentYear - d.year;
         const baths = d.bathrooms || 1;
-        const fee = d.fee || 0;
+        // Use Fee per Sqft to avoid colinearity with size
+        const feePerSqft = d.sqft > 0 ? (d.fee || 0) / d.sqft : 0;
         const condition = d.condition || 3;
         const isRainscreen = d.rainscreen ? 1 : 0;
         const isDouble = d.parkingType === 'garage_double' ? 1 : 0;
@@ -103,17 +107,23 @@ export function generateMarketModel(data: Listing[]): MarketModel {
         const isEnd = d.isEndUnit ? 1 : 0;
         const hasAC = d.hasAC ? 1 : 0;
         
+        // Log(Assessment) if available, otherwise 0 (and we rely on other factors)
+        // Note: In a real prod model, you'd impute missing assessments or run two models.
+        // For now, we will exclude assessment from X if > 50% data missing, or just use 0.
+        // To keep it simple for this step, we'll omit assessment from the regression X matrix 
+        // unless we strictly filter for it. Let's stick to physical attributes for the "Universal" model.
+        
         const loc = normalizeLocation(d.city, d.subArea);
         const areaDummies = distinctAreas.map(area => (loc === area ? 1 : 0));
 
         // Feature Vector Order:
-        // [0:Intercept, 1:Sqft, 2:Age, 3:Bath, 4:Fee, 5:Condition, 6:Rainscreen, 7:AC, 8:End, 9:DoubleG, 10:TandemG, ...Areas]
+        // [0:Intercept, 1:Sqft, 2:Age, 3:Bath, 4:FeePerSqft, 5:Condition, 6:Rainscreen, 7:AC, 8:End, 9:DoubleG, 10:TandemG, ...Areas]
         return [
             1, 
             d.sqft, 
             age, 
             baths, 
-            fee, 
+            feePerSqft, 
             condition, 
             isRainscreen, 
             hasAC, 
@@ -124,7 +134,7 @@ export function generateMarketModel(data: Listing[]): MarketModel {
         ];
     });
 
-    // Run Primary Regression (Physical + Location)
+    // Run Regression
     const { betas, tStats } = solveOLS(X, y);
 
     if (betas.every(b => b === 0) && validData.length > 0) {
@@ -134,10 +144,6 @@ export function generateMarketModel(data: Listing[]): MarketModel {
     // --- Metrics ---
     
     // Map coefficients
-    // Indexes:
-    // 0: Intercept
-    // 1-10: Features
-    // 11+: Areas
     const areaCoefMap: Record<string, number> = {};
     const areaTStatMap: Record<string, number> = {};
     areaCoefMap[referenceLocation] = 0; 
@@ -145,19 +151,18 @@ export function generateMarketModel(data: Listing[]): MarketModel {
 
     distinctAreas.forEach((area, idx) => {
         // betas index offset is 11 (intercept + 10 features)
-        areaCoefMap[area] = Math.round(betas[11 + idx]);
+        areaCoefMap[area] = betas[11 + idx];
         areaTStatMap[area] = tStats[11 + idx];
     });
 
-    // R2 Calculation
+    // R2 Calculation (Log Scale)
     let finalRSS = 0;
     let finalTSS = 0;
     const yMean = ss.mean(y);
 
     X.forEach((row, i) => {
-        const predicted = row.reduce((sum, val, idx) => sum + val * betas[idx], 0);
-        
-        finalRSS += Math.pow(y[i] - predicted, 2);
+        const predictedLog = row.reduce((sum, val, idx) => sum + val * betas[idx], 0);
+        finalRSS += Math.pow(y[i] - predictedLog, 2);
         finalTSS += Math.pow(y[i] - yMean, 2);
     });
 
@@ -166,24 +171,23 @@ export function generateMarketModel(data: Listing[]): MarketModel {
     const n = validData.length;
     const stdError = n > p ? Math.sqrt(finalRSS / (n - p)) : 0;
 
-    const feePoints = validData.filter(d => d.fee > 0).map(d => [d.sqft, d.fee]);
-    const feeReg = feePoints.length > 2 ? ss.linearRegression(feePoints) : { m: 0, b: 0 };
-
     return {
         generatedAt: new Date().toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' }),
         sampleSize: validData.length,
         
-        intercept: Math.round(betas[0]),
-        coefSqft: Math.round(betas[1]),
-        coefAge: Math.round(betas[2]),
-        coefBath: Math.round(betas[3]),
-        coefFee: Math.round(betas[4]),
-        coefCondition: Math.round(betas[5]),
-        coefRainscreen: Math.round(betas[6]),
-        coefAC: Math.round(betas[7]),
-        coefEndUnit: Math.round(betas[8]),
-        coefDoubleGarage: Math.round(betas[9]),
-        coefTandemGarage: Math.round(betas[10]),
+        // Coefficients (floats now)
+        intercept: betas[0],
+        coefSqft: betas[1],
+        coefAge: betas[2],
+        coefBath: betas[3],
+        coefFee: betas[4],
+        coefCondition: betas[5],
+        coefRainscreen: betas[6],
+        coefAC: betas[7],
+        coefEndUnit: betas[8],
+        coefDoubleGarage: betas[9],
+        coefTandemGarage: betas[10],
+        coefAssessment: 0, // Placeholder
         
         areaCoefficients: areaCoefMap,
         areaReference: referenceLocation,
@@ -200,12 +204,12 @@ export function generateMarketModel(data: Listing[]): MarketModel {
             coefEndUnit: tStats[8],
             coefDoubleGarage: tStats[9],
             coefTandemGarage: tStats[10],
+            coefAssessment: 0,
             areaCoefficients: areaTStatMap
         },
 
-        feeIntercept: feeReg.b,
-        feeSlope: feeReg.m,
         modelConfidence: r2,
-        stdError: Math.round(stdError)
+        stdError: stdError,
+        isLogLinear: true
     };
 }

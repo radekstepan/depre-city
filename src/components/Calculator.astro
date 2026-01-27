@@ -15,42 +15,42 @@ interface Props {
     coefTandemGarage: number;
     areaCoefficients: Record<string, number>;
     areaReference: string;
-    feeSlope: number;
-    feeIntercept: number;
     stdError: number;
-    tStats: {
-        intercept: number;
-        coefSqft: number;
-        coefAge: number;
-        coefBath: number;
-        coefFee: number;
-        coefCondition: number;
-        coefRainscreen: number;
-        coefAC: number;
-        coefEndUnit: number;
-        coefDoubleGarage: number;
-        coefTandemGarage: number;
-        areaCoefficients: Record<string, number>;
-    };
+    tStats: any;
+    isLogLinear: boolean;
 }
 
 const { 
     intercept, coefSqft, coefAge, coefBath,
     coefFee, coefCondition, coefRainscreen,
     coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage,
-    areaCoefficients, areaReference, feeSlope, feeIntercept, stdError,
-    tStats
+    areaCoefficients, areaReference, stdError,
+    tStats, isLogLinear
 } = Astro.props;
 
-// Transform area coefficients for the SearchSelect
+// For display in dropdown, we convert log coefs to approx percentages if log-linear
 const areaOptions = Object.entries(areaCoefficients)
-    .sort((a, b) => b[1] - a[1]) // Sort by value desc
+    .sort((a, b) => b[1] - a[1])
     .map(([name, val]) => {
         const sig = Math.abs(tStats.areaCoefficients[name]) >= 1.65;
+        // If log linear, val is ~ % diff. e.g. 0.10 = +10%
+        // We still pass the raw val to the calculator logic
+        const percentVal = isLogLinear ? val * 100 : val;
+        const formattedMeta = isLogLinear 
+            ? `${val > 0 ? '+' : ''}${percentVal.toFixed(1)}%` 
+            : `${val > 0 ? '+' : ''}$${Math.abs(val).toLocaleString()}`;
+        
+        // Determine color class based on significance and value
+        let metaClass = 'text-gray-400'; // default grey for low sig
+        if (sig) {
+            metaClass = val > 0 ? 'text-green-600' : 'text-red-500';
+        }
+            
         return {
-            label: name === areaReference ? `${name} (Baseline)` : `${name} ${sig ? '' : '(Low Sig)'}`,
+            label: name === areaReference ? `${name} (Baseline)` : name,
             value: val, 
-            meta: val
+            meta: formattedMeta,
+            metaClass: metaClass
         };
     });
 
@@ -77,7 +77,10 @@ const parkingOptions = [
             <div class="w-full md:w-7/12 p-6 md:p-8 space-y-6 border-b md:border-b-0 md:border-r border-gray-100 rounded-t-xl md:rounded-tr-none md:rounded-l-xl bg-white">
                 <div class="mb-6">
                     <h2 class="text-2xl font-bold text-gray-900">Feature Pricing Calculator</h2>
-                    <p class="text-sm text-gray-500 mt-1">Adjust property attributes. Features with low statistical significance are marked.</p>
+                    <p class="text-sm text-gray-500 mt-1">
+                        {isLogLinear ? 'Log-Linear Model Active.' : 'Linear Model Active.'} 
+                        Adjust attributes to see dynamic valuation.
+                    </p>
                 </div>
                 
                 <!-- Core -->
@@ -112,6 +115,12 @@ const parkingOptions = [
                             <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Strata Fee ($)</label>
                         <input type="number" id="inputFee" value="350" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
                     </div>
+                </div>
+
+                <!-- Assessment (NEW) -->
+                <div>
+                    <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Assessed Value ($) <span class="text-xs text-gray-400 font-normal">Optional</span></label>
+                    <input type="number" id="inputAssessment" value="0" placeholder="e.g. 850000" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
                 </div>
 
                 <!-- Condition & Parking -->
@@ -167,17 +176,10 @@ const parkingOptions = [
                 </div>
 
                 <div class="space-y-3 border-t border-gray-700 pt-6 text-sm">
+                    <!-- Dynamic Component Values -->
                     <div class="flex justify-between items-center">
-                        <span class="text-gray-400">Base (Intercept)</span>
-                        <span class="text-gray-500">${intercept.toLocaleString()}</span>
-                    </div>
-                    <div class="flex justify-between items-center">
-                        <span class="text-gray-400">Area Adjustment</span>
+                        <span class="text-gray-400">Area Premium</span>
                         <span class="text-green-400" id="valLoc">+$0</span>
-                    </div>
-                    <div class="flex justify-between items-center">
-                        <span class="text-gray-400">Size Value</span>
-                        <span class="text-green-400" id="valSize">+$0</span>
                     </div>
                     <div class="flex justify-between items-center">
                         <span class="text-gray-400">Age Impact</span>
@@ -191,10 +193,6 @@ const parkingOptions = [
                         </div>
                     </div>
                     <div class="flex justify-between items-center">
-                        <span class="text-gray-400">Parking Value</span>
-                        <span class="text-green-400" id="valParking">+$0</span>
-                    </div>
-                    <div class="flex justify-between items-center">
                         <span class="text-gray-400">Bathrooms</span>
                         <div class="flex items-center gap-2">
                             {Math.abs(tStats.coefBath) < 1.65 && <span class="text-[10px] text-gray-500 uppercase bg-gray-800 px-1 rounded">Low Sig</span>}
@@ -202,12 +200,16 @@ const parkingOptions = [
                         </div>
                     </div>
                     <div class="flex justify-between items-center">
-                        <span class="text-gray-400">Strata Fee Impact</span>
-                        <span class="text-red-400" id="valFee">-$0</span>
+                        <span class="text-gray-400">Parking Value</span>
+                        <span class="text-green-400" id="valParking">+$0</span>
                     </div>
                     <div class="flex justify-between items-center">
-                        <span class="text-gray-400">Amenities (AC, End, Rain)</span>
+                        <span class="text-gray-400">Amenities (AC/End)</span>
                         <span class="text-green-400" id="valFeatures">+$0</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-400">Fee Adjustment</span>
+                        <span class="text-red-400" id="valFee">-$0</span>
                     </div>
                 </div>
             </div>
@@ -215,17 +217,18 @@ const parkingOptions = [
     </div>
 </section>
 
-<script define:vars={{ intercept, coefSqft, coefAge, coefBath, coefFee, coefCondition, coefRainscreen, coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, stdError }}>
+<script define:vars={{ intercept, coefSqft, coefAge, coefBath, coefFee, coefCondition, coefRainscreen, coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, stdError, isLogLinear }}>
     document.addEventListener('DOMContentLoaded', () => {
         
         const inputs = {
-            areaCoef: document.getElementById('inputAreaCoef'), // Hidden input from SearchSelect
+            areaCoef: document.getElementById('inputAreaCoef'),
             year: document.getElementById('inputYear'),
             area: document.getElementById('inputArea'),
             bath: document.getElementById('inputBath'),
             fee: document.getElementById('inputFee'),
-            condition: document.getElementById('inputCondition'), // Hidden input from SearchSelect
-            parking: document.getElementById('inputParking'),     // Hidden input from SearchSelect
+            assessment: document.getElementById('inputAssessment'),
+            condition: document.getElementById('inputCondition'),
+            parking: document.getElementById('inputParking'),
             endUnit: document.getElementById('checkEndUnit'),
             ac: document.getElementById('checkAC'),
             rain: document.getElementById('checkRain')
@@ -235,13 +238,12 @@ const parkingOptions = [
             price: document.getElementById('outputPrice'),
             range: document.getElementById('outputRange'),
             psqft: document.getElementById('outputPsqft'),
-            valSize: document.getElementById('valSize'),
             valAge: document.getElementById('valAge'),
             valFee: document.getElementById('valFee'),
             valBath: document.getElementById('valBath'),
             valCondition: document.getElementById('valCondition'),
             valParking: document.getElementById('valParking'),
-            valFeatures: document.getElementById('valFeatures'), // Amenities only (AC, End, Rain)
+            valFeatures: document.getElementById('valFeatures'),
             valLoc: document.getElementById('valLoc')
         };
 
@@ -249,71 +251,156 @@ const parkingOptions = [
             return new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD', maximumFractionDigits: 0 }).format(num);
         }
 
-        function calculate() {
-            // Get Values
-            const areaCoefVal = parseFloat(inputs.areaCoef.value) || 0;
-            const year = parseFloat(inputs.year.value);
-            const area = parseFloat(inputs.area.value);
-            const bath = parseFloat(inputs.bath.value);
-            const fee = parseFloat(inputs.fee.value) || 0;
-            const condition = parseInt(inputs.condition.value) || 3;
-            
-            const parkType = inputs.parking.value;
-            const isEnd = inputs.endUnit.checked ? 1 : 0;
-            const isAC = inputs.ac.checked ? 1 : 0;
-            const isRain = inputs.rain.checked ? 1 : 0;
+        // Helper: Calculate Price given specific overrides
+        function predict(overrides = {}) {
+            // Defaults
+            let areaCoefVal = parseFloat(inputs.areaCoef.value) || 0;
+            let year = parseFloat(inputs.year.value);
+            let area = parseFloat(inputs.area.value);
+            let bath = parseFloat(inputs.bath.value);
+            let fee = parseFloat(inputs.fee.value) || 0;
+            let condition = parseInt(inputs.condition.value) || 3;
+            let parkType = inputs.parking.value;
+            let isEnd = inputs.endUnit.checked ? 1 : 0;
+            let isAC = inputs.ac.checked ? 1 : 0;
+            let isRain = inputs.rain.checked ? 1 : 0;
+
+            // Apply overrides
+            if (overrides.areaCoefVal !== undefined) areaCoefVal = overrides.areaCoefVal;
+            if (overrides.year !== undefined) year = overrides.year;
+            // ... add others if needed for diff calculation, currently simplified to core vars
 
             const currentYear = new Date().getFullYear();
             const age = currentYear - year;
+            const feePerSqft = area > 0 ? fee / area : 0;
 
-            // Compute Component Values
-            const valSize = area * coefSqft;
-            const valAge = age * coefAge;
-            const valBath = bath * coefBath;
-            const valFee = fee * coefFee;
-            const valCondition = condition * coefCondition;
-            const valRain = isRain * coefRainscreen;
-            const valEnd = isEnd * coefEndUnit;
-            const valAC = isAC * coefAC;
-            
-            // Parking Logic
-            let valParking = 0;
-            if (parkType === 'double') valParking = coefDoubleGarage;
-            if (parkType === 'tandem') valParking = coefTandemGarage;
+            // Parking
+            let valParkingCoef = 0;
+            if (parkType === 'double') valParkingCoef = coefDoubleGarage;
+            if (parkType === 'tandem') valParkingCoef = coefTandemGarage;
 
-            // Total Prediction (Mean/Median)
-            let predictedPrice = intercept + valSize + valAge + valBath + valFee + valCondition + valRain + valEnd + valAC + valParking + areaCoefVal;
+            if (isLogLinear) {
+                // ln(Price) = Intercept + Coefs...
+                const logPrice = intercept + 
+                    (area * coefSqft) + 
+                    (age * coefAge) + 
+                    (bath * coefBath) + 
+                    (feePerSqft * coefFee) + 
+                    (condition * coefCondition) + 
+                    (isRain * coefRainscreen) + 
+                    (isEnd * coefEndUnit) + 
+                    (isAC * coefAC) + 
+                    valParkingCoef + 
+                    areaCoefVal;
+                
+                return Math.exp(logPrice);
+            } else {
+                // Linear fallback
+                return intercept + 
+                    (area * coefSqft) + 
+                    (age * coefAge) + 
+                    (bath * coefBath) + 
+                    (feePerSqft * coefFee) + 
+                    (condition * coefCondition) + 
+                    (isRain * coefRainscreen) + 
+                    (isEnd * coefEndUnit) + 
+                    (isAC * coefAC) + 
+                    valParkingCoef + 
+                    areaCoefVal;
+            }
+        }
 
-            // Range Calculation (80% Probability Interval: 10th - 90th Percentile)
-            // Z-score for 10th/90th is approx +/- 1.282
-            const lowerBound = predictedPrice - (1.282 * stdError);
-            const upperBound = predictedPrice + (1.282 * stdError);
+        function calculate() {
+            // 1. Calculate Baseline Total
+            const finalPrice = predict();
+            const area = parseFloat(inputs.area.value);
+            const year = parseFloat(inputs.year.value);
 
-            // Render
-            outputs.price.innerText = format(predictedPrice);
+            // 2. Render Main Price
+            outputs.price.innerText = format(finalPrice);
+            outputs.psqft.innerText = format(finalPrice / area) + " / sqft";
+
+            // 3. Render Range (Log Scale Error)
+            let lowerBound, upperBound;
+            if (isLogLinear) {
+                // Error is multiplicative in log scale
+                // Lower = exp(ln(price) - z*sigma) = price * exp(-z*sigma)
+                // Approx +/- 80% CI (z=1.28)
+                const margin = Math.exp(1.28 * stdError);
+                lowerBound = finalPrice / margin;
+                upperBound = finalPrice * margin;
+            } else {
+                lowerBound = finalPrice - (1.28 * stdError);
+                upperBound = finalPrice + (1.28 * stdError);
+            }
             outputs.range.innerText = `${format(lowerBound)} — ${format(upperBound)}`;
-            outputs.psqft.innerText = format(predictedPrice / area) + " / sqft";
 
-            outputs.valSize.innerText = (valSize > 0 ? "+" : "") + format(valSize);
-            outputs.valAge.innerText = (valAge > 0 ? "+" : "") + format(valAge);
-            outputs.valFee.innerText = (valFee > 0 ? "+" : "") + format(valFee);
-            outputs.valBath.innerText = (valBath > 0 ? "+" : "") + format(valBath);
+            // 4. Calculate Component Values by Difference
+            // To find the value of "Location", we compare Current Price vs Price if LocCoef was 0
+            // BUT for additive components (like Bath), we compare Current vs Price if Bath was 0 (or standard 1)
             
-            outputs.valCondition.innerText = (valCondition > 0 ? "+" : "") + format(valCondition);
-            outputs.valParking.innerText = (valParking > 0 ? "+" : "") + format(valParking);
-            
-            // Amenities: End + AC + Rain
-            const amenitiesTotal = valEnd + valAC + valRain;
-            outputs.valFeatures.innerText = (amenitiesTotal > 0 ? "+" : "") + format(amenitiesTotal);
-            
-            // Location
-            outputs.valLoc.className = areaCoefVal >= 0 ? "text-green-400" : "text-red-400";
-            outputs.valLoc.innerText = (areaCoefVal > 0 ? "+" : "") + format(areaCoefVal);
+            // Helper for Value Diff
+            const getDiff = (currentVal, zeroVal) => {
+                return currentVal - zeroVal;
+            };
+
+            // Area Value
+            // For Log Linear: P_with_area - P_no_area
+            const pNoArea = finalPrice / Math.exp(parseFloat(inputs.areaCoef.value) || 0); // Simplified inverse
+            const valLoc = finalPrice - pNoArea;
+            outputs.valLoc.className = valLoc >= 0 ? "text-green-400" : "text-red-400";
+            outputs.valLoc.innerText = (valLoc > 0 ? "+" : "") + format(valLoc);
+
+            // Age Impact (Compare to 0 age)
+            const age = new Date().getFullYear() - year;
+            const pNew = finalPrice / Math.exp(age * coefAge);
+            const valAge = finalPrice - pNew;
+            outputs.valAge.innerText = format(valAge); // Usually negative
+
+            // Condition (Compare to condition 3 baseline if desired, or 0)
+            // Let's compare to Condition 1 (lowest) to show "Value added by condition"
+            const cond = parseInt(inputs.condition.value) || 3;
+            // Diff from Cond 1
+            const pCond1 = finalPrice / Math.exp((cond - 1) * coefCondition);
+            const valCond = finalPrice - pCond1;
+            outputs.valCondition.innerText = "+" + format(valCond);
+
+            // Baths (Value of EXTRA baths, e.g. above 1)
+            const bath = parseFloat(inputs.bath.value);
+            const p1Bath = finalPrice / Math.exp((bath - 1) * coefBath);
+            const valBath = finalPrice - p1Bath;
+            outputs.valBath.innerText = "+" + format(valBath);
+
+            // Parking (Value vs Street)
+            const parkType = inputs.parking.value;
+            let parkCoef = 0;
+            if (parkType === 'double') parkCoef = coefDoubleGarage;
+            if (parkType === 'tandem') parkCoef = coefTandemGarage;
+            const pStdPark = finalPrice / Math.exp(parkCoef);
+            const valPark = finalPrice - pStdPark;
+            outputs.valParking.innerText = "+" + format(valPark);
+
+            // Amenities (End + AC + Rain)
+            const isEnd = inputs.endUnit.checked ? 1 : 0;
+            const isAC = inputs.ac.checked ? 1 : 0;
+            const isRain = inputs.rain.checked ? 1 : 0;
+            const amenitiesCoef = (isEnd * coefEndUnit) + (isAC * coefAC) + (isRain * coefRainscreen);
+            const pNoAmenities = finalPrice / Math.exp(amenitiesCoef);
+            const valAmenities = finalPrice - pNoAmenities;
+            outputs.valFeatures.innerText = "+" + format(valAmenities);
+
+            // Fee Impact (Value vs $0 fee)
+            // Fee coefficient is usually negative
+            const fee = parseFloat(inputs.fee.value) || 0;
+            const feePerSqft = area > 0 ? fee / area : 0;
+            const pNoFee = finalPrice / Math.exp(feePerSqft * coefFee);
+            const valFee = finalPrice - pNoFee;
+            outputs.valFee.innerText = format(valFee);
 
             // Dispatch event for charts
             const event = new CustomEvent('deprecity:model-update', {
                 detail: {
-                    price: predictedPrice,
+                    price: finalPrice,
                     sqft: area,
                     year: year
                 }
@@ -329,17 +416,14 @@ const parkingOptions = [
             }
         });
 
-        // Initial calculation - wait for charts to be ready
         const tryCalculate = () => {
             if (document.getElementById('chartPriceSize')) {
                 calculate();
             } else {
-                // Charts not ready yet, wait for them
                 document.addEventListener('charts-ready', () => calculate(), { once: true });
             }
         };
         
-        // Try immediately or wait a moment
         setTimeout(tryCalculate, 50);
     });
 </script>

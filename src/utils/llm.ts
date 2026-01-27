@@ -9,6 +9,7 @@ export interface DeepData {
   outdoorSpace: 'balcony' | 'yard' | 'rooftop' | 'none';
   condition: number; // 1 (Poor) to 5 (New/Reno)
   subArea?: string; // Optional because we prefer DOM extraction
+  assessment?: number; // Assessed Value (New)
 }
 
 /**
@@ -47,7 +48,8 @@ export async function extractDeepData(
       "isRainscreened": boolean (true if "rainscreened", "rain screen", or built > 2005),
       "outdoorSpace": "balcony" | "yard" | "rooftop" | "none",
       "condition": number (1-5 score: 1=Needs Work, 2=Original/Dated, 3=Average/Maintained, 4=Updated, 5=Brand New/Fully Reno),
-      "subArea": string (The specific neighborhood/sub-area name if explicit in text. Use "Other" if unclear.)
+      "subArea": string (The specific neighborhood/sub-area name if explicit in text. Use "Other" if unclear.),
+      "assessment": number | null (Look for "Assessed Value", "Assessment", "Tax Assessment". Return number only or null)
     }
   `;
 
@@ -94,6 +96,7 @@ function getDefaultDeepData(): DeepData {
     isRainscreened: false,
     outdoorSpace: 'none',
     condition: 3,
-    subArea: 'Other'
+    subArea: 'Other',
+    assessment: undefined
   };
 }

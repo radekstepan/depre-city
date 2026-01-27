@@ -2,7 +2,7 @@
 interface Props {
   id: string;
   label: string;
-  options: { label: string; value: string | number; meta?: number }[];
+  options: { label: string; value: string | number; meta?: string | number; metaClass?: string }[];
   placeholder?: string;
   initialValue?: string;
 }
@@ -50,8 +50,8 @@ const { id, label, options, placeholder = "Select...", initialValue } = Astro.pr
           >
             <span>{opt.label}</span>
             {opt.meta !== undefined && (
-              <span class={`text-xs font-mono ${opt.meta > 0 ? 'text-green-600' : (opt.meta < 0 ? 'text-red-500' : 'text-gray-400')}`}>
-                {opt.meta > 0 ? '+' : ''}{opt.meta.toLocaleString()}
+              <span class={`text-xs font-mono ${opt.metaClass || 'text-gray-400'}`}>
+                {opt.meta}
               </span>
             )}
           </li>

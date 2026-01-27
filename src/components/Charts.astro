@@ -25,25 +25,23 @@ const accuracyPoints = listings
     .filter(l => l.price > 100000 && l.sqft > 300)
     .map(l => {
         const age = currentYear - l.year;
-        
         const isDouble = l.parkingType === 'garage_double' ? 1 : 0;
         const isTandem = l.parkingType === 'garage_tandem' ? 1 : 0;
-        
         const locationStr = `${l.city} - ${l.subArea || 'Other'}`;
         const locCoef = model.areaCoefficients[locationStr] || 0;
-
         const isEnd = l.isEndUnit ? 1 : 0;
         const hasAC = l.hasAC ? 1 : 0;
         const baths = l.bathrooms || 1;
-        const fee = l.fee || 0;
+        const feePerSqft = l.sqft > 0 ? (l.fee || 0) / l.sqft : 0;
         const condition = l.condition || 3;
         const isRainscreen = l.rainscreen ? 1 : 0;
         
-        const predicted = model.intercept + 
+        // Log Linear Logic: Sum of coefs
+        const predictedLog = model.intercept + 
             (l.sqft * model.coefSqft) +
             (age * model.coefAge) +
             (baths * model.coefBath) +
-            (fee * model.coefFee) +
+            (feePerSqft * model.coefFee) +
             (condition * model.coefCondition) +
             (isRainscreen * model.coefRainscreen) +
             (hasAC * model.coefAC) +
@@ -51,6 +49,8 @@ const accuracyPoints = listings
             (isDouble * model.coefDoubleGarage) +
             (isTandem * model.coefTandemGarage) +
             locCoef;
+
+        const predicted = Math.exp(predictedLog);
 
         return {
             actual: l.price,
@@ -62,29 +62,42 @@ const accuracyPoints = listings
     });
 
 // 3. Prepare Feature Impact Data
+// For Log-Linear, we show the % impact or Dollar impact on the AVERAGE home price
+// This makes the chart readable.
+const avgPrice = marketPoints.reduce((sum, p) => sum + p.y, 0) / marketPoints.length || 900000;
+
 const areaPoints = Object.entries(model.areaCoefficients)
-    .map(([k, v]) => ({
-        label: k === model.areaReference ? `${k} (Baseline)` : k,
-        value: v,
-        isBaseline: k === model.areaReference,
-        tStat: model.tStats.areaCoefficients[k] || 0
-    }))
+    .map(([k, v]) => {
+        // Impact = AvgPrice * (e^v - 1)
+        const impact = avgPrice * (Math.exp(v) - 1);
+        return {
+            label: k === model.areaReference ? `${k} (Baseline)` : k,
+            value: impact,
+            isBaseline: k === model.areaReference,
+            tStat: model.tStats.areaCoefficients[k] || 0
+        };
+    })
     .sort((a, b) => b.value - a.value);
 
-// Extract Unique Cities for Filter
 const cities = [...new Set(Object.keys(model.areaCoefficients).map(k => k.split(' - ')[0]))].sort();
 const defaultCities = ['Coquitlam', 'Port Coquitlam', 'Port Moody'];
 
+// Helper to calc dollar impact of a dummy variable
+const calcImpact = (coef: number) => avgPrice * (Math.exp(coef) - 1);
+// For continuous vars (Age, Fee), show impact of "1 Unit" or "Standard Step"
+const calcLinearImpact = (coef: number, step: number) => avgPrice * (Math.exp(coef * step) - 1);
+
 const featurePoints = [
-    { label: 'Double Garage', value: model.coefDoubleGarage, tStat: model.tStats.coefDoubleGarage },
-    { label: 'Tandem Garage', value: model.coefTandemGarage, tStat: model.tStats.coefTandemGarage },
-    { label: 'End Unit', value: model.coefEndUnit, tStat: model.tStats.coefEndUnit },
-    { label: 'Air Con', value: model.coefAC, tStat: model.tStats.coefAC },
-    { label: 'Rainscreen', value: model.coefRainscreen, tStat: model.tStats.coefRainscreen },
-    { label: 'Extra Bath', value: model.coefBath, tStat: model.tStats.coefBath },
-    { label: 'Condition (+1)', value: model.coefCondition, tStat: model.tStats.coefCondition },
-    { label: 'Newer (10 Yrs)', value: model.coefAge * -10, tStat: model.tStats.coefAge },
-    { label: 'Lower Fee ($100)', value: model.coefFee * -100, tStat: model.tStats.coefFee },
+    { label: 'Double Garage', value: calcImpact(model.coefDoubleGarage), tStat: model.tStats.coefDoubleGarage },
+    { label: 'Tandem Garage', value: calcImpact(model.coefTandemGarage), tStat: model.tStats.coefTandemGarage },
+    { label: 'End Unit', value: calcImpact(model.coefEndUnit), tStat: model.tStats.coefEndUnit },
+    { label: 'Air Con', value: calcImpact(model.coefAC), tStat: model.tStats.coefAC },
+    { label: 'Rainscreen', value: calcImpact(model.coefRainscreen), tStat: model.tStats.coefRainscreen },
+    { label: 'Extra Bath', value: calcLinearImpact(model.coefBath, 1), tStat: model.tStats.coefBath },
+    { label: 'Condition (+1)', value: calcLinearImpact(model.coefCondition, 1), tStat: model.tStats.coefCondition },
+    { label: 'Newer (10 Yrs)', value: calcLinearImpact(model.coefAge, -10), tStat: model.tStats.coefAge },
+    // Fee per sqft is tiny, so let's normalize to a typical fee shift (e.g. +$0.10/sqft ~ +$150/mo on 1500sqft)
+    { label: 'Lower Fee', value: calcLinearImpact(model.coefFee, -0.10), tStat: model.tStats.coefFee },
 ].sort((a, b) => Math.abs(b.value) - Math.abs(a.value)); 
 ---
 
@@ -95,6 +108,7 @@ const featurePoints = [
                 <h2 class="text-2xl font-bold text-gray-900 font-serif">Market Analysis</h2>
                 <p class="text-sm text-gray-500 mt-1">
                     Model Confidence (R²): <strong class="text-amber-600">{(model.modelConfidence * 100).toFixed(1)}%</strong>.
+                    <span class="text-xs ml-2 px-2 py-0.5 bg-blue-50 text-blue-700 rounded-full">Log-Linear Regression</span>
                 </p>
             </div>
         </div>
@@ -104,7 +118,7 @@ const featurePoints = [
             <!-- Neighborhoods -->
             <div class="bg-gray-50/50 p-6 rounded-xl border border-gray-100">
                 <h3 class="text-sm font-bold text-gray-800 uppercase tracking-wide mb-2">Neighborhood Premiums ($)</h3>
-                <p class="text-xs text-gray-400 mb-4">Price impact relative to the baseline area ({model.areaReference}). <span class="text-emerald-600 font-medium">Green</span> is a premium, <span class="text-red-600 font-medium">red</span> is a discount.</p>
+                <p class="text-xs text-gray-400 mb-4">Estimated price impact on an average home (~${(avgPrice/1000).toFixed(0)}k) relative to {model.areaReference}.</p>
                 
                 <!-- City Filter -->
                 <div class="flex flex-wrap gap-2 mb-4" id="areaFilterContainer">
@@ -132,7 +146,7 @@ const featurePoints = [
             <!-- Features -->
             <div class="bg-gray-50/50 p-6 rounded-xl border border-gray-100">
                 <h3 class="text-sm font-bold text-gray-800 uppercase tracking-wide mb-2">Feature Values ($)</h3>
-                <p class="text-xs text-gray-400 mb-6">Estimated value of specific property attributes. Grey indicates low significance (t &lt; 1.65).</p>
+                <p class="text-xs text-gray-400 mb-6">Estimated value impact on an average home. Grey indicates low significance.</p>
                 <div class="relative h-[500px] w-full">
                     <canvas id="chartFeatures"></canvas>
                 </div>
@@ -287,7 +301,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const checkedCities = Array.from(document.querySelectorAll('.area-filter-checkbox:checked')).map(cb => cb.value);
         return areaPoints.filter(p => {
             const label = p.label; 
-            // Handle "City - SubArea" and "City - SubArea (Baseline)"
             const city = label.split(' - ')[0]; 
             return checkedCities.includes(city);
         });
