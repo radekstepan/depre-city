@@ -192,7 +192,6 @@ const parkingOptions = [
                     <!-- Range Display -->
                     <div class="mt-3 flex items-center group relative w-fit z-10">
                         <div class="flex items-center space-x-2 cursor-default">
-                            <div class="h-1.5 w-1.5 rounded-full bg-amber-500"></div>
                             <div class="text-sm text-gray-300 font-mono" id="outputRange">$0 — $0</div>
                         </div>
                     </div>
@@ -305,6 +304,48 @@ const parkingOptions = [
             return new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD', maximumFractionDigits: 0 }).format(num);
         }
 
+        // Helper function to update output with counting animation
+        function updateOutput(element, newValue, key, formatter = format, isPrice = false) {
+            const oldValue = previousValues[key];
+            
+            // If it's a number and we have a previous value, animate the counting
+            if (typeof newValue === 'number' && typeof oldValue === 'number' && oldValue !== 0 && Math.abs(newValue - oldValue) > 0.01) {
+                animateValue(element, oldValue, newValue, 600, formatter);
+                previousValues[key] = newValue;
+            } else {
+                // For strings or first-time values, just update directly
+                let formattedNew = typeof formatter === 'function' ? formatter(newValue) : newValue;
+                element.textContent = formattedNew;
+                previousValues[key] = newValue;
+            }
+        }
+        
+        // Animate counting from old value to new value
+        function animateValue(element, start, end, duration, formatter) {
+            const startTime = performance.now();
+            const diff = end - start;
+            
+            function update(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                
+                // Easing function for smooth animation (ease-out-cubic)
+                const easeProgress = 1 - Math.pow(1 - progress, 3);
+                
+                const current = start + (diff * easeProgress);
+                element.textContent = formatter(current);
+                
+                if (progress < 1) {
+                    requestAnimationFrame(update);
+                } else {
+                    // Ensure final value is exact
+                    element.textContent = formatter(end);
+                }
+            }
+            
+            requestAnimationFrame(update);
+        }
+
         // Helper: Calculate Price given specific overrides
         function predict(overrides = {}) {
             // Defaults
@@ -389,6 +430,23 @@ const parkingOptions = [
             }
         }
 
+        // Store previous values for diff display
+        let previousValues = {
+            price: 0,
+            range: '',
+            psqft: 0,
+            valAge: 0,
+            valFee: 0,
+            valTax: 0,
+            valAssessment: 0,
+            valBath: 0,
+            valBeds: 0,
+            valCondition: 0,
+            valParking: 0,
+            valFeatures: 0,
+            valLoc: 0
+        };
+
         function calculate() {
             // 1. Calculate Baseline Total
             const finalPrice = predict();
@@ -396,9 +454,8 @@ const parkingOptions = [
             const year = parseFloat(inputs.year.value) || CALCULATOR_DEFAULTS.year;
 
             // 2. Render Main Price
-            outputs.price.innerText = format(finalPrice);
-            outputs.psqft.innerText = format(finalPrice / area) + " / sqft";
-
+            updateOutput(outputs.price, finalPrice, 'price');
+            updateOutput(outputs.psqft, finalPrice / area, 'psqft', (val) => format(val) + " / sqft");
             // 3. Render Range (Log Scale Error)
             let lowerBound, upperBound;
             if (isLogLinear) {
@@ -412,7 +469,8 @@ const parkingOptions = [
                 lowerBound = finalPrice - (1.28 * stdError);
                 upperBound = finalPrice + (1.28 * stdError);
             }
-            outputs.range.innerText = `${format(lowerBound)} — ${format(upperBound)}`;
+            const rangeText = `${format(lowerBound)} — ${format(upperBound)}`;
+            updateOutput(outputs.range, rangeText, 'range', (val) => val);
 
             // 4. Calculate Component Values by Difference
             // To find the value of "Location", we compare Current Price vs Price if LocCoef was 0
@@ -428,13 +486,13 @@ const parkingOptions = [
             const pNoArea = finalPrice / Math.exp(parseFloat(inputs.areaCoef.value) || CALCULATOR_DEFAULTS.areaCoefVal); // Simplified inverse
             const valLoc = finalPrice - pNoArea;
             outputs.valLoc.className = valLoc >= 0 ? "text-green-400" : "text-red-400";
-            outputs.valLoc.innerText = (valLoc > 0 ? "+" : "") + format(valLoc);
+            updateOutput(outputs.valLoc, valLoc, 'valLoc', (val) => (val > 0 ? "+" : "") + format(val));
 
             // Age Impact (Compare to 0 age)
             const age = new Date().getFullYear() - year;
             const pNew = finalPrice / Math.exp(age * coefAge);
             const valAge = finalPrice - pNew;
-            outputs.valAge.innerText = format(valAge); // Usually negative
+            updateOutput(outputs.valAge, valAge, 'valAge'); // Usually negative
 
             // Condition (Compare to condition 3 baseline if desired, or 0)
             // Let's compare to Condition 1 (lowest) to show "Value added by condition"
@@ -442,19 +500,19 @@ const parkingOptions = [
             // Diff from Cond 1
             const pCond1 = finalPrice / Math.exp((cond - 1) * coefCondition);
             const valCond = finalPrice - pCond1;
-            outputs.valCondition.innerText = "+" + format(valCond);
+            updateOutput(outputs.valCondition, valCond, 'valCondition', (val) => "+" + format(val));
 
             // Baths (Value of EXTRA baths, e.g. above 1)
             const bath = parseFloat(inputs.bath.value) || CALCULATOR_DEFAULTS.bathrooms;
             const p1Bath = finalPrice / Math.exp((bath - 1) * coefBath);
             const valBath = finalPrice - p1Bath;
-            outputs.valBath.innerText = "+" + format(valBath);
+            updateOutput(outputs.valBath, valBath, 'valBath', (val) => "+" + format(val));
 
             // Bedrooms (Value of EXTRA bedrooms, e.g. above 2)
             const beds = parseFloat(inputs.beds.value) || CALCULATOR_DEFAULTS.bedrooms;
             const p2Beds = finalPrice / Math.exp((beds - 2) * coefBedrooms);
             const valBeds = finalPrice - p2Beds;
-            outputs.valBeds.innerText = "+" + format(valBeds);
+            updateOutput(outputs.valBeds, valBeds, 'valBeds', (val) => "+" + format(val));
 
             // Parking (Value vs Street + Extra Spots)
             const parkType = inputs.parking.value || CALCULATOR_DEFAULTS.parkingType;
@@ -466,7 +524,7 @@ const parkingOptions = [
             const totalParkingCoef = parkCoef + (extraParking * coefExtraParking);
             const pNoParking = finalPrice / Math.exp(totalParkingCoef);
             const valPark = finalPrice - pNoParking;
-            outputs.valParking.innerText = "+" + format(valPark);
+            updateOutput(outputs.valParking, valPark, 'valParking', (val) => "+" + format(val));
 
             // Amenities (End + AC + Rain)
             const isEnd = inputs.endUnit.checked ? 1 : 0;
@@ -475,7 +533,7 @@ const parkingOptions = [
             const amenitiesCoef = (isEnd * coefEndUnit) + (isAC * coefAC) + (isRain * coefRainscreen);
             const pNoAmenities = finalPrice / Math.exp(amenitiesCoef);
             const valAmenities = finalPrice - pNoAmenities;
-            outputs.valFeatures.innerText = "+" + format(valAmenities);
+            updateOutput(outputs.valFeatures, valAmenities, 'valFeatures', (val) => "+" + format(val));
 
             // Assessment Impact (Value vs baseline assessment)
             const assessment = parseFloat(inputs.assessment.value) || CALCULATOR_DEFAULTS.assessment;
@@ -485,7 +543,7 @@ const parkingOptions = [
             const pBaselineAssessment = finalPrice / Math.exp(assessmentCoef);
             const valAssessment = finalPrice - pBaselineAssessment;
             outputs.valAssessment.className = valAssessment >= 0 ? "text-green-400" : "text-red-400";
-            outputs.valAssessment.innerText = (valAssessment > 0 ? "+" : "") + format(valAssessment);
+            updateOutput(outputs.valAssessment, valAssessment, 'valAssessment', (val) => (val > 0 ? "+" : "") + format(val));
 
             // Tax Impact (Value vs $0 tax)
             const propertyTax = parseFloat(inputs.propertyTax.value) || CALCULATOR_DEFAULTS.propertyTax;
@@ -495,7 +553,7 @@ const parkingOptions = [
             const pNoTax = finalPrice / Math.exp(taxCoef);
             const valTax = finalPrice - pNoTax;
             outputs.valTax.className = valTax >= 0 ? "text-green-400" : "text-red-400";
-            outputs.valTax.innerText = format(valTax);
+            updateOutput(outputs.valTax, valTax, 'valTax');
 
             // Fee Impact (Financial Liability Deduction)
             // Each $1 in monthly fee reduces property value by ~$180 (capitalization factor)
@@ -503,7 +561,7 @@ const parkingOptions = [
             const fee = parseFloat(inputs.fee.value) || CALCULATOR_DEFAULTS.fee;
             const valFee = -fee * 180; // Capitalization factor: $1/mo ≈ $180 value
             outputs.valFee.className = valFee >= 0 ? "text-green-400" : "text-red-400";
-            outputs.valFee.innerText = format(valFee);
+            updateOutput(outputs.valFee, valFee, 'valFee');
 
             // Dispatch event for charts
             const event = new CustomEvent('deprecity:model-update', {
@@ -519,8 +577,27 @@ const parkingOptions = [
         // Attach Listeners
         Object.values(inputs).forEach(input => {
             if(input) {
-                input.addEventListener('input', calculate);
-                input.addEventListener('change', calculate);
+                const inputType = input.type;
+                
+                if (inputType === 'hidden') {
+                    // Hidden inputs (from SearchSelect) - calculate on change
+                    input.addEventListener('change', calculate);
+                } else if (inputType === 'number' || inputType === 'text') {
+                    // Number/text inputs - calculate on blur, Enter/Esc, or when arrows are used
+                    input.addEventListener('blur', calculate);
+                    input.addEventListener('change', calculate); // Fires when arrows are used
+                    input.addEventListener('keydown', (e) => {
+                        if (e.key === 'Enter' || e.key === 'Escape' || e.key === 'Tab') {
+                            calculate();
+                            if (e.key === 'Escape') {
+                                input.blur();
+                            }
+                        }
+                    });
+                } else {
+                    // For checkboxes, calculate immediately on change
+                    input.addEventListener('change', calculate);
+                }
             }
         });
 
@@ -535,3 +612,6 @@ const parkingOptions = [
         setTimeout(tryCalculate, 50);
     });
 </script>
+
+<style>
+</style>
