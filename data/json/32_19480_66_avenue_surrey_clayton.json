@@ -1,0 +1,42 @@
+{
+  "address": "Unit 32 - 19480 66 Avenue",
+  "city": "Surrey",
+  "sqft": 2025,
+  "year": 2010,
+  "price": 880000,
+  "listPrice": 899000,
+  "fee": 366,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3631,
+  "assessment": 870000,
+  "description": "The highly desirable Two Blue II! This bright and spacious end unit features a side-by-side double garage and a versatile floor plan. Nestled in the quietest and most private section of the complex, it offers a serene location with a sundeck overlooking picturesque walking trails and minutes away from the new Clayton Skytrain station. The home is filled with natural light thanks to its many windows and Southwest exposure. The charming kitchen boasts granite countertops and  New Stainless Steel appliances. Bonus: New High efficiency Furnace, All new appliances, New Carpet, New Garage Door Opener, Freshly painted & allows for 2 Pets (Cats or Dogs). Quick possession available!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Clayton Heights Secondary",
+      "rating": 4.5,
+      "distance": "1.6 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Katzie Elementary",
+      "rating": 3.9,
+      "distance": "0.7 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Clayton",
+  "soldDate": "2026-01-10",
+  "parkingType": "garage_double",
+  "levels": 2,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/32-19480-66-avenue/home/xmZRW7nPeRoYEBO9?id_listing=JKdOYrBG8zlY54lW",
+  "_scrapedAt": "2026-01-28T03:24:37.234Z",
+  "_rawFile": "32_19480_66_avenue_surrey_clayton.html"
+}

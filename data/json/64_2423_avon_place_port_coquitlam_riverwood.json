@@ -1,0 +1,42 @@
+{
+  "address": "Unit 64 - 2423 Avon Place",
+  "city": "Port Coquitlam",
+  "sqft": 1287,
+  "year": 2013,
+  "price": 845000,
+  "listPrice": 866000,
+  "fee": 332,
+  "bedrooms": 2,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 3385,
+  "assessment": 877000,
+  "description": "Welcome to Dominion by Mosaic! Nestled in the quiet, family-friendly Riverwood community of Port Coquitlam, this bright 2-bedroom + den townhome offers the flexibility to function as a 3-bedroom home. Tucked away from traffic yet just steps to Walmart, Save-On-Foods, Costco, and a variety of shops and restaurants, the location balances peace and convenience. Recent upgrades include a new hot water tank, new carpet, new washer & dryer, custom bedroom closet organizers, and sturdy garage organizers. A well-maintained home in a prime location—perfect for families. Book your private viewings today.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Blakeburn Elementary",
+      "rating": 6.5,
+      "distance": "0.5 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "0.8 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Riverwood",
+  "soldDate": "2025-11-17",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/64-2423-avon-place/home/dXawjy4GgoWYrR18/",
+  "_scrapedAt": "2026-01-28T03:28:01.738Z",
+  "_rawFile": "64_2423_avon_place_port_coquitlam_riverwood.html"
+}

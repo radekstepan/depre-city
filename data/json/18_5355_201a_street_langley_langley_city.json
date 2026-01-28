@@ -1,0 +1,42 @@
+{
+  "address": "Unit 18 - 5355 201a Street",
+  "city": "Langley",
+  "sqft": 1668,
+  "year": 2004,
+  "price": 715000,
+  "listPrice": 750000,
+  "fee": 466,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 2894,
+  "assessment": 754000,
+  "description": "Welcome to Unit 18 at Pacific Court — the largest end-unit townhome in the complex with 1,650+ sqft of living space. This 4-bed, 4-bath home features a newly renovated kitchen, brand-new flooring, and a bright, open main level. Upstairs offers well-appointed bedrooms, including a spacious primary suite. Enjoy the convenience of a double side-by-side garage for secure parking and storage. Centrally located just minutes to shops, schools, parks, transit, and a 10-minute walk to the future SkyTrain station. A rare find with room for the whole family.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Nicomekl Elementary",
+      "rating": 1.6,
+      "distance": "0.2 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Langley Secondary",
+      "rating": 1.4,
+      "distance": "2.6 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Langley City",
+  "soldDate": "2026-01-12",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/18-5355-201a-street/home/DnM697kOq9W7bmwe?id_listing=eVbOYEN56Dnyx2P0",
+  "_scrapedAt": "2026-01-28T03:24:52.082Z",
+  "_rawFile": "18_5355_201a_street_langley_langley_city.html"
+}

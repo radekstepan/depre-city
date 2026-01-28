@@ -1,0 +1,42 @@
+{
+  "address": "Unit 102 - 1570 Prairie Avenue",
+  "city": "Port Coquitlam",
+  "sqft": 954,
+  "year": 1996,
+  "price": 562500,
+  "listPrice": 585000,
+  "fee": 518,
+  "bedrooms": 2,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 1958,
+  "assessment": 527000,
+  "description": "Spacious 2-bedroom, 1.5-bathroom, two-level townhouse in excellent condition! Featuring 2 generously sized upstairs bedrooms. Ideally located in a central area, it offers quick access to shops, restaurants, grocery stores, transit options, & Highway 1 for easy commuting. The home includes a fenced patio w/ private street access, providing additional privacy & outdoor space for relaxing or entertaining. The complex features a lovely inner courtyard, secure underground parking, a bike room, & a storage room. Within walking distance, enjoy McLean Park, James Park Elementary, Save On Foods on Prairie, various dining options, banks, and more. Costco, Canadian Tire, & Walmart are nearby, w/ Terry Fox Secondary just a 3-minute drive away. This property is a must-see! OPEN HOUSE:Oct.19 (Sun) 2-4PM",
+  "features": [],
+  "schools": [
+    {
+      "name": "James Park Elementary",
+      "rating": 3.5,
+      "distance": "0.7 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "1.2 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Glenwood PQ",
+  "soldDate": "2025-10-22",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/102-1570-prairie-avenue/home/VgAaOyLEWgm7GxMb/",
+  "_scrapedAt": "2026-01-28T03:28:19.758Z",
+  "_rawFile": "102_1570_prairie_avenue_port_coquitlam_glenwood_pq.html"
+}

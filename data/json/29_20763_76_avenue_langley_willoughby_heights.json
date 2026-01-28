@@ -1,0 +1,42 @@
+{
+  "address": "Unit 29 - 20763 76 Avenue",
+  "city": "Langley",
+  "sqft": 2092,
+  "year": 2023,
+  "price": 1000000,
+  "listPrice": 999800,
+  "fee": 197,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3738,
+  "assessment": 1094000,
+  "description": "Welcome to Crofton! This bright end-unit townhome offers 4 beds, 4 baths, and 2,092 sq.ft. of high-quality construction and finishings. Enjoy NO GST and low strata fees of only $196.69! Main level features wide-plank laminate flooring, large windows, and a beautiful feature wall w/electric fireplace & built-ins. Chef-inspired kitchen includes two-tone shaker cabinets, a quartz waterfall island, LG stainless steel appliances, and a gas range. Perfect for entertaining! Upstairs, a huge luxurious primary bedroom with WIC and a spa-inspired ensuite w/double sinks, oversized glass shower, and soaker tub. Two additional bedrooms & full bath. Lower-level bedroom w/ensuite provides the perfect space for guests or office. Features central A/C, on-demand HW, a fenced yard, and a double garage!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "0.7 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.0 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-01-17",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/29-20763-76-avenue/home/bqB176WabJM3ZajD?id_listing=aD6p7801Gqw7wRQr",
+  "_scrapedAt": "2026-01-28T03:24:56.578Z",
+  "_rawFile": "29_20763_76_avenue_langley_willoughby_heights.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 5 - 19060 Ford Road",
+  "city": "Pitt Meadows",
+  "sqft": 1339,
+  "year": 1992,
+  "price": 643000,
+  "listPrice": 649900,
+  "fee": 367,
+  "bedrooms": 2,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 4102,
+  "assessment": 666700,
+  "description": "Sought-after rancher-style end unit in the popular Regency Court complex and close to all amenities. Spacious & open floor plan offering generous sized bedrooms including a primary bedroom with a large walk-in closet and 3 piece updated ensuite. Large kitchen with newer appliances, ample cabinet space and an eating area leading to a private West facing backyard with a covered wooden deck. Enjoy new flooring, updated gas fireplace, updated blinds, refreshed main bathroom and custom California Closets organizer. Separate laundry/storage room with newer washer/dryer and space for 2 cars with parking pad and single car garage. Well managed complex with clubhouse, minutes to schools, recreation and West Coast Express.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Pitt Meadows Elementary",
+      "rating": 4.3,
+      "distance": "0.4 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Pitt Meadows Secondary",
+      "rating": 3.6,
+      "distance": "1.2 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Central Meadows",
+  "soldDate": "2025-12-16",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/pitt-meadows-real-estate/5-19060-ford-road/home/aD6p7812xn43wRQr/",
+  "_scrapedAt": "2026-01-28T03:27:54.227Z",
+  "_rawFile": "5_19060_ford_road_pitt_meadows_central_meadows.html"
+}

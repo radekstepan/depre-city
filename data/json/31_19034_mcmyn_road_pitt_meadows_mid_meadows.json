@@ -1,0 +1,36 @@
+{
+  "address": "Unit 31 - 19034 Mcmyn Road",
+  "city": "Pitt Meadows",
+  "sqft": 1336,
+  "year": 1994,
+  "price": 610000,
+  "listPrice": 624900,
+  "fee": 393,
+  "bedrooms": 2,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 3820,
+  "assessment": 702000,
+  "description": "Welcome to this bright and spacious 2-bedroom, 2-bathroom townhome located in the sought-after family-friendly, pet-friendly community of Meadow Vale. This move-in-ready upper-floor unit features an open layout with a versatile bonus area and large 165 sq ft deck to catch the daytime sun. Conveniently located within walking distance to Meadowvale Shopping Centre, MacLean Park, Pitt Meadows Family Recreation Centre, and a variety of restaurants and services. Just a short drive to all levels of schools, with easy access to Lougheed Highway, Golden Ears Bridge and Westcoast Express. Bonus: includes extra vehicle/RV/boat parking and attached garage. Great home for upsizers, downsizers, or first time buyers with room to grow.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Pitt Meadows Secondary",
+      "rating": 3.6,
+      "distance": "1.9 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Mid Meadows",
+  "soldDate": "2025-10-10",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/pitt-meadows-real-estate/31-19034-mcmyn-road/home/4KAX7NOX2dO3eRPJ/",
+  "_scrapedAt": "2026-01-28T03:28:16.577Z",
+  "_rawFile": "31_19034_mcmyn_road_pitt_meadows_mid_meadows.html"
+}

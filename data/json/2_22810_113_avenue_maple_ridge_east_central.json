@@ -1,0 +1,42 @@
+{
+  "address": "Unit 2 - 22810 113 Avenue",
+  "city": "Maple Ridge",
+  "sqft": 1358,
+  "year": 2017,
+  "price": 695000,
+  "listPrice": 699000,
+  "fee": 362,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3816,
+  "assessment": 726000,
+  "description": "This family-friendly townhome is ideally located in central Maple Ridge. It offers quick access to Lougheed Highway and is just a 5-minute drive to the West Coast Express station, which makes for an easy downtown commute. Enjoy the rare comfort and convenience of three parking stalls, plus air conditioning, central vacuum, a natural gas furnace, and a gas cooktop-as well as a gas line on the balcony for effortless year-round barbecuing. The home backs onto a greenbelt, and the front faces the Fraser River for excellent privacy on both sides. Enjoy a fully fenced private yard in the back. Inside, you'll find high-quality appliances. Managed by a proactive strata, this home is a great find. OPEN HOUSE SAT & SUN 12-2 (JAN. 3 & 4)",
+  "features": [],
+  "schools": [
+    {
+      "name": "Thomas Haney Secondary",
+      "rating": 5.7,
+      "distance": "0.8 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Golden Ears Elementary",
+      "rating": 4.2,
+      "distance": "1.2 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "East Central",
+  "soldDate": "2026-01-14",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/2-22810-113-avenue/home/amgL7A4QRA2yZ1MW?id_listing=JKdOYrBGbebY54lW",
+  "_scrapedAt": "2026-01-28T03:24:47.140Z",
+  "_rawFile": "2_22810_113_avenue_maple_ridge_east_central.html"
+}

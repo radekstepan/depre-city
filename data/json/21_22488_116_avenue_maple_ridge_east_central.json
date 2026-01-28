@@ -1,0 +1,42 @@
+{
+  "address": "Unit 21 - 22488 116 Avenue",
+  "city": "Maple Ridge",
+  "sqft": 2259,
+  "year": 1991,
+  "price": 740000,
+  "listPrice": 764000,
+  "fee": 460,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 5045,
+  "assessment": 823000,
+  "description": "Discover exceptional comfort & convenience in this spacious 2,200+ sq. ft. townhouse, offering a thoughtful blend of style & functionality. Upstairs, you'll find three generous bedrooms, including a primary suite with its own ensuite bathroom, soaker tub & two way fireplace. The main level features an expansive living room, separate formal dining space & a large eat in kitchen with direct access to the back deck, creates an inviting space for gatherings. The full entertainer's basement is a standout, boasting a wet bar, a third gas fireplace, abundant storage, and a walk-out patio that extends your living space outdoors. A double garage, ample storage throughout, & quick access to the bypass, major shopping, schools, public transit, & the WCE make this home as practical it is welcoming.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Thomas Haney Secondary",
+      "rating": 5.7,
+      "distance": "1.4 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Eric Langton Elementary",
+      "rating": 5.3,
+      "distance": "1.3 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "East Central",
+  "soldDate": "2025-12-24",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/21-22488-116-avenue/home/bqB176WaG2a3ZajD?id_listing=mZRW7nWBzBd3EBO9",
+  "_scrapedAt": "2026-01-28T03:24:49.679Z",
+  "_rawFile": "21_22488_116_avenue_maple_ridge_east_central.html"
+}

@@ -1,0 +1,36 @@
+{
+  "address": "Unit 75 - 11757 236 Street",
+  "city": "Maple Ridge",
+  "sqft": 1596,
+  "year": 1996,
+  "price": 745000,
+  "listPrice": 749900,
+  "fee": 392,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 4651,
+  "assessment": 729000,
+  "description": "Gorgeous, family friendly 3 large bedrm, 2 den/office & 3 bath townhome at sought after Galliano complex! End unit with amazing huge yard space with turf, covered patio area for back yard family BBQ's & backing onto private greenbelt! Gorgeous professional kitchen overlooking the yard/greenbelt with tons of cupboard space, S/S appliances, granite counters with eat up peninsula plus large eating area with access to the patio/yard. Spacious living rm on main with newer gas fireplace, large den/office space + beautiful 2 pce bath with designer features. Upstairs offers new carpet, huge primary bdrm with walk in closet & 3pce ensuite with walk in shower, plus adjoining den & 2 more large bedrms + 4 pce bath! Quick possession possible! Don't miss out - Open house Sat/Sun, Jan 17/18 2-4!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Garibaldi Secondary",
+      "rating": 1.6,
+      "distance": "2.5 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Cottonwood MR",
+  "soldDate": "2026-01-15",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/75-11757-236th-street/home/BGMnKYqlzoB3w1Qr?id_listing=gAaOyL68OWe3GxMb",
+  "_scrapedAt": "2026-01-28T03:24:54.614Z",
+  "_rawFile": "75_11757_236_street_maple_ridge_cottonwood_mr.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 63 - 2422 Hawthorne Avenue",
+  "city": "Port Coquitlam",
+  "sqft": 1182,
+  "year": 1997,
+  "price": 690000,
+  "listPrice": 715000,
+  "fee": 394,
+  "bedrooms": 2,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 2560,
+  "assessment": 742000,
+  "description": "Corner Townhome Gem in Family/Pet Friendly, in Downtown Port Coquitlam! Spacious, well-maintained 2-bed, 2-bath, 1,182 sq ft home offers unbeatable walkability. Enjoy wood flooring throughout and an open-concept living area with gas fireplace. Large, bright, white kitchen has breakfast bar, S/S appliances, & pantry. The Primary BedRm accommodates King Bed & has a walk-in closet. 2nd BedRm also has a walk-in. Features include large private patio & 2-car tandem garage with storage. Walk to Community Parks, Multi-use trails, shops, dining, groceries. Family/Pet friendly complex in fantastic location. Excellent school catchment: Central Elementary, École Pitt River Community, and Riverside Secondary. This townhome offers space, style, & unbeatable walkability for easy family living!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Ecole Riverside Secondary",
+      "rating": 4.6,
+      "distance": "0.2 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Central Community Elementary School",
+      "rating": 2.2,
+      "distance": "0.4 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Central Pt Coquitlam",
+  "soldDate": "2025-11-29",
+  "parkingType": "garage_tandem",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/63-2422-hawthorne-avenue/home/0ZxwR7MXVdzyKabB/",
+  "_scrapedAt": "2026-01-28T03:27:56.844Z",
+  "_rawFile": "63_2422_hawthorne_avenue_port_coquitlam_central_pt_coquitlam.html"
+}

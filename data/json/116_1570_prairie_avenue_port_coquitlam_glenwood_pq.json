@@ -1,0 +1,42 @@
+{
+  "address": "Unit 116 - 1570 Prairie Avenue",
+  "city": "Port Coquitlam",
+  "sqft": 976,
+  "year": 1995,
+  "price": 575000,
+  "listPrice": 582000,
+  "fee": 518,
+  "bedrooms": 2,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 1962,
+  "assessment": 518000,
+  "description": "Welcome to VIOLAS at Glenwood. The ideal home for couples and young families. This bright 2 bed, 2 bath, 2-level townhome offers updated laminate flooring, newer stainless steel appliances, spacious bedrooms, and a generous patio perfect for summer BBQs. Centrally located in Port Coquitlam, just minutes from the Fremont Village Shopping Centre, SkyTrain, and Hyde Creek Rec Centre. Walk Score 80 with easy access to schools, Prairie Mall and the Shaughnessy shopping district. In James Park Elementary & Terry Fox Secondary catchments. Includes 1 parking + 1 storage, with extra parking available for rent. Pets welcome with no dog size restrictions. https://youtu.be/shgVw62Mc_A  Open House Sun Dec 14 2-4pm.",
+  "features": [],
+  "schools": [
+    {
+      "name": "James Park Elementary",
+      "rating": 3.5,
+      "distance": "0.7 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "1.1 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Glenwood PQ",
+  "soldDate": "2025-12-23",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/116-1570-prairie-avenue/home/xmZRW7nA4pMyEBO9/",
+  "_scrapedAt": "2026-01-28T03:27:51.072Z",
+  "_rawFile": "116_1570_prairie_avenue_port_coquitlam_glenwood_pq.html"
+}

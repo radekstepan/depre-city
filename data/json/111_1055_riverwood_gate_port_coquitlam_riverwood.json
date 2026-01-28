@@ -1,0 +1,42 @@
+{
+  "address": "Unit 111 - 1055 Riverwood Gate",
+  "city": "Port Coquitlam",
+  "sqft": 1331,
+  "year": 2003,
+  "price": 824950,
+  "listPrice": 849900,
+  "fee": 270,
+  "bedrooms": 2,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2868,
+  "assessment": 831000,
+  "description": "This Mountain View Estates 2 bed + 3 bath is a 2 level townhouse with 2 car tandem garage. Lots of room to customize and build more storage or extra bedroom. The kitchen is fully renovated and gorgeous. One of the nicest kitchens in the complex. The dining areas open to a private little backyard which is fully fenced. Upstairs is home to 2 good sized bedrooms with their own bathrooms as well as the stacking washer/dryer. South exposure on the front brings in lots of natural light but the back patio is on the cooler Northside. Minutes away from schools, scenic trails, golf course, and plenty of shopping options. The well-Maintained Complex built in 2004 and is in fantastic shape. The strata is well-managed with healthy contingency fund. Book your private showing today",
+  "features": [],
+  "schools": [
+    {
+      "name": "Blakeburn Elementary",
+      "rating": 6.5,
+      "distance": "0.2 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "0.5 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Riverwood",
+  "soldDate": "2025-11-12",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/111-1055-riverwood-gate/home/L4KAX7NBWvd7eRPJ/",
+  "_scrapedAt": "2026-01-28T03:28:05.700Z",
+  "_rawFile": "111_1055_riverwood_gate_port_coquitlam_riverwood.html"
+}

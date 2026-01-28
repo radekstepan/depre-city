@@ -1,0 +1,42 @@
+{
+  "address": "Unit 28 - 250 Casey Street",
+  "city": "Coquitlam",
+  "sqft": 1297,
+  "year": 1994,
+  "price": 660000,
+  "listPrice": 685000,
+  "fee": 578,
+  "bedrooms": 2,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2434,
+  "assessment": 712000,
+  "description": "LARGE 2 BEDROOM PLUS DEN move-in ready townhome walking distance to shopping and amenities. This home has been tastefully updated with a new stylish kitchen, laundry room and new flooring. The kitchen has all new cabinets, countertops, appliances, sink and fixtures. The living space is large and open with a cozy gas fireplace and opens to a fully covered private balcony. There is a bonus flex space on the main floor - perfect for a home office or kids play area! Upstairs you'll find 2 bedrooms, 2 bathrooms and a laundry room. The primary bedroom will easily fit your king size bed. The laundry room is fully renovated with full size side by side washer & dryer plus extra storage and clothes hanging space. There is a dedicated EV charger and 2 parking. Book a private showing.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Alderson Elementary",
+      "rating": 3.5,
+      "distance": "1.4 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Centennial Secondary School",
+      "rating": 3.4,
+      "distance": "1.5 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Maillardville",
+  "soldDate": "2025-11-25",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/28-250-casey-street/home/zVwod7vzbdG75mGN/",
+  "_scrapedAt": "2026-01-28T03:27:59.298Z",
+  "_rawFile": "28_250_casey_street_coquitlam_maillardville.html"
+}

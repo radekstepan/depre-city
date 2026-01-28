@@ -1,0 +1,36 @@
+{
+  "address": "Unit 108 - 12350 Harris Road",
+  "city": "Pitt Meadows",
+  "sqft": 1524,
+  "year": 2008,
+  "price": 705000,
+  "listPrice": 719900,
+  "fee": 541,
+  "bedrooms": 2,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3500,
+  "assessment": 732000,
+  "description": "Welcome to this beautifully updated townhouse in the heart of Pitt Meadows. New roof 2025 all paid for.  This spacious home features 2 bedrooms plus Den/Office & 2.5 baths with an open concept floorplan, 10 ft. ceilings and private ground floor entrance. The large entertainers kitchen boasts granite countertops, SIS appliances, and formal dining and living areas with new luxury vinyl plank flooring. The primary suite is its own sanctuary with a private balcony, with a large WI closet & large ensuite. This unit is situated on the quiet side of the building. Walking distance to great restaurants, groceries, Harris Park, West Coast Express, schools and more!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Pitt Meadows Secondary",
+      "rating": 3.6,
+      "distance": "1.5 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Mid Meadows",
+  "soldDate": "2025-10-27",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/pitt-meadows-real-estate/108-12350-harris-road/home/0J6Em7bpXOLYXBeq/",
+  "_scrapedAt": "2026-01-28T03:28:11.730Z",
+  "_rawFile": "108_12350_harris_road_pitt_meadows_mid_meadows.html"
+}

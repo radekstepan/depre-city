@@ -1,0 +1,42 @@
+{
+  "address": "Unit 1 - 21867 50 Avenue",
+  "city": "Langley",
+  "sqft": 1408,
+  "year": 2011,
+  "price": 760000,
+  "listPrice": 769900,
+  "fee": 342,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 2567,
+  "assessment": 783000,
+  "description": "New flooring, new paint, and ready to sell! The WINCHESTER at Murrayville is a prime location and we have an END UNIT up for sale. Langley Fundamental School, parks, tennis courts ,WC Blair, coffee shops and dining are all within walking distance. 1,408 square foot family home with 3 bathrooms and 4 bedrooms including primary with ensuite and big closet. Top floor laundry near all bedrooms! Main floor features open concept plan with a nice kitchen dividing the south facing living room and north side dining room. Ground floor entry front and back, garage parking, and the corner unit allows for a lot of natural light. Murrayville is home to RCMP detachment, airport, hospital, and school district offices. This is a great opportunity to move to a fantastic community.",
+  "features": [],
+  "schools": [
+    {
+      "name": "James Hill Elementary",
+      "rating": 5,
+      "distance": "1.2 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Langley Secondary",
+      "rating": 1.4,
+      "distance": "1.5 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Murrayville",
+  "soldDate": "2026-01-15",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/1-21867-50-avenue/home/BDO1w3WxKvdY8Jg0?id_listing=5VXv3l5XxwLYj2q8",
+  "_scrapedAt": "2026-01-28T03:24:42.102Z",
+  "_rawFile": "1_21867_50_avenue_langley_murrayville.html"
+}

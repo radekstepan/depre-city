@@ -1,0 +1,42 @@
+{
+  "address": "1116 O'flaherty Gate",
+  "city": "Port Coquitlam",
+  "sqft": 1681,
+  "year": 1993,
+  "price": 770000,
+  "listPrice": 799000,
+  "fee": 404,
+  "bedrooms": 2,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 2888,
+  "assessment": 817000,
+  "description": "Welcome to The Summit at Citadel Heights!The well kept 2BR & 2Bath home offers 1,681 sqft of elevated one-level living with incredible flow throughout.The expansive living room features oversized windows that light up the space with natural light.Gas fireplace adds a cozy ambiance in the living space.Large patio is perfect for your entertaining.Generous primary BR featuring an extra-large closet,and it's separated from the main living areas for privacy and comfort.A mudroom and laundry area are conveniently located on the lower level,mindfully separated from the main living spaces.Lots of storage are on both levels.Single garage plus extended driveway apron for a second vehicle parking.Schools:Castle Park Element(French Immersion),Citadel Mid,Riverside Second.Easy access to all main routs.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Castle Park Elementary",
+      "rating": 6.5,
+      "distance": "0.6 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Ecole Riverside Secondary",
+      "rating": 4.6,
+      "distance": "2.5 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Citadel PQ",
+  "soldDate": "2025-10-14",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/1116-o-flaherty-gate/home/gaQmD7zlqOOYJ9Bo/",
+  "_scrapedAt": "2026-01-28T03:28:14.121Z",
+  "_rawFile": "1116_o_flaherty_gate_port_coquitlam_citadel_pq.html"
+}

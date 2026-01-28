@@ -1,0 +1,42 @@
+{
+  "address": "Unit 32 - 102 Fraser Street",
+  "city": "Port Moody",
+  "sqft": 1287,
+  "year": 2007,
+  "price": 850000,
+  "listPrice": 899900,
+  "fee": 367,
+  "bedrooms": 2,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 3916,
+  "assessment": 1018000,
+  "description": "Welcome to Corbeau by Mosaic – one of Port Moody’s most sought-after communities! This bright and modern 2-bedroom, 2-bath end-unit townhome offers exceptional natural light, privacy, and a beautifully functional layout. The open-concept main level flows seamlessly from the stylish kitchen with stainless steel appliances into spacious living and dining areas, and out to your private walk-out patio and fully fenced yard — perfect for entertaining, relaxing, or letting kids and pets play. Tucked away in a serene, greenbelt setting surrounded by mature trees and meticulously landscaped grounds, this home feels like a retreat — just a short walk to the Evergreen SkyTrain, Newport Village, Rocky Point, and more. Enjoy true tranquility & connection in one of Port Moody’s most desirable locations",
+  "features": [],
+  "schools": [
+    {
+      "name": "Port Moody Secondary",
+      "rating": 7.5,
+      "distance": "2.9 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Baker Drive Elementary",
+      "rating": 5.3,
+      "distance": "0.8 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Port Moody Centre",
+  "soldDate": "2025-10-25",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-moody-real-estate/32-102-fraser-street/home/EeVbOYEn2jOyx2P0/",
+  "_scrapedAt": "2026-01-28T03:28:22.395Z",
+  "_rawFile": "32_102_fraser_street_port_moody_port_moody_centre.html"
+}

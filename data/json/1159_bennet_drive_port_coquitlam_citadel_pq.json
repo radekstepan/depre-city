@@ -1,0 +1,42 @@
+{
+  "address": "1159 Bennet Drive",
+  "city": "Port Coquitlam",
+  "sqft": 1800,
+  "year": 2007,
+  "price": 930000,
+  "listPrice": 959900,
+  "fee": 501,
+  "bedrooms": 2,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3350,
+  "assessment": 887000,
+  "description": "Welcome to The Summit, nestled in the highly sought-after Citadel neighborhood! This bright and spacious 4-bedroom, 3-bathroom townhome offers over 1,800 sq. ft. across three levels. The open-concept design features a maple kitchen with granite countertops and generous living areas ideal for entertaining. Soak in the breathtaking panoramic views of the mountains, river, and city skyline from multiple levels—truly a standout feature of this home. Located just minutes from major routes, shopping, restaurants, recreation, and schools. A must-see property in a prime location!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Castle Park Elementary",
+      "rating": 6.5,
+      "distance": "0.5 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Ecole Riverside Secondary",
+      "rating": 4.6,
+      "distance": "2.3 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Citadel PQ",
+  "soldDate": "2025-10-30",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/1159-bennet-drive/home/L5VXv3lkGqN7j2q8/",
+  "_scrapedAt": "2026-01-28T03:28:09.125Z",
+  "_rawFile": "1159_bennet_drive_port_coquitlam_citadel_pq.html"
+}
