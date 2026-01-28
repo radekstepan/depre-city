@@ -11,15 +11,16 @@ const { listings } = Astro.props;
 const listingsWithSoldDate = listings.filter(l => l.soldDate && l.price > 0 && l.sqft > 0);
 
 function getWeekBucket(dateStr: string): string {
-    const date = new Date(dateStr);
+    const [year, month, day] = dateStr.split('-').map(Number);
+    const date = new Date(year, month - 1, day);
     const startOfWeek = new Date(date);
     startOfWeek.setDate(date.getDate() - date.getDay());
     return startOfWeek.toISOString().split('T')[0];
 }
 
 function getMonthBucket(dateStr: string): string {
-    const date = new Date(dateStr);
-    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-01`;
+    const [year, month] = dateStr.split('-');
+    return `${year}-${month}-01`;
 }
 
 const bucketFn = getMonthBucket;
@@ -93,7 +94,22 @@ function calculateBucketStats(date: string, raw: { prices: number[], pricesPerSq
         const variance = values.reduce((a, b) => a + Math.pow(b - mean, 2), 0) / (values.length - 1);
         const sd = Math.sqrt(variance);
         const se = sd / Math.sqrt(values.length);
-        const margin = 1.96 * se; // 95% CI
+        
+        // Use approximate t-distribution value for small samples
+        // df = n - 1
+        const n = values.length;
+        let t = 1.96;
+        if (n <= 30) {
+            const tTable: Record<number, number> = {
+                2: 12.706, 3: 4.303, 4: 3.182, 5: 2.776, 
+                6: 2.571, 7: 2.447, 8: 2.365, 9: 2.306, 10: 2.262,
+                15: 2.145, 20: 2.086, 25: 2.060, 30: 2.042
+            };
+            const keys = Object.keys(tTable).map(Number).sort((a, b) => a - b);
+            t = tTable[n] || tTable[keys.find(k => k > n) || 30];
+        }
+        
+        const margin = t * se;
         return [mean - margin, mean + margin];
     };
 
@@ -220,7 +236,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const labels = sortedDates.map(d => {
-        const date = new Date(d);
+        const [year, month, day] = d.split('-').map(Number);
+        const date = new Date(year, month - 1, day);
         return date.toLocaleDateString('en-CA', { year: 'numeric', month: 'short' });
     });
 
@@ -293,7 +310,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 padding: 10,
                 cornerRadius: 6,
                 displayColors: false,
-                filter: (item) => item.dataset.label.startsWith('Selected City') || item.dataset.label === 'All Cities'
+                filter: (item) => item.dataset.label.startsWith('Selected City') || item.dataset.label === 'All Cities' || item.dataset.label.startsWith('Sales')
             }
         },
         scales: {
@@ -315,6 +332,7 @@ document.addEventListener('DOMContentLoaded', () => {
         data: {
             labels: labels,
             datasets: [{
+                label: 'Sales',
                 data: allCitiesTrendData.map(d => d.count),
                 backgroundColor: '#f59e0b',
                 borderRadius: 3,
@@ -519,6 +537,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateCharts(city) {
         const { data, isAllCities } = getDataForCity(city);
 
+        chartVolume.data.datasets[0].label = isAllCities ? 'Sales' : `Sales (${city})`;
         chartVolume.data.datasets[0].data = data.map(d => d.count);
         chartVolume.update();
 
