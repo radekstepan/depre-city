@@ -1,0 +1,560 @@
+---
+import type { Listing } from '../utils/analysis';
+import SearchSelect from './SearchSelect.astro';
+
+interface Props {
+    listings: Listing[];
+}
+
+const { listings } = Astro.props;
+
+const listingsWithSoldDate = listings.filter(l => l.soldDate && l.price > 0 && l.sqft > 0);
+
+function getWeekBucket(dateStr: string): string {
+    const date = new Date(dateStr);
+    const startOfWeek = new Date(date);
+    startOfWeek.setDate(date.getDate() - date.getDay());
+    return startOfWeek.toISOString().split('T')[0];
+}
+
+function getMonthBucket(dateStr: string): string {
+    const date = new Date(dateStr);
+    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-01`;
+}
+
+const bucketFn = getMonthBucket;
+const bucketLabel = 'Monthly';
+
+const allCities = [...new Set(listingsWithSoldDate.map(l => l.city))].sort();
+
+interface TrendBucket {
+    date: string;
+    count: number;
+    avgPrice: number | null;
+    avgPricePerSqft: number | null;
+    avgPctAboveAsking: number | null;
+    totalPctAboveAsking: number;
+    ciPricePerSqft: [number | null, number | null];
+    ciPctAboveAsking: [number | null, number | null];
+}
+
+const allTrendsRaw = new Map<string, { prices: number[], pricesPerSqft: number[], pcts: number[] }>();
+const cityTrendsRaw = new Map<string, Map<string, { prices: number[], pricesPerSqft: number[], pcts: number[] }>>();
+
+listingsWithSoldDate.forEach(l => {
+    const bucket = bucketFn(l.soldDate!);
+    const city = l.city;
+    const pricePerSqft = l.price! / l.sqft!;
+    const pctAboveAsking = l.listPrice ? ((l.price! - l.listPrice) / l.listPrice) * 100 : 0;
+
+    if (!allTrendsRaw.has(bucket)) {
+        allTrendsRaw.set(bucket, { prices: [], pricesPerSqft: [], pcts: [] });
+    }
+    const allRaw = allTrendsRaw.get(bucket)!;
+    allRaw.prices.push(l.price!);
+    allRaw.pricesPerSqft.push(pricePerSqft);
+    allRaw.pcts.push(pctAboveAsking);
+
+    if (!cityTrendsRaw.has(city)) {
+        cityTrendsRaw.set(city, new Map());
+    }
+    const cityMap = cityTrendsRaw.get(city)!;
+    if (!cityMap.has(bucket)) {
+        cityMap.set(bucket, { prices: [], pricesPerSqft: [], pcts: [] });
+    }
+    const cityRaw = cityMap.get(bucket)!;
+    cityRaw.prices.push(l.price!);
+    cityRaw.pricesPerSqft.push(pricePerSqft);
+    cityRaw.pcts.push(pctAboveAsking);
+});
+
+function calculateBucketStats(date: string, raw: { prices: number[], pricesPerSqft: number[], pcts: number[] }): TrendBucket {
+    const count = raw.prices.length;
+    
+    if (count === 0) {
+        return {
+            date,
+            count: 0,
+            avgPrice: null,
+            avgPricePerSqft: null,
+            avgPctAboveAsking: null,
+            totalPctAboveAsking: 0,
+            ciPricePerSqft: [null, null],
+            ciPctAboveAsking: [null, null]
+        };
+    }
+
+    const avgPrice = raw.prices.reduce((a, b) => a + b, 0) / count;
+    const avgPricePerSqft = raw.pricesPerSqft.reduce((a, b) => a + b, 0) / count;
+    const avgPctAboveAsking = raw.pcts.reduce((a, b) => a + b, 0) / count;
+
+    const getCI = (values: number[], mean: number): [number | null, number | null] => {
+        if (values.length < 2) return [null, null];
+        const variance = values.reduce((a, b) => a + Math.pow(b - mean, 2), 0) / (values.length - 1);
+        const sd = Math.sqrt(variance);
+        const se = sd / Math.sqrt(values.length);
+        const margin = 1.96 * se; // 95% CI
+        return [mean - margin, mean + margin];
+    };
+
+    return {
+        date,
+        count,
+        avgPrice,
+        avgPricePerSqft,
+        avgPctAboveAsking,
+        totalPctAboveAsking: raw.pcts.reduce((a, b) => a + b, 0),
+        ciPricePerSqft: getCI(raw.pricesPerSqft, avgPricePerSqft),
+        ciPctAboveAsking: getCI(raw.pcts, avgPctAboveAsking)
+    };
+}
+
+const allTrendsMap = new Map<string, TrendBucket>();
+allTrendsRaw.forEach((raw, bucket) => {
+    allTrendsMap.set(bucket, calculateBucketStats(bucket, raw));
+});
+
+const cityTrendsMap = new Map<string, TrendBucket[]>();
+cityTrendsRaw.forEach((bucketsMap, city) => {
+    const sortedBuckets = [...bucketsMap.entries()]
+        .sort(([a], [b]) => a.localeCompare(b))
+        .map(([date, raw]) => calculateBucketStats(date, raw));
+    cityTrendsMap.set(city, sortedBuckets);
+});
+
+const sortedDates = [...allTrendsMap.keys()].sort();
+const allCitiesTrendData = sortedDates.map(date => allTrendsMap.get(date)!);
+
+const cityCounts = allCities.reduce((acc, city) => {
+    acc[city] = listingsWithSoldDate.filter(l => l.city === city).length;
+    return acc;
+}, {});
+
+const cityOptions = [
+    { label: 'All Cities', value: 'all', meta: listingsWithSoldDate.length, metaClass: 'text-gray-500' },
+    ...allCities.map(c => ({ label: c, value: c, meta: cityCounts[c], metaClass: 'text-amber-600 font-mono' }))
+];
+
+const cityTrendsObject = Object.fromEntries(cityTrendsMap);
+---
+
+<section class="py-12 bg-white border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 md:px-6">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 font-serif">Market Trends</h2>
+            <p class="text-sm text-gray-500 mt-1">
+                Sales trends over time based on <strong class="text-amber-600">soldDate</strong> data.
+                <span class="text-xs ml-2 px-2 py-0.5 bg-amber-50 text-amber-700 rounded-full">{bucketLabel} Buckets</span>
+            </p>
+        </div>
+
+        <div class="bg-gray-50/50 p-6 rounded-xl border border-gray-100">
+            <div class="flex flex-wrap items-center justify-between mb-6 gap-4">
+                <div>
+                    <h3 class="text-sm font-bold text-gray-800 uppercase tracking-wide">City Filter</h3>
+                    <p class="text-xs text-gray-400 mt-1">Select a city to filter all charts</p>
+                </div>
+                <div class="w-56">
+                    <SearchSelect
+                        id="citySelect"
+                        label="City"
+                        options={cityOptions}
+                        placeholder="All Cities"
+                        initialValue="all"
+                    />
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
+                    <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wide mb-4 text-center">Sales Volume</h4>
+                    <div class="relative h-56 w-full">
+                        <canvas id="chartVolume"></canvas>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
+                    <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wide mb-4 text-center">% Above Asking</h4>
+                    <div class="relative h-56 w-full">
+                        <canvas id="chartPrice"></canvas>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
+                    <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wide mb-4 text-center">Avg $/Sqft Trend</h4>
+                    <div class="relative h-56 w-full">
+                        <canvas id="chartPricePerSqft"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script define:vars={{ allCitiesTrendData, cityOptions, allCities, cityTrendsObject, sortedDates }}>
+document.addEventListener('DOMContentLoaded', () => {
+    const cityInput = document.querySelector('#citySelect.value-input');
+
+    function getDataForCity(city) {
+        if (city === 'all') {
+            return { data: allCitiesTrendData.map(d => ({
+                ...d,
+                ciPricePerSqft: d.count < 2 ? [null, null] : d.ciPricePerSqft,
+                ciPctAboveAsking: d.count < 2 ? [null, null] : d.ciPctAboveAsking
+            })), isAllCities: true };
+        }
+        const buckets = cityTrendsObject[city] || [];
+        const data = sortedDates.map(date => {
+            const found = buckets.find(b => b.date === date);
+            return found || { 
+                date, 
+                count: 0, 
+                avgPrice: null, 
+                avgPricePerSqft: null, 
+                avgPctAboveAsking: null,
+                ciPricePerSqft: [null, null],
+                ciPctAboveAsking: [null, null]
+            };
+        });
+        return { data, isAllCities: false };
+    }
+
+    const labels = sortedDates.map(d => {
+        const date = new Date(d);
+        return date.toLocaleDateString('en-CA', { year: 'numeric', month: 'short' });
+    });
+
+    const dashedLineLabelPlugin = {
+        id: 'dashedLineLabel',
+        afterDatasetsDraw(chart) {
+            const { ctx } = chart;
+            
+            const findLastPoint = (index) => {
+                const meta = chart.getDatasetMeta(index);
+                const data = chart.data.datasets[index].data;
+                for (let i = data.length - 1; i >= 0; i--) {
+                    if (data[i] !== null && meta.data[i] && !meta.data[i].skip) return meta.data[i];
+                }
+                return null;
+            };
+
+            // 1. Label for the dashed reference line ("All Cities") - index 3
+            const refDataset = chart.data.datasets[3];
+            if (refDataset && !refDataset.hidden) {
+                const lastPoint = findLastPoint(3);
+                if (lastPoint) {
+                    ctx.save();
+                    ctx.fillStyle = '#9ca3af';
+                    ctx.font = 'bold 9px Inter';
+                    ctx.textAlign = 'left';
+                    ctx.textBaseline = 'middle';
+                    ctx.fillText('All Cities', lastPoint.x + 8, lastPoint.y);
+                    ctx.restore();
+                }
+            }
+
+            // 2. Label for the main trend line - index 0
+            const mainDataset = chart.data.datasets[0];
+            if (mainDataset && !mainDataset.hidden) {
+                const lastPoint = findLastPoint(0);
+                if (lastPoint) {
+                    ctx.save();
+                    ctx.fillStyle = '#d97706';
+                    ctx.font = 'bold 9px Inter';
+                    ctx.textAlign = 'left';
+                    ctx.textBaseline = 'middle';
+                    // Only label "Selected" if the "All Cities" reference line is also visible
+                    const label = (refDataset && !refDataset.hidden) ? 'Selected' : 'All Cities';
+                    ctx.fillText(label, lastPoint.x + 8, lastPoint.y);
+                    ctx.restore();
+                }
+            }
+        }
+    };
+
+    const chartOptions = {
+        responsive: true,
+        maintainAspectRatio: false,
+        layout: {
+            padding: {
+                right: 48
+            }
+        },
+        animation: {
+            duration: 500,
+            easing: 'easeOutQuart'
+        },
+        plugins: {
+            legend: { display: false },
+            tooltip: {
+                backgroundColor: 'rgba(17, 24, 39, 1)',
+                titleFont: { family: 'Inter', size: 12, weight: '600' },
+                bodyFont: { family: 'Inter', size: 11 },
+                padding: 10,
+                cornerRadius: 6,
+                displayColors: false,
+                filter: (item) => item.dataset.label.startsWith('Selected City') || item.dataset.label === 'All Cities'
+            }
+        },
+        scales: {
+            y: {
+                beginAtZero: true,
+                grid: { color: '#f3f4f6', drawBorder: false },
+                ticks: { font: { size: 10, family: 'Inter' }, color: '#9ca3af' }
+            },
+            x: {
+                grid: { display: false },
+                ticks: { font: { size: 10, family: 'Inter' }, color: '#9ca3af', maxTicksLimit: 8 }
+            }
+        }
+    };
+
+    const ctxVolume = document.getElementById('chartVolume').getContext('2d');
+    const chartVolume = new Chart(ctxVolume, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                data: allCitiesTrendData.map(d => d.count),
+                backgroundColor: '#f59e0b',
+                borderRadius: 3,
+                barThickness: 12
+            }]
+        },
+        options: {
+            ...chartOptions,
+            scales: {
+                ...chartOptions.scales,
+                y: {
+                    ...chartOptions.scales.y,
+                    ticks: {
+                        ...chartOptions.scales.y.ticks,
+                        callback: (val) => Math.round(val)
+                    }
+                }
+            }
+        }
+    });
+
+    const ctxPrice = document.getElementById('chartPrice').getContext('2d');
+    const chartPrice = new Chart(ctxPrice, {
+        type: 'line',
+        plugins: [dashedLineLabelPlugin],
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Selected City',
+                data: allCitiesTrendData.map(d => d.avgPctAboveAsking),
+                borderColor: '#d97706',
+                backgroundColor: 'transparent',
+                fill: false,
+                tension: 0.3,
+                pointRadius: 2,
+                pointHoverRadius: 5,
+                borderWidth: 2,
+                zIndex: 10
+            }, {
+                label: 'City CI Upper',
+                data: allCitiesTrendData.map(d => d.ciPctAboveAsking[1]),
+                borderColor: 'transparent',
+                backgroundColor: 'rgba(217, 119, 6, 0.1)',
+                fill: 2,
+                pointRadius: 0,
+                tension: 0.3,
+                zIndex: 5
+            }, {
+                label: 'City CI Lower',
+                data: allCitiesTrendData.map(d => d.ciPctAboveAsking[0]),
+                borderColor: 'transparent',
+                backgroundColor: 'transparent',
+                fill: false,
+                pointRadius: 0,
+                tension: 0.3,
+                zIndex: 5
+            }, {
+                label: 'All Cities',
+                data: allCitiesTrendData.map(d => d.avgPctAboveAsking),
+                borderColor: '#d1d5db',
+                backgroundColor: 'transparent',
+                borderDash: [5, 5],
+                fill: false,
+                tension: 0.3,
+                pointRadius: 0,
+                borderWidth: 2,
+                hidden: true,
+                zIndex: 8
+            }, {
+                label: 'All CI Upper',
+                data: allCitiesTrendData.map(d => d.ciPctAboveAsking[1]),
+                borderColor: 'transparent',
+                backgroundColor: 'rgba(209, 213, 219, 0.2)',
+                fill: 5,
+                pointRadius: 0,
+                tension: 0.3,
+                hidden: true,
+                zIndex: 1
+            }, {
+                label: 'All CI Lower',
+                data: allCitiesTrendData.map(d => d.ciPctAboveAsking[0]),
+                borderColor: 'transparent',
+                backgroundColor: 'transparent',
+                fill: false,
+                pointRadius: 0,
+                tension: 0.3,
+                hidden: true,
+                zIndex: 1
+            }]
+        },
+        options: {
+            ...chartOptions,
+            plugins: {
+                ...chartOptions.plugins,
+                legend: { 
+                    display: false
+                }
+            },
+            elements: { point: { backgroundColor: '#d97706' } },
+            scales: {
+                ...chartOptions.scales,
+                y: {
+                    ...chartOptions.scales.y,
+                    ticks: {
+                        ...chartOptions.scales.y.ticks,
+                        callback: (val) => (val > 0 ? '+' : '') + val.toFixed(1) + '%'
+                    }
+                }
+            }
+        }
+    });
+
+    const ctxPricePerSqft = document.getElementById('chartPricePerSqft').getContext('2d');
+    const chartPricePerSqft = new Chart(ctxPricePerSqft, {
+        type: 'line',
+        plugins: [dashedLineLabelPlugin],
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Selected City',
+                data: allCitiesTrendData.map(d => d.avgPricePerSqft),
+                borderColor: '#d97706',
+                backgroundColor: 'transparent',
+                fill: false,
+                tension: 0.3,
+                pointRadius: 2,
+                pointHoverRadius: 5,
+                borderWidth: 2,
+                zIndex: 10
+            }, {
+                label: 'City CI Upper',
+                data: allCitiesTrendData.map(d => d.ciPricePerSqft[1]),
+                borderColor: 'transparent',
+                backgroundColor: 'rgba(217, 119, 6, 0.1)',
+                fill: 2,
+                pointRadius: 0,
+                tension: 0.3,
+                zIndex: 5
+            }, {
+                label: 'City CI Lower',
+                data: allCitiesTrendData.map(d => d.ciPricePerSqft[0]),
+                borderColor: 'transparent',
+                backgroundColor: 'transparent',
+                fill: false,
+                pointRadius: 0,
+                tension: 0.3,
+                zIndex: 5
+            }, {
+                label: 'All Cities',
+                data: allCitiesTrendData.map(d => d.avgPricePerSqft),
+                borderColor: '#d1d5db',
+                backgroundColor: 'transparent',
+                borderDash: [5, 5],
+                fill: false,
+                tension: 0.3,
+                pointRadius: 0,
+                borderWidth: 2,
+                hidden: true,
+                zIndex: 8
+            }, {
+                label: 'All CI Upper',
+                data: allCitiesTrendData.map(d => d.ciPricePerSqft[1]),
+                borderColor: 'transparent',
+                backgroundColor: 'rgba(209, 213, 219, 0.2)',
+                fill: 5,
+                pointRadius: 0,
+                tension: 0.3,
+                hidden: true,
+                zIndex: 1
+            }, {
+                label: 'All CI Lower',
+                data: allCitiesTrendData.map(d => d.ciPricePerSqft[0]),
+                borderColor: 'transparent',
+                backgroundColor: 'transparent',
+                fill: false,
+                pointRadius: 0,
+                tension: 0.3,
+                hidden: true,
+                zIndex: 1
+            }]
+        },
+        options: {
+            ...chartOptions,
+            plugins: {
+                ...chartOptions.plugins,
+                legend: { display: false }
+            },
+            elements: { point: { backgroundColor: '#d97706' } },
+            scales: {
+                ...chartOptions.scales,
+                y: {
+                    ...chartOptions.scales.y,
+                    ticks: {
+                        ...chartOptions.scales.y.ticks,
+                        callback: (val) => '$' + val.toFixed(0)
+                    }
+                }
+            }
+        }
+    });
+
+    function updateCharts(city) {
+        const { data, isAllCities } = getDataForCity(city);
+
+        chartVolume.data.datasets[0].data = data.map(d => d.count);
+        chartVolume.update();
+
+        // Label update for "Selected City"
+        chartPrice.data.datasets[0].label = isAllCities ? 'All Cities' : `Selected City (${city})`;
+        chartPrice.data.datasets[0].data = data.map(d => d.avgPctAboveAsking);
+        chartPrice.data.datasets[1].data = data.map(d => d.ciPctAboveAsking[1]);
+        chartPrice.data.datasets[2].data = data.map(d => d.ciPctAboveAsking[0]);
+        
+        // Target (Dotted) remains "All Cities" for comparison
+        chartPrice.data.datasets[3].data = allCitiesTrendData.map(d => d.avgPctAboveAsking);
+        chartPrice.data.datasets[3].hidden = isAllCities;
+        chartPrice.data.datasets[4].data = allCitiesTrendData.map(d => d.ciPctAboveAsking[1]);
+        chartPrice.data.datasets[4].hidden = isAllCities;
+        chartPrice.data.datasets[5].data = allCitiesTrendData.map(d => d.ciPctAboveAsking[0]);
+        chartPrice.data.datasets[5].hidden = isAllCities;
+        chartPrice.update();
+
+        chartPricePerSqft.data.datasets[0].label = isAllCities ? 'All Cities' : `Selected City (${city})`;
+        chartPricePerSqft.data.datasets[0].data = data.map(d => d.avgPricePerSqft);
+        chartPricePerSqft.data.datasets[1].data = data.map(d => d.ciPricePerSqft[1]);
+        chartPricePerSqft.data.datasets[2].data = data.map(d => d.ciPricePerSqft[0]);
+        
+        chartPricePerSqft.data.datasets[3].data = allCitiesTrendData.map(d => d.avgPricePerSqft);
+        chartPricePerSqft.data.datasets[3].hidden = isAllCities;
+        chartPricePerSqft.data.datasets[4].data = allCitiesTrendData.map(d => d.ciPricePerSqft[1]);
+        chartPricePerSqft.data.datasets[4].hidden = isAllCities;
+        chartPricePerSqft.data.datasets[5].data = allCitiesTrendData.map(d => d.ciPricePerSqft[0]);
+        chartPricePerSqft.data.datasets[5].hidden = isAllCities;
+        chartPricePerSqft.update();
+    }
+
+    cityInput.addEventListener('change', (e) => {
+        updateCharts(e.target.value);
+    });
+
+    document.dispatchEvent(new Event('trends-ready'));
+});
+</script>

@@ -21,6 +21,7 @@ export interface Listing extends Partial<DeepData> {
     assessment?: number; // New field
     propertyTax?: number; // Annual property tax
     schools?: { name: string, rating: number, type: string, distance: string }[];
+    soldDate?: string; // ISO date YYYY-MM-DD
 }
 
 export interface MarketModel {
