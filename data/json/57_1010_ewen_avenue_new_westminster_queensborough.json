@@ -1,0 +1,42 @@
+{
+  "address": "Unit 57 - 1010 Ewen Avenue",
+  "city": "New Westminster",
+  "sqft": 1639,
+  "year": 2005,
+  "price": 928000,
+  "listPrice": 938888,
+  "fee": 482,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4268,
+  "assessment": 985000,
+  "description": "Welcome to this beautifully updated 3-bedroom, 3-bathroom townhome with approximately 1,700 sq. ft. of bright, spacious living in a sought-after Queensboro location. Extensive upgrades include a remodeled kitchen with custom cabinetry and granite countertops, updated laminate and tile flooring, fresh paint, and custom dining room storage. Bathrooms feature a renovated full bath and updated ensuite with new fixtures, vanities, and shower door. Additional improvements include a his-and-hers primary closet, recessed lighting, new appliances, hot water tank, and a brand-new roof. Close to Costco, Walmart, shopping, and transit, this move-in-ready home offers modern upgrades and a prime location.",
+  "features": [],
+  "schools": [
+    {
+      "name": "New Westminster Secondary",
+      "rating": 6.7,
+      "distance": "3.6 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Queen Elizabeth Elementary",
+      "rating": 5.7,
+      "distance": "0.2 km",
+      "type": "0-4"
+    }
+  ],
+  "subArea": "Queensborough",
+  "soldDate": "2026-01-13",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/new-westminster-real-estate/57-1010-ewen-avenue/home/5xLkv3Vjene3DBNr?id_listing=10QqypGNgg6YLGlV",
+  "_scrapedAt": "2026-02-07T16:13:41.154Z",
+  "_rawFile": "57_1010_ewen_avenue_new_westminster_queensborough.html"
+}

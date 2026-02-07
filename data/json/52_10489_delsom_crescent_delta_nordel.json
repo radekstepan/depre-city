@@ -1,0 +1,42 @@
+{
+  "address": "Unit 52 - 10489 Delsom Crescent",
+  "city": "Delta",
+  "sqft": 1400,
+  "year": 2011,
+  "price": 840000,
+  "listPrice": 875000,
+  "fee": 344,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3087,
+  "assessment": 828000,
+  "description": "COURTYARD VIEWS & SHOWROOM CONDITION - Welcome to Eclipse at Sunstone, built by renowned developer Polygon. This beautifully maintained three bedroom townhouse features a large picture window overlooking the courtyard, filling the home with natural light. The refreshed kitchen with white cabinetry is complemented by fresh flooring that blends seamlessly and enhances the nine foot ceilings, creating an airy and bright atmosphere. Pride of ownership is evident throughout and the home truly shows like a showroom. Owners also enjoy access to the 12,000 square foot Sunstone Club with a gym, party room, theater and more. Call for your private showing. OPEN HOUSE: Sat, Jan 10th 2-4pm.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Gray Elementary",
+      "rating": 4.6,
+      "distance": "1.0 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Sands Secondary",
+      "rating": 3.8,
+      "distance": "0.7 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Nordel",
+  "soldDate": "2026-01-22",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/delta-real-estate/52-10489-delsom-crescent/home/EeVbOYE8K4n3x2P0?id_listing=Vwod7vWrwv835mGN",
+  "_scrapedAt": "2026-02-07T16:15:39.874Z",
+  "_rawFile": "52_10489_delsom_crescent_delta_nordel.html"
+}

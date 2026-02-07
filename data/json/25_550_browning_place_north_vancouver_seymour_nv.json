@@ -1,0 +1,42 @@
+{
+  "address": "Unit 25 - 550 Browning Place",
+  "city": "North Vancouver",
+  "sqft": 1567,
+  "year": 2006,
+  "price": 1385000,
+  "listPrice": 1399000,
+  "fee": 418,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 5267,
+  "assessment": 1368000,
+  "description": "PRIME SEYMOUR LOCATION! Welcome to this stunning townhome in highly sought-after family-friendly, quiet complex! Experience house-sized living w/ exceptionally spacious living rm, dining rm & gourmet kitchen feat gorgeous stone counters + premium SS appliances - perfect for family gatherings and entertaining! This home is smart home tech enabled incl range/stove, thermostats & LED lighting. Bonus: NEW ROOF 2023! Unbeatable location steps to shopping, transit, world-class hiking/biking trails, golf courses + excellent schools (Seymour Heights Elementary, Windsor Secondary, Cap University). Includes XL 2 car tandem garage parking. EV charging ready, lots of storage, & laundry on the top floor. This rarely available spacious gem won't last long! OPEN HOUSE: SATURDAY JAN 10th, 2-4PM",
+  "features": [],
+  "schools": [
+    {
+      "name": "Windsor Secondary",
+      "rating": 6.7,
+      "distance": "0.7 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Seymour Heights Elementary",
+      "rating": 5.1,
+      "distance": "0.9 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Seymour NV",
+  "soldDate": "2026-01-19",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/25-550-browning-place/home/oK8OgYBnpBXYJmG2?id_listing=1DBW7RrDlOQ7qlAp",
+  "_scrapedAt": "2026-02-07T16:12:29.983Z",
+  "_rawFile": "25_550_browning_place_north_vancouver_seymour_nv.html"
+}

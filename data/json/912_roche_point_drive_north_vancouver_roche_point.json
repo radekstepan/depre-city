@@ -1,0 +1,42 @@
+{
+  "address": "912 Roche Point Drive",
+  "city": "North Vancouver",
+  "sqft": 1410,
+  "year": 1987,
+  "price": 1045000,
+  "listPrice": 1038000,
+  "fee": 587,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 4224,
+  "assessment": 1047200,
+  "description": "Welcome to The Fairways! This spacious 3 bedroom townhouse in a sought-after FREEHOLD strata offers ideal North Shore living. Enjoy a cozy wood fireplace, a large patio for summer BBQs, and a bright kitchen with an eating area and convenient pass-thru to the dining room and oversized living room. Upstairs features 3 bedrooms, full sized laundry, and a beautiful new tub and shower in the bathrooms. The primary has room for a king bed, boasts a walk-in closet and oversized soaker tub. Newly painted, move-in ready, with 2 parking (1 covered), plus a storage room. Steps to Parkgate Village shopping and Seymour Golf Club. 15 mins to the ski slopes and only 5 minutes to Ron Andrews Recreation Centre or kayaking in Deep Cove, your North Van lifestyle awaits! SOLD FIRM",
+  "features": [],
+  "schools": [
+    {
+      "name": "Seycove Secondary Community",
+      "rating": 8.2,
+      "distance": "1.5 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Sherwood Park Elementary",
+      "rating": 4.4,
+      "distance": "1.1 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Roche Point",
+  "soldDate": "2026-01-25",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/912-roche-point-drive/home/BDO1w3WnzBw78Jg0?id_listing=mZRW7nWaVBd3EBO9",
+  "_scrapedAt": "2026-02-07T16:15:01.862Z",
+  "_rawFile": "912_roche_point_drive_north_vancouver_roche_point.html"
+}

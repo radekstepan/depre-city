@@ -1,0 +1,36 @@
+{
+  "address": "Unit 23 - 6538 Elgin Avenue",
+  "city": "Burnaby",
+  "sqft": 1246,
+  "year": 2008,
+  "price": 880000,
+  "listPrice": 899000,
+  "fee": 515,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2943,
+  "assessment": 979000,
+  "description": "Meticulously maintained 3-bedroom, 1-den, 1-flex, 3-bath family townhome located in the highly sought-after South Burnaby area, within the desirable Deer Lake Walk complex. This spacious and well-kept home features an in-suite laundry, ethernet ports on every level, a bathroom on each floor, a large storage locker, and two secure underground parking spots. The townhouse complex is solidly built and cared for. Ideally located near excellent schools, childcare facilities, Kingsway shopping, fitness and community centers with diverse dining options, and offers quick access to major highways. Jan 17 (1-3 PM)",
+  "features": [],
+  "schools": [
+    {
+      "name": "Burnaby South Secondary",
+      "rating": 4.2,
+      "distance": "1.0 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Forest Glen BS",
+  "soldDate": "2026-01-21",
+  "parkingType": "underground",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/23-6538-elgin-avenue/home/b1DBW7RxJEDYqlAp?id_listing=eVbOYENpboDyx2P0",
+  "_scrapedAt": "2026-02-07T16:13:54.633Z",
+  "_rawFile": "23_6538_elgin_avenue_burnaby_forest_glen_bs.html"
+}

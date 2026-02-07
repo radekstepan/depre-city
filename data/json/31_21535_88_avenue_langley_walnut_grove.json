@@ -1,0 +1,42 @@
+{
+  "address": "Unit 31 - 21535 88 Avenue",
+  "city": "Langley",
+  "sqft": 1434,
+  "year": 2005,
+  "price": 712300,
+  "listPrice": 749000,
+  "fee": 418,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3835,
+  "assessment": 772000,
+  "description": "***FREE STRATA FEES FOR ONE YEAR***Tucked away in a quiet, well-maintained complex, this ULTRA CLEAN 3 BED - 2.5 BATH townhome offers comfortable and functional living in the heart of Walnut Grove. The bright, open-concept layout features stainless steel appliances in the kitchen and a spacious dining and living area that flows out to a private patio, perfect for relaxing or entertaining. With tasteful finishes and plenty of natural light throughout, this home is move-in ready and ideal for those seeking low-maintenance living without compromising on style or location. Close to parks, schools, shopping, and transit. ***FREE STRATA FEES FOR ONE YEAR***",
+  "features": [],
+  "schools": [
+    {
+      "name": "Walnut Grove Secondary",
+      "rating": 7.3,
+      "distance": "1.2 km",
+      "type": "8-12"
+    },
+    {
+      "name": "James Kennedy Elementary",
+      "rating": 5.6,
+      "distance": "0.8 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Walnut Grove",
+  "soldDate": "2026-01-24",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/31-21535-88th-avenue/home/PXRla7gqPVgYjEvL?id_listing=mZRW7n2gbzg7EBO9",
+  "_scrapedAt": "2026-02-07T16:15:10.108Z",
+  "_rawFile": "31_21535_88_avenue_langley_walnut_grove.html"
+}

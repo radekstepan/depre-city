@@ -1,0 +1,42 @@
+{
+  "address": "Unit 50 - 10391 No. 3 Road",
+  "city": "Richmond",
+  "sqft": 1495,
+  "year": 1977,
+  "price": 890000,
+  "listPrice": 899000,
+  "fee": 500,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 3086,
+  "assessment": 0,
+  "description": "This two-story townhouse is located in Richmond's premier Broadmoor neighborhood at the lowest price point. Fully renovated since 2020, it features new bathrooms, kitchen, wall paint, flooring/carpeting, double-pane windows, and attic insulation for excellent thermal efficiency. The master bedroom closet can easily be changed into a full bathroom. Exceptional community management with weekly landscaping, friendly neighbors, and steady appreciation. Elementary school and mall adjacent to the neighborhood, and high school district is S.L. Motivated seller. Move-in ready, exceptionally comfortable townhouse. Must see!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Maple Lane Elementary",
+      "rating": 8.5,
+      "distance": "0.3 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Steveston-London Secondary",
+      "rating": 7.8,
+      "distance": "0.9 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Broadmoor",
+  "soldDate": "2026-01-27",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/50-10391-no-3-road/home/BXeEn7X86ZM7rPo8?id_listing=0A9X3j6RBLw3vgxV",
+  "_scrapedAt": "2026-02-07T16:11:57.716Z",
+  "_rawFile": "50_10391_no_3_road_richmond_broadmoor.html"
+}

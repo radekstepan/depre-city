@@ -1,0 +1,42 @@
+{
+  "address": "Unit 21 - 1299 Coast Meridian Road",
+  "city": "Coquitlam",
+  "sqft": 1551,
+  "year": 2012,
+  "price": 882000,
+  "listPrice": 899900,
+  "fee": 349,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3368,
+  "assessment": 973000,
+  "description": "Welcome to The Breeze in Burke Mountain! This 3 bedroom, 3 bathroom home has an open, spacious plan with 1,551 sq ft of private living! Enjoy a beautiful kitchen with shaker style cabinetry, granite counters, breakfast bar seating, display shelving and abundant storage. Step out to a  private balcony that overlooks protected green space. Dining and living room seamlessly connect and have a media wall with built-in shelving and a cozy fireplace. Upstairs offers 2 large bedrooms, including the primary having a 4 piece ensuite with frameless glass shower. Laundry up for added convenience. Down has an additional large bedroom and a full bathroom. Greenbelt views and privacy throughout the entire home! Located steps away from transit, trails and the future Burke Mountain Secondary School.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "0.6 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "3.3 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "soldDate": "2026-01-22",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/21-1299-coast-meridian-road/home/0ZxwR7Mx0oPyKabB?id_listing=wJKR7P92BrG3XeLP",
+  "_scrapedAt": "2026-02-07T16:13:30.162Z",
+  "_rawFile": "21_1299_coast_meridian_road_coquitlam_burke_mountain.html"
+}

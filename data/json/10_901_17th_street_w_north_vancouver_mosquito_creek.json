@@ -1,0 +1,42 @@
+{
+  "address": "Unit 10 - 901 17th Street W",
+  "city": "North Vancouver",
+  "sqft": 1678,
+  "year": 1989,
+  "price": 1215000,
+  "listPrice": 1200000,
+  "fee": 435,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4136,
+  "assessment": 1282000,
+  "description": "Welcome to Heywood Lane! A professionally managed 18 unit strata located in the heart of Mosquito Creek. This south-facing 3 bed, 3 bath + den townhome offers a great layout & a 330sqft sunny patio just off the living & dining, perfect for entertaining. The main level features a spacious living room w/ a cozy fireplace & bay window. Upstairs delivers the ideal family layout with all three bedrooms on one level, a primary bedroom that easily fits a king-size bed, complete with a walk-in closet & ensuite. Downstairs provides functionality with tons of storage, mudroom with dedicated laundry room, a versatile den/office, & direct access to your side-by-side 2 parking stalls. A walkable lifestyle, steps to Cap Mall, Heywood Park, & close to Westview Elementary and Carson Graham Secondary.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Carson Graham Secondary",
+      "rating": 4.1,
+      "distance": "1.3 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Westview Elementary",
+      "rating": 3.6,
+      "distance": "0.6 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Mosquito Creek",
+  "soldDate": "2026-01-25",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/10-901-17th-street-w/home/N0A9X3jqJoL7vgxV?id_listing=MWBVyZW9MRg7Kemj",
+  "_scrapedAt": "2026-02-07T16:14:37.504Z",
+  "_rawFile": "10_901_17th_street_w_north_vancouver_mosquito_creek.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 10 - 2351 Parkway Boulevard",
+  "city": "Coquitlam",
+  "sqft": 2044,
+  "year": 2002,
+  "price": 978000,
+  "listPrice": 978000,
+  "fee": 468,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3792,
+  "assessment": 1075000,
+  "description": "Beautifully updated corner townhouse offering over 2,000 square feet of living space across three levels. This spacious home features 3 bedrooms plus a large rec room that could potentially be used as an additional bedroom, along with 3 bathrooms and a functional layout. The renovated kitchen offers new appliances, modern finishes, pot lights, and an open flow into the living and dining areas, ideal for everyday living and entertaining. Updated bathrooms add to the move-in-ready appeal. Additional features include a double garage with vaulted ceilings, excellent natural light, and the added privacy of a corner unit. Ideally located close to schools, shopping, parks, trails, and a nearby golf course in a sought-after community. Open House January 24 Saturday 2-4pm",
+  "features": [],
+  "schools": [
+    {
+      "name": "Gleneagle Secondary",
+      "rating": 6.6,
+      "distance": "4.1 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Hampton Park Elementary",
+      "rating": 6.3,
+      "distance": "1.0 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Westwood Plateau",
+  "soldDate": "2026-01-21",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/10-2351-parkway-boulevard/home/oK8OgYB8J0j7JmG2?id_listing=GMnKYqxpKAd3w1Qr",
+  "_scrapedAt": "2026-02-07T16:14:58.953Z",
+  "_rawFile": "10_2351_parkway_boulevard_coquitlam_westwood_plateau.html"
+}

@@ -1,0 +1,36 @@
+{
+  "address": "Unit 37 - 12161 237 Street",
+  "city": "Maple Ridge",
+  "sqft": 1360,
+  "year": 2013,
+  "price": 783000,
+  "listPrice": 789900,
+  "fee": 393,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 4051,
+  "assessment": 780000,
+  "description": "Village Green - a two level townhome designed for families, pet lovers and people looking to right-size their new lifestyle. If you are looking for open living space - this is it. Combined living, dining and kitchen with a large eating area for casual entertaining.  An abundance of cabinetry in the kitchen and island for all your kitchen goodies! Two piece powder room on the main floor.Three upper floor bedrooms plus two full baths up (Large walk-in shower in the primary ensuite). Enjoy the pet friendly fenced in backyard PLUS a large playing field w/playground in the complex for the kids or grandkids visits. Single garage plus room for another vehicle in driveway. Lots of guest parking here too! Easy to show this bright and lovely home!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Garibaldi Secondary",
+      "rating": 1.6,
+      "distance": "2.2 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "East Central",
+  "soldDate": "2026-01-26",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/37-12161-237-street/home/ZEXrx30jGaZyOklN?id_listing=4KAX7NDOQQxYeRPJ",
+  "_scrapedAt": "2026-02-07T16:13:32.812Z",
+  "_rawFile": "37_12161_237_street_maple_ridge_east_central.html"
+}

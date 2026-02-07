@@ -1,0 +1,42 @@
+{
+  "address": "Unit 61 - 6350 142 Street",
+  "city": "Surrey",
+  "sqft": 1701,
+  "year": 2013,
+  "price": 820000,
+  "listPrice": 850000,
+  "fee": 453,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3410,
+  "assessment": 874000,
+  "description": "Canvas at Sullivan Hills offers a functional open-concept floor plan with 4 bedrooms and 3 bathrooms. This executive townhome features a spacious kitchen with pantry, quartz counters, stainless steel appliances, large island, and a bright great room. Quality finishes include crown moulding, laminate flooring on the main, marble counters in all bathrooms, and a spa-inspired ensuite with double sinks. Enjoy the large rec room, inviting deck, walk-out patio, and fenced yard with irrigation. Additional highlights include a main floor powder, side-by-side garage, whirlpool washer/dryer, and roughed-in central vacuum. Close to schools, parks, and shopping. Book your private showing today!! The seller is highly motivated to sell.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sullivan Heights Secondary",
+      "rating": 5.5,
+      "distance": "0.5 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Goldstone Park Elementary",
+      "rating": 5.3,
+      "distance": "0.7 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Sullivan Station",
+  "soldDate": "2026-01-19",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/61-6350-142-street/home/BXeEn7XPzlE7rPo8?id_listing=bEDRYazgrOQy1VaB",
+  "_scrapedAt": "2026-02-07T16:13:22.225Z",
+  "_rawFile": "61_6350_142_street_surrey_sullivan_station.html"
+}

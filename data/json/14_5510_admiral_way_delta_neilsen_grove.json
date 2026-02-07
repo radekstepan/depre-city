@@ -1,0 +1,42 @@
+{
+  "address": "Unit 14 - 5510 Admiral Way",
+  "city": "Delta",
+  "sqft": 1553,
+  "year": 2016,
+  "price": 1175000,
+  "listPrice": 1250000,
+  "fee": 410,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3991,
+  "assessment": 1089000,
+  "description": "Welcome to Charterhouse at Hampton Cove! This rarely available corner show home offers an extra-large yard & porch, perfect for entertaining or play. Barely lived in and in pristine condition, the home showcases thoughtful upgrades throughout, incld custom built-in cabinetry and integrated beds. Featuring 3 spacious bedrooms (10.5' ceilings in master), gourmet kitchen, spa-inspired bathrooms, and sun-filled living spaces, this home is truly move-in ready. Residents enjoy exclusive access to the Hampton Club with 12,000+ sq.ft. of resort-style amenities: pool, hot tub, fitness studio, gymnasium, guest suites, and more. Ideally situated between a golf course and yacht club, with shops, schools, and parks nearby. A rare offering not to be missed! OPEN HOUSE SEPT 13&14 2-4pm",
+  "features": [],
+  "schools": [
+    {
+      "name": "Neilson Grove Elementary",
+      "rating": 5.1,
+      "distance": "0.7 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Delta Secondary",
+      "rating": 4.3,
+      "distance": "3.0 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Neilsen Grove",
+  "soldDate": "2026-01-26",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/delta-real-estate/14-5510-admiral-way/home/K8OgYBVBZg0YJmG2?id_listing=9w8o3m4Rwmz7GKjm",
+  "_scrapedAt": "2026-02-07T16:11:44.474Z",
+  "_rawFile": "14_5510_admiral_way_delta_neilsen_grove.html"
+}

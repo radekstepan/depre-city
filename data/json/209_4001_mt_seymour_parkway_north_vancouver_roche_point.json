@@ -1,0 +1,42 @@
+{
+  "address": "Unit 209 - 4001 Mt Seymour Parkway",
+  "city": "North Vancouver",
+  "sqft": 1916,
+  "year": 1973,
+  "price": 1350000,
+  "listPrice": 1448000,
+  "fee": 650,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 1,
+  "propertyTax": 4145,
+  "assessment": 1404100,
+  "description": "Welcome to the Maples- A well loved and friendly complex near Deep Cove/Dollarton! This Turnkey, 3 lvl townhome has been recently renovated and oozes quality and style throughout. The spacious kitchen is fabulous with quartz counters, gas range, very high end built in Jennair Cappuccino maker/wine fridge and overlooks the spacious dining and living room with gas fireplace, vaulted ceilings, skylights and sliders leading to the large private patio and rock garden. Reward yourself with spa like ambiance out back in your jacuzzi under a starlit sky! 3 bedrooms up with gorgeous ensuite. Downstairs features a family room, wine bar & workshop with additional storage. The complex has an outdoor saline pool and is surrounded by Seymour golf course. Close to all schools!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Seycove Secondary Community",
+      "rating": 8.2,
+      "distance": "0.9 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Sherwood Park Elementary",
+      "rating": 4.4,
+      "distance": "0.9 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Roche Point",
+  "soldDate": "2026-01-15",
+  "parkingType": "carport",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/209-4001-mt-seymour-parkway/home/L4KAX7NqWezyeRPJ?id_listing=XeEn7XK6rBoyrPo8",
+  "_scrapedAt": "2026-02-07T16:14:53.187Z",
+  "_rawFile": "209_4001_mt_seymour_parkway_north_vancouver_roche_point.html"
+}

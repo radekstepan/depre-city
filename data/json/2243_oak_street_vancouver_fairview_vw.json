@@ -1,0 +1,36 @@
+{
+  "address": "2243 Oak Street",
+  "city": "Vancouver",
+  "sqft": 1991,
+  "year": 1982,
+  "price": 1800000,
+  "listPrice": 1898000,
+  "fee": 659,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 3,
+  "propertyTax": 5597,
+  "assessment": 1701000,
+  "description": "This Executive 3-Bedroom Luxury Townhome offers nearly 2,000 sq ft of living space, breathtaking city, mountain, and partial water views. Fully rainscreened, with a new roof and Trex decks completed in 2024. The home boasts many upgrades including a steam shower, jet tub, new Samsung range, quartz countertops, and modern LED lighting throughout. Enjoy the convenience of a private attached garage and 2 additional parking spots. Located in the Broadway Corridor, this property is ideal as a current home or a smart investment, with rental income potential of over $6,000/month and significant redevelopment opportunities.Walking distance to Granville Island, Sea Wall, VGH,cafes & restaurants. Act now to secure this rare offering!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Kitsilano Secondary",
+      "rating": 7.8,
+      "distance": "2.7 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Fairview VW",
+  "soldDate": "2026-01-26",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/2243-oak-street/home/a6zqW7dW6kVy5eZE?id_listing=K8OgYBzO9DzYJmG2",
+  "_scrapedAt": "2026-02-07T16:13:46.062Z",
+  "_rawFile": "2243_oak_street_vancouver_fairview_vw.html"
+}

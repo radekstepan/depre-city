@@ -1,0 +1,42 @@
+{
+  "address": "Unit 247 - 2035 Glenaire Drive",
+  "city": "North Vancouver",
+  "sqft": 1382,
+  "year": 2023,
+  "price": 1370000,
+  "listPrice": 1394999,
+  "fee": 520,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 5259,
+  "assessment": 1337000,
+  "description": "A rare find in Ebb & Flow! This quiet-corner 3-bed / 2.5-bath townhome offers 1,382sqft across 2 levels + a 461 sqft rooftop deck ideal for entertaining. The kitchen features premium Bosch appliances, a waterfall-edge island, and a quartz backsplash, complemented by laminate flooring and thoughtful upgrades throughout. Includes two parking stalls and a spacious storage locker. Just minutes to Lions Gate Bridge, Highway 1, Park Royal, Capilano Mall, Ambleside Beach, Grouse Mountain, and the Lions Gate Community Centre. This is North Shore convenience at its finest. Located in a rapidly developing neighbourhood, this area continues to show strong growth and long-term value appreciation.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Carson Graham Secondary",
+      "rating": 4.1,
+      "distance": "2.9 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Norgate Community Elementary",
+      "rating": 1.4,
+      "distance": "1.1 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Pemberton NV",
+  "soldDate": "2026-01-22",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/247-2035-glenaire-drive/home/ZEXrx30AzWZYOklN?id_listing=eVbOYEk4MgD7x2P0",
+  "_scrapedAt": "2026-02-07T16:13:57.224Z",
+  "_rawFile": "247_2035_glenaire_drive_north_vancouver_pemberton_nv.html"
+}

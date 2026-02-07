@@ -1,0 +1,42 @@
+{
+  "address": "Unit 12 - 20681 Thorne Avenue",
+  "city": "Maple Ridge",
+  "sqft": 1225,
+  "year": 1991,
+  "price": 605000,
+  "listPrice": 629000,
+  "fee": 375,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 3129,
+  "assessment": 630000,
+  "description": "Welcome to Thorneberry Gate! This bright and inviting 3-bedroom townhouse offers a functional layout with an open living and dining area featuring a cozy gas fireplace, plus an updated kitchen with white cabinetry and stainless steel appliances. Upstairs, you’ll find three comfortable bedrooms and a full 4-piece bathroom. Enjoy outdoor living in the fully fenced backyard with lush greenery for added privacy. Centrally located and within walking distance to parks, schools, shopping, restaurants, and more, this home combines comfort and convenience in a fantastic location.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Westview Secondary",
+      "rating": 1.9,
+      "distance": "1.1 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Maple Ridge Elementary",
+      "rating": 1.8,
+      "distance": "0.5 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Southwest Maple Ridge",
+  "soldDate": "2026-01-21",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/12-20681-thorne-avenue/home/510QqypwLG8YLGlV?id_listing=nM697k8Q6jb3bmwe",
+  "_scrapedAt": "2026-02-07T16:13:48.703Z",
+  "_rawFile": "12_20681_thorne_avenue_maple_ridge_southwest_maple_ridge.html"
+}

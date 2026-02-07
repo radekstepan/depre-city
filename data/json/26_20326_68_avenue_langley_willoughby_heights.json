@@ -1,0 +1,48 @@
+{
+  "address": "Unit 26 - 20326 68 Avenue",
+  "city": "Langley",
+  "sqft": 1874,
+  "year": 2007,
+  "price": 898000,
+  "listPrice": 899900,
+  "fee": 496,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 2987,
+  "assessment": 878000,
+  "description": "Welcome to Sunpointe! This nearly 1,900 sq. ft. END UNIT townhouse truly checks all the boxes. The main floor features a gorgeous kitchen with white shaker cabinetry, granite countertops, & stainless steel appliances, complemented by modern vinyl flooring + a convenient powder room and patio off the dining room. Upstairs offers a spacious primary bedroom with a five-piece ensuite, a full bathroom, and two additional well-sized bedrooms. The basement boasts a large media room (could be a 4th bedroom), another full bath, laundry room, storage and a covered patio. Stunning panoramic views from the main floor and primary bedroom finish this perfect place to call home. BONUS: New vinyl flooring and paint throughout!  Close to schools, shops, and transit, this home is move-in ready!",
+  "features": [],
+  "schools": [
+    {
+      "name": "R C Garnett Demonstration Elementary",
+      "rating": 5.8,
+      "distance": "0.8 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Richard Bulpitt Elementary",
+      "rating": 5.8,
+      "distance": "2.4 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.7 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-01-26",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/26-20326-68-avenue/home/DO1w3WqO8E6y8Jg0?id_listing=amgL7Ax4gqmyZ1MW",
+  "_scrapedAt": "2026-02-07T16:11:54.472Z",
+  "_rawFile": "26_20326_68_avenue_langley_willoughby_heights.html"
+}

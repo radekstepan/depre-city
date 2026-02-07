@@ -1,0 +1,42 @@
+{
+  "address": "Unit 7 - 998 Riverside Drive",
+  "city": "Port Coquitlam",
+  "sqft": 2085,
+  "year": 1996,
+  "price": 1172000,
+  "listPrice": 1175000,
+  "fee": 418,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4193,
+  "assessment": 1117000,
+  "description": "The search for your perfect Port Coquitlam townhome stops here. A spacious 2-storey floor plan that you will not outgrow. 2,085 sq ft of optimal living space including welcoming foyer, living/family rooms, dining area, 3 large bdrms, 2.5 baths & an upstairs walk-in laundry. 2 cozy gas FPs & CENTRAL A/C. The eat-in kitchen steps out to a quiet yard gated for privacy. Professionally painted throughout Jan 2026. An expansive double car garage. BONUS: 911 sq ft superb storage w/ 5'4' ceiling height. List of updates available. A well-cared for & property designed end-unit townhome with optimum functionality for your desired lifestyle. Next to Blakeburn Elem & Blakeburn Lagoon. Walk to Terry Fox Sr. coffee shops, transit, grocery & more. O/H Sun Feb 1 CANCELLED",
+  "features": [],
+  "schools": [
+    {
+      "name": "Blakeburn Elementary",
+      "rating": 6.5,
+      "distance": "0.2 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "0.6 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Riverwood",
+  "soldDate": "2026-01-29",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/7-998-riverside-drive/home/bqB176WaPPW3ZajD?id_listing=VLaGyG02gBv7W1ZD",
+  "_scrapedAt": "2026-02-07T16:11:51.024Z",
+  "_rawFile": "7_998_riverside_drive_port_coquitlam_riverwood.html"
+}

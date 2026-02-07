@@ -1,0 +1,42 @@
+{
+  "address": "333 Keith Road E",
+  "city": "North Vancouver",
+  "sqft": 1979,
+  "year": 2004,
+  "price": 1639000,
+  "listPrice": 1649000,
+  "fee": 414,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 1,
+  "propertyTax": 4441,
+  "assessment": 1439000,
+  "description": "ONE OF A KIND! 333 Keith Rd is a lovely bright South facing 4 bed, 4 bath 1/2 Duplex-style home in Lower Lonsdale. Featuring 3 generous beds up w/Vaulted ceilings, updated bathrooms and stunning city & water views. Open concept living on the main with lots of room for relaxing around the cozy gas fireplace, large entertaining/dinning area and powder room on main. Open concept kitchen leading out to a large covered south facing deck. Down features excellent storage and a BONUS self contained 1 bed suite w/separate entry from the rear, a private yard, and separate laundry! Features include high ceilings and radiant HW heating throughout. Excellent self managed worry free strata, located steps from the green necklace walkway and Victoria Park.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sutherland Secondary",
+      "rating": 5.4,
+      "distance": "1.7 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Ridgeway Elementary",
+      "rating": 5.2,
+      "distance": "0.4 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Lower Lonsdale",
+  "soldDate": "2026-01-22",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/333-keith-road-e/home/obqB176gqbK3ZajD?id_listing=LzQ1y50EGVkYqdeK",
+  "_scrapedAt": "2026-02-07T16:14:40.778Z",
+  "_rawFile": "333_keith_road_e_north_vancouver_lower_lonsdale.html"
+}

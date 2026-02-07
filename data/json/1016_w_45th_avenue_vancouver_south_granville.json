@@ -1,0 +1,36 @@
+{
+  "address": "1016 W 45th Avenue",
+  "city": "Vancouver",
+  "sqft": 1185,
+  "year": 2009,
+  "price": 1230000,
+  "listPrice": 1298000,
+  "fee": 468,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 3991,
+  "assessment": 1295000,
+  "description": "A true Westside gem! Tucked away on a quiet inner street, this home offers the ultimate blend of lifestyle and convenience. In the prized Sir Winston Churchill Secondary catchment, steps to Montgomery Park, minutes to the reimagined Oakridge Centre, and close to the SkyTrain Station—you’re connected to it all! Inside, a bright two-level layout flows seamlessly with spacious living areas and private upstairs bedrooms. Outdoors, enjoy your own fenced front and back yards plus a green courtyard—perfect for family play, gardening, and entertaining. Top it off with a spectacular rooftop deck for sunshine, BBQs, and starry nights. A rare chance to experience quiet luxury, vibrant living, and lasting value in one of Vancouver’s most prestigious neighbourhoods!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Eric Hamber Secondary",
+      "rating": 8.4,
+      "distance": "1.1 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "South Granville",
+  "soldDate": "2026-01-26",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/1016-w-45th-avenue/home/aQmD7znPqmO7J9Bo?id_listing=4KAX7Njzqb47eRPJ",
+  "_scrapedAt": "2026-02-07T16:14:49.795Z",
+  "_rawFile": "1016_w_45th_avenue_vancouver_south_granville.html"
+}

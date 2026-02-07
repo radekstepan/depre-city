@@ -1,0 +1,42 @@
+{
+  "address": "Unit 17 - 20327 72b Avenue",
+  "city": "Langley",
+  "sqft": 2283,
+  "year": 2021,
+  "price": 1050000,
+  "listPrice": 1080000,
+  "fee": 281,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 0,
+  "assessment": 1101000,
+  "description": "Bright and open extra-wide CORNER townhouse with plenty of natural light! With ultra-low strata fees, this beautifully maintained 4 BED 4 BATH air-conditioned home offers three bedrooms upstairs, including a spacious primary retreat with spa-inspired ensuite, a full laundry room, and two additional bedrooms that both easily fit queen beds. On the entry level, enjoy a flexible space with a bedroom, full bath, office/den, and its own separate entrance to the backyard—ideal for guests or extended family. The main level boasts a chef’s kitchen with a huge island that flows seamlessly to the dining and family areas, perfect for gatherings, plus a second living room over 300 sq. ft. The lower level offers an oversized TWO-car garage with plenty of storage.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "1.6 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "0.7 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-01-22",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/17-20327-72b-avenue/home/zVwod7vjwdM75mGN?id_listing=VLaGyG0N1dv7W1ZD",
+  "_scrapedAt": "2026-02-07T16:11:34.329Z",
+  "_rawFile": "17_20327_72b_avenue_langley_willoughby_heights.html"
+}

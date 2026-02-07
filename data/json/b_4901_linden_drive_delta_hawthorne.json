@@ -1,0 +1,42 @@
+{
+  "address": "Unit B - 4901 Linden Drive",
+  "city": "Delta",
+  "sqft": 1724,
+  "year": 1973,
+  "price": 770000,
+  "listPrice": 769900,
+  "fee": 350,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 2870,
+  "assessment": 720100,
+  "description": "Rarely offered, this beautifully appointed 3 bedroom, 3 bathroom townhouse delivers timeless comfort, generous space, and an unbeatable location in the heart of Ladner. This move-in-ready home features a thoughtful layout with a massive kitchen and expansive living room that flows onto a large balcony with a new membrane—ideal for entertaining or relaxing. Upstairs offers two generous bedrooms plus a huge primary with ample closet space. The lower level includes a bright family room perfect as a fourth bedroom, gym, or home office, opening to a private west-facing patio and fenced backyard. Ample storage, recent complex updates, and a low maintenance fee complete this standout opportunity.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Delta Secondary",
+      "rating": 4.3,
+      "distance": "1.1 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Hawthorne Elementary",
+      "rating": 3,
+      "distance": "0.5 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Hawthorne",
+  "soldDate": "2026-01-25",
+  "parkingType": "carport",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/delta-real-estate/b-4901-linden-drive/home/eVbOYEpjRXn3x2P0?id_listing=ZxwR7MjwO1Z3KabB",
+  "_scrapedAt": "2026-02-07T16:14:02.362Z",
+  "_rawFile": "b_4901_linden_drive_delta_hawthorne.html"
+}

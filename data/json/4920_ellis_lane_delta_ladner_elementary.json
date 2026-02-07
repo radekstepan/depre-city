@@ -1,0 +1,42 @@
+{
+  "address": "4920 Ellis Lane",
+  "city": "Delta",
+  "sqft": 1211,
+  "year": 2019,
+  "price": 807000,
+  "listPrice": 859900,
+  "fee": 445,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3110,
+  "assessment": 863000,
+  "description": "Welcome to this stunning townhouse offering over 1,200sqft of thoughtfully designed living space. The open-concept layout features a modern kitchen with sleek quartz counters, S/S appliances and a gas stove. The spacious living & dining areas flow seamlessly, highlighted by laminate floors, crown moulding and an abundance of natural light. Upstairs you will find a generous primary bedroom complete with a beautifully appointed ensuite. With geothermal heating & cooling and hot water on demand, comfort & efficiency are built right in. Enjoy the unbeatable location, just steps to historic Ladner Village where you will find charming shops, cozy cafes and popular restaurants. Parks, schools and amenities are only a short walk away, making this an ideal home for families & professionals alike.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Delta Secondary",
+      "rating": 4.3,
+      "distance": "0.4 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Ladner Elementary",
+      "rating": 4.2,
+      "distance": "0.8 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Ladner Elementary",
+  "soldDate": "2026-01-21",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/delta-real-estate/4920-ellis-lane/home/6VLaGyG1JQ13W1ZD?id_listing=9w8o3m40xLV7GKjm",
+  "_scrapedAt": "2026-02-07T16:12:06.754Z",
+  "_rawFile": "4920_ellis_lane_delta_ladner_elementary.html"
+}

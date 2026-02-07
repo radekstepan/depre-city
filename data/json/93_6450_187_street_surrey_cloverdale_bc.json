@@ -1,0 +1,36 @@
+{
+  "address": "Unit 93 - 6450 187 Street",
+  "city": "Surrey",
+  "sqft": 1606,
+  "year": 2012,
+  "price": 1050000,
+  "listPrice": 1100000,
+  "fee": 498,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3376,
+  "assessment": 861000,
+  "description": "Hard to find, PRIMARY ON THE MAIN with a full-size double garage and driveway ONLY 13 YEARS OLD! This home offers 2 additional spacious bedrooms upstairs, perfect for family or guests. As you enter, you’ll be greeted by stunning vaulted ceilings in the living area, creating an airy and inviting atmosphere. The open-concept kitchen is a chef’s delight, showcasing a large island that provides ample space for meal preparation and casual dining. With a south-exposed yard you can enjoy sunshine on your patio most of the day.  Situated conveniently close to the new SkyTrain line, you’ll have easy access to public transportation and the surrounding amenities. Don’t miss this opportunity to own a wonderful townhouse in a thriving community.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Hillcrest Elementary",
+      "rating": 5.2,
+      "distance": "0.3 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Cloverdale BC",
+  "soldDate": "2026-01-25",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/93-6450-187th-street/home/JRv53KD4WoDYVPW4?id_listing=XRla7gBxdERyjEvL",
+  "_scrapedAt": "2026-02-07T16:15:27.737Z",
+  "_rawFile": "93_6450_187_street_surrey_cloverdale_bc.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 30 - 7733 Heather Street",
+  "city": "Richmond",
+  "sqft": 1350,
+  "year": 2004,
+  "price": 1090000,
+  "listPrice": 1180000,
+  "fee": 461,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3657,
+  "assessment": 1057000,
+  "description": "Nestled in a quiet, tree-lined Richmond community, Hearthstone is a beautifully maintained & highly sought after townhouse complex.  This welcoming west facing home invites you through a charming garden entrance & features 3 spacious bedrooms plus an open den on the upper level, an ideal layout for family living.  The thoughtfully updated kitchen with Caesarstone countertops and main floor flooring have been renovated with care, creating a fresh move-in ready space.  A double side-by-side garage with direct entry adds exceptional convenience.  Perfectly situated near schools, parks and public transit with direct access to Skytrain, this home is also just a short walk from shopping at Garden City Shopping Centre and Blundell Plaza.  Showings are available by appointment only.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Palmer Secondary",
+      "rating": 8.1,
+      "distance": "0.6 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Garden City Elementary",
+      "rating": 7.9,
+      "distance": "0.6 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "McLennan North",
+  "soldDate": "2026-01-21",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/30-7733-heather-street/home/BDO1w3WP0GOY8Jg0?id_listing=GMnKYq0gbOQ3w1Qr",
+  "_scrapedAt": "2026-02-07T16:11:38.283Z",
+  "_rawFile": "30_7733_heather_street_richmond_mclennan_north.html"
+}

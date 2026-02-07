@@ -1,0 +1,42 @@
+{
+  "address": "5018 Nanaimo Street",
+  "city": "Vancouver",
+  "sqft": 1530,
+  "year": 2023,
+  "price": 1330000,
+  "listPrice": 1359000,
+  "fee": 670,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 3568,
+  "assessment": 1349000,
+  "description": "Stylish, well-appointed townhome in the heart of East Van, just off Nanaimo & 34th. This 3 bed + flex home is part of the beautifully restored Century House collection, blending modern comfort with heritage charm. Family-friendly layout features a full basement media room + versatile flex space ideal for office, gym, or studio. Top-floor primary retreat offers vaulted ceilings, double vanity ensuite & private balcony w/ city & mountain views. Two additional beds provide flexibility for kids, guests or WFH. Street-level access, ample street parking & walkable location near Cunningham Elem, parks, T&T & transit.",
+  "features": [],
+  "schools": [
+    {
+      "name": "G T Cunningham Elementary",
+      "rating": 5.4,
+      "distance": "0.2 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Gladstone Secondary",
+      "rating": 3.2,
+      "distance": "1.1 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Victoria VE",
+  "soldDate": "2026-01-19",
+  "parkingType": "street",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/5018-nanaimo-street/home/xmZRW7nQlMJyEBO9?id_listing=Zaw5Yoj5qe63n961",
+  "_scrapedAt": "2026-02-07T16:15:04.437Z",
+  "_rawFile": "5018_nanaimo_street_vancouver_victoria_ve.html"
+}

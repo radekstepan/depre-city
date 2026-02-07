@@ -1,0 +1,36 @@
+{
+  "address": "2168 8th Avenue W",
+  "city": "Vancouver",
+  "sqft": 1589,
+  "year": 2008,
+  "price": 1650000,
+  "listPrice": 1650000,
+  "fee": 651,
+  "bedrooms": 4,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 5728,
+  "assessment": 1761000,
+  "description": "Welcome to CANVAS where contemporary design meets the vibrant energy of Kitsilano. This 1,589 sqft 3 bed + den corner unit townhouse blends modern design with functional living. The open-concept main floor features overheight ceilings, hardwood floors, floating stairs, a sleek kitchen with breakfast bar, and a sunny south-facing patio with natural light flowing through windows on 3 sides. Upstairs offers a bedroom + open den (which can be converted to a 4th bedroom), cozy fireplace, full bath, and laundry. The top floor is a private primary suite with walk in closet, spa-like ensuite, and sundeck. The lower level includes a flex space with custom California closet & desk—perfect for a guest room, office, or gym. Complete w/an attached garage + 2nd parking.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Kitsilano Secondary",
+      "rating": 7.8,
+      "distance": "0.8 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Kitsilano",
+  "soldDate": "2026-01-26",
+  "parkingType": "underground",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/2168-8th-avenue-w/home/DO1w3WqO9Bqy8Jg0?id_listing=nbq6y120eXM7o9DA",
+  "_scrapedAt": "2026-02-07T16:11:31.512Z",
+  "_rawFile": "2168_8th_avenue_w_vancouver_kitsilano.html"
+}

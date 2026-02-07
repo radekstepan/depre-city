@@ -1,0 +1,42 @@
+{
+  "address": "Unit 33 - 1207 Confederation Drive",
+  "city": "Port Coquitlam",
+  "sqft": 1530,
+  "year": 1991,
+  "price": 885000,
+  "listPrice": 899900,
+  "fee": 383,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3148,
+  "assessment": 843000,
+  "description": "What a perfect spot! Nestled in between 3 parks and 2 elementary schools, this Citadel Heights location can't be beat. Duplex style level entry main floor with semi private yard & 3 generous size beds, an open den and 2 baths up. Bright, fresh and clean, with plenty of windows, 9' ceiling in living area and vaulted foyer. Laminate, carpet & gas fireplace. Tons of storage here! Ultra quiet location on no thru lane in complex. Two separate garages + driveway parking,visitor parking steps away!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Castle Park Elementary",
+      "rating": 6.5,
+      "distance": "0.3 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Ecole Riverside Secondary",
+      "rating": 4.6,
+      "distance": "2.3 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Citadel PQ",
+  "soldDate": "2026-01-26",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/33-1207-confederation-drive/home/ZEXrx302arZyOklN?id_listing=mZRW7nWalgV3EBO9",
+  "_scrapedAt": "2026-02-07T16:15:25.180Z",
+  "_rawFile": "33_1207_confederation_drive_port_coquitlam_citadel_pq.html"
+}

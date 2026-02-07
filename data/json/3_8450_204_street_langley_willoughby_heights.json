@@ -1,0 +1,42 @@
+{
+  "address": "Unit 3 - 8450 204 Street",
+  "city": "Langley",
+  "sqft": 1350,
+  "year": 2021,
+  "price": 882500,
+  "listPrice": 899000,
+  "fee": 287,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2971,
+  "assessment": 881000,
+  "description": "Modern farmhouse living at HOMESTEAD! This 3 bed, 2.5 bath home which features 9’ ceilings on main, chef’s kitchen with quartz counters, KitchenAid appliances, 5-burner gas range, farmhouse sink, built in microwave and large dining area with a very functional layout. Spacious rear deck with gas BBQ hookup, stylish powder room with custom tile and shiplap. Upstairs offers 3 bedrooms including primary with walk-in closet and 4-pc ensuite, plus side-by-side laundry. 24’ deep double garage + driveway parking for 2 extra vehicles. Large fenced yard with SECOND gas hookup, forced air furnace with A/C, & hw on demand. All in a boutique community close to schools, shopping, transit, & quick Hwy 1 access.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "1.2 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.8 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-01-27",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/3-8450-204-street/home/damgL7Ad1kLyZ1MW?id_listing=Vwod7vWrzE935mGN",
+  "_scrapedAt": "2026-02-07T16:12:25.370Z",
+  "_rawFile": "3_8450_204_street_langley_willoughby_heights.html"
+}

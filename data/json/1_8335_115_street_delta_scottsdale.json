@@ -1,0 +1,42 @@
+{
+  "address": "Unit 1 - 8335 115 Street",
+  "city": "Delta",
+  "sqft": 1388,
+  "year": 2025,
+  "price": 960000,
+  "listPrice": 960000,
+  "fee": 0,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 0,
+  "assessment": 0,
+  "description": "Townhomes Now Selling in North Delta’s Most Premium and Convenient Location. Expertly built by the trusted team at JPS Developments, these thoughtfully designed residences offer three bedrooms plus a flex room, bright and spacious open-concept layouts, and double side-by-side garages. Whether you're raising a family or seeking a quiet space to enjoy your retirement, this exceptional community is tailored to fit every stage of life. Perfectly positioned, these homes are just a short walk from Richardson Elementary, North Delta Secondary, the North Delta Track and Field Facility, tennis courts, the North Delta Recreation Centre, North Delta Community Park, and public transit. You’ll also enjoy seamless access to Highways 17, 91, and 99—making daily commuting simple and efficient.",
+  "features": [],
+  "schools": [
+    {
+      "name": "North Delta Secondary",
+      "rating": 4.3,
+      "distance": "0.2 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Richardson Elementary",
+      "rating": 3.1,
+      "distance": "0.4 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Scottsdale",
+  "soldDate": "2026-01-17",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/delta-real-estate/1-8335-115-street/home/XeEn7X6xzz0YrPo8?id_listing=VLaGyG0NqbM7W1ZD",
+  "_scrapedAt": "2026-02-07T16:12:22.870Z",
+  "_rawFile": "1_8335_115_street_delta_scottsdale.html"
+}

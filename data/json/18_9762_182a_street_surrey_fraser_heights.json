@@ -1,0 +1,42 @@
+{
+  "address": "Unit 18 - 9762 182a Street",
+  "city": "Surrey",
+  "sqft": 1764,
+  "year": 2022,
+  "price": 905000,
+  "listPrice": 924900,
+  "fee": 403,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3811,
+  "assessment": 988000,
+  "description": "Welcome to PRESTIGE by Sivia Construction – this resale 4 bed + flex duplex-style townhome offers the best location and view in the complex! Bright open layout with a dream kitchen featuring a KitchenAid appliance package, gas range, and soft-close shaker cabinets. Enjoy a spa-inspired ensuite with dual sinks, rainfall shower & body jets, plus high-end finishes throughout. Includes forced air heating, A/C, gas fireplace, Navien on-demand hot water, and 2-car parking. Ideally located in Fraser Heights, close to parks, schools, Guildford & Willoughby Town Centres. Luxury, lifestyle, and location, close to all major routes,this one has it all!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Fraser Heights Secondary",
+      "rating": 7.5,
+      "distance": "4.8 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Bothwell Elementary School",
+      "rating": 4.8,
+      "distance": "2.5 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Fraser Heights",
+  "soldDate": "2026-01-20",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/18-9762-182a-street/home/jJKdOYrGWgzy54lW?id_listing=aQmD7z6npnn7J9Bo",
+  "_scrapedAt": "2026-02-07T16:15:42.307Z",
+  "_rawFile": "18_9762_182a_street_surrey_fraser_heights.html"
+}

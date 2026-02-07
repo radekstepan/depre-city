@@ -1,0 +1,42 @@
+{
+  "address": "Unit 202 - 9580 Prince Charles Boulevard",
+  "city": "Surrey",
+  "sqft": 1429,
+  "year": 2001,
+  "price": 730000,
+  "listPrice": 755000,
+  "fee": 320,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3162,
+  "assessment": 720000,
+  "description": "Bright and family-friendly 3 Bedroom, 2 Bathroom Townhouse with an extra unauthorized one bedroom and one full bathroom in the garage, located just five minutes from Surrey Central! Lively neighborhood amidst several restaurants and shops nearby. This layout features large open spaces that are flexible for your lifestyle. Huge great room for Living/Dining/Family space and large area for Dining/Eating Nook/Pantry/Storage beside the kitchen. Outdoor patio space for BBQ and gardening and spacious tandem garage in addition to visitor parking spaces as well. This is a great self-managed, low maintenance complex",
+  "features": [],
+  "schools": [
+    {
+      "name": "Queen Elizabeth Secondary",
+      "rating": 2,
+      "distance": "1.2 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Betty Huff Elementary",
+      "rating": 1.8,
+      "distance": "0.5 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Queen Mary Park Surrey",
+  "soldDate": "2026-01-19",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/202-9580-prince-charles-boulevard/home/EeVbOYE8vAO3x2P0?id_listing=jAXw7Qlw66XyQOzg",
+  "_scrapedAt": "2026-02-07T16:13:17.112Z",
+  "_rawFile": "202_9580_prince_charles_boulevard_surrey_queen_mary_park_surrey.html"
+}

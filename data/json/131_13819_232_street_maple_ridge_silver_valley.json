@@ -1,0 +1,36 @@
+{
+  "address": "Unit 131 - 13819 232 Street",
+  "city": "Maple Ridge",
+  "sqft": 1433,
+  "year": 2011,
+  "price": 790000,
+  "listPrice": 800000,
+  "fee": 311,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 3681,
+  "assessment": 772000,
+  "description": "Rarely Available End Unit in Brighton – Silver Valley!  3 bed, 2 bath end-unit backing onto greenspace with SW exposure and a large, private backyard oasis! Open-concept layout with 9-ft ceilings, granite kitchen island, new paint, laminate on main. Bright front deck off living room with park views. Spacious primary with his & hers closets + ensuite. Full driveway, double tandem garage, low strata fees, and visitor parking next door. Minutes to parks, schools & trails.  A true gem in a family-friendly, award-winning community!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Garibaldi Secondary",
+      "rating": 1.6,
+      "distance": "4.9 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Silver Valley",
+  "soldDate": "2026-01-27",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/131-13819-232nd-street/home/r56k97w1w2QYKRjD?id_listing=jAXw7QprO2ayQOzg",
+  "_scrapedAt": "2026-02-07T16:12:14.478Z",
+  "_rawFile": "131_13819_232_street_maple_ridge_silver_valley.html"
+}

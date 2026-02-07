@@ -1,0 +1,42 @@
+{
+  "address": "Unit 37 - 730 Farrow Street",
+  "city": "Coquitlam",
+  "sqft": 1157,
+  "year": 2004,
+  "price": 845000,
+  "listPrice": 848800,
+  "fee": 407,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 2917,
+  "assessment": 822000,
+  "description": "Welcome home to Farrow Ridge a boutique collection of homes in the heart of Coquitlam! This 3 bedroom & 2 bathroom home has everything done for you already! Gorgeous kitchen with quartz countertops & stainless steel appliances. Open concept living with high ceilings offering tons of natural light, laminate flooring, newer blinds & paint. Enjoy the outdoor rooftop patio space with a rooftop patio that has mountain views & a balcony off the living room. Location, location, location! Conveniently located close to SkyTrain, shopping, groceries, schools, parks, trails, Lougheed Mall, recreation, SFU & Highway 1. Secured parking, storage & insuite laundry included. Pet & rental friendly community!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Port Moody Secondary",
+      "rating": 7.5,
+      "distance": "2.2 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Mountain View Elementary",
+      "rating": 4.6,
+      "distance": "1.0 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Coquitlam West",
+  "soldDate": "2026-01-25",
+  "parkingType": "underground",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "rooftop",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/37-730-farrow-street/home/jJKdOYrj44zY54lW?id_listing=nM697k859wW3bmwe",
+  "_scrapedAt": "2026-02-07T16:15:15.459Z",
+  "_rawFile": "37_730_farrow_street_coquitlam_coquitlam_west.html"
+}

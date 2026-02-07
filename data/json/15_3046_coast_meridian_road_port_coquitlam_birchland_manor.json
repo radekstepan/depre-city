@@ -1,0 +1,42 @@
+{
+  "address": "Unit 15 - 3046 Coast Meridian Road",
+  "city": "Port Coquitlam",
+  "sqft": 1386,
+  "year": 1970,
+  "price": 700000,
+  "listPrice": 735000,
+  "fee": 399,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 2708,
+  "assessment": 660100,
+  "description": "Welcome to Woodside Estates. This spacious 2-level, 3-bedroom townhouse offers approximately 1,386 sqft of versatile open layout - an excellent opportunity to bring your renovation ideas to life! The main floor features a flexible plan with a functional galley kitchen, space for a den/office or kitchen extension, and a generous living and dining area opening to fully fenced front and backyards (approx. 565 sqft) of patio space. Additional features include a large pantry/ crawl space storage room, and powder room. Upstairs offers three well-sized bedrooms, including a primary with potential to add an ensuite, a shared bathroom, and extra storage. Quiet, parklike, pet and rental friendly complex with gardens, a sports court, and recent roof, fencing, and carport upgrades. Call for a viewing.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "0.7 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Birchland Elementary",
+      "rating": 2.6,
+      "distance": "0.3 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Birchland Manor",
+  "soldDate": "2026-01-20",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 2,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/15-3046-coast-meridian-road/home/amgL7A4Z9N2yZ1MW?id_listing=DO1w3W1qeLny8Jg0",
+  "_scrapedAt": "2026-02-07T16:15:45.433Z",
+  "_rawFile": "15_3046_coast_meridian_road_port_coquitlam_birchland_manor.html"
+}

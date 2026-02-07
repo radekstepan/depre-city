@@ -1,0 +1,42 @@
+{
+  "address": "4676 Capilano Road",
+  "city": "North Vancouver",
+  "sqft": 2261,
+  "year": 2021,
+  "price": 1945000,
+  "listPrice": 2088000,
+  "fee": 523,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 7762,
+  "assessment": 1828000,
+  "description": "This super quiet, bright, and spacious 3-level luxury townhouse in Canyon Heights/Upper Capilano offers 2261 sq ft of refined living. Features include 10' ceilings, A/C and HRV, built-in speakers, and Wi-Fi light switches throughout. The chef's kitchen boasts a 10-ft island, perfect for entertaining. Also includes a private office/den, mountain-view balcony, and a peaceful inner courtyard setting. Upstairs: 3 large bedrooms, including a luxury primary suite with 5-piece ensuite, heated floors, soaker tub, and separate shower. Lower level: full bath, rec room or 4th bedroom, with walk-out to a private patio. Mint condition. Walk to Handsworth and Canyon Heights schools. Minutes to Edgemont Village, Grouse Mountain, and hiking trails. Flexible closing.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Handsworth Secondary",
+      "rating": 8.6,
+      "distance": "0.5 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Canyon Heights Elementary",
+      "rating": 7.6,
+      "distance": "0.8 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Canyon Heights NV",
+  "soldDate": "2026-01-25",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/4676-capilano-road/home/L5VXv3lvnjNyj2q8?id_listing=Zaw5Yoj5vlq3n961",
+  "_scrapedAt": "2026-02-07T16:13:27.653Z",
+  "_rawFile": "4676_capilano_road_north_vancouver_canyon_heights_nv.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 27 - 632 3rd Street E",
+  "city": "North Vancouver",
+  "sqft": 1447,
+  "year": 2024,
+  "price": 1290000,
+  "listPrice": 1299900,
+  "fee": 580,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 1,
+  "propertyTax": 4226,
+  "assessment": 1382000,
+  "description": "Welcome NEU on 3rd, where modern living meets energy-efficient design in the heart of North Vancouver and steps to Lower Lonsdale. This stunning 3-bedroom end unit townhome with 4 baths offers a private entrance and a fully enclosed private garage — perfect for North Shore living. Built to Passive House standards, the home uses up to 90% less energy than a typical home thanks to cutting-edge German insulation, HVAC, and glazing systems. Inside, enjoy bright open-plan living, generous windows, and thoughtful details throughout. Located at 632 E 3rd Street, you’ll be just minutes from shops, cafés, waterways and trails. A rare opportunity for those seeking low-maintenance luxury and sustainable style — move-in ready and built for the future.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sutherland Secondary",
+      "rating": 5.4,
+      "distance": "2.0 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Ridgeway Elementary",
+      "rating": 5.2,
+      "distance": "0.7 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Lower Lonsdale",
+  "soldDate": "2026-01-20",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/27-632-3rd-street-e/home/DnM697kvKe1ybmwe?id_listing=LzQ1y50ERRkYqdeK",
+  "_scrapedAt": "2026-02-07T16:13:43.608Z",
+  "_rawFile": "27_632_3rd_street_e_north_vancouver_lower_lonsdale.html"
+}

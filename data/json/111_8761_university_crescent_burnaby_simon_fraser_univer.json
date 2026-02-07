@@ -1,0 +1,42 @@
+{
+  "address": "Unit 111 - 8761 University Crescent",
+  "city": "Burnaby",
+  "sqft": 1651,
+  "year": 2022,
+  "price": 988000,
+  "listPrice": 1023888,
+  "fee": 799,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2399,
+  "assessment": 757000,
+  "description": "Experience elevated living in this beautifully crafted 3 bed, 3 bath concrete townhome combining modern style with exceptional comfort. Enjoy an open-concept layout with quartz countertops, engineered laminate floors, and radiant heating and cooling throughout. The spacious design offers quiet, energy-efficient living with EV-ready parking and access to SFU Recreation and Library facilities. Perfect for families seeking a safe, walkable community or investors drawn to consistent rental demand. Steps to shops, trails, and parks.  Reach out today to book your private showing!",
+  "features": [],
+  "schools": [
+    {
+      "name": "University Highlands Elementary",
+      "rating": 8.2,
+      "distance": "0.1 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Burnaby Mountain Secondary",
+      "rating": 7.6,
+      "distance": "2.8 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Simon Fraser Univer.",
+  "soldDate": "2026-01-18",
+  "parkingType": "underground",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/111-8761-university-crescent/home/nM697k52nJmYbmwe?id_listing=10QqypGNnwDYLGlV",
+  "_scrapedAt": "2026-02-07T16:15:07.466Z",
+  "_rawFile": "111_8761_university_crescent_burnaby_simon_fraser_univer.html"
+}

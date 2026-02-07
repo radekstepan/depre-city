@@ -1,0 +1,36 @@
+{
+  "address": "Unit 5 - 1638 Georgia Street E",
+  "city": "Vancouver",
+  "sqft": 1303,
+  "year": 2006,
+  "price": 1285000,
+  "listPrice": 1299000,
+  "fee": 446,
+  "bedrooms": 4,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 3867,
+  "assessment": 1232000,
+  "description": "Set on a quiet, tree-lined street, The Woodshire is a boutique collection of character-inspired townhomes offering a calm, connected East Van lifestyle that families love. This end-unit home stands out for its added privacy, light, and flexibility, with updated hardwood flooring throughout, including the stairs. The main level features open kitchen, living and dining spaces anchored by a cozy gas fireplace, flowing naturally to a private patio ideal for everyday family life. Upper floors provide exceptional versatility, including a rare fourth bedroom, a standout feature in the East Vancouver townhome market. A welcoming, pet-friendly community just steps to Woodland Park, the Adanac Bike Route, transit, cafés, breweries, and Commercial Drive. OPEN HOUSE THURSDAY 1/29, 5:30-6:30 PM",
+  "features": [],
+  "schools": [
+    {
+      "name": "Britannia Community Secondary",
+      "rating": 2.4,
+      "distance": "0.3 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Hastings",
+  "soldDate": "2026-02-01",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/5-1638-georgia-street-e/home/x9w8o3mLLRk7GKjm?id_listing=LzQ1y50Ek84YqdeK",
+  "_scrapedAt": "2026-02-07T16:12:02.595Z",
+  "_rawFile": "5_1638_georgia_street_e_vancouver_hastings.html"
+}

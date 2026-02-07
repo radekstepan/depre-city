@@ -1,0 +1,42 @@
+{
+  "address": "Unit 21 - 271 Francis Way",
+  "city": "New Westminster",
+  "sqft": 1840,
+  "year": 2016,
+  "price": 1126000,
+  "listPrice": 1125888,
+  "fee": 841,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4997,
+  "assessment": 0,
+  "description": "Welcome to Parkside in the peaceful Victoria Hill community by award-winning Onni Group. This beautifully maintained townhouse offers 1,840 sq ft of thoughtfully designed living space across three levels. Featuring three spacious bedrooms upstairs and a versatile den or recreation room below, there’s room for the whole family. Enjoy outdoor living with two large patios and two balconies perfect for BBQs and gardening plus views of the Fraser River. Modern finishes include premium stainless steel appliances with gas cooktop, soft-close cabinetry, wide-plank laminate flooring, 9’ ceilings, and direct access to a private gated two-car garage with EV-ready charging. Just minutes to Queens Park, shops, dining, NW Quay, transit, and schools. CALL TODAY !!",
+  "features": [],
+  "schools": [
+    {
+      "name": "New Westminster Secondary",
+      "rating": 6.7,
+      "distance": "2.1 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Ecole Qayqayt Elementary",
+      "rating": 6.5,
+      "distance": "1.0 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Fraserview NW",
+  "soldDate": "2026-01-28",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/new-westminster-real-estate/21-271-francis-way/home/a6zqW7dWwE1y5eZE?id_listing=eVbOYENpRDVyx2P0",
+  "_scrapedAt": "2026-02-07T16:13:24.799Z",
+  "_rawFile": "21_271_francis_way_new_westminster_fraserview_nw.html"
+}

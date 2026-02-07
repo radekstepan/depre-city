@@ -1,0 +1,42 @@
+{
+  "address": "Unit 75 - 8430 203a Street",
+  "city": "Langley",
+  "sqft": 1789,
+  "year": 2021,
+  "price": 915000,
+  "listPrice": 939500,
+  "fee": 289,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3383,
+  "assessment": 933000,
+  "description": "Location! Location! Location! Welcome to Keystone in sought-after Willoughby! 1,789 SQ FT home- This 4 bed, 4 bath unit features a spacious family room, soaring 2-storey entry, side-by-side double garage, epoxy garage floor coating, high-efficiency A/C, on-demand tankless hot water, large kitchen island, soft-close cabinets. Prime location- Easy access to Hwy #1, walk to Carvolth Exchange - park & ride (bus to SkyTrain), and close to shops, restaurants, parks and more. A fantastic opportunity in a family-friendly community!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "1.2 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.7 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-01-23",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/75-8430-203a-street/home/Vwod7vrO4rp75mGN?id_listing=9w8o3mj5bXJYGKjm",
+  "_scrapedAt": "2026-02-07T16:14:44.041Z",
+  "_rawFile": "75_8430_203a_street_langley_willoughby_heights.html"
+}

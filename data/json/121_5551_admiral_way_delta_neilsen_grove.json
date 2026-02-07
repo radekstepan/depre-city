@@ -1,0 +1,42 @@
+{
+  "address": "Unit 121 - 5551 Admiral Way",
+  "city": "Delta",
+  "sqft": 1458,
+  "year": 2020,
+  "price": 906000,
+  "listPrice": 925000,
+  "fee": 320,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3446,
+  "assessment": 973000,
+  "description": "Welcome to this stunning 3-bedroom, 2.5-bath townhouse in the highly sought-after Beaufort Landing! The open-concept chef’s kitchen is equipped with premium KitchenAid stainless steel appliances, including a 5-burner gas range, and offers a thoughtful bonus space ideal for a coffee bar or home office nook. Designed with sophistication in mind, the home features over-height ceilings in the primary with expansive double windows in bedroom. Curated designer finishes throughout include elegant lighting, feature kitchen wall and a custom fireplace. Step outside to your fully fenced front yard & picket fence, perfect for pets or entertaining. The property includes a 2-car tandem parking with resort-style living & access to a remarkable 12,000 sq. ft. amenity space.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Neilson Grove Elementary",
+      "rating": 5.1,
+      "distance": "1.0 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Delta Secondary",
+      "rating": 4.3,
+      "distance": "3.3 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Neilsen Grove",
+  "soldDate": "2026-01-26",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/delta-real-estate/121-5551-admiral-way/home/DnM697kwDxm7bmwe?id_listing=1DBW7RrDQML7qlAp",
+  "_scrapedAt": "2026-02-07T16:15:18.320Z",
+  "_rawFile": "121_5551_admiral_way_delta_neilsen_grove.html"
+}

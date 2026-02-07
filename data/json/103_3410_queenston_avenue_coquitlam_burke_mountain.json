@@ -1,0 +1,42 @@
+{
+  "address": "Unit 103 - 3410 Queenston Avenue",
+  "city": "Coquitlam",
+  "sqft": 2298,
+  "year": 2017,
+  "price": 1265000,
+  "listPrice": 1335000,
+  "fee": 0,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 1,
+  "propertyTax": 5399,
+  "assessment": 1302000,
+  "description": "Rarely available STRATA-FREE row home in sought-after Burke Mountain. Offering a bright + spacious layout, with 4 bedrooms + media room, 4 bathrooms & updates, including AIR CONDITIONING. Surrounded by lush greenery & nature, directly across from Queenston Park, this home offers an open concept plan with modern finishings throughout. The main floor, which leads out to a beautiful private yard with deck and garden, features a gourmet kitchen with SS appliances, dining area, spacious living room, fireplace & powder room. 3 bedrooms up, including the primary with spa-like ensuite & full bathroom. Spacious bedroom on the lower along with a full bathroom, laundry & recreation / media room which can serve as an additional guest bedroom. Great, family friendly neighbourhood.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "1.2 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "3.9 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "soldDate": "2026-01-22",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/103-3410-queenston-avenue/home/mLzQ1y5jVDE7qdeK?id_listing=6zqW7dKGPWMy5eZE",
+  "_scrapedAt": "2026-02-07T16:15:22.970Z",
+  "_rawFile": "103_3410_queenston_avenue_coquitlam_burke_mountain.html"
+}

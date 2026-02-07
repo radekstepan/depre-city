@@ -1,0 +1,42 @@
+{
+  "address": "4590 Elmgrove Drive",
+  "city": "Burnaby",
+  "sqft": 1924,
+  "year": 1975,
+  "price": 1140000,
+  "listPrice": 1125000,
+  "fee": 435,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3621,
+  "assessment": 1175200,
+  "description": "Prime Greentree Village end-unit corner townhome in a quiet cul-de-sac, backing onto mature green space & close to Greentree Park. Beautifully updated throughout: kitchen w/granite counters, s/s appliances, cozy fireplace, & excellent natural light from updated windows. 3 bedrooms, including a primary w/ensuite & walk-in closet, 2.5 baths, plus flexible lower-level family room & great storage. Enjoy private outdoor living in the peaceful backyard patio. Updates: roof (2013), windows/doors/electrical/plumbing (2014), furnace (2021), cedar fencing (2022), exterior paint (2023), hw tank (2025). Strata includes membership to indoor pool, sauna, exercise & party rooms. Close to Hwy 1, Deer Lake, Metrotown, BCIT, Brentwood & Costco.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Moscrop Secondary",
+      "rating": 8.3,
+      "distance": "0.6 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Gilpin Elementary",
+      "rating": 6.5,
+      "distance": "0.8 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Greentree Village",
+  "soldDate": "2026-01-27",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/4590-elmgrove-drive/home/JRv53KD4Ok0YVPW4?id_listing=JKdOYrBGA2ZY54lW",
+  "_scrapedAt": "2026-02-07T16:15:12.857Z",
+  "_rawFile": "4590_elmgrove_drive_burnaby_greentree_village.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 25 - 8217 204b Street",
+  "city": "Langley",
+  "sqft": 1485,
+  "year": 2017,
+  "price": 830000,
+  "listPrice": 849000,
+  "fee": 264,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3128,
+  "assessment": 852000,
+  "description": "Welcome to Everly Green, a highly sought-after townhome community by StreetSide Development in Willoughby Heights. This bright end unit offers 1,485 sq ft of thoughtfully designed living space with 3 bedrooms + den and 2.5 bathrooms. Corner exposure, oversized windows, and 9-ft ceilings fill the home with natural light. The open-concept main floor features a modern kitchen and a versatile den, perfect for a home office. Enjoy a fenced west-facing front yard with a playground just steps away, plus a balcony and a private rooftop patio ideal for BBQs and entertaining. The east-facing garage overlooks quiet single-family-style homes for added privacy. Steps from Yorkson Creek Middle School, Yorkson Community Park, shopping, Carvolth Bus Exchange, and Highway 1. Open House: Jan 17 & 18, 2–4 PM",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "0.8 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.3 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-01-19",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/25-8217-204b-street/home/0ZxwR7MGRRzYKabB?id_listing=MWBVyZW9JMK7Kemj",
+  "_scrapedAt": "2026-02-07T16:15:20.828Z",
+  "_rawFile": "25_8217_204b_street_langley_willoughby_heights.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 36 - 15489 99a Avenue",
+  "city": "Surrey",
+  "sqft": 1379,
+  "year": 2022,
+  "price": 870000,
+  "listPrice": 888000,
+  "fee": 248,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3323,
+  "assessment": 921000,
+  "description": "RARE OPPORTUNITY!! PRIME LOCATION! Just like brand new CORNER townhouse with 3 bedrooms + 1 den & 2 full& half bathrooms! Open concept main floor with modern kitchen granite countertops,  an unobstructed island, dining room and living room offering access to a huge balcony. Master bedroom for a king size bed , walk in closet and private ensuite with a double vanity & oversized shower on the upper level. Conveniently located right in front of William F. Davidson Elementary, Johnston Heights Secondary with IB program, Lionel Courchene Park, Guildford Mall, you can walk to T&T Supermarket, Walmart, Guildford Mall, restaurants, banks, and a recreation centre. Enjoy quick and easy access to Highway 1.  Fenced & gated front yard & Double garage with EV installed.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Johnston Heights Secondary",
+      "rating": 6.4,
+      "distance": "0.4 km",
+      "type": "8-12"
+    },
+    {
+      "name": "William F. Davidson Elementary",
+      "rating": 3.3,
+      "distance": "0.2 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Guildford",
+  "soldDate": "2026-01-17",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/36-15489-99a-avenue/home/xLkv3V9PwKZ7DBNr?id_listing=DO1w3W1q4Ejy8Jg0",
+  "_scrapedAt": "2026-02-07T16:13:19.495Z",
+  "_rawFile": "36_15489_99a_avenue_surrey_guildford.html"
+}

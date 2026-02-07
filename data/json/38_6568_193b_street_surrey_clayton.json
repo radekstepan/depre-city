@@ -1,0 +1,42 @@
+{
+  "address": "Unit 38 - 6568 193b Street",
+  "city": "Surrey",
+  "sqft": 1821,
+  "year": 2005,
+  "price": 789000,
+  "listPrice": 779900,
+  "fee": 441,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3703,
+  "assessment": 864000,
+  "description": "Best deal in the area on a townhome! Over 1800 sqft, end-unit townhouse with 4 bedrooms & 3 bathrooms, finished with quality throughout. Large kitchen On the main floor with solid maple cabinetry, granite countertops, S/S appliances, under-cabinet lighting, built-in microwave range hood & separate family room. Other features include laminate flooring, separate dining space, big living room & a convenient powder room completes the main floor. Upstairs you’ll find 3 generously sized bedrooms, 2 full bathrooms & the lower level offers a versatile 4th bedroom or home office. Enjoy the convenience of a PROPER DOUBLE SIDE BY SIDE garage & 2 sundecks! Located on the quiet side of the complex with your own private front yard space. Don't miss this opportunity!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Clayton Heights Secondary",
+      "rating": 4.5,
+      "distance": "1.5 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Katzie Elementary",
+      "rating": 3.9,
+      "distance": "0.6 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Clayton",
+  "soldDate": "2026-01-25",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/38-6568-193b-street/home/EeVbOYEzbG5yx2P0?id_listing=amgL7Ax4aJ5yZ1MW",
+  "_scrapedAt": "2026-02-07T16:12:17.570Z",
+  "_rawFile": "38_6568_193b_street_surrey_clayton.html"
+}

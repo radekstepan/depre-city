@@ -1,0 +1,42 @@
+{
+  "address": "Unit 25 - 11757 207 Street",
+  "city": "Maple Ridge",
+  "sqft": 1316,
+  "year": 1991,
+  "price": 600000,
+  "listPrice": 624900,
+  "fee": 439,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 4321,
+  "assessment": 658600,
+  "description": "Gorgeous 3 bed 2 bath townhome at Hidden Creek Estates, a sought after family oriented complex. Rarely available 2 level townhouse featuring large chef inspired kitchen with s/s appliances, double sink and dining area with bay windows for tons of natural light.  Spacious living room with built in cabinets and walk out concrete patio perfect for those summer BBQ's and big backyard with full size fence, perfect for pets and kids.  Upstairs features a very spacious primary bedroom and well size second and third bedroom.   Great School catchment, Walk to Maple Ridge Elementary and Westview for Secondary. Fantastic location, just steps to dining, groceries and cafe's. Plus quick and easy access to Golden Ears bridge.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Westview Secondary",
+      "rating": 1.9,
+      "distance": "1.0 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Maple Ridge Elementary",
+      "rating": 1.8,
+      "distance": "0.5 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Southwest Maple Ridge",
+  "soldDate": "2026-01-25",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/25-11757-207th-street/home/EeVbOYEE88VYx2P0?id_listing=Zaw5Yoj5bAm3n961",
+  "_scrapedAt": "2026-02-07T16:11:41.492Z",
+  "_rawFile": "25_11757_207_street_maple_ridge_southwest_maple_ridge.html"
+}

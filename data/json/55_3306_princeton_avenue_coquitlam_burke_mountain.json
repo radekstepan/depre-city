@@ -1,0 +1,42 @@
+{
+  "address": "Unit 55 - 3306 Princeton Avenue",
+  "city": "Coquitlam",
+  "sqft": 2180,
+  "year": 2020,
+  "price": 1300000,
+  "listPrice": 1349900,
+  "fee": 413,
+  "bedrooms": 4,
+  "bathrooms": 5,
+  "parking": 2,
+  "propertyTax": 5166,
+  "assessment": 1374000,
+  "description": "Incredible opportunity to own this perfectly located, meticulously maintained END-UNIT townhome at Polygon’s Hadleigh on the Park, situated in one of the best locations in the complex - directly facing Burke Mountain Pioneer Park. Featuring an open, spacious plan, w/ 9’ ceilings on the main and expansive windows, bringing in plenty of natural light. The gourmet kitchen w/ stone counters, SS + paneled appliances, has direct access to your large balcony, perfect for morning coffee or hosting. Upstairs offers 3 spacious bedrooms, 3 bathrooms + laundry. The lower level includes a fourth bedroom, extra storage and a full bath. Fenced front yard with large patio, plus SIDE BY SIDE double garage. One of the most sought-after, family friendly complexes in Burke Mountain, in an unbeatable location.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "1.4 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "4.0 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "soldDate": "2026-01-22",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/55-3306-princeton-avenue/home/EeVbOYEEMxdYx2P0?id_listing=LzQ1y50Ea9wYqdeK",
+  "_scrapedAt": "2026-02-07T16:13:59.729Z",
+  "_rawFile": "55_3306_princeton_avenue_coquitlam_burke_mountain.html"
+}

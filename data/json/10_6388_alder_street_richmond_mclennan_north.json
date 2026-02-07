@@ -1,0 +1,42 @@
+{
+  "address": "Unit 10 - 6388 Alder Street",
+  "city": "Richmond",
+  "sqft": 1542,
+  "year": 2000,
+  "price": 1000000,
+  "listPrice": 1049900,
+  "fee": 341,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3593,
+  "assessment": 1068000,
+  "description": "Welcome to The Hamptons by Cressey — a perfect family-friendly townhome in central Richmond. This rare 4-bedroom end unit offers privacy and space, featuring a west-facing gated yard with a desirable entrance off Alberta St for easy access and extra street parking. The main floor boasts a spacious living and dining area with a balcony, plus a bright kitchen with its own eating nook and balcony. Upstairs includes 3 generous bedrooms and 2 full baths, while the ground floor offers a versatile bedroom or office that opens to a private patio and grassed yard. Complete with a 2-car tandem garage, this home is just steps to Henry Anderson Elementary, AR MacNeill Secondary, and Garden City Park — an ideal location for growing families.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Henry Anderson Elementary",
+      "rating": 8,
+      "distance": "0.1 km",
+      "type": "0-7"
+    },
+    {
+      "name": "MacNeill Secondary",
+      "rating": 3.4,
+      "distance": "0.3 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "McLennan North",
+  "soldDate": "2026-01-28",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/10-6388-alder-street/home/5VXv3lXbaGE3j2q8?id_listing=Vwod7vWrPnJ35mGN",
+  "_scrapedAt": "2026-02-07T16:11:47.587Z",
+  "_rawFile": "10_6388_alder_street_richmond_mclennan_north.html"
+}

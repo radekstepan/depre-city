@@ -1,0 +1,36 @@
+{
+  "address": "Unit 99 - 24076 112 Avenue",
+  "city": "Maple Ridge",
+  "sqft": 1432,
+  "year": 2020,
+  "price": 770000,
+  "listPrice": 799000,
+  "fee": 281,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4151,
+  "assessment": 814000,
+  "description": "Welcome to your home at Creekside! This beautifully finished 3 bedroom, 3 bathroom townhome offers 1,432 sqft of bright and functional living space. The open main floor features 9-foot ceilings, a spacious living and dining area, a gourmet kitchen with quartz countertops, a spacious island, stainless steel appliances, and ample storage. Thoughtful custom millwork provides style and functionality and gives this home a unique touch. Upstairs you'll find 3 generous bedrooms, including a primary suite with walk-in closet and ensuite. Enjoy a private outdoor space, perfect for relaxing or entertaining, plus the convenience of an attached garage. Nestled beside Siegel Creek, this sought-after community combines natural surroundings with close proximity to schools, shopping, parks, and transit.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Garibaldi Secondary",
+      "rating": 1.6,
+      "distance": "2.3 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Cottonwood MR",
+  "soldDate": "2026-01-28",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/99-24076-112-avenue/home/wJKR7P86zDB7XeLP?id_listing=1DBW7RrDlBk7qlAp",
+  "_scrapedAt": "2026-02-07T16:11:26.675Z",
+  "_rawFile": "99_24076_112_avenue_maple_ridge_cottonwood_mr.html"
+}

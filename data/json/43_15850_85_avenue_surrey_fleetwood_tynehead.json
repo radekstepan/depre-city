@@ -1,0 +1,42 @@
+{
+  "address": "Unit 43 - 15850 85 Avenue",
+  "city": "Surrey",
+  "sqft": 1405,
+  "year": 2021,
+  "price": 821000,
+  "listPrice": 858000,
+  "fee": 0,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3127,
+  "assessment": 842000,
+  "description": "Welcome to Fleetwood Village - where modern design meets everyday convenience. This Modern 3 bed + 3 bath + den (can be used as 4th bedroom) townhome with 1,405 sq. ft. of open living! Featuring a gourmet kitchen with quartz counters & stainless steel appliances, spacious primary suite with walk-in closet, and a versatile entry-level bedroom with ensuite. A true walk away from Retail Stores, Restaurants, Banks, Groceries Stores, and future Skytrain. OPEN HOUSE SUNDAY SEPT 28, 2-4PM",
+  "features": [],
+  "schools": [
+    {
+      "name": "Walnut Road Elementary",
+      "rating": 7.8,
+      "distance": "1.2 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Fleetwood Park Secondary",
+      "rating": 7,
+      "distance": "1.2 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Fleetwood Tynehead",
+  "soldDate": "2026-01-18",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/43-15850-85-avenue/home/K8OgYBVBrGxYJmG2?id_listing=xLkv3V6LEje3DBNr",
+  "_scrapedAt": "2026-02-07T16:13:14.766Z",
+  "_rawFile": "43_15850_85_avenue_surrey_fleetwood_tynehead.html"
+}

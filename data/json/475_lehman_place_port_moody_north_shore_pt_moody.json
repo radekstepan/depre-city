@@ -1,0 +1,42 @@
+{
+  "address": "475 Lehman Place",
+  "city": "Port Moody",
+  "sqft": 1635,
+  "year": 1980,
+  "price": 940000,
+  "listPrice": 949888,
+  "fee": 561,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 1,
+  "propertyTax": 3648,
+  "assessment": 924000,
+  "description": "Beautifully updated 3 bed, 4 bath townhome offering 1,635 sq ft of comfortable, modern living in a PRIME Port Moody location. Built in 1980 with thoughtful interior renovations, this home features an open-concept main floor, a sleek contemporary kitchen, and warm, inviting living spaces. Upstairs offers generous bedrooms, while the lower level provides flexibility for guests, a home office, or family living. Ideally situated a minutes walk from Port Moody Centre, Newport Village, Suter Brook, Rocky Point, Brewers Row, Rec Centre & SkyTrain! A rarely available blend of space, convenience, and lifestyle! Open Houses Cancelled.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Gleneagle Secondary",
+      "rating": 6.6,
+      "distance": "1.2 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Eagle Ridge Elementary",
+      "rating": 6.4,
+      "distance": "0.5 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "North Shore Pt Moody",
+  "soldDate": "2026-01-24",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-moody-real-estate/475-lehman-place/home/weQp5yOeEjG3d0ZE?id_listing=J6Em7b9nkkdyXBeq",
+  "_scrapedAt": "2026-02-07T16:14:34.872Z",
+  "_rawFile": "475_lehman_place_port_moody_north_shore_pt_moody.html"
+}

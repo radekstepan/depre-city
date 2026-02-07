@@ -1,0 +1,36 @@
+{
+  "address": "Unit 6 - 4245 Sophia Street",
+  "city": "Vancouver",
+  "sqft": 1339,
+  "year": 1988,
+  "price": 1400000,
+  "listPrice": 1399000,
+  "fee": 481,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 4478,
+  "assessment": 1335000,
+  "description": "Welcome to this tastefully updated 3-bed, 3-bath, three level townhome in a welcoming family friendly community. The main floor features an open-concept living & dining area with wood burning fireplace, kitchen with view into main living space, 2-piece powder room, private patio, & attached garage. Two bedrooms & full bathroom occupy the second floor, & the top level hosts a spacious primary suite with ensuite bathroom & private balcony with beautiful mountain views. Owners have pro-actively replaced the poly-b piping in the home. Updates include new flooring, fresh neutral paint, & modern fixtures throughout, this move-in-ready home includes a secluded patio area & is conveniently located a block away from Main St, walking distance to community centre, shopping, school and transit.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sir Charles Tupper Secondary",
+      "rating": 3.7,
+      "distance": "0.5 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Main",
+  "soldDate": "2026-01-26",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/6-4245-sophia-street/home/02Zpj39xvXd7DrK8?id_listing=10QqypGNmbeYLGlV",
+  "_scrapedAt": "2026-02-07T16:14:56.162Z",
+  "_rawFile": "6_4245_sophia_street_vancouver_main.html"
+}
