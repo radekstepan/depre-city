@@ -1,0 +1,42 @@
+{
+  "address": "Unit 7 - 10527 155 Street",
+  "city": "Surrey",
+  "sqft": 1370,
+  "year": 2024,
+  "price": 855000,
+  "listPrice": 859900,
+  "fee": 341,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3895,
+  "assessment": 984000,
+  "description": "Guildford’s finest! This new 3BR 2.5BTH corner end unit boasts a private fenced backyard and upscale finishes, built by award-winning IOM. Enjoy a chef-inspired kitchen with sleek cabinetry, premium appliances & an elegant island with designer light fixtures. The primary suite offers a walk in closet, & spa-like ensuite with his & her sinks, matte black fixtures & herringbone tile. Includes double tandem garage, plus rough-in for A/C, EV charger & security. HAVAN Award finalist, steps to schools, shops, dining, transit & Hwy 1. Besides a future park & green belt. Don't miss this perfect unit!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Johnston Heights Secondary",
+      "rating": 6.4,
+      "distance": "1.4 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Harold Bishop Elementary",
+      "rating": 4.3,
+      "distance": "0.5 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Guildford",
+  "soldDate": "2026-01-24",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/7-10527-155-street/home/amgL7A4QN8byZ1MW?id_listing=56k97w0qwL83KRjD",
+  "_scrapedAt": "2026-02-16T20:47:01.114Z",
+  "_rawFile": "7_10527_155_street_surrey_guildford.html"
+}

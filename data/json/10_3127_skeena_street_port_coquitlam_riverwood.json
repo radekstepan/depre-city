@@ -1,0 +1,42 @@
+{
+  "address": "Unit 10 - 3127 Skeena Street",
+  "city": "Port Coquitlam",
+  "sqft": 2106,
+  "year": 2005,
+  "price": 915000,
+  "listPrice": 925000,
+  "fee": 410,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 1,
+  "propertyTax": 3567,
+  "assessment": 1049000,
+  "description": "OPEN HOUSE CANCELLED.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Cedar Drive Elementary",
+      "rating": 4.4,
+      "distance": "0.1 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "1.0 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Riverwood",
+  "soldDate": "2026-01-31",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/10-3127-skeena-street/home/PXRla7gXK9P3jEvL?id_listing=Z5BX32NzOAw3Dar0",
+  "_scrapedAt": "2026-02-16T20:51:17.620Z",
+  "_rawFile": "10_3127_skeena_street_port_coquitlam_riverwood.html"
+}

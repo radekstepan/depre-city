@@ -1,0 +1,42 @@
+{
+  "address": "Unit 71 - 758 Riverside Drive",
+  "city": "Port Coquitlam",
+  "sqft": 1643,
+  "year": 1996,
+  "price": 919000,
+  "listPrice": 938000,
+  "fee": 439,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3493,
+  "assessment": 959000,
+  "description": "Welcome home to thoughtful living surrounded by nature. This bright 2-level corner home is tucked into a quiet, family-friendly neighbourhood, featuring generous open living areas ideal for daily life and memorable gatherings. Step outside to the large  backyard perfect for summer BBQs, kids at play, or peaceful moments to unwind. Air conditioned! A newly installed heat pump delivers year-round comfort and energy efficiency, while the double side-by-side garage adds practical convenience. A short stroll to the scenic Blakeburn Lagoons Park, where morning walks & evening sunsets become part of your routine. Costco, Walmart, shopping, schools, & everyday amenities only minutes away, this home offers the perfect balance of tranquil living and easy access.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Blakeburn Elementary",
+      "rating": 6.5,
+      "distance": "0.5 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "0.9 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Riverwood",
+  "soldDate": "2026-01-26",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/71-758-riverside-drive/home/02Zpj39XgPM7DrK8?id_listing=nM697k85K0g3bmwe",
+  "_scrapedAt": "2026-02-16T20:50:17.235Z",
+  "_rawFile": "71_758_riverside_drive_port_coquitlam_riverwood.html"
+}

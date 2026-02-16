@@ -1,0 +1,42 @@
+{
+  "address": "Unit 15 - 15717 Mountain View Drive",
+  "city": "Surrey",
+  "sqft": 2036,
+  "year": 2017,
+  "price": 1120000,
+  "listPrice": 1129000,
+  "fee": 580,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4025,
+  "assessment": 1038000,
+  "description": "Welcome to OLIVIA in Grandview South Surrey! This GORGEOUS 4 bed/4 bath modern townhouse welcomes an infusion of sunlight in every corner w it's beautiful N/S exposure. Main floor feat. a spacious, unique open floorplan w thoughtfully hidden half bath, walk in pantry, & stunning kitchen w gas range stove, s/s appliances, & quartz counters. Up you'll find the large primary bed w vaulted ceilings, walk-in closet, & a beautiful spa-like ensuite w separate toilet room, as well as 2 more bright beds & separate laundry. Down has a massive 4th bed/flex space w separate entry & full ensuite. BONUS UPGRADES: engineered hardwood, A/C, central vac, bar fridge, alarm system, built in speakers on main, crown molding, & finished DOUBLE GARAGE! AN IMMACULATE 10/10 HOME in GREAT area! This is a MUST SEE!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Morgan Elementary",
+      "rating": 8.3,
+      "distance": "0.8 km",
+      "type": "JK-8"
+    },
+    {
+      "name": "Earl Marriott Secondary",
+      "rating": 7.2,
+      "distance": "2.7 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Grandview Surrey",
+  "soldDate": "2026-02-02",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/15-15717-mountain-view-drive/home/4KAX7NO4AMO3eRPJ?id_listing=aQmD7z6n8aA7J9Bo",
+  "_scrapedAt": "2026-02-16T20:46:26.566Z",
+  "_rawFile": "15_15717_mountain_view_drive_surrey_grandview_surrey.html"
+}

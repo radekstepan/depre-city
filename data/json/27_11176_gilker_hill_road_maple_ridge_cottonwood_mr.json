@@ -1,0 +1,42 @@
+{
+  "address": "Unit 27 - 11176 Gilker Hill Road",
+  "city": "Maple Ridge",
+  "sqft": 2065,
+  "year": 2012,
+  "price": 745000,
+  "listPrice": 749000,
+  "fee": 626,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 1,
+  "propertyTax": 4260,
+  "assessment": 843000,
+  "description": "WOW! INCREDIBLE PRICE FOR OVER 2000 SQ FT! This fantastic 4-bdrm/4-bath townhouse offers breathtaking views of Kanaka Creek Park & Thornhill. The bright, open-concept main floor is filled with natural light from oversized windows, creating a warm & inviting space ideal for everyday living & entertaining. Enjoy seamless indoor-outdoor living with private patios overlooking serene park views. The top floor features 3 bedrooms and 2 full bathrooms, including a luxurious 5-piece ensuite & walk-in closet. The lower level boasts soaring ceilings, ample storage, an additional bedroom, & full bathroom. This versatile space is ideal for a media room, guest suite, teenager hangout, or even co-owning or co-sharing opportunities. Located steps from walking trails, Kanaka Creek Elementary & transit",
+  "features": [],
+  "schools": [
+    {
+      "name": "Kanaka Creek Elementary",
+      "rating": 5.3,
+      "distance": "0.3 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Samuel Robertson Technical Secondary",
+      "rating": 2.3,
+      "distance": "2.4 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Cottonwood MR",
+  "soldDate": "2026-01-23",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/27-11176-gilker-hill-road/home/weQp5yOXNoJ7d0ZE?id_listing=bqB176zWvpw7ZajD",
+  "_scrapedAt": "2026-02-16T20:52:20.249Z",
+  "_rawFile": "27_11176_gilker_hill_road_maple_ridge_cottonwood_mr.html"
+}

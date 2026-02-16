@@ -1,0 +1,42 @@
+{
+  "address": "Unit 36 - 6035 141 Street",
+  "city": "Surrey",
+  "sqft": 1448,
+  "year": 2025,
+  "price": 890000,
+  "listPrice": 889900,
+  "fee": 296,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "assessment": 880000,
+  "description": "MOVE IN READY HOMES! 50% sold. Welcome to Harmony by Apcon Group, the newest community in Sullivan! Harmony consists of 44 townhomes that feature 3 bedrooms + den & 3 bedroom + flex + den + rooftop patio homes. Harmony is centrally located and is minutes away from schools, YMCA, Panorama Village Plaza and Guildford Town Centre. This 1,448 sqft. 3 bedroom + den home features a spacious layout with generous 9' ceilings, Samsung Stainless steel appliances, durable wide plank flooring in the kitchen & living area, tranquil spa like bathrooms, ample storage and expansive oversized windows that provide natural light. This home also features a side by side double car garage. Contact for more information!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sullivan Heights Secondary",
+      "rating": 5.5,
+      "distance": "0.8 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Woodward Hill Elementary",
+      "rating": 3.8,
+      "distance": "0.3 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Sullivan Station",
+  "soldDate": "2026-01-17",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/36-6035-141-street/home/0A9X3jPpz6ryvgxV?id_listing=4KAX7ND1l2OYeRPJ",
+  "_scrapedAt": "2026-02-16T20:54:45.153Z",
+  "_rawFile": "36_6035_141_street_surrey_sullivan_station.html"
+}

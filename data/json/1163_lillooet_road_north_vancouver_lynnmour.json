@@ -1,0 +1,42 @@
+{
+  "address": "1163 Lillooet Road",
+  "city": "North Vancouver",
+  "sqft": 1907,
+  "year": 1973,
+  "price": 1170000,
+  "listPrice": 1198000,
+  "fee": 709,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3567,
+  "assessment": 1224000,
+  "description": "Tastefully updated & rarely available end unit at LYNNMOUR WEST featuring a complete makeover with over $150,000 spent on renovations. Chefs will love the open plan kitchen with granite counters, s/s appliances including gas stove, tons of extra built in storage & all extending to a fully fenced spacious sundeck complete with gazebo & gas hookup. You will appreciate the hardwood (not laminate) flooring, designer light fixtures, gas fireplace, recessed lighting throughout &  fresh paint. The sunken living room features wall to wall windows and accesses a sunny west facing deck. The huge primary bedroom also offers a private balcony, a full ensuite and even a view.  There are 2 covered parking stalls, a storage area, an outdoor pool and convenient access to transit & downtown. OPEN SAT  2-4.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Windsor Secondary",
+      "rating": 6.7,
+      "distance": "2.0 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Lynnmour Elementary School",
+      "rating": 5,
+      "distance": "0.6 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Lynnmour",
+  "soldDate": "2026-02-04",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/1163-lillooet-road/home/zVwod7vvB2D75mGN?id_listing=GMnKYqx0xg13w1Qr",
+  "_scrapedAt": "2026-02-16T20:46:54.304Z",
+  "_rawFile": "1163_lillooet_road_north_vancouver_lynnmour.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 30 - 15717 Mountain View Drive",
+  "city": "Surrey",
+  "sqft": 2078,
+  "year": 2017,
+  "price": 1125000,
+  "listPrice": 1168000,
+  "fee": 586,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4128,
+  "assessment": 1064000,
+  "description": "Spacious 4-bedroom, 4-bathroom corner unit in the sought-after Olivia complex in Grandview. Ideally located near shopping, schools, and transit, yet tucked away in a serene greenspace for privacy. This end unit offers ultimate seclusion and features hardwood floors throughout. The versatile 4th bedroom can also serve as a flex space. Enjoy modern comforts with air conditioning, updated light fixtures, and fresh paint. This home has been meticulously maintained, features a walk-in pantry and a double garage with additional parking for two vehicles on the driveway. Family and pet-friendly community. Shows a 10+",
+  "features": [],
+  "schools": [
+    {
+      "name": "Morgan Elementary",
+      "rating": 8.3,
+      "distance": "0.8 km",
+      "type": "JK-8"
+    },
+    {
+      "name": "Earl Marriott Secondary",
+      "rating": 7.2,
+      "distance": "2.7 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Grandview Surrey",
+  "soldDate": "2025-11-01",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/30-15717-mountain-view-drive/home/EXrx30XzGVJ3OklN?id_listing=J6Em7b2w00d7XBeq",
+  "_scrapedAt": "2026-02-16T20:53:21.503Z",
+  "_rawFile": "30_15717_mountain_view_drive_surrey_grandview_surrey.html"
+}

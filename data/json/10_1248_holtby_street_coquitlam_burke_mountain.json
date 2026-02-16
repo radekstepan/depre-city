@@ -1,0 +1,42 @@
+{
+  "address": "Unit 10 - 1248 Holtby Street",
+  "city": "Coquitlam",
+  "sqft": 1377,
+  "year": 2009,
+  "price": 870000,
+  "listPrice": 878800,
+  "fee": 322,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3367,
+  "assessment": 909000,
+  "description": "TATTON – a boutique collection of family friendly townhomes surrounded by nature in beautiful Burke Mountain. This 3 storey home offers a bright open layout with 9' ceilings. Gourmet kitchen with island, quartz counters and stainless steel appliances. Spacious dining and living areas with abundant natural light. Generous primary bedroom with large 4 piece ensuite. Lower level room can be a 3rd bedroom (no closet) or home office/flex space. Home features insuite laundry, private balcony/sundeck, gated front yard, oversized garage with storage, and large parking pad. Across from Victoria Park and 1 block to Leigh Elementary. Pet friendly, steps to transit, 15 minutes to Coquitlam Centre and SkyTrain.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "0.2 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "2.7 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "soldDate": "2026-01-30",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/10-1248-holtby-street/home/EeVbOYElmXG3x2P0?id_listing=Xawjy4Z1WXW3rR18",
+  "_scrapedAt": "2026-02-16T20:51:08.752Z",
+  "_rawFile": "10_1248_holtby_street_coquitlam_burke_mountain.html"
+}

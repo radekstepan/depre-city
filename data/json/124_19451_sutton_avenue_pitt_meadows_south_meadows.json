@@ -1,0 +1,36 @@
+{
+  "address": "Unit 124 - 19451 Sutton Avenue",
+  "city": "Pitt Meadows",
+  "sqft": 1348,
+  "year": 2025,
+  "price": 939900,
+  "listPrice": 939900,
+  "fee": 337,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "assessment": 885000,
+  "description": "Craftsman inspired TH 124 1348 SF 3 bed 2.5 bath with a balcony and private yard in a well established community. Features include A/C, Laminate flooring throughout, on-demand hot water system, and overheight ceiling in living, kitchen and dining area with vaulted ceiling in the bedrooms make this home the perfect place to relax or entertain. Chef inspired kitchen features premium appliance package with 36' integrated Fulgor Milano fridge, 5-burner Fulgor Milano stove integrated with natural stone counter tops and back splash. Amenities include an outdoor pool, hot tub, gym, Golf Simulator, lounge, Indoor Kids play room, games room, Outdoor playground and sports court. 2 car private garage. <",
+  "features": [],
+  "schools": [
+    {
+      "name": "Pitt Meadows Secondary",
+      "rating": 3.6,
+      "distance": "0.9 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "South Meadows",
+  "soldDate": "2026-01-29",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/pitt-meadows-real-estate/124-19451-sutton-avenue/home/Zaw5Yo5r64L7n961?id_listing=DO1w3W1q2BVy8Jg0",
+  "_scrapedAt": "2026-02-16T20:50:19.481Z",
+  "_rawFile": "124_19451_sutton_avenue_pitt_meadows_south_meadows.html"
+}

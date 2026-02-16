@@ -1,0 +1,42 @@
+{
+  "address": "4756 Duchess Street",
+  "city": "Vancouver",
+  "sqft": 1077,
+  "year": 2021,
+  "price": 1085000,
+  "listPrice": 1138000,
+  "fee": 354,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 3492,
+  "assessment": 1106000,
+  "description": "Look no further! This bright and airy corner 3 bedroom townhome will check all the boxes. Inside is almost 1100 sqft of well laid out living space with an open and spacious main floor with tons of windows and natural light. There are 3 generous sized bedrooms, 2 of them the private outdoor spaces providing plenty of space for a growing family. This home is equipped with comfortable radiant floor heating, HRV, hw on demand, built in alarm, smart doorbell, gas bbq hookup, and custom built in. Located in the popular Norquay Village this home is conveniently located across the street from John Norquay Elementary and a short walk to Norquay & Slocan park and 29th St skytrain. 1 EV parking and 3 storage lockers are included with this home.",
+  "features": [],
+  "schools": [
+    {
+      "name": "John Norquay Elementary",
+      "rating": 7.2,
+      "distance": "0.1 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Windermere Community Secondary",
+      "rating": 5,
+      "distance": "1.0 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Collingwood VE",
+  "soldDate": "2026-01-29",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/4756-duchess-street/home/xmZRW7nxvwMYEBO9?id_listing=XeEn7XK6G1gyrPo8",
+  "_scrapedAt": "2026-02-16T20:49:30.250Z",
+  "_rawFile": "4756_duchess_street_vancouver_collingwood_ve.html"
+}

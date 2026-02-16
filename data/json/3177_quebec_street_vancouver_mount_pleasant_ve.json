@@ -1,0 +1,42 @@
+{
+  "address": "3177 Quebec Street",
+  "city": "Vancouver",
+  "sqft": 1278,
+  "year": 2016,
+  "price": 1430000,
+  "listPrice": 1449000,
+  "fee": 593,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 4939,
+  "assessment": 1446000,
+  "description": "This stunning home offers the perfect blend of comfort, functionality & urban charm. Step inside from your welcoming front patio into an open-concept main floor w/ over-height ceilings, a modern kitchen, spacious dining & living area, plus a convenient powder room. Upstairs features an expansive primary suite w/ a lovely ensuite & large storage closet. Continue up to find two additional generously sized bedrooms, ideal for family or guests. At the very top, unwind or entertain on your private 313 sqft. rooftop deck, a true city oasis w/ plenty of room to relax and take in the views! With thoughtful design, quality finishings, parking & one of the most family-friendly layouts in the area, this home is located just moments from everything Main Street has to offer.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Eric Hamber Secondary",
+      "rating": 8.4,
+      "distance": "2.5 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Simon Fraser Elementary",
+      "rating": 6.9,
+      "distance": "0.4 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Mount Pleasant VE",
+  "soldDate": "2026-02-02",
+  "parkingType": "underground",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/3177-quebec-street/home/damgL7ABER93Z1MW?id_listing=JRv53KpabZ6YVPW4",
+  "_scrapedAt": "2026-02-16T20:48:03.428Z",
+  "_rawFile": "3177_quebec_street_vancouver_mount_pleasant_ve.html"
+}

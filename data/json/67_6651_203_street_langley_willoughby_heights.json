@@ -1,0 +1,48 @@
+{
+  "address": "Unit 67 - 6651 203 Street",
+  "city": "Langley",
+  "sqft": 1432,
+  "year": 2003,
+  "price": 725000,
+  "listPrice": 749900,
+  "fee": 345,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2646,
+  "assessment": 772000,
+  "description": "Bright, stylish, fully updated unit in Sunscape! This refreshed townhome features an airy layout, an updated kitchen with Quartz counters, newer stainless steel appliances, a spacious island, and ample storage. Enjoy a cozy gas fireplace and a rare main-floor powder room. Upstairs offers a large primary bedroom with a 4-piece ensuite and double sinks, plus two versatile bedrooms. Fresh paint, newer flooring, carpet, washer/dryer, and a new hot water tank add comfort. The fully fenced yard with covered porch and a deck is perfect for relaxing. With low fees, and a prime location near schools, shopping, and transit, this move-in-ready home checks every box.",
+  "features": [],
+  "schools": [
+    {
+      "name": "R C Garnett Demonstration Elementary",
+      "rating": 5.8,
+      "distance": "0.9 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.8 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Langley Meadows Elementary",
+      "rating": 5.2,
+      "distance": "0.9 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-01-29",
+  "parkingType": "garage_tandem",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/67-6651-203rd-street/home/NAKv53D4Drk3MnxB?id_listing=bqB176zWx5v7ZajD",
+  "_scrapedAt": "2026-02-16T20:48:00.481Z",
+  "_rawFile": "67_6651_203_street_langley_willoughby_heights.html"
+}

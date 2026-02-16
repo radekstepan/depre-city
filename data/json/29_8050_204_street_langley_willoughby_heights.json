@@ -1,0 +1,42 @@
+{
+  "address": "Unit 29 - 8050 204 Street",
+  "city": "Langley",
+  "sqft": 1523,
+  "year": 2018,
+  "price": 815000,
+  "listPrice": 829000,
+  "fee": 347,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2924,
+  "assessment": 868000,
+  "description": "Welcome to Ashbury + Oak in the heart of Willoughby—perfect for first-time buyers and growing families. This bright 3-bedroom + den, 3-bath corner townhome offers a functional open layout with plenty of natural light, modern finishes, and a side-by-side double garage. The contemporary kitchen features stainless steel appliances, quartz countertops, and ample storage, ideal for daily family living. Enjoy outdoor space with a main-floor deck for BBQs and a private fenced yard for kids or pets. Family-friendly, pet-friendly community with excellent amenities including a gym, outdoor pool, hot tub, clubhouse, and guest suite. Walking distance to shops, parks, and schools, with easy access to highways and Carvolth Exchange.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "0.7 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "0.9 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-01-31",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/29-8050-204-street/home/owJKR7PBLlGYXeLP?id_listing=xLkv3V19BGO7DBNr",
+  "_scrapedAt": "2026-02-16T20:48:23.669Z",
+  "_rawFile": "29_8050_204_street_langley_willoughby_heights.html"
+}

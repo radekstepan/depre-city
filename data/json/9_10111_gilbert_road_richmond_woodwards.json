@@ -1,0 +1,42 @@
+{
+  "address": "Unit 9 - 10111 Gilbert Road",
+  "city": "Richmond",
+  "sqft": 1275,
+  "year": 1983,
+  "price": 740000,
+  "listPrice": 799000,
+  "fee": 440,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 2853,
+  "assessment": 836900,
+  "description": "Your family’s next chapter begins here! This quiet, inside-unit townhome boasts 3 generously sized bedrooms, 1.5 baths, and a sunny south-facing backyard—perfect for kids and pets. The complex has already completed major updates (roof, gutters, downspouts etc), leaving the interior ready for your personal upgrades. With Steveston-London Secondary right next door and Maple Lane Elementary nearby, this is an ideal place for families to grow. Shopping, dining, and daily conveniences are just minutes away. A solid investment in a desirable Richmond neighbourhood!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Maple Lane Elementary",
+      "rating": 8.5,
+      "distance": "0.6 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Steveston-London Secondary",
+      "rating": 7.8,
+      "distance": "0.1 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Woodwards",
+  "soldDate": "2026-01-30",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/9-10111-gilbert-road/home/10QqypNabq53LGlV?id_listing=2Zpj399vopn3DrK8",
+  "_scrapedAt": "2026-02-16T20:46:02.529Z",
+  "_rawFile": "9_10111_gilbert_road_richmond_woodwards.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 30 - 15775 Mountain View Drive",
+  "city": "Surrey",
+  "sqft": 1839,
+  "year": 2018,
+  "price": 942000,
+  "listPrice": 950000,
+  "fee": 431,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4104,
+  "assessment": 958000,
+  "description": "Welcome to #30 15775 Mountain View Dr — a beautifully kept 1839 sq ft townhome offering 4 bedrooms + den and 2.5 bathrooms. Built just 7 years ago, this home combines comfort and modern style with two inviting living areas and a bright kitchen featuring quartz counters, stainless appliances, and an upgraded backsplash. Enjoy mountain views from the complex’s largest rooftop deck, partially covered for year-round use. Upstairs offers natural light, a home office, and convenient laundry. Extras include smart thermostats, a double side-by-side garage, extra parking, and two storage areas.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Morgan Elementary",
+      "rating": 8.3,
+      "distance": "0.8 km",
+      "type": "JK-8"
+    },
+    {
+      "name": "Earl Marriott Secondary",
+      "rating": 7.2,
+      "distance": "2.7 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Grandview Surrey",
+  "soldDate": "2026-02-03",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/30-15775-mountain-view-drive/home/0Zaw5YobBv03n961?id_listing=Zaw5Yoj5OA23n961",
+  "_scrapedAt": "2026-02-16T20:50:00.014Z",
+  "_rawFile": "30_15775_mountain_view_drive_surrey_grandview_surrey.html"
+}

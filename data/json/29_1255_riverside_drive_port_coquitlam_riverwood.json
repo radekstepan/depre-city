@@ -1,0 +1,42 @@
+{
+  "address": "Unit 29 - 1255 Riverside Drive",
+  "city": "Port Coquitlam",
+  "sqft": 1763,
+  "year": 1995,
+  "price": 950000,
+  "listPrice": 979900,
+  "fee": 424,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4131,
+  "assessment": 1044000,
+  "description": "Welcome to an oversized 3 bed 3 bath END unit townhouse in Riverwood with a DOUBLE CAR GARAGE, huge fully fenced backyard with GAZEBO. Sprawling 1,760+ sf on 2-levels, enjoy spacious kitchen with SS appliances & dining area with cozy gas fireplace to separate from the living room offering PLENTY of natural light. Plenty of room for the whole family with LARGE bedrooms upstairs & 2 bathrooms, a dedicated laundry room with newer W/D. Massive primary bedroom with views of the mountains & full ensuite. Walking distance to shopping & all levels of schools including Terry Fox Secondary and Blackburn Elementary. OPEN HOUSE Saturday, Jan 10 from 12 - 3 PM",
+  "features": [],
+  "schools": [
+    {
+      "name": "Blakeburn Elementary",
+      "rating": 6.5,
+      "distance": "0.5 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "0.3 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Riverwood",
+  "soldDate": "2026-01-09",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/29-1255-riverside-drive/home/ZNkKJ3Jd1k6yd4V6?id_listing=LzQ1y50E8OkYqdeK",
+  "_scrapedAt": "2026-02-16T20:49:42.190Z",
+  "_rawFile": "29_1255_riverside_drive_port_coquitlam_riverwood.html"
+}

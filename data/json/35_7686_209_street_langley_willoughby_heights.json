@@ -1,0 +1,42 @@
+{
+  "address": "Unit 35 - 7686 209 Street",
+  "city": "Langley",
+  "sqft": 1875,
+  "year": 2015,
+  "price": 940000,
+  "listPrice": 958000,
+  "fee": 280,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3131,
+  "assessment": 915000,
+  "description": "Don't miss this opportunity of LUXURY LIVING at the Keaton in the centre of Willoughby Heights! 4BDRM 4BATH with spacious OPEN layout, laminate flooring throughout, UPGRADED lighting in the kitchen & dining room, gourmet kitchen, HUGE family sized island, custom built cabinetry in the dining room. Built in TV stand with fireplace in the living room. Stainless steel appliances, QUARTZ countertops. Generous sized bedrooms with 4th bedroom located below w/a full bathroom. HUGE DOUBLE garage and additional street parking right outside your door. FENCED-IN private yard for your pet or kids and VERY LOW strata fee. 1/2 BLOCK WALK to highly ranked Richard Bulpitt Elementary school and WALKING distance to Smith Athletic Park, restaurants, shops and transit. Open House: Sat Jan31 2-4pm only",
+  "features": [],
+  "schools": [
+    {
+      "name": "Richard Bulpitt Elementary",
+      "rating": 5.8,
+      "distance": "0.1 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.4 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-01-31",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/35-7686-209-street/home/BXeEn7XkPqMyrPo8?id_listing=aQmD7z6nNDA7J9Bo",
+  "_scrapedAt": "2026-02-16T20:48:19.348Z",
+  "_rawFile": "35_7686_209_street_langley_willoughby_heights.html"
+}

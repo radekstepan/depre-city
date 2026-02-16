@@ -1,0 +1,42 @@
+{
+  "address": "Unit 6 - 21138 88th Avenue",
+  "city": "Langley",
+  "sqft": 1648,
+  "year": 1990,
+  "price": 810000,
+  "listPrice": 849900,
+  "fee": 604,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4092,
+  "assessment": 838000,
+  "description": "This lovely home in Walnut Grove is perfect for down-sizers seeking a peaceful, resort-like setting. It features a main-floor master bedroom, Two additional bedrooms, & a full bath upstairs. Located in a 55+ adult complex, it’s close to the clubhouse, pool, hot tub, and just steps from Save-on-Foods and other shops. Spencer Green offers social events, pool, darts, putting green, and exercise classes to help you enjoy a vibrant community. The home includes a 2-car garage with a new door, wood floors, new hot water tank, and has been fully repainted and has been updated with Poly B piping removed, no worries about finding insurance coverage. It’s ideally situated in a convenient location across from stores, services, and coffee shops. A beautiful place to call home-schedule a look today.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Alex Hope Elementary",
+      "rating": 8.7,
+      "distance": "0.5 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Walnut Grove Secondary",
+      "rating": 7.3,
+      "distance": "0.6 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Walnut Grove",
+  "soldDate": "2026-01-30",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/6-21138-88th-avenue/home/bEDRYagAw6b71VaB?id_listing=bqB176ZPA2B7ZajD",
+  "_scrapedAt": "2026-02-16T20:46:14.546Z",
+  "_rawFile": "6_21138_88th_avenue_langley_walnut_grove.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 25 - 7947 209 Street",
+  "city": "Langley",
+  "sqft": 1597,
+  "year": 2019,
+  "price": 825000,
+  "listPrice": 848000,
+  "fee": 322,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3100,
+  "assessment": 904000,
+  "description": "Welcome to Luxia in Willoughby! 3 storey townhouse featuring 3 Bedrooms + 3 Bathrooms with 1,600 Sq Ft of living space. Modern design with open concept living room & gourmet kitchen featuring an island with quartz countertops,  pantry, and stainless steel kitchen aid appliances. Powder room on the main and laminate flooring throughout. Master Bedroom features a walk-in closet and ensuite bathroom with his & her sinks. Upgrades include gas hookup on the patio, laundry sink & cabinetry and epoxy flooring in the double garage. Total of 3 patios including the amazing ROOF TOP deck ideal for entertaining with stunning views. Located close to shopping, recreation, schools, Hwy 1 and much more. Club House includes a fitness studio and social lounge/party room.  Located in the heart of Langley!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Richard Bulpitt Elementary",
+      "rating": 5.8,
+      "distance": "0.3 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.5 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-01-30",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/25-7947-209-street/home/02Zpj39Oa8qyDrK8?id_listing=AKv53DlA0Kw3MnxB",
+  "_scrapedAt": "2026-02-16T20:46:49.198Z",
+  "_rawFile": "25_7947_209_street_langley_willoughby_heights.html"
+}

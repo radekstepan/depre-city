@@ -1,0 +1,42 @@
+{
+  "address": "Unit 16 - 9700 No. 3 Road",
+  "city": "Richmond",
+  "sqft": 1650,
+  "year": 2010,
+  "price": 1000000,
+  "listPrice": 1090000,
+  "fee": 336,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3526,
+  "assessment": 1029000,
+  "description": "Welcome to this 3-level townhouse in the desirable Saunders/Broadmoor neighbourhood! Featuring a bright and spacious main floor with 9' ceilings and an open-concept layout, this home offers great flow and comfort for everyday living. Generously sized bedrooms provide plenty of space for the whole family. Enjoy the convenience of a bedrooom on the lower floor to single garage parking with ample storage. Centrally located in Richmond with easy access to shopping, restaurants, and transit. School catchment: Lee Elementary and McRoberts Secondary.",
+  "features": [],
+  "schools": [
+    {
+      "name": "École Secondaire Hugh McRoberts Secondary School",
+      "rating": 7.8,
+      "distance": "0.7 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Walter Lee Elementary",
+      "rating": 7.2,
+      "distance": "1.2 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Saunders",
+  "soldDate": "2026-01-28",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/16-9700-no-3-road/home/ZNkKJ3JzB463d4V6?id_listing=Z5BX321OKoO7Dar0",
+  "_scrapedAt": "2026-02-16T20:47:43.731Z",
+  "_rawFile": "16_9700_no_3_road_richmond_saunders.html"
+}

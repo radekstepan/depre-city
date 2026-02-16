@@ -1,0 +1,36 @@
+{
+  "address": "3914 Dumfries Street",
+  "city": "Vancouver",
+  "sqft": 1451,
+  "year": 2023,
+  "price": 1300000,
+  "listPrice": 1325000,
+  "fee": 765,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3957,
+  "assessment": 1345000,
+  "description": "This exceptional 3 bed, 2.5 bath TH at 'Format' by Cressey offers 1,451 sq. ft. of contemporary living space w/ a stunning rooftop terrace overlooking beautiful City & Mountain VIEWS! Ideal for entertaining, features include brushed white oak flooring, bespoke matte black kitchen millwork, integrated Fulgor Milano appliances, A/C and radiant heated bathroom flooring. One of the most prime situated townhomes in the strata, West facing with natural light day to night & evening sunsets! Detached from the 16 story tower w/ street level access, this home offers privacy & quiet. Oversized windows overlook a quaint, tree-lined street w/ ample additional street parking. Premium amenities incl: fitness centre, workshop, co-working spaces & incredible rooftop terrace w/ 360 views, BBQs + playground.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Gladstone Secondary",
+      "rating": 3.2,
+      "distance": "0.8 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Knight",
+  "soldDate": "2026-02-01",
+  "parkingType": "underground",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/3914-dumfries-street/home/1DBW7RDQdELYqlAp?id_listing=GMnKYqx0pqj3w1Qr",
+  "_scrapedAt": "2026-02-16T20:51:59.616Z",
+  "_rawFile": "3914_dumfries_street_vancouver_knight.html"
+}

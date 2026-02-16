@@ -1,0 +1,42 @@
+{
+  "address": "Unit 5 - 10080 Kilby Drive",
+  "city": "Richmond",
+  "sqft": 1308,
+  "year": 1993,
+  "price": 858000,
+  "listPrice": 888000,
+  "fee": 295,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3207,
+  "assessment": 954000,
+  "description": "Shows like new. Quality-built, 1,308 sf, 2-level, freshly renovated townhome in convenient west Cambie. Brand new: Euro-style kitchen (new fridge & slightly used range), 2.5 bathrooms, paint, plumbing/lighting fixtures, & flooring (designer laminate wood up and down + tiled kitchen & bath floors). Gas fireplace & radiant, hot water, in-floor heating on main. 3 large bedrooms upstairs. Primary bedroom has walk-in closet & 3pc ensuite bath. Single garage (10’ x 18’8”) + second, reserved parking spot beside. 20’ x 18’ (360’ sf) private yard, featuring 12’ x 12’ patio, facing quiet Kilby Dr for easy additional street parking. Max 1 cat or dog.",
+  "features": [],
+  "schools": [
+    {
+      "name": "R. C. Talmey Elementary",
+      "rating": 6.6,
+      "distance": "0.5 km",
+      "type": "0-7"
+    },
+    {
+      "name": "MacNeill Secondary",
+      "rating": 3.4,
+      "distance": "2.4 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "West Cambie",
+  "soldDate": "2026-01-31",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/5-10080-kilby-drive/home/XeEn7X6xMa0YrPo8?id_listing=AKv53DxD6od3MnxB",
+  "_scrapedAt": "2026-02-16T20:46:43.477Z",
+  "_rawFile": "5_10080_kilby_drive_richmond_west_cambie.html"
+}

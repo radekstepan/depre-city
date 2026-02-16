@@ -1,0 +1,42 @@
+{
+  "address": "Unit 56 - 4967 220 Street",
+  "city": "Langley",
+  "sqft": 2185,
+  "year": 2014,
+  "price": 1045000,
+  "listPrice": 1050000,
+  "fee": 636,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3594,
+  "assessment": 989000,
+  "description": "The one you have been waiting for! The largest unit in Winchester Estates with 2185 sq ft, 4 bdrms, 4 bthrms, providing the spacious feel of a single-family home. Best location in the complex~ this prime hilltop spot offers privacy & stunning city & North Shore mountains views. Open flr plan has soaring vaulted ceiling in the great rm & kitchen with white cabinetry, island, S/S appliances, including induction range. Balcony off the dining area is perfect for year-round barbequing. Up includes 3 bdrms, featuring a large primary suite with walk-in closet & 5-piece ensuite. Unwind & enjoy views of the ski hill & city lights! Bsmnt has a rec room, large bdrm, 4 pc bth, wine rm/flex space & tons of storage. Head out to the private patio & gardens. Double garage, new H/W/T ~ great community!",
+  "features": [],
+  "schools": [
+    {
+      "name": "James Hill Elementary",
+      "rating": 5,
+      "distance": "1.0 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Langley Secondary",
+      "rating": 1.4,
+      "distance": "1.8 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Murrayville",
+  "soldDate": "2026-02-03",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/56-4967-220th-street/home/BGMnKYqlXQ63w1Qr?id_listing=1DBW7RrDm4k7qlAp",
+  "_scrapedAt": "2026-02-16T20:48:27.404Z",
+  "_rawFile": "56_4967_220_street_langley_murrayville.html"
+}

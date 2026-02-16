@@ -1,0 +1,36 @@
+{
+  "address": "2175 Guelph Street",
+  "city": "Vancouver",
+  "sqft": 1475,
+  "year": 2017,
+  "price": 1620000,
+  "listPrice": 1648000,
+  "fee": 0,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 4949,
+  "assessment": 1543000,
+  "description": "SIX & GUELPH is a boutique four-home collection in one of Mount Pleasant’s most sought-after pockets—just minutes to Main Street, Downtown, and Olympic Village. This bright corner residence offers nearly 1,500 sq ft with 3 bedrooms, 3 bathrooms, and three private outdoor spaces. The main level features an airy open-concept layout with oversized windows, flooding the home with natural light. The chef-inspired kitchen includes premium stainless steel appliances, quartz countertops, and access to a deck ideal for BBQs. The mid-level hosts two bedrooms, a full bath, and laundry. The top-floor primary retreat features a walk-in closet, spa-style ensuite, and two decks, including a stunning view deck. The lower level adds flexibility with a large den, full bath, & garage. Open House cancelled",
+  "features": [],
+  "schools": [
+    {
+      "name": "Vancouver Technical Secondary",
+      "rating": 5.9,
+      "distance": "3.2 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Mount Pleasant VE",
+  "soldDate": "2026-01-26",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/2175-guelph-street/home/RdXze3ejeWpY8m9K?id_listing=Z5BX32Nzg8D3Dar0",
+  "_scrapedAt": "2026-02-16T20:53:34.968Z",
+  "_rawFile": "2175_guelph_street_vancouver_mount_pleasant_ve.html"
+}

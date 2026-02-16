@@ -1,0 +1,36 @@
+{
+  "address": "Unit 27 - 10550 248 Street",
+  "city": "Maple Ridge",
+  "sqft": 1932,
+  "year": 2016,
+  "price": 862500,
+  "listPrice": 879900,
+  "fee": 425,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4478,
+  "assessment": 868000,
+  "description": "Welcome to The Terraces, a beautifully designed, family-oriented townhouse community nestled in the heart of desirable Thornhill area. This spacious and modern 4 bed, 4 bath townhome offers over 1932 sq ft of living space, ideal for growing families who value comfort, flexibility, and style. Step inside to an open-concept main floor featuring oversized windows, and premium finishes throughout. The chef-inspired kitchen includes quartz countertops, stainless steel appliances, gas range, and a large island perfect for entertaining! Upstairs features 3 spacious bedrooms, including a stunning primary suite and spa-like ensuite. Family-friendly neighbourhood, walking distance to parks, trails, and close to top-rated Elementary and High schools. Open House SUNDAY 2-4PM",
+  "features": [],
+  "schools": [
+    {
+      "name": "Samuel Robertson Technical Secondary",
+      "rating": 2.3,
+      "distance": "0.7 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Thornhill MR",
+  "soldDate": "2026-02-01",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/27-10550-248-street/home/2Z5BX32EnDb7Dar0?id_listing=4KAX7NDOQpdYeRPJ",
+  "_scrapedAt": "2026-02-16T20:46:38.376Z",
+  "_rawFile": "27_10550_248_street_maple_ridge_thornhill_mr.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 5 - 55 Hawthorn Drive",
+  "city": "Port Moody",
+  "sqft": 1480,
+  "year": 2006,
+  "price": 997000,
+  "listPrice": 999000,
+  "fee": 438,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4447,
+  "assessment": 1082000,
+  "description": "Located in the desirable Heritage Woods community, this 3-bedroom, 2.5-bath townhome at Cobalt Sky offers 1,480 sq. ft. of stylish living. The open main floor features a cozy gas fireplace, a sleek kitchen with ample storage,  & direct access to a private patio and fenced yard—perfect for kids, pets, or entertaining. Upstairs, the primary suite includes a walk-through closet & spa-inspired ensuite, with two additional bedrooms & a full bath completing the level. Added features include forced air heating and a tandem garage with driveway, providing parking for three plus extra storage. Surrounded by multimillion-dollar homes, this is a prime investment in a family-friendly neighbourhood with parks, trails, & top schools like Aspenwood Elementary and Heritage Woods Secondary just steps away!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Heritage Woods Secondary",
+      "rating": 8,
+      "distance": "1.3 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Aspenwood Elementary",
+      "rating": 7.5,
+      "distance": "0.5 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Heritage Woods PM",
+  "soldDate": "2026-01-26",
+  "parkingType": "carport",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-moody-real-estate/5-55-hawthorn-drive/home/x9w8o3mA5oZ3GKjm?id_listing=bEDRYazg9jNy1VaB",
+  "_scrapedAt": "2026-02-16T20:50:15.011Z",
+  "_rawFile": "5_55_hawthorn_drive_port_moody_heritage_woods_pm.html"
+}

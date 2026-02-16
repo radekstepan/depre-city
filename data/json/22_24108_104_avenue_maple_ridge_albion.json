@@ -1,0 +1,36 @@
+{
+  "address": "Unit 22 - 24108 104 Avenue",
+  "city": "Maple Ridge",
+  "sqft": 1300,
+  "year": 2018,
+  "price": 745000,
+  "listPrice": 769900,
+  "fee": 247,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3723,
+  "assessment": 724000,
+  "description": "Extensively Renovated to a 2025 Spec! Ridgemont presents this 3 Bedroom, 2.5 Bathroom, 1300 sqft Townhome has just got a complete makeover with NEW PAINT, NEW LAMINATE. NEW CARPETS and a NEW WASHER AND DRYER. Open Floorplan with Designer Kitchen featuring S/S Appliances, Quartz countertops + ample storage and cupboard space. Spacious Master Bedroom features a vaulted ceiling. The patio is perfect for summer relaxing and BBQ'ing. There's a New Elementary School, c??sq?nel? ,  Albion Community Amenities Centre across the street and SRT Highschool just up the road. Close to everything you need from Major arterial roads, Highways, Shopping, Albion Fields, Planet Ice, Nature trails, Restaurants and the world famous Bruce's Market. Large Tandem Garage with Bonus space for Storage. Just move in!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Samuel Robertson Technical Secondary",
+      "rating": 2.3,
+      "distance": "0.8 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Albion",
+  "soldDate": "2026-01-29",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/22-24108-104-avenue/home/LzQ1y5EJ8QwyqdeK?id_listing=gAaOyL6aJqN3GxMb",
+  "_scrapedAt": "2026-02-16T20:50:10.152Z",
+  "_rawFile": "22_24108_104_avenue_maple_ridge_albion.html"
+}

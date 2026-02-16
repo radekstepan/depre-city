@@ -1,0 +1,36 @@
+{
+  "address": "Unit 58 - 5867 129 Street",
+  "city": "Surrey",
+  "sqft": 1543,
+  "year": 2018,
+  "price": 760000,
+  "listPrice": 799900,
+  "fee": 206,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3532,
+  "assessment": 791000,
+  "description": "Stunning 3-storey CORNER townhouse in the sought-after Panorama Ridge area! The main level features separate living and family rooms with large windows, 9-ft ceilings, and a modern kitchen with stainless steel appliances and quartz countertops. Upstairs offers three spacious bedrooms, including a primary bedroom overlooking a greenbelt with ensuite and custom closets. Enjoy a gas-hookup deck, air conditioning, and a BONUS versatile room on the ground floor ideal as a 4th bedroom or rec room. Parking is no problem with your very own garage and carport along with two visitor spots right beside the unit. Minutes away from parks, rec centers, restaurants, groceries and quick commutes to Hwy 10 and King George Blvd. This one will not last, call now to book your showing today!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Panorama Ridge Secondary",
+      "rating": 5.2,
+      "distance": "1.2 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Panorama Ridge",
+  "soldDate": "2026-01-16",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/58-5867-129-street/home/kbEDRYaVMmQy1VaB?id_listing=GMnKYqxpEj13w1Qr",
+  "_scrapedAt": "2026-02-16T20:46:32.942Z",
+  "_rawFile": "58_5867_129_street_surrey_panorama_ridge.html"
+}

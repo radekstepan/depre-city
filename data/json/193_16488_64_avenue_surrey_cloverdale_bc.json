@@ -1,0 +1,42 @@
+{
+  "address": "Unit 193 - 16488 64 Avenue",
+  "city": "Surrey",
+  "sqft": 1553,
+  "year": 2016,
+  "price": 810000,
+  "listPrice": 819900,
+  "fee": 334,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3502,
+  "assessment": 833000,
+  "description": "STUNNING 3 Bed + Flex Room | 2.5 Bath | 1553SQFT | Welcome Home to the prestigious and much desirable Harvest at Bose Farms. These homes have been thoughtfully designed and constructed for the ideal living experience. This home boasts open concept living on the main floor with a spacious kitchen boasting 5 burner gas cooktop on waterfall quartz island, SS KitchenAid appliances and ample storage.  Large windows facing north, 9' ceilings, crown molding and a feature wall with electric fire place in the living area.  3 bedrooms on the upper level with high ceilings, spa like ensuite with double vanity. Flex room on the lower floor for office/den/rec with a door to a fenced yard.  Double side-by-side garage with proxy floor and built in storage. Minutes away from parks, school and recreation.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Lord Tweedsmuir Secondary",
+      "rating": 6.8,
+      "distance": "3.1 km",
+      "type": "8-12"
+    },
+    {
+      "name": "A J McLellan Elementary",
+      "rating": 5.2,
+      "distance": "0.4 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Cloverdale BC",
+  "soldDate": "2026-02-04",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/193-16488-64-avenue/home/dXawjy4Qa4b7rR18?id_listing=DO1w3W1qgOKy8Jg0",
+  "_scrapedAt": "2026-02-16T20:46:05.709Z",
+  "_rawFile": "193_16488_64_avenue_surrey_cloverdale_bc.html"
+}

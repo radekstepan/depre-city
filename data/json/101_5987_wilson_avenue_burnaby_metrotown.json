@@ -1,0 +1,48 @@
+{
+  "address": "Unit 101 - 5987 Wilson Avenue",
+  "city": "Burnaby",
+  "sqft": 1534,
+  "year": 2025,
+  "price": 1588000,
+  "listPrice": 1690000,
+  "fee": 1055,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "assessment": 0,
+  "description": "CENTRAL PARK HOUSE BY BOSA — This exceptional, modern end-unit townhouse features a bright and functional layout that welcomes abundant natural light and open views. Floor-to-ceiling windows capture breathtaking panoramic scenery, creating an elevated and refined living experience.Residents enjoy world-class, resort-inspired amenities, including a dramatic double-height heated indoor swimming pool, an elegant club lounge, and a professional fitness center spanning over 2,000 sq ft. A hotel-style grand entrance and full concierge service add both luxury and convenience to daily living.Ideally located within walking distance to Central Park, shopping, and the SkyTrain, this home seamlessly blends contemporary design with unbeatable location value. OPEN HOUSE: Jan 24 & 25 , Sat & Sun at 2-4PM",
+  "features": [],
+  "schools": [
+    {
+      "name": "Moscrop Secondary",
+      "rating": 8.3,
+      "distance": "1.5 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Chaffey-Burke Elementary",
+      "rating": 7.6,
+      "distance": "0.5 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Burnaby South Secondary",
+      "rating": 4.2,
+      "distance": "2.4 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Metrotown",
+  "soldDate": "2026-02-04",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/101-5987-wilson-avenue/home/NAKv53DV42VyMnxB?id_listing=mZRW7nWa94g3EBO9",
+  "_scrapedAt": "2026-02-16T20:48:35.741Z",
+  "_rawFile": "101_5987_wilson_avenue_burnaby_metrotown.html"
+}

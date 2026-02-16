@@ -1,0 +1,36 @@
+{
+  "address": "Unit 55 - 6523 Chambord Place",
+  "city": "Vancouver",
+  "sqft": 1777,
+  "year": 1990,
+  "price": 994000,
+  "listPrice": 998000,
+  "fee": 637,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3181,
+  "assessment": 1063000,
+  "description": "Welcome to this well-cared-for townhome offering generous living space and an original interior—an excellent opportunity for updates. The functional layout includes three bedrooms upstairs, a spacious living and dining area, a primary bedroom with ensuite, direct access to parking, and a rare rear patio walkout overlooking quiet greenspace with no rear neighbours, perfect for everyday family living.  Ideally situated between Everett Crowley Park and Central Park, with immediate access to expansive trails, playgrounds, and year-round recreation right outside your door. Close to Champlain Square, the community centre, and nearby schools, with easy access to the River District and Metrotown, offering world-class convenience, shopping, and transit. Two parking included. Pets allowed.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Killarney Secondary",
+      "rating": 5.4,
+      "distance": "1.4 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Killarney VE",
+  "soldDate": "2026-01-31",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 2,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/55-6523-chambord-place/home/AKv53DDgZjj3MnxB?id_listing=GMnKYqxpK2B3w1Qr",
+  "_scrapedAt": "2026-02-16T20:48:11.421Z",
+  "_rawFile": "55_6523_chambord_place_vancouver_killarney_ve.html"
+}

@@ -1,0 +1,36 @@
+{
+  "address": "Unit 66 - 12161 237 Street",
+  "city": "Maple Ridge",
+  "sqft": 1349,
+  "year": 2014,
+  "price": 765000,
+  "listPrice": 779900,
+  "fee": 393,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 4063,
+  "assessment": 783000,
+  "description": "Introducing Village Green, Maple Ridge's two-level townhomes. The featured A great floorplan of thoughtfully designed living space that feels like a single-family home. The modern open layout includes a gourmet kitchen with rich bi-colour cabinetry, quartz countertops, stainless steel appliances, and a convenient main-level powder room. Upstairs are three spacious bedrooms, including a luxurious ensuite with a large, frameless glass shower. Enjoy the comfort of watching the kids play in your safe, fenced yard or take a stroll to the 2,600 sq. ft. tree-lined community park at the heart of Village Green. Unrivalled location.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Garibaldi Secondary",
+      "rating": 1.6,
+      "distance": "2.2 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "East Central",
+  "soldDate": "2026-01-30",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/66-12161-237th-street/home/gJRv53Ke5JqyVPW4?id_listing=B5bO3x8XBDV3kWVP",
+  "_scrapedAt": "2026-02-16T20:48:31.582Z",
+  "_rawFile": "66_12161_237_street_maple_ridge_east_central.html"
+}

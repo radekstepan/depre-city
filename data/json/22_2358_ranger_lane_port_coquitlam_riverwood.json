@@ -1,0 +1,42 @@
+{
+  "address": "Unit 22 - 2358 Ranger Lane",
+  "city": "Port Coquitlam",
+  "sqft": 1380,
+  "year": 2015,
+  "price": 900000,
+  "listPrice": 935000,
+  "fee": 0,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3259,
+  "assessment": 912000,
+  "description": "An exceptional townhome in Port Coquitlam's sought-after Riverwood neighborhood. This well-maintained home offers a bright, open feel, and features exquisite custom millwork. The interior boasts a highly desired layout, seamlessly connecting a comfortable family room to a spacious dining area and a bright, open kitchen-perfect for everyday living and entertaining.One of this home's standout features is its great setback, providing clear, open views from your balcony where you can BBQ and entertain. Residents can enjoy exclusive access to The River Club. This resort-style hub includes indoor/outdoor pools, a fully equipped gym, clubhouse, recreation center, sauna, and hot tub. The location is a true highlight for active lifestyles with Dominion park and Traboulay Poco Trail as your backyard",
+  "features": [],
+  "schools": [
+    {
+      "name": "Blakeburn Elementary",
+      "rating": 6.5,
+      "distance": "1.2 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "1.7 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Riverwood",
+  "soldDate": "2026-02-03",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/22-2358-ranger-lane/home/AKv53DD69Qw3MnxB?id_listing=aD6p7801KOr7wRQr",
+  "_scrapedAt": "2026-02-16T20:48:15.024Z",
+  "_rawFile": "22_2358_ranger_lane_port_coquitlam_riverwood.html"
+}

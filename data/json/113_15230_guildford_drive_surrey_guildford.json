@@ -1,0 +1,42 @@
+{
+  "address": "Unit 113 - 15230 Guildford Drive",
+  "city": "Surrey",
+  "sqft": 1517,
+  "year": 2016,
+  "price": 830000,
+  "listPrice": 879000,
+  "fee": 309,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 2700,
+  "assessment": 883000,
+  "description": "GUILDFORD THE GREAT, 2 CAR SIDE BY SIDE GARAGE, meticulously designed and built by DAWSON + SAWYER. This four bedrooms with 3.5 baths is in excellent condition, Elegantly finished, Quartz counters, tilted back splash, Stainless steel appliances with full size washer dryer. Sunken living room with 10' ceiling, Large Master Bedroom. Walk to Guildford Centre, Library and recreation Centre. Close to Bus Stations.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Johnston Heights Secondary",
+      "rating": 6.4,
+      "distance": "1.5 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Harold Bishop Elementary",
+      "rating": 4.3,
+      "distance": "1.0 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Guildford",
+  "soldDate": "2026-01-30",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/113-15230-guildford-drive/home/bqB176Wmkda3ZajD?id_listing=dXze3eeBboO38m9K",
+  "_scrapedAt": "2026-02-16T20:54:55.261Z",
+  "_rawFile": "113_15230_guildford_drive_surrey_guildford.html"
+}

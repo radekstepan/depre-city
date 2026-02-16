@@ -1,0 +1,36 @@
+{
+  "address": "Unit 209 - 322 15th Avenue E",
+  "city": "Vancouver",
+  "sqft": 1155,
+  "year": 2024,
+  "price": 1489900,
+  "listPrice": 1489900,
+  "fee": 544,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3829,
+  "assessment": 1212000,
+  "description": "E15 JUST OFF MAIN by OpenForm. Winner of the UDI Award for Excellence in Ground Orientated Housing. This modern 3-bed, 2.5-bath home, designed by MA+HG Architects, spans two levels and features a private rooftop with views. Interiors by Cristina Oberti are complemented by large windows that flood the space with natural light. A secure entry opens from the tranquil inner courtyard. The kitchen offers ample storage, a gas cooktop, and appliances by Fisher & Paykel. The exterior features art by Scott Sueme, capturing the vibrant spirit of Mt Pleasant. Just steps from Main Street and minutes from downtown, E15 blends modern design with a creative edge. Built by Urban One and landscaped by Considered Design. Includes parking, storage, and a bike locker. New home warranty and GST included!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sir Charles Tupper Secondary",
+      "rating": 3.7,
+      "distance": "0.9 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Mount Pleasant VE",
+  "soldDate": "2026-01-18",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/209-322-15th-avenue-e/home/xmZRW7n6DXR7EBO9?id_listing=bqB176ZKo6n7ZajD",
+  "_scrapedAt": "2026-02-16T20:50:07.545Z",
+  "_rawFile": "209_322_15th_avenue_e_vancouver_mount_pleasant_ve.html"
+}

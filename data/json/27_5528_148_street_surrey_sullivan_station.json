@@ -1,0 +1,42 @@
+{
+  "address": "Unit 27 - 5528 148 Street",
+  "city": "Surrey",
+  "sqft": 2224,
+  "year": 2020,
+  "price": 1100000,
+  "listPrice": 1138000,
+  "fee": 449,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4159,
+  "assessment": 1093000,
+  "description": "Rancher w/Bsmt. Townhome offering Approx. 2,224 sqft. of thoughtfully designed living space. This home features vaulted ceilings and a wide-open living/dining area with a patio door leading to a covered patio, perfect for indoor-outdoor living. The spacious kitchen is beautifully appointed with Whirlpool S/S Appliances, shaker-style cabinetry, quartz countertops, and a built-in pantry, providing both style and functionality. The main-floor primary suite is huge and includes a 4pc. ensuite and w/i closet. Also on the main level are a den, welcoming foyer, and additional vaulted ceilings that enhance the open, airy feel. The fully finished lower level offers a huge rec. room, along with 2 additional bdrms, providing plenty of space for family & guests. Room for 2 cars on drive the driveway.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sullivan Heights Secondary",
+      "rating": 5.5,
+      "distance": "1.6 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Sullivan Elementary",
+      "rating": 4.6,
+      "distance": "1.3 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Sullivan Station",
+  "soldDate": "2026-01-31",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/27-5528-148-street/home/DO1w3WqO8Rdy8Jg0?id_listing=9w8o3mj5V5JYGKjm",
+  "_scrapedAt": "2026-02-16T20:49:24.812Z",
+  "_rawFile": "27_5528_148_street_surrey_sullivan_station.html"
+}

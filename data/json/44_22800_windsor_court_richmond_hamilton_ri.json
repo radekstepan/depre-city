@@ -1,0 +1,42 @@
+{
+  "address": "Unit 44 - 22800 Windsor Court",
+  "city": "Richmond",
+  "sqft": 1541,
+  "year": 1996,
+  "price": 800000,
+  "listPrice": 839900,
+  "fee": 598,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2788,
+  "assessment": 832000,
+  "description": "Want an updated, move-in-ready townhome? This is the one! Steps from McLean Park & Hamilton Elem, close to Queensborough Landing, Walmart, Costco & quick access to Hwy 91 & Westminster Hwy. 3 levels, almost 1,550 sqft, 4 beds, 3 baths & a layout that actually works for a family. Here’s the part buyers love: Big exterior updates are already taken care of. New roof, balcony, gutters, & skylights. Inside, you’ll see updated laminate in the living & dining, quartz counters in the kitchen & washrooms, & new kitchen appliances. When the sun’s out, you’ll actually use the outdoor space - A large, sunny SE-facing private patio plus a balcony. 2-car side-by-side garage with heavy-duty custom-built spacious cabinets. Plus there’s a clubhouse in the complex for family gatherings & celebrations!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Hamilton Elementary",
+      "rating": 6.5,
+      "distance": "0.6 km",
+      "type": "0-7"
+    },
+    {
+      "name": "McNair Secondary School",
+      "rating": 3.3,
+      "distance": "10.9 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Hamilton RI",
+  "soldDate": "2026-01-29",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/44-22800-windsor-court/home/02Zpj39xAEg7DrK8?id_listing=bEDRYazgP9vy1VaB",
+  "_scrapedAt": "2026-02-16T20:47:57.587Z",
+  "_rawFile": "44_22800_windsor_court_richmond_hamilton_ri.html"
+}

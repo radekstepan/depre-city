@@ -1,0 +1,42 @@
+{
+  "address": "Unit 73 - 678 Citadel Drive",
+  "city": "Port Coquitlam",
+  "sqft": 2434,
+  "year": 2001,
+  "price": 1138800,
+  "listPrice": 1138800,
+  "fee": 505,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "assessment": 1159000,
+  "description": "Beautifully renovated townhome offers over 2,500 sq.ft. of luxury. Newer Hotwater on Demand,Furnace,Central A/C.New luxury Vinyl Plank Flooring, 9-foot ceilings, House size living and Dining rooms.At the heart of the home is a stunning,crisp white kitchen,complete with sleek quartz countertops,ample cabinetry.The open concept layout provides direct access from the eating area to a flat 200 sq.ft cement deck with plenty of grass and garden area,ideal for outdoor dining.The spacious primary bedroom is a true retreat,showcasing vaulted ceilings,soaker tub, walk-in shower and closet.The additional bedrooms are sizeable .Renovated main bath.The finished lower level offers a Recroom,office,and a roughed-in bath.EV CHARGER.With its stylish renovations this home is move-in ready.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Castle Park Elementary",
+      "rating": 6.5,
+      "distance": "0.8 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Ecole Riverside Secondary",
+      "rating": 4.6,
+      "distance": "3.0 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Citadel PQ",
+  "soldDate": "2026-01-24",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/73-678-citadel-drive/home/VgAaOyLGPmzYGxMb?id_listing=wJKR7P980mv3XeLP",
+  "_scrapedAt": "2026-02-16T20:50:59.407Z",
+  "_rawFile": "73_678_citadel_drive_port_coquitlam_citadel_pq.html"
+}

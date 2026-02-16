@@ -1,0 +1,42 @@
+{
+  "address": "Unit 17 - 16995 64 Avenue",
+  "city": "Surrey",
+  "sqft": 3120,
+  "year": 2004,
+  "price": 945000,
+  "listPrice": 949900,
+  "fee": 589,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4210,
+  "assessment": 1011000,
+  "description": "Immaculate 4-bedroom family home at The Lexington. This secure, one-time adult-oriented (no age restrictions!) complex has been meticulously maintained by residents. 3,000 + sq ft of living space on 3 levels~this townhouse feels like a single-family, detached home without the price tag! 4 BDRMS, 3 FULL BATHS + powder room, media room with projector & 110' screen (included!), DOUBLE-CAR Garage, fenced-in back yard & patio for pets. New roof 2025, electrical upgrade w/new heat pump, EV-ready, separate hwt in kitchen, 2 gas fireplaces, utility room for extra storage of tools & seasonal items. 4-minute walk to transit, Cloverdale Athletic Park, 4-minute drive to AJ McLellan Elementary, Crescent Heights Academy, Northview Golf Club. 15 min to Willowbrook Shopping & Langley Events Centre",
+  "features": [],
+  "schools": [
+    {
+      "name": "Lord Tweedsmuir Secondary",
+      "rating": 6.8,
+      "distance": "2.1 km",
+      "type": "8-12"
+    },
+    {
+      "name": "George Greenaway Elementary",
+      "rating": 2.5,
+      "distance": "0.9 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Cloverdale BC",
+  "soldDate": "2026-02-01",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/17-16995-64th-avenue/home/zVwod7vMW69y5mGN?id_listing=aD6p78014Qr7wRQr",
+  "_scrapedAt": "2026-02-16T20:49:36.227Z",
+  "_rawFile": "17_16995_64_avenue_surrey_cloverdale_bc.html"
+}

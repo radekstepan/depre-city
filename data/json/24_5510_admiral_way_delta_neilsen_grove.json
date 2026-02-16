@@ -1,0 +1,42 @@
+{
+  "address": "Unit 24 - 5510 Admiral Way",
+  "city": "Delta",
+  "sqft": 1569,
+  "year": 2016,
+  "price": 1200000,
+  "listPrice": 1248900,
+  "fee": 410,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3991,
+  "assessment": 1089000,
+  "description": "Southwest-corner, two-storey Charterhouse townhome with over 2,000 sq. ft. of fully fenced, irrigated yard plus 300 sq. ft. of covered patio for year-round use. The main level offers 9-ft ceilings and an open layout. The updated kitchen features an enlarged quartz island with waterfall edges, integrated fridge and dishwasher, and a five-burner gas cooktop. Engineered hardwood and California shutters run throughout, and the dining area includes a built-in banquette with storage. Upstairs are three bedrooms and a landing suitable for an office. The primary has 10'6 ceilings and a five-piece ensuite, with two additional well-sized bedrooms. Extra-wide side-by-side garage adds convenience. Located beside the Links at Hampton Cove and full access to The Hampton Club.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Neilson Grove Elementary",
+      "rating": 5.1,
+      "distance": "0.7 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Delta Secondary",
+      "rating": 4.3,
+      "distance": "3.0 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Neilsen Grove",
+  "soldDate": "2026-01-08",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/delta-real-estate/24-5510-admiral-way/home/L4KAX7NQPeoyeRPJ?id_listing=K8OgYBzOPqoYJmG2",
+  "_scrapedAt": "2026-02-16T20:49:57.208Z",
+  "_rawFile": "24_5510_admiral_way_delta_neilsen_grove.html"
+}

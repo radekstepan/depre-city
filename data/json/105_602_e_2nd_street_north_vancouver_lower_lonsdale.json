@@ -1,0 +1,42 @@
+{
+  "address": "Unit 105 - 602 E 2nd Street",
+  "city": "North Vancouver",
+  "sqft": 1230,
+  "year": 2026,
+  "price": 1199900,
+  "listPrice": 1199900,
+  "fee": 471,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 0,
+  "assessment": 0,
+  "description": "Welcome to the A2 Plan at Morrison Walk, a beautifully designed 3-bed, 2.5-bath garden-level townhome offering 1,230 sq.ft. of interior living + 289 sq.ft. of outdoor space. The bright, open-concept main level features a contemporary kitchen, dining, and living area with over-height ceilings, flowing onto a generous private patio. Upstairs, the primary bedroom offers a ensuite with double vanities, dual closets, and a private patio. Two additional bedrooms and a full bathroom complete the upper level. Comfort is elevated with air conditioning and the convenience of Level 2 EV charging. Ideally located just steps from Moodyville Park, minutes to Lower Lonsdale, and along the North Shore Spirit Trail with access to an extensive trail network. Estimated completion slated Fall/Winter 2026.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sutherland Secondary",
+      "rating": 5.4,
+      "distance": "2.1 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Ridgeway Elementary",
+      "rating": 5.2,
+      "distance": "0.8 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Lower Lonsdale",
+  "soldDate": "2026-01-23",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/105-602-e-2nd-street/home/aD6p7812MlA3wRQr?id_listing=DO1w3W1qbmjy8Jg0",
+  "_scrapedAt": "2026-02-16T20:54:49.827Z",
+  "_rawFile": "105_602_e_2nd_street_north_vancouver_lower_lonsdale.html"
+}

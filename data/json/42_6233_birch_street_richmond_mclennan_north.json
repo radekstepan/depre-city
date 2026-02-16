@@ -1,0 +1,42 @@
+{
+  "address": "Unit 42 - 6233 Birch Street",
+  "city": "Richmond",
+  "sqft": 1399,
+  "year": 2002,
+  "price": 950000,
+  "listPrice": 1030000,
+  "fee": 486,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3628,
+  "assessment": 1062000,
+  "description": "Welcome to your private, gated front yard entrance facing a peaceful street with plenty of parking — a rare mix of privacy and convenience in the heart of Richmond. Located in the sought-after Hampton’s Gate community, this updated 3 bed + den (used as a 4th bedroom) townhome offers a bright, inviting layout with thoughtful updates throughout. The main level features two balconies; including a serene one off the kitchen, perfect for morning coffee or sunset unwinding. Freshly painted interiors, accent walls, new lighting, and refreshed kitchen & baths with modern finishes give the home a warm, polished feel, plus a new hot water tank (2025). Close to Richmond Centre, Lansdowne Mall, SkyTrain, HWY 99, and a short walk to Garden City Park, Anderson Elementary & McNeil Secondary.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Henry Anderson Elementary",
+      "rating": 8,
+      "distance": "0.4 km",
+      "type": "0-7"
+    },
+    {
+      "name": "MacNeill Secondary",
+      "rating": 3.4,
+      "distance": "0.5 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "McLennan North",
+  "soldDate": "2026-01-28",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/42-6233-birch-street/home/BDO1w3WK02K38Jg0?id_listing=1DBW7RnmxQ17qlAp",
+  "_scrapedAt": "2026-02-16T20:52:03.524Z",
+  "_rawFile": "42_6233_birch_street_richmond_mclennan_north.html"
+}

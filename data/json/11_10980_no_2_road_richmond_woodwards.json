@@ -1,0 +1,42 @@
+{
+  "address": "Unit 11 - 10980 No. 2 Road",
+  "city": "Richmond",
+  "sqft": 1365,
+  "year": 1986,
+  "price": 840000,
+  "listPrice": 898000,
+  "fee": 313,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2917,
+  "assessment": 871600,
+  "description": "This beautifully updated corner townhouse—an ideal home for growing families. This functional two-level layout offers comfortable, functional living with extensive renovations completed over the years. Enjoy a modern kitchen (2024) with quartz countertops, upgraded cabinetry, deep sink, & smart storage, plus fully renovated bathrooms (2024) & new lighting. Flooring includes laminate on the main and engineered hardwood upstairs, with new blinds (2025) and double-layer living room windows (2016). Updated appliances include boiler (2024), electric fireplace, and more. Step outside to enjoy a rare outdoor space: a huge private backyard plus a north-facing patio. Located in the sought-after school catchments of James McKinney Elementary & Steveston-London Secondary.",
+  "features": [],
+  "schools": [
+    {
+      "name": "James McKinney Elementary",
+      "rating": 8.6,
+      "distance": "0.6 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Steveston-London Secondary",
+      "rating": 7.8,
+      "distance": "0.9 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Woodwards",
+  "soldDate": "2026-01-28",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/11-10980-no-2-road/home/MB5bO3x1adVYkWVP?id_listing=amgL7Ax4PxpyZ1MW",
+  "_scrapedAt": "2026-02-16T20:51:24.811Z",
+  "_rawFile": "11_10980_no_2_road_richmond_woodwards.html"
+}

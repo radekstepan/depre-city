@@ -1,0 +1,42 @@
+{
+  "address": "Unit 6 - 258 14th Street W",
+  "city": "North Vancouver",
+  "sqft": 1803,
+  "year": 1997,
+  "price": 1473000,
+  "listPrice": 1498000,
+  "fee": 642,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4412,
+  "assessment": 1431000,
+  "description": "WELCOME TO MAPLE LANE—a quiet end-unit townhome that feels like a house and only a quick stroll to the best of North Van living. Located on a quiet tree-lined street, this elegant home offers 3 beds up, a primary ensuite, & many home like qualities. The basement boasts a truly adaptable room that could serve as garage like storage, media room or a home office. 2 covered & secured parking directly at your door - ideal for a busy family. Features include large principle rooms, hardwood floors, s/s appliances, gas fireplace, stone counters, abundance of outdoor space & storage. Enjoy easy indoor/outdoor living with a sunny south-facing patio & a private back patio surrounded by lush green space. Steps to Lonsdale shops, parks, schools & public transit. North Van Living at its finest!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Carson Graham Secondary",
+      "rating": 4.1,
+      "distance": "0.9 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Queen Mary Community Elementary",
+      "rating": 3,
+      "distance": "0.3 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Central Lonsdale",
+  "soldDate": "2026-01-31",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/6-258-14th-street-w/home/NAKv53DwwD67MnxB?id_listing=JRv53KjDMRR7VPW4",
+  "_scrapedAt": "2026-02-16T20:53:31.847Z",
+  "_rawFile": "6_258_14th_street_w_north_vancouver_central_lonsdale.html"
+}

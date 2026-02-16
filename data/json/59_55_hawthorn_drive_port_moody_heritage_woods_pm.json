@@ -1,0 +1,42 @@
+{
+  "address": "Unit 59 - 55 Hawthorn Drive",
+  "city": "Port Moody",
+  "sqft": 2390,
+  "year": 2007,
+  "price": 1320000,
+  "listPrice": 1350000,
+  "fee": 662,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 5513,
+  "assessment": 1375000,
+  "description": "OPEN HOUSE IS CANCELLED! INCREDIBLE VIEWS FROM THIS IMMACULATE, EXECUTIVE TOWNHOME! Enjoy an amazing lifestyle in Cobalt Sky with this open plan, renovated 2,390 sq ft home! Chef's Kitchen offers gorgeous renovations with a huge, entertaining island, custom white cabinetry, quartz counters, upscale appliances and designer lighting. Great Room features a cozy gas fireplace and walks out to a covered deck. Laminate floors plus powder room is renovated too! Up are 3 generous bedrooms and laundry! The Primary boasts lovely Mt. Baker and Island views! There's also a walk-in closet and ensuite with a soaker tub. Lower level has a huge Rec Room, full bathroom and a huge bedroom...perfect for guests or a nanny! Close to all 3 levels of great schools including Heritage Woods Secondary!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Heritage Woods Secondary",
+      "rating": 8,
+      "distance": "1.3 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Aspenwood Elementary",
+      "rating": 7.5,
+      "distance": "0.5 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Heritage Woods PM",
+  "soldDate": "2026-01-22",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-moody-real-estate/59-55-hawthorn-drive/home/02Zpj39xWMP7DrK8?id_listing=bEDRYazg58Qy1VaB",
+  "_scrapedAt": "2026-02-16T20:50:21.352Z",
+  "_rawFile": "59_55_hawthorn_drive_port_moody_heritage_woods_pm.html"
+}

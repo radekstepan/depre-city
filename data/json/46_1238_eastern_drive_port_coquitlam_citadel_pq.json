@@ -1,0 +1,42 @@
+{
+  "address": "Unit 46 - 1238 Eastern Drive",
+  "city": "Port Coquitlam",
+  "sqft": 1860,
+  "year": 1991,
+  "price": 905000,
+  "listPrice": 945000,
+  "fee": 576,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3248,
+  "assessment": 0,
+  "description": "This tastefully designed West facing 1860 SF, 3 level 3 BED/2.5 BATH home in the gated community of Parkview Ridge features lovely vaulted ceilings, custom windows showcasing stunning sunsets & VIEWS over Colony Farm Park, TWO gas fireplaces & DOUBLE Side by Side Garage! Step upstairs to your magnificent primary suite occupying its OWN floor, with huge ensuite. Features include HOT WATER ON DEMAND, luxury vinyl flooring and newer furnace! Enjoy your kitchen with an island, wonderful for entertaining, which flows out onto your large private back yard. Hunter Douglas blinds, with motorized blinds on lower floor! Loads of storage throughout. OPEN HOUSE SAT JAN 17, 2-4!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Castle Park Elementary",
+      "rating": 6.5,
+      "distance": "0.5 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Ecole Riverside Secondary",
+      "rating": 4.6,
+      "distance": "2.2 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Citadel PQ",
+  "soldDate": "2026-01-25",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/46-1238-eastern-drive/home/RdXze3eRoJMY8m9K?id_listing=eVbOYENpG25yx2P0",
+  "_scrapedAt": "2026-02-16T20:51:13.184Z",
+  "_rawFile": "46_1238_eastern_drive_port_coquitlam_citadel_pq.html"
+}

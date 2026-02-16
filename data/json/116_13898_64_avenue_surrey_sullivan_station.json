@@ -1,0 +1,42 @@
+{
+  "address": "Unit 116 - 13898 64 Avenue",
+  "city": "Surrey",
+  "sqft": 1618,
+  "year": 2019,
+  "price": 835000,
+  "listPrice": 849900,
+  "fee": 303,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 1,
+  "propertyTax": 3632,
+  "assessment": 833000,
+  "description": "Open-House Saturday & Sunday 24th & 25th January 1-3pm Well-maintained and spacious townhouse in the desirable Panorama West Coast Living community. This home offers 4 bedrooms and 4 bathrooms with a functional open layout. The open-concept kitchen features shaker-style soft-close cabinets, stainless steel appliances, quartz countertops, and a beverage fridge in the island. Bright living space with two balconies provides excellent natural light. Enjoy a private fenced yard, ideal for kids and BBQs. Close to the clubhouse, schools, transit, shopping, and restaurants.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sullivan Heights Secondary",
+      "rating": 5.5,
+      "distance": "1.1 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Woodward Hill Elementary",
+      "rating": 3.8,
+      "distance": "0.9 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Sullivan Station",
+  "soldDate": "2026-01-27",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/116-13898-64-avenue/home/MB5bO3xegkLYkWVP?id_listing=nM697k85kAW3bmwe",
+  "_scrapedAt": "2026-02-16T20:46:59.250Z",
+  "_rawFile": "116_13898_64_avenue_surrey_sullivan_station.html"
+}

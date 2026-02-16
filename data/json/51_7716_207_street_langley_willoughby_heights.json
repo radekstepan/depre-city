@@ -1,0 +1,42 @@
+{
+  "address": "Unit 51 - 7716 207 Street",
+  "city": "Langley",
+  "sqft": 1547,
+  "year": 2025,
+  "price": 989900,
+  "listPrice": 989900,
+  "fee": 195,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "assessment": 0,
+  "description": "WELCOME TO GRIFFON, an elegant and thoughtfully designed collection of 4-bedroom townhome residences in the heart of Willoughby. Discover spacious 4-bedroom family homes that blend urban style with cozy, contemporary comfort. Located just steps from the services, schools, and amenities of an established neighbourhood, GRIFFON offers the perfect balance of convenience and community. Proudly built by Sunmark Developments, this community features open concept layouts, Side-by-side parking, Forced air heating, LG Appliance package inclusive of Gas range stoves, and so much more. Visit our sales team today and explore everything this vibrant community has to offer and take advantage of our current buyer incentives.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "0.2 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.3 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-01-28",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/51-7716-207-street/home/gAaOyL8RLLZyGxMb?id_listing=dXze3eeK8zp38m9K",
+  "_scrapedAt": "2026-02-16T20:53:26.881Z",
+  "_rawFile": "51_7716_207_street_langley_willoughby_heights.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 72 - 6671 121 Street",
+  "city": "Surrey",
+  "sqft": 1210,
+  "year": 2009,
+  "price": 705000,
+  "listPrice": 724900,
+  "fee": 399,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 2856,
+  "assessment": 678000,
+  "description": "Welcome to SALUS, an award-winning, community built to BuiltGreen Gold certification standards for energy efficiency and eco-friendliness. Ideally located just minutes from public transit, shopping, & Watershed Park, with easy access to Hwy 99 & 91, this home is pristine & move-in ready with fresh paint throughout. Enjoy a functional layout with a powder room on the main, granite countertops, a large pantry, stainless steel appliances, & upgraded dishwasher. Features include new laminate & carpet flooring, porcelain tiles, an upgraded washer and dryer, and a tandem garage. Relax on the west-facing deck overlooking the clubhouse. The amenities include a heated outdoor pool, hot tub, spa rooms, infrared sauna, gym, yoga room, steam rooms, party lounge and a 3,500 sqft rooftop deck.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Tamanawis Secondary",
+      "rating": 4.8,
+      "distance": "1.2 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Beaver Creek Elementary",
+      "rating": 2.3,
+      "distance": "0.6 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "West Newton",
+  "soldDate": "2026-02-01",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/72-6671-121-street/home/EXrx30XaE5W3OklN?id_listing=EXrx30rX2pDyOklN",
+  "_scrapedAt": "2026-02-16T20:46:46.619Z",
+  "_rawFile": "72_6671_121_street_surrey_west_newton.html"
+}

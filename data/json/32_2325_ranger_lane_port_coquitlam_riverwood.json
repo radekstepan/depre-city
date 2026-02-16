@@ -1,0 +1,42 @@
+{
+  "address": "Unit 32 - 2325 Ranger Lane",
+  "city": "Port Coquitlam",
+  "sqft": 1450,
+  "year": 2015,
+  "price": 905000,
+  "listPrice": 929900,
+  "fee": 416,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3645,
+  "assessment": 952000,
+  "description": "Welcome to this bright and spacious CORNER END UNIT townhome in the highly desirable FREMONT community by Mosaic. This well designed home offers an open-concept main floor with 9 foot ceilings and a modern kitchen complete with quartz counters, generous cabinet space, and plenty of prep space - perfect for everyday living and entertaining. Upstairs features two well-sized bedrooms, while the lower level includes a third bedroom with a full bathroom, ideal for guests, a home office or a growing family. BONUS FULLY FENCED YARD! Enjoy access to the Riverclub's resort-style amenities including an outdoor pool, fitness centre, lounge and kids play area. Steps to Dominion Park, scenic river trails, transit, and top school catchments, with quick access to Hwy 1, restaurants, shopping and more!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Blakeburn Elementary",
+      "rating": 6.5,
+      "distance": "1.3 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "1.6 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Riverwood",
+  "soldDate": "2026-01-30",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/32-2325-ranger-lane/home/N0A9X3jd6GDyvgxV?id_listing=NkKJ3JJdm1z3d4V6",
+  "_scrapedAt": "2026-02-16T20:47:32.113Z",
+  "_rawFile": "32_2325_ranger_lane_port_coquitlam_riverwood.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 57 - 14285 64 Avenue",
+  "city": "Surrey",
+  "sqft": 1635,
+  "year": 2026,
+  "price": 799900,
+  "listPrice": 799900,
+  "fee": 342,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3003,
+  "assessment": 0,
+  "description": "FINAL HOMES REMAINING — Unbeatable New Pricing for a Limited Time! Welcome to ARCHER SULLIVAN, carefully crafted with living and growing in mind. This limited collection of move in ready, 3 bedroom residences features up to 1650+ square feet with expansive rooftop decks, air conditioning and double-car garages. Architecturally inspired and elevated by exceptional design. Interior materials and finishings all hand selected by the Award Winning team at Tali+Roche Interior Design. Nestled in the heart of Surrey’s Sullivan neighbourhood - ARCHER brought to life by OVI Homes + Kennedy Development, a new standard of living in Surrey.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sullivan Heights Secondary",
+      "rating": 5.5,
+      "distance": "0.5 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Hyland Elementary",
+      "rating": 4.1,
+      "distance": "0.8 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Sullivan Station",
+  "soldDate": "2026-01-29",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/57-14285-64-avenue/home/amgL7A4lw1VyZ1MW?id_listing=dXze3eeKDEL38m9K",
+  "_scrapedAt": "2026-02-16T20:46:35.787Z",
+  "_rawFile": "57_14285_64_avenue_surrey_sullivan_station.html"
+}

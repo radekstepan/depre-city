@@ -1,0 +1,36 @@
+{
+  "address": "Unit 61 - 13260 236 Street",
+  "city": "Maple Ridge",
+  "sqft": 1608,
+  "year": 2018,
+  "price": 840000,
+  "listPrice": 850000,
+  "fee": 395,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4072,
+  "assessment": 797000,
+  "description": "SUPERNATURAL SILVER VALLEY! Nestled atop Rockridge lies sought after Archstone. Expansive end unit w/ rare extra wide floor plan lives like a home. Dramatic main has 9' ceilings, sun drenched living room, large dining room, powder room & designer kitchen. Boasting an oversized quartz island, S/S apps & custom cabinetry. Enjoy a sunny balcony just off the kitchen; perfect for morning coffees or BBQing. Upstairs find 3 spacious beds w/ BONUS 4th bed below OR office/rec/gym space. Double side by side garage fits a full size truck + massive driveway fits 3 additional vehicles . Tons of street parking right out front of the fully fenced yard. Immaculately kept home that shows brand new. Explore lakes & trails, breweries, amazing golf courses, top of the line schools & local farm fresh shops!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Garibaldi Secondary",
+      "rating": 1.6,
+      "distance": "3.4 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Silver Valley",
+  "soldDate": "2026-02-02",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/61-13260-236-street/home/jJKdOYrdGqB754lW?id_listing=10QqypGNoraYLGlV",
+  "_scrapedAt": "2026-02-16T20:46:08.686Z",
+  "_rawFile": "61_13260_236_street_maple_ridge_silver_valley.html"
+}

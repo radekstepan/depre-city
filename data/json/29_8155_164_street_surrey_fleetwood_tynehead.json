@@ -1,0 +1,42 @@
+{
+  "address": "Unit 29 - 8155 164 Street",
+  "city": "Surrey",
+  "sqft": 1502,
+  "year": 2003,
+  "price": 725000,
+  "listPrice": 759000,
+  "fee": 416,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 3234,
+  "assessment": 715000,
+  "description": "Welcome to Sequoia Ridge! This beautifully updated 3 bed, 2 bath townhouse (1,502 sq.ft.) has been meticulously maintained and is move-in ready. The modern kitchen boasts quartz countertops, stylish backsplash, and stainless steel appliances, complemented by fresh paint, pot lights, and new flooring throughout including the stairs. Bathrooms feature an upgraded bath fitter, while a new washer/dryer and garage motor add peace of mind. The bright open-concept main floor is perfect for everyday living and family gatherings. Upstairs offers spacious bedrooms, including a large primary suite with ensuite. Ideally located near the upcoming SkyTrain, Surrey Sports & Leisure Complex, Walnut Road & William Watson Elementary, and Fleetwood Park Secondary. A clean, modern home in a prime location!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Fleetwood Park Secondary",
+      "rating": 7,
+      "distance": "1.6 km",
+      "type": "8-12"
+    },
+    {
+      "name": "William Watson Elementary",
+      "rating": 5.6,
+      "distance": "0.4 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Fleetwood Tynehead",
+  "soldDate": "2026-02-02",
+  "parkingType": "garage_tandem",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/29-8155-164th-street/home/BGMnKYqexOKYw1Qr?id_listing=bqB176zW2Kn7ZajD",
+  "_scrapedAt": "2026-02-16T20:54:52.606Z",
+  "_rawFile": "29_8155_164_street_surrey_fleetwood_tynehead.html"
+}

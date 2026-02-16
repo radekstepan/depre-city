@@ -1,0 +1,42 @@
+{
+  "address": "Unit 140 - 15988 83 Avenue",
+  "city": "Surrey",
+  "sqft": 1824,
+  "year": 1992,
+  "price": 955000,
+  "listPrice": 985000,
+  "fee": 379,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3806,
+  "assessment": 895000,
+  "description": "Welcome to Glenridge Estates, ideally located right across from Francis Park in the heart of Fleetwood! This beautifully updated corner-unit townhome offers approx 1,800 sq.ft. of modern living with 3 bedrooms and 2.5 baths. Featuring a large family room, updated kitchen with Whirlpool appliances, modern flooring, and sleek lighting throughout. Enjoy a spa-inspired ensuite with a soaker tub and frameless glass shower. Renovated in 2020, with major upgrades including Poly-B replaced, roof (2010), furnace replaced, and HWT (5 yrs). Complete with a double side-by-side garage and a private paved backyard with a palm tree—all within walking distance to Francis Park, top schools, shops, restaurants, and the upcoming SkyTrain station!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Walnut Road Elementary",
+      "rating": 7.8,
+      "distance": "0.5 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Fleetwood Park Secondary",
+      "rating": 7,
+      "distance": "0.9 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Fleetwood Tynehead",
+  "soldDate": "2026-02-01",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/140-15988-83rd-avenue/home/BDO1w3WJ6wj78Jg0?id_listing=DO1w3W1qmv6y8Jg0",
+  "_scrapedAt": "2026-02-16T20:53:29.847Z",
+  "_rawFile": "140_15988_83_avenue_surrey_fleetwood_tynehead.html"
+}

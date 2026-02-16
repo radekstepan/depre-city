@@ -1,0 +1,36 @@
+{
+  "address": "Unit 108 - 9264 122 Street",
+  "city": "Surrey",
+  "sqft": 1629,
+  "year": 1977,
+  "price": 615000,
+  "listPrice": 639900,
+  "fee": 503,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3380,
+  "assessment": 763200,
+  "description": "Welcome to Whispering Pines, a family friendly complex in the heart of Queen Mary Park. This spacious 3 bedroom, 2.5 bathroom over 1650sq/ft townhome with a large den offers an open concept main floor with a bright living and dining area that flows to a private backyard, perfect for relaxing or entertaining. The basement features a full bathroom and partial kitchen, making it ideal for extended family, a homestay student or an older teen wanting their own space. Conveniently located close to Kirkbride Elementary, L.A. Matheson Secondary, shopping, parks and transit. Call for more details.",
+  "features": [],
+  "schools": [
+    {
+      "name": "L A Matheson Secondary",
+      "rating": 1.8,
+      "distance": "0.4 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Queen Mary Park Surrey",
+  "soldDate": "2026-01-20",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/108-9264-122-street/home/b1DBW7RVEjQ7qlAp?id_listing=dXze3eeBm2g38m9K",
+  "_scrapedAt": "2026-02-16T20:55:00.485Z",
+  "_rawFile": "108_9264_122_street_surrey_queen_mary_park_surrey.html"
+}

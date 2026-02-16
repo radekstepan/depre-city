@@ -1,0 +1,42 @@
+{
+  "address": "Unit 54 - 23085 118th Avenue",
+  "city": "Maple Ridge",
+  "sqft": 1464,
+  "year": 1999,
+  "price": 700000,
+  "listPrice": 735000,
+  "fee": 429,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3996,
+  "assessment": 756000,
+  "description": "Welcome to an exceptional opportunity in the highly sought-after Sommerville Gardens community. This beautifully maintained 3-bedroom, 3-bathroom, two-story townhome offers the perfect blend of comfort, space, and value for today’s family buyer. Step inside to find newer carpeting, timeless real hardwood flooring, and a bright, well-designed layout that feels instantly like home. The spacious kitchen and living area flow seamlessly to a large, private backyard—an ideal setting for family gatherings, outdoor entertaining, or simply unwinding in your own peaceful retreat. Located just a short walk from Thomas Haney Secondary and Golden Ears Elementary, this home delivers unbeatable convenience in a safe, family-friendly neighborhood. Move-in ready, thoughtfully updated, and priced to impress",
+  "features": [],
+  "schools": [
+    {
+      "name": "Thomas Haney Secondary",
+      "rating": 5.7,
+      "distance": "0.7 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Golden Ears Elementary",
+      "rating": 4.2,
+      "distance": "0.3 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "East Central",
+  "soldDate": "2026-01-28",
+  "parkingType": "garage_tandem",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/54-23085-118th-avenue/home/r56k97wmgDRYKRjD?id_listing=gAaOyL682AO3GxMb",
+  "_scrapedAt": "2026-02-16T20:52:24.208Z",
+  "_rawFile": "54_23085_118th_avenue_maple_ridge_east_central.html"
+}

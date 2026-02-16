@@ -1,0 +1,42 @@
+{
+  "address": "469 Carlsen Place",
+  "city": "Port Moody",
+  "sqft": 1637,
+  "year": 1980,
+  "price": 938800,
+  "listPrice": 938800,
+  "fee": 561,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3569,
+  "assessment": 920000,
+  "description": "Prime Eagle Point Townhouse. Enjoy comfortable open concept modern living in this desirably upgraded well cared for home that shows like new. Euro style Kitchen w/island, stainless appliances; vinyl plank floor and so much more. 3 good size bedrooms up w/ 3 freshly updated bathrooms. Below is a recreation room, laundry room and flex space that makes a good home office or 4th bdrm. Quiet and private outdoor patio to relax. Unit views open green space from the back. Single car garage w/ parking for a second car in driveway. Complex has an outdoor pool and recreation ctr, near all levels of school. Close to skytrain, Rocky Pt Park, Coquitlam Centre, Breweries and Restaurants. 5 min walk for groceries and services. Plenty of Visitor parking . Open House Sunday Feb 1 from 2pm - 3pm",
+  "features": [],
+  "schools": [
+    {
+      "name": "Gleneagle Secondary",
+      "rating": 6.6,
+      "distance": "1.2 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Eagle Ridge Elementary",
+      "rating": 6.4,
+      "distance": "0.5 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "North Shore Pt Moody",
+  "soldDate": "2026-02-01",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-moody-real-estate/469-carlsen-place/home/x9w8o3mMdDJ3GKjm?id_listing=XeEn7XK46dMyrPo8",
+  "_scrapedAt": "2026-02-16T20:51:32.222Z",
+  "_rawFile": "469_carlsen_place_port_moody_north_shore_pt_moody.html"
+}

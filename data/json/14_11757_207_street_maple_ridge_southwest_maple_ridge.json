@@ -1,0 +1,42 @@
+{
+  "address": "Unit 14 - 11757 207 Street",
+  "city": "Maple Ridge",
+  "sqft": 1274,
+  "year": 1990,
+  "price": 650000,
+  "listPrice": 659900,
+  "fee": 439,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 4322,
+  "assessment": 658700,
+  "description": "Wow! This home is nicely renovated with new bathrooms, a gorgeous gourmet kitchen with tons of storage, new flooring, paint, and more! (even the plumbing is updated). Check out the spacious primary bedroom with his and hers closets and room for a sitting area! The living and dining room are large as well, with room for the whole family. Hidden Creek Estates, is a nice family oriented complex in West Maple Ridge. Located close to all levels of schools, local transportation, shopping, restaurants. Commuting is a breeze being so close to the West Coast Express and Golden Ears Bridge. Upgrades in the complex include the roof and windows in 2018. The private fenced backyard has more than enough space to relax and entertain family and friends. 2 pets are allowed - no size restrictions here.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Westview Secondary",
+      "rating": 1.9,
+      "distance": "1.0 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Maple Ridge Elementary",
+      "rating": 1.8,
+      "distance": "0.6 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Southwest Maple Ridge",
+  "soldDate": "2026-02-04",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/14-11757-207-street/home/RdXze3ejZVzY8m9K?id_listing=gAaOyL68B6m3GxMb",
+  "_scrapedAt": "2026-02-16T20:47:40.773Z",
+  "_rawFile": "14_11757_207_street_maple_ridge_southwest_maple_ridge.html"
+}

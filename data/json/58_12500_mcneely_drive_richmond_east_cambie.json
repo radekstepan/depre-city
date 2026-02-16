@@ -1,0 +1,42 @@
+{
+  "address": "Unit 58 - 12500 Mcneely Drive",
+  "city": "Richmond",
+  "sqft": 1596,
+  "year": 1993,
+  "price": 1018000,
+  "listPrice": 1038000,
+  "fee": 400,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3277,
+  "assessment": 985000,
+  "description": "Ideally located in Polygon's gated 'Francisco Village' near Cambie & No. 5 Rd, this townhouse offers 1,398 sq ft on Main & Up per the strata plan, plus 198 sq ft finished Lower Floor (unpermitted 4th BR/Media/Office). Substantial renovations include new kitchen appliances, countertops, sink, faucet, bathroom vanities, toilets, shower stall, bathtub, lighting fixtures, hot water tank & fresh paint. Poly-B piping was replaced with PEX under a plumbing permit issued on Feb 3, 2026, & approved by the City of Richmond. Also, in-suite laundry, side-by-side garage, pool & gym. A short walk to King George/Cambie Community Park, Kathleen McNeely Elementary, H.J. Cambie Secondary, transit & Cambie Plaza. Easy access to Oak St Bridge, Knight St Bridge & Hwy 91. Measurements approx; buyers to verify.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Kathleen McNeely Elementary",
+      "rating": 7,
+      "distance": "0.1 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Cambie Secondary",
+      "rating": 3.3,
+      "distance": "0.4 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "East Cambie",
+  "soldDate": "2026-02-05",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/58-12500-mcneely-drive/home/b1DBW7RVmad7qlAp?id_listing=jAXw7QlAr5dyQOzg",
+  "_scrapedAt": "2026-02-16T20:47:37.607Z",
+  "_rawFile": "58_12500_mcneely_drive_richmond_east_cambie.html"
+}
