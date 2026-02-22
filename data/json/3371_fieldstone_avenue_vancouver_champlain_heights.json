@@ -1,0 +1,36 @@
+{
+  "address": "3371 Fieldstone Avenue",
+  "city": "Vancouver",
+  "sqft": 1274,
+  "year": 1994,
+  "price": 820000,
+  "listPrice": 810000,
+  "fee": 546,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 2753,
+  "assessment": 874000,
+  "description": "Bright, south-facing 3-bedroom FREEHOLD townhome in mostly original condition—ready for your updates. The main level features an open kitchen flowing into a spacious living area with a gas fireplace. Enjoy 3 full bathrooms, an attached garage plus driveway parking, and a secure backyard perfect for relaxing or pets. The complex includes a restored heritage building with a gym, event space, and guest suites. Quick access to the River District, YVR, Metrotown, and top schools: Champlain Heights Annex and Killarney Secondary.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Killarney Secondary",
+      "rating": 5.4,
+      "distance": "2.1 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Champlain Heights",
+  "soldDate": "2026-02-06",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 2,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/3371-fieldstone-avenue/home/weQp5yOVmMgYd0ZE?id_listing=LzQ1y50popmYqdeK",
+  "_scrapedAt": "2026-02-22T01:24:21.845Z",
+  "_rawFile": "3371_fieldstone_avenue_vancouver_champlain_heights.html"
+}

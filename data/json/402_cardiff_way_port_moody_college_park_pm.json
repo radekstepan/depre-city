@@ -1,0 +1,42 @@
+{
+  "address": "402 Cardiff Way",
+  "city": "Port Moody",
+  "sqft": 1710,
+  "year": 1977,
+  "price": 880000,
+  "listPrice": 899000,
+  "fee": 656,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 3523,
+  "assessment": 944600,
+  "description": "Welcome to Easthill, a family-focused community where neighbors connect & kids can grow. Updated corner townhouse offers space, privacy, flexibility, perfect for families. Features three beds, including a bright primary with balcony & partial mountain view. Main floor, enjoy a light filled open living/dining area with double patio doors leading to a balcony. Lower level offers a spacious family room with direct access to a 684 sq ft fully fenced updated private backyard, providing a safe space for pets & kids to play. This level also includes laundry, ample storage, & potential for an additional full bathroom. Recent updates include a renovated main bathroom, fresh paint, backyard paving & fencing, newer roof so you can move in, enjoy from day one. 30 min drive to DT Vancouver.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Port Moody Secondary",
+      "rating": 7.5,
+      "distance": "1.1 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Seaview Community School",
+      "rating": 3.6,
+      "distance": "0.6 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "College Park PM",
+  "soldDate": "2026-02-03",
+  "parkingType": "carport",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-moody-real-estate/402-cardiff-way/home/510QqypKXa5YLGlV?id_listing=xLkv3V19elZ7DBNr",
+  "_scrapedAt": "2026-02-22T01:27:06.720Z",
+  "_rawFile": "402_cardiff_way_port_moody_college_park_pm.html"
+}

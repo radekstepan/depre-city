@@ -1,0 +1,42 @@
+{
+  "address": "Unit 210 - 2045 Heritage Park Lane",
+  "city": "North Vancouver",
+  "sqft": 1594,
+  "year": 2023,
+  "price": 1349900,
+  "listPrice": 1349900,
+  "fee": 646,
+  "bedrooms": 4,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 4980,
+  "assessment": 1489000,
+  "description": "Welcome to Eastwoods by Anthem! Tucked away on North Vancouver's East side, featuring 39 Four bedroom townhomes and 2 bedroom garden flats. Surrounded by trees and only steps away to Seymour River Heritage Park and a short walk away from Northwoods Village! The neighbourhood offers urban conveniences, mountain slopes and shorelines are within walking distance! Walk into your 1,594 sqft 4 bedroom 2 bath elevated corner townhome, featuring a gourmet kitchen with premium Bosch and Fisher Paykel appliance package, and a rooftop oasis with stunning views to the West.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Windsor Secondary",
+      "rating": 6.7,
+      "distance": "1.6 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Lynnmour Elementary School",
+      "rating": 5,
+      "distance": "1.0 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Seymour NV",
+  "soldDate": "2026-01-14",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/210-2045-heritage-park-lane/home/eQp5yO84Wwv7d0ZE?id_listing=AKv53DxDlxj3MnxB",
+  "_scrapedAt": "2026-02-22T01:23:56.721Z",
+  "_rawFile": "210_2045_heritage_park_lane_north_vancouver_seymour_nv.html"
+}

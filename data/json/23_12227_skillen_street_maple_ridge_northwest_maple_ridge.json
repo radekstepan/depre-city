@@ -1,0 +1,42 @@
+{
+  "address": "Unit 23 - 12227 Skillen Street",
+  "city": "Maple Ridge",
+  "sqft": 1147,
+  "year": 1986,
+  "price": 645000,
+  "listPrice": 669000,
+  "fee": 418,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 4299,
+  "assessment": 631100,
+  "description": "Open Concept 3 bedroom townhome in desirable 'Mckinney Creek Estates'.This property have a large partially covered deck area  (2 large gazebos)  with a sauna, fenced yard for privacy,  facing west unto a greenbelt for your utmost privacy. 2 levels with 3 bedrooms, built in pantry and double glazed windows throughout. A private 1 car garage and carport and an abundance of storage.  Bonus built in 2 tier  EV Charger System. Call for an easy private showing. All measurements to be verified. Complex has high speed fiber  optics",
+  "features": [],
+  "schools": [
+    {
+      "name": "Laity View Elementary",
+      "rating": 3.8,
+      "distance": "0.6 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Westview Secondary",
+      "rating": 1.9,
+      "distance": "0.2 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Northwest Maple Ridge",
+  "soldDate": "2026-02-10",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/23-12227-skillen-street/home/x9w8o3mz8ldYGKjm?id_listing=10QqypGNed1YLGlV",
+  "_scrapedAt": "2026-02-22T01:24:14.829Z",
+  "_rawFile": "23_12227_skillen_street_maple_ridge_northwest_maple_ridge.html"
+}

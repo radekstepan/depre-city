@@ -1,0 +1,42 @@
+{
+  "address": "Unit 4 - 13899 Laurel Drive",
+  "city": "Surrey",
+  "sqft": 1758,
+  "year": 2010,
+  "price": 775000,
+  "listPrice": 795000,
+  "fee": 311,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3520,
+  "assessment": 801000,
+  "description": "Welcome to your new home at Emerald Gardens, a well-managed community in the heart of Surrey Central! This spacious 4-bedroom townhome offers direct street access for convenience and privacy. The functional layout features three bedrooms upstairs and a rec/bedroom on the lower level. Enjoy an open-concept main floor with a modern kitchen, generous living area, and plenty of natural light. Ideally located just minutes from King George SkyTrain Station, Surrey Memorial Hospital, Central City Mall, the upcoming UBC Surrey campus, and steps from the future Langley SkyTrain Extension. Don’t miss this rare opportunity to own a spacious townhome in one of Surrey’s most dynamic and growing neighbourhoods! Showings: Saturdays and Sundays by appointment.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Simon Cunningham Elementary",
+      "rating": 3,
+      "distance": "0.7 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Queen Elizabeth Secondary",
+      "rating": 2,
+      "distance": "0.9 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Whalley",
+  "soldDate": "2026-01-20",
+  "parkingType": "street",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/4-13899-laurel-drive/home/RdXze3eAXgz38m9K?id_listing=dXze3eV88kvY8m9K",
+  "_scrapedAt": "2026-02-22T01:28:18.399Z",
+  "_rawFile": "4_13899_laurel_drive_surrey_whalley.html"
+}

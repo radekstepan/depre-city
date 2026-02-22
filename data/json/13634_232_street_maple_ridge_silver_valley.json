@@ -1,0 +1,36 @@
+{
+  "address": "13634 232 Street",
+  "city": "Maple Ridge",
+  "sqft": 2655,
+  "year": 2026,
+  "price": 1000000,
+  "listPrice": 1090000,
+  "fee": 0,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 0,
+  "assessment": 1111000,
+  "description": "Silver Valley's newest NON-STRATA rowhome, NO STRATA FEES! This spacious 5-BED home including a 2-bed daylight basement with separate entry; ideal for in-laws, grown kids, or a home office. Enjoy stunning views from your private rooftop deck, a double side-by-side garage (EV Ready), and a large FENCED yard perfect for kids or pets. Quality construction with Hardy Board materials, A/C, and built to BC Energy Step Code for efficiency. Close to parks, schools, daycare & more. Under New home warranty.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Garibaldi Secondary",
+      "rating": 1.6,
+      "distance": "4.6 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Silver Valley",
+  "soldDate": "2026-01-13",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/13634-232-street/home/9w8o3m5bkvV3GKjm?id_listing=aD6p78015nw7wRQr",
+  "_scrapedAt": "2026-02-22T01:25:08.921Z",
+  "_rawFile": "13634_232_street_maple_ridge_silver_valley.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 1 - 12438 Brunswick Place",
+  "city": "Richmond",
+  "sqft": 1655,
+  "year": 1990,
+  "price": 1250000,
+  "listPrice": 1249900,
+  "fee": 601,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3746,
+  "assessment": 1111000,
+  "description": "FINALLY, the ONE you've been waiting for in STEVESTON!!! The #1 unit in the complex with a HUGE house sized SOUTH/WEST backyard with an upgraded stamped concrete patio and custom storage shed. FULLY RENOVATED throughout with a gorgeous open concept kitchen, living & dining area with NEW WINDOWS and Sliding Doors throughout. Boasting approx 1655 sqft of living space throughout with 3 Generous sized bedrooms, 3 bathrooms fully updated, and 3 outdoor spaces that include a rooftop deck, balcony off the primary bedroom and the private patio on the main level. Comes with 2 parking, 1 car garage and tons of street parking. The closest thing to a house in one of the best neighborhoods in Richmond. Fantastic schools include Homma Elementary and Mcmath High School. Some photos are virtually staged.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Tomekichi Homma Elementary",
+      "rating": 8,
+      "distance": "0.2 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Robert Alexander McMath Secondary",
+      "rating": 7.9,
+      "distance": "1.3 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Steveston South",
+  "soldDate": "2026-02-04",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "rooftop",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/1-12438-brunswick-place/home/NAKv53D4nlj3MnxB?id_listing=eVbOYENpaQVyx2P0",
+  "_scrapedAt": "2026-02-22T01:28:10.179Z",
+  "_rawFile": "1_12438_brunswick_place_richmond_steveston_south.html"
+}

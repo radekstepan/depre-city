@@ -1,0 +1,36 @@
+{
+  "address": "Unit 2 - 11272 240 Street",
+  "city": "Maple Ridge",
+  "sqft": 1380,
+  "year": 2019,
+  "price": 750000,
+  "listPrice": 749900,
+  "fee": 250,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4000,
+  "assessment": 759000,
+  "description": "This is a home that works for real life. Enter from the lower level with a proper mudroom & nook, then head up to a bright, open main floor where the kitchen, dining, and living space flow together—perfect for everyday living and easy hosting. Fresh paint, laminate flooring, quartz counters, island seating & stainless steel appliances keep things clean and modern, with a balcony off the dining area for BBQs or quiet evenings. A 2-pc powder room completes the main floor. Upstairs offers side-by-side laundry with extra storage & carpeted bedrooms. Rare parking for 4 vehicles with a double garage + driveway! Fronting 240th St makes commuting simple, with transit nearby. Walk to schools, parks, and trails in this family-friendly East Maple Ridge location.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Garibaldi Secondary",
+      "rating": 1.6,
+      "distance": "2.1 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Cottonwood MR",
+  "soldDate": "2026-02-11",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/2-11272-240-street/home/K8OgYBVRVXXYJmG2?id_listing=eVbOYENk9Jnyx2P0",
+  "_scrapedAt": "2026-02-22T01:23:33.829Z",
+  "_rawFile": "2_11272_240_street_maple_ridge_cottonwood_mr.html"
+}

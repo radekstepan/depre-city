@@ -1,0 +1,42 @@
+{
+  "address": "Unit 157 - 1290 Mitchell Street",
+  "city": "Coquitlam",
+  "sqft": 1589,
+  "year": 2021,
+  "price": 1068000,
+  "listPrice": 1099000,
+  "fee": 375,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3867,
+  "assessment": 1171000,
+  "description": "Location,Location,Location. Welcome to Forester by Townline,3 beds and 3 baths townhouse unit in beautiful Burke Mountain area. Kitchen with s/s appliances and quartz countertop and central island. Double garage and private front yard. Canopy club house offers all kinds of amenities, such as out door swimming pool, pool table, BBQ area etc. Colse to parks and pulbic transit. You must see it.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "0.8 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "3.1 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "soldDate": "2026-02-10",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/157-1290-mitchell-street/home/oK8OgYBwdPwyJmG2?id_listing=NkKJ3J1540m7d4V6",
+  "_scrapedAt": "2026-02-22T01:23:42.964Z",
+  "_rawFile": "157_1290_mitchell_street_coquitlam_burke_mountain.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 118 - 216 6th Street E",
+  "city": "North Vancouver",
+  "sqft": 1686,
+  "year": 1984,
+  "price": 1380000,
+  "listPrice": 1399000,
+  "fee": 546,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 4278,
+  "assessment": 1450000,
+  "description": "This is a place daily life settles into easily—and feels immediately right. The main level opens to a comfortable living room with gas fireplace, spacious dining area for gathering, and a bright kitchen with quartz counters, generous cabinetry, and direct access to fenced outdoor patio—ideal for everyday meals & weekend BBQs. Upstairs, the primary bedroom is set apart with a full ensuite, joined by two additional bedrooms and a full bath that comfortably support family life or guests. The top level adds flexibility with studio space, a dedicated office that can also serve as a 4th bedroom, and access to a balcony that brings a sense of retreat. Nearly 1,700sqft with exceptional storage, including a large crawlspace. Quiet & private—minutes to Lower Lonsdale conveniences, Quay & Seabus.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sutherland Secondary",
+      "rating": 5.4,
+      "distance": "1.8 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Ridgeway Elementary",
+      "rating": 5.2,
+      "distance": "0.6 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Lower Lonsdale",
+  "soldDate": "2026-02-09",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/118-216-6th-street-e/home/510Qqypkvj1YLGlV?id_listing=5VXv3l52KKGYj2q8",
+  "_scrapedAt": "2026-02-22T01:26:57.137Z",
+  "_rawFile": "118_216_6th_street_e_north_vancouver_lower_lonsdale.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "20483 74b Avenue",
+  "city": "Langley",
+  "sqft": 2557,
+  "year": 2024,
+  "price": 1211904,
+  "listPrice": 1249999,
+  "fee": 0,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 1,
+  "propertyTax": 0,
+  "assessment": 1266000,
+  "description": "Welcome to your dream home. This brand new 3 storey row home has 5 spacious bedrooms and 4 modern bathrooms. Enjoy waking up to breathtaking mountain views right from your master bedroom. The Interior layout is thoughtfully designed for both comfort and entertaining. 2/5/10 year home warranty. It has a separate entry for the basement which can be converted into a mortgage helper. No maintenance or strata fees.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "1.2 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "0.5 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-01-12",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/20483-74b-avenue/home/B5bO3xXGxbV3kWVP?id_listing=jAXw7QlwG1byQOzg",
+  "_scrapedAt": "2026-02-22T01:27:44.704Z",
+  "_rawFile": "20483_74b_avenue_langley_willoughby_heights.html"
+}

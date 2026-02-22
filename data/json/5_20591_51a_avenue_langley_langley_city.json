@@ -1,0 +1,42 @@
+{
+  "address": "Unit 5 - 20591 51a Avenue",
+  "city": "Langley",
+  "sqft": 1151,
+  "year": 1978,
+  "price": 543000,
+  "listPrice": 578000,
+  "fee": 396,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 3296,
+  "assessment": 590300,
+  "description": "Welcome Home! Surrounded by nature and parks and just steps to the awesome Blacklock Fine Arts School, this 3 bedroom family friendly townhome is perfect for your active family. The location could not be better - just outside your doorstep you will find trails and parks including Nicomekl Trail, Al Anderson Pool, Dinosaur Park & and an offleash dog park PLUS the kids can walk to school in less than 1 minute! The spacious and open main floor layout is great, there is tons of potential here, bring your decorating ideas! The huge fenced yard is perfect for kids and pets. 2 Parking spots included. Homes in this fabulous community are rarely available, why buy a condo when you can have a TOWNHOUSE with a HUGE YARD! This is a great home in an amazing location, don't miss it!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Blacklock Fine Arts Elementary",
+      "rating": 3.9,
+      "distance": "0.2 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Langley Secondary",
+      "rating": 1.4,
+      "distance": "1.9 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Langley City",
+  "soldDate": "2026-02-05",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 2,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/5-20591-51a-avenue/home/b1DBW7RzWzk7qlAp?id_listing=AKv53DxDG1W3MnxB",
+  "_scrapedAt": "2026-02-22T01:26:23.653Z",
+  "_rawFile": "5_20591_51a_avenue_langley_langley_city.html"
+}

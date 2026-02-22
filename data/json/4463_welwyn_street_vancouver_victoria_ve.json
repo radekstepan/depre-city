@@ -1,0 +1,36 @@
+{
+  "address": "4463 Welwyn Street",
+  "city": "Vancouver",
+  "sqft": 1351,
+  "year": 2010,
+  "price": 1335000,
+  "listPrice": 1349000,
+  "fee": 388,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 4244,
+  "assessment": 1293000,
+  "description": "This front 1/2 duplex is a rare find, located on a quiet, family-friendly street. Architecturally designed by Birmingham & Wood, 'Welwyn Mews' is an exclusive collection of 5 craftsman-style homes. The home feels bright and spacious with an open-concept main floor, powder room, and S/S appliances. The 2nd level features 2 bright bedrooms and a full bath. Ascend to the 3rd-floor primary suite, a private oasis with soaring ceilings, an ensuite, a private deck, and scenic views. Enjoy the private fenced garden and easy access to the best of the city. BONUS: Single detached garage! Steps to great schools, parks, and transit, with a quick connection to downtown and Commercial-Broadway. Book your private showing today!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Gladstone Secondary",
+      "rating": 3.2,
+      "distance": "0.8 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Victoria VE",
+  "soldDate": "2026-02-07",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/4463-welwyn-street/home/owJKR7P6dBXYXeLP?id_listing=aD6p780N04k7wRQr",
+  "_scrapedAt": "2026-02-22T01:26:20.898Z",
+  "_rawFile": "4463_welwyn_street_vancouver_victoria_ve.html"
+}

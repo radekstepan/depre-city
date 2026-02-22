@@ -1,0 +1,36 @@
+{
+  "address": "Unit 53 - 11461 236 Street",
+  "city": "Maple Ridge",
+  "sqft": 1501,
+  "year": 2014,
+  "price": 831000,
+  "listPrice": 849000,
+  "fee": 344,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4202,
+  "assessment": 806000,
+  "description": "Welcome home to 'Two Birds' by award winning luxury home builder, Wallmark Homes. This end unit is just over 1500 sf with lots of extra windows creating an inviting oasis for all who visit. Open concept main floor with wood flooring. Stone counters, stainless steel appliances and a large kitchen island make it ideal for entertaining. New carpet on stairs and new flooring upstairs. Three bedrooms and two full bathrooms up, including a large primary suite with walk-in closet and well designed ensuite bathroom. There is a tandem double garage, plus lots of street parking out front. Two decks for your enjoyment. Great location! Walk to Alexander Robinson and Kanaka Creek Elementary schools. Bus stop right across the street makes getting around easy.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Garibaldi Secondary",
+      "rating": 1.6,
+      "distance": "2.6 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Cottonwood MR",
+  "soldDate": "2026-02-04",
+  "parkingType": "garage_tandem",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/53-11461-236-street/home/RdXze3exL1z78m9K?id_listing=dXze3eeVB1g38m9K",
+  "_scrapedAt": "2026-02-22T01:26:26.356Z",
+  "_rawFile": "53_11461_236_street_maple_ridge_cottonwood_mr.html"
+}

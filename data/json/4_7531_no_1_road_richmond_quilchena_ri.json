@@ -1,0 +1,36 @@
+{
+  "address": "Unit 4 - 7531 No. 1 Road",
+  "city": "Richmond",
+  "sqft": 1782,
+  "year": 1988,
+  "price": 1018000,
+  "listPrice": 1099000,
+  "fee": 300,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3582,
+  "assessment": 1128000,
+  "description": "FABULOUS FLOORPLAN. This corner unit on the quiet interior end of 3 townhouses is the only unit that overlooks green space.  It has a formal living & dining room plus family & tv room. It has 3 spacious bedrooms and full bath on the 2nd floor plus a powder room on the main floor. The large master bedroom has a full ensuite and a walk-in closet. The large yard has been newly updated. Two parking spots incl. one car attached garage. The Elementary School is a short walk, and a produce shop is at the corner. Close to Steveston Village.  The townhouse is 15-minute walk to the water & the dike trail or to Safeway or SaveOnFoods. Measurements are approx. Buyer to verify if deemed important. SHOWN By Appointment ONLY 24 hrs. Notice please. Call your Realtor to arrange a viewing.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Hugh Boyd Secondary",
+      "rating": 4.7,
+      "distance": "1.3 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Quilchena RI",
+  "soldDate": "2026-02-10",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/4-7531-no-1-road/home/N0A9X3jKp8mYvgxV?id_listing=jAXw7QpMp51yQOzg",
+  "_scrapedAt": "2026-02-22T01:23:36.879Z",
+  "_rawFile": "4_7531_no_1_road_richmond_quilchena_ri.html"
+}

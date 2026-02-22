@@ -1,0 +1,42 @@
+{
+  "address": "Unit 226 - 6951 204 Street",
+  "city": "Langley",
+  "sqft": 1442,
+  "year": 2024,
+  "price": 820000,
+  "listPrice": 799900,
+  "fee": 283,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "assessment": 913000,
+  "description": "Welcome to Cascadia by Streetside Developments--Willoughby's most forward-thinking community. Perfectly situated in Central Gordon Estate, you're just minutes from top schools, parks, major routes, and the future Surrey SkyTrain extension. This 3-bedroom, 2.5-bath home shines with a bright open-concept main floor at street level--no stairs needed--and a seamless walk-out patio ideal for relaxing or entertaining. The gourmet kitchen impresses with a large island, sleek quartz countertops, and premium LG stainless steel appliances. Enjoy premium upgrades throughout, including central A/C, epoxy garage flooring, BBQ hookup, upgraded drapes, and rare 3-car parking. A beautifully designed home in a location that delivers--don't miss it! NO GST.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "2.3 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.4 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-01-25",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/226-6951-204-street/home/eQp5yO8REkB7d0ZE?id_listing=1DBW7RrDlOx7qlAp",
+  "_scrapedAt": "2026-02-22T01:29:10.220Z",
+  "_rawFile": "226_6951_204_street_langley_willoughby_heights.html"
+}

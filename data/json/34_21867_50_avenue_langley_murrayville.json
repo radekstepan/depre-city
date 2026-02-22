@@ -1,0 +1,42 @@
+{
+  "address": "Unit 34 - 21867 50 Avenue",
+  "city": "Langley",
+  "sqft": 2288,
+  "year": 2011,
+  "price": 962500,
+  "listPrice": 998000,
+  "fee": 624,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3342,
+  "assessment": 983000,
+  "description": "Welcome to the highly sought-after Winchester — the largest home in the complex, offering nearly 2,300 sq ft of living space with 4 spacious bedrooms and 3½ bathrooms, all within walking distance to top-rated schools, shopping, and the recreation centre. The main floor features an open-concept layout with vaulted ceilings leading to a TOTALLY PRIVATE covered patio. kitchen with white shaker cabinets, SS appliances and a convenient 2-piece powder room. Upstairs offers generous bedrooms, while the fully finished lower level includes a bedroom, 4-piece bath, family room opening to a covered patio with privacy wall leading to a fully private fenced yard plus two bonus storage rooms. Double side-by-side garage. Well maintained, hardly lived in, contact for a private viewing.",
+  "features": [],
+  "schools": [
+    {
+      "name": "James Hill Elementary",
+      "rating": 5,
+      "distance": "1.2 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Langley Secondary",
+      "rating": 1.4,
+      "distance": "1.6 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Murrayville",
+  "soldDate": "2026-02-08",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/34-21867-50th-avenue/home/0J6Em7bpxpgYXBeq?id_listing=GMnKYqxpWWj3w1Qr",
+  "_scrapedAt": "2026-02-22T01:27:59.903Z",
+  "_rawFile": "34_21867_50_avenue_langley_murrayville.html"
+}

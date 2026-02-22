@@ -1,0 +1,36 @@
+{
+  "address": "Unit 7016 - 179A Surrey Street",
+  "city": "Surrey",
+  "sqft": 1983,
+  "year": 2006,
+  "price": 999999,
+  "listPrice": 1019000,
+  "fee": 0,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 1,
+  "propertyTax": 4060,
+  "assessment": 982000,
+  "description": "Provinceton - NON Strata Row home on quiet street, walking distance to schools, parks, & future Sky Train station. Beautifully maintained home with open spacious layout, features a 4th bedroom & bathroom in basement, for your teenager. Private back yard/patio area to enjoy your morning coffee. Single garage with 2nd parking pad off back lane. Make a secure investment in this fantastic location & not endure endless strata fees & levies. Call for your private tour. Please give at least 24hrs notice for viewings. NO sign on property.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Adams Road Elementary",
+      "rating": 3.6,
+      "distance": "0.7 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Cloverdale BC",
+  "soldDate": "2026-02-04",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/7016-179a-surrey-street/home/Z5BX32z2Olw3Dar0?id_listing=56k97w0q2lR3KRjD",
+  "_scrapedAt": "2026-02-22T01:26:50.413Z",
+  "_rawFile": "7016_179a_surrey_street_surrey_cloverdale_bc.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 132 - 2050 Glenaire Drive",
+  "city": "North Vancouver",
+  "sqft": 1357,
+  "year": 2025,
+  "price": 1429000,
+  "listPrice": 1399900,
+  "fee": 554,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 0,
+  "assessment": 1536000,
+  "description": "Emerald is nestled along the banks of the Capilano River, surrounded by the North Shore mountains and scenic trails, offering the perfect blend of nature and urban convenience. The C3 is a spacious and thoughtfully designed two-bedroom + den , two-and-a-half-bath city home, offering over 1300 sq. ft. of interior living space complemented by an expansive private rooftop patio with stunning river views. The main level features an open-concept kitchen with a timeless Bosch appliance package, overheight 9' ceilings, in-floor radiant heating, and spectacular views of the river. This unique living opportunity does not come around often. Open house every Sat/Sun 12-4PM #116 - 2050 Glenaire Drive, NV or call 6043499940 List Price is net of 30K incentive",
+  "features": [],
+  "schools": [
+    {
+      "name": "Carson Graham Secondary",
+      "rating": 4.1,
+      "distance": "2.9 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Norgate Community Elementary",
+      "rating": 1.4,
+      "distance": "1.2 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Pemberton NV",
+  "soldDate": "2026-02-10",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/132-2050-glenaire-drive/home/xLkv3V9xORQ7DBNr?id_listing=NkKJ3JJ1QoW3d4V6",
+  "_scrapedAt": "2026-02-22T01:25:38.870Z",
+  "_rawFile": "132_2050_glenaire_drive_north_vancouver_pemberton_nv.html"
+}

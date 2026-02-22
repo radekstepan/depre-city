@@ -1,0 +1,42 @@
+{
+  "address": "Unit 217 - 5700 Arcadia Road",
+  "city": "Richmond",
+  "sqft": 1442,
+  "year": 1988,
+  "price": 640000,
+  "listPrice": 649888,
+  "fee": 425,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 2258,
+  "assessment": 713000,
+  "description": "Rarely available 2 level townhome in The Oasis complex. This is a corner bright unit with 1519 sq feet 3 bedroom +2.5 Bath with beautiful upgrades in the kitchen & all bathroom. This unit comes with 1 parking and 1 storage locker .Convenient for everything! Well kept and maintained complex. Walking distance to Cook elementary school. Canada Line, Richmond public market, Lansdowne center, Kwantlen Polytechnic University & Walmart shopping. Catchment MacNeill Secondary. No Pets allowed in this building.",
+  "features": [],
+  "schools": [
+    {
+      "name": "William Cook Elementary",
+      "rating": 5.8,
+      "distance": "0.6 km",
+      "type": "0-7"
+    },
+    {
+      "name": "MacNeill Secondary",
+      "rating": 3.4,
+      "distance": "1.1 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Brighouse",
+  "soldDate": "2026-02-05",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/217-5700-arcadia-road/home/BGMnKYqvZ5Qyw1Qr?id_listing=eVbOYENpKWRyx2P0",
+  "_scrapedAt": "2026-02-22T01:26:43.046Z",
+  "_rawFile": "217_5700_arcadia_road_richmond_brighouse.html"
+}

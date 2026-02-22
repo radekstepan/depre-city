@@ -1,0 +1,42 @@
+{
+  "address": "Unit 113 - 5311 Admiral Way",
+  "city": "Delta",
+  "sqft": 1737,
+  "year": 2023,
+  "price": 1301000,
+  "listPrice": 1299999,
+  "fee": 387,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4277,
+  "assessment": 1335000,
+  "description": "RARE 2 level END UNIT,1737 sqft. townhome in Ladner's premier waterfront community, Westhampton. Freshly upgraded w/new flooring, this light-filled residence offers 3 spacious bedrms + versatile loft ideal as office, media or flex space. The open-concept main floor impresses w/9' ceilings, expansive windows, a central fireplace & chef-inspired quartz kitchen w/full-height cabinetry, integrated fridge, gas range, quartz island & premium appls. Upstairs features dramatic 8'-11' ceilings, a luxurious primary retreat w/walk-in closet & spa-style ensuite. Comfort ensured year-round w/heat/AC, private hedged yard & side-by-side double garage.Ownership incl. access to the Hampton Club w/pool,hot tub,fitness centre,sport court & guest suites.Steps to marina,golf,river trails & Nielsen Grove School",
+  "features": [],
+  "schools": [
+    {
+      "name": "Neilson Grove Elementary",
+      "rating": 5.1,
+      "distance": "0.8 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Delta Secondary",
+      "rating": 4.3,
+      "distance": "3.0 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Neilsen Grove",
+  "soldDate": "2026-02-07",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/delta-real-estate/113-5311-admiral-way/home/EeVbOYEQebOYx2P0?id_listing=XRla7gBb0lGyjEvL",
+  "_scrapedAt": "2026-02-22T01:28:15.711Z",
+  "_rawFile": "113_5311_admiral_way_delta_neilsen_grove.html"
+}

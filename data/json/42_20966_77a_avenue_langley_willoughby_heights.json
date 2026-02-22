@@ -1,0 +1,42 @@
+{
+  "address": "Unit 42 - 20966 77a Avenue",
+  "city": "Langley",
+  "sqft": 1394,
+  "year": 2012,
+  "price": 760000,
+  "listPrice": 779000,
+  "fee": 212,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2719,
+  "assessment": 799000,
+  "description": "Welcome to Nature's Walk, an award-winning corner unit townhome in the heart of Willoughby! This bright and well-kept 3-bedroom home features newly updated flooring (2024) on the upper two levels, an open layout with extra windows for natural light, and a spacious kitchen with an oversized island, quartz countertops, stainless steel appliances, and maple shaker cabinets. Enjoy a sunny deck off the kitchen—perfect for BBQs or morning coffee. 3 bedrooms including a vaulted-ceiling primary with double closets and an ensuite featuring a large double shower. The tandem double garage provides extra storage and access to a fully fenced backyard. Pet-friendly complex, clubhouse, steps to Richard Bulpitt Elementary, parks, shops. Open house : Feb 01, Sunday 12pm~2pm",
+  "features": [],
+  "schools": [
+    {
+      "name": "Richard Bulpitt Elementary",
+      "rating": 5.8,
+      "distance": "0.3 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.5 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-01-30",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/42-20966-77a-avenue/home/BGMnKYqEPv6Yw1Qr?id_listing=B5bO3x8Xzwg3kWVP",
+  "_scrapedAt": "2026-02-22T01:26:40.538Z",
+  "_rawFile": "42_20966_77a_avenue_langley_willoughby_heights.html"
+}

@@ -1,0 +1,36 @@
+{
+  "address": "Unit 3 - 12018 237 Street",
+  "city": "Maple Ridge",
+  "sqft": 1342,
+  "year": 2023,
+  "price": 775000,
+  "listPrice": 799999,
+  "fee": 288,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2707,
+  "assessment": 789000,
+  "description": "Welcome to Havenridge, a boutique collection of thoughtfully designed townhomes in desirable Maple Ridge, conveniently located near transit, Highway 1, and Lougheed Highway. This spacious 3-bedroom, 2.5-bathroom home offers a bright open layout, hard-to-find 3-car parking, and vaulted ceilings in the primary bedroom creating an airy feel. The contemporary kitchen showcases matte white cabinetry, marble countertops, an oversized island, and Samsung smart appliances. Built for durability with a full rainscreen system and covered by a 2-5-10 year new home warranty. Enjoy spa-inspired bathrooms, a frameless glass shower, and a deep soaker tub. Energy-efficient windows and modern finishes complete this impressive home, offering the perfect combination of location, quality and lifestyle!!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Garibaldi Secondary",
+      "rating": 1.6,
+      "distance": "2.1 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "East Central",
+  "soldDate": "2026-01-18",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/3-12018-237-street/home/wJKR7P8QMWv7XeLP?id_listing=JKdOYrBG8kqY54lW",
+  "_scrapedAt": "2026-02-22T01:25:20.296Z",
+  "_rawFile": "3_12018_237_street_maple_ridge_east_central.html"
+}

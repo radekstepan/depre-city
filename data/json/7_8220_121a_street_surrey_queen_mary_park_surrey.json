@@ -1,0 +1,42 @@
+{
+  "address": "Unit 7 - 8220 121a Street",
+  "city": "Surrey",
+  "sqft": 1792,
+  "year": 1988,
+  "price": 680000,
+  "listPrice": 660000,
+  "fee": 408,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3202,
+  "assessment": 795800,
+  "description": "This 3-level home in Barkerville 2 offers 3 bedrooms and 2.5 bathrooms with a functional layout. Updated kitchen features refreshed cabinetry, countertops, and under-cabinet lighting. Laminate flooring throughout the main living areas and a gas corner fireplace add warmth and comfort. Enjoy a sundeck off the dining room, perfect for outdoor relaxation. The basement includes a large recreation room for added living/bedroom space. Garage is fully insulated and drywalled with vinyl flooring. Convenient location close to Superstore, public transit, and restaurants.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Kennedy Trail Elementary",
+      "rating": 2.5,
+      "distance": "0.3 km",
+      "type": "0-7"
+    },
+    {
+      "name": "L A Matheson Secondary",
+      "rating": 1.8,
+      "distance": "2.6 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Queen Mary Park Surrey",
+  "soldDate": "2026-02-02",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/7-8220-121a-street/home/obqB176QEdwyZajD?id_listing=XeEn7XK6oxqyrPo8",
+  "_scrapedAt": "2026-02-22T01:25:36.613Z",
+  "_rawFile": "7_8220_121a_street_surrey_queen_mary_park_surrey.html"
+}

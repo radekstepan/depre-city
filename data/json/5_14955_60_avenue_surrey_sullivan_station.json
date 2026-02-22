@@ -1,0 +1,42 @@
+{
+  "address": "Unit 5 - 14955 60 Avenue",
+  "city": "Surrey",
+  "sqft": 1348,
+  "year": 2013,
+  "price": 670000,
+  "listPrice": 698000,
+  "fee": 343,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3178,
+  "assessment": 703000,
+  "description": "Central Location in Sullivan of Surrey! Don’t miss out this 3 storey townhouse- Cambridge Park complex by DAWSON & SAWYER. Beautifully well maintained unit offers approximate 1,350 sqft. Abundance of windows with bright natural lights on all levels. Main floor features a spacious living and dining area, perfect for entertaining or cozy nights in. Living room opens to a large balcony and flows nicely a large South-facing kitchen with granite countertop and S/S appliances for culinary creativity. Upstairs has generous two large bedroom spaces which is able to fit king size bed, and another cozy bedroom below next to a washroom. Walking distance to Sullivan Elementary School & Cambridge Elementary School, public transit options, Panorama Village shopping centers and 99 Highway. A MUST SEE!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sullivan Heights Secondary",
+      "rating": 5.5,
+      "distance": "1.1 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Cambridge Elementary",
+      "rating": 4.8,
+      "distance": "0.2 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Sullivan Station",
+  "soldDate": "2026-01-29",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/5-14955-60-avenue/home/JjAXw7Q6aNX3QOzg?id_listing=K8OgYBzVk40YJmG2",
+  "_scrapedAt": "2026-02-22T01:29:18.912Z",
+  "_rawFile": "5_14955_60_avenue_surrey_sullivan_station.html"
+}

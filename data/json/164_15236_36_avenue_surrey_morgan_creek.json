@@ -1,0 +1,42 @@
+{
+  "address": "Unit 164 - 15236 36 Avenue",
+  "city": "Surrey",
+  "sqft": 1480,
+  "year": 2004,
+  "price": 729980,
+  "listPrice": 729980,
+  "fee": 393,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 3296,
+  "assessment": 747000,
+  "description": "Welcome to Sundance in sought-after Rosemary Heights! This bright & updated 3 bed, 2 bath townhome offers 1,480 sq ft across 3 levels with a functional, open layout. This townhome feels like a detached home, with main floor entry & minimal stairs. The main floor features an open concept and spacious kitchen with S/S appli & a movable island. The kitchen seamlessly flows out to a covered balcony, perfect for BBQs & morning coffee. Upstairs a master big enough to fit a king bed & ensuite in addition to two generously sized bdrms. Downstairs a east-facing yard off the lower-level family room—great for a kids' playroom, office, or gym. Backyard is a great size, fully usable, & turfed. Includes a garage and carport. Close to schools, shops, and parks, and easy access to Hwy 99.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Rosemary Heights Elementary",
+      "rating": 7.7,
+      "distance": "0.6 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Earl Marriott Secondary",
+      "rating": 7.2,
+      "distance": "4.1 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Morgan Creek",
+  "soldDate": "2026-02-06",
+  "parkingType": "carport",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/164-15236-36th-avenue/home/JjAXw7Q8ZRdyQOzg?id_listing=eQp5yOwpJk0yd0ZE",
+  "_scrapedAt": "2026-02-22T01:25:14.729Z",
+  "_rawFile": "164_15236_36_avenue_surrey_morgan_creek.html"
+}

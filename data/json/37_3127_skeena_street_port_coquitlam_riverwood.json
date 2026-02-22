@@ -1,0 +1,42 @@
+{
+  "address": "Unit 37 - 3127 Skeena Street",
+  "city": "Port Coquitlam",
+  "sqft": 1870,
+  "year": 2005,
+  "price": 1020000,
+  "listPrice": 999880,
+  "fee": 410,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3553,
+  "assessment": 1032000,
+  "description": "Rare End Unit at River’s Walk featuring unobstructed views from every window and exceptional natural light throughout. This beautifully maintained home offers vaulted ceilings, large windows, spacious closets, and a cozy gas fireplace. Situated on higher ground for added peace of mind, within a well-managed, pet-friendly community with low condo fees and friendly neighbors.  Enjoy added privacy, a recreation room, and a fully fenced yard, all just minutes from Costco, schools, parks, and restaurants. A prime location combining comfort, convenience, and lifestyle.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Cedar Drive Elementary",
+      "rating": 4.4,
+      "distance": "0.1 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "1.0 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Riverwood",
+  "soldDate": "2026-02-05",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/37-3127-skeena-street/home/obqB176bZ2d7ZajD?id_listing=mZRW7nWaLqM3EBO9",
+  "_scrapedAt": "2026-02-22T01:29:24.946Z",
+  "_rawFile": "37_3127_skeena_street_port_coquitlam_riverwood.html"
+}

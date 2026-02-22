@@ -1,0 +1,36 @@
+{
+  "address": "Unit 24 - 13260 236 Street",
+  "city": "Maple Ridge",
+  "sqft": 1664,
+  "year": 2017,
+  "price": 815000,
+  "listPrice": 824900,
+  "fee": 411,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3907,
+  "assessment": 817000,
+  "description": "Stunning duplex-style end-unit townhome in sought-after Silver Valley with double side-by-side garage plus driveway parking. Privately located on the edge of this family-friendly community, this 3-bedroom home offers space and privacy. The open main floor features a living area with fireplace, dining space with custom storage, powder room, and a kitchen with quartz counters, stainless steel appliances, breakfast bar, and office nook. Step out to sundeck, perfect for BBQs and entertaining. Enjoy a fenced front yard with street access. Upstairs offers a primary retreat with vaulted ceiling, walk-through closet, and ensuite, plus two bedrooms and a full bath. NEW CARPET THROUGHOUT BEDROOMS, HALLWAYS & STAIRS. Balance of warranty, steps to transit, trails, Maple Ridge Park & Alouette River!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Garibaldi Secondary",
+      "rating": 1.6,
+      "distance": "3.4 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Silver Valley",
+  "soldDate": "2026-02-02",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/24-13260-236-street/home/RdXze3evepOY8m9K?id_listing=Zaw5Yoj5gV63n961",
+  "_scrapedAt": "2026-02-22T01:28:20.762Z",
+  "_rawFile": "24_13260_236_street_maple_ridge_silver_valley.html"
+}

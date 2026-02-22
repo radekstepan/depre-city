@@ -1,0 +1,48 @@
+{
+  "address": "Unit 54 - 20460 66 Avenue",
+  "city": "Langley",
+  "sqft": 1299,
+  "year": 2005,
+  "price": 725000,
+  "listPrice": 748900,
+  "fee": 405,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2418,
+  "assessment": 749000,
+  "description": "This bright, Willow Edge END unit townhome is immaculately maintained & offers the best of family living. The open concept main floor boasts 9-foot ceilings, POWDER ROOM, fresh paint, newer laminate flooring, & gas fireplace. The kitchen features upgraded stainless appliances, newer counters, refreshed cabinets, spacious eating area & an island…perfect for entertaining! 3 bedrooms up, newer carpets, & 2 baths with updated sinks & counters. Enjoy a level walkout from the kitchen to the backyard patio, kids’ park, greenspace & walking path. Parking for 3 vehicles includes a double tandem garage (with storage) & a long driveway. Quiet location just minutes to Costco & Willowbrook’s many shops & restaurants! 2 pets allowed.",
+  "features": [],
+  "schools": [
+    {
+      "name": "R C Garnett Demonstration Elementary",
+      "rating": 5.8,
+      "distance": "1.3 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Richard Bulpitt Elementary",
+      "rating": 5.8,
+      "distance": "2.6 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "2.2 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-07",
+  "parkingType": "garage_tandem",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/54-20460-66th-avenue/home/2Z5BX32Rkgb3Dar0?id_listing=nbq6y120QvD7o9DA",
+  "_scrapedAt": "2026-02-22T01:27:52.329Z",
+  "_rawFile": "54_20460_66_avenue_langley_willoughby_heights.html"
+}

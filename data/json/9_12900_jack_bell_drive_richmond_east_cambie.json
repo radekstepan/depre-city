@@ -1,0 +1,42 @@
+{
+  "address": "Unit 9 - 12900 Jack Bell Drive",
+  "city": "Richmond",
+  "sqft": 1487,
+  "year": 1994,
+  "price": 983000,
+  "listPrice": 999900,
+  "fee": 366,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3245,
+  "assessment": 975000,
+  "description": "Welcome to this spacious corner unit 4 bedroom townhouse, thoughtfully updated over the years for modern comfort and peace of mind. The home features 3 bedrooms upstairs and 1 bedroom downstairs, perfect for growing families, guests, or a home office. Recent updates include a new hot water tank (2025) and fence (2023), and the roof was changed in 2018. Enjoy a large fenced yard, ideal for pet owners and outdoor entertaining! Located within walking distance to schools, Cambie Community Center, King George Park, and daycares, this home offers plenty of conveniences. Complete with a double side-by-side garage, this is a fantastic opportunity in a family-friendly neighborhood! OPEN HOUSE SAT/SUN JAN 31/FEB 1 FROM 2-4PM",
+  "features": [],
+  "schools": [
+    {
+      "name": "Kathleen McNeely Elementary",
+      "rating": 7,
+      "distance": "0.4 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Cambie Secondary",
+      "rating": 3.3,
+      "distance": "0.1 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "East Cambie",
+  "soldDate": "2026-02-01",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/9-12900-jack-bell-drive/home/kbEDRYamvRvY1VaB?id_listing=aQmD7z6nN447J9Bo",
+  "_scrapedAt": "2026-02-22T01:29:01.162Z",
+  "_rawFile": "9_12900_jack_bell_drive_richmond_east_cambie.html"
+}

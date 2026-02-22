@@ -1,0 +1,42 @@
+{
+  "address": "Unit 118 - 3467 Gislason Avenue",
+  "city": "Coquitlam",
+  "sqft": 2299,
+  "year": 2013,
+  "price": 1300000,
+  "listPrice": 1328000,
+  "fee": 503,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4322,
+  "assessment": 1287000,
+  "description": "Welcome to Secret Ridge on beautiful Burke Mountain! This 4-bed, 3-bath, 2,299 sq ft townhome offers rare rancher-style living with the primary bedroom and laundry on the main floor—perfect for downsizers. Enjoy air conditioning, parking for 4 cars, upgraded granite countertops throughout, a bright open-concept main floor, and a lovely south-facing outlook that fills the space with natural light. Upstairs you'll find three spacious bedrooms, while the fully renovated basement features over-height ceilings, a fantastic rec room, full bathroom, and an additional bedroom—ideal for guests or extended family. Located in a coveted community known for its tranquility and natural beauty, this home combines comfort, style, and function in one thoughtfully designed package.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "0.5 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "3.0 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "soldDate": "2026-02-02",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/118-3467-gislason-avenue/home/GMnKYqpQeJ13w1Qr?id_listing=XRla7gBbGwnyjEvL",
+  "_scrapedAt": "2026-02-22T01:29:04.220Z",
+  "_rawFile": "118_3467_gislason_avenue_coquitlam_burke_mountain.html"
+}

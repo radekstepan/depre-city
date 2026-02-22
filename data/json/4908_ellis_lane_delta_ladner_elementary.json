@@ -1,0 +1,42 @@
+{
+  "address": "4908 Ellis Lane",
+  "city": "Delta",
+  "sqft": 1398,
+  "year": 2019,
+  "price": 850000,
+  "listPrice": 869900,
+  "fee": 514,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3517,
+  "assessment": 955000,
+  "description": "Welcome to Aura, a collection of contemporary spaciously planned townhomes in the heart of Ladner Village. Offering quality construction built by Maskeen Group.  Featuring gourmet kitchen with designer GE Cafe stainless steel appliances, quartz counters and large center island, 3.5 spa-like bathrooms, 3 bedrooms plus den that can easily be a 4th bedroom plus on demand HW and Geothermal heating and cooling system.  A double garage with plenty of storage, deck off kitchen and private yard, makes this a perfect family home. Prime location just minutes to all amenities, town center, parks and transit. Private and quiet corner unit.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Delta Secondary",
+      "rating": 4.3,
+      "distance": "0.4 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Ladner Elementary",
+      "rating": 4.2,
+      "distance": "0.8 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Ladner Elementary",
+  "soldDate": "2026-02-09",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/delta-real-estate/4908-ellis-lane/home/GMnKYqpQvM13w1Qr?id_listing=xLkv3V19Rvn7DBNr",
+  "_scrapedAt": "2026-02-22T01:27:49.637Z",
+  "_rawFile": "4908_ellis_lane_delta_ladner_elementary.html"
+}

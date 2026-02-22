@@ -1,0 +1,42 @@
+{
+  "address": "Unit 10 - 324 Ridgeway Avenue E",
+  "city": "North Vancouver",
+  "sqft": 1400,
+  "year": 2025,
+  "price": 1175000,
+  "listPrice": 1219000,
+  "fee": 364,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 0,
+  "assessment": 1236000,
+  "description": "THE LINDEN – a collection of 10 modern townhomes in the heart of Moodyville with only 4 homes remaining! TH10 is a bright and thoughtfully designed 1,400 sq. ft. corner home, offering added privacy and an abundance of natural light. Designed by Cornerstone Architects and built to the Passive House Standard, keeping energy bills low and comfort high. The corner positioning allows for expansive windows throughout, enhancing the open and airy feel of the living spaces. Inside, you’ll find premium finishes and high-quality appliances, along with well-proportioned bedrooms designed for everyday living. Ideally located just minutes from Lower Lonsdale Quay, you’re steps from shops, restaurants, and fitness centres, with city views and North Shore trails easily accessible.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sutherland Secondary",
+      "rating": 5.4,
+      "distance": "2.0 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Ridgeway Elementary",
+      "rating": 5.2,
+      "distance": "0.7 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Lower Lonsdale",
+  "soldDate": "2026-02-07",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/10-324-ridgeway-avenue-e/home/wJKR7P8EpPp7XeLP?id_listing=1DBW7RrDzpE7qlAp",
+  "_scrapedAt": "2026-02-22T01:27:01.812Z",
+  "_rawFile": "10_324_ridgeway_avenue_e_north_vancouver_lower_lonsdale.html"
+}

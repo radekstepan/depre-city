@@ -1,0 +1,42 @@
+{
+  "address": "4931 47a Avenue",
+  "city": "Ladner",
+  "sqft": 1652,
+  "year": 2019,
+  "price": 947500,
+  "listPrice": 999900,
+  "fee": 599,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3847,
+  "assessment": 1072000,
+  "description": "AURA - Stunning 3 bedroom, 3 bath townhome with spacious den offering 1652 sqft, This beautifully designed end unit is located in the heart of Ladner. Built in 2019, it spans three levels with north south exposure, an open main floor with generous living/dining areas, nine foot ceilings, crown moulding, built in entertainment center, & a cozy fireplace. The kitchen features wood cabinetry, quartz counters,  matching backsplash, s/s appliances. Upstairs offers a spacious primary bedroom w/ large walk in closet & ensuite, plus two additional bedrooms and 4 peice bath. Additional features include geothermal heating/cooling, A/C, on demand hot water, gas cooking, and a side by side double garage w/ driveway parking. Close to schools, parks, transit & more!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Delta Secondary",
+      "rating": 4.3,
+      "distance": "0.4 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Ladner Elementary",
+      "rating": 4.2,
+      "distance": "0.8 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Ladner Elementary",
+  "soldDate": "2026-02-10",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/ladner-real-estate/4931-47a-avenue/home/kbEDRYaoql571VaB?id_listing=B5bO3x8x6aW3kWVP",
+  "_scrapedAt": "2026-02-22T01:25:26.079Z",
+  "_rawFile": "4931_47a_avenue_ladner_ladner_elementary.html"
+}

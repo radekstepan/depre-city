@@ -1,0 +1,42 @@
+{
+  "address": "Unit 14 - 10433 158 Street",
+  "city": "Surrey",
+  "sqft": 2097,
+  "year": 2017,
+  "price": 965000,
+  "listPrice": 1010000,
+  "fee": 465,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3864,
+  "assessment": 993000,
+  "description": "WELCOME TO YOUR NEW PARADISE! Immaculate condition rare corner unit with over 2000+ sqft of living area, plus a large private fenced backyard for your family living and entertaining. Very quiet and peaceful! Freshly painted elegant 4 bdrms and 4 baths home in the Heart of Guilford. Main floor features full open concept, spacious and woods view Living & dining area, a large kitchen and island, a gorgeous master with a 5 pieces bath, a huge walk-in closet. The downstair suite with a full bath and ground level walkout. The community is close to schools, shopping center (Guildford Mall, save on food), Guildford village, recreation center, transit, and restaurants. Easy access to Highway 1.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Johnston Heights Secondary",
+      "rating": 6.4,
+      "distance": "1.5 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Harold Bishop Elementary",
+      "rating": 4.3,
+      "distance": "0.2 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Guildford",
+  "soldDate": "2026-02-01",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/14-10433-158-street/home/VaD6p78P9OJ7wRQr?id_listing=JKdOYrBGBAoY54lW",
+  "_scrapedAt": "2026-02-22T01:28:25.812Z",
+  "_rawFile": "14_10433_158_street_surrey_guildford.html"
+}

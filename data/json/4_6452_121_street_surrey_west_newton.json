@@ -1,0 +1,42 @@
+{
+  "address": "Unit 4 - 6452 121 Street",
+  "city": "Surrey",
+  "sqft": 1835,
+  "year": 1990,
+  "price": 886000,
+  "listPrice": 915000,
+  "fee": 350,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3684,
+  "assessment": 849000,
+  "description": "This 2 storey 3-bedroom, 3-bath end unit is one of the largest homes in the complex and offers a thoughtfully designed layout perfect for comfortable family living. It features vaulted ceilings in the living room, skylights that fill the space with natural light, and two cozy gas fireplaces. The spacious family room adds extra living space, while the large master suite boasts a luxurious ensuite with a soaker tub and separate shower. Additional highlights include a private fenced yard, double garage, and a built-in security system. With its exceptional features and generous layout, this home is a rare find.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Tamanawis Secondary",
+      "rating": 4.8,
+      "distance": "1.2 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Beaver Creek Elementary",
+      "rating": 2.3,
+      "distance": "0.5 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "West Newton",
+  "soldDate": "2026-02-02",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/4-6452-121st-street/home/VaD6p78Qb2V3wRQr?id_listing=Z5BX32Nzqw13Dar0",
+  "_scrapedAt": "2026-02-22T01:25:31.813Z",
+  "_rawFile": "4_6452_121_street_surrey_west_newton.html"
+}

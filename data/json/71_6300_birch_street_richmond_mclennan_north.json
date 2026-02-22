@@ -1,0 +1,42 @@
+{
+  "address": "Unit 71 - 6300 Birch Street",
+  "city": "Richmond",
+  "sqft": 1765,
+  "year": 2004,
+  "price": 1282500,
+  "listPrice": 1388000,
+  "fee": 605,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4293,
+  "assessment": 1319000,
+  "description": "Looking for a townhouse that feel like a house? Springbrook Estates, well-maintained 2-level duplex-style townhouse by Cressey. An end unit, front yard, family room and master bedroom facing north. Nice and bright. 18' living room ceiling, huge master bedroom with walk-in closet and 5 pc ensuite bath. Granite counter top, stainless steel kitchen appliances. Separate laundry room with a sink and full size side by side washer and dryer. Security system. Quiet yet convenient location. Nice neighborhood and walking distance to Garden City Park, Henry Anderson Elementary, MacNeil Secondary, Walmart shopping center, and public transit. Easy to show, very motivated seller, try your offer! Sat 2-4pm (Jan 17th).",
+  "features": [],
+  "schools": [
+    {
+      "name": "Henry Anderson Elementary",
+      "rating": 8,
+      "distance": "0.4 km",
+      "type": "0-7"
+    },
+    {
+      "name": "MacNeill Secondary",
+      "rating": 3.4,
+      "distance": "0.4 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "McLennan North",
+  "soldDate": "2026-02-02",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/71-6300-birch-street/home/r56k97wmV06YKRjD?id_listing=9w8o3m4BoEJ7GKjm",
+  "_scrapedAt": "2026-02-22T01:28:05.336Z",
+  "_rawFile": "71_6300_birch_street_richmond_mclennan_north.html"
+}

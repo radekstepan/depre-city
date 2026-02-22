@@ -1,0 +1,42 @@
+{
+  "address": "3761 Edgemont Boulevard",
+  "city": "North Vancouver",
+  "sqft": 2968,
+  "year": 2001,
+  "price": 2530000,
+  "listPrice": 2599000,
+  "fee": 541,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 7461,
+  "assessment": 2012000,
+  "description": "A completely redesigned FOUR bedroom + office, 4 bathroom duplex-style townhouse offering nearly 3,000SF of thoughtfully curated living. Soaring vaulted ceilings, skylights & wide plank hardwood floors enhance the open concept main floor, French double doors leading to a large PRIVATE fenced yard w/ built-in Weber BBQ island. Chefs kitchen fts. 10-ft quarts waterfall entertainers island, black oak cabinetry, ample storage, Jennair S/S appliances & a built in banquette. Stunning steel+glass staircase leads to 3 light filled bedrooms & an impressive primary suite with lofted office, vaulted ceilings, walk-in closet & ensuite w/ soaker tub, walk-in shower, double vanity and in-floor heat. Lower level includes a media room, gym, & a fully finished nanny suite w/ separate entry & 2 car garage.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Handsworth Secondary",
+      "rating": 8.6,
+      "distance": "1.1 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Cleveland Elementary",
+      "rating": 6,
+      "distance": "0.4 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Edgemont",
+  "soldDate": "2026-02-07",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/3761-edgemont-boulevard/home/kbEDRYarZ2Oy1VaB?id_listing=XRla7gBGgOnyjEvL",
+  "_scrapedAt": "2026-02-22T01:28:07.603Z",
+  "_rawFile": "3761_edgemont_boulevard_north_vancouver_edgemont.html"
+}

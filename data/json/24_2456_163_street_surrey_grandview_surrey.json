@@ -1,0 +1,36 @@
+{
+  "address": "Unit 24 - 2456 163 Street",
+  "city": "Surrey",
+  "sqft": 2630,
+  "year": 2009,
+  "price": 1225000,
+  "listPrice": 1270000,
+  "fee": 493,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4909,
+  "assessment": 1230000,
+  "description": "Azure East -stunning corner townhome boasts the best location in the entire complex. Quiet private setting this 2630 sqft home features 3 levels of bright, luxurious living. Main floor offers 10ft ceilings hardwood floors & an open-concept layout with vaulted ceilings & cozy gas fireplace. The gourmet kitchen includes granite counters ss appliances & large island-perfect for entertaining. Upstairs the spacious primary suite features spa-inspired ensuite plus 2 additional bedrooms & loft area ideal for work or play. Fully finished basement includes a massive rec room & full bath -easily converting to a guest suite or 4th bedroom. Enjoy a fully fenced yard, side-by-side garage, and unbeatable walkability to Morgan Crossing Southridge School dining shops, parks & transit. Don’t miss out!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Earl Marriott Secondary",
+      "rating": 7.2,
+      "distance": "2.0 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Grandview Surrey",
+  "soldDate": "2026-02-12",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/24-2456-163rd-street/home/xmZRW7nvK197EBO9?id_listing=aD6p780N2D47wRQr",
+  "_scrapedAt": "2026-02-22T01:23:48.604Z",
+  "_rawFile": "24_2456_163_street_surrey_grandview_surrey.html"
+}

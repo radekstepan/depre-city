@@ -1,0 +1,36 @@
+{
+  "address": "Unit 106 - 3588 Sawmill Crescent",
+  "city": "Vancouver",
+  "sqft": 1125,
+  "year": 2019,
+  "price": 910000,
+  "listPrice": 939000,
+  "fee": 797,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3078,
+  "assessment": 966000,
+  "description": "A two-level concrete hybrid home designed for buyers who want separation of space. The main level offers bright, open living with high ceilings, a modern kitchen, and a flexible bedroom well-suited to guests or a dedicated home office. Upstairs, the layout is intentionally zoned with a primary and ensuite, guest bedroom, den, and a full bath—creating privacy and comfort without wasted space. 2 private outdoor spaces, AC, 2 parking stalls, and dedicated storage support everyday practicality. This home includes full access to amenities—2 fitness facilities, 2lounges, and shared outdoor spaces. Located in Vancouver’s River District — walking distance to riverfront trails, shops, services, and dining. Designed for condo buyers seeking a concrete build and multi-level living.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Killarney Secondary",
+      "rating": 5.4,
+      "distance": "2.5 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "South Marine",
+  "soldDate": "2026-02-03",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/106-3588-sawmill-crescent/home/xLkv3V9VLRQ7DBNr?id_listing=J6Em7b9nKXByXBeq",
+  "_scrapedAt": "2026-02-22T01:28:02.370Z",
+  "_rawFile": "106_3588_sawmill_crescent_vancouver_south_marine.html"
+}

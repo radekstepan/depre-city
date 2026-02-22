@@ -1,0 +1,42 @@
+{
+  "address": "Unit 46 - 8168 136a Street",
+  "city": "Surrey",
+  "sqft": 1637,
+  "year": 2021,
+  "price": 820000,
+  "listPrice": 849000,
+  "fee": 336,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3407,
+  "assessment": 856000,
+  "description": "Welcome to Kings Landing II by Dawson + Sawyer. This well-maintained 4 bed, 4 bath townhome offers over 1,600 SF across 3 levels. Entry level features a bedroom with full ensuite—perfect for guests, teens, or a private office. Main floor boasts 10’ ceilings, sunken living room, spacious kitchen with oversized island, quartz counters, tile backsplash, and stainless steel appliances. Upstairs includes a king-sized primary bedroom with walk-through closet and spa-inspired ensuite with double vanity and oversized shower, plus 2 more bedrooms, full bath, laundry, and linen storage. Side-by-side double garage, clubhouse access, and close to transit, schools, parks, and shopping.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Frank Hurt Secondary",
+      "rating": 3.7,
+      "distance": "1.1 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Bear Creek Elementary",
+      "rating": 1.5,
+      "distance": "0.4 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Bear Creek Green Timbers",
+  "soldDate": "2026-02-02",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/46-8168-136a-street/home/0A9X3jPwl4EyvgxV?id_listing=DO1w3W1q9BVy8Jg0",
+  "_scrapedAt": "2026-02-22T01:26:33.322Z",
+  "_rawFile": "46_8168_136a_street_surrey_bear_creek_green_timbers.html"
+}

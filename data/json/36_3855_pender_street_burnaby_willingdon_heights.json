@@ -1,0 +1,42 @@
+{
+  "address": "Unit 36 - 3855 Pender Street",
+  "city": "Burnaby",
+  "sqft": 1207,
+  "year": 2004,
+  "price": 1050000,
+  "listPrice": 1100000,
+  "fee": 459,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 3264,
+  "assessment": 1048000,
+  "description": "Rarely Available: 3 Bedrooms 2 Full Bath Townhome with Stunning Rooftop Patio Views at Altura! Located on the border of Vancouver & Burnaby in the popular North Burnaby Willington Heights area. Main floor features an open layout with a spacious kitchen w/ eating area & corner windows, bright living room w/ fireplace & a dining room which opens onto a large fully fenced patio, perfect for Gardening and Entertaining! The 2nd floor has 2 generous sized bdrms, Laundry and a full bathroom. The show stopping 3rd floor boast a large master bdrm with ensuite complemented with a huge Roof Top patio with SW views to DT Vancouver, perfect for sunsets! Tons of storage with a bonus crawl space. 2 secure U/G parking spots and 1 storage locker included. Open House Sat Feb.7 2-4pm, Sun Feb.8 1-3pm.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Gilmore Community Elementary",
+      "rating": 7.2,
+      "distance": "0.6 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Alpha Secondary",
+      "rating": 4.8,
+      "distance": "1.6 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Willingdon Heights",
+  "soldDate": "2026-02-08",
+  "parkingType": "underground",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "rooftop",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/36-3855-pender-street/home/MB5bO3xbXAWykWVP?id_listing=JRv53KjpjQo7VPW4",
+  "_scrapedAt": "2026-02-22T01:23:51.398Z",
+  "_rawFile": "36_3855_pender_street_burnaby_willingdon_heights.html"
+}

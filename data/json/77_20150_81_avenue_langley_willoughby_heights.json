@@ -1,0 +1,42 @@
+{
+  "address": "Unit 77 - 20150 81 Avenue",
+  "city": "Langley",
+  "sqft": 1627,
+  "year": 2023,
+  "price": 1030000,
+  "listPrice": 1049000,
+  "fee": 345,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3403,
+  "assessment": 949000,
+  "description": "Welcome to Verge, a stunning end-unit townhouse built in 2023 with show-home quality finishes. This 3 bdrm home offers A/C & lower-floor office with built-in desk. The open-concept main floor features a gourmet kitchen with large island, gas stove, S/S appliances, built-in microwave & ample cabinetry & counter space. Built-in dining cabinetry with light-up wine display complements the living room with feature wall & electric F/P. Upstairs, the primary bdrm features a coffered ceiling, wall paneling, chandelier, electric fireplace & walk-in closet with full cabinetry + a luxurious 4 pc ensuite with double sinks & stand-up shower. 2 additional bdrms, 4 pc bath & large double garage with textured floor, cabinets & shelves complete the home. Ideally located in Langley, close to all amenities.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "1.2 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "0.9 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-09",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/77-20150-81-avenue/home/1DBW7RDqdXAYqlAp?id_listing=56k97w0Jvvn3KRjD",
+  "_scrapedAt": "2026-02-22T01:25:03.438Z",
+  "_rawFile": "77_20150_81_avenue_langley_willoughby_heights.html"
+}

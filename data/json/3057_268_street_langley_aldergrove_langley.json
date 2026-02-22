@@ -1,0 +1,42 @@
+{
+  "address": "3057 268 Street",
+  "city": "Langley",
+  "sqft": 1099,
+  "year": 1976,
+  "price": 550000,
+  "listPrice": 559900,
+  "fee": 275,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 1825,
+  "assessment": 529700,
+  "description": "Welcome to Bakerview Estates — a charming, quaint & family-friendly townhouse community in the heart of Aldergrove! This bright and well maintained 2-storey townhome offers 3 bedrooms + den, 2 bathrooms, and covered parking, combining comfort and convenience in one package. Front entry way flex space , galley kitchen, powder room, spacious living room with large window and access to your fully fenced private patio perfect for relaxing or space for your pets. All 3 bedrooms upstairs with the primary bedroom and 2nd bedroom boasting vaulted ceilings. Private balcony off the den, and 3rd bedroom is a fair size too! Updates including new flooring, main bathroom, and windows + roof. Ideally located close to everything including downtown Aldergrove, schools, parks, and shopping. Low strata fees!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Parkside Centennial Elementary",
+      "rating": 3,
+      "distance": "0.7 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Aldergrove Community Secondary",
+      "rating": 2.3,
+      "distance": "0.4 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Aldergrove Langley",
+  "soldDate": "2026-01-31",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/3057-268th-street/home/BXeEn7Xendd3rPo8?id_listing=5VXv3l5X9MwYj2q8",
+  "_scrapedAt": "2026-02-22T01:25:00.455Z",
+  "_rawFile": "3057_268_street_langley_aldergrove_langley.html"
+}

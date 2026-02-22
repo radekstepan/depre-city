@@ -1,0 +1,36 @@
+{
+  "address": "Unit 52 - 19034 Mcmyn Road",
+  "city": "Pitt Meadows",
+  "sqft": 1317,
+  "year": 1994,
+  "price": 639000,
+  "listPrice": 649000,
+  "fee": 380,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 3989,
+  "assessment": 710000,
+  "description": "Located on the right side of the train tracks, this beautifully updated townhouse offers easy access in and out of Pitt Meadows without train delays. Perfect for a growing family, it features three bedrooms, a bright, renovated kitchen with stainless steel appliances, and a cozy gas fireplace ideal for relaxing evenings. The extra eating nook makes casual meals or morning coffee a pleasure.   Set in a family-oriented community, this home is close to shopping, the West Coast Express, and within the Highland Park Elementary and Pitt Meadows Secondary school catchments. This is a comfortable, well-located home ready for your next chapter.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Pitt Meadows Secondary",
+      "rating": 3.6,
+      "distance": "1.9 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Mid Meadows",
+  "soldDate": "2026-02-04",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/pitt-meadows-real-estate/52-19034-mcmyn-road/home/PXRla7gXQEP3jEvL?id_listing=GMnKYqxp9Wj3w1Qr",
+  "_scrapedAt": "2026-02-22T01:29:21.987Z",
+  "_rawFile": "52_19034_mcmyn_road_pitt_meadows_mid_meadows.html"
+}

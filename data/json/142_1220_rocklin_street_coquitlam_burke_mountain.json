@@ -1,0 +1,42 @@
+{
+  "address": "Unit 142 - 1220 Rocklin Street",
+  "city": "Coquitlam",
+  "sqft": 1341,
+  "year": 2020,
+  "price": 940000,
+  "listPrice": 949900,
+  "fee": 298,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3701,
+  "assessment": 1035000,
+  "description": "Welcome to Rocklin on the Creek! Beautiful end unit townhome backing onto a serene greenbelt! Offering 3 beds, 3 baths and 1,341 sq ft of living space w/picturesque views from all rooms! On the main enjoy 9 ft ceilings and oversized windows that stream in natural light. Thoughtfully designed kitchen w/quartz counters, gas cooktop + custom built-in cabinetry w/prep space. Dining and generous living seamlessly connect and step out to a private, fenced backyard with patio and gas BBQ hookup. Up are 3 beds including a vaulted-ceiling primary w/dbl closets and ensuite, plus laundry for convenience.  Fully finished garage w/storage solutions, smart thermostats, blackout blinds for bedrooms. Surrounded by nature and trails, while being a short distance from schools, shopping, parks + recreation.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "0.9 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "2.7 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "soldDate": "2026-02-10",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/142-1220-rocklin-street/home/nbq6y104zdjYo9DA?id_listing=GMnKYqxbWEj3w1Qr",
+  "_scrapedAt": "2026-02-22T01:25:23.262Z",
+  "_rawFile": "142_1220_rocklin_street_coquitlam_burke_mountain.html"
+}

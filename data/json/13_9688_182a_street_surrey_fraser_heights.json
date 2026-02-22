@@ -1,0 +1,42 @@
+{
+  "address": "Unit 13 - 9688 182a Street",
+  "city": "Surrey",
+  "sqft": 1969,
+  "year": 2025,
+  "price": 1039000,
+  "listPrice": 1039000,
+  "fee": 327,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 0,
+  "assessment": 1044000,
+  "description": "At Raven's Park, each townhome is meticulously crafted to enhance your lifestyle and well-being. Featuring three bedrooms + flex, double car garages, and a variety of optional upgrades, these homes blend modern living with thoughtful design. Choose from upgrades like A/C, a natural gas BBQ outlet, EV charger, epoxy garage floors, custom closet organizers, a security system, and built-in vacuum for ultimate convenience. With nature-inspired surroundings and smart technologies integrated seamlessly, Raven's Park offers a sanctuary where you can thrive, unwind, and reconnect in spacious, light-filled living areas. SHOW HOME OPEN 12PM to 4:00 PM Saturday and Sunday.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Fraser Heights Secondary",
+      "rating": 7.5,
+      "distance": "4.9 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Bothwell Elementary School",
+      "rating": 4.8,
+      "distance": "2.6 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Fraser Heights",
+  "soldDate": "2026-02-09",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/13-9688-182a-street/home/XeEn7X6Rv8KYrPo8?id_listing=4KAX7NDj4azYeRPJ",
+  "_scrapedAt": "2026-02-22T01:26:52.754Z",
+  "_rawFile": "13_9688_182a_street_surrey_fraser_heights.html"
+}

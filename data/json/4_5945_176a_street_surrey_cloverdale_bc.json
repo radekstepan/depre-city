@@ -1,0 +1,42 @@
+{
+  "address": "Unit 4 - 5945 176a Street",
+  "city": "Surrey",
+  "sqft": 1473,
+  "year": 2019,
+  "price": 825000,
+  "listPrice": 850000,
+  "fee": 375,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3179,
+  "assessment": 796000,
+  "description": "This is Crimson by RDG Homes.  Located in the heart of downtown Cloverdale is a storybook setting that is often the set for filming, you'll find this gorgeous 3 bed plus DEN, 3 bathroom END unit townhouse with lots of space, natural light and upgrades including AIRCONDITIONING, CUSTOM CLOSET ORGANIZERS and EPOXY FLOORS AND BUILT INS IN THE GARAGE. Not only will you find a sense of community here, you'll have a daycare at the end of the road, boutique stores and restaurants within a couple of blocks and 2 large shopping areas (64th or Hwy 10) within a 5 minute drive. It's a great area for commuting from and you'll have the new skytrain, new hospital and hockey rink being built nearby. This is truly a special home in a special community.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Lord Tweedsmuir Secondary",
+      "rating": 6.8,
+      "distance": "0.9 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Martha Currie Elementary",
+      "rating": 4.5,
+      "distance": "1.5 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Cloverdale BC",
+  "soldDate": "2026-02-08",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/4-5945-176a-street/home/56k97wqvebxYKRjD?id_listing=wJKR7P98xkX3XeLP",
+  "_scrapedAt": "2026-02-22T01:25:34.396Z",
+  "_rawFile": "4_5945_176a_street_surrey_cloverdale_bc.html"
+}

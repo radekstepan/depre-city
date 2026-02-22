@@ -1,0 +1,42 @@
+{
+  "address": "Unit 84 - 8930 Walnut Grove Drive",
+  "city": "Langley",
+  "sqft": 1350,
+  "year": 1995,
+  "price": 680000,
+  "listPrice": 699000,
+  "fee": 390,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 2294,
+  "assessment": 721000,
+  "description": "Located in an excellent, family-friendly area, this 3-bedroom, 2-bathroom home offers comfort and convenience in a well-run complex close to schools, parks, and everyday amenities. The main living space has been thoughtfully updated with new flooring and baseboards, while the kitchen features updated countertops, backsplash, sink, faucet, dishwasher, and a functional island—perfect for daily living and entertaining. The home also includes custom closet organizers in the primary bedroom, new blinds throughout, and the added comfort of heat pumps to keep you cool on warm summer days and comfortable year-round.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Walnut Grove Secondary",
+      "rating": 7.3,
+      "distance": "0.1 km",
+      "type": "8-12"
+    },
+    {
+      "name": "James Kennedy Elementary",
+      "rating": 5.6,
+      "distance": "0.4 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Walnut Grove",
+  "soldDate": "2026-01-23",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/84-8930-walnut-grove-drive/home/ZEXrx30RKKlyOklN?id_listing=0A9X3j6PpZw3vgxV",
+  "_scrapedAt": "2026-02-22T01:27:54.762Z",
+  "_rawFile": "84_8930_walnut_grove_drive_langley_walnut_grove.html"
+}

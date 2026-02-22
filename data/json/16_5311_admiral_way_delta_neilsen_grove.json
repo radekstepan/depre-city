@@ -1,0 +1,42 @@
+{
+  "address": "Unit 16 - 5311 Admiral Way",
+  "city": "Delta",
+  "sqft": 2202,
+  "year": 2023,
+  "price": 1233520,
+  "listPrice": 1190000,
+  "fee": 460,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4620,
+  "assessment": 1427000,
+  "description": "Polygon’s Westhampton — a 4-bedroom, 3.5-bath corner home that’s part of the final collection of townhomes in the vibrant master-planned community of Hampton Cove. This 2,202 sq. ft. residence offers bright, open living with over-height ceilings, laminate flooring, and a spacious deck off the kitchen. The gourmet kitchen features a large central island ideal for entertaining, custom cabinetry, engineered stone countertops, and premium gas appliances. The primary ensuite boasts a luxurious soaker tub, glass-enclosed shower with spa bench, and dual sinks. Complete with a side-by-side two-car garage. Residents also enjoy access to The Hampton Club, a private clubhouse with resort-style amenities for the whole family.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Neilson Grove Elementary",
+      "rating": 5.1,
+      "distance": "0.8 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Delta Secondary",
+      "rating": 4.3,
+      "distance": "3.0 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Neilsen Grove",
+  "soldDate": "2026-02-09",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/delta-real-estate/16-5311-admiral-way/home/mZRW7nadbEdyEBO9?id_listing=1DBW7RrDeKx7qlAp",
+  "_scrapedAt": "2026-02-22T01:25:41.362Z",
+  "_rawFile": "16_5311_admiral_way_delta_neilsen_grove.html"
+}

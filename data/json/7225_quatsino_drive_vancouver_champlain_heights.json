@@ -1,0 +1,36 @@
+{
+  "address": "7225 Quatsino Drive",
+  "city": "Vancouver",
+  "sqft": 2106,
+  "year": 1981,
+  "price": 1153000,
+  "listPrice": 1187000,
+  "fee": 393,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3383,
+  "assessment": 1102000,
+  "description": "Truly Exceptional Gem 4 Bed 3 Bath + Den Townhome on 5,500 sqft Lot! Offering the feeling of single-family house, this home boasts remodelled kitchen, upgraded bathrooms, and year-round comfort with Air Conditioning & Heat Pump. With new roof (2022), new cooktop, extensive updates including new painting, this home blends luxury, privacy, everyday convenience in one exceptional package. This well-maintained home features open design floor plan with vaulted ceiling, skylights filling the home with full natural light. Enjoy 4 spacious bedrooms + Den including big master with ensuite, and amazing huge backyard with patio, storage shed. Practical convenience continues with double side-by-side garage/220V EV charger. Central Park/Metrotown/CommunityCentre/Schools nearby. Offers as they come.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Killarney Secondary",
+      "rating": 5.4,
+      "distance": "1.6 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Champlain Heights",
+  "soldDate": "2026-02-04",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/7225-quatsino-drive/home/mLzQ1y5RBZE7qdeK?id_listing=GMnKYq0gX263w1Qr",
+  "_scrapedAt": "2026-02-22T01:28:12.962Z",
+  "_rawFile": "7225_quatsino_drive_vancouver_champlain_heights.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 24 - 323 Governors Court",
+  "city": "New Westminster",
+  "sqft": 2279,
+  "year": 1994,
+  "price": 968000,
+  "listPrice": 998500,
+  "fee": 778,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4107,
+  "assessment": 979000,
+  "description": "Stunning FRASERVIEW 3 BDRM TH looking directly out to  Fraser River and Mountains! Welcome to Governors Court-a pet friendly community with some of NW's largest THs featuring double SxS garages, 3 BDRMS,2.5 BATHS, unique soaring vaulted ceilings, skylights & rooms accommodating home sized furniture! Space for everything here! Level entry to main floor boasts LR, DR, huge KITCH ( updated countertops ,lighting, induction stove) & FAMRM has double sided gas FP to formal LVGRM.  Big bright windows & balcony out to the amazing river views! Upper floor loft BDRM has a big walk in closet & SD to covered deck. 2 PBDRMS on lower level-both with ensuite bathrooms, laundry rm with LRG laundry sink & SD out to patio-perfect for pets. Close to RCH, Brewery District, Skytrain & bus!",
+  "features": [],
+  "schools": [
+    {
+      "name": "New Westminster Secondary",
+      "rating": 6.7,
+      "distance": "2.5 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Skwo:wech Elementary",
+      "rating": 6.5,
+      "distance": "0.9 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Fraserview NW",
+  "soldDate": "2026-01-28",
+  "parkingType": "garage_double",
+  "levels": 2,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/new-westminster-real-estate/24-323-governors-court/home/2Z5BX32gXX5YDar0?id_listing=Z5BX32Nzvn83Dar0",
+  "_scrapedAt": "2026-02-22T01:25:12.087Z",
+  "_rawFile": "24_323_governors_court_new_westminster_fraserview_nw.html"
+}

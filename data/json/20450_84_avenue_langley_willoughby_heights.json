@@ -1,0 +1,42 @@
+{
+  "address": "20450 84 Avenue",
+  "city": "Langley",
+  "sqft": 2104,
+  "year": 2016,
+  "price": 1065000,
+  "listPrice": 1099900,
+  "fee": 0,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 1,
+  "propertyTax": 4458,
+  "assessment": 1284000,
+  "description": "Foxridge by Qualico non-strata row home in sought after Willoughby West, well maintained by the original owners. The main floor features an inviting living room with fireplace and natural stone wall, laminate flooring, and functional kitchen with large island adjacent the dining area, plus a convenient powder room. Upstairs offers well sized bedrooms and bathrooms, including a spacious master suite with walk in closet and ensuite. Downstairs adds versatility with a recreation room with a bar, additional bedroom, and full bathroom. Enjoy a private south facing yard with excellent sun exposure, natural gas BBQ and fire pit hookups, 10x10 cedar deck, hot tub and privacy screens, perfect for entertaining. Additional upgrades include AC and built-in vacuum. Close to schools and all amenities.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "1.1 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.7 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-08",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/20450-84-avenue/home/1DBW7RDrOQdYqlAp?id_listing=eQp5yOw8D6Qyd0ZE",
+  "_scrapedAt": "2026-02-22T01:24:10.079Z",
+  "_rawFile": "20450_84_avenue_langley_willoughby_heights.html"
+}

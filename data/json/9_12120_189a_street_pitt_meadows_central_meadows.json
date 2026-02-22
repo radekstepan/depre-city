@@ -1,0 +1,36 @@
+{
+  "address": "Unit 9 - 12120 189a Street",
+  "city": "Pitt Meadows",
+  "sqft": 1568,
+  "year": 1982,
+  "price": 740000,
+  "listPrice": 729000,
+  "fee": 463,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 4173,
+  "assessment": 696300,
+  "description": "Meadow Estates~ move in confidently! Roof, windows, pex, siding, balconies & fencing are done in this great complex. This spacious 1568 sq ft home is freshly painted, has a new H/W/T & is move in ready! Main flr offers a spacious primary suite with 2 pc ensuite, walk in closet & balcony with peek a boo mountain view. Living rm/dining area is open, has lots of windows making it nice & bright! Step out to the sun drenched upper balcony for your morning coffee. Kitchen offers loads of cabinetry & a 'pass through' to dining area. Up has 2 well sized bdrms, & 5 pc main bath. Huge rec rm down that could be 4th bdrm & leads to massive patio & private yard. A/C is great for the hot summers. Shopping, schools, all amenities right outside your door & the west coast express is perfect for commuters.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Pitt Meadows Secondary",
+      "rating": 3.6,
+      "distance": "1.5 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Central Meadows",
+  "soldDate": "2026-02-12",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/pitt-meadows-real-estate/9-12120-189a-street/home/2Z5BX32Xpz1yDar0?id_listing=bqB176zZv1K7ZajD",
+  "_scrapedAt": "2026-02-22T01:24:57.270Z",
+  "_rawFile": "9_12120_189a_street_pitt_meadows_central_meadows.html"
+}

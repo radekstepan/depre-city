@@ -1,0 +1,36 @@
+{
+  "address": "Unit 19 - 3851 Blundell Road",
+  "city": "Richmond",
+  "sqft": 1275,
+  "year": 1977,
+  "price": 735000,
+  "listPrice": 749900,
+  "fee": 503,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 2743,
+  "assessment": 818200,
+  "description": "This 3 bdrm, 1 1/2 bath townhome is spacious, airy, open and ready for your design ideas. There's 1275 square feet of accommodation here with soaring vaulted ceilings in the living room so it feels even larger. Cozy wood burning fireplace too. Sliders walk out to a huge 349 sq. ft. fully fenced patio area that's perfect for keeping an eye on the little ones. Bright kitchen has a convenient eating area and there's a large laundry room big enough to double as an office area. Up has a mezzanine style primary bedroom, 2 more good sized bdrms and a full bathroom. The carport features a separate storage room too! You're just steps from the gym and steam room. Beacon Cove is a very well maintained and run complex with a quiet and family friendly vibe. Pet Friendly too. You'll love it here!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Hugh Boyd Secondary",
+      "rating": 4.7,
+      "distance": "1.3 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Quilchena RI",
+  "soldDate": "2026-02-01",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/19-3851-blundell-road/home/nM697k52oDWYbmwe?id_listing=eQp5yOpDllb7d0ZE",
+  "_scrapedAt": "2026-02-22T01:28:32.104Z",
+  "_rawFile": "19_3851_blundell_road_richmond_quilchena_ri.html"
+}

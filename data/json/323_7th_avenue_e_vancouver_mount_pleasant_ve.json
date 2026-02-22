@@ -1,0 +1,36 @@
+{
+  "address": "323 7th Avenue E",
+  "city": "Vancouver",
+  "sqft": 1441,
+  "year": 2015,
+  "price": 1487500,
+  "listPrice": 1525000,
+  "fee": 474,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 4503,
+  "assessment": 1430000,
+  "description": "Welcome to Essence in the heart of Mount Pleasant. Meticulously maintained corner Townhome with 1,441 sq. ft. of modern living space. The open-concept main floor features engineered hardwood, a bright living room and a contemporary kitchen with quartz countertops and custom cabinets. Upstairs, enjoy your large primary bedroom with ample closet space and a beautifully remodelled en suite bathroom. Two separate outdoor spaces with one just off your living space that is perfect for entertaining and a top floor patio to enjoy the view. Fantastic location just steps to some of the best shopping and restaurants in the city.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Vancouver Technical Secondary",
+      "rating": 5.9,
+      "distance": "3.4 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Mount Pleasant VE",
+  "soldDate": "2026-02-05",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/323-7th-avenue-e/home/b1DBW7RboxL7qlAp?id_listing=JKdOYrBGawKY54lW",
+  "_scrapedAt": "2026-02-22T01:26:59.479Z",
+  "_rawFile": "323_7th_avenue_e_vancouver_mount_pleasant_ve.html"
+}

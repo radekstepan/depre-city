@@ -1,0 +1,36 @@
+{
+  "address": "Unit 75 - 18221 68 Avenue",
+  "city": "Surrey",
+  "sqft": 1352,
+  "year": 2001,
+  "price": 725000,
+  "listPrice": 749900,
+  "fee": 416,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3299,
+  "assessment": 743000,
+  "description": "Welcome to the desirable Magnolia, a fantastically operated strata complex in one of Cloverdale's best neighbourhoods. This home has been tastefully updated over the years and shows well thanks to the loving care of its owners. A bathroom on the main floor is perfect for entertaining guests, and no one needs to run upstairs. A large open space on the main level, ideal for an office or playroom. Single garage with parking on the apron in front. The unit backs onto a greenbelt with a fully fenced yard and a sizable patio, and summer BBQs are right around the corner. The complex is pet-friendly and family-friendly, the perfect home for a growing family. A great complex, a great unit, in a great location. Closly loacted to the new Skytrain. This one will be hard to beat. Come take a look!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Adams Road Elementary",
+      "rating": 3.6,
+      "distance": "0.1 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Cloverdale BC",
+  "soldDate": "2026-02-03",
+  "parkingType": "garage_tandem",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/75-18221-68-avenue/home/gaQmD7zEvM4yJ9Bo?id_listing=Zaw5Yoj5vOD3n961",
+  "_scrapedAt": "2026-02-22T01:29:27.795Z",
+  "_rawFile": "75_18221_68_avenue_surrey_cloverdale_bc.html"
+}

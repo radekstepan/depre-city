@@ -1,0 +1,42 @@
+{
+  "address": "Unit 107 - 10465 139 Street",
+  "city": "Surrey",
+  "sqft": 1203,
+  "year": 2026,
+  "price": 724900,
+  "listPrice": 724900,
+  "fee": 667,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "assessment": 0,
+  "description": "Move in next February! Hartley is a collection of brand new 1 to 2 bed + den condos in the heart of Surrey City Centre, located minutes from parks and rapid transit. Developed by Porte Homes who has a solid reputation in metro Vancouver with over 57 years of experience. Interior designed by Portico with two color schemes. This Jr. 3 bedroom 3 bathroom home features a modern kitchen with quartz counters, full size S/S appliances, great size bedrooms and a large patio facing East with lots of natural sunlight. Includes 2 parking stall, 1 bike locker and access to a fully equipped amenity centre with club house, gym, sauna, common courtyard and more. Visit presentation centre on site weekends 12-5pm and weekdays by appointment.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Kwantlen Park Secondary",
+      "rating": 4.5,
+      "distance": "1.5 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Forsyth Road Elementary",
+      "rating": 2.4,
+      "distance": "0.5 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Whalley",
+  "soldDate": "2026-02-05",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/107-10465-139-street/home/10QqypNb2Ne3LGlV?id_listing=NkKJ3J1GW667d4V6",
+  "_scrapedAt": "2026-02-22T01:29:13.029Z",
+  "_rawFile": "107_10465_139_street_surrey_whalley.html"
+}

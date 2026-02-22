@@ -1,0 +1,42 @@
+{
+  "address": "Unit 53 - 1108 Riverside Close",
+  "city": "Port Coquitlam",
+  "sqft": 2160,
+  "year": 2000,
+  "price": 1150000,
+  "listPrice": 1185000,
+  "fee": 453,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3839,
+  "assessment": 1064000,
+  "description": "Spacious Detached Townhome. 4 bedrooms plus den, 4 bathrooms. Gorgeous improvements throughout, including luxury vinyl flooring & designer paint colours. Large updated kitchen featuring white shaker cabinets, quartz countertops, stainless appliances, island, dining area, family room with walk out to BBQ deck. Living room with cozy electric fireplace. Spacious Primary suite with walk in closet and spa like ensuite. Basement has a 4th bedroom, full bathroom, huge rec room & separate entry, ideal for families or guests. Enjoy the fully fenced yard with patio. See it, love it! Book your private showing today!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Blakeburn Elementary",
+      "rating": 6.5,
+      "distance": "0.1 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "0.5 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Riverwood",
+  "soldDate": "2026-02-04",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/53-1108-riverside-close/home/5xLkv3VzAWZ3DBNr?id_listing=1DBW7RrDMWR7qlAp",
+  "_scrapedAt": "2026-02-22T01:23:30.878Z",
+  "_rawFile": "53_1108_riverside_close_port_coquitlam_riverwood.html"
+}

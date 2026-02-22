@@ -1,0 +1,42 @@
+{
+  "address": "12019 Boundary Drive S",
+  "city": "Surrey",
+  "sqft": 1835,
+  "year": 1986,
+  "price": 985000,
+  "listPrice": 989000,
+  "fee": 589,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 3896,
+  "assessment": 929000,
+  "description": "RARELY AVAILABLE and highly desirable LAKE FRONT end unit in Boundary Park, offering the largest outdoor area in the complex. This stunning home features a new retaining wall, fence, and a private side deck leading to an east-facing yard and patio overlooking Boundary Park Lake. The spacious Primary Bedroom is conveniently located on the main floor (currently used as a family room) with ensuite. Enjoy the bright living/dining area with hardwood floors, vaulted ceilings, skylights, and a gas fireplace. The beautifully updated kitchen boasts new white shaker cabinets, quartz countertops, a gas stove, and stainless-steel appliances. Upstairs, find two large bedrooms (one with a Murphy bed) and laundry facilities. Additional perks include a double garage & driveway. Pet-friendly! MUST SEE!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Boundary Park Elementary",
+      "rating": 7.4,
+      "distance": "0.8 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Tamanawis Secondary",
+      "rating": 4.8,
+      "distance": "1.7 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Panorama Ridge",
+  "soldDate": "2026-02-09",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/12019-boundary-drive-s/home/dXawjy4EOgg7rR18?id_listing=J6Em7b92dAjyXBeq",
+  "_scrapedAt": "2026-02-22T01:25:06.396Z",
+  "_rawFile": "12019_boundary_drive_s_surrey_panorama_ridge.html"
+}

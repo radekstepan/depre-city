@@ -1,0 +1,42 @@
+{
+  "address": "Unit 6 - 15840 84 Avenue",
+  "city": "Surrey",
+  "sqft": 1805,
+  "year": 1993,
+  "price": 820000,
+  "listPrice": 849000,
+  "fee": 422,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3448,
+  "assessment": 882000,
+  "description": "This beautifully updated townhome features 3 bedrooms, 2.5 bathrooms, 1800+ sqft and a spacious side by side double garage with 2 car driveway! Tons of recent updates include flooring, paint, blinds, kitchen, bathrooms, EV charging, and more! The main level offers a well-appointed kitchen, laundry, and a convenient 2-piece bathroom. A skylight brightens the staircase leading upstairs, with a generous primary bedroom complete with a soaker tub and separate stand-up shower, plus 2 additional bedrooms and full bathroom. Enjoy a fully fenced backyard with patio, ideal for outdoor entertaining and pets. Excellent school catchment and close to recreation, shopping, and transit, this home is located in a quiet, friendly community.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Walnut Road Elementary",
+      "rating": 7.8,
+      "distance": "0.8 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Fleetwood Park Secondary",
+      "rating": 7,
+      "distance": "0.9 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Fleetwood Tynehead",
+  "soldDate": "2026-02-05",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/6-15840-84-avenue/home/0Zaw5YoPXZ6yn961?id_listing=AKv53DxDXVw3MnxB",
+  "_scrapedAt": "2026-02-22T01:25:17.413Z",
+  "_rawFile": "6_15840_84_avenue_surrey_fleetwood_tynehead.html"
+}

@@ -1,0 +1,36 @@
+{
+  "address": "Unit 56 - 13260 236 Street",
+  "city": "Maple Ridge",
+  "sqft": 1178,
+  "year": 2017,
+  "price": 680000,
+  "listPrice": 699900,
+  "fee": 318,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3644,
+  "assessment": 697000,
+  "description": "Welcome to Rockridge. This 2-bed+ den, 3-bath townhouse located in the heart of Silver Valley. 1178 sq/ft of thoughtfully planned living space, this home blends comfort, style, and functionality. The bright and open main floor features a spacious living and dining area, ideal for everyday living and entertaining. The modern kitchen offers ample cabinetry and counter space. Step out to your private outdoor space to enjoy the peaceful surroundings Silver Valley is known for. Upstairs, are two generously sized bedrooms, including a primary suite w/ spa inspired ensuite.  The versatile den on the lower level is perfect for a home office, guest room, or play area, complemented by a third bathroom for added flexibility. Family-friendly, close to schools + Golden Ears park!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Garibaldi Secondary",
+      "rating": 1.6,
+      "distance": "3.5 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Silver Valley",
+  "soldDate": "2026-02-02",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/56-13260-236-street/home/oK8OgYBJlq0YJmG2?id_listing=bEDRYazgqX6y1VaB",
+  "_scrapedAt": "2026-02-22T01:28:57.437Z",
+  "_rawFile": "56_13260_236_street_maple_ridge_silver_valley.html"
+}

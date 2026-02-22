@@ -1,0 +1,42 @@
+{
+  "address": "4686 Fernglen Place",
+  "city": "Burnaby",
+  "sqft": 1702,
+  "year": 1974,
+  "price": 980000,
+  "listPrice": 998899,
+  "fee": 514,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3085,
+  "assessment": 999300,
+  "description": "Welcome to 4686 Fernglen Place, located in the desirable Greentree Village community of Burnaby. This well-situated home offers a practical layout suited to families and long-term owners seeking comfort, convenience, and value. The neighbourhood is known for its quiet, tree-lined streets, strong community feel, and proximity to parks, schools, and everyday amenities. Enjoy easy access to shopping, transit, and major routes connecting you to Metrotown, Brentwood, and Lougheed. A solid opportunity in an established Burnaby neighbourhood with enduring appeal.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Moscrop Secondary",
+      "rating": 8.3,
+      "distance": "0.6 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Gilpin Elementary",
+      "rating": 6.5,
+      "distance": "0.9 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Greentree Village",
+  "soldDate": "2026-01-29",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/4686-fernglen-place/home/L5VXv3lnZBgyj2q8?id_listing=wJKR7P98V2p3XeLP",
+  "_scrapedAt": "2026-02-22T01:25:45.955Z",
+  "_rawFile": "4686_fernglen_place_burnaby_greentree_village.html"
+}

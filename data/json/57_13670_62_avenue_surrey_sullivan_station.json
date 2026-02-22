@@ -1,0 +1,42 @@
+{
+  "address": "Unit 57 - 13670 62 Avenue",
+  "city": "Surrey",
+  "sqft": 1630,
+  "year": 2017,
+  "price": 820000,
+  "listPrice": 849505,
+  "fee": 322,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3581,
+  "assessment": 855000,
+  "description": "Welcome to Panorama 62....This Gorgeous, Impeccably Maintained & CORNER 4 Bed & 3.5 Bath 1,630 SQ Ft Townhouse has lots to Offer. BIG BONUS Ground level Have 1 Bedroom & FULL Bathroom. Main Floor comes with 9' Ceiling. Modern Kitchen Comes With SS Appliances, An Island With Built-in Wine Fridge, Quartz Countertops, Oodles of Cabinets for all your storage needs, Last But Not Least South facing Back with Spacious Balcony. UPPER FLOOR Features 3 Good Sized Bedrooms & 2 full Bath & Washer/Dryer. & Guess WHAT... 2 Bedrooms Comes with Speculator Mountain Views?? THIS Amazing MASTERPIECE TOWNHOUSE is a TRULY PRIDE TO OWN. Lots of Windows. Lots of Extra parking on the street. Great Location! Close to all amenities & Both level of schools. Easy access to public Transit, King George Blvd & Hwy 10.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Panorama Ridge Secondary",
+      "rating": 5.2,
+      "distance": "1.0 km",
+      "type": "8-12"
+    },
+    {
+      "name": "North Ridge Elementary",
+      "rating": 2.2,
+      "distance": "0.5 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Sullivan Station",
+  "soldDate": "2026-02-09",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/57-13670-62-avenue/home/VaD6p78Wvk0ywRQr?id_listing=eQp5yOw85x1yd0ZE",
+  "_scrapedAt": "2026-02-22T01:23:39.647Z",
+  "_rawFile": "57_13670_62_avenue_surrey_sullivan_station.html"
+}

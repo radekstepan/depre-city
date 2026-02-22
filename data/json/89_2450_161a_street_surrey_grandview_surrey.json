@@ -1,0 +1,36 @@
+{
+  "address": "Unit 89 - 2450 161a Street",
+  "city": "Surrey",
+  "sqft": 1697,
+  "year": 2010,
+  "price": 920000,
+  "listPrice": 998000,
+  "fee": 464,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3852,
+  "assessment": 901000,
+  "description": "Desirable 3 Bed + Den Glenmore End-Unit Townhome! Centrally located near shopping and restaurants, and just a 15-minute walk to Southridge School. Offering over 1,698 sq ft of living space, there’s plenty of room to spread out. The main floor features a powder room, a functional kitchen with patio access, a spacious dining area, and a well-appointed living room with ample built-in storage. Upstairs you’ll find three bedrooms, including a primary with ensuite, a second full bathroom, and two additional generously sized rooms. Downstairs is a large rec room/den, plus a side-by-side double garage and a private, fenced yard. Residents enjoy exclusive access to community amenities including a gym, floor hockey rink, billiards, pool, and hot-tub. Call now!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Earl Marriott Secondary",
+      "rating": 7.2,
+      "distance": "1.9 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Grandview Surrey",
+  "soldDate": "2026-02-06",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/89-2450-161-a-street/home/owJKR7PP4wO7XeLP?id_listing=xLkv3V19w8Q7DBNr",
+  "_scrapedAt": "2026-02-22T01:24:19.479Z",
+  "_rawFile": "89_2450_161a_street_surrey_grandview_surrey.html"
+}

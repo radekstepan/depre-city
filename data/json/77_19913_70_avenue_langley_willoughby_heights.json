@@ -1,0 +1,42 @@
+{
+  "address": "Unit 77 - 19913 70 Avenue",
+  "city": "Langley",
+  "sqft": 1519,
+  "year": 2017,
+  "price": 765000,
+  "listPrice": 779000,
+  "fee": 355,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2930,
+  "assessment": 810000,
+  "description": "Completely renovated this stunning end-unit home offers modern comfort and convenience. The main floor offers a gourmet kitchen with pantry and gas range, along with a spacious balcony, powder room, and open living/dining areas. Upstairs, the primary suite boasts a walk-in closet, double vanity ensuite with separate tub/shower, plus two additional bedrooms, full bath, and laundry. Enjoy radiant heating, hot water on demand, and a private yard backing onto Routley Park with trails, playgrounds, sports courts, and a community garden. Complex features a clubhouse and playground.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "2.5 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.3 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-19",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/77-19913-70-avenue/home/oK8OgYBJNEzYJmG2?id_listing=0A9X3jL0VQ4yvgxV",
+  "_scrapedAt": "2026-02-22T01:23:45.954Z",
+  "_rawFile": "77_19913_70_avenue_langley_willoughby_heights.html"
+}

@@ -1,0 +1,48 @@
+{
+  "address": "Unit 28 - 20560 66 Avenue",
+  "city": "Langley",
+  "sqft": 1396,
+  "year": 2004,
+  "price": 730000,
+  "listPrice": 749000,
+  "fee": 400,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 2519,
+  "assessment": 739000,
+  "description": "Amberleigh 2 END UNIT townhome in the center of Willoughby Heights. This beautiful 3 bdrm 2 bath townhome has had many updates. Lots of white cabinets, stainless appliances, vinyl plank flooring, updated bathrooms & fresh paint. Walk out of the kitchen to the large fenced yard right off the main floor. Ample storage in the double tandem garage plus an extra parking spot on the driveway. Recent roof (2025) & low strata fees. Resort-style amenities include pool, hot tub, gym & clubhouse. Walk to schools, Costco, and shopping. Pet-friendly with no size or breed restrictions. Live in comfort and style in one of Langley’s most sought-after communities!",
+  "features": [],
+  "schools": [
+    {
+      "name": "R C Garnett Demonstration Elementary",
+      "rating": 5.8,
+      "distance": "1.4 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Richard Bulpitt Elementary",
+      "rating": 5.8,
+      "distance": "2.6 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "2.3 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-02",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/28-20560-66-avenue/home/knbq6y1pKo0Yo9DA?id_listing=LzQ1y50ZgD9YqdeK",
+  "_scrapedAt": "2026-02-22T01:25:43.637Z",
+  "_rawFile": "28_20560_66_avenue_langley_willoughby_heights.html"
+}

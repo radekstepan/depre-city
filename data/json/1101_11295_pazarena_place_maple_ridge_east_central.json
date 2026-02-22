@@ -1,0 +1,42 @@
+{
+  "address": "Unit 1101 - 11295 Pazarena Place",
+  "city": "Maple Ridge",
+  "sqft": 1466,
+  "year": 2020,
+  "price": 775000,
+  "listPrice": 788800,
+  "fee": 407,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4114,
+  "assessment": 0,
+  "description": "Rare duplex-type opportunity! This corner 3 Bedroom, 2.5 bath home at Provenance by Polygon offers bright, open living space, with a central kitchen, 9 ft ceiling, and laminate flooring all throughout. It has 2-car side-by-side garage, convenient main powder room, and deluxe bathroom ensuite with double sink. Steps away from the 1 acre park and Provenance Club, a 7000 sqft clubhouse with resort-style amenities. Contact us for viewing. Measurement taken by Listing Realtor. Please verify.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Thomas Haney Secondary",
+      "rating": 5.7,
+      "distance": "0.6 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Golden Ears Elementary",
+      "rating": 4.2,
+      "distance": "0.9 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "East Central",
+  "soldDate": "2026-02-04",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/1101-11295-pazarena-place/home/BXeEn7X8bMo7rPo8?id_listing=6zqW7dKGmGPy5eZE",
+  "_scrapedAt": "2026-02-22T01:26:30.970Z",
+  "_rawFile": "1101_11295_pazarena_place_maple_ridge_east_central.html"
+}

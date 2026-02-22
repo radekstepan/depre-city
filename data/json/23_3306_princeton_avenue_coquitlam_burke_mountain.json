@@ -1,0 +1,42 @@
+{
+  "address": "Unit 23 - 3306 Princeton Avenue",
+  "city": "Coquitlam",
+  "sqft": 2470,
+  "year": 2019,
+  "price": 1430000,
+  "listPrice": 1469000,
+  "fee": 466,
+  "bedrooms": 3,
+  "bathrooms": 5,
+  "parking": 2,
+  "propertyTax": 5299,
+  "assessment": 1435000,
+  "description": "FABULOUS, DUPLEX STYLE TOWNHOME IN COVETED HADLEIGH ON THE PARK!! This immaculate home boasts privacy and serenity as it's nestled against the greenbelt...walk out to trails from your own fenced yard! Upscale, Tudor inspired complex boasts a great location across from Pioneer Park. Main level features eng. white oak flooring, gorgeous Chef's kitchen with entertaining island, stone counters, custom white cabinetry, and upscale, panelled appliances. Oversized windows bring in abundant natural light and lovely greenbelt views! Up are 3 generous bedrooms, each with an ensuite. Primary has a huge walk-in closet and a gorgeous ensuite. Lower level is bright and offers large Rec Room, a large bedroom w/walk-in closets and full bath. Walk out to your private yard, enhanced with artificial turf!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "1.5 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "4.0 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "soldDate": "2026-02-04",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/23-3306-princeton-avenue/home/knbq6y1g8l93o9DA?id_listing=aQmD7z6nBNM7J9Bo",
+  "_scrapedAt": "2026-02-22T01:27:04.404Z",
+  "_rawFile": "23_3306_princeton_avenue_coquitlam_burke_mountain.html"
+}

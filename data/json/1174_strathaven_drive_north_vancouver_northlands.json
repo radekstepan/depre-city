@@ -1,0 +1,42 @@
+{
+  "address": "1174 Strathaven Drive",
+  "city": "North Vancouver",
+  "sqft": 2668,
+  "year": 1995,
+  "price": 1683000,
+  "listPrice": 1764000,
+  "fee": 697,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 6760,
+  "assessment": 1764000,
+  "description": "Larger than most homes, this 4-bedroom end-unit townhome in the highly desirable Strathaven complex is tucked away on a quiet cul-de-sac. With a bright south/west facing orientation, the home is filled with natural light while offering enhanced privacy. The upper level features three generous bedrooms, while the fully finished lower level includes a spacious fourth bedroom. The main floor offers a modern, updated kitchen, a welcoming family room, separate living and dining areas, and a versatile den or home office. Three gas fireplaces provide year-round comfort, and outdoor living is elevated with three private patios—ideal for relaxing or entertaining. Ample storage is available with a 571 sq. ft. crawl space.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Windsor Secondary",
+      "rating": 6.7,
+      "distance": "0.9 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Seymour Heights Elementary",
+      "rating": 5.1,
+      "distance": "1.1 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Northlands",
+  "soldDate": "2026-01-31",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/1174-strathaven-drive/home/dXawjy4XrEpyrR18?id_listing=1DBW7RrDGMR7qlAp",
+  "_scrapedAt": "2026-02-22T01:24:05.454Z",
+  "_rawFile": "1174_strathaven_drive_north_vancouver_northlands.html"
+}

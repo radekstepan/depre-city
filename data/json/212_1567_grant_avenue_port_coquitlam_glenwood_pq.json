@@ -1,0 +1,42 @@
+{
+  "address": "Unit 212 - 1567 Grant Avenue",
+  "city": "Port Coquitlam",
+  "sqft": 1598,
+  "year": 2006,
+  "price": 700000,
+  "listPrice": 749000,
+  "fee": 617,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3077,
+  "assessment": 832000,
+  "description": "OPEN HOUSE - Sunday Feb 15, 1-3pm! Welcome to The Grant, a Silver Georgie Award-winning townhouse development in the heart of Northside Port Coquitlam. This spacious & unique 3 bed, 3 bath home features a rare 2-level layout with extra-large bedrooms, newer carpet, an upgraded deck (2023), and plenty of closet and storage space. Move-in ready and ideal for families, this gated complex offers well-established gardens, a quiet courtyard, and is walking distance to local schools, parks, playgrounds, shopping, and dining. Just minutes to the WestCoast Express for a fast commute to Vancouver. Comes with 2 underground parking stalls and a locker. A rare opportunity in a well-run, desirable & safe townhome community close to Hyde Creek Rec Centre, Poco Trails, and more.",
+  "features": [],
+  "schools": [
+    {
+      "name": "James Park Elementary",
+      "rating": 3.5,
+      "distance": "0.7 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "1.1 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Glenwood PQ",
+  "soldDate": "2026-02-12",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/212-1567-grant-avenue/home/02Zpj39Agld3DrK8?id_listing=GMnKYqxp8oe3w1Qr",
+  "_scrapedAt": "2026-02-22T01:24:02.837Z",
+  "_rawFile": "212_1567_grant_avenue_port_coquitlam_glenwood_pq.html"
+}

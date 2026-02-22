@@ -1,0 +1,42 @@
+{
+  "address": "Unit 109 - 20738 84 Avenue",
+  "city": "Langley",
+  "sqft": 1569,
+  "year": 2012,
+  "price": 760000,
+  "listPrice": 769900,
+  "fee": 381,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2776,
+  "assessment": 814000,
+  "description": "Welcome to Yorkson Creek—one of Langley’s most desirable communities! This beautifully maintained 3 bed, 2.5 bath townhome features a bright open main floor with hardwood, granite counters, solid wood cabinetry, heated bathroom floors, gas stove, and a new central HVAC system including A/C! Enjoy a cozy gas fireplace, gas BBQ hookup, and modern fixtures throughout. The tandem garage includes a workshop + storage, and the private backyard is perfect for relaxing or entertaining. The complex offers a clubhouse with gym and a children’s play area. Unbeatable location—walk to schools, parks, sports facilities, shopping, and transit, with quick access to Carvolth Exchange & Hwy 1. A move-in-ready home offering quality, comfort, and incredible convenience in Yorkson Creek!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "0.8 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.9 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-05",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/109-20738-84-avenue/home/gaQmD7zrKbn7J9Bo?id_listing=0A9X3j6PKdw3vgxV",
+  "_scrapedAt": "2026-02-22T01:28:29.187Z",
+  "_rawFile": "109_20738_84_avenue_langley_willoughby_heights.html"
+}

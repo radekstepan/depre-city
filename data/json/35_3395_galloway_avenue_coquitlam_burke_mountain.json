@@ -1,0 +1,42 @@
+{
+  "address": "Unit 35 - 3395 Galloway Avenue",
+  "city": "Coquitlam",
+  "sqft": 1377,
+  "year": 2012,
+  "price": 860000,
+  "listPrice": 870000,
+  "fee": 402,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3295,
+  "assessment": 948000,
+  "description": "OUTSTANDING PRICE! $870,000. Only 9 yrs old, This Modern 3-BED family home includes a COVETED 1/2 BATHROOM ON THE MAIN FLOOR! BRIGHT AND OPEN FLOOR PLAN with all 3 bedrooms on the TOP FLOOR, which includes a 3-piece bathroom, full-size laundry & the Primary has a walk-through double closet + 4-piece ENSUITE. Main Floor has 9'+ ceiling, is bright & open. kitchen has eating bar, S/S appliances, GAS RANGE, Quartz counters and extra cabinets. LG balcony right off of the kitchen, convenient for BBQ + outdoor eating & sun tanning. Dining room fits a large table, living room has an Electric fireplace & will accommodate a wrap-around couch. Tandem garage fits 2 car + lots of stuff/gym/home office & has a WINDOW. Walk to parks & elementary school. 2 pets.  OPEN HOUSE SUN. JAN. 25TH 130PM-230PM",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "1.0 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "3.7 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "soldDate": "2025-12-18",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/35-3395-galloway-avenue/home/0J6Em7bp4zxYXBeq?id_listing=eQp5yOpZPvb7d0ZE",
+  "_scrapedAt": "2026-02-22T01:26:54.913Z",
+  "_rawFile": "35_3395_galloway_avenue_coquitlam_burke_mountain.html"
+}

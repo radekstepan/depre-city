@@ -1,0 +1,42 @@
+{
+  "address": "Unit 1 - 6162 138 Street",
+  "city": "Surrey",
+  "sqft": 1609,
+  "year": 2024,
+  "price": 900000,
+  "listPrice": 899900,
+  "fee": 323,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3425,
+  "assessment": 864000,
+  "description": "ONLY 4 HOMES REMAIN! Previous show home now for sale with all the upgrades included! Move in ready homes! Welcome to Havenwood by Apcon Group, the newest community in Sullivan! Harmony consists of 29 new townhomes that feature 3 bedroom + den homes. Havenwood is centrally located and is minutes away from schools, YMCA, Panorama Village Plaza and Guildford Town Centre. This 1,609 sqft 3 bedroom + den home features a spacious layout with generous 9' ceilings, Samsung stainless steel appliances, durable wide plank flooring in the kitchen & living area, tranquil spa like bathrooms, ample storage and expansive oversized windows that provide a great amount of natural light. Contact for more information!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sullivan Heights Secondary",
+      "rating": 5.5,
+      "distance": "1.3 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Woodward Hill Elementary",
+      "rating": 3.8,
+      "distance": "0.9 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Sullivan Station",
+  "soldDate": "2026-01-28",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/1-6162-138-street/home/AKv53DDgO8d3MnxB?id_listing=1DBW7RrnP9E7qlAp",
+  "_scrapedAt": "2026-02-22T01:27:57.312Z",
+  "_rawFile": "1_6162_138_street_surrey_sullivan_station.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 21 - 20321 80 Avenue",
+  "city": "Langley",
+  "sqft": 1810,
+  "year": 2022,
+  "price": 977500,
+  "listPrice": 999000,
+  "fee": 265,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4436,
+  "assessment": 976000,
+  "description": "Stunning 4 bed / 4 bath end-unit townhouse in the sought-after Boutique Skylark community. This beautifully designed home features a chef’s kitchen w/a large island, premium finishes, and generous storage, perfect for both everyday living and entertaining. The bright open layout offers 10-foot ceilings & a spacious living area filled w/ natural light. Upstairs  the luxurious primary bedroom boasts a spa-inspired ensuite, alongside two additional well-sized bedrooms & convenient upper-level laundry. The lower level provides a versatile fourth bedroom or home office complete w/a private bathroom & extra storage. Additional highlights include central air conditioning, a high-efficiency furnace, and a rare side-by-side garage. Ideally located within walking distance to Carvoth Park.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "0.9 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "0.9 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-10",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/21-20321-80-avenue/home/0A9X3jPRzRmyvgxV?id_listing=NkKJ3JJdWlz3d4V6",
+  "_scrapedAt": "2026-02-22T01:24:12.496Z",
+  "_rawFile": "21_20321_80_avenue_langley_willoughby_heights.html"
+}
