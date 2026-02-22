@@ -1,0 +1,42 @@
+{
+  "address": "Unit 45 - 1228 Hudson Street",
+  "city": "Coquitlam",
+  "sqft": 1656,
+  "year": 2020,
+  "price": 1140000,
+  "listPrice": 1149900,
+  "fee": 447,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4485,
+  "assessment": 1262000,
+  "description": "Outstanding opportunity to own this stunning, modern Scandinavian-inspired townhome at Aalto by Intracorp – located in the heart of Coquitlam. This 4 bed, 4 bath home features 1,656 sq/ft of living space and a spacious, bright + open layout. Main offers a gourmet kitchen w/ stone counters, flat panel cabinetry, SS appliances + access to private balcony. Large open concept living + dining room & powder room complete the main. Upstairs you'll find 3 beds including the primary w/ en-suite plus a second full bathroom. Side-by-side double garage w/ EV charging installed. The location is incredible - situated within minutes to Coquitlam Centre Mall, Lafarge Lake, transit, schools, parks, shopping and more. World class amenities including gym, great room, playground, fire pit and more!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Walton Elementary",
+      "rating": 7.5,
+      "distance": "0.6 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Gleneagle Secondary",
+      "rating": 6.6,
+      "distance": "0.3 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Scott Creek",
+  "soldDate": "2025-10-31",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/45-1228-hudson-street/home/6VLaGyGQRj03W1ZD?id_listing=6zqW7dzdzbgY5eZE",
+  "_scrapedAt": "2026-02-22T16:34:04.562Z",
+  "_rawFile": "45_1228_hudson_street_coquitlam_scott_creek.html"
+}

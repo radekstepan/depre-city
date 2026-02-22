@@ -1,0 +1,42 @@
+{
+  "address": "Unit 27 - 1228 Hudson Street",
+  "city": "Coquitlam",
+  "sqft": 1494,
+  "year": 2020,
+  "price": 1090000,
+  "listPrice": 1090000,
+  "fee": 392,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4074,
+  "assessment": 1124000,
+  "description": "THIS IS THE ONE! 3-bed 2.5-bath 1494 SF Scandinavian-inspired townhome in Aalto by Intracorp. RARE FOUND Cul-de-sec quiet newer TH complex that is walking distance to Coquitlam Centre! PRIVATE 145sf PATIO plus a south facing balcony filled with natural light! Beautiful oak-themed laminate flooring upgrade, modern kitchen w/ OVERSIZED island & FULL SIZE appliances, stone counters, & a statement dining area with built in millwork! A XL laundry room for growing families. Lovingly maintained w/ thoughtful additions: floating shelves & dining room millwork, Mysa smart thermostats. 2-car garage & a driveway. Stunning clubhouse w/ a gym, fire-pit area / lounge, children's outdoor playground. WALK to Skytrain & Coquitlam Centre and great school catchments!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Walton Elementary",
+      "rating": 7.5,
+      "distance": "0.6 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Gleneagle Secondary",
+      "rating": 6.6,
+      "distance": "0.3 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Scott Creek",
+  "soldDate": "2026-02-09",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/27-1228-hudson-street/home/gaQmD7zE4A1yJ9Bo?id_listing=LzQ1y50pxo4YqdeK",
+  "_scrapedAt": "2026-02-22T16:34:06.678Z",
+  "_rawFile": "27_1228_hudson_street_coquitlam_scott_creek.html"
+}

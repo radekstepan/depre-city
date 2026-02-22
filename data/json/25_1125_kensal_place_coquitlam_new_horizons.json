@@ -1,0 +1,42 @@
+{
+  "address": "Unit 25 - 1125 Kensal Place",
+  "city": "Coquitlam",
+  "sqft": 1442,
+  "year": 2010,
+  "price": 1130000,
+  "listPrice": 1158000,
+  "fee": 336,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3803,
+  "assessment": 1075000,
+  "description": "Your Dream Home Awaits at Kensal Walk in Windsor Gate by Polygon. Discover comfort, convenience, and community in this beautifully maintained, one-owner townhouse located in one of Coquitlam's most sought-after neighborhoods. Perfectly situated within walking distance to Coquitlam Centre, T&T Supermarket, the library, parks, and SkyTrain, this home offers unbeatable access to everything you need. Families will appreciate the proximity to top-rated schools—including Pinetree Secondary, & other schools just minutes away. Enjoy sun-drenched mornings in your southeast-facing private backyard, nestled in the best location of the complex—backing a quiet greenbelt and facing no other front doors. Inside, you're greeted by a bright, open layout w/Gourmet kitchen. Enjoy the luxurious Nakoma Club.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Pinetree Secondary",
+      "rating": 6.3,
+      "distance": "1.4 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Ecole Glen Elementary",
+      "rating": 5.6,
+      "distance": "0.5 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "New Horizons",
+  "soldDate": "2025-09-18",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/25-1125-kensal-place/home/XeEn7X6R040YrPo8?id_listing=mZRW7n2KWBg7EBO9",
+  "_scrapedAt": "2026-02-22T16:33:57.363Z",
+  "_rawFile": "25_1125_kensal_place_coquitlam_new_horizons.html"
+}

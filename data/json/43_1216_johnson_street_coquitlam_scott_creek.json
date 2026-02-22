@@ -1,0 +1,42 @@
+{
+  "address": "Unit 43 - 1216 Johnson Street",
+  "city": "Coquitlam",
+  "sqft": 2269,
+  "year": 1990,
+  "price": 842000,
+  "listPrice": 899000,
+  "fee": 656,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2951,
+  "assessment": 1057000,
+  "description": "Welcome to 1216 Johnson St! The largest townhome in this sought-after complex. Offering over 2,200 sqft across three levels, this 4-bedroom, 3-bath layout is designed for family living, with all bedrooms upstairs and a fully finished basement ideal for a rec room, gym, or office. The main floor features a spacious living and dining area, a bright kitchen with direct carport access, and private outdoor space. Major updates are complete with a new furnace (2024) and hot water tank (2023). Ready for renovations, this home gives buyers the opportunity to add their own style and create instant equity. Steps to Coquitlam Centre, SkyTrain, Town Centre Park, and top schools, this is a rare chance to secure both space and value in one of Coquitlam’s most desirable neighbourhoods. OH Oct 4 -5, 1-4pm",
+  "features": [],
+  "schools": [
+    {
+      "name": "Walton Elementary",
+      "rating": 7.5,
+      "distance": "0.5 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Gleneagle Secondary",
+      "rating": 6.6,
+      "distance": "0.3 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Scott Creek",
+  "soldDate": "2025-10-04",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/43-1216-johnson-street/home/2Z5BX32xpA1yDar0?id_listing=aQmD7zVJ8OO7J9Bo",
+  "_scrapedAt": "2026-02-22T16:34:02.587Z",
+  "_rawFile": "43_1216_johnson_street_coquitlam_scott_creek.html"
+}

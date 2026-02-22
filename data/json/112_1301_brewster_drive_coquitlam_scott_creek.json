@@ -1,0 +1,42 @@
+{
+  "address": "Unit 112 - 1301 Brewster Drive",
+  "city": "Coquitlam",
+  "sqft": 1566,
+  "year": 2026,
+  "price": 1289900,
+  "listPrice": 1289900,
+  "fee": 423,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "assessment": 0,
+  "description": "Westview Townhomes is a boutique community of 24 townhomes. This 4-bedroom, 3-bathroom craftsman townhome captures the essence of single-family living in Central Coquitlam. Nestled at the base of Westwood Plateau, Westview boasts panoramic views of the cityscape that extend across the eastern horizon to the Fraser Valley and Mount. Baker. Conveniences like SkyTrain, West Coast Express, and bustling Coquitlam Centre are all just a stroll down the street, as are schools and recreation options for whole family to enjoy. Westview's unique and intimate location inspires a neighbourly connection, while details such as attached 2-car garages and rooftop decks ensure that every moment finds its place in the comfort of your new home.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Walton Elementary",
+      "rating": 7.5,
+      "distance": "0.4 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Gleneagle Secondary",
+      "rating": 6.6,
+      "distance": "0.9 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Scott Creek",
+  "soldDate": "2025-09-11",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/112-1301-brewster-drive/home/NkKJ3JdNjz9yd4V6?id_listing=DO1w3W98GAjy8Jg0",
+  "_scrapedAt": "2026-02-22T16:34:00.029Z",
+  "_rawFile": "112_1301_brewster_drive_coquitlam_scott_creek.html"
+}
