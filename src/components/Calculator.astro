@@ -15,16 +15,17 @@ interface Props {
     coefDoubleGarage: number;
     coefTandemGarage: number;
     coefExtraParking: number;
-    coefAssessment: number;
-    coefHasAssessment: number;
-    coefTax: number;
-    coefHasTax: number;
-    coefFeePerSqft: number;
     listPriceHeat: number;
     areaCoefficients: Record<string, number>;
     areaReference: string;
     stdError: number;
-    tStats: any;
+    tStats: {
+        coefCondition: number;
+        coefBath: number;
+        coefBedrooms: number;
+        areaCoefficients: Record<string, number>;
+        [key: string]: unknown;
+    };
     isLogLinear: boolean;
 }
 
@@ -32,7 +33,6 @@ const {
     intercept, coefSqft, coefAge, coefBath, coefBedrooms,
     coefCondition, coefRainscreen,
     coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, coefExtraParking,
-    coefAssessment, coefHasAssessment, coefTax, coefHasTax, coefFeePerSqft,
     listPriceHeat,
     areaCoefficients, areaReference, stdError,
     tStats, isLogLinear
@@ -86,7 +86,6 @@ const parkingOptions = [
         intercept, coefSqft, coefAge, coefBath, coefBedrooms,
         coefCondition, coefRainscreen,
         coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, coefExtraParking,
-        coefAssessment, coefHasAssessment, coefTax, coefHasTax, coefFeePerSqft,
         listPriceHeat,
         stdError, isLogLinear
     })}
@@ -139,28 +138,10 @@ const parkingOptions = [
                     </div>
                 </div>
 
-                  <!-- Property Tax & Strata Fee -->
-                  <div class="grid grid-cols-2 gap-4">
-                      <div>
-                          <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Property Tax ($)</label>
-                          <input type="number" id="inputPropertyTax" value={CALCULATOR_DEFAULTS.propertyTax} step="100" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none" placeholder="Annual">
-                      </div>
-                      <div>
-                          <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Strata Fee ($)</label>
-                          <input type="number" id="inputStrataFee" value={CALCULATOR_DEFAULTS.fee} step="10" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none" placeholder="Monthly">
-                      </div>
-                  </div>
-
-                  <!-- BC Assessment & List Price -->
-                  <div class="grid grid-cols-2 gap-4">
-                      <div>
-                          <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">BC Assessment ($)</label>
-                          <input type="number" id="inputAssessment" value={CALCULATOR_DEFAULTS.assessment} step="10000" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none">
-                      </div>
-                      <div>
-                          <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">List Price ($)</label>
-                          <input type="number" id="inputListPrice" value={CALCULATOR_DEFAULTS.listPrice} step="1000" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none" placeholder="Optional">
-                      </div>
+                  <!-- List Price -->
+                  <div>
+                      <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">List Price ($)</label>
+                      <input type="number" id="inputListPrice" value={CALCULATOR_DEFAULTS.listPrice} step="1000" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none" placeholder="Optional">
                   </div>
 
                  <!-- Condition & Parking -->
@@ -273,27 +254,6 @@ const parkingOptions = [
                         <span class="text-gray-400">Amenities (AC/End)</span>
                         <span class="text-green-400" id="valFeatures">+$0</span>
                     </div>
-                    <div class="flex justify-between items-center">
-                        <div class="flex items-center gap-2">
-                            <span class="text-gray-400">BC Assessment Alignment</span>
-                            {Math.abs(tStats.coefAssessment) < 1.65 && <span class="text-[10px] text-gray-500 uppercase bg-gray-800 px-1 rounded">Low Sig</span>}
-                        </div>
-                        <span class="text-green-400" id="valAssessment">+$0</span>
-                    </div>
-                    <div class="flex justify-between items-center">
-                        <div class="flex items-center gap-2">
-                            <span class="text-gray-400">Tax Adjustment</span>
-                            {Math.abs(tStats.coefTax) < 1.65 && <span class="text-[10px] text-gray-500 uppercase bg-gray-800 px-1 rounded">Low Sig</span>}
-                        </div>
-                        <span class="text-red-400" id="valTax">-$0</span>
-                    </div>
-                    <div class="flex justify-between items-center">
-                        <div class="flex items-center gap-2">
-                            <span class="text-gray-400">Strata Fee Impact</span>
-                            {Math.abs(tStats.coefFeePerSqft) < 1.65 && <span class="text-[10px] text-gray-500 uppercase bg-gray-800 px-1 rounded">Low Sig</span>}
-                        </div>
-                        <span class="text-red-400" id="valFee">-$0</span>
-                    </div>
                 </div>
             </div>
         </div>
@@ -314,9 +274,6 @@ const parkingOptions = [
             area: document.getElementById('inputArea'),
             bath: document.getElementById('inputBath'),
             beds: document.getElementById('inputBeds'),
-            assessment: document.getElementById('inputAssessment'),
-            propertyTax: document.getElementById('inputPropertyTax'),
-            strataFee: document.getElementById('inputStrataFee'),
             listPrice: document.getElementById('inputListPrice'),
             condition: document.getElementById('inputCondition'),
             parking: document.getElementById('inputParking'),
@@ -334,9 +291,6 @@ const parkingOptions = [
             predictedCloseContainer: document.getElementById('predictedCloseContainer'),
             delta: document.getElementById('outputDelta'),
             valAge: document.getElementById('valAge'),
-            valTax: document.getElementById('valTax'),
-            valFee: document.getElementById('valFee'),
-            valAssessment: document.getElementById('valAssessment'),
             valBath: document.getElementById('valBath'),
             valBeds: document.getElementById('valBeds'),
             valCondition: document.getElementById('valCondition'),
@@ -391,9 +345,6 @@ const parkingOptions = [
                 sqft: parseFloat(inputs.area.value) || defaults.sqft,
                 bathrooms: parseFloat(inputs.bath.value) || defaults.bathrooms,
                 bedrooms: parseFloat(inputs.beds.value) || defaults.bedrooms,
-                assessment: parseFloat(inputs.assessment.value) || defaults.assessment,
-                propertyTax: parseFloat(inputs.propertyTax.value) || defaults.propertyTax,
-                strataFee: parseFloat(inputs.strataFee.value) || defaults.fee,
                 listPrice: listPriceValue > 0 ? listPriceValue : undefined,
                 condition: parseInt(inputs.condition.value) || defaults.condition,
                 parkingType: inputs.parking.value || defaults.parkingType,
@@ -411,9 +362,6 @@ const parkingOptions = [
             psqft: 0,
             predictedClose: 0,
             valAge: 0,
-            valTax: 0,
-            valFee: 0,
-            valAssessment: 0,
             valBath: 0,
             valBeds: 0,
             valCondition: 0,
@@ -463,12 +411,6 @@ const parkingOptions = [
             updateOutput(outputs.valBeds, impacts.valBeds, 'valBeds', (val) => "+" + format(val));
             updateOutput(outputs.valParking, impacts.valParking, 'valParking', (val) => "+" + format(val));
             updateOutput(outputs.valFeatures, impacts.valFeatures, 'valFeatures', (val) => "+" + format(val));
-            outputs.valAssessment.className = impacts.valAssessment >= 0 ? "text-green-400" : "text-red-400";
-            updateOutput(outputs.valAssessment, impacts.valAssessment, 'valAssessment', (val) => (val > 0 ? "+" : "") + format(val));
-            outputs.valTax.className = impacts.valTax >= 0 ? "text-green-400" : "text-red-400";
-            updateOutput(outputs.valTax, impacts.valTax, 'valTax');
-            outputs.valFee.className = impacts.valFee >= 0 ? "text-green-400" : "text-red-400";
-            updateOutput(outputs.valFee, impacts.valFee, 'valFee');
 
             const event = new CustomEvent('deprecity:model-update', {
                 detail: {

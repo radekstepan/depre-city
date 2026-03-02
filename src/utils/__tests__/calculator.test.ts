@@ -16,11 +16,6 @@ describe('Calculator Logic', () => {
         coefDoubleGarage: 0.10,
         coefTandemGarage: 0.07,
         coefExtraParking: 0.03,
-        coefAssessment: 0.5,
-        coefHasAssessment: 0.02,
-        coefTax: -0.002,
-        coefHasTax: -0.01,
-        coefFeePerSqft: -0.001,
         isLogLinear: true,
         stdError: 0.15,
     };
@@ -29,7 +24,7 @@ describe('Calculator Logic', () => {
         it('should calculate baseline price with default inputs', () => {
             const inputs = getDefaultInputs();
             const price = predictPrice(inputs, mockCoefficients);
-            
+
             expect(price).toBeGreaterThan(0);
             expect(typeof price).toBe('number');
             expect(isFinite(price)).toBe(true);
@@ -38,30 +33,30 @@ describe('Calculator Logic', () => {
         it('should increase price with larger square footage', () => {
             const inputs = getDefaultInputs();
             const basePrice = predictPrice(inputs, mockCoefficients);
-            
+
             const largerInputs = { ...inputs, sqft: inputs.sqft + 500 };
             const largerPrice = predictPrice(largerInputs, mockCoefficients);
-            
+
             expect(largerPrice).toBeGreaterThan(basePrice);
         });
 
         it('should decrease price with older year built', () => {
             const inputs = getDefaultInputs();
             const basePrice = predictPrice(inputs, mockCoefficients);
-            
+
             const olderInputs = { ...inputs, year: inputs.year - 10 };
             const olderPrice = predictPrice(olderInputs, mockCoefficients);
-            
+
             expect(olderPrice).toBeLessThan(basePrice);
         });
 
         it('should increase price with more bathrooms', () => {
             const inputs = getDefaultInputs();
             const basePrice = predictPrice(inputs, mockCoefficients);
-            
+
             const moreBathInputs = { ...inputs, bathrooms: inputs.bathrooms + 1 };
             const moreBathPrice = predictPrice(moreBathInputs, mockCoefficients);
-            
+
             expect(moreBathPrice).toBeGreaterThan(basePrice);
         });
 
@@ -69,7 +64,7 @@ describe('Calculator Logic', () => {
             const inputs = getDefaultInputs();
             const stdPrice = predictPrice({ ...inputs, parkingType: 'std' }, mockCoefficients);
             const doublePrice = predictPrice({ ...inputs, parkingType: 'double' }, mockCoefficients);
-            
+
             expect(doublePrice).toBeGreaterThan(stdPrice);
         });
 
@@ -77,7 +72,7 @@ describe('Calculator Logic', () => {
             const inputs = getDefaultInputs();
             const noEndPrice = predictPrice({ ...inputs, isEndUnit: false }, mockCoefficients);
             const endPrice = predictPrice({ ...inputs, isEndUnit: true }, mockCoefficients);
-            
+
             expect(endPrice).toBeGreaterThan(noEndPrice);
         });
 
@@ -85,7 +80,7 @@ describe('Calculator Logic', () => {
             const inputs = getDefaultInputs();
             const noACPrice = predictPrice({ ...inputs, hasAC: false }, mockCoefficients);
             const acPrice = predictPrice({ ...inputs, hasAC: true }, mockCoefficients);
-            
+
             expect(acPrice).toBeGreaterThan(noACPrice);
         });
 
@@ -93,7 +88,7 @@ describe('Calculator Logic', () => {
             const inputs = getDefaultInputs();
             const noRainPrice = predictPrice({ ...inputs, isRainscreened: false }, mockCoefficients);
             const rainPrice = predictPrice({ ...inputs, isRainscreened: true }, mockCoefficients);
-            
+
             expect(rainPrice).toBeGreaterThan(noRainPrice);
         });
 
@@ -101,33 +96,8 @@ describe('Calculator Logic', () => {
             const inputs = getDefaultInputs();
             const basePrice = predictPrice({ ...inputs, parkingSpots: 1 }, mockCoefficients);
             const extraPrice = predictPrice({ ...inputs, parkingSpots: 2 }, mockCoefficients);
-            
+
             expect(extraPrice).toBeGreaterThan(basePrice);
-        });
-
-        it('should apply assessment coefficient when assessment is provided', () => {
-            const inputs = getDefaultInputs();
-            const noAssessmentPrice = predictPrice({ ...inputs, assessment: 0 }, mockCoefficients);
-            const withAssessmentPrice = predictPrice({ ...inputs, assessment: 900000 }, mockCoefficients);
-            
-            // With positive assessment coef, price should increase
-            expect(withAssessmentPrice).toBeGreaterThan(noAssessmentPrice);
-        });
-
-        it('should decrease price with higher property tax', () => {
-            const inputs = getDefaultInputs();
-            const lowTaxPrice = predictPrice({ ...inputs, propertyTax: 2000 }, mockCoefficients);
-            const highTaxPrice = predictPrice({ ...inputs, propertyTax: 5000 }, mockCoefficients);
-            
-            expect(highTaxPrice).toBeLessThan(lowTaxPrice);
-        });
-
-        it('should decrease price with higher strata fee', () => {
-            const inputs = getDefaultInputs();
-            const lowFeePrice = predictPrice({ ...inputs, strataFee: 200 }, mockCoefficients);
-            const highFeePrice = predictPrice({ ...inputs, strataFee: 500 }, mockCoefficients);
-            
-            expect(highFeePrice).toBeLessThan(lowFeePrice);
         });
 
         it('should handle area coefficient value', () => {
@@ -135,7 +105,7 @@ describe('Calculator Logic', () => {
             const basePrice = predictPrice({ ...inputs, areaCoefVal: 0 }, mockCoefficients);
             const premiumPrice = predictPrice({ ...inputs, areaCoefVal: 0.1 }, mockCoefficients);
             const discountPrice = predictPrice({ ...inputs, areaCoefVal: -0.1 }, mockCoefficients);
-            
+
             expect(premiumPrice).toBeGreaterThan(basePrice);
             expect(discountPrice).toBeLessThan(basePrice);
         });
@@ -144,7 +114,7 @@ describe('Calculator Logic', () => {
             const inputs = getDefaultInputs();
             const price1 = predictPrice(inputs, mockCoefficients);
             const price2 = predictPrice(inputs, mockCoefficients);
-            
+
             expect(price1).toBe(price2);
         });
 
@@ -155,10 +125,10 @@ describe('Calculator Logic', () => {
                 coefSqft: 300,
                 isLogLinear: false,
             };
-            
+
             const inputs = getDefaultInputs();
             const price = predictPrice(inputs, linearCoefficients);
-            
+
             expect(price).toBeGreaterThan(0);
             expect(typeof price).toBe('number');
         });
@@ -166,7 +136,7 @@ describe('Calculator Logic', () => {
         it('should handle edge cases: zero square footage', () => {
             const inputs = { ...getDefaultInputs(), sqft: 0 };
             const price = predictPrice(inputs, mockCoefficients);
-            
+
             expect(isFinite(price)).toBe(true);
         });
     });
@@ -174,7 +144,7 @@ describe('Calculator Logic', () => {
     describe('getDefaultInputs', () => {
         it('should return valid default inputs', () => {
             const defaults = getDefaultInputs();
-            
+
             expect(defaults.sqft).toBeGreaterThan(0);
             expect(defaults.year).toBeGreaterThan(1900);
             expect(defaults.bathrooms).toBeGreaterThan(0);
@@ -189,7 +159,7 @@ describe('Calculator Logic', () => {
         it('should return valid price range for log-linear model', () => {
             const price = 1000000;
             const range = calculatePriceRange(price, mockCoefficients);
-            
+
             expect(range.lowerBound).toBeLessThan(price);
             expect(range.upperBound).toBeGreaterThan(price);
             expect(range.lowerBound).toBeGreaterThan(0);
@@ -203,10 +173,10 @@ describe('Calculator Logic', () => {
                 isLogLinear: false,
                 stdError: 50000,
             };
-            
+
             const price = 1000000;
             const range = calculatePriceRange(price, linearCoefficients);
-            
+
             expect(range.lowerBound).toBeLessThan(price);
             expect(range.upperBound).toBeGreaterThan(price);
             expect(range.lowerBound).toBeGreaterThan(0);
@@ -217,7 +187,7 @@ describe('Calculator Logic', () => {
         it('should calculate component impacts with default inputs', () => {
             const inputs = getDefaultInputs();
             const impacts = calculateComponentImpacts(inputs, mockCoefficients);
-            
+
             expect(typeof impacts.valLoc).toBe('number');
             expect(typeof impacts.valAge).toBe('number');
             expect(typeof impacts.valCondition).toBe('number');
@@ -225,22 +195,19 @@ describe('Calculator Logic', () => {
             expect(typeof impacts.valBeds).toBe('number');
             expect(typeof impacts.valParking).toBe('number');
             expect(typeof impacts.valFeatures).toBe('number');
-            expect(typeof impacts.valAssessment).toBe('number');
-            expect(typeof impacts.valTax).toBe('number');
-            expect(typeof impacts.valFee).toBe('number');
         });
 
         it('should show positive value for premium location', () => {
             const inputs = { ...getDefaultInputs(), areaCoefVal: 0.1 };
             const impacts = calculateComponentImpacts(inputs, mockCoefficients);
-            
+
             expect(impacts.valLoc).toBeGreaterThan(0);
         });
 
         it('should show positive value for amenities (end unit + AC + rain)', () => {
             const inputs = { ...getDefaultInputs(), isEndUnit: true, hasAC: true, isRainscreened: true };
             const impacts = calculateComponentImpacts(inputs, mockCoefficients);
-            
+
             expect(impacts.valFeatures).toBeGreaterThan(0);
         });
     });

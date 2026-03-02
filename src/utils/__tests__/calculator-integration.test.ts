@@ -16,11 +16,6 @@ describe('Calculator Form Integration', () => {
         coefDoubleGarage: 0.10,
         coefTandemGarage: 0.07,
         coefExtraParking: 0.03,
-        coefAssessment: 0.5,
-        coefHasAssessment: 0.02,
-        coefTax: -0.002,
-        coefHasTax: -0.01,
-        coefFeePerSqft: -0.001,
         isLogLinear: true,
         stdError: 0.15,
     };
@@ -34,9 +29,6 @@ describe('Calculator Form Integration', () => {
             sqft: 1500,
             bathrooms: 2,
             bedrooms: 3,
-            assessment: 850000,
-            propertyTax: 3000,
-            strataFee: 300,
             condition: 4,
             parkingType: 'std',
             parkingSpots: 1,
@@ -54,9 +46,6 @@ describe('Calculator Form Integration', () => {
                 inputArea: '1500',
                 inputBath: '2',
                 inputBeds: '3',
-                inputAssessment: '850000',
-                inputPropertyTax: '3000',
-                inputStrataFee: '300',
                 inputCondition: '4',
                 inputParkingSpots: '1',
             };
@@ -68,9 +57,6 @@ describe('Calculator Form Integration', () => {
                 sqft: parseFloat(formData.inputArea),
                 bathrooms: parseFloat(formData.inputBath),
                 bedrooms: parseFloat(formData.inputBeds),
-                assessment: parseFloat(formData.inputAssessment),
-                propertyTax: parseFloat(formData.inputPropertyTax),
-                strataFee: parseFloat(formData.inputStrataFee),
                 condition: parseInt(formData.inputCondition),
                 parkingSpots: parseFloat(formData.inputParkingSpots),
             };
@@ -166,8 +152,6 @@ describe('Calculator Form Integration', () => {
             // Negative coefficients should decrease price
             const negativeFeatures = [
                 { ...mockFormInputs, year: mockFormInputs.year - 10 }, // older = negative age coef
-                { ...mockFormInputs, propertyTax: 6000 }, // higher tax
-                { ...mockFormInputs, strataFee: 600 }, // higher fee
                 { ...mockFormInputs, isRainscreened: false }, // no rainscreen
             ];
 

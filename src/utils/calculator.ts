@@ -7,9 +7,6 @@ export interface CalculatorInputs {
     sqft: number;
     bathrooms: number;
     bedrooms: number;
-    assessment: number;
-    propertyTax: number;
-    strataFee: number;
     listPrice?: number;
     condition: number;
     parkingType: 'std' | 'tandem' | 'double';
@@ -32,11 +29,6 @@ export interface ModelCoefficients {
     coefDoubleGarage: number;
     coefTandemGarage: number;
     coefExtraParking: number;
-    coefAssessment: number;
-    coefHasAssessment: number;
-    coefTax: number;
-    coefHasTax: number;
-    coefFeePerSqft: number;
     isLogLinear: boolean;
     stdError: number;
 }
@@ -54,9 +46,6 @@ export interface ComponentImpacts {
     valBeds: number;
     valParking: number;
     valFeatures: number;
-    valAssessment: number;
-    valTax: number;
-    valFee: number;
 }
 
 /**
@@ -72,19 +61,6 @@ export function predictPrice(
 ): number {
     const currentYear = new Date().getFullYear();
     const age = currentYear - inputs.year;
-    
-    // Assessment
-    const hasAssessment = inputs.assessment > 0 ? 1 : 0;
-    const logAssessment = hasAssessment ? Math.log(inputs.assessment) : 0;
-
-    // Property Tax
-    const hasTax = inputs.propertyTax > 0 ? 1 : 0;
-    const taxPerSqft = (hasTax && inputs.sqft > 0) ? inputs.propertyTax / inputs.sqft : 0;
-
-    // Strata Fee (annual fee per sqft)
-    const feePerSqft = (inputs.strataFee > 0 && inputs.sqft > 0) 
-        ? (inputs.strataFee * 12) / inputs.sqft 
-        : 0;
 
     // Parking
     const extraParking = Math.max(0, inputs.parkingSpots - 1);
@@ -110,11 +86,6 @@ export function predictPrice(
             (isAC * coefficients.coefAC) +
             valParkingCoef +
             (extraParking * coefficients.coefExtraParking) +
-            (logAssessment * coefficients.coefAssessment) +
-            (hasAssessment * coefficients.coefHasAssessment) +
-            (taxPerSqft * coefficients.coefTax) +
-            (hasTax * coefficients.coefHasTax) +
-            (feePerSqft * coefficients.coefFeePerSqft) +
             inputs.areaCoefVal;
 
         return Math.exp(logPrice);
@@ -131,10 +102,6 @@ export function predictPrice(
             (isAC * coefficients.coefAC) +
             valParkingCoef +
             (extraParking * coefficients.coefExtraParking) +
-            (logAssessment * coefficients.coefAssessment) +
-            (hasAssessment * coefficients.coefHasAssessment) +
-            (taxPerSqft * coefficients.coefTax) +
-            (hasTax * coefficients.coefHasTax) +
             inputs.areaCoefVal;
     }
 }
@@ -149,9 +116,6 @@ export function getDefaultInputs(): CalculatorInputs {
         sqft: CALCULATOR_DEFAULTS.sqft,
         bathrooms: CALCULATOR_DEFAULTS.bathrooms,
         bedrooms: CALCULATOR_DEFAULTS.bedrooms,
-        assessment: CALCULATOR_DEFAULTS.assessment,
-        propertyTax: CALCULATOR_DEFAULTS.propertyTax,
-        strataFee: CALCULATOR_DEFAULTS.fee,
         listPrice: CALCULATOR_DEFAULTS.listPrice,
         condition: CALCULATOR_DEFAULTS.condition,
         parkingType: CALCULATOR_DEFAULTS.parkingType as 'std' | 'tandem' | 'double',
@@ -201,7 +165,7 @@ export function calculateComponentImpacts(
     coefficients: ModelCoefficients
 ): ComponentImpacts {
     const finalPrice = predictPrice(inputs, coefficients);
-    const { isLogLinear, coefAge, coefCondition, coefBath, coefBedrooms, coefRainscreen, coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, coefExtraParking, coefAssessment, coefHasAssessment, coefTax, coefHasTax, coefFeePerSqft } = coefficients;
+    const { isLogLinear, coefAge, coefCondition, coefBath, coefBedrooms, coefRainscreen, coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, coefExtraParking } = coefficients;
 
     const currentYear = new Date().getFullYear();
     const age = currentYear - inputs.year;
@@ -220,17 +184,6 @@ export function calculateComponentImpacts(
     const isAC = inputs.hasAC ? 1 : 0;
     const isRain = inputs.isRainscreened ? 1 : 0;
     const amenitiesCoef = (isEnd * coefEndUnit) + (isAC * coefAC) + (isRain * coefRainscreen);
-
-    const hasAssessment = inputs.assessment > 0 ? 1 : 0;
-    const logAssessment = hasAssessment ? Math.log(inputs.assessment) : 0;
-    const assessmentCoef = (logAssessment * coefAssessment) + (hasAssessment * coefHasAssessment);
-
-    const hasTax = inputs.propertyTax > 0 ? 1 : 0;
-    const taxPerSqft = (hasTax && inputs.sqft > 0) ? inputs.propertyTax / inputs.sqft : 0;
-    const taxCoef = (taxPerSqft * coefTax) + (hasTax * coefHasTax);
-
-    const feePerSqft = (inputs.strataFee > 0 && inputs.sqft > 0) ? (inputs.strataFee * 12) / inputs.sqft : 0;
-    const feeCoef = feePerSqft * coefFeePerSqft;
 
     // Calculate impacts
     const valLoc = finalPrice - (isLogLinear ? finalPrice / Math.exp(inputs.areaCoefVal) : 0);
@@ -253,15 +206,6 @@ export function calculateComponentImpacts(
     const pNoAmenities = isLogLinear ? finalPrice / Math.exp(amenitiesCoef) : finalPrice - amenitiesCoef;
     const valFeatures = finalPrice - pNoAmenities;
 
-    const pBaselineAssessment = isLogLinear ? finalPrice / Math.exp(assessmentCoef) : finalPrice - assessmentCoef;
-    const valAssessment = finalPrice - pBaselineAssessment;
-
-    const pNoTax = isLogLinear ? finalPrice / Math.exp(taxCoef) : finalPrice - taxCoef;
-    const valTax = finalPrice - pNoTax;
-
-    const pNoFee = isLogLinear ? finalPrice / Math.exp(feeCoef) : finalPrice - feeCoef;
-    const valFee = finalPrice - pNoFee;
-
     return {
         valLoc,
         valAge,
@@ -269,9 +213,6 @@ export function calculateComponentImpacts(
         valBath,
         valBeds,
         valParking,
-        valFeatures,
-        valAssessment,
-        valTax,
-        valFee
+        valFeatures
     };
 }

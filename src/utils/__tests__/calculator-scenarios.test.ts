@@ -23,11 +23,6 @@ describe('Calculator with Real-World Scenarios', () => {
         coefDoubleGarage: 0.095,  // 9.5% premium
         coefTandemGarage: 0.065,  // 6.5% premium
         coefExtraParking: 0.025,  // 2.5% per extra spot
-        coefAssessment: 0.45,     // Log of assessment
-        coefHasAssessment: 0.015, // Having assessment data
-        coefTax: -0.0015,         // Negative per $ of tax/sqft
-        coefHasTax: -0.008,       // Having tax impacts negatively
-        coefFeePerSqft: -0.0012,  // Negative per $ of fee/sqft
         isLogLinear: true,
         stdError: 0.15,
     };
@@ -40,9 +35,6 @@ describe('Calculator with Real-World Scenarios', () => {
                 sqft: 1500,
                 bathrooms: 2.5,
                 bedrooms: 3,
-                assessment: 875000,
-                propertyTax: 3200,
-                strataFee: 310,
                 condition: 4,
                 parkingType: 'double',
                 parkingSpots: 2,
@@ -140,9 +132,6 @@ describe('Calculator with Real-World Scenarios', () => {
                 sqft: 1500,
                 bathrooms: 2,
                 bedrooms: 3,
-                assessment: 850000,
-                propertyTax: 3000,
-                strataFee: 300,
                 condition: 3,
                 parkingType: 'std',
                 parkingSpots: 1,
