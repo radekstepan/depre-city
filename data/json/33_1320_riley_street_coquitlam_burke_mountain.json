@@ -1,0 +1,42 @@
+{
+  "address": "Unit 33 - 1320 Riley Street",
+  "city": "Coquitlam",
+  "sqft": 1402,
+  "year": 2013,
+  "price": 850000,
+  "listPrice": 899900,
+  "fee": 352,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3438,
+  "assessment": 992000,
+  "description": "Welcome to Riley Park on beautiful Burke Mountain! This bright and inviting south-facing 3-bedroom, 2.5-bath townhome offers the perfect blend of comfort and convenience. The open-concept main floor features a modern kitchen with direct access to a fully fenced yard — ideal for BBQs, morning coffee, or letting the kids play safely. Upstairs, you'll find three spacious bedrooms, including a serene primary suite with generous closet space. The tandem garage offers ample room for parking and extra storage, perfect for bikes, tools, or seasonal gear. Located across from Riley Park and within walking distance to Leigh Elementary and the future middle and high school, this home delivers family-friendly living in one of Burke Mountain's most sought-after communities.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "0.9 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "3.5 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "soldDate": "2026-02-12",
+  "parkingType": "garage_tandem",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/33-1320-riley-street/home/L5VXv3lvwapyj2q8?id_listing=eVbOYEkg4Vn7x2P0",
+  "_scrapedAt": "2026-03-02T20:34:16.012Z",
+  "_rawFile": "33_1320_riley_street_coquitlam_burke_mountain.html"
+}

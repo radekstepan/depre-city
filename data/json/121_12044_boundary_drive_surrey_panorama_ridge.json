@@ -1,0 +1,42 @@
+{
+  "address": "Unit 121 - 12044 Boundary Drive",
+  "city": "Surrey",
+  "sqft": 1706,
+  "year": 1989,
+  "price": 810000,
+  "listPrice": 830000,
+  "fee": 460,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3554,
+  "assessment": 810000,
+  "description": "PARKWYND in BOUNDARY PARK! BEAUTIFUL and RARELY available 3-bedroom townhouse 2.5 bathrooms with over 1700 sq. Ft! Enjoy the open concept living/dining area, with gas fireplace. Large kitchen area with loads of windows overlooking private patio. Spacious master bedroom with vaulted ceiling, beautiful 5-piece ensuite with double sinks and walk-in closet and a unique flex space perfect for an office, playroom, or extra storage. No Poly B, repiping done.Double car garage with 2 more parking stalls on driveway! Crawl space provides lots of storage. Located in a family and pet friendly complex with a clubhouse for gatherings. Walk to Boundary Park Lake, close to schools, transit, shopping, major routes and Watershed Park.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Boundary Park Elementary",
+      "rating": 7.4,
+      "distance": "0.9 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Tamanawis Secondary",
+      "rating": 4.8,
+      "distance": "1.8 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Panorama Ridge",
+  "soldDate": "2026-02-05",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/121-12044-boundary-drive/home/obqB1765bLdyZajD?id_listing=9w8o3mjqA0jYGKjm",
+  "_scrapedAt": "2026-03-02T20:35:13.052Z",
+  "_rawFile": "121_12044_boundary_drive_surrey_panorama_ridge.html"
+}

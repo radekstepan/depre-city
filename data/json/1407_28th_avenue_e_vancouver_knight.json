@@ -1,0 +1,36 @@
+{
+  "address": "1407 28th Avenue E",
+  "city": "Vancouver",
+  "sqft": 1317,
+  "year": 2007,
+  "price": 995000,
+  "listPrice": 999000,
+  "fee": 416,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 3683,
+  "assessment": 1172000,
+  "description": "You’ll love this bright duplex style 3-bedroom townhome in Kensington Cedar Cottage.  Located on the quiet, back side of a boutique complex and over 1,300 sf, this home has it all.  The exceptional layout features an abundance of natural light with East, South and West exposure, on all three floors. Enter through your own front door to a foyer which can accommodate seating along with all your coats and shoes, or through the private oversized attached garage. This level also contains a full bath and the third bedroom.  The bright main floor features open concept living, dining, kitchen with walk-out patio.  The upper floor has split bedroom design with a full cheater ensuite bath.  Selkirk Elem Annex 2 block's away, Gladstone high school. Open House cancelled",
+  "features": [],
+  "schools": [
+    {
+      "name": "Gladstone Secondary",
+      "rating": 3.2,
+      "distance": "1.1 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Knight",
+  "soldDate": "2026-02-13",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/1407-28th-avenue-e/home/weQp5yOzVAwYd0ZE?id_listing=XRla7gBbN1PyjEvL",
+  "_scrapedAt": "2026-03-02T20:32:20.460Z",
+  "_rawFile": "1407_28th_avenue_e_vancouver_knight.html"
+}

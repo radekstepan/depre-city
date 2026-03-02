@@ -1,0 +1,42 @@
+{
+  "address": "8851 Horne Street",
+  "city": "Burnaby",
+  "sqft": 1471,
+  "year": 1974,
+  "price": 710000,
+  "listPrice": 708000,
+  "fee": 658,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 2184,
+  "assessment": 707000,
+  "description": "Welcome to Tudor Village. This rare 3 bedroom + den, 3 bath end-unit townhome backs onto a sprawling greenbelt - your own outdoor extension with endless space for kids to play, pets to roam, or simply to enjoy the privacy and greenery. The home has seen numerous upgrades over time, including updated flooring, paint, renovated bathrooms, & an upgraded balcony -making it truly move-in ready. Residents enjoy access to recently improved amenities such as an indoor pool, sauna, and a clubhouse ideal for gatherings. Unbeatable location just minutes from Lougheed SkyTrain, Bus Stop, Lougheed Mall, Costco, and Deer Lake Park. Heat and hot water are included in strata fees. 1 underground parking. In-suite laundry allowed with strata approval.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Burnaby Mountain Secondary",
+      "rating": 7.6,
+      "distance": "0.6 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Cameron Elementary",
+      "rating": 6,
+      "distance": "0.6 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Government Road",
+  "soldDate": "2026-02-11",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/8851-horne-street/home/AKv53DDgZ2r3MnxB?id_listing=MWBVyZW9Jz57Kemj",
+  "_scrapedAt": "2026-03-02T20:37:02.387Z",
+  "_rawFile": "8851_horne_street_burnaby_government_road.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 41 - 10500 Delsom Crescent",
+  "city": "Delta",
+  "sqft": 1965,
+  "year": 2014,
+  "price": 1055000,
+  "listPrice": 1099800,
+  "fee": 627,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3624,
+  "assessment": 978000,
+  "description": "2 LEVEL LIVING WITH WALK-OUT BACKYARD - Welcome home to Lakeside by Polygon at Sunstone, where space, light, and community come together. This 1,965 sq ft, two-level home offers an open, airy main floor with 9-foot ceilings and radiant in-floor heating—perfect for everyday family life. The kitchen sits at the heart of the home, finished with quartz countertops, marble backsplash, and a gas cooktop, and opens directly to a flat walk-out deck with gas BBQ hookup and a private backyard, ideal for kids, pets, and summer evenings. Upstairs features generously sized bedrooms designed for growing families. Residents also receive access to a 12,000 sqft Sunstone Club with resort-style amenities. You're gonna love living here. OPEN HOUSE: Saturday, Feb 14th 2-4pm.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Gray Elementary",
+      "rating": 4.6,
+      "distance": "0.8 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Sands Secondary",
+      "rating": 3.8,
+      "distance": "0.5 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Nordel",
+  "soldDate": "2026-02-15",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/delta-real-estate/41-10500-delsom-crescent/home/PXRla7gRzpryjEvL?id_listing=eVbOYENkDAnyx2P0",
+  "_scrapedAt": "2026-03-02T20:35:28.715Z",
+  "_rawFile": "41_10500_delsom_crescent_delta_nordel.html"
+}

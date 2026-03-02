@@ -1,0 +1,42 @@
+{
+  "address": "Unit 30 - 7501 Cumberland Street",
+  "city": "Burnaby",
+  "sqft": 1965,
+  "year": 1993,
+  "price": 1085069,
+  "listPrice": 1120000,
+  "fee": 493,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3684,
+  "assessment": 1153000,
+  "description": "Corner unit with extra natural lights at highly desirable complex. Deerfield by Polygon is a well managed complex in an amazing quite location. Open concept at main floor with 9' ceiling living& dinning room, kitchen, eating area, and family room. This unit offers 3 bedroom upstairs and office/rec room in the basement(can be 4th bedroom). 2 car side by side garage. Some renovations include New Furnace, Garage door opener, Fridge, and Bathrooms Vanity & Paint. Enjoy the outdoor pool and exercise room. Walking distance to trails and great schools. Armstrong Elementary & Cariboo Hill secondary school catchment. Right at the side of the Green Belt and very close to all major routes for easy commute. Size and measurements are approximate . Measured by Van3D.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Cariboo Hill Secondary",
+      "rating": 6.4,
+      "distance": "0.6 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Armstrong Elementary",
+      "rating": 4,
+      "distance": "1.0 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "The Crest",
+  "soldDate": "2025-12-23",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/30-7501-cumberland-street/home/510QqypvK063LGlV?id_listing=Xawjy4N008p3rR18",
+  "_scrapedAt": "2026-03-02T20:33:50.302Z",
+  "_rawFile": "30_7501_cumberland_street_burnaby_the_crest.html"
+}

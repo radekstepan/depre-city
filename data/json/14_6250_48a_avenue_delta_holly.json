@@ -1,0 +1,42 @@
+{
+  "address": "Unit 14 - 6250 48a Avenue",
+  "city": "Delta",
+  "sqft": 1803,
+  "year": 1992,
+  "price": 860000,
+  "listPrice": 869000,
+  "fee": 472,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3253,
+  "assessment": 906000,
+  "description": "HIGHLY sought-after “GARDEN ESTATES”! Fully renovated upper rancher-style townhouse offers 2 bdrms + den, (Den easily a 3rd bdrm) 2.5 baths, and over 1,700 sq.ft. of beautifully updated living space. Features include a new kitchen, bathrooms, flooring, appliances, lighting, hot water on demand, & upgraded heating system. Bright open layout boasts cozy gas fireplace & plenty of room for full-sized furniture. The modern kitchen showcases white cabinets, quartz counters & black stainless appliances. Both spacious bedrooms include full ensuite bathrooms, providing comfort and privacy. Enjoy 2 expansive, sun-drenched decks—perfect for entertaining or relaxing outdoors. Includes a single-car garage plus an additional parking pad. Quietly located at the end of the complex & steps to Holly School.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Holly Elementary",
+      "rating": 5.5,
+      "distance": "0.5 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Delta Secondary",
+      "rating": 4.3,
+      "distance": "2.6 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Holly",
+  "soldDate": "2026-02-09",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/delta-real-estate/14-6250-48a-avenue/home/owJKR7PwoNDyXeLP?id_listing=nM697kVp6voybmwe",
+  "_scrapedAt": "2026-03-02T20:35:17.923Z",
+  "_rawFile": "14_6250_48a_avenue_delta_holly.html"
+}

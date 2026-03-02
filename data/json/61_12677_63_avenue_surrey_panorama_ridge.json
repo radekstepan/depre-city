@@ -1,0 +1,42 @@
+{
+  "address": "Unit 61 - 12677 63 Avenue",
+  "city": "Surrey",
+  "sqft": 1425,
+  "year": 2005,
+  "price": 720000,
+  "listPrice": 750000,
+  "fee": 338,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 0,
+  "assessment": 704000,
+  "description": "perfect home for your growing family. This 3-bed 3-bath END UNIT",
+  "features": [],
+  "schools": [
+    {
+      "name": "Tamanawis Secondary",
+      "rating": 4.8,
+      "distance": "0.4 km",
+      "type": "8-12"
+    },
+    {
+      "name": "J T Brown Elementary",
+      "rating": 4.3,
+      "distance": "0.8 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Panorama Ridge",
+  "soldDate": "2026-02-15",
+  "parkingType": "garage_tandem",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/61-12677-63-avenue/home/PXRla7gv29nyjEvL?id_listing=GMnKYqx04kK3w1Qr",
+  "_scrapedAt": "2026-03-02T20:33:25.882Z",
+  "_rawFile": "61_12677_63_avenue_surrey_panorama_ridge.html"
+}

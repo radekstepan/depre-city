@@ -1,0 +1,42 @@
+{
+  "address": "Unit 110 - 15739 Fraser Highway",
+  "city": "Surrey",
+  "sqft": 1270,
+  "year": 2026,
+  "price": 920000,
+  "listPrice": 889900,
+  "fee": 544,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "assessment": 0,
+  "description": "Location, Location, Location! Future Skytrain Fleetwood. Amenities-rich Community And High-ranking Schools. Walk Distance To Popular Francis Park And Surrey Library, Frost Road Elementary School, Holy Cross Regional High School & Surrey Christian School, Fleetwood Secondary School. With Soft Close Drawers And Sleek Acrylic Cabinetry, Quartz Countertops. Samsung Appliances. Modern Under-mounted Sink. Glass-Framed Standing Shower. Open Concept Throughout Kitchen And Living Area. Pristine Roller Blinds. This 3-bedroom+Den corner townhouse has A Wider Floor Plan and Offers A Lot Of Natural Lighting. Could use as 4 bedrooms. 1 Secure Underground Parking Spots. 1 Storage Lockers.2-5-10 Warranty. Rooftop Amenities. Additional parking is available for a discount. GST rebate for First time buyers.",
+  "features": [],
+  "schools": [
+    {
+      "name": "North Surrey Secondary",
+      "rating": 5.7,
+      "distance": "2.1 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Woodland Park Elementary",
+      "rating": 5.4,
+      "distance": "0.8 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Fleetwood Tynehead",
+  "soldDate": "2026-02-10",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/110-15739-fraser-highway/home/JRv53KD481xYVPW4?id_listing=Xawjy4Z1Rq63rR18",
+  "_scrapedAt": "2026-03-02T20:33:47.786Z",
+  "_rawFile": "110_15739_fraser_highway_surrey_fleetwood_tynehead.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 92 - 9088 Halston Court",
+  "city": "Burnaby",
+  "sqft": 1407,
+  "year": 2007,
+  "price": 1035000,
+  "listPrice": 1089000,
+  "fee": 435,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3535,
+  "assessment": 1062000,
+  "description": "Welcome to Terramor by Polygon! Nestled in the heart of Lougheed Town Centre, this stunning 3-bed, 3-bath townhome offers an open, functional layout. The chef’s kitchen shines with granite counters, a gas range, and abundant natural light. Enjoy 9' ceilings and seamless indoor-outdoor living with a private fenced backyard and balcony. Upstairs features a spacious master suite with a double-sink ensuite,laundry, and two generous bedrooms. Resort-Style Amenities: Access 5,500 sqft of luxury including an outdoor pool, hot tub, sauna, gym, yoga studio, and indoor mini-golf. Ideally located minutes from Skytrain, Lougheed Mall, Hwy 1 and all levels of school. do not miss.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Burnaby Mountain Secondary",
+      "rating": 7.6,
+      "distance": "1.0 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Cameron Elementary",
+      "rating": 6,
+      "distance": "0.5 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Government Road",
+  "soldDate": "2026-02-09",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/92-9088-halston-court/home/5xLkv3VGBkxYDBNr?id_listing=6zqW7dKzKgKy5eZE",
+  "_scrapedAt": "2026-03-02T20:32:26.023Z",
+  "_rawFile": "92_9088_halston_court_burnaby_government_road.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 11 - 4748 54a Street",
+  "city": "Delta",
+  "sqft": 1436,
+  "year": 1996,
+  "price": 885000,
+  "listPrice": 915000,
+  "fee": 453,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3263,
+  "assessment": 840000,
+  "description": "Enjoy a turn key move at it finest with this stunning 3 bed/ 3 bath townhome. Large open concept living - perfect for entertaining friends and family in this spacious, quiet and airy townhouse with a bright, roomy and updated kitchen. Enjoy your private fenced yard with expanded patio, or relax and spend time with the family in a warm, bright and inviting living room with plenty of space for everyone! A vaulted ceiling staircase leads you upstairs to bedrooms, wide hallways and an oversized primary bedroom with large walk in closet and ensuite. Large windows and plenty of hidden storage spaces throughout this entire home. Steps from the heart of Ladner, this pristinely maintained and much loved townhome is quietly tucked away on 54A, yet centrally located with a great walk score.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Delta Secondary",
+      "rating": 4.3,
+      "distance": "1.0 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Ladner Elementary",
+      "rating": 4.2,
+      "distance": "1.2 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Delta Manor",
+  "soldDate": "2026-02-16",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/delta-real-estate/11-4748-54a-street/home/Z5BX32z2b8D3Dar0?id_listing=nbq6y12qQjD7o9DA",
+  "_scrapedAt": "2026-03-02T20:32:43.881Z",
+  "_rawFile": "11_4748_54a_street_delta_delta_manor.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 61 - 20498 82 Avenue",
+  "city": "Langley",
+  "sqft": 1877,
+  "year": 2019,
+  "price": 915000,
+  "listPrice": 928800,
+  "fee": 273,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4793,
+  "assessment": 952000,
+  "description": "Welcome to Gabriola Park! This 4 bed, 4 bath, 1,877 sq ft townhome is ideally located on the desirable side of the complex, facing 82nd Avenue with the rare convenience of street parking right out front. Updated throughout, the home offers 9' ceilings, modern lighting with dimmer switches, Nest thermostats, and a stunning 12-ft kitchen island perfect for everyday living and entertaining. Upstairs features three generously sized bedrooms, including a spacious primary with walk-in closet and ensuite with dual vanity. The lower level includes a private fourth bedroom with full bath—ideal for guests, teens, or a home office. Enjoy a side-by-side double garage with epoxy flooring and extra storage. Steps to schools, Willoughby Town Centre, parks, and amenities.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "0.7 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.3 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-10",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/61-20498-82-avenue/home/eVbOYEpV2jd3x2P0?id_listing=eQp5yOwp2bVyd0ZE",
+  "_scrapedAt": "2026-03-02T20:36:45.402Z",
+  "_rawFile": "61_20498_82_avenue_langley_willoughby_heights.html"
+}

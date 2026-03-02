@@ -1,0 +1,42 @@
+{
+  "address": "Unit 9 - 2688 Mountain Highway",
+  "city": "North Vancouver",
+  "sqft": 1775,
+  "year": 2002,
+  "price": 1240000,
+  "listPrice": 1299000,
+  "fee": 546,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 5360,
+  "assessment": 1372000,
+  "description": "Nicely located at the back of the complex, this quiet end-unit offers 3 levels of thoughtfully designed and updated living, with room to grow. Windows on three sides bring natural light to the open dining and living areas, anchored by a cozy gas fireplace. A pass-through with breakfast bar connects the kitchen and opens to a balcony ideal for your BBQ. Adjacent bonus space works well as an office, TV room or playroom. 2 bright bedrooms upstairs have vaulted ceilings, each with ensuite bath. The lower level adapts easily as a rec room or 3rd bedroom, with full bath, laundry, storage, walk-out patio & direct access to two secure parking spaces. Minutes to amenities, trails, and recreation—it’s easy to see why Craftsman Estates is one of Lynn Valley’s most sought-after townhome communities.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Eastview Elementary",
+      "rating": 6.8,
+      "distance": "0.8 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Sutherland Secondary",
+      "rating": 5.4,
+      "distance": "1.4 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Westlynn",
+  "soldDate": "2026-02-20",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/9-2688-mountain-highway/home/5xLkv3Vj1Gx3DBNr?id_listing=4KAX7NDjVO4YeRPJ",
+  "_scrapedAt": "2026-03-02T20:33:28.441Z",
+  "_rawFile": "9_2688_mountain_highway_north_vancouver_westlynn.html"
+}

@@ -1,0 +1,36 @@
+{
+  "address": "Unit 140 - 2738 158 Street",
+  "city": "Surrey",
+  "sqft": 1948,
+  "year": 2008,
+  "price": 911000,
+  "listPrice": 919000,
+  "fee": 610,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3755,
+  "assessment": 1009000,
+  "description": "Nestled in the highly sought after Cathedral Grove community in the heart of South Surrey this beautiful 4 bdrm, 4 bath townhome offers an ideal blend of comfort & convenience. Boasting a rare 2 primary suites this spacious 2-storey w/ bsmt ftrs extensive updates including freshly refinished white kitchen cabinets, modern light fixtures, new vinyl flooring, stylishly repainted interior, custom closet organizers & a new garage door opener enhance both functionality and style. Enjoy fantastic outdoor spaces w/ a walk-out front yard & a sunny back balcony. Ideally located w/in the complex overlooking serene greenspace just steps from the exclusive Evergreen Club where top-tier amenities like an outdoor pool and fitness center await. Double side by side garage & easy access to everything!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sunnyside Elementary",
+      "rating": 5.8,
+      "distance": "0.3 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Grandview Surrey",
+  "soldDate": "2026-02-13",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/140-2738-158-street/home/0MWBVyZ1lz5YKemj?id_listing=B5bO3x8xKE63kWVP",
+  "_scrapedAt": "2026-03-02T20:35:33.990Z",
+  "_rawFile": "140_2738_158_street_surrey_grandview_surrey.html"
+}

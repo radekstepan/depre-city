@@ -1,0 +1,36 @@
+{
+  "address": "Unit 44 - 16336 23a Avenue",
+  "city": "Surrey",
+  "sqft": 1531,
+  "year": 2017,
+  "price": 828000,
+  "listPrice": 829000,
+  "fee": 329,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3438,
+  "assessment": 872000,
+  "description": "Refined townhome living at SOHO by Zenterra, ideally located in the heart of Grandview Corners. An open concept kitchen anchors the living and dining areas, featuring new cabinetry, fresh paint and new carpet throughout. The main floor powder room has been updated with a new vanity, sink and mirror, complemented by LED touch mirrors in all bathrooms. A private 460 SF rooftop deck offers a custom gazebo that will remain, along with a BBQ rough in that may also be used as a fire table, creating an elegant space for entertaining or quiet moments outdoors. EV rough in and a double tandem garage with room for an at home gym. Steps to shops, dining, amenities and top schools including Grandview Heights Secondary, Edgewood Elementary and Southridge Private School.OPEN HOSUE CANCELLED.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Earl Marriott Secondary",
+      "rating": 7.2,
+      "distance": "1.8 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Grandview Surrey",
+  "soldDate": "2026-02-12",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/44-16336-23a-avenue/home/4KAX7NOKDWJ3eRPJ?id_listing=nbq6y12KXxj7o9DA",
+  "_scrapedAt": "2026-03-02T20:32:31.002Z",
+  "_rawFile": "44_16336_23a_avenue_surrey_grandview_surrey.html"
+}

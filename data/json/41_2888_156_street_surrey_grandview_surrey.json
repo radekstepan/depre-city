@@ -1,0 +1,36 @@
+{
+  "address": "Unit 41 - 2888 156 Street",
+  "city": "Surrey",
+  "sqft": 1919,
+  "year": 2016,
+  "price": 912500,
+  "listPrice": 920000,
+  "fee": 458,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 1,
+  "propertyTax": 3711,
+  "assessment": 958000,
+  "description": "Discover contemporary comfort at 41 @ HYDE PARK by Zenterra -- a stunning 4-bed, 4-bath + den corner townhouse in the desirable Grandview Heights community. This stylish, light-filled home features soaring 13-ft ceilings, expansive windows, and an open-concept layout that flows effortlessly through the living, dining, & kitchen areas. The gourmet kitchen impresses with stainless steel appliances, a large island, and sleek finishes. A ground-level bedroom w/ensuite & separate entrance provides ideal space for guests or extended family. Enjoy resort-style amenities including a 5,500 sq ft clubhouse with gym, Morgan Crossing shops, parks, & Grandview Heights Aquatic Centre, easy access to Hwy 1.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sunnyside Elementary",
+      "rating": 5.8,
+      "distance": "0.7 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Grandview Surrey",
+  "soldDate": "2026-01-26",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/41-2888-156-street/home/0ZxwR7MGKjPYKabB?id_listing=56k97w0qKqR3KRjD",
+  "_scrapedAt": "2026-03-02T20:33:58.036Z",
+  "_rawFile": "41_2888_156_street_surrey_grandview_surrey.html"
+}

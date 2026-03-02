@@ -1,0 +1,42 @@
+{
+  "address": "Unit 215 - 22515 116 Avenue",
+  "city": "Maple Ridge",
+  "sqft": 1631,
+  "year": 1988,
+  "price": 630000,
+  "listPrice": 655000,
+  "fee": 421,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 4232,
+  "assessment": 666000,
+  "description": "Spacious, updated & all on one level! This bright 3-bed, 2-bath townhome offers 1,650+ sq. ft. of well-designed space with recent upgrades. Highlights include an updated kitchen with a large walk-in pantry, modern bathrooms, and new flooring throughout. The oversized secondary bedrooms provide ample space for guests, hobbies, or a home office. The primary bedroom features a luxurious full ensuite. Enjoy year-round outdoor living on the covered deck, plus a double side-by-side garage for extra convenience. Situated in a well-maintained, age-restricted (55+) community that’s family- and pet-friendly, and ideally located near shops, amenities, and two beautiful parks. A rare find in single-level living!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Thomas Haney Secondary",
+      "rating": 5.7,
+      "distance": "1.1 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Eric Langton Elementary",
+      "rating": 5.3,
+      "distance": "1.1 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "East Central",
+  "soldDate": "2026-02-17",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/215-22515-116-avenue/home/0J6Em7bjmdn7XBeq?id_listing=GMnKYq06ee13w1Qr",
+  "_scrapedAt": "2026-03-02T20:36:40.014Z",
+  "_rawFile": "215_22515_116_avenue_maple_ridge_east_central.html"
+}

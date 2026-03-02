@@ -1,0 +1,42 @@
+{
+  "address": "Unit 57 - 8358 121a Street",
+  "city": "Surrey",
+  "sqft": 1250,
+  "year": 2008,
+  "price": 690000,
+  "listPrice": 725000,
+  "fee": 290,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 2990,
+  "assessment": 742000,
+  "description": "Discover this beautifully maintained 3 bedroom, 2 bath townhome offering exceptional space, comfort, and convenience. The main level features a bright open-concept living and dining area, large windows that fill the home with natural light, and a well-designed kitchen with plenty of storage and counter space. It includes three generous-sized bedrooms, perfect for families, guests, or a home office. Enjoy your private outdoor space, ideal for morning coffees, BBQs, or simply unwinding after a long day. Located in a well-managed, family-friendly complex close to shopping, restaurants, transit, schools, parks, and all major amenities. Easy access to major routes makes commuting a breeze. This move-in-ready home offers unbeatable value for first-time buyers, and investors alike.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Kennedy Trail Elementary",
+      "rating": 2.5,
+      "distance": "0.2 km",
+      "type": "0-7"
+    },
+    {
+      "name": "L A Matheson Secondary",
+      "rating": 1.8,
+      "distance": "2.4 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Queen Mary Park Surrey",
+  "soldDate": "2026-02-03",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/57-8358-121a-street/home/XeEn7X6xkAqYrPo8?id_listing=XRla7gbLPRnyjEvL",
+  "_scrapedAt": "2026-03-02T20:36:48.238Z",
+  "_rawFile": "57_8358_121a_street_surrey_queen_mary_park_surrey.html"
+}

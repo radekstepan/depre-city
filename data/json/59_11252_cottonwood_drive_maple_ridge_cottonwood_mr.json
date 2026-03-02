@@ -1,0 +1,36 @@
+{
+  "address": "Unit 59 - 11252 Cottonwood Drive",
+  "city": "Maple Ridge",
+  "sqft": 1640,
+  "year": 2015,
+  "price": 742500,
+  "listPrice": 795000,
+  "fee": 342,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4155,
+  "assessment": 809000,
+  "description": "Welcome to Cottonwood Ridge! This is an end unit, 3 beds, 3 bath, and den townhouse. 14' high ceiling foyer at entrance. 9' ceiling kitchen, living, dining on main floor with powder room and access to the backyard. South facing maple cabinet kitchen has granite countertop, stainless steel appliances, large window & natural light. Living room w/ gas fireplace & large windows overlooking your private, fully fenced back yard. Large primary bedroom w/ ensuite, walk in closet and two good sized bedrooms are located on the upper floor. Den is on lower floor access to tandem double car garage. Plenty of visitor parking stalls in the complex and a playground. This is a family-oriented neighbourhood close to Thomas Haney Secondary and Kanaka Creek Park.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Thomas Haney Secondary",
+      "rating": 5.7,
+      "distance": "0.8 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Cottonwood MR",
+  "soldDate": "2026-02-11",
+  "parkingType": "garage_tandem",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/59-11252-cottonwood-drive/home/b1DBW7RV0Ak7qlAp?id_listing=GMnKYqxpoAK3w1Qr",
+  "_scrapedAt": "2026-03-02T20:36:55.831Z",
+  "_rawFile": "59_11252_cottonwood_drive_maple_ridge_cottonwood_mr.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 55 - 21928 48 Avenue",
+  "city": "Langley",
+  "sqft": 1626,
+  "year": 1993,
+  "price": 800000,
+  "listPrice": 818000,
+  "fee": 449,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 2897,
+  "assessment": 808000,
+  "description": "Beautiful 3 bedroom, 3 bathroom end unit townhome in Murrayville Glen!  This home boasts a bright & open living room w/ feature gas fireplace, dining area w/ sliding door access to quiet yard & spacious patio. Kitchen w/ plenty of cabinet & counter space, breakfast bar, stainless appliances, adjacent family/flex room, & powder room. Upper floor features 3 bedrooms including large primary suite w/ W/I closet & 4 pc ensuite, & 4 pc main bathroom. Updates include paint, flooring, light fixtures, toilets, fridge, & HWT! Garage & parking pad, plus street parking options! Gated complex offers a superb clubhouse & exercise room. Steps to Denny Ross Park, & an easy walk to Murrayville amenities including schools, shopping, restaurants, cafes, parks, library, & W.C. Blair Rec Centre w/pool.",
+  "features": [],
+  "schools": [
+    {
+      "name": "James Hill Elementary",
+      "rating": 5,
+      "distance": "0.7 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Langley Secondary",
+      "rating": 1.4,
+      "distance": "2.1 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Murrayville",
+  "soldDate": "2026-02-11",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/55-21928-48-avenue/home/dXze3eKJ6Eky8m9K?id_listing=56k97w0Qbrn3KRjD",
+  "_scrapedAt": "2026-03-02T20:37:15.574Z",
+  "_rawFile": "55_21928_48_avenue_langley_murrayville.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 20 - 3552 Victoria Drive",
+  "city": "Coquitlam",
+  "sqft": 1598,
+  "year": 2020,
+  "price": 999000,
+  "listPrice": 1020000,
+  "fee": 334,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3799,
+  "assessment": 1022000,
+  "description": "Victoria by Mosaic, nestled in the family-oriented community of Burke Mountain, offers a spacious 4-bedroom townhome with 10-foot ceilings, large windows, and a modern kitchen with expansive countertops. The master bedroom features park views, privacy, and a large his-and-her closet. The basement includes a very large bedroom that can also be used as a flexible multi-purpose room. Enjoy park and mountain views, with Leigh Elementary just minutes away, while Burke Mountain Middle/Secondary School and new facilities are scheduled for 2026. The future Burke Mountain Community Centre with swimming pool and fitness centre, along with Burke Village Park, will be within walking distance when they open in 2029",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "1.2 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "2.8 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "soldDate": "2026-02-13",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/20-3552-victoria-drive/home/1DBW7RDQ0ZdYqlAp?id_listing=xLkv3V19KeQ7DBNr",
+  "_scrapedAt": "2026-03-02T20:32:48.291Z",
+  "_rawFile": "20_3552_victoria_drive_coquitlam_burke_mountain.html"
+}

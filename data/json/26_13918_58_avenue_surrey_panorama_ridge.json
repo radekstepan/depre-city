@@ -1,0 +1,42 @@
+{
+  "address": "Unit 26 - 13918 58 Avenue",
+  "city": "Surrey",
+  "sqft": 2368,
+  "year": 2000,
+  "price": 830000,
+  "listPrice": 879000,
+  "fee": 522,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3706,
+  "assessment": 854000,
+  "description": "Located in the sought-after Panorama Ridge neighborhood, the Alder Park gated townhouse complex invites you to explore this impressive 2,368 square foot, three-level townhome. This 4-bedroom, 4-bathroom townhouse boasts an open floor plan with stunning vaulted ceilings and a powder room on the main level. Enjoy the privacy of a fenced backyard and patios that back onto a serene greenspace. The upper level features three spacious bedrooms, including a generously sized master bedroom with its own ensuite bathroom. The basement offers a large bedroom, a full bathroom, and a media room, providing ample space for relaxation and entertainment. This townhouse truly meets all the requirements of a single-family home. OPEN HOUSE: Saturday & Sunday, November 15 & 16, 2025, from 2:00 PM to 4:00 PM.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Panorama Ridge Secondary",
+      "rating": 5.2,
+      "distance": "1.8 km",
+      "type": "8-12"
+    },
+    {
+      "name": "North Ridge Elementary",
+      "rating": 2.2,
+      "distance": "1.2 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Panorama Ridge",
+  "soldDate": "2026-02-05",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/26-13918-58-avenue/home/2Z5BX32XpvOyDar0?id_listing=eVbOYEkgVgG7x2P0",
+  "_scrapedAt": "2026-03-02T20:33:31.416Z",
+  "_rawFile": "26_13918_58_avenue_surrey_panorama_ridge.html"
+}

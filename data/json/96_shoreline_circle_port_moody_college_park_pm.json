@@ -1,0 +1,42 @@
+{
+  "address": "96 Shoreline Circle",
+  "city": "Port Moody",
+  "sqft": 1918,
+  "year": 1995,
+  "price": 938500,
+  "listPrice": 945000,
+  "fee": 583,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3907,
+  "assessment": 972000,
+  "description": "Welcome to this fabulous family community of Harbour Heights.  A perfect home in Port Moody is waiting for you! Beautifully renovated in 2020 this 3 bedroom and flex room townhome on the South Shore has everything that you are looking for. Wide plank oak hardwood flooring. Lovely open plan kitchen with custom cabinetry, Carrara marble counter tops and tiles. Spacious and bright master suite with a large walk-in closet. Bathrooms with marble ties and contemporary chrome hardware. Large crawl space for storage and a single garage. Inlet and snow-capped mountain views. Additional features include a large laundry room and amenities on your door step. Fridge, dish-washer and washer/dryer recently replaced.  This is a must see with a full package! Open house: Sat 14 and Sun 15 Feb 2-4pm",
+  "features": [],
+  "schools": [
+    {
+      "name": "Port Moody Secondary",
+      "rating": 7.5,
+      "distance": "1.8 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Seaview Community School",
+      "rating": 3.6,
+      "distance": "1.1 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "College Park PM",
+  "soldDate": "2026-02-14",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-moody-real-estate/96-shoreline-circle/home/BGMnKYqvVbQyw1Qr?id_listing=aD6p780N6Dw7wRQr",
+  "_scrapedAt": "2026-03-02T20:37:08.056Z",
+  "_rawFile": "96_shoreline_circle_port_moody_college_park_pm.html"
+}

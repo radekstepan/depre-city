@@ -1,0 +1,42 @@
+{
+  "address": "Unit 19 - 20645 68 Avenue",
+  "city": "Langley",
+  "sqft": 2249,
+  "year": 2025,
+  "price": 1074900,
+  "listPrice": 1074900,
+  "fee": 402,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 0,
+  "assessment": 1141000,
+  "description": "MOVE-IN READY- Beautiful, LARGE, 4 BDRM, 3.5 Bath, Semi-Detached Townhome - GORDON SQUARE by Paddington Properties a boutique community of 32 homes, now 90% sold.  Nestled in a quiet loc. yet only minutes to, schools, Langley Costco, transit & amenities. Feat. wide layout, 10' ceiling on main, open kitchen with Kitchen Aid appl. incl. gas cooktop, wall oven, B/I Panasonic microwave, quartz countertops & large island. Primary BDRM boasts deep walk in closet, ensuite with glassed in shower, soaker tub & dual sinks. Main upper Bath also w/dual sinks. Lower level;  Huge family room, bedroom and full bath. Attached Finished, Double S/S garage w/ EV rough in. Showhome open Sat/Sun 12-5 pm.  Authentic, Luxurious Quality - Don't wait.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "2.4 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.8 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-03",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/19-20645-68-avenue/home/2Zpj39E4RmM3DrK8?id_listing=Xawjy4Z1Em93rR18",
+  "_scrapedAt": "2026-03-02T20:35:57.003Z",
+  "_rawFile": "19_20645_68_avenue_langley_willoughby_heights.html"
+}

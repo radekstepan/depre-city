@@ -1,0 +1,42 @@
+{
+  "address": "Unit 4 - 58 Richmond Street",
+  "city": "New Westminster",
+  "sqft": 2498,
+  "year": 1989,
+  "price": 1200000,
+  "listPrice": 1200000,
+  "fee": 528,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 5599,
+  "assessment": 1232000,
+  "description": "Unique and rare, this fully renovated 3-level split townhouse offers the feel of a detached home in a 22-unit boutique strata. A superb layout features a spacious entry with mud room, generous living and dining areas with fireplace opening to a balcony overlooking a peaceful ravine. The sleek kitchen offers granite counters, newer appliances and abundant cabinetry. The primary bedroom includes walk-in closet, ensuite with dual sinks, tub & shower. Flexible lower level with rec room, bedroom, bath and workshop. Features: on-demand combi-boiler (hot water & in-floor heating), poly-B replaced, built-in vacuum, ground-floor security  shutters, Tesla charger.  2 balconies, patio, double garage, locker. Walk to shops, parks, RC Hospital & SkyTrain, bus. Move-in ready!  OH Sat, Feb 21st, 2-4 pm",
+  "features": [],
+  "schools": [
+    {
+      "name": "New Westminster Secondary",
+      "rating": 6.7,
+      "distance": "2.3 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Skwo:wech Elementary",
+      "rating": 6.5,
+      "distance": "1.0 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Fraserview NW",
+  "soldDate": "2026-02-16",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/new-westminster-real-estate/4-58-richmond-street/home/0Zaw5YoboJm3n961?id_listing=EXrx30reaJlyOklN",
+  "_scrapedAt": "2026-03-02T20:32:17.977Z",
+  "_rawFile": "4_58_richmond_street_new_westminster_fraserview_nw.html"
+}

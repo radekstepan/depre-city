@@ -1,0 +1,42 @@
+{
+  "address": "Unit 138 - 7321 140 Street",
+  "city": "Surrey",
+  "sqft": 1377,
+  "year": 1983,
+  "price": 655000,
+  "listPrice": 679900,
+  "fee": 337,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 3120,
+  "assessment": 691500,
+  "description": "Your search for the perfect home stops here! One of the best-priced townhomes in Surrey, close to schools, shopping, and transit.This fully renovated 3 bed, 2 bath townhouse in the heart of Newton offers unmatched value in a highly accessible, family-friendly complex. Featuring brand new windows, vinyl siding all paid for by current owners.Modern upgrades throughout, including sleek washrooms, new flooring, and brand new appliances. The open-concept layout and beautiful floor plan make it ideal for investors or first-time buyers.Move-in ready and waiting for you!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Frank Hurt Secondary",
+      "rating": 3.7,
+      "distance": "0.7 km",
+      "type": "8-12"
+    },
+    {
+      "name": "M B Sanford Elementary",
+      "rating": 2.2,
+      "distance": "0.8 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "East Newton",
+  "soldDate": "2026-02-07",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/138-7321-140-street/home/6VLaGyGQp8G3W1ZD?id_listing=nbq6y120rL97o9DA",
+  "_scrapedAt": "2026-03-02T20:35:23.448Z",
+  "_rawFile": "138_7321_140_street_surrey_east_newton.html"
+}

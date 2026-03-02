@@ -1,0 +1,42 @@
+{
+  "address": "Unit 35 - 21579 88b Avenue",
+  "city": "Langley",
+  "sqft": 1702,
+  "year": 1996,
+  "price": 687500,
+  "listPrice": 705000,
+  "fee": 380,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 2655,
+  "assessment": 776000,
+  "description": "Carriage Park. Ready to move in condition, rancher style upper level townhouse overlooking ravine offering maximum privacy and tranquility. excellent layout home of 3 big beds and 2 baths. Lots of natural light with 9 foot ceilings in 1702 sq. ft. Upgraded kitchen with quartz counters. Vinyl plank flooring throughout with 2 gas fireplaces. Master bedroom has access to large balcony overlooking the privacy of the green space and walk through closet. Great location, close to schools, shopping, recreation and excellent access to Highway #1. FAST POSSESSION NO PROBLEM.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Walnut Grove Secondary",
+      "rating": 7.3,
+      "distance": "1.0 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Topham Elementary",
+      "rating": 7.1,
+      "distance": "0.4 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Walnut Grove",
+  "soldDate": "2026-02-12",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/35-21579-88b-avenue/home/BXeEn7X8v0E7rPo8?id_listing=eQp5yOw8ZQByd0ZE",
+  "_scrapedAt": "2026-03-02T20:35:36.500Z",
+  "_rawFile": "35_21579_88b_avenue_langley_walnut_grove.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 13 - 11950 232 Street",
+  "city": "Maple Ridge",
+  "sqft": 1520,
+  "year": 1994,
+  "price": 735000,
+  "listPrice": 748800,
+  "fee": 353,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 4659,
+  "assessment": 731000,
+  "description": "Designer renovations meets at the well-known complex, Golden Ears Vista! Unit in the back of the complex (quiet & peaceful) This professionally renovated 3 bed, 3 bath corner unit townhome has been renovated with high-end finishes throughout. Featuring a two-tone chef’s kitchen with wall wine rack, gas fireplace, light oak floors, and spa-inspired bathrooms, this home offers both function and flair. Brand New S/S appliance package! Enjoy a large fenced backyard perfect for entertaining or relaxing. The complex is family and pet friendly, with new windows and low strata fees. Prime location—walk to Golden Ears Elementary, Thomas Haney Secondary, parks, transit, and town centre. A true move-in-ready gem that blends modern design with cozy family living! Open House this Saturday 2 - 4pm",
+  "features": [],
+  "schools": [
+    {
+      "name": "Thomas Haney Secondary",
+      "rating": 5.7,
+      "distance": "0.8 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Golden Ears Elementary",
+      "rating": 4.2,
+      "distance": "0.4 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Cottonwood MR",
+  "soldDate": "2026-02-07",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/13-11950-232-street/home/LzQ1y5EJ1DjyqdeK?id_listing=56k97w0Q4Re3KRjD",
+  "_scrapedAt": "2026-03-02T20:34:01.019Z",
+  "_rawFile": "13_11950_232_street_maple_ridge_cottonwood_mr.html"
+}

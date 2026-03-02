@@ -1,0 +1,36 @@
+{
+  "address": "Unit 29 - 3039 156 Street",
+  "city": "Surrey",
+  "sqft": 1328,
+  "year": 2014,
+  "price": 770000,
+  "listPrice": 788800,
+  "fee": 407,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3417,
+  "assessment": 766000,
+  "description": "Welcome to Niche – a collection of Cape Cod inspired townhomes bordering nature! This 3 bedroom, 3 bathroom home is situated in the most secluded & desirable location in the complex, beside ample visitor parking. Recently updated with new carpets, laminate flooring throughout, fresh paint, new light fixtures and new A/C split unit systems throughout. Open main floor plan offers a kitchen with white shaker cabinets, quartz counter tops, SS appliances, gas range and lots of natural light. South facing yard with tons of natural light - fenced and private. Spacious dining area and powder room. Rear balcony is perfect for summer BBQs. Spacious bedrooms upstairs including primary with 4 pc ensuite, laundry and additional full bath. Huge garage with workshop area in the rear.  Truly must SEE!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sunnyside Elementary",
+      "rating": 5.8,
+      "distance": "0.9 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Grandview Surrey",
+  "soldDate": "2026-02-14",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/29-3039-156-street/home/weQp5yOGMZ0yd0ZE?id_listing=amgL7AxVQgEyZ1MW",
+  "_scrapedAt": "2026-03-02T20:34:18.970Z",
+  "_rawFile": "29_3039_156_street_surrey_grandview_surrey.html"
+}

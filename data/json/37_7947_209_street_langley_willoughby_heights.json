@@ -1,0 +1,42 @@
+{
+  "address": "Unit 37 - 7947 209 Street",
+  "city": "Langley",
+  "sqft": 1443,
+  "year": 2020,
+  "price": 795000,
+  "listPrice": 799900,
+  "fee": 317,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3034,
+  "assessment": 897000,
+  "description": "Stylish 3 bed + den, 2.5 bath townhome in Willoughby Heights with 1,443 sqft of open-concept living. Recently updated with new paint, carpet, and flooring. Features a gourmet kitchen with quartz counters, gas range, and premium appliances. Spacious primary with walk-in closet and ensuite. Includes a versatile den, side-by-side double garage, and access to Luxia’s amenities (gym, clubhouse & more). Close to schools, parks, shopping, and Hwy 1 — modern living in a prime location.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Richard Bulpitt Elementary",
+      "rating": 5.8,
+      "distance": "0.5 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.5 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-11",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/37-7947-209-street/home/JjAXw7QkRWbYQOzg?id_listing=0A9X3j6P5jd3vgxV",
+  "_scrapedAt": "2026-03-02T20:35:52.619Z",
+  "_rawFile": "37_7947_209_street_langley_willoughby_heights.html"
+}

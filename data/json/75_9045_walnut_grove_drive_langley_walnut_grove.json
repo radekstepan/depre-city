@@ -1,0 +1,42 @@
+{
+  "address": "Unit 75 - 9045 Walnut Grove Drive",
+  "city": "Langley",
+  "sqft": 1567,
+  "year": 1989,
+  "price": 820000,
+  "listPrice": 839900,
+  "fee": 548,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 2689,
+  "assessment": 784000,
+  "description": "BRIDLEWOODS – in the heart of Walnut Grove. This 1,567 sq. ft. two-storey townhome offers an ideal layout and a preferred end-unit location backing onto a private greenbelt. The main floor features a spacious living and dining area with a cozy gas fireplace, updated laminate flooring, a 2-piece bathroom, and convenient in-suite laundry. The bright kitchen and eating nook open directly to the rear patio and yard—perfect for summer BBQs and entertaining. Upstairs you’ll find 3 bedrooms, including a large primary suite, plus 2 full bathrooms. Parking includes a single garage and an additional spot right out front. Family and pet-friendly complex in a prime location close to schools, shopping, restaurants, and parks.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Walnut Grove Secondary",
+      "rating": 7.3,
+      "distance": "0.3 km",
+      "type": "8-12"
+    },
+    {
+      "name": "James Kennedy Elementary",
+      "rating": 5.6,
+      "distance": "0.3 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Walnut Grove",
+  "soldDate": "2026-02-09",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/75-9045-walnut-grove-drive/home/EeVbOYEEqBRYx2P0?id_listing=aD6p780Nmmw7wRQr",
+  "_scrapedAt": "2026-03-02T20:36:50.902Z",
+  "_rawFile": "75_9045_walnut_grove_drive_langley_walnut_grove.html"
+}

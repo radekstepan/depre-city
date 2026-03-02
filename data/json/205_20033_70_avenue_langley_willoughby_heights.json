@@ -1,0 +1,42 @@
+{
+  "address": "Unit 205 - 20033 70 Avenue",
+  "city": "Langley",
+  "sqft": 1375,
+  "year": 2004,
+  "price": 680000,
+  "listPrice": 699700,
+  "fee": 327,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 2431,
+  "assessment": 709000,
+  "description": "Welcome home to Denim, a sought-after townhouse community in the heart of Willoughby! This pristine 3 bedroom, 2 bath home is designed for everyday comfort, with an open main floor where large windows fill your space with natural light. Upstairs, your primary bedroom feels like a retreat with its vaulted ceiling and private ensuite, plus the ease of laundry right where you need it—on the bedroom level. Downstairs, your rec room opens to a backyard patio and grassy area, perfect for relaxing or entertaining. Pet-friendly complex with playground, basketball court, and clubhouse, all just minutes from amenities and easy highway access. This is a turnkey home in a fantastic location!",
+  "features": [],
+  "schools": [
+    {
+      "name": "R C Garnett Demonstration Elementary",
+      "rating": 5.8,
+      "distance": "0.3 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.2 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-11",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/205-20033-70-avenue/home/0ZxwR7M0b6zyKabB?id_listing=nbq6y120xGx7o9DA",
+  "_scrapedAt": "2026-03-02T20:33:45.070Z",
+  "_rawFile": "205_20033_70_avenue_langley_willoughby_heights.html"
+}

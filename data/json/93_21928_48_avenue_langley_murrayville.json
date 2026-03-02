@@ -1,0 +1,42 @@
+{
+  "address": "Unit 93 - 21928 48 Avenue",
+  "city": "Langley",
+  "sqft": 1679,
+  "year": 1993,
+  "price": 800000,
+  "listPrice": 818000,
+  "fee": 450,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 2897,
+  "assessment": 808000,
+  "description": "Welcome Home to Beautifully updated 3 Bdrm, 3 Bath, end unit in well sought after Murrayville Glen! Bright spacious corner unit boasts open Living-Rm. w/ Gas FP to Dining area w/ sliding door to quiet yard w/extended patio. Plenty of Cabinet & Counter space in Kitchen w/ Breakfast Bar, SS appliances, adjacent to Family/Flex room; & Powder/Laundry room. Upstairs: 3 Bdrms w/ Spacious Primary Bdrm, 4 pc ensuite, & 4 pc Main Bathrm. Updates include paint, flooring, light fixtures & potlights on the main floor, updated Electrical/Plumbing, Toilets, New Windows & HWT! Gated Family Complex offers a Built-in Play area, Clubhouse & Exercise Rm. Short walk to Ross Park & Murrayville Amenities, Schools, Shopping, Restaurants, Cafes, Parks, Public Library, W.C. Blair Pool/Rec Centre & Public Transit.",
+  "features": [],
+  "schools": [
+    {
+      "name": "James Hill Elementary",
+      "rating": 5,
+      "distance": "0.5 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Langley Secondary",
+      "rating": 1.4,
+      "distance": "2.3 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Murrayville",
+  "soldDate": "2026-02-15",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/93-21928-48th-avenue/home/RdXze3e6PJkY8m9K?id_listing=DO1w3W19aAVy8Jg0",
+  "_scrapedAt": "2026-03-02T20:32:55.123Z",
+  "_rawFile": "93_21928_48_avenue_langley_murrayville.html"
+}

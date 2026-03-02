@@ -1,0 +1,42 @@
+{
+  "address": "Unit 58 - 9208 208 Street",
+  "city": "Langley",
+  "sqft": 1772,
+  "year": 1993,
+  "price": 905000,
+  "listPrice": 939000,
+  "fee": 528,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3105,
+  "assessment": 951000,
+  "description": "Beautiful 1772 sf end unit townhome in highly sought after Churchill Park gated community. This unit has the best floorplan with traditional living & dining areas that are perfect for entertaining. Bright & open kitchen has an oversized island, banquette seating & family room that opens onto a private south facing garden. Spacious Primary bedroom on the main floor features walk in closet, huge ensuite with double sinks, separate shower & walk in bath tub. Upstairs offers 2 bedrooms & full bathroom. Over $200,000 spent in upgrades including flooring, windows, bathrooms, kitchen & A/C split unit in kitchen/family room. Well run strata with $1.7M contingency fund. Resort style amenties with pool & clubhouse. Quick & easy access to walking trails, shopping & freeway. Quick possession possible",
+  "features": [],
+  "schools": [
+    {
+      "name": "Walnut Grove Secondary",
+      "rating": 7.3,
+      "distance": "0.4 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Gordon Greenwood Elementary",
+      "rating": 7.2,
+      "distance": "0.5 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Walnut Grove",
+  "soldDate": "2026-02-13",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/58-9208-208th-street/home/a6zqW7dWbEMy5eZE?id_listing=EXrx30rXd9lyOklN",
+  "_scrapedAt": "2026-03-02T20:35:54.802Z",
+  "_rawFile": "58_9208_208_street_langley_walnut_grove.html"
+}

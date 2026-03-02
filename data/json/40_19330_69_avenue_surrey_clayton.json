@@ -1,0 +1,42 @@
+{
+  "address": "Unit 40 - 19330 69 Avenue",
+  "city": "Surrey",
+  "sqft": 2022,
+  "year": 2007,
+  "price": 845000,
+  "listPrice": 859000,
+  "fee": 490,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3775,
+  "assessment": 877000,
+  "description": "MONTEBELLO – Rarely available large townhome offered at an unbeatable price, featuring a REC Room & double side-by-side garage plus extra parking. The main floor offers soaring ceilings and a gourmet kitchen with granite countertops and stainless steel appliances. Enjoy a well-designed layout with a spacious living room, dining area, family room, and eating area, plus a generous deck off the kitchen—perfect for entertaining. The upper level includes three well-sized bedrooms, including a primary bedroom with walk-in closet and ensuite featuring double sinks. The lower level boasts a large media room or recreation room, with mirrored wall—perfect for a home gym or studio.  A fantastic opportunity in a sought-after community.Kept Like a GEM !",
+  "features": [],
+  "schools": [
+    {
+      "name": "Clayton Heights Secondary",
+      "rating": 4.5,
+      "distance": "1.2 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Katzie Elementary",
+      "rating": 3.9,
+      "distance": "0.3 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Clayton",
+  "soldDate": "2026-02-14",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/40-19330-69-avenue/home/5xLkv3VGaqQYDBNr?id_listing=wJKR7P9Nl9M3XeLP",
+  "_scrapedAt": "2026-03-02T20:32:50.556Z",
+  "_rawFile": "40_19330_69_avenue_surrey_clayton.html"
+}

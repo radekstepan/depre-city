@@ -1,0 +1,42 @@
+{
+  "address": "Unit 213 - 921 Grant Street",
+  "city": "Coquitlam",
+  "sqft": 1207,
+  "year": 2025,
+  "price": 979900,
+  "listPrice": 979900,
+  "fee": 501,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 0,
+  "assessment": 1096000,
+  "description": "Welcome home to Sundays on Grant by Anthem, a modern community in a quiet, family-friendly pocket of West Coquitlam just 5 minutes from Burquitlam SkyTrain, shops, restaurants, and the YMCA. Located a short walk from Miller Park Elementary, Banting Middle School and the trails at Chines Park. This efficient 1,207 sf 3-bedroom + den townhome features a highly functional layout with a main-level bedroom with private balcony, convenient powder room, open-concept living and dining area, contemporary kitchen with high-end appliances flowing to a second private balcony. The upper level offers a primary bedroom with a walk-in closet and double-vanity ensuite, plus a second bedroom, full bath and flexible den perfect for a home office or playroom. Open by private appointment.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Port Moody Secondary",
+      "rating": 7.5,
+      "distance": "0.8 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Miller Park Community School",
+      "rating": 4.9,
+      "distance": "0.4 km",
+      "type": "JK-8"
+    }
+  ],
+  "subArea": "Coquitlam West",
+  "soldDate": "2026-02-13",
+  "parkingType": "underground",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/213-921-grant-street/home/1DBW7RDXNPQYqlAp?id_listing=1DBW7RrnVlL7qlAp",
+  "_scrapedAt": "2026-03-02T20:37:05.572Z",
+  "_rawFile": "213_921_grant_street_coquitlam_coquitlam_west.html"
+}

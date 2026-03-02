@@ -1,0 +1,36 @@
+{
+  "address": "Unit 14 - 7503 18th Street",
+  "city": "Burnaby",
+  "sqft": 1075,
+  "year": 2005,
+  "price": 859070,
+  "listPrice": 898800,
+  "fee": 295,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 2509,
+  "assessment": 821000,
+  "description": "Welcome to the SOUTHBOROUGH complex in Burnaby East! Located in a quiet, family-friendly neighbourhood just a 5-min walk to Edmonds SkyTrain, this corner townhouse features 3 spacious bedrooms plus a versatile den and 2 full baths. The modern open-concept layout seamlessly connects the living, dining, and kitchen areas, with abundant storage throughout, including built-in wardrobes and cabinetry, plus high-end black stainless steel appliances. Surrounded by centennial trees, enjoy exceptional privacy on an easy-care front garden or on the spacious covered patio, perfect for year-round entertaining. Schools, parks, shopping, community centre, and transit are all within walking distance. A rare opportunity in one of Burnaby East’s most desirable communities.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Byrne Creek Community Secondary",
+      "rating": 1.9,
+      "distance": "0.7 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Edmonds BE",
+  "soldDate": "2026-02-13",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/14-7503-18th-street/home/r56k97w88dO3KRjD?id_listing=nbq6y120JMB7o9DA",
+  "_scrapedAt": "2026-03-02T20:36:28.927Z",
+  "_rawFile": "14_7503_18th_street_burnaby_edmonds_be.html"
+}

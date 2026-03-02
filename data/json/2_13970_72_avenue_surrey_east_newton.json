@@ -1,0 +1,36 @@
+{
+  "address": "Unit 2 - 13970 72 Avenue",
+  "city": "Surrey",
+  "sqft": 1982,
+  "year": 1989,
+  "price": 724000,
+  "listPrice": 749800,
+  "fee": 432,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 1,
+  "propertyTax": 3156,
+  "assessment": 776000,
+  "description": "LOTS OF SPACE HERE! This nearly 2000 SQUARE FOOT three level townhome in well maintained UPTON PLACE offers spacious living, all four bathrooms have been updated along with a renovated kitchen, newer appliances & a high efficiency furnace. Three spacious bedrooms up & possibly FOUR BEDROOMS as the ground level rec-room could easily be used as a bedroom & has a 3 piece bathroom right beside. (great for extended family). There is a FENCED YARD for the kids & a good size balcony off the main living area for those summertime activities. For your Enjoyment & FUN there are RESORT like amenities including an outdoor swimming pool, tennis court, exercise area & a large social room. Quiet yet centrally located near transit, schools, shopping & other amenities. Call to view TODAY!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Frank Hurt Secondary",
+      "rating": 3.7,
+      "distance": "1.0 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "East Newton",
+  "soldDate": "2026-02-15",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/2-13970-72-avenue/home/6zqW7dGkGlPy5eZE?id_listing=nbq6y12KLMj7o9DA",
+  "_scrapedAt": "2026-03-02T20:35:26.174Z",
+  "_rawFile": "2_13970_72_avenue_surrey_east_newton.html"
+}

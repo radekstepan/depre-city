@@ -1,0 +1,42 @@
+{
+  "address": "Unit 10 - 11767 89a Avenue",
+  "city": "Delta",
+  "sqft": 1696,
+  "year": 2021,
+  "price": 900000,
+  "listPrice": 915000,
+  "fee": 282,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3717,
+  "assessment": 947000,
+  "description": "A rare balance that’s becoming harder to find! Welcome to this 3-bed+den townhome offering a level of space & privacy you wouldn’t expect this close to everything. The lower-level den opens directly onto a private backyard, ideal for work, play, or a green outlook. Above, the main level unfolds w/ space & ease, anchored by a spacious kitchen w/ ample storage & a sink overlooking the enlarged balcony. The layout flows seamlessly into the dining & living areas, creating a wide, open feel that’s intuitive & ideal for gatherings. A discreet powder room completes this level. Upstairs, 3 generously sized beds feel noticeably larger than what you typically see, including a primary bed with a large walk-in closet for his and hers. All of this comes w/ easy access to major routes, shops, & schools",
+  "features": [],
+  "schools": [
+    {
+      "name": "Hellings Elementary",
+      "rating": 4.5,
+      "distance": "0.6 km",
+      "type": "0-7"
+    },
+    {
+      "name": "North Delta Secondary",
+      "rating": 4.3,
+      "distance": "1.5 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Annieville",
+  "soldDate": "2026-02-14",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/delta-real-estate/10-11767-89a-avenue/home/xLkv3V9VmXp7DBNr?id_listing=9w8o3mj4xE2YGKjm",
+  "_scrapedAt": "2026-03-02T20:32:05.422Z",
+  "_rawFile": "10_11767_89a_avenue_delta_annieville.html"
+}

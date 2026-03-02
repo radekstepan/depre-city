@@ -1,0 +1,42 @@
+{
+  "address": "Unit 59 - 3500 Burke Village Promenade",
+  "city": "Coquitlam",
+  "sqft": 2337,
+  "year": 2019,
+  "price": 1290000,
+  "listPrice": 1299000,
+  "fee": 405,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 5385,
+  "assessment": 1473000,
+  "description": "Welcome to this DUPLEX STYLE, END unit home at Kentwell by Polygon! Offering 4 beds, 4 baths and 2,337 sq ft of bright and airy living space! On the main, enjoy a gourmet kitchen w/large island, gas cooktop + sleek cabinetry. Living has custom built-in cabinetry, fireplace, and extra windows w/views of the city and mountains. South facing deck off the dining area, double side by side + powder on the main for added convenience. Up are 3 beds, all with custom closet organizers. Primary has spa-inspired ensuite with frameless shower +  soaker tub. Down has a rec room + 4th bed and 3 piece bath that walks out to a fenced backyard.  Ample storage throughout. Located in one of the most desirable areas in Burke Mountain. Walking distance to Riley Park, Ibex and the future Burke Mountain Village.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "0.7 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "3.2 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "soldDate": "2026-02-13",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/59-3500-burke-village-promenade/home/ZEXrx30RPjnyOklN?id_listing=amgL7AxVJ59yZ1MW",
+  "_scrapedAt": "2026-03-02T20:33:42.361Z",
+  "_rawFile": "59_3500_burke_village_promenade_coquitlam_burke_mountain.html"
+}

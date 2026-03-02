@@ -1,0 +1,42 @@
+{
+  "address": "Unit 12 - 10188 No. 1 Road",
+  "city": "Richmond",
+  "sqft": 1629,
+  "year": 2025,
+  "price": 1658800,
+  "listPrice": 1658800,
+  "fee": 364,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 0,
+  "assessment": 1584000,
+  "description": "Nestled in Richmond3 s sought-after Steveston neighbourhood, Cavendish by Panatch Group is an exclusive collection of move-in-ready 3 & 4 bedroom townhomes and duplexes. This bright and spacious 4 bedroom townhome offers over 1,600 sqft of thoughtfully designed living space. The open-concept kitchen features sleek quartz countertops, integrated Fisher & Paykel appliances, and modern shaker-style cabinetry. Enjoy two outdoor areas, including a deck off the kitchen@ perfect for BBQs and entertaining® creating seamless indoor/outdoor living. A perfect blend of style, comfort, and convenience.",
+  "features": [],
+  "schools": [
+    {
+      "name": "John G Diefenbaker Elementary",
+      "rating": 8.4,
+      "distance": "0.4 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Hugh Boyd Secondary",
+      "rating": 4.7,
+      "distance": "0.7 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Steveston North",
+  "soldDate": "2026-01-30",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/12-10188-no-1-road/home/JKdOYrGNLdPy54lW?id_listing=1DBW7RrPkwk7qlAp",
+  "_scrapedAt": "2026-03-02T20:37:54.027Z",
+  "_rawFile": "12_10188_no_1_road_richmond_steveston_north.html"
+}

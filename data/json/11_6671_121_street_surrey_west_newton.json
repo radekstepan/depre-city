@@ -1,0 +1,42 @@
+{
+  "address": "Unit 11 - 6671 121 Street",
+  "city": "Surrey",
+  "sqft": 1584,
+  "year": 2009,
+  "price": 722500,
+  "listPrice": 739000,
+  "fee": 467,
+  "bedrooms": 4,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 3043,
+  "assessment": 737000,
+  "description": "SALUS by Adera award winning dev, Mountain Resort inspired com. Gorgeous 3 level South facing townhome. Featuring 4 bdrm with 2bhrms. Main floor boasts a bright and open layout with tons of natura 1 light, Beautiful kitchen finished with granite countertops (kitchen island), stainless-steel app and designer cabinets. Newly designed bathrooms and updated lighting. garage and covered carport for two full size vehicles. Corner loc with street and visitor parking. close to pre-school, elementary/high school & bus stop. Easy access to Tsaw/Ladner/Rmd/Vanc. Clubhouse features spa/swim, /hot tub/sauna/steam shower/fitness centre/roof deck.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Tamanawis Secondary",
+      "rating": 4.8,
+      "distance": "1.2 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Beaver Creek Elementary",
+      "rating": 2.3,
+      "distance": "0.6 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "West Newton",
+  "soldDate": "2026-02-11",
+  "parkingType": "carport",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/11-6671-121-street/home/56k97wqv2neYKRjD?id_listing=bEDRYazgdLby1VaB",
+  "_scrapedAt": "2026-03-02T20:32:46.199Z",
+  "_rawFile": "11_6671_121_street_surrey_west_newton.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 42 - 6300 Birch Street",
+  "city": "Richmond",
+  "sqft": 1762,
+  "year": 2004,
+  "price": 1240000,
+  "listPrice": 1338000,
+  "fee": 609,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4468,
+  "assessment": 1318000,
+  "description": "Richmond nicest town home community - 'Springbrook'! Luxury duplex style (house feeling) with all the fantastic details. Built by a prominent, well-known CRESSEY developer with a high-end finish. 3 bedrooms + 2.5 baths + side by side double garage. It features 18' living room ceiling, elegant balck granite countertops, S/S appliances and large master bedroom with walk-in closet and 5 pc ensuite bath + separate laundry room. Good layout. Nice and bright. Quiet yet convenient location. Nice neighborhood and walking distance to Garden City Park, Henry Anderson Elementary, MacNeil Secondary, Walmart shopping center, and public transit. Easy to show, very motivated seller, try your offer! Open house Sat.&Sun. Nov 8&9 (2-4pm).",
+  "features": [],
+  "schools": [
+    {
+      "name": "Henry Anderson Elementary",
+      "rating": 8,
+      "distance": "0.3 km",
+      "type": "0-7"
+    },
+    {
+      "name": "MacNeill Secondary",
+      "rating": 3.4,
+      "distance": "0.3 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "McLennan North",
+  "soldDate": "2026-01-23",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/42-6300-birch-street/home/obqB176gKxn3ZajD?id_listing=VLaGyGkXOD0yW1ZD",
+  "_scrapedAt": "2026-03-02T20:36:42.805Z",
+  "_rawFile": "42_6300_birch_street_richmond_mclennan_north.html"
+}

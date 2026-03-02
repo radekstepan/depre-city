@@ -1,0 +1,42 @@
+{
+  "address": "Unit 12 - 22600 Gilley Road",
+  "city": "Richmond",
+  "sqft": 1391,
+  "year": 2020,
+  "price": 880000,
+  "listPrice": 898000,
+  "fee": 329,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3222,
+  "assessment": 848000,
+  "description": "Proud Ownership! Gorgeous Corner 3 BR 2.5 BA townhouse with picket fence front yard in the fast growing Hamilton Area. Nestled on a quiet street with unobstructed view of greens & North Shore mountains. Quality built by DAVA & meticulously updated by the Owners with brand new light coloured flooring & bold designer colours. Quiet Corner unit with extra windows offers tons of natural light. Gorgeous 9 ft main floor with entertainment size Living, Dinning & Kitchen featuring quartz counter, stainless steel appliances & HRV. Downstairs tandem garage had been converted to a huge entertainment room or 4th bedroom with 2 windows. One blk to transit and 2 blocks to community school. 5 min drive to Queensborough Landing Shopping Centre, 15 min to Richmond Center and Metrotown w/Easy access to Hwy.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Hamilton Elementary",
+      "rating": 6.5,
+      "distance": "0.4 km",
+      "type": "0-7"
+    },
+    {
+      "name": "McNair Secondary School",
+      "rating": 3.3,
+      "distance": "11.0 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Hamilton RI",
+  "soldDate": "2026-02-04",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/12-22600-gilley-road/home/MB5bO3xLzNL3kWVP?id_listing=EXrx30re9VZyOklN",
+  "_scrapedAt": "2026-03-02T20:35:50.358Z",
+  "_rawFile": "12_22600_gilley_road_richmond_hamilton_ri.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 12 - 4111 Garry Street",
+  "city": "Richmond",
+  "sqft": 1923,
+  "year": 1999,
+  "price": 1108000,
+  "listPrice": 1268000,
+  "fee": 566,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3843,
+  "assessment": 1204000,
+  "description": "Beautiful 3-bedroom townhome in the highly sought-after Garry Lane - just a short walk to historic Steveston village! Conveniently located near Westwind Elementary, McMath Secondary, the Japanese Canadian Cultural Centre, and Steveston Community Park. This unique detached townhouse enjoys natural light from seamless living and dining space with durable laminate floors and a cozy electric fireplace, and a sunlit kitchen equipped with modern stainless steel appliances (including a gas range), sleek quartz counters, and French doors that open to a west-facing balcony featuring a gas BBQ connection. Hot water tank (2021) and roof (2022) are renewed.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Robert Alexander McMath Secondary",
+      "rating": 7.9,
+      "distance": "0.1 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Westwind Elementary",
+      "rating": 7.2,
+      "distance": "1.0 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Steveston South",
+  "soldDate": "2026-01-31",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/12-4111-garry-street/home/DnM697kj2lmybmwe?id_listing=10QqypGjVW2YLGlV",
+  "_scrapedAt": "2026-03-02T20:35:10.691Z",
+  "_rawFile": "12_4111_garry_street_richmond_steveston_south.html"
+}

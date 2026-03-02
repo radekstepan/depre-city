@@ -1,0 +1,42 @@
+{
+  "address": "Unit 20 - 16323 15 Avenue",
+  "city": "Surrey",
+  "sqft": 1362,
+  "year": 2018,
+  "price": 750000,
+  "listPrice": 779999,
+  "fee": 398,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3229,
+  "assessment": 809000,
+  "description": "Beautiful 3 BED, 3 BATH PLUS DEN, DOUBLE SIDE-BY-SIDE GARAGE by Dawson + Sawyer. This well-maintained home offers an open-concept chef’s kitchen with a large island, a bright and spacious living room, and a generous primary suite that easily fits a king-size bed and features a spa-inspired ensuite. The garden level includes a versatile den, and the home is completed by a side-by-side two-car garage. Ideally located in a central, walkable neighborhood close to restaurants, shopping, recreation, transit, and with easy highway access. Priced sharp for quick sale. Open House Jan 24 Saturday 1-3 pm",
+  "features": [],
+  "schools": [
+    {
+      "name": "Earl Marriott Secondary",
+      "rating": 7.2,
+      "distance": "1.1 km",
+      "type": "8-12"
+    },
+    {
+      "name": "South Meridian Elementary",
+      "rating": 4.7,
+      "distance": "0.5 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "King George Corridor",
+  "soldDate": "2026-02-12",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/20-16323-15-avenue/home/MB5bO3xeraLYkWVP?id_listing=5VXv3l5XVPNYj2q8",
+  "_scrapedAt": "2026-03-02T20:36:31.419Z",
+  "_rawFile": "20_16323_15_avenue_surrey_king_george_corridor.html"
+}

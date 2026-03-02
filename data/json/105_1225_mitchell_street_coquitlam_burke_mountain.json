@@ -1,0 +1,42 @@
+{
+  "address": "Unit 105 - 1225 Mitchell Street",
+  "city": "Coquitlam",
+  "sqft": 1391,
+  "year": 2021,
+  "price": 899000,
+  "listPrice": 986000,
+  "fee": 308,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3022,
+  "assessment": 999000,
+  "description": "Move-in ready! This stunning 3 bed, 3 bath townhome in the highly sought-after Rocklin on the Creek community offers bright open living with 9-ft ceilings, large windows, and a chef-inspired kitchen featuring quartz countertops, gas range, and a spacious island ideal for entertaining. Upstairs features generous bedrooms including a peaceful primary suite with walk-in closet and ensuite. The private fenced yard is perfect for kids or pets, and the double garage adds convenience. Steps to parks, trails, schools, and the upcoming Burke Mountain Village. Some photos are virtually staged. Don’t miss this exceptional home!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "0.8 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "2.8 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "soldDate": "2026-02-02",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/105-1225-mitchell-street/home/mZRW7nadMp9yEBO9?id_listing=dXze3eVwxazY8m9K",
+  "_scrapedAt": "2026-03-02T20:35:43.619Z",
+  "_rawFile": "105_1225_mitchell_street_coquitlam_burke_mountain.html"
+}

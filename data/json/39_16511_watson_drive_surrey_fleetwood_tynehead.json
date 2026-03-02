@@ -1,0 +1,42 @@
+{
+  "address": "Unit 39 - 16511 Watson Drive",
+  "city": "Surrey",
+  "sqft": 1517,
+  "year": 2021,
+  "price": 833000,
+  "listPrice": 859900,
+  "fee": 332,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3584,
+  "assessment": 907000,
+  "description": "Welcome to Fleetwood Point, an exclusive collection of executive townhomes meticulously designed for lifestyle. Featuring an expansive Rooftop Patio engineered to support hot tubs, fire pits, and BBQs. This bright and airy corner unit features additional windows, high ceilings, high end laminate flooring, forced air heating and rough in for Air Conditioning. The main boasts a chef's kitchen with high end S/S appliances, gas stove, laminate flooring, a huge pantry with extra storage, oversized windows and an open living space. Upstairs, we have 3 spacious rooms with upgraded laminate, spa like ensuite with double sink. Downstairs includes a flex room, side by side garage and fenced yard. Centrally located walking distance from shopping, Fleetwood Rec Centre, schools and future skytrain.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Fleetwood Park Secondary",
+      "rating": 7,
+      "distance": "1.7 km",
+      "type": "8-12"
+    },
+    {
+      "name": "William Watson Elementary",
+      "rating": 5.6,
+      "distance": "0.4 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Fleetwood Tynehead",
+  "soldDate": "2026-02-18",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/39-16511-watson-drive/home/damgL7AdvWVyZ1MW?id_listing=dXze3eeVpRk38m9K",
+  "_scrapedAt": "2026-03-02T20:35:20.191Z",
+  "_rawFile": "39_16511_watson_drive_surrey_fleetwood_tynehead.html"
+}

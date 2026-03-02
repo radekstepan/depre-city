@@ -1,0 +1,36 @@
+{
+  "address": "Unit 40 - 6511 Chambord Place",
+  "city": "Vancouver",
+  "sqft": 1820,
+  "year": 1990,
+  "price": 1028000,
+  "listPrice": 1103000,
+  "fee": 690,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3346,
+  "assessment": 1103000,
+  "description": "This very spacious 4 bedroom Townhouse ( Large family - NO PROBLEM ) nestled in a very private and quiet area in prime killarney location just updated with new paint, new carpets , new blinds , new toilets, kitchen updates, new roof and more.   Main floor with a large living room, gourmet kitchen , 2piece washroom and large bedroom. Upper level with huge master bedroom with full ensuite and 2 more bedrooms and a full bath with a Rec room and crawl space in the basement. Easy and close access to 2 covered ground level parking ,alarm system, central vac and a very spacious and private backyard for you to enjoy. A gated complex, walking distance to Central Park, close to Metrotown, bus stop, Champlain Mall, and school.     PRICED AT ASSESSMENT VALUE !! Must see. By Appointment only.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Killarney Secondary",
+      "rating": 5.4,
+      "distance": "1.4 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Killarney VE",
+  "soldDate": "2026-02-14",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/40-6511-chambord-place/home/0ZxwR7Mx9PZyKabB?id_listing=2Zpj39qElPP3DrK8",
+  "_scrapedAt": "2026-03-02T20:37:13.429Z",
+  "_rawFile": "40_6511_chambord_place_vancouver_killarney_ve.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 42 - 1207 Confederation Drive",
+  "city": "Port Coquitlam",
+  "sqft": 1584,
+  "year": 1991,
+  "price": 899000,
+  "listPrice": 899000,
+  "fee": 379,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3095,
+  "assessment": 838000,
+  "description": "Welcome to Citadel Heights, a well-kept 3-bedroom, 2-storey townhouse in a family-friendly neighbourhood. The bright main floor offers open living & dining areas highlighted by a cozy gas fireplace and access to a patio overlooking a beautiful shared green space. The large kitchen provides plenty of room for everyday living, and the carpets have been professionally cleaned for move-in comfort. Upstairs features a generous primary bedroom with a 3-piece ensuite, plus 2 additional bedrooms with deep closets and access to a private covered balcony. Ideally located close to schools, Fraser River walking trails & with easy access to major commuter routes. Open House Saturday Feb 14, 1:30-3:30PM & Sunday Feb 15, 2-4PM",
+  "features": [],
+  "schools": [
+    {
+      "name": "Castle Park Elementary",
+      "rating": 6.5,
+      "distance": "0.3 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Ecole Riverside Secondary",
+      "rating": 4.6,
+      "distance": "2.3 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Citadel PQ",
+  "soldDate": "2026-02-14",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/42-1207-confederation-drive/home/eQp5yO8EprG7d0ZE?id_listing=eVbOYENkjVKyx2P0",
+  "_scrapedAt": "2026-03-02T20:33:55.567Z",
+  "_rawFile": "42_1207_confederation_drive_port_coquitlam_citadel_pq.html"
+}

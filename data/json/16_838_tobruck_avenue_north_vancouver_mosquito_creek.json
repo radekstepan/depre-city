@@ -1,0 +1,42 @@
+{
+  "address": "Unit 16 - 838 Tobruck Avenue",
+  "city": "North Vancouver",
+  "sqft": 1460,
+  "year": 1990,
+  "price": 1260000,
+  "listPrice": 1349000,
+  "fee": 628,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3586,
+  "assessment": 1160000,
+  "description": "Beautifully RENOVATED SOUTH facing townhouse with 3 bedrooms plus DEN (office), 3 bathrooms, & a bright open concept layout. Spacious rooms & excellent flow create an airy, comfortable living space. Enjoy a south-facing deck with a beautiful treed outlook, providing privacy & a peaceful setting. Fully renovated in 2022 with close to $200K in upgrades, all completed with City & Strata permits; including removal of interior walls on the main floor to create the open concept layout, new kitchen with quality cabinets, quartz countertops & top appliances, updated bathrooms, new flooring & tile, new plumbing, new hot water tank & new blinds (some motorized). Inc 2 parkings & 2 storages. Exceptionally maintained & move-in ready. A rare fully renovated townhouse opportunity in North Vancouver.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Carson Graham Secondary",
+      "rating": 4.1,
+      "distance": "1.2 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Westview Elementary",
+      "rating": 3.6,
+      "distance": "0.5 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Mosquito Creek",
+  "soldDate": "2026-02-18",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/16-838-tobruck-avenue/home/PXRla7gR5m6yjEvL?id_listing=Zaw5YojVGXL3n961",
+  "_scrapedAt": "2026-03-02T20:32:38.919Z",
+  "_rawFile": "16_838_tobruck_avenue_north_vancouver_mosquito_creek.html"
+}

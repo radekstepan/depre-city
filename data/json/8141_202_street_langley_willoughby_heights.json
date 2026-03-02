@@ -1,0 +1,42 @@
+{
+  "address": "8141 202 Street",
+  "city": "Langley",
+  "sqft": 2497,
+  "year": 2021,
+  "price": 1275000,
+  "listPrice": 1300000,
+  "fee": 0,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4618,
+  "assessment": 1341000,
+  "description": "Exceptionally built END-UNIT ROWHOME by North Arc Properties with NO STRATA FEES. This spacious & meticulously maintained home shows like new and offers extensive upgrades throughout. Enjoy A/C, a chef-inspired kitchen w/ wine fridge and Fisher & Paykel appliances complemented by high-end finishes throughout. The professionally finished basement is ideal for guests or entertaining, showcasing a custom bar w/sink, wine storage, cabinetry & bar fridge, plus a developer-installed soundproofed bedroom. Well-sized bedrooms with potential to add 5th bedroom upstairs. Enjoy year-round outdoor living on the covered deck with gas BBQ hookup and custom awning. Rare 4-vehicle parking with double garage (epoxy floors) plus parking pad. A standout home offering privacy, space and luxury without strata.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "1.2 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.1 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-15",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/8141-202-street/home/wJKR7P8EbnM7XeLP?id_listing=Vwod7vWrGZD35mGN",
+  "_scrapedAt": "2026-03-02T20:32:12.024Z",
+  "_rawFile": "8141_202_street_langley_willoughby_heights.html"
+}

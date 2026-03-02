@@ -1,0 +1,42 @@
+{
+  "address": "Unit 12 - 23085 118 Avenue",
+  "city": "Maple Ridge",
+  "sqft": 1574,
+  "year": 1998,
+  "price": 700000,
+  "listPrice": 735000,
+  "fee": 432,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3984,
+  "assessment": 755000,
+  "description": "Welcome to Sommerville Gardens! This bright and beautifully maintained two-level, 3 bed, 3 bath townhome offers just under 1,600 sqft of smart family-friendly living. Fresh lighting throughout keeps the home feeling modern and move-in ready. Tucked into the best location in the complex, enjoy a private backyard backing directly on to Pioneer Park - green, quiet and perfect for kids or pets. Walk to Golden Ears Elementary and just minutes to Thomas Haney Secondary. This is the kind of location and layout that are ideal for young families or downsizers. Don't miss, book your private showing today! OPEN HOUSE SAT & SUN FEB 14 & 15 from 2-4pm",
+  "features": [],
+  "schools": [
+    {
+      "name": "Thomas Haney Secondary",
+      "rating": 5.7,
+      "distance": "0.7 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Golden Ears Elementary",
+      "rating": 4.2,
+      "distance": "0.3 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "East Central",
+  "soldDate": "2026-02-15",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/12-23085-118-avenue/home/XRla7gx4Bb53jEvL?id_listing=ZxwR7MjVklV3KabB",
+  "_scrapedAt": "2026-03-02T20:35:31.233Z",
+  "_rawFile": "12_23085_118_avenue_maple_ridge_east_central.html"
+}

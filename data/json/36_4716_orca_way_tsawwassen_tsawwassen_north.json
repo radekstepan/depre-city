@@ -1,0 +1,42 @@
+{
+  "address": "Unit 36 - 4716 Orca Way",
+  "city": "Tsawwassen",
+  "sqft": 1446,
+  "year": 2022,
+  "price": 793000,
+  "listPrice": 799000,
+  "fee": 401,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3314,
+  "assessment": 799000,
+  "description": "Welcome to Seaside West by MOSAIC. This 3 bed, 2.5 bath, 1,446 sqft beautiful home offers open concept layout & extra large windows that flood the interior with abundant natural light. Spacious living room designed for everyday comfort & functionality. Gourmet kitchen is equipped with quartz countertops, SS appliances, and a large island, ideal for meal preparation or hosting gatherings. Upstairs, a spacious master bedroom with room for a king-size bed, an ensuite bathroom, 2 additional bedrooms, and a full bath. Enjoy spacious balcony & garden patio, providing ample outdoor space for relaxation & entertaining. Amenities: over 10,000 sqft indoor & outdoor space including club house, gym, pool, & kids play area. Close proximity to the Tsawwassen Mills, golf course, restaurants & schools.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Cliff Drive Elementary",
+      "rating": 5,
+      "distance": "0.8 km",
+      "type": "0-7"
+    },
+    {
+      "name": "South Delta Secondary",
+      "rating": 4.9,
+      "distance": "1.9 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Tsawwassen North",
+  "soldDate": "2026-02-02",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/tsawwassen-real-estate/36-4716-orca-way/home/BGMnKYqvJk6yw1Qr?id_listing=JKdOYrBGVXlY54lW",
+  "_scrapedAt": "2026-03-02T20:34:12.113Z",
+  "_rawFile": "36_4716_orca_way_tsawwassen_tsawwassen_north.html"
+}

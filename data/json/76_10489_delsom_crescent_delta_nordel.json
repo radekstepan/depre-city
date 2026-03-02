@@ -1,0 +1,42 @@
+{
+  "address": "Unit 76 - 10489 Delsom Crescent",
+  "city": "Delta",
+  "sqft": 2031,
+  "year": 2011,
+  "price": 1067000,
+  "listPrice": 1089000,
+  "fee": 516,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4000,
+  "assessment": 1019000,
+  "description": "Spacious+View+Polygon!! Move-in Ready. This spacious home offers the comfort and layout of a detached house at the price of a townhouse. Located in a master-planned community just steps from Sunstone Park, it features 9’ ceilings and an open-concept main floor with a gourmet kitchen, granite counters, stainless steel appliances, and a convenient powder room. Enjoy peaceful green field views directly from the living room, adding a rare sense of space and privacy. The lower level includes a private bedroom with full bath, ideal for guests or extended family, while the upper floor boasts three generous bedrooms. Resort-style amenities include a clubhouse, pool, hot tub, gym, and more. Easy access to Vancouver, Richmond, and YVR. Note: some photos are virtually staged. You'll love this home!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Gray Elementary",
+      "rating": 4.6,
+      "distance": "1.0 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Sands Secondary",
+      "rating": 3.8,
+      "distance": "0.7 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Nordel",
+  "soldDate": "2026-01-01",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/delta-real-estate/76-10489-delsom-crescent/home/BDO1w3WLxxoY8Jg0?id_listing=XeEn7XKpbXMyrPo8",
+  "_scrapedAt": "2026-03-02T20:32:52.949Z",
+  "_rawFile": "76_10489_delsom_crescent_delta_nordel.html"
+}

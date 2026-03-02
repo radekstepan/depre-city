@@ -1,0 +1,42 @@
+{
+  "address": "Unit 24 - 7175 17th Avenue",
+  "city": "Burnaby",
+  "sqft": 1304,
+  "year": 1993,
+  "price": 803000,
+  "listPrice": 750000,
+  "fee": 453,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 2825,
+  "assessment": 924000,
+  "description": "Welcome to a home designed for family living! With 3 generous bedrooms and 2.5 baths, there’s space for everyone to grow. The primary suite offers a walk-in closet, full ensuite, and private balcony—your own quiet escape. Just minutes to schools, shopping, and transit for everyday convenience.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Taylor Park Elementary",
+      "rating": 8.3,
+      "distance": "1.0 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Byrne Creek Community Secondary",
+      "rating": 1.9,
+      "distance": "0.9 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Edmonds BE",
+  "soldDate": "2026-02-16",
+  "parkingType": "underground",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/24-7175-17th-avenue/home/oK8OgYBknvzyJmG2?id_listing=XeEn7XK49GKyrPo8",
+  "_scrapedAt": "2026-03-02T20:34:03.512Z",
+  "_rawFile": "24_7175_17th_avenue_burnaby_edmonds_be.html"
+}

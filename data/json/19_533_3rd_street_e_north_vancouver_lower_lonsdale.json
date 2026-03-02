@@ -1,0 +1,42 @@
+{
+  "address": "Unit 19 - 533 3rd Street E",
+  "city": "North Vancouver",
+  "sqft": 1862,
+  "year": 2019,
+  "price": 1499999,
+  "listPrice": 1550000,
+  "fee": 858,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4859,
+  "assessment": 1604000,
+  "description": "Introducing this thoughtfully appointed, corner townhouse on the quiet side of Founders Block, a LEED Gold–certified community by Anthem. Beautifully positioned w/ an entrance on the charming laneway, away from 3rd St. This scandi-inspired home is drenched in light from N, S & W facing windows. Engineered hardwood, in-floor heat, HRV, sleek kitchen w/gas range and stone countertops make this open-concept home sing. Share gorgeous city & water views from the top floor with friends or enjoy your patio in the lush courtyard while barbequing dinner. Direct access to 2 parking (1 EV) and 2 oversized storage lockers provides endless convenience. Steps to Moodyville Park, a short stroll via the Spirit Trail to Lonsdale, The Quay, and the SeaBus—urban convenience in a peaceful, connected setting.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sutherland Secondary",
+      "rating": 5.4,
+      "distance": "2.2 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Ridgeway Elementary",
+      "rating": 5.2,
+      "distance": "0.8 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Lower Lonsdale",
+  "soldDate": "2026-02-19",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/19-533-3rd-street-e/home/VgAaOyLkLn5YGxMb?id_listing=EXrx30re144yOklN",
+  "_scrapedAt": "2026-03-02T20:34:09.498Z",
+  "_rawFile": "19_533_3rd_street_e_north_vancouver_lower_lonsdale.html"
+}

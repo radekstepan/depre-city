@@ -1,0 +1,42 @@
+{
+  "address": "Unit 6 - 9840 Alberta Road",
+  "city": "Richmond",
+  "sqft": 1390,
+  "year": 2017,
+  "price": 1073500,
+  "listPrice": 1168000,
+  "fee": 383,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3689,
+  "assessment": 1073000,
+  "description": "Welcome to SONA, a boutique townhome community offering a spacious and bright 3-bedroom, 2.5-bath home with a functional, open-concept layout and 9-foot ceilings. The chef-inspired kitchen features premium JennAir stainless steel appliances, quartz countertops, custom cabinetry, and imported Italian tile. Enjoy year-round comfort with air conditioning, a 2-car tandem garage with ample storage space, and a generous primary bedroom retreat. Ideally located in a central location close to Walmart, Lansdowne Mall, transit, shopping, restaurants and SkyTrain. School catchment: Anderson Elementary and MacNeill Secondary.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Henry Anderson Elementary",
+      "rating": 8,
+      "distance": "0.3 km",
+      "type": "0-7"
+    },
+    {
+      "name": "MacNeill Secondary",
+      "rating": 3.4,
+      "distance": "0.1 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "McLennan North",
+  "soldDate": "2026-02-16",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/6-9840-alberta-road/home/x9w8o3mWzKzyGKjm?id_listing=2Zpj39qEvWd3DrK8",
+  "_scrapedAt": "2026-03-02T20:32:41.177Z",
+  "_rawFile": "6_9840_alberta_road_richmond_mclennan_north.html"
+}

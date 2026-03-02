@@ -1,0 +1,36 @@
+{
+  "address": "Unit 9 - 2603 162 Street",
+  "city": "Surrey",
+  "sqft": 3879,
+  "year": 2008,
+  "price": 1550000,
+  "listPrice": 1574900,
+  "fee": 759,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 5352,
+  "assessment": 1474000,
+  "description": "Wow! Stunning End-Unit Duplex Townhome in Vinterra! This beautifully updated 3,879 sq ft home features 3 spacious bdrms + den and 3.5 baths, with over $50K in recent upgrades including new flooring, custom shelving, fresh paint, and more! The bright, open-concept main floor boasts a vaulted living room with statement fireplace, gourmet Jenn-Air kitchen with quartz counters, formal dining room, and a cozy den/home office with its own fireplace. Step out to your private southwest-facing patio complete with built-in outdoor kitchen—perfect for summer entertaining! Upstairs you’ll find 2 oversized primary bdrms, each with ensuites, plus convenient upper laundry. The bsmt is an entertainer’s dream with a full bar, media room, rec space, guest bdrm and bath. A rare find!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sunnyside Elementary",
+      "rating": 5.8,
+      "distance": "0.8 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Grandview Surrey",
+  "soldDate": "2026-02-11",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/9-2603-162-street/home/r56k97wV8zQyKRjD?id_listing=bqB176zWRKv7ZajD",
+  "_scrapedAt": "2026-03-02T20:35:46.245Z",
+  "_rawFile": "9_2603_162_street_surrey_grandview_surrey.html"
+}

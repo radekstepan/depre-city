@@ -1,0 +1,42 @@
+{
+  "address": "Unit 42 - 2927 Fremont Street",
+  "city": "Port Coquitlam",
+  "sqft": 1632,
+  "year": 1997,
+  "price": 927500,
+  "listPrice": 900000,
+  "fee": 446,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 3351,
+  "assessment": 905000,
+  "description": "Nestled right on Blakeburn Lagoon, this refreshed 3-bed, 2-bath townhome is the ultimate family retreat! Updates include fresh paint, modern lighting, luxury vinyl floors, & cozy new carpets. Perfectly located for active families, steps from Blakeburn Elementary, Cedar Drive, & Terry Fox Secondary. Enjoy morning coffee on your walkout patio or balcony overlooking the water. The layout features two bright bedrooms, including a large Master with ensuite & laundry. The private top-floor bedroom with its own deck is ideal for an office, teen retreat, or a playroom! Huge tandem garage easily fits two SUVs plus storage, bikes, toys or your home gym. Minutes to New PoCo Rec Centre, Costco, Shopping, Dining, & West Coast Express. Roofs, Patios, & Windows all done. Open House Sunday Feb 15 @ 2-4pm.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Blakeburn Elementary",
+      "rating": 6.5,
+      "distance": "0.6 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "1.1 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Riverwood",
+  "soldDate": "2026-02-15",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/42-2927-fremont-street/home/JKdOYrG8OePy54lW?id_listing=B5bO3x8xZ8l3kWVP",
+  "_scrapedAt": "2026-03-02T20:35:39.062Z",
+  "_rawFile": "42_2927_fremont_street_port_coquitlam_riverwood.html"
+}
