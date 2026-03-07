@@ -1,0 +1,36 @@
+{
+  "address": "Unit 42 - 16336 23a Avenue",
+  "city": "Surrey",
+  "sqft": 1517,
+  "year": 2017,
+  "price": 780000,
+  "listPrice": 794900,
+  "fee": 319,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3407,
+  "assessment": 862000,
+  "description": "Experience elevated living in Soho, South Surrey's premier rooftop patio townhomes! This 3 bed, 3 bath home offers 1,517 sqft of beautifully maintained space, featuring custom built-in bookshelves and an open-concept layout perfect for modern living. With unmatched indoor-outdoor living, the rooftop patio is an entertainer's dream, including a gazebo and barbecue, ideal for hosting with stunning mountain views. Located in the heart of Grandview, you're just minutes from shopping, dining, and amenities, with easy access to Highway 99 for commuting. Steps from Oak Meadows Park and Edgewood Park with large mature trees and walking trails. This home is your perfect blend of comfort, convenience, and premium style. Don't miss your opportunity to own in this vibrant neighbourhood!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Earl Marriott Secondary",
+      "rating": 7.2,
+      "distance": "1.8 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Grandview Surrey",
+  "soldDate": "2026-02-23",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/42-16336-23a-avenue/home/510Qqypkz48YLGlV?id_listing=VLaGyG02Bm07W1ZD",
+  "_scrapedAt": "2026-03-07T02:31:11.193Z",
+  "_rawFile": "42_16336_23a_avenue_surrey_grandview_surrey.html"
+}

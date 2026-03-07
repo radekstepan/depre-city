@@ -1,0 +1,36 @@
+{
+  "address": "Unit 215 - 2228 162 Street",
+  "city": "Surrey",
+  "sqft": 1262,
+  "year": 2013,
+  "price": 750900,
+  "listPrice": 749900,
+  "fee": 394,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3099,
+  "assessment": 766000,
+  "description": "Welcome to the BREEZE where you will find this beautiful 3bdrm and 3 bath home built by highly reputable Adera. High-quality award-winning complex with modern west coast contemporary architecture, warm cedar & lush landscaping. Main floor is built for entertaining w/open concept layout, 9ft ceiling, powder room, floor to ceiling windows leading to oversized balcony. Upstairs leads to 3 bedrms & 2 bath all in pristine condition. This home has been very well looked after, and pride of ownership shows throughout. Very well-run strata complex that also has clubhouse ft Lounge, gym, sauna, playground. 2014 Georgie Award Winner for best new townhouse. The unit is situated in the best location of the complex next to visitor parking and across from the amenities building. This one is a must see!!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Earl Marriott Secondary",
+      "rating": 7.2,
+      "distance": "1.5 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Grandview Surrey",
+  "soldDate": "2026-02-23",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/215-2228-162-street/home/RdXze3evgrOY8m9K?id_listing=XRla7gBbBLgyjEvL",
+  "_scrapedAt": "2026-03-07T02:32:05.758Z",
+  "_rawFile": "215_2228_162_street_surrey_grandview_surrey.html"
+}

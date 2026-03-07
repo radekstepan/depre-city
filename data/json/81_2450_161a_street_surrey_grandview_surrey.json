@@ -1,0 +1,36 @@
+{
+  "address": "Unit 81 - 2450 161a Street",
+  "city": "Surrey",
+  "sqft": 1684,
+  "year": 2008,
+  "price": 930000,
+  "listPrice": 949000,
+  "fee": 477,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3902,
+  "assessment": 917000,
+  "description": "Welcome to Glenmore! This 1684 square foot, 3 bedroom, 3 bathroom, double garage, end unit has it all! Meticulously cared for and loved by the original owners. Updates include a new HWT, recently painted, updated dishwasher + Washer & Dryer, updated carpet, vinyl plank flooring on main + warm cork flooring on lower, numerous added built ins throughout, updated toilets and new garage door motor. Perfectly situated within the complex away from busy roads and surrounded by ample visitor parking. Large fenced yard is perfect for the kiddos and pets. Amazing amenities include a fitness studio, yoga studio, hockey rink, theatre, outdoor pool, hot tub and more. Steps away from Grandview Corners shopping district.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Earl Marriott Secondary",
+      "rating": 7.2,
+      "distance": "1.8 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Grandview Surrey",
+  "soldDate": "2026-02-20",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/81-2450-161a-street/home/2Zpj39EZq9z3DrK8?id_listing=jAXw7QlpQEkyQOzg",
+  "_scrapedAt": "2026-03-07T02:27:55.602Z",
+  "_rawFile": "81_2450_161a_street_surrey_grandview_surrey.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 9 - 1108 Riverside Close",
+  "city": "Port Coquitlam",
+  "sqft": 2166,
+  "year": 2001,
+  "price": 1100000,
+  "listPrice": 1175000,
+  "fee": 453,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3857,
+  "assessment": 1068000,
+  "description": "DETACHED TOWNHOME in sought after Heritage Meadows. Extremely quiet location. Features 4 bdrms, den & 3 1/2 bathrms. Spacious Lvg/Dng area w/fireplace & custom mantel. Nice kitchen has island, new appl, granite counters all open to eatery & family rm accessible to sundeck w/sunny southwestern exposure & fenced yard. 3 bdms up plus den perfect for home office. Primary bdrm has vaulted ceilings, WICLO & ensuite bathrm. Fully finished lower level has a huge rec rm w/separate entry, bdrm & bathrm (could be easily suited). Double attached garage. Freshly painted. New carpet & luxury vinyl plank flooring, new decks etc. Roof & complex painted 3 years ago. Close to Blakeburn Elem & Terry Fox High, shopping (Costco, Home Depot, Save-On Foods & Walmart),transit & West Coast Exp.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Blakeburn Elementary",
+      "rating": 6.5,
+      "distance": "0.2 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "0.6 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Riverwood",
+  "soldDate": "2026-02-14",
+  "parkingType": "garage_double",
+  "levels": 2,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/9-1108-riverside-close/home/EeVbOYEaaQ5Yx2P0?id_listing=5VXv3l5XbJwYj2q8",
+  "_scrapedAt": "2026-03-07T02:32:50.798Z",
+  "_rawFile": "9_1108_riverside_close_port_coquitlam_riverwood.html"
+}

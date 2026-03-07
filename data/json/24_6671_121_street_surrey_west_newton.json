@@ -1,0 +1,42 @@
+{
+  "address": "Unit 24 - 6671 121 Street",
+  "city": "Surrey",
+  "sqft": 1618,
+  "year": 2009,
+  "price": 741500,
+  "listPrice": 749888,
+  "fee": 519,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3170,
+  "assessment": 775000,
+  "description": "THE LOWEST PRICED 4BD IN THE AREA! Welcome to the AWARD-WINNING complex Salus, by Adera! This charming 4 BEDROOM 3 BATHROOM townhome offers a perfect blend of style & comfort. Spread over three floors, it features a SPACIOUS living room with ample natural light, and a modern kitchen equipped with stainless steel appliances. The upper floor hosts three bedrooms including a GENEROUS sized master, and a BONUS LOWER FLOOR BEDROOM.  The home includes a private garage, parking pad, and plenty of storage! Centrally located within walking distance to grocery stores, restaurants, parks, schools, and transit! Relax at Club Aqua, the complex amenity which includes an outdoor pool, indoor hot tub, sauna, gym, and more! Open house Saturday (FEB 21) 1pm-3pm.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Tamanawis Secondary",
+      "rating": 4.8,
+      "distance": "1.2 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Beaver Creek Elementary",
+      "rating": 2.3,
+      "distance": "0.6 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "West Newton",
+  "soldDate": "2026-02-18",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/24-6671-121-street/home/VaD6p78bNrVYwRQr?id_listing=XeEn7XK4WeqyrPo8",
+  "_scrapedAt": "2026-03-07T02:27:53.140Z",
+  "_rawFile": "24_6671_121_street_surrey_west_newton.html"
+}

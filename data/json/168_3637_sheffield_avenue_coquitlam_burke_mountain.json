@@ -1,0 +1,42 @@
+{
+  "address": "Unit 168 - 3637 Sheffield Avenue",
+  "city": "Coquitlam",
+  "sqft": 2233,
+  "year": 2026,
+  "price": 1568000,
+  "listPrice": 1568000,
+  "fee": 454,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 0,
+  "assessment": 1400000,
+  "description": "Come home to this spacious 4 bed 3.5 bath townhome at Polygon's Ridgewood in Coquitlam. This bright 2,233 sq. ft. home boasts overheight ceilings, laminate wood flooring, expansive windows and your own deck. The kitchen offers a central island, custom-designed cabinetry with extra wall pantry storage, sleek appliances and engineered stone countertops. The primary bedroom offers a large walk-in closet and the ensuite features a tub and spa shower with bench. Plus, enjoy a separate laundry room with built-in shelving upstairs, the convenience of a family room downstairs, and a heat pump air conditioning system. Visit our sales office and display homes at 3637 Sheffield Avenue, Coquitlam, open noon - 5pm daily (except Friday), to learn more",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "1.9 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "4.2 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "soldDate": "2026-02-24",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/168-3637-sheffield-avenue/home/MWBVyZ9PDwgYKemj?id_listing=6zqW7dKzqOpy5eZE",
+  "_scrapedAt": "2026-03-07T02:30:52.027Z",
+  "_rawFile": "168_3637_sheffield_avenue_coquitlam_burke_mountain.html"
+}

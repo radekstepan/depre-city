@@ -1,0 +1,36 @@
+{
+  "address": "Unit 8 - 19148 124 Avenue",
+  "city": "Pitt Meadows",
+  "sqft": 1474,
+  "year": 2002,
+  "price": 760000,
+  "listPrice": 774900,
+  "fee": 369,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 4647,
+  "assessment": 764000,
+  "description": "Level entry 3 BEDROOMS 3 BATHROOMS duplex-style townhouse in sought after Country Crossing! Family and pet friendly complex located on the North side of the train tracks. Large main floor w/ 9' CEILINGS, half BATHROOM,  OPEN CONCEPT living and dining room, cozy GAS FIREPLACE, kitchen w/ ISLAND & EAT-IN DINING area. Upper floor has 3 GENEROUS SIZED bedrooms, 2 FULL BATHROOMS and LAUNDRY ROOM. Large primary bedroom w/ WALK-IN CLOSET and ENSUITE bath. Fully fenced SW facing YARD w/ PATIO. Single car GARAGE. Additional parking stall available. PRIME WALKABLE LOCATION to shopping, restaurants, Highland Park Elementary and Rec centre. Easy access to Lougheed Hwy & Westcoast Express for commuters. 2 PETS.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Pitt Meadows Secondary",
+      "rating": 3.6,
+      "distance": "1.7 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Mid Meadows",
+  "soldDate": "2026-02-22",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/pitt-meadows-real-estate/8-19148-124-avenue/home/mZRW7nad6l9yEBO9?id_listing=J6Em7b92ejxyXBeq",
+  "_scrapedAt": "2026-03-07T02:29:50.072Z",
+  "_rawFile": "8_19148_124_avenue_pitt_meadows_mid_meadows.html"
+}

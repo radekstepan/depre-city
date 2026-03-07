@@ -1,0 +1,42 @@
+{
+  "address": "Unit 8 - 11580 Burnett Street",
+  "city": "Maple Ridge",
+  "sqft": 1463,
+  "year": 1991,
+  "price": 699900,
+  "listPrice": 699900,
+  "fee": 574,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3005,
+  "assessment": 706000,
+  "description": "Welcome to Cedar Estates in the heart of Maple Ridge! This beautifully updated 4 bed, 2.5 bath corner unit offers 1,463 sq ft of bright, functional living space perfect for growing families. Fresh designer paint, new carpets, modern lighting, and new ss appliances make this home move in ready. The chef-inspired kitchen opens to the dining & living area with a cozy gas fireplace. Thoughtful layout with spacious bedrooms and flexible space for a home office or playroom. Enjoy a large private backyard with patio ideal for kids, pets & entertaining. Rare 3 parking including a large driveway suitable for SUVs or trucks. Walking distance to elementary & high schools, parks, shopping, and transit. Minutes to Golden Ears Provincial Park. Great location for commuters. Open House Sat & Sun 2pm-4pm",
+  "features": [],
+  "schools": [
+    {
+      "name": "Thomas Haney Secondary",
+      "rating": 5.7,
+      "distance": "0.5 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Golden Ears Elementary",
+      "rating": 4.2,
+      "distance": "0.6 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "East Central",
+  "soldDate": "2026-02-13",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/8-11580-burnett-street/home/eQp5yO8Ex8b7d0ZE?id_listing=eVbOYENkJMKyx2P0",
+  "_scrapedAt": "2026-03-07T02:32:27.402Z",
+  "_rawFile": "8_11580_burnett_street_maple_ridge_east_central.html"
+}

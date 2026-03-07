@@ -1,0 +1,42 @@
+{
+  "address": "Unit 22 - 72 Jamieson Court",
+  "city": "New Westminster",
+  "sqft": 2713,
+  "year": 1991,
+  "price": 1110000,
+  "listPrice": 1199000,
+  "fee": 611,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4829,
+  "assessment": 1217000,
+  "description": "Spacious 2700sf Duplex Style Townhouse backing onto Glenbrook Ravine park! Fantastic opportunity to own a Large 3 Bed, 4 Bath, 3 Level, End-Unit Townhouse, w/ 2 car garage (+2 additional parking in front). Great location in the complex, backs onto greenbelt, w/ views of the Fraser River. Outdoor living w/ 3 Balconies, covered patio & private backyard. Beautifully updated kitchen & bathrooms, hardwood floors, lighting & brand new boiler. 3 Bed, 2 Bath Up. Walkout Basement w/ large Rec Room & Bath (w/ shower rough-in) leading to ground level patio/yard. Quiet, no through traffic, convenient access to parks, schools, shopping & transit. Building envelope upgrade (full rainscreen) scheduled for 2026, long-term peace of mind and enhanced future value!",
+  "features": [],
+  "schools": [
+    {
+      "name": "New Westminster Secondary",
+      "rating": 6.7,
+      "distance": "2.3 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Skwo:wech Elementary",
+      "rating": 6.5,
+      "distance": "1.2 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Fraserview NW",
+  "soldDate": "2026-02-24",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/new-westminster-real-estate/22-72-jamieson-court/home/02Zpj398ekO7DrK8?id_listing=J6Em7b9npmQyXBeq",
+  "_scrapedAt": "2026-03-07T02:28:14.541Z",
+  "_rawFile": "22_72_jamieson_court_new_westminster_fraserview_nw.html"
+}

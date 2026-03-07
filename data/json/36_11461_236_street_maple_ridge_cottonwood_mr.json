@@ -1,0 +1,36 @@
+{
+  "address": "Unit 36 - 11461 236 Street",
+  "city": "Maple Ridge",
+  "sqft": 2216,
+  "year": 2015,
+  "price": 970000,
+  "listPrice": 995000,
+  "fee": 501,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4380,
+  "assessment": 930000,
+  "description": "GREENBELT DREAMHOME! Step into the ultimate in privacy at 'Two Birds' by award winning Walmark Homes. This over 2200 s.f. unit is loaded with thoughtful upgrades and quality finishes. Side by Side double garage, entertainers dream stone island kitchen with gleaming white cabinets and stainless appliances including gas stove.  Open concept main floor with floor to ceiling and wall to wall windows taking full advantage of the permanent greenbelt.  Large deck with gas hookup. Three large bedrooms upstairs including over-sized primary also enjoying greenbelt outlook, walk in closet, and opulent 5 piece en-suite.  Basement offers a 4th bedroom, full bathroom and large recreation room with sliding glass doors out to large covered patio and fully fenced yard overlooking greenbelt.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Garibaldi Secondary",
+      "rating": 1.6,
+      "distance": "2.6 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Cottonwood MR",
+  "soldDate": "2026-02-17",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/36-11461-236th-street/home/EeVbOYElvj53x2P0?id_listing=56k97w0qkXn3KRjD",
+  "_scrapedAt": "2026-03-07T02:31:17.723Z",
+  "_rawFile": "36_11461_236_street_maple_ridge_cottonwood_mr.html"
+}

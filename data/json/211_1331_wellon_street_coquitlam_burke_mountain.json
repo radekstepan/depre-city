@@ -1,0 +1,42 @@
+{
+  "address": "Unit 211 - 1331 Wellon Street",
+  "city": "Coquitlam",
+  "sqft": 2549,
+  "year": 2025,
+  "price": 1498000,
+  "listPrice": 1498000,
+  "fee": 505,
+  "bedrooms": 4,
+  "bathrooms": 5,
+  "parking": 2,
+  "propertyTax": 0,
+  "assessment": 1701000,
+  "description": "Come home to this 4 bed 4.5 bath townhome at Polygon's Partington Creek. Be part of the vibrant Burke Mountain community and enjoy easy access to the future Burke Mountain Village. This bright 2,549 sq. ft. home boasts overheight main floor ceilings, large windows, and a deck off the kitchen. The kitchen features sleek appliances, stone countertops and an expansive island. Upstairs, find luxury with a spa-inspired ensuite and a separate laundry room with sink, and downstairs enjoy the addition of a recreation room plus flex space. Enjoy a side-by-side double-car garage equipped with level 2 EV charging, AC and access to the Creekside Club! Visit our sales office and three display homes at 3674 Victoria Drive to learn more.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "2.1 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "3.7 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "soldDate": "2026-02-19",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/211-1331-wellon-street/home/JRv53KDNPQxYVPW4?id_listing=JRv53KjDzq27VPW4",
+  "_scrapedAt": "2026-03-07T02:32:38.048Z",
+  "_rawFile": "211_1331_wellon_street_coquitlam_burke_mountain.html"
+}

@@ -1,0 +1,36 @@
+{
+  "address": "Unit 51 - 12268 189a Street",
+  "city": "Pitt Meadows",
+  "sqft": 1543,
+  "year": 1992,
+  "price": 847000,
+  "listPrice": 869900,
+  "fee": 564,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 5272,
+  "assessment": 858000,
+  "description": "Welcome to this beautifully updated 3 bed, 3 bath end unit offering space, style, & an unbeatable location. The fully renovated kitchen features updated cabinetry, countertops, modern backsplash, s/s appliances, & pot lights, all flowing seamlessly into a spacious dining room with matching custom built-in cabinets. Outside you'll find a large patio & yard, perfect for relaxing or entertaining. All bathrooms showcase updated flooring & contemporary vanities. The main floor offers a convenient powder room & a laundry room with added storage. Upstairs you’ll find three generous bedrooms & two full baths. Fresh paint throughout the home. Only a short walk to shops, restaurants, brewery, schools, parks, trails, & the West Coast Express—an ideal place to call home! Open House Sun Feb 22 3-5pm!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Pitt Meadows Secondary",
+      "rating": 3.6,
+      "distance": "1.6 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Central Meadows",
+  "soldDate": "2026-02-23",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/pitt-meadows-real-estate/51-12268-189a-street/home/xmZRW7nAwrMyEBO9?id_listing=XeEn7XK4jqqyrPo8",
+  "_scrapedAt": "2026-03-07T02:28:19.103Z",
+  "_rawFile": "51_12268_189a_street_pitt_meadows_central_meadows.html"
+}

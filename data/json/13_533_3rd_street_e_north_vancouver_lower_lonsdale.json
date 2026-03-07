@@ -1,0 +1,42 @@
+{
+  "address": "Unit 13 - 533 3rd Street E",
+  "city": "North Vancouver",
+  "sqft": 1839,
+  "year": 2019,
+  "price": 1550000,
+  "listPrice": 1550000,
+  "fee": 858,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4859,
+  "assessment": 1604000,
+  "description": "Welcome to Founders Block, a LEED Gold community by reputable developer Anthem Properties in the highly desirable Moodyville neighbourhood of North Vancouver. Arguably the nicest townhome in the complex, this exceptional south-west facing corner residence is flooded with natural light and positioned on the quiet side, offering panoramic city, water, and mountain views. This mint-condition 4-bedroom, 3-bath home features an open-concept layout with high ceilings, a stone island kitchen with gas range, radiant in-floor heating, office nook, upper laundry, oversized storage, a spa-like primary suite with walk-in closet and view deck, two secure parking stalls, and steps to Lower Lonsdale, the SeaBus, Moodyville Park, and The Shipyards.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sutherland Secondary",
+      "rating": 5.4,
+      "distance": "2.1 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Ridgeway Elementary",
+      "rating": 5.2,
+      "distance": "0.8 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Lower Lonsdale",
+  "soldDate": "2026-02-25",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/13-533-3rd-street-e/home/weQp5yOkezvyd0ZE?id_listing=EXrx30reGAWyOklN",
+  "_scrapedAt": "2026-03-07T02:29:17.430Z",
+  "_rawFile": "13_533_3rd_street_e_north_vancouver_lower_lonsdale.html"
+}

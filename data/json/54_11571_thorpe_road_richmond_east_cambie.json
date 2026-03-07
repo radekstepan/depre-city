@@ -1,0 +1,42 @@
+{
+  "address": "Unit 54 - 11571 Thorpe Road",
+  "city": "Richmond",
+  "sqft": 1257,
+  "year": 1996,
+  "price": 855000,
+  "listPrice": 888000,
+  "fee": 243,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 2858,
+  "assessment": 844000,
+  "description": "Welcome to this beautifully updated 3-Bed townhouse in the desirable West Cambie neighbourhood of Richmond! This spacious home offers 3 beds, 2.5 baths, and a functional layout ideal for families, first-time buyers, or investors. Enjoy the convenience of 1 enclosed garage plus 1 attached parking stall, providing ample space for vehicles and storage. The home features newly renovated bathrooms, newer S/S appliances, and well-maintained interior that is truly move-in ready. Thoughtful upgrades throughout deliver modern comfort and everyday convenience. This home is centrally located close to shopping, restaurants, parks, and has easy access to public transportation, making daily commuting simple and efficient. A rare and valuable upgrade--Level 2 EV charging installed with strata approval.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Kathleen McNeely Elementary",
+      "rating": 7,
+      "distance": "0.8 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Cambie Secondary",
+      "rating": 3.3,
+      "distance": "1.1 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "East Cambie",
+  "soldDate": "2026-02-17",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/54-11571-thorpe-road/home/BGMnKYqJnweyw1Qr?id_listing=4KAX7NDOA2PYeRPJ",
+  "_scrapedAt": "2026-03-07T02:31:20.594Z",
+  "_rawFile": "54_11571_thorpe_road_richmond_east_cambie.html"
+}

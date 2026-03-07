@@ -1,0 +1,42 @@
+{
+  "address": "Unit 29 - 15177 60 Avenue",
+  "city": "Surrey",
+  "sqft": 2267,
+  "year": 2016,
+  "price": 923000,
+  "listPrice": 928000,
+  "fee": 585,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4062,
+  "assessment": 974000,
+  "description": "Welcome to EVOQUE at Sullivan Station by Maskeen Group. This rare 2,267 sqft inside corner townhouse offers 4 bedrooms, 4 bathrooms and 4-car parking (double garage + driveway). Bright open-concept main floor features 9 ft ceilings, oversized windows, and a chef’s kitchen with Electrolux appliances, quartz countertops, large island, and built-in cabinetry. Energy-efficient geothermal heating & cooling, A/C, NuHeat in-floor heating, central vacuum, LED pot lights, motorized blinds, and staircase lighting. Upstairs includes 3 bedrooms with a primary ensuite featuring custom body sprays. Walk-out basement offers a 4th bedroom with ensuite, private yard, and separate entrance—ideal for in-laws. Prime location across from Sullivan Elementary, walking distance to transit, shopping and recreation",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sullivan Heights Secondary",
+      "rating": 5.5,
+      "distance": "1.5 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Sullivan Elementary",
+      "rating": 4.6,
+      "distance": "0.2 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Sullivan Station",
+  "soldDate": "2026-02-18",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/29-15177-60-avenue/home/0MWBVyZNEDkyKemj?id_listing=0A9X3j6Lp6m3vgxV",
+  "_scrapedAt": "2026-03-07T02:26:21.986Z",
+  "_rawFile": "29_15177_60_avenue_surrey_sullivan_station.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 1 - 4099 No. 4 Road",
+  "city": "Richmond",
+  "sqft": 1492,
+  "year": 2011,
+  "price": 950000,
+  "listPrice": 968000,
+  "fee": 328,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3347,
+  "assessment": 964000,
+  "description": "Welcome to this bright and spacious end-unit townhome offering 1,492 sq ft of well-designed living space in a convenient Richmond location. This 3-bedroom home features a functional layout ideal for families or professionals, with generous room sizes, air conditioning/ built in vacuum and excellent natural light throughout. Enjoy the added privacy of an end unit, plus a private patio perfect for outdoor relaxation or entertaining. A one-car garage provides secure parking and extra storage. Located along No. 4 Road with easy access to shopping, schools, parks, and transit, this townhome offers comfort, space, and everyday convenience in a central Richmond setting.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Tomsett Elementary",
+      "rating": 7.9,
+      "distance": "0.1 km",
+      "type": "0-7"
+    },
+    {
+      "name": "MacNeill Secondary",
+      "rating": 3.4,
+      "distance": "2.1 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "West Cambie",
+  "soldDate": "2026-02-23",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/1-4099-no-4-road/home/obqB176QNgdyZajD?id_listing=5VXv3l5XpWEYj2q8",
+  "_scrapedAt": "2026-03-07T02:30:02.277Z",
+  "_rawFile": "1_4099_no_4_road_richmond_west_cambie.html"
+}

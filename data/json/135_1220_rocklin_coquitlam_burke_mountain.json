@@ -1,0 +1,42 @@
+{
+  "address": "Unit 135 - 1220 Rocklin",
+  "city": "Coquitlam",
+  "sqft": 1610,
+  "year": 2020,
+  "price": 998000,
+  "listPrice": 1049999,
+  "fee": 339,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3760,
+  "assessment": 1088000,
+  "description": "Welcome to Rocklin on the Creek by Woodbridge Homes - a rare end-unit townhome backing onto a peaceful greenbelt. This bright home offers 3 bedrooms, 3 bathrooms, and approx. 1,610 sq. ft. of thoughtfully designed living space with. The main level features an open-concept layout with 9-ft ceilings, oversized windows, and a gourmet kitchen complete with stone/quartz counters, gas cooktop, KitchenAid appliances, custom cabinetry. Entertain effortlessly with a built-in bar and step out to a private fenced yard with patio and gas BBQ hookup. Upstairs includes three spacious bedrooms, a vaulted-ceiling primary with ensuite, and convenient laundry. Finished double garage with a flexible den/office or storage. Surrounded by trails and nature, yet minutes to schools, shopping, parks and recreation",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "0.9 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "2.7 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "soldDate": "2026-02-16",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/135-1220-rocklin/home/aD6p7812K6w3wRQr?id_listing=EXrx30rXl6nyOklN",
+  "_scrapedAt": "2026-03-07T02:28:11.964Z",
+  "_rawFile": "135_1220_rocklin_coquitlam_burke_mountain.html"
+}

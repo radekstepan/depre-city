@@ -1,0 +1,42 @@
+{
+  "address": "Unit 26 - 20335 70a Avenue",
+  "city": "Langley",
+  "sqft": 1457,
+  "year": 2025,
+  "price": 839900,
+  "listPrice": 839900,
+  "fee": 287,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "assessment": 922000,
+  "description": "Welcome to ADDITION, a collection of 87 3-bedroom plus rooftop townhomes perfectly situated between Willoughby + Willowbrook and developed by Redekop Ferrario Properties. This 3 bedroom home offers over 1,400 sqft of living space plus a 600 sqft rooftop patio and gated backyard. In the kitchen enjoy Samsung Kitchen appliances including a 36” fridge, gas range and convenient pantry. Premium features come standard including: Heat pump with Air Conditioning, finished gas barbecue connections and roughed-in EV car charging. Enjoy views above Langley from a spacious rooftop patio.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "2.1 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.1 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-22",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/26-20335-70a-avenue/home/jAXw7QwVAGzYQOzg?id_listing=wJKR7P98MDg3XeLP",
+  "_scrapedAt": "2026-03-07T02:29:55.264Z",
+  "_rawFile": "26_20335_70a_avenue_langley_willoughby_heights.html"
+}

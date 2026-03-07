@@ -1,0 +1,42 @@
+{
+  "address": "Unit 104 - 15850 85 Avenue",
+  "city": "Surrey",
+  "sqft": 1664,
+  "year": 2020,
+  "price": 915000,
+  "listPrice": 984000,
+  "fee": 343,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3708,
+  "assessment": 944000,
+  "description": "Welcome to Fleetwood Village! This beautiful END UNIT has 4 bedrooms, 4 bathrooms. The main floor features an elegant kitchen with stainless steel appliances and a large island, an open and bright living area with 9-foot ceilings, a convenient powder room, and a covered deck. Upstairs, three spacious bedrooms, including a primary suite with a walk-in closet and a luxurious ensuite bathroom. The lower level includes a versatile fourth bedroom with its own ensuite-ideal for guests, teenagers, or a home office and a double side-by-side garage. This unit has one of the most desirable locations in the complex. Located just steps from Fleetwood Park Village Shopping, recreation center, and the future 160 Street SkyTrain station, this home combines modern comfort with exceptional convenience.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Walnut Road Elementary",
+      "rating": 7.8,
+      "distance": "1.2 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Fleetwood Park Secondary",
+      "rating": 7,
+      "distance": "1.2 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Fleetwood Tynehead",
+  "soldDate": "2026-02-22",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/104-15850-85-avenue/home/wJKR7P8n9dv7XeLP?id_listing=B5bO3xxMMEd3kWVP",
+  "_scrapedAt": "2026-03-07T02:29:44.777Z",
+  "_rawFile": "104_15850_85_avenue_surrey_fleetwood_tynehead.html"
+}

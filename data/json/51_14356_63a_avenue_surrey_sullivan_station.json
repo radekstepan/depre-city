@@ -1,0 +1,42 @@
+{
+  "address": "Unit 51 - 14356 63a Avenue",
+  "city": "Surrey",
+  "sqft": 1510,
+  "year": 2011,
+  "price": 722500,
+  "listPrice": 749999,
+  "fee": 325,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3486,
+  "assessment": 797000,
+  "description": "Well Maintained Spacious & bright 3 Bed & 2.5 Bath. This beautiful home offers 9' ceilings, and upscale finishes including granite countertops, lighting fixtures, attractive flooring, stainless appliances & separate adjacent dining room with a Pantry. Comfy living room with fireplace & A Spacious Powder room on the Main Floor. Upstairs You Have a spacious master bedroom with an ensuite and two decent size bedrooms and a full bathroom. Tandem Garage Downstairs with plenty of Storage space. Private Backyard with Covered Concrete Pad. Centrally located with walking distance to Bell Centre, Shopping plaza, transit, both levels of schools Goldstone Elementary and Sullivan Heights secondary. OPEN HOUSE Sat Jan 24th, 2-4PM.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sullivan Heights Secondary",
+      "rating": 5.5,
+      "distance": "0.3 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Goldstone Park Elementary",
+      "rating": 5.3,
+      "distance": "0.5 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Sullivan Station",
+  "soldDate": "2026-02-01",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/51-14356-63a-avenue/home/oK8OgYBw4ZjyJmG2?id_listing=bEDRYazgjGly1VaB",
+  "_scrapedAt": "2026-03-07T02:30:54.735Z",
+  "_rawFile": "51_14356_63a_avenue_surrey_sullivan_station.html"
+}

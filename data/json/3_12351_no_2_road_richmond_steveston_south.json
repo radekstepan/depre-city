@@ -1,0 +1,42 @@
+{
+  "address": "Unit 3 - 12351 No. 2 Road",
+  "city": "Richmond",
+  "sqft": 1821,
+  "year": 2013,
+  "price": 1371000,
+  "listPrice": 1458000,
+  "fee": 472,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4628,
+  "assessment": 1363000,
+  "description": "Southpointe Cove - Large spacious South facing 4 Beds + 3.5 Baths townhome by Westmark Development Group. Walking distance to Steveston Village, Homma Elementary and McMath Secondary. This home feature: Spacious Open-concept layout w/9ft ceilings, Gas range, Side by Side Double Garage. Three Bedrooms up & the primary bedroom offers a walk-in closet. One bedroom down with in suite bathroom provide plenty of space for family, guests or a home office. Welcome to your future home. Open house Saturday Jan 24, from 1:00 to 3:00pm.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Tomekichi Homma Elementary",
+      "rating": 8,
+      "distance": "0.6 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Robert Alexander McMath Secondary",
+      "rating": 7.9,
+      "distance": "1.6 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Steveston South",
+  "soldDate": "2026-02-24",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/3-12351-no-2-road/home/x9w8o3mA2bd3GKjm?id_listing=AKv53DlNG4W3MnxB",
+  "_scrapedAt": "2026-03-07T02:32:24.885Z",
+  "_rawFile": "3_12351_no_2_road_richmond_steveston_south.html"
+}

@@ -1,0 +1,36 @@
+{
+  "address": "Unit 3 - 19696 Hammond Road",
+  "city": "Pitt Meadows",
+  "sqft": 1392,
+  "year": 2021,
+  "price": 805000,
+  "listPrice": 824900,
+  "fee": 360,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4969,
+  "assessment": 912000,
+  "description": "Welcome to Bonson! This former showhome offers premium upgrades and a central Pitt Meadows location steps to shopping, recreation and the West Coast Express. Bright and stylish with 10ft ceilings on the main, custom living room cabinetry, bistro-style dining room built-ins, and upgraded closet organizers throughout. The modern kitchen features sleek cabinetry, stainless appliances and a large island, opening to a spacious dining and living area. Enjoy a covered patio for year-round use. Three generous bedrooms up, plus a convenient bathroom on the main. A commuter’s dream with thoughtful design, natural light and contemporary finishes throughout.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Pitt Meadows Secondary",
+      "rating": 3.6,
+      "distance": "0.5 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "South Meadows",
+  "soldDate": "2026-02-19",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/pitt-meadows-real-estate/3-19696-hammond-road/home/oK8OgYBkGadyJmG2?id_listing=aQmD7z6npQA7J9Bo",
+  "_scrapedAt": "2026-03-07T02:31:31.593Z",
+  "_rawFile": "3_19696_hammond_road_pitt_meadows_south_meadows.html"
+}

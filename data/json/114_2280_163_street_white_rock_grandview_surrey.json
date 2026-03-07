@@ -1,0 +1,36 @@
+{
+  "address": "Unit 114 - 2280 163 Street",
+  "city": "White Rock",
+  "sqft": 2010,
+  "year": 2017,
+  "price": 999999,
+  "listPrice": 1039000,
+  "fee": 426,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3842,
+  "assessment": 994000,
+  "description": "Elevate your lifestyle in SOHO by Zenterra! Thoughtfully designed over 2,000SF + multiple outdoor spaces offering room to live, work, gather & relax at home. Modern kitchen w/exceptional storage, s/s appliances inc. gas range, quartz counters & center island. Open-concept design w/distinct living/dining areas incl. a west facing deck, fireplace statement wall w/built-ins & oversized patio door to the yard for seamless indoor-outdoor flow. Upstairs, a luxurious primary suite w/ensuite, 2 additional bdrms & main bath. Lower level offers versatile 4th bdrm/rec-rm, full bath & tons of storage. 600+SF ROOFTOP DECK! w/peekaboo ocean views, built-in BBQ, fridge & speakers. Perfect for entertaining! Dbl garage w/added storage.Club SOHO-fitness centre/party rm/playgrnd. Walk to Grandview amenities",
+  "features": [],
+  "schools": [
+    {
+      "name": "Earl Marriott Secondary",
+      "rating": 7.2,
+      "distance": "1.7 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Grandview Surrey",
+  "soldDate": "2026-02-20",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/white-rock-real-estate/114-2280-163-street/home/wJKR7P8RdBM7XeLP?id_listing=XeEn7XK48dMyrPo8",
+  "_scrapedAt": "2026-03-07T02:31:29.536Z",
+  "_rawFile": "114_2280_163_street_white_rock_grandview_surrey.html"
+}

@@ -1,0 +1,36 @@
+{
+  "address": "Unit 59 - 2955 156 Street",
+  "city": "Surrey",
+  "sqft": 1439,
+  "year": 2011,
+  "price": 775000,
+  "listPrice": 789000,
+  "fee": 342,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3557,
+  "assessment": 808000,
+  "description": "Welcome home! This bright and private 3 bed 3 bath end-unit home has been meticulously maintained and thoughtfully updated. Step into the main floor from your front door and you're greeted with 10’ ceilings and extra windows that fill the space with natural light. Enjoy the spacious living room with plenty of space to add a dining area. The open and bright kitchen features Fisher & Paykel appliances, flowing seamlessly to your private balcony- perfect for morning coffee or entertaining. Upstairs are 3 generous bdrms, two with greenbelt and garden views. Outside, enjoy a show stopping 850+ sqft private backyard! Giving plenty of space for kids, pets, gardening and gatherings and everything in between. All this in a prime location minutes from The Shops at Morgan, parks, schools, and Hwy 99!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sunnyside Elementary",
+      "rating": 5.8,
+      "distance": "1.0 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Grandview Surrey",
+  "soldDate": "2026-02-15",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/59-2955-156th-street/home/RdXze3eXDjO78m9K?id_listing=nbq6y12KRAB7o9DA",
+  "_scrapedAt": "2026-03-07T02:32:14.506Z",
+  "_rawFile": "59_2955_156_street_surrey_grandview_surrey.html"
+}

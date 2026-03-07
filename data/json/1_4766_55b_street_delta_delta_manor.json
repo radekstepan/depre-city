@@ -1,0 +1,42 @@
+{
+  "address": "Unit 1 - 4766 55b Street",
+  "city": "Delta",
+  "sqft": 1706,
+  "year": 2010,
+  "price": 926000,
+  "listPrice": 949000,
+  "fee": 506,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3688,
+  "assessment": 1021000,
+  "description": "Stunning end-unit townhome with side-by-side double garage in Manor Gardens! This beautiful home features 9-ft ceilings, crown mouldings, spa inspired bathrooms, Chef's Gourmet kitchen w/ granite counters, and an oversized east-facing deck. Upgrades include: Kitchen appliances, balcony floorings, NEW paint, LED lightings, hot-water tank, updated laminate/carpet throughout and newer washer/dryer. The Master bedroom features bay window, dual sinks and his and her walk-in closets! Two additional well sized bedrooms + full bath on the top floor; flexible 4th bedroom/rec room on the ground floor. Boutique 9-home complex minutes to Ladner Village, shops, parks in and transit. Quiet end location with abundant light. Pets/rentals friendly. Move-in ready & impeccably kept.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Delta Secondary",
+      "rating": 4.3,
+      "distance": "1.2 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Ladner Elementary",
+      "rating": 4.2,
+      "distance": "1.4 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Delta Manor",
+  "soldDate": "2026-02-14",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/delta-real-estate/1-4766-55b-street/home/BDO1w3WbGAl78Jg0?id_listing=Zaw5YojVoaV3n961",
+  "_scrapedAt": "2026-03-07T02:29:14.503Z",
+  "_rawFile": "1_4766_55b_street_delta_delta_manor.html"
+}

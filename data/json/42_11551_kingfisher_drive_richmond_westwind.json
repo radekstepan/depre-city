@@ -1,0 +1,42 @@
+{
+  "address": "Unit 42 - 11551 Kingfisher Drive",
+  "city": "Richmond",
+  "sqft": 1471,
+  "year": 1972,
+  "price": 840000,
+  "listPrice": 869000,
+  "fee": 487,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3291,
+  "assessment": 984200,
+  "description": "WESTWIND - 3 bdrm end unit, needs your updates and priced accordingly... inner quiet part of West Chelsea, a family friendly complex. Tucked away from the main road, this home enjoys a peaceful setting within the complex & backs onto greenspace with a sunny west-facing backyard, perfect for afternoon & evening enjoyment. Gas BBQ Hookup available. Side entrance gate convenient for kids to enjoy the amenities or take your dog for a walk. Gated backyard an option if desired. Loved by long-term owners, this home offers a spacious floor plan with entertainment-sized living and dining rooms and a large kitchen with eating area. The primary bedroom features a 2-piece ensuite, and plenty of storage throughout.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Steveston-London Secondary",
+      "rating": 7.8,
+      "distance": "1.6 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Westwind Elementary",
+      "rating": 7.2,
+      "distance": "0.2 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Westwind",
+  "soldDate": "2026-02-23",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 1,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/42-11551-kingfisher-drive/home/aQmD7znPBnO7J9Bo?id_listing=Z5BX32N1bOl3Dar0",
+  "_scrapedAt": "2026-03-07T02:26:49.311Z",
+  "_rawFile": "42_11551_kingfisher_drive_richmond_westwind.html"
+}

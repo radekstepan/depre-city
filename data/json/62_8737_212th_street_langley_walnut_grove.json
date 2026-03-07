@@ -1,0 +1,42 @@
+{
+  "address": "Unit 62 - 8737 212th Street",
+  "city": "Langley",
+  "sqft": 1597,
+  "year": 1989,
+  "price": 775000,
+  "listPrice": 814000,
+  "fee": 484,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 2716,
+  "assessment": 800000,
+  "description": "Desirable end unit townhome located in Chartwell Green, a sought-after 55+ gated community in Walnut Grove. This beautifully updated 3 bed, 2 bath townhome offers 1,597 sq ft with the Primary bedroom on the main floor. Features include a modernized kitchen, updated bathrooms, newer flooring, fresh paint, gas fireplace, and AC/heat pump for year-round comfort. Upper level offers flexible bedrooms or office space with full bath. Enjoy two private patios, one backing onto peaceful green space, plus a side-by-side double garage. Thoughtfully suited for power chair or mobility needs.  Well-managed complex with clubhouse, outdoor pool & recreation facilities. Prime location close to transit, shopping, parks, Fort Langley and easy Hwy 1 access!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Alex Hope Elementary",
+      "rating": 8.7,
+      "distance": "0.4 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Walnut Grove Secondary",
+      "rating": 7.3,
+      "distance": "0.9 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Walnut Grove",
+  "soldDate": "2026-02-24",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/62-8737-212th-street/home/BXeEn7XGklMyrPo8?id_listing=4KAX7NjzQgx7eRPJ",
+  "_scrapedAt": "2026-03-07T02:26:25.228Z",
+  "_rawFile": "62_8737_212th_street_langley_walnut_grove.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 1 - 135 13 Street E",
+  "city": "North Vancouver",
+  "sqft": 1652,
+  "year": 2025,
+  "price": 1799900,
+  "listPrice": 1799900,
+  "fee": 1244,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "assessment": 0,
+  "description": "Rare Townhouse Offering at Millennium Central Lonsdale! This brand new 3 bed, 3 bath home boasts 10 ft ceilings, generous living space, and a thoughtfully designed layout perfect for growing families. Enjoy the convenience of a private 2-car garage with direct access to the unit, plus abundant in-unit storage. High-end finishes throughout include premium Miele appliances, engineered hardwood flooring, air conditioning, and spa-inspired bathrooms. Located just steps from top-rated schools, parks, shopping, and dining in the vibrant Central Lonsdale neighbourhood. A perfect blend of comfort, luxury, and practicality in the heart of North Vancouver.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sutherland Secondary",
+      "rating": 5.4,
+      "distance": "1.4 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Ridgeway Elementary",
+      "rating": 5.2,
+      "distance": "0.8 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Central Lonsdale",
+  "soldDate": "2026-02-01",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/1-135-13-street-e/home/510QqypD0NeyLGlV?id_listing=aQmD7z6nM5r7J9Bo",
+  "_scrapedAt": "2026-03-07T02:34:03.911Z",
+  "_rawFile": "1_135_13_street_e_north_vancouver_central_lonsdale.html"
+}

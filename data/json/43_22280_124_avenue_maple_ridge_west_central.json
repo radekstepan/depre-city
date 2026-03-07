@@ -1,0 +1,42 @@
+{
+  "address": "Unit 43 - 22280 124 Avenue",
+  "city": "Maple Ridge",
+  "sqft": 1589,
+  "year": 1993,
+  "price": 715000,
+  "listPrice": 731500,
+  "fee": 455,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4731,
+  "assessment": 731000,
+  "description": "Rare 4-Bedroom Townhome in Hillside Terraces – West Maple Ridge. Opportunities like this don’t come up often. This rarely available 4-bedroom townhome is located in the highly sought-after Hillside Terraces community in West Maple Ridge, an area known for its quiet streets, established neighbourhood feel, and excellent access to schools, parks, and daily amenities. The home offers a functional and spacious layout ideal for families, downsizers who still want room, or anyone needing a true fourth bedroom for guests or a home office. Enjoy the comfort of gas forced-air heating and a cozy gas fireplace, providing efficient warmth and year-round comfort. A standout feature is the double side-by-side garage, offering excellent storage and everyday convenience—something rarely found in townhom",
+  "features": [],
+  "schools": [
+    {
+      "name": "Maple Ridge Secondary",
+      "rating": 4.7,
+      "distance": "0.8 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Alouette Elementary",
+      "rating": 3.3,
+      "distance": "0.4 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "West Central",
+  "soldDate": "2026-02-15",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/43-22280-124th-avenue-avenue/home/4KAX7NO4MN43eRPJ?id_listing=xLkv3V194lp7DBNr",
+  "_scrapedAt": "2026-03-07T02:29:47.310Z",
+  "_rawFile": "43_22280_124_avenue_maple_ridge_west_central.html"
+}

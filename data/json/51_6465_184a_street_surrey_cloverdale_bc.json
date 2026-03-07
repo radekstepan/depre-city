@@ -1,0 +1,36 @@
+{
+  "address": "Unit 51 - 6465 184a Street",
+  "city": "Surrey",
+  "sqft": 1407,
+  "year": 1997,
+  "price": 720000,
+  "listPrice": 739900,
+  "fee": 409,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 2959,
+  "assessment": 732000,
+  "description": "Welcome to Rosebury Lane. This quiet and fabulous end unit offers 3 large bdrms, 3 baths, a garage plus driveway parking, and backs onto peaceful greenspace. Enjoy an extra lrg yard and patio perfect for kids, pets, gardening, and entertaining.The upper level features 3 spacious bedrooms and 2 full bathrooms including a large primary suite with a walk in closet and plenty of storage. The main flr includes a convenient powder room, and 9 ft ceilings that create a bright open feel. The kitchen offers a roomy dining area with sliding doors leading directly to the patio. This family friendly complex ideally located close to schools, parks, shopping, transit, and the future SkyTrain. Roof is approx 7 years, fencing has been recently painted, brand new hot water tank. Open House Sat Feb 21 1-3",
+  "features": [],
+  "schools": [
+    {
+      "name": "Hillcrest Elementary",
+      "rating": 5.2,
+      "distance": "0.4 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Cloverdale BC",
+  "soldDate": "2026-02-21",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/51-6465-184a-street/home/owJKR7PPnBB7XeLP?id_listing=Vwod7vWrQMo35mGN",
+  "_scrapedAt": "2026-03-07T02:26:52.004Z",
+  "_rawFile": "51_6465_184a_street_surrey_cloverdale_bc.html"
+}

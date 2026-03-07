@@ -1,0 +1,42 @@
+{
+  "address": "Unit 14 - 20327 72b Avenue",
+  "city": "Langley",
+  "sqft": 2085,
+  "year": 2021,
+  "price": 1020000,
+  "listPrice": 1035000,
+  "fee": 308,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3704,
+  "assessment": 1064000,
+  "description": "Welcome to TRIBUTE, a contemporary home that blends modern luxury with effortless living. This elegant 4 bedroom, 3.5 bathroom residence offers 2,085 sq.ft. of thoughtfully designed living space, including separate living and family rooms. Refined finishes include sleek glass stair railings and a spa-inspired ensuite. The signature entertainment wall features a contemporary fireplace, custom built-in shelving, and integrated wire management—perfect for both everyday living and entertaining. The kitchen is equipped with a gas cooktop, French-door refrigerator, and a wall oven with an integrated microwave. Additional highlights include a double side-by-side garage and forced-air heating with A/C. Ideally located on a quiet street, the home is within walking distance to schools.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "1.7 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "0.7 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-15",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/14-20327-72b-avenue/home/2Zpj39E1lNO3DrK8?id_listing=XeEn7XK4xRoyrPo8",
+  "_scrapedAt": "2026-03-07T02:34:00.956Z",
+  "_rawFile": "14_20327_72b_avenue_langley_willoughby_heights.html"
+}

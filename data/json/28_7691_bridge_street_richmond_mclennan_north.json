@@ -1,0 +1,42 @@
+{
+  "address": "Unit 28 - 7691 Bridge Street",
+  "city": "Richmond",
+  "sqft": 1219,
+  "year": 2014,
+  "price": 1070000,
+  "listPrice": 1098000,
+  "fee": 333,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3714,
+  "assessment": 1073000,
+  "description": "Welcome to 'RIGA' – a well-maintained townhouse in central Richmond. Featuring 9’ ceilings, an open kitchen with granite counters, gas cooktop, and S/S appliances. Enjoy the cozy fireplace, designer color scheme, and crown moldings. Spacious bedrooms upstairs and a tandem double garage below. This quiet inside unit offers easy access to shopping, transit, and top schools like DeBeck Elementary and Palmer Secondary.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Palmer Secondary",
+      "rating": 8.1,
+      "distance": "0.9 km",
+      "type": "8-12"
+    },
+    {
+      "name": "DeBeck Elementary",
+      "rating": 7.2,
+      "distance": "0.7 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "McLennan North",
+  "soldDate": "2026-02-25",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/28-7691-bridge-street/home/damgL7AbG2L3Z1MW?id_listing=0A9X3j6PKxL3vgxV",
+  "_scrapedAt": "2026-03-07T02:27:09.724Z",
+  "_rawFile": "28_7691_bridge_street_richmond_mclennan_north.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 82 - 20038 70 Avenue",
+  "city": "Langley",
+  "sqft": 1400,
+  "year": 2008,
+  "price": 732500,
+  "listPrice": 774000,
+  "fee": 361,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2468,
+  "assessment": 720000,
+  "description": "Welcome to this Beautifully Updated 3 BED & 3 BATH HOME WITH A VERY LARGE EPOXY GARAGE + DRIVEWAY (3 PARKING SPOTS) located in the heart of Willoughby Heights! This Home is located in one of the best areas in the complex (Quiet and NO Units facing the kitchen and Primary Bedroom). Amazing layout with Laminate Flooring throughout the Entire Home, Freshly Painted, and New Lighting Fixtures. HUGE WINDOWS bringing in LOTS of NATURAL SUNLIGHT. Very SPACIOUS Bedrooms upstairs. This prime location is close to EVERYTHING, Steps to schools, Grocery, Parks, Recreation, Transit, HWY and MUCH MORE! Ample Parking throughout entire complex PLUS HUGE BONUS - DRIVEWAY large enough for a Truck. Low Strata Fees!",
+  "features": [],
+  "schools": [
+    {
+      "name": "R C Garnett Demonstration Elementary",
+      "rating": 5.8,
+      "distance": "0.4 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.4 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-14",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/82-20038-70-avenue/home/zVwod7vnXdp75mGN?id_listing=dXze3eeKp4o38m9K",
+  "_scrapedAt": "2026-03-07T02:31:08.689Z",
+  "_rawFile": "82_20038_70_avenue_langley_willoughby_heights.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 80 - 7640 197 Street",
+  "city": "Langley",
+  "sqft": 1552,
+  "year": 2023,
+  "price": 910000,
+  "listPrice": 919000,
+  "fee": 248,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2903,
+  "assessment": 1002000,
+  "description": "This well-designed corner unit townhome at NEWBURY offers two levels of living space with a layout that truly feels like a single-family home. The main floor features 10-foot ceilings, while the second level offers 9-foot ceilings throughout, creating a bright and open atmosphere. All bedrooms are generously sized with highly functional layouts.   Enjoy excellent privacy, with the front of the home facing a landscaped garden and community mailbox area, and the rear backing onto a large detached single-family home set well away. A walk-out main floor patio extends the living space outdoors, while the spacious upper-level loft provides flexibility for a home office or additional living area. Ample storage throughout and a side-by-side double garage complete this comfortable and modern home.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "2.1 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.0 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-12",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/80-7640-197-street/home/xLkv3V9Vwom7DBNr?id_listing=wJKR7P9N6eB3XeLP",
+  "_scrapedAt": "2026-03-07T02:28:03.257Z",
+  "_rawFile": "80_7640_197_street_langley_willoughby_heights.html"
+}

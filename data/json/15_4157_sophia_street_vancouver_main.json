@@ -1,0 +1,36 @@
+{
+  "address": "Unit 15 - 4157 Sophia Street",
+  "city": "Vancouver",
+  "sqft": 1358,
+  "year": 1990,
+  "price": 1575000,
+  "listPrice": 1485000,
+  "fee": 655,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 3920,
+  "assessment": 1294000,
+  "description": "This is the one you've been waiting for! Rarely available: 3-bed, 2-bath, fully renovated townhome in Empress Court. Situated on a quiet, tree-lined street just steps from Main Street, this home has been fully updated and checks all the boxes. The entry level has been tastefully updated, with ample storage space. The main level fts. bamboo floors, a beautifully updated kitchen and sitting area, a large open living room and a deck. There's also a bedroom and a fully updated bathroom. Up you will find 2 more bedrooms, another full bath w/ double shower and an additional 2 outdoor decks. The best of Main St is all within walking distance. Homes in the complex do not often come to market. Bonus: 2 parking stalls! Pets and Rentals OK.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sir Charles Tupper Secondary",
+      "rating": 3.7,
+      "distance": "0.4 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Main",
+  "soldDate": "2026-02-24",
+  "parkingType": "underground",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/15-4157-sophia-street/home/obqB176jnoW7ZajD?id_listing=AKv53DxlqOJ3MnxB",
+  "_scrapedAt": "2026-03-07T02:32:55.714Z",
+  "_rawFile": "15_4157_sophia_street_vancouver_main.html"
+}

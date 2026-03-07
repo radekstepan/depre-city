@@ -1,0 +1,42 @@
+{
+  "address": "Unit 6 - 20849 78b Avenue",
+  "city": "Langley",
+  "sqft": 1364,
+  "year": 2018,
+  "price": 768000,
+  "listPrice": 785000,
+  "fee": 313,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2716,
+  "assessment": 804000,
+  "description": "Bright 4 bed, 3 bath townhouse with double SIDE-BY-SIDE GARAGE with EV charger  PLUS DRIVEWAY—PARKING FOR 4! Enjoy exceptional privacy with no directly facing units, offering an open outlook and abundant natural light. Open-concept main floor featuring 10’ ceilings and oversized windows. Spacious living and dining areas flow seamlessly for everyday living and entertaining. Primary bedroom boasts vaulted ceilings for added space and charm. Steps to Willoughby Town Centre, Richard Bulpitt Elementary, Yorkson Creek Middle School, and R.E. Mountain Secondary School. Hwy 1 just minutes away. Call now!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Richard Bulpitt Elementary",
+      "rating": 5.8,
+      "distance": "0.3 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.4 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-22",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/6-20849-78b-avenue/home/aQmD7zndKMZ7J9Bo?id_listing=B5bO3x8xZWk3kWVP",
+  "_scrapedAt": "2026-03-07T02:27:07.607Z",
+  "_rawFile": "6_20849_78b_avenue_langley_willoughby_heights.html"
+}

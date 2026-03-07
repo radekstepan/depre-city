@@ -1,0 +1,36 @@
+{
+  "address": "8132 Laval Place",
+  "city": "Vancouver",
+  "sqft": 1594,
+  "year": 1980,
+  "price": 765000,
+  "listPrice": 838000,
+  "fee": 400,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 2382,
+  "assessment": 717000,
+  "description": "Very affordable and big square footage! Lots of upgrades in recent years. Welcome to this beautifully maintained three level home, perfect for a young family! Featuring 3 or 4 bedrooms and 3 bathrooms, this bright and spacious unit offers flexible living space to suit your needs! Enjoy a large, private, sunny, south facing patio - ideal for relaxing or entertaining! Located in a well kept, family friendly complex in desirable Champlain Heights, close to parks, schools and transit. Nearby Elementary Schools, Killarney High School,Champlain Mall and Metrotown nearby. Carport right out front!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Killarney Secondary",
+      "rating": 5.4,
+      "distance": "1.9 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Champlain Heights",
+  "soldDate": "2026-02-25",
+  "parkingType": "carport",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/8132-laval-place/home/VaD6p78Q1Vw3wRQr?id_listing=XRla7gBbgBryjEvL",
+  "_scrapedAt": "2026-03-07T02:26:41.283Z",
+  "_rawFile": "8132_laval_place_vancouver_champlain_heights.html"
+}

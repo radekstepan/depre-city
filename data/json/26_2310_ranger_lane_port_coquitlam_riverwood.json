@@ -1,0 +1,42 @@
+{
+  "address": "Unit 26 - 2310 Ranger Lane",
+  "city": "Port Coquitlam",
+  "sqft": 1810,
+  "year": 2014,
+  "price": 1190000,
+  "listPrice": 1249000,
+  "fee": 472,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3874,
+  "assessment": 1085000,
+  "description": "4BED/4BATH CORNER/END UNIT FACING PARK & GREENBELT IN FREMONT! This spacious home features open-concept main living space and pantry in kitchen, 9' ceiling living room, dining area, and a powder room. Upstairs are primary bdrm facing greenbelt with ensuite, 2 generously sized bdrms for kids while the lower level includes a 4th bdrm w/ full ensuite bath, ideal for guests, in-laws, or home office. Enjoy plenty of natural light and greenery coming in through extra-large sliding door on the main level leading out to balcony, and stone patio and fenced yard on lower floor. Easy access to Hwy 1 via Mary Hill, Bus to Coquitlam Ctr, SkyTrain, Westcoast Exp. Essentials incl. Walmart, Costco, banks, shops, and restaurants. Side-by-Side Dbl Garage w/ EV Charging! Photos taken when staged.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Blakeburn Elementary",
+      "rating": 6.5,
+      "distance": "1.4 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "1.7 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Riverwood",
+  "soldDate": "2026-02-21",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/26-2310-ranger-lane/home/aQmD7zn2nwZ7J9Bo?id_listing=VLaGyG02n9a7W1ZD",
+  "_scrapedAt": "2026-03-07T02:33:57.966Z",
+  "_rawFile": "26_2310_ranger_lane_port_coquitlam_riverwood.html"
+}

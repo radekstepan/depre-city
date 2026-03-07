@@ -1,0 +1,42 @@
+{
+  "address": "Unit 17 - 14057 60a Avenue",
+  "city": "Surrey",
+  "sqft": 1775,
+  "year": 2018,
+  "price": 850000,
+  "listPrice": 899000,
+  "fee": 355,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3649,
+  "assessment": 934000,
+  "description": "Welcome to this spacious split-level 4BR/4BA townhome at Summit in Sullivan Station! With 1,785 sq. ft., this home combines comfort and thoughtful design, featuring 11-ft ceilings in the great room with hand-painted wall decor, custom millwork, and fully finished closets. The bright kitchen includes an oversized quartz island, gas range, and built-in wine fridge. Enjoy year-round comfort with A/C, plus a side-by-side garage with EV charger and convenient street access. A lower-level bedroom with ensuite is perfect for guests or a home office. The private rooftop patio with gas hookup offers plenty of space for family gatherings with mountain views. Centrally location near Highway 10 and within walking distance to schools and daycare.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sullivan Heights Secondary",
+      "rating": 5.5,
+      "distance": "0.9 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Woodward Hill Elementary",
+      "rating": 3.8,
+      "distance": "0.4 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Sullivan Station",
+  "soldDate": "2026-02-17",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/17-14057-60a-avenue/home/L4KAX7NG8pO3eRPJ?id_listing=eQp5yOw80PGyd0ZE",
+  "_scrapedAt": "2026-03-07T02:31:00.265Z",
+  "_rawFile": "17_14057_60a_avenue_surrey_sullivan_station.html"
+}

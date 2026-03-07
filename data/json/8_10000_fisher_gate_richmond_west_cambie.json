@@ -1,0 +1,42 @@
+{
+  "address": "Unit 8 - 10000 Fisher Gate",
+  "city": "Richmond",
+  "sqft": 1957,
+  "year": 1994,
+  "price": 1028800,
+  "listPrice": 1048000,
+  "fee": 547,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4224,
+  "assessment": 1258000,
+  "description": "This Court-Ordered Foreclosure Sale is your chance to own a standout home in Alderbridge Estates—one of Richmond’s most desirable family neighborhoods. With nearly 2,000 sq ft of living space, this 4-bedroom townhome feels more like a detached house. The only shared wall is at the double side-by-side garage, offering added privacy and quiet. Inside, the layout is bright and spacious, with a fenced backyard right off the kitchen and dining area—perfect for outdoor entertaining or a safe play area for kids. Upstairs features four well-sized bedrooms, a large laundry and storage room, and ample closet space throughout. Just minutes from Tomsett Elementary, parks, shopping, and everyday amenities. Homes like this rarely hit the market—don’t miss your opportunity. Thank you, Luke",
+  "features": [],
+  "schools": [
+    {
+      "name": "Tomsett Elementary",
+      "rating": 7.9,
+      "distance": "0.6 km",
+      "type": "0-7"
+    },
+    {
+      "name": "MacNeill Secondary",
+      "rating": 3.4,
+      "distance": "1.5 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "West Cambie",
+  "soldDate": "2026-02-03",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/8-10000-fisher-gate/home/ZxwR7MwErexYKabB?id_listing=6zqW7dza4lPY5eZE",
+  "_scrapedAt": "2026-03-07T02:28:39.532Z",
+  "_rawFile": "8_10000_fisher_gate_richmond_west_cambie.html"
+}

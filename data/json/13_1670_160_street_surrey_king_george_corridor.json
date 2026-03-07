@@ -1,0 +1,42 @@
+{
+  "address": "Unit 13 - 1670 160 Street",
+  "city": "Surrey",
+  "sqft": 1846,
+  "year": 2019,
+  "price": 888000,
+  "listPrice": 899900,
+  "fee": 380,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4028,
+  "assessment": 1006000,
+  "description": "A premier townhome complex by Mortise Group. This 3-level townhouse features 4 Bedrooms + 4 Bathrooms, contemporary design elements including quartz counters, Frigidaire S/S appliances, gas range, fireplace, wide-plank laminate flooring & airy 9' ceilings. Home is equipped with A/C, built-in Control4 Bluetooth speakers on all floors & central vacuum. Covered patio w/ gas hook-up off the kitchen area is perfect for BBQing + entertaining. Double garage offers epoxy flooring + bonus storage room. EXCEPTIONAL PRIVACY! No neighbours front or back! Lovely fenced backyard. Central location, close to grocery stores, schools, parks, restaurants, & more. Easy access to king George Blvd. Highway 99 & Canada/USA border.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Earl Marriott Secondary",
+      "rating": 7.2,
+      "distance": "0.5 km",
+      "type": "8-12"
+    },
+    {
+      "name": "South Meridian Elementary",
+      "rating": 4.7,
+      "distance": "0.8 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "King George Corridor",
+  "soldDate": "2026-02-08",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/13-1670-160-street/home/MB5bO3xPb5l3kWVP?id_listing=VLaGyG0Nd5A7W1ZD",
+  "_scrapedAt": "2026-03-07T02:31:02.931Z",
+  "_rawFile": "13_1670_160_street_surrey_king_george_corridor.html"
+}

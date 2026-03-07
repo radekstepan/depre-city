@@ -1,0 +1,42 @@
+{
+  "address": "Unit 142 - 15111 Edmund Drive",
+  "city": "Surrey",
+  "sqft": 1374,
+  "year": 2020,
+  "price": 765000,
+  "listPrice": 799000,
+  "fee": 328,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2980,
+  "assessment": 772000,
+  "description": "WALKABLE LOCATION. Welcome to Townsend.This bright 3 bedroom 1374 sqft home features stylish laminate flooring, updated lighting, custom woodwork, a convenient main floor powder room & private deck off the dining room.Gourmet kitchen features custom cabinetry, stainless steel appliances, a spacious island w/ engineered stone countertops.The primary bedroom offers a large walk through closet & a luxurious ensuite with a spa shower. 9 ft ceilings, lots of natural light. Tandem garage offers options. 5900sqft of incredible resort style amenities ! A great room lounge, a teen lounge area,  indoor kids play area, party room, outdoor workout area & dog wash. Steps from the YMCA, shopping &restaurants. Great for commuters with quick access to major routes.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sullivan Heights Secondary",
+      "rating": 5.5,
+      "distance": "1.7 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Sullivan Elementary",
+      "rating": 4.6,
+      "distance": "0.7 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Sullivan Station",
+  "soldDate": "2026-02-20",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/142-15111-edmund-drive/home/x9w8o3mQRZz3GKjm?id_listing=1DBW7RrDBgQ7qlAp",
+  "_scrapedAt": "2026-03-07T02:29:23.630Z",
+  "_rawFile": "142_15111_edmund_drive_surrey_sullivan_station.html"
+}

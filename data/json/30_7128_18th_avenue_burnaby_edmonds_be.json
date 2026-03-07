@@ -1,0 +1,42 @@
+{
+  "address": "Unit 30 - 7128 18th Avenue",
+  "city": "Burnaby",
+  "sqft": 1438,
+  "year": 1995,
+  "price": 952000,
+  "listPrice": 965000,
+  "fee": 375,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 2738,
+  "assessment": 974000,
+  "description": "Welcome to Windsor Gate! Rarely available bright 3-level, 3-bedroom, 3-bathroom townhome in a quiet, gated community offering comfort, privacy, and convenience. The main floor features an open-concept living and dining area with a cozy gas fireplace, a large kitchen that opens to the front patio, and a private fenced backyard—perfect for kids, pets, or entertaining. The second level includes two spacious bedrooms, a full bathroom, and a laundry room.  The top floor boasts a private primary suite with a walk-in closet, ensuite, and its own balcony with peaceful forest views. Enjoy both a gated front entrance and backyard in a well-maintained complex located in an amazing neighbourhood—just a 10-minute walk to SkyTrain",
+  "features": [],
+  "schools": [
+    {
+      "name": "Taylor Park Elementary",
+      "rating": 8.3,
+      "distance": "0.9 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Byrne Creek Community Secondary",
+      "rating": 1.9,
+      "distance": "0.8 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Edmonds BE",
+  "soldDate": "2026-01-31",
+  "parkingType": "underground",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/30-7128-18th-avenue/home/5VXv3lX8wGw3j2q8?id_listing=Xawjy4NWr1m3rR18",
+  "_scrapedAt": "2026-03-07T02:32:35.798Z",
+  "_rawFile": "30_7128_18th_avenue_burnaby_edmonds_be.html"
+}

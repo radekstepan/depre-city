@@ -1,0 +1,42 @@
+{
+  "address": "Unit 15 - 9045 Walnut Grove Drive",
+  "city": "Langley",
+  "sqft": 1498,
+  "year": 1989,
+  "price": 809000,
+  "listPrice": 829900,
+  "fee": 528,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 2579,
+  "assessment": 748000,
+  "description": "Welcome to this beautifully updated townhome in the Bridlewoods! This 3 bedroom/ 3 bathroom 2-storey home is thoughtfully renovated with modern finishings. Enjoy the refreshed living space with New windows (2023), updated lighting and the popcorn ceiling smoothed for a clean look. Completely repainted and New laminate flooring throughout. The bathrooms have been tastefully upgraded including the main bath with new flooring, vanity & fully remodeled powder room. Other features include a gas fireplace, New hot water tank (2024), New kitchen faucet and single car garage w/ a 2nd parking spot out front. With an amazing central Walnut Grove location this one is a must see!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Walnut Grove Secondary",
+      "rating": 7.3,
+      "distance": "0.4 km",
+      "type": "8-12"
+    },
+    {
+      "name": "James Kennedy Elementary",
+      "rating": 5.6,
+      "distance": "0.1 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Walnut Grove",
+  "soldDate": "2026-02-24",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/15-9045-walnut-grove-drive/home/EeVbOYEn5rnyx2P0?id_listing=XeEn7XK4WovyrPo8",
+  "_scrapedAt": "2026-03-07T02:27:00.466Z",
+  "_rawFile": "15_9045_walnut_grove_drive_langley_walnut_grove.html"
+}

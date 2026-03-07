@@ -1,0 +1,36 @@
+{
+  "address": "Unit 7 - 7300 Ledway Road",
+  "city": "Richmond",
+  "sqft": 1470,
+  "year": 1977,
+  "price": 875000,
+  "listPrice": 879800,
+  "fee": 498,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 3212,
+  "assessment": 953000,
+  "description": "End unit two level 1470sf townhome in  a family friendly quiet area! Main floor living, large living room with engineered wood floors opens onto dining area with sliding doors to private yard. Kitchen is spacious, window overlooking side yard and has adjacent eating area. Three bedrooms on upper floor, primary bedroom has a completely private south exposed deck, cheater ensuite via walk in closet (could be two bathrooms!). Main floor 2pc freshly updated, main second floor  bathroom updated 2020-caesrstone countertop, soaker tub/shower. Private garden patio with newer fencing has north/west exposure- enjoy the sunsets! Lots of common green space,two parking stalls,one covered+ storage 5'x10'. Main fees $498/mo. Located across from McKay Elementary, steps to parks, amenities and transit!",
+  "features": [],
+  "schools": [
+    {
+      "name": "J N Burnett Secondary",
+      "rating": 7.9,
+      "distance": "0.6 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Granville",
+  "soldDate": "2026-02-21",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/7-7300-ledway-road/home/zVwod7vvGg875mGN?id_listing=9w8o3mj4gvkYGKjm",
+  "_scrapedAt": "2026-03-07T02:28:16.553Z",
+  "_rawFile": "7_7300_ledway_road_richmond_granville.html"
+}

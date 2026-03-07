@@ -1,0 +1,42 @@
+{
+  "address": "Unit 102 - 1176 Falcon Drive",
+  "city": "Coquitlam",
+  "sqft": 1389,
+  "year": 1988,
+  "price": 815000,
+  "listPrice": 799000,
+  "fee": 312,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2815,
+  "assessment": 748300,
+  "description": "Rarely Available almost 1,400 sq.ft. Townhome in Eagle Ridge! Step inside to find Vaulted Ceilings, Large Living/Dining areas that easily fit big furniture, a Gas Fireplace & direct access to a Private Patio and Fenced Backyard. The Kitchen offers Quartz Countertops, Ample Cabinetry & Breakfast Nook. A Powder Room, Laundry & Storage complete the main floor. Above has a generous Primary Suite with three-piece ensuite, plus 2 additional bedrooms, one with a private deck, & a full main bath. Includes 2 covered parking stalls in this well-maintained & self-managed complex w/ low fees. Updates: roof (2024), furnace (2020), hot water tank (2023), and leveled backyard with artificial grass (2024). Steps to schools, parks, trails, shops, and transit. Open House Next Sat/Sun Feb 14th/15th 2-4pm!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Gleneagle Secondary",
+      "rating": 6.6,
+      "distance": "1.0 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Eagle Ridge Elementary",
+      "rating": 6.4,
+      "distance": "0.4 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Eagle Ridge CQ",
+  "soldDate": "2026-02-16",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/102-1176-falcon-drive/home/6VLaGyGpkGA7W1ZD?id_listing=9w8o3mj480ZYGKjm",
+  "_scrapedAt": "2026-03-07T02:32:40.714Z",
+  "_rawFile": "102_1176_falcon_drive_coquitlam_eagle_ridge_cq.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 9 - 6588 195a Street",
+  "city": "Surrey",
+  "sqft": 1972,
+  "year": 2013,
+  "price": 903800,
+  "listPrice": 938888,
+  "fee": 437,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3515,
+  "assessment": 894000,
+  "description": "ZEN by Zenterra offers a premium, 2,000 sq. ft. 4-bed/4-bath townhome designed for modern living. This turn-key residence features a gourmet kitchen with a gas cooktop, double wall ovens, a wine fridge, and a new garbage disposal. Recent 2022/2024 updates include refreshed lighting, new stair carpeting, and upgraded laminate flooring throughout the upper level and basement.The layout is highly functional, featuring a lower-level bedroom and full bath perfect for guests or teens. Parking is a standout with a double side-by-side garage, EV charger, and apron parking. Outdoor living includes a large balcony with a gas BBQ hookup. Located in a top-tier community with clubhouse amenities, it’s walking distance to schools, shopping, and the future SkyTrain extension. High-end West Coast style.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Clayton Heights Secondary",
+      "rating": 4.5,
+      "distance": "1.8 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Katzie Elementary",
+      "rating": 3.9,
+      "distance": "0.7 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Clayton",
+  "soldDate": "2026-02-20",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/9-6588-195a-street/home/nbq6y10mrrPYo9DA?id_listing=XRla7gBblGXyjEvL",
+  "_scrapedAt": "2026-03-07T02:32:19.423Z",
+  "_rawFile": "9_6588_195a_street_surrey_clayton.html"
+}

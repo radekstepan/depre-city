@@ -1,0 +1,36 @@
+{
+  "address": "Unit 39 - 2453 163 Street",
+  "city": "Surrey",
+  "sqft": 2600,
+  "year": 2009,
+  "price": 1220000,
+  "listPrice": 1199000,
+  "fee": 628,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4915,
+  "assessment": 1233000,
+  "description": "Exceptionally maintained executive corner townhome in prestigious Azure West! Rare 2,600 sq.ft. end unit with extra windows, abundant natural light and added privacy, offering a detached-home feel. Spacious 2-storey with basement layout featuring 3 bedrooms, rec room and 4 baths. Bright open living areas, hardwood floors and a gourmet kitchen with granite counters. Brand new kitchen appliances (range hood, dishwasher, oven & French-door fridge), all approx. 1 year old. Sunny private patio, fenced yard and side-by-side double garage. Prime South Surrey Grandview location, walking distance to parks, top schools and shops. Perfect for families!Perfect for families!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Earl Marriott Secondary",
+      "rating": 7.2,
+      "distance": "2.0 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Grandview Surrey",
+  "soldDate": "2026-02-11",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/39-2453-163-street/home/GMnKYqppxeR3w1Qr?id_listing=mZRW7nW2aoo3EBO9",
+  "_scrapedAt": "2026-03-07T02:27:05.699Z",
+  "_rawFile": "39_2453_163_street_surrey_grandview_surrey.html"
+}

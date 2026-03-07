@@ -1,0 +1,42 @@
+{
+  "address": "Unit 1 - 252 13th Street W",
+  "city": "North Vancouver",
+  "sqft": 2058,
+  "year": 2001,
+  "price": 1490000,
+  "listPrice": 1499900,
+  "fee": 250,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 4659,
+  "assessment": 1497000,
+  "description": "Perfect time to fall in love.  Just in time for Valentine's!  Immaculate townhouse style front, end unit in 3-plex offers 3 oversize bedrooms, 2.5 baths, fully finished basement for additional bedrooms, office, hobby room, play room, gym, media room or adjust as life dictates.  PLUS private garage with additional storage & second parking pad, a southerly fenced yard, a kitchen window & a king-size primary suite with walk-in closet, ensuite with soaker tub plus separate shower & private deck showcasing harbour, mountain & sunset views.  Complex is well managed, with super low fees.  $250/mo covers gas for stove & f/p plus common area utilities & insurance.  Unit features stainless apps, quartz counters, designer blinds & closet organizers, heated bath floors & more.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Carson Graham Secondary",
+      "rating": 4.1,
+      "distance": "1.0 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Queen Mary Community Elementary",
+      "rating": 3,
+      "distance": "0.2 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Central Lonsdale",
+  "soldDate": "2026-02-19",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/1-252-13th-street-w/home/0J6Em7bjZQg7XBeq?id_listing=JRv53KjpAw47VPW4",
+  "_scrapedAt": "2026-03-07T02:32:45.007Z",
+  "_rawFile": "1_252_13th_street_w_north_vancouver_central_lonsdale.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "5857 Mayview Circle",
+  "city": "Burnaby",
+  "sqft": 1888,
+  "year": 1979,
+  "price": 1182000,
+  "listPrice": 1195000,
+  "fee": 597,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3545,
+  "assessment": 1158500,
+  "description": "Beautifully renovated 3 bed, 3 bath duplex-style townhouse in serene One Arbourlane! Gorgeously renovated kitchen with Merit cabinets, quartz countertops, and charming balcony perfect for your BBQ. Beautiful engineered hardwood floors throughout main. Cozy living room with gas fireplace, opening out to immaculately landscaped and paved patio surrounded by greenery. Fully finished basement with flex room, can be used as a 4th bedroom/fitness room, etc. Lots of storage and connected to large double car garage. Amenities include clubhouse with indoor pool, sauna, and party room. Nearby Burnaby Lake & Deer Lake parks, with quick access to Metrotown, the Highway and transit. Top school catchments of Buckingham Elementary & Burnaby Central Secondary.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Buckingham Elementary",
+      "rating": 8.3,
+      "distance": "0.5 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Burnaby Central Secondary",
+      "rating": 5.7,
+      "distance": "1.6 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Burnaby Lake",
+  "soldDate": "2026-02-24",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/5857-mayview-circle/home/JKdOYrGN1lqy54lW?id_listing=aD6p7801Ge67wRQr",
+  "_scrapedAt": "2026-03-07T02:26:33.628Z",
+  "_rawFile": "5857_mayview_circle_burnaby_burnaby_lake.html"
+}

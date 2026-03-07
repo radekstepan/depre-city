@@ -1,0 +1,42 @@
+{
+  "address": "Unit 49 - 1370 Riverwood Gate",
+  "city": "Port Coquitlam",
+  "sqft": 1695,
+  "year": 1996,
+  "price": 1040000,
+  "listPrice": 1059900,
+  "fee": 393,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3773,
+  "assessment": 1107000,
+  "description": "Welcome to Addington Gate.This 3 bedroom + Den End Unit has it all.Perfect for all ages.Spacious well cared for home has been extensively updated & feat newer vinyl floors throughout,fresh paint incl ceiling, updated kitchen with raised white European Style cabinetry & newer island,custom tile backsplash,gas range,SS Appliances,A/C, double side by side garage with custom decorative Polyaspartic floor,3 updated bathrooms incl 4 pc ensuite,vaulted ceiling,Tankless Hot Water on Demand,dramatic gas f/p,new fixtures,gas BBQ hookup,nice patio area with flowers & shrubs + much more.Prime Poco location minutes to Terry Fox Secondary,Blakeburn Lagoons Park & Elementary,Costco,West Coast Express, transportation, Nature Trails,Minnekhada Regional Park & all amenities.Don't miss this opportunity.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Blakeburn Elementary",
+      "rating": 6.5,
+      "distance": "0.7 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "0.2 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Riverwood",
+  "soldDate": "2026-02-15",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-coquitlam-real-estate/49-1370-riverwood-gate/home/dXawjy4jdd63rR18?id_listing=wJKR7P9NQzM3XeLP",
+  "_scrapedAt": "2026-03-07T02:29:26.068Z",
+  "_rawFile": "49_1370_riverwood_gate_port_coquitlam_riverwood.html"
+}

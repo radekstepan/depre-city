@@ -1,0 +1,42 @@
+{
+  "address": "Unit 37 - 15454 32 Avenue",
+  "city": "Surrey",
+  "sqft": 2099,
+  "year": 2009,
+  "price": 1150000,
+  "listPrice": 1225000,
+  "fee": 449,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3941,
+  "assessment": 1027000,
+  "description": "Beautiful FULLY DETACHED townhome in the boutique Nuvo complex,backing onto a private south-facing greenbelt w/a fully fenced backyard & private patio.The main floor features an open-concept living space w/a gas fireplace, large south facing windows to the patio & an entertainer's kitchen w/stone countertops,ss appliances.A versatile flex room on the main level works as a bedroom or home office & offers a separate entrance next to a full 3 pc bathroom. In-floor radiant heating throughout the main floor adds comfort. Upstairs offers 3 spacious bedrooms plus a flex space ideal for a sitting area or study.The generous primary bedroom retreat looks out at the greenbelt, large w/in closet & spa like ensuite.Located steps from Morgan Creek Golf Course,Grandview shopping,schools & Hwy 99 access.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Rosemary Heights Elementary",
+      "rating": 7.7,
+      "distance": "0.8 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Earl Marriott Secondary",
+      "rating": 7.2,
+      "distance": "3.2 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Grandview Surrey",
+  "soldDate": "2026-02-18",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/37-15454-32-avenue/home/aD6p781oNmn3wRQr?id_listing=AKv53Dxl9Rk3MnxB",
+  "_scrapedAt": "2026-03-07T02:29:34.359Z",
+  "_rawFile": "37_15454_32_avenue_surrey_grandview_surrey.html"
+}

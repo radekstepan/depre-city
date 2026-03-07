@@ -1,0 +1,42 @@
+{
+  "address": "Unit 4 - 6333 Princess Lane",
+  "city": "Richmond",
+  "sqft": 2327,
+  "year": 2003,
+  "price": 1715000,
+  "listPrice": 1788888,
+  "fee": 424,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 5656,
+  "assessment": 1708000,
+  "description": "Welcome home to this renovated, DETACHED, Craftsman style townhome in desirable London Landing. New roof levy $28K paid by sellers.  Renovation over $150K. Teak hardwood on the main, crown mouldings & closet organizers throughout. Spacious updated custom kitchen with plenty of counter space & gas range.  Pottery Barn vanities & new bathrooms. Downstairs has a mancave/flex/movie room. Get cozy with gas fireplaces in the formal sitting room & family room. Covered, south facing porch with additional areas for BBQ & seating. Upper loft with covered deck & Fraser River peek a boo views. Fenced low maintenance Astroturf yard. Oversized garage with epoxy floors & ample storage. Close to top schools, shopping & dyke trails to Steveston Village.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Tomekichi Homma Elementary",
+      "rating": 8,
+      "distance": "1.2 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Robert Alexander McMath Secondary",
+      "rating": 7.9,
+      "distance": "2.4 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Steveston South",
+  "soldDate": "2026-02-24",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/4-6333-princess-lane/home/0ZxwR7MKpK2YKabB?id_listing=dXze3eeVj2g38m9K",
+  "_scrapedAt": "2026-03-07T02:28:24.541Z",
+  "_rawFile": "4_6333_princess_lane_richmond_steveston_south.html"
+}

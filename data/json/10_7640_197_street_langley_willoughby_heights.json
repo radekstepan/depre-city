@@ -1,0 +1,42 @@
+{
+  "address": "Unit 10 - 7640 197 Street",
+  "city": "Langley",
+  "sqft": 1556,
+  "year": 2023,
+  "price": 885000,
+  "listPrice": 898000,
+  "fee": 248,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3406,
+  "assessment": 981000,
+  "description": "Stunning 2 level townhome at the 2024 Grand Haven Award-winning Newbury built by Zenterra! Ideally located within the development offering easy access and a sought after oversized, East facing private backyard. This 3Bed / 3Bath home features A/C, hot water on demand, 10' ceilings, Ample natural light, Double wide garage pre-wired for EV, Powder room on the main floor, Stainless steel appliances, Gas Stove, Quartz counters and a large Kitchen/Great Room perfect for entertaining. Upstairs you'll find 3 generous sized bedrooms including a King sized Primary bedroom with a spa inspired 4pc ensuite. Walking distance to R.E Mountain School, Langley Events Centre all local amenities and parks! Pets allowed, low strata fees and the remainder of 2-5-10 warranty!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "2.1 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.0 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-17",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/10-7640-197-street/home/0A9X3jPp1O1yvgxV?id_listing=eVbOYENkJWRyx2P0",
+  "_scrapedAt": "2026-03-07T02:30:57.069Z",
+  "_rawFile": "10_7640_197_street_langley_willoughby_heights.html"
+}

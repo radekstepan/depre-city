@@ -1,0 +1,42 @@
+{
+  "address": "Unit 5 - 20451 84 Avenue",
+  "city": "Langley",
+  "sqft": 1431,
+  "year": 2018,
+  "price": 745000,
+  "listPrice": 788000,
+  "fee": 280,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 4,
+  "propertyTax": 2877,
+  "assessment": 851000,
+  "description": "The Walden! Bright and spacious 3 Bedroom+ Flex room / 2.5 bathrooms townhome by Woodbridge, built in 2018. Features include quartz countertops, a gas range, stainless steel appliances, a rare walk-in pantry, and an open-concept living. Durable Hardie/vinyl siding, electric heat, balcony, and 4+ parking (double garage + driveway + street). Family-friendly complex, walking distance to schools, transit, and shops with easy freeway access. Pets and rentals allowed (with restrictions). Sold as-is, where-is. Court approval required. The court date for the above property is March 5, 2026, at 9:45 a.m. at the Smythe Street Supreme Court in Vancouver.  Thanks,",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "1.1 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.7 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-03",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/5-20451-84-avenue/home/Xawjy414lkw7rR18?id_listing=mZRW7n2g0mR7EBO9",
+  "_scrapedAt": "2026-03-07T02:26:28.228Z",
+  "_rawFile": "5_20451_84_avenue_langley_willoughby_heights.html"
+}

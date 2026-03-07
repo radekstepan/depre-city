@@ -1,0 +1,42 @@
+{
+  "address": "Unit 114 - 9561 207 Street",
+  "city": "Langley",
+  "sqft": 1410,
+  "year": 1994,
+  "price": 801000,
+  "listPrice": 779000,
+  "fee": 460,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 2683,
+  "assessment": 734000,
+  "description": "Welcome to Derby Mews, a family-friendly community offering comfort and exceptional value. This rare 2-storey, 3 bedroom, 3 bathroom townhome features a functional layout with spacious main floor living. Sliding doors lead to a private backyard, perfect for relaxing or entertaining. The home was fully renovated in 2021, including a new kitchen with built-in cabinetry, quartz countertops, flooring, bathrooms, and lighting throughout. Major updates include a new roof and furnace (2021), hot water tank (2024), washer and dryer (2023) and a 240V outlet for EV charging. Air conditioning adds extra comfort during the warmer months, making this move-in-ready home easy to enjoy. Ideal for buyers looking for a welcoming community close to everyday conveniences in beautiful Walnut Grove.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Walnut Grove Secondary",
+      "rating": 7.3,
+      "distance": "1.4 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Gordon Greenwood Elementary",
+      "rating": 7.2,
+      "distance": "0.9 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Walnut Grove",
+  "soldDate": "2026-02-22",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/114-9561-207th-street/home/JjAXw7Qzmwp3QOzg?id_listing=aQmD7z6VXL17J9Bo",
+  "_scrapedAt": "2026-03-07T02:28:30.966Z",
+  "_rawFile": "114_9561_207_street_langley_walnut_grove.html"
+}

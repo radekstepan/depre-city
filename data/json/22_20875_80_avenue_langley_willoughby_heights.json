@@ -1,0 +1,42 @@
+{
+  "address": "Unit 22 - 20875 80 Avenue",
+  "city": "Langley",
+  "sqft": 1586,
+  "year": 2007,
+  "price": 787000,
+  "listPrice": 799000,
+  "fee": 411,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 2686,
+  "assessment": 800000,
+  "description": "Welcome to Pepperwood by Polygon! This spacious 3 bed plus office or potential 4th bedroom townhome offers one of the largest layouts in the complex, with 3 baths and a functional floor plan. Freshly painted throughout, the bright main floor features an open concept design perfect for everyday living. Upstairs includes three generous bedrooms, while the lower level provides a versatile office or guest space. The beautifully renovated kitchen showcases shaker cabinetry, quartz counters, pull out drawers, pot filler, SS appliances, and exceptional storage. Added fireplace built ins bring warmth and style to the living area. Ideally located steps from the clubhouse with outdoor pool, hot tub, hockey rink, gym,& playground. Central location close to schools, trails, shopping, and amenities.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Lynn Fripps Elementary",
+      "rating": 6.6,
+      "distance": "0.6 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.4 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-24",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/22-20875-80-avenue/home/gJRv53Krx567VPW4?id_listing=1DBW7RrDWdo7qlAp",
+  "_scrapedAt": "2026-03-07T02:29:57.656Z",
+  "_rawFile": "22_20875_80_avenue_langley_willoughby_heights.html"
+}

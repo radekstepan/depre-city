@@ -1,0 +1,42 @@
+{
+  "address": "Unit 49 - 8138 204 Street",
+  "city": "Langley",
+  "sqft": 1489,
+  "year": 2017,
+  "price": 806000,
+  "listPrice": 824900,
+  "fee": 354,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2730,
+  "assessment": 846000,
+  "description": "Welcome to Ashbury & Oak by Polygon. This quality built home features 1489 sqft of living space including 3 beds plus den that can be used as 4th bed, 2 full & half baths & a side by side garage. Very open concept layout with 9' ceilings on living and dining area that is filled with natural light. The bright & spacious kitchen is perfect for the ones that love to entertain family and friends. On the upper floor you'll find 3 spacious bedrooms, a primary bedroom with a walk in closet and spa like ensuite. This sought after complex offers a clubhouse, outdoor swimming pool, guest suites, gym, dog wash and much more. Walking distance to Carvolth Park + Ride, top rated schools, Parks, shops and Restaurants, Easy access to HWY 1. Perfect location for living! Call for your private showing today.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "0.7 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.2 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-19",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/49-8138-204-street/home/XRla7gxNkkr3jEvL?id_listing=eVbOYENp4Kdyx2P0",
+  "_scrapedAt": "2026-03-07T02:29:42.268Z",
+  "_rawFile": "49_8138_204_street_langley_willoughby_heights.html"
+}

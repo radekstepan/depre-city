@@ -1,0 +1,42 @@
+{
+  "address": "Unit 75 - 14356 63a Avenue",
+  "city": "Surrey",
+  "sqft": 1458,
+  "year": 2011,
+  "price": 735000,
+  "listPrice": 749000,
+  "fee": 324,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3486,
+  "assessment": 796000,
+  "description": "Lovely 3-bedroom, 3-bathroom family townhome in the popular Madison complex, featuring a fully fenced, south-facing backyard off the main-floor family room - ideal for kids, family and friends get-togethers, and summer BBQs! Quietly located within the complex, this home offers an open-concept main floor with 9-foot ceilings, laminate flooring, fireplace, and a 2-piece powder room. The kitchen includes upgraded stainless steel appliances, shaker-style cabinets, granite countertops (throughout), designer lighting, and large windows. Additional features include acoustically engineered party walls and a high-efficiency gas furnace. Close to Bell Centre, schools, shopping, YMCA, and transit! Make an appointment today to view!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sullivan Heights Secondary",
+      "rating": 5.5,
+      "distance": "0.3 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Goldstone Park Elementary",
+      "rating": 5.3,
+      "distance": "0.5 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Sullivan Station",
+  "soldDate": "2026-02-25",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/75-14356-63a-avenue/home/owJKR7PwzGGyXeLP?id_listing=ZxwR7MjVRl23KabB",
+  "_scrapedAt": "2026-03-07T02:26:46.586Z",
+  "_rawFile": "75_14356_63a_avenue_surrey_sullivan_station.html"
+}

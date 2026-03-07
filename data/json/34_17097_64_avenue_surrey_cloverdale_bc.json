@@ -1,0 +1,42 @@
+{
+  "address": "Unit 34 - 17097 64 Avenue",
+  "city": "Surrey",
+  "sqft": 2314,
+  "year": 2004,
+  "price": 867000,
+  "listPrice": 899900,
+  "fee": 453,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3880,
+  "assessment": 911000,
+  "description": "Welcome to Kentucky in West Cloverdale! This bright and spacious 2,314 sq ft townhome offers 3 bedrooms up, 1 down, and 2.5 bathrooms with convenient grade-level entry. Located in a sought-after gated complex with a deluxe clubhouse. Recent updates include new carpets, furnace, tankless hot water, A/C, roof, and fresh paint. The stylish kitchen features a large eating bar, opening to the dining and family room with a walkout to a gazebo in a large fenced backyard—perfect for kids and pets. Finished basement with a partially soundproof media room, games area, and 4th bedroom. Side-by-side double garage with visitor parking nearby. Walk to schools, transit, parks, and golf. Move-in ready—don’t miss it!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Lord Tweedsmuir Secondary",
+      "rating": 6.8,
+      "distance": "1.8 km",
+      "type": "8-12"
+    },
+    {
+      "name": "George Greenaway Elementary",
+      "rating": 2.5,
+      "distance": "0.6 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Cloverdale BC",
+  "soldDate": "2026-02-04",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/34-17097-64th-avenue/home/N0A9X3jqX647vgxV?id_listing=10QqypGNo65YLGlV",
+  "_scrapedAt": "2026-03-07T02:28:00.674Z",
+  "_rawFile": "34_17097_64_avenue_surrey_cloverdale_bc.html"
+}

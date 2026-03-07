@@ -1,0 +1,42 @@
+{
+  "address": "Unit 5 - 15177 60 Avenue",
+  "city": "Surrey",
+  "sqft": 2179,
+  "year": 2015,
+  "price": 886000,
+  "listPrice": 910000,
+  "fee": 565,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3932,
+  "assessment": 940000,
+  "description": "Beautifully designed Sullivan Station home featuring elegant textured walls, a striking stone fireplace feature wall, and a custom wall insert for a hutch in the spacious dining room. The bright kitchen offers a large window, double sinks, Electrolux cooktop, double wall ovens, beverage fridge, and an oversized island opening to the inviting family room — perfect for daily living and entertaining. Enjoy the generous balcony ideal for gatherings. Upstairs, the large primary bedroom includes a walk-in closet and spa-inspired ensuite with double sinks, makeup table, and oversized shower. The basement features a versatile flex room or extra bedroom with a full bathroom. Close to excellent schools, parks, shopping, and easy access to Hwy 10 for commuters. Complete by a side-by-side double garag",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sullivan Heights Secondary",
+      "rating": 5.5,
+      "distance": "1.5 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Sullivan Elementary",
+      "rating": 4.6,
+      "distance": "0.2 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Sullivan Station",
+  "soldDate": "2026-02-22",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/5-15177-60-avenue/home/ZNkKJ3JedRz7d4V6?id_listing=VLaGyG0kQ2B7W1ZD",
+  "_scrapedAt": "2026-03-07T02:32:22.564Z",
+  "_rawFile": "5_15177_60_avenue_surrey_sullivan_station.html"
+}

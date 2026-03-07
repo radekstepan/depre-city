@@ -1,0 +1,36 @@
+{
+  "address": "Unit 56 - 4900 Cartier Street",
+  "city": "Vancouver",
+  "sqft": 2404,
+  "year": 1980,
+  "price": 2076500,
+  "listPrice": 2249000,
+  "fee": 1233,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 6421,
+  "assessment": 1751000,
+  "description": "Set within the exclusive gated community of Shaughnessy Place II, this beautifully updated three-bedroom, two-and-a-half-bath corner residence offers exceptional privacy, backing directly onto VanDusen Gardens—one of the quietest homes in the complex. A grand spiral staircase and glass elevator connect the main levels, while a light-filled solarium with curved floor-to-ceiling glass opens seamlessly to the private garden. The kitchen features high-end built-in appliances, and expansive windows flood the home with natural light. Upstairs, the primary suite includes a private den, terrace, air conditioning, and a spacious spa-inspired bathroom with skylight. Completing the home is a private two-car garage with direct interior access, plus a brand-new furnace and instant hot water system.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Eric Hamber Secondary",
+      "rating": 8.4,
+      "distance": "0.8 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Shaughnessy",
+  "soldDate": "2026-02-27",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/56-4900-cartier-street/home/ZxwR7Mw4JAxYKabB?id_listing=XeEn7XK6m8vyrPo8",
+  "_scrapedAt": "2026-03-07T02:26:18.553Z",
+  "_rawFile": "56_4900_cartier_street_vancouver_shaughnessy.html"
+}

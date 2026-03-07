@@ -1,0 +1,42 @@
+{
+  "address": "Unit 2 - 6894 208 Street",
+  "city": "Langley",
+  "sqft": 1718,
+  "year": 2010,
+  "price": 785000,
+  "listPrice": 829000,
+  "fee": 237,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 2786,
+  "assessment": 810000,
+  "description": "This bright and well-kept 3-bedroom, 3-bath townhome in Milner Heights offers over 1,750 sq.ft. of comfortable living space. The main floor has an open layout with a generous kitchen, large island, and plenty of room to entertain or unwind. Upstairs, the spacious primary bedroom features a walk-in closet and ensuite, while two additional bedrooms provide flexibility for family or guests. The lower level includes a cozy rec room or office that opens to a private fenced yard. With a side-by-side double garage, ample storage, and a peaceful setting surrounded by trails and green space, this home combines everyday comfort with an ideal location—just minutes from Willoughby Town Centre, schools, and transit.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Richard Bulpitt Elementary",
+      "rating": 5.8,
+      "distance": "1.8 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.9 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-20",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/2-6894-208-street/home/VaD6p78VZPAYwRQr?id_listing=JKdOYrB2pgzY54lW",
+  "_scrapedAt": "2026-03-07T02:28:06.099Z",
+  "_rawFile": "2_6894_208_street_langley_willoughby_heights.html"
+}

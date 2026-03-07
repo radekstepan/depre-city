@@ -1,0 +1,42 @@
+{
+  "address": "Unit 2 - 1454 162b Street",
+  "city": "Surrey",
+  "sqft": 2376,
+  "year": 2018,
+  "price": 1185000,
+  "listPrice": 1225000,
+  "fee": 431,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4533,
+  "assessment": 1116000,
+  "description": "Step into luxury at Marca by Mortise, South Surrey. Former show home, Unit 2 is the former show home w/double wide garage & large driveway for 2 more vehicles. Chalet-inspired design, wood beams, smart home tech, A/C & iControl4 features. Feels like a house w/2300+sqft across 3 levels featuring many built-ins, custom shelving, new laminate flooring throughout, new carpets, newer light fixtures & fresh paint. Main offers white cabinetry, quartz counters, s/s appliances, gas range, island & SW exposure. Upstairs features 3 beds & flex, incl oversized primary w/w-i closet & ensuite w/double sinks. Downstairs includes large rec room w/custom bar, wine fridge & built-ins, plus 4th bed & storage. Enjoy 2 balconies or fenced yard.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Earl Marriott Secondary",
+      "rating": 7.2,
+      "distance": "1.1 km",
+      "type": "8-12"
+    },
+    {
+      "name": "South Meridian Elementary",
+      "rating": 4.7,
+      "distance": "0.3 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "King George Corridor",
+  "soldDate": "2026-02-24",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/2-1454-162b-street/home/jAXw7QwQl6XYQOzg?id_listing=mZRW7nW2b5R3EBO9",
+  "_scrapedAt": "2026-03-07T02:30:00.293Z",
+  "_rawFile": "2_1454_162b_street_surrey_king_george_corridor.html"
+}

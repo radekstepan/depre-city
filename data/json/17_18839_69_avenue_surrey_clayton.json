@@ -1,0 +1,42 @@
+{
+  "address": "Unit 17 - 18839 69 Avenue",
+  "city": "Surrey",
+  "sqft": 1519,
+  "year": 2005,
+  "price": 725000,
+  "listPrice": 739000,
+  "fee": 369,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 3043,
+  "assessment": 759000,
+  "description": "Beautifully redone townhome in a great part of Clayton! This 3 bedroom townhome shows incredibly well and offers a wide open plan, nice walk out yard off your kitchen and eating area as well as an oversized living area with extra space for large couch/sectional. Updates to kitchen, newer stainless appliances and fixtures throughout, new carpet upstairs and freshly painted throughout. Primary bed with renovations to ensuite, 2 good size bedrooms share the additional bath. Forced air heat, Double tandem garage with plenty of storage space and just steps to high school, shopping, new Clayton park and future SkyTrain.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Hazelgrove Elementary",
+      "rating": 4.6,
+      "distance": "0.5 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Clayton Heights Secondary",
+      "rating": 4.5,
+      "distance": "0.3 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Clayton",
+  "soldDate": "2026-02-23",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/17-18839-69th-avenue/home/2Z5BX32aoj47Dar0?id_listing=XRla7gBxnwryjEvL",
+  "_scrapedAt": "2026-03-07T02:30:43.198Z",
+  "_rawFile": "17_18839_69_avenue_surrey_clayton.html"
+}

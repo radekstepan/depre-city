@@ -1,0 +1,36 @@
+{
+  "address": "13610 232st Street",
+  "city": "Maple Ridge",
+  "sqft": 2667,
+  "year": 2025,
+  "price": 1085000,
+  "listPrice": 1148000,
+  "fee": 0,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 5573,
+  "assessment": 1141000,
+  "description": "Silver Valley’s newest NON-STRATA rowhome, NO STRATA FEES! This spacious 5-BED home offers nearly 2700 sqft, including a 2-bed daylight basement with separate entry; ideal for in-laws, grown kids, or a home office. Enjoy stunning views from your private rooftop deck, a double side-by-side garage (EV Ready), and a large FENCED yard perfect for kids or pets. Quality construction with Hardy Board materials, A/C, and built to BC Energy Step Code for efficiency. Close to parks, schools, daycare & more. Under New Home Warranty.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Garibaldi Secondary",
+      "rating": 1.6,
+      "distance": "4.6 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Silver Valley",
+  "soldDate": "2026-02-10",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/13610-232st-street/home/56k97wqvwVQYKRjD?id_listing=nM697k85B1g3bmwe",
+  "_scrapedAt": "2026-03-07T02:29:31.571Z",
+  "_rawFile": "13610_232st_street_maple_ridge_silver_valley.html"
+}

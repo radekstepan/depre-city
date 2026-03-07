@@ -1,0 +1,42 @@
+{
+  "address": "Unit 44 - 19505 68a Avenue",
+  "city": "Surrey",
+  "sqft": 1303,
+  "year": 2012,
+  "price": 755000,
+  "listPrice": 765000,
+  "fee": 372,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 3003,
+  "assessment": 750000,
+  "description": "CLAYTON RISE! Built by award winning Townline Homes, this well kept 3 bedroom, 2 bathroom END UNIT is one of the best locations within the complex with a private front directly across from the playground and visitor parking. The spacious walk-out backyard is steps from the kitchen and backs onto walking trails. Open concept main floor with laminate flooring, 9’ ceilings, and quartz kitchen counters. Brand new hot water tank. Great clubhouse amenities include a pool, gym, rec centre, and movie theatre. Conveniently located across from Katzie Elementary, and close to everything!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Clayton Heights Secondary",
+      "rating": 4.5,
+      "distance": "1.6 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Katzie Elementary",
+      "rating": 3.9,
+      "distance": "0.2 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Clayton",
+  "soldDate": "2026-02-18",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/44-19505-68a-avenue/home/mLzQ1y5R4Q47qdeK?id_listing=10QqypG5PPmYLGlV",
+  "_scrapedAt": "2026-03-07T02:32:53.364Z",
+  "_rawFile": "44_19505_68a_avenue_surrey_clayton.html"
+}

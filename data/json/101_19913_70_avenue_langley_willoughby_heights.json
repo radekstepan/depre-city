@@ -1,0 +1,42 @@
+{
+  "address": "Unit 101 - 19913 70 Avenue",
+  "city": "Langley",
+  "sqft": 1978,
+  "year": 2018,
+  "price": 985000,
+  "listPrice": 1049000,
+  "fee": 463,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3312,
+  "assessment": 912000,
+  "description": "THE BROOKS developed by Apex Custom Homes. This Unique CORNER UNIT located on the Quiet side by Routley park has massive living space w/ 3 BDRMS & 4 BATHS includes spacious rec room (easily convertible into 4th BDRM with F/Bath). Master-chef designed kitchen w/ quartz countertops, SS Appliances, incl gas range, plenty of built in cabinet space w/ extensive millwork, large kitchen island & feat. wall w/built-in cabinets & wine rack. Oversized low E rating windows (lots of natural light). 2021 BOILER w/radiant heated flooring & efficient hot water system, Built in A/C, Side X side garage parking with Extra racking & Tesla Charger . Entertainment-sized covered balconies/patios. Luxurious finishes, California-style closets and glass-enclosed showers.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "2.5 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.2 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-03",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/101-19913-70-avenue/home/gAaOyL81nMKyGxMb?id_listing=amgL7AVpg9n3Z1MW",
+  "_scrapedAt": "2026-03-07T02:26:36.257Z",
+  "_rawFile": "101_19913_70_avenue_langley_willoughby_heights.html"
+}

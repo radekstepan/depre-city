@@ -1,0 +1,42 @@
+{
+  "address": "5522 Oak Street",
+  "city": "Vancouver",
+  "sqft": 1611,
+  "year": 2016,
+  "price": 1550000,
+  "listPrice": 1668000,
+  "fee": 651,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 5215,
+  "assessment": 1687000,
+  "description": "**Open House Feb 21 Sat 2-4pm** Welcome to 5522 Oak — a spacious 3-bed + den, 3.5-bath townhouse in the sought-after Bennett by Listraor situated in the quiet lane away from Oak. Featuring a large office/family room with direct access to garage, it’s perfect for working from home. The gourmet kitchen is outfitted with Bosch integrated appliances, quartz countertops, and sleek modern cabinetry. Enjoy engineered hardwood floors, central heating & A/C, in-home parking access, and an entertainment-sized patio. The primary bedroom includes a private balcony and a walk-in closet with custom shelving. Steps from Oakridge Mall, VanDusen Garden, and transit.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Dr Annie B Jamieson Elementary",
+      "rating": 8.6,
+      "distance": "1.0 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Eric Hamber Secondary",
+      "rating": 8.4,
+      "distance": "0.5 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Cambie",
+  "soldDate": "2026-02-15",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/5522-oak-street/home/K8OgYBV2rl0YJmG2?id_listing=4KAX7Nj9qe47eRPJ",
+  "_scrapedAt": "2026-03-07T02:26:54.682Z",
+  "_rawFile": "5522_oak_street_vancouver_cambie.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 49 - 10311 River Drive",
+  "city": "Richmond",
+  "sqft": 1620,
+  "year": 2021,
+  "price": 1180000,
+  "listPrice": 1299000,
+  "fee": 516,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4759,
+  "assessment": 1375000,
+  "description": "Welcome to Northview Estate! Discover the perfect blend of luxury, comfort, and stunning natural beauty in this almost brand new condition townhouse. Backing directly onto a view of a river and snow mountains. This home boasts 4 bedrooms and 4 baths, providing ample space for families of all sizes. The top-floor ensuite can act as a 2nd primary bedroom complete with a huge balcony. UPGRADED LAMINATE flooring on every floor! The extra-large, gourmet kitchen outfitted with Fisher & Paykel S/S appliance, Quartz countertops, and both gas stovetop/oven. Also equipped with energy efficient Geothermal heating/cooling system ensuring warm Winter and cool Summer! EV Charging outlet! Minutes drive to Bridgeport Skytrain Station! Listed below BC Assessment Mtn fees includes Utility fees and water!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Robert J Tait Elementary",
+      "rating": 5.9,
+      "distance": "0.5 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Cambie Secondary",
+      "rating": 3.3,
+      "distance": "2.5 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Bridgeport RI",
+  "soldDate": "2026-02-13",
+  "parkingType": "garage_tandem",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/49-10311-river-drive/home/ZNkKJ3JjMPZ3d4V6?id_listing=Xawjy4Z1enq3rR18",
+  "_scrapedAt": "2026-03-07T02:32:47.731Z",
+  "_rawFile": "49_10311_river_drive_richmond_bridgeport_ri.html"
+}

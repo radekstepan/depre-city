@@ -1,0 +1,42 @@
+{
+  "address": "Unit 78 - 65 Foxwood Drive",
+  "city": "Port Moody",
+  "sqft": 1453,
+  "year": 1994,
+  "price": 850000,
+  "listPrice": 910000,
+  "fee": 579,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3640,
+  "assessment": 873000,
+  "description": "INCREDIBLE LOCATION AT THE FRONT OF THE COMPLEX AND IT'S A DUPLEX!! Only joined to one neighbour!  Private backyard/patio plus a large, grassy common space is right behind the unit! Open Dining and Living Area with cozy, stone decked, gas fireplace! Kitchen is updated with granite counters and Stainless Steel appliances. Huge built-in pantry has been added with tons of storage space. Cute powder room on main level. Upstairs are 3 generous bedrooms. Primary Bdrm can fit a king bed, and features a walk-in closet and a lovely ensuite. 2 parking stalls plus large locker. Walk to all 3 levels of great schools, Heritage Mountain Elem, Eagle Mountain Middle and Heritage Woods Secondary! Easy access to transit, hiking trails, Bert Flinn park and Foxwood park. 25 min walk to Newport Village!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Heritage Woods Secondary",
+      "rating": 8,
+      "distance": "0.2 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Heritage Mountain Elementary",
+      "rating": 7.9,
+      "distance": "0.7 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Heritage Mountain",
+  "soldDate": "2026-02-20",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-moody-real-estate/78-65-foxwood-drive/home/xmZRW7nM45VyEBO9?id_listing=amgL7Ax42gEyZ1MW",
+  "_scrapedAt": "2026-03-07T02:28:21.320Z",
+  "_rawFile": "78_65_foxwood_drive_port_moody_heritage_mountain.html"
+}

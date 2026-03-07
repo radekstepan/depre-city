@@ -1,0 +1,42 @@
+{
+  "address": "Unit 119 - 3500 Burke Village Promenade",
+  "city": "Coquitlam",
+  "sqft": 1580,
+  "year": 2019,
+  "price": 1150000,
+  "listPrice": 1149000,
+  "fee": 283,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3975,
+  "assessment": 1109000,
+  "description": "End Unit! Side by Side DOUBLE garage+2outdoor parking! South-North Facing! Stunning View! Well maintained Polygon 3 level town home for sale! Fenced front yard led to open concept mail floor features over height ceiling, bright living room surrounded with windows allows plenty of natural lights in, cozy dinning room connected to two balconies, Chef-favourite gourmet kitchen with custom-designed cabinetry, stainless high end appliances, large island and quartz countertops . Upper floor offers spacious master bedroom with luxury ensuite bathroom, and another two decent-sized south facing bedrooms with full bath. Basement has one bedroom perfect for family entertainment . Excellent location with waking distance to schools, shopping, parks, trails, public transits, restaurants & more.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Leigh Elementary",
+      "rating": 5.4,
+      "distance": "0.7 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Terry Fox Secondary",
+      "rating": 2.9,
+      "distance": "3.2 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Burke Mountain",
+  "soldDate": "2026-02-16",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/119-3500-burke-village-promenade/home/a6zqW7dbJjKY5eZE?id_listing=2Zpj39q9aqO3DrK8",
+  "_scrapedAt": "2026-03-07T02:31:25.385Z",
+  "_rawFile": "119_3500_burke_village_promenade_coquitlam_burke_mountain.html"
+}

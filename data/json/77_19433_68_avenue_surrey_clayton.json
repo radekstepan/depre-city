@@ -1,0 +1,42 @@
+{
+  "address": "Unit 77 - 19433 68 Avenue",
+  "city": "Surrey",
+  "sqft": 1338,
+  "year": 2014,
+  "price": 701000,
+  "listPrice": 689900,
+  "fee": 363,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3018,
+  "assessment": 756000,
+  "description": "PRICED TO SELL!! Experience modern living in this beautifully updated 3 bed, 3 bath townhouse in sought-after Clayton! The bright open-concept design features 9’ ceilings, quartz countertops, stainless steel appliances, and a large island perfect for family meals or entertaining friends. Recent upgrades include new flooring, fresh designer paint, an upgraded fridge, and stylish lighting throughout. The spacious primary suite offers a walk-in closet and a spa-inspired ensuite with dual sinks and a glass shower. Enjoy your sunny balcony for morning coffee or relaxing evenings. This well-maintained complex offers resort-style amenities including an outdoor pool, gym, clubhouse and hockey rink. Close to parks, schools, and shopping — the perfect place to call home!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Clayton Heights Secondary",
+      "rating": 4.5,
+      "distance": "1.6 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Katzie Elementary",
+      "rating": 3.9,
+      "distance": "0.2 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Clayton",
+  "soldDate": "2026-02-25",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/77-19433-68-avenue/home/wJKR7P8Egqv7XeLP?id_listing=eQp5yOwpQpQyd0ZE",
+  "_scrapedAt": "2026-03-07T02:28:09.161Z",
+  "_rawFile": "77_19433_68_avenue_surrey_clayton.html"
+}

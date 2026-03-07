@@ -1,0 +1,36 @@
+{
+  "address": "Unit 27 - 16223 23a Avenue",
+  "city": "Surrey",
+  "sqft": 1122,
+  "year": 2012,
+  "price": 698000,
+  "listPrice": 699900,
+  "fee": 361,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 2872,
+  "assessment": 699000,
+  "description": "Welcome to THE BREEZE by Adera, a sought-after Georgie Award-winning community in Grandview Heights. This beautifully updated 3-bedroom, 2-bathroom townhome offers a highly functional layout with bright open-concept living, 9’ ceilings, and oversized windows. The spacious kitchen features quartz countertops, a large island, and brand-new stainless steel appliances. The entire home has been freshly painted throughout, making it truly move-in ready. Enjoy a sunny south-facing balcony, perfect for BBQs and morning coffee. Steps to Grandview Corners, Morgan Crossing, schools, and Hwy 99. Residents enjoy access to the 3,700 sq.ft. West Coast Club, featuring a gym, yoga studio, and sauna. A new Costco coming to the south adds exciting future growth potential.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Earl Marriott Secondary",
+      "rating": 7.2,
+      "distance": "1.8 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Grandview Surrey",
+  "soldDate": "2026-02-25",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/27-16223-23a-avenue/home/510Qqypv0J13LGlV?id_listing=K8OgYBzp8k0YJmG2",
+  "_scrapedAt": "2026-03-07T02:26:39.007Z",
+  "_rawFile": "27_16223_23a_avenue_surrey_grandview_surrey.html"
+}

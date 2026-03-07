@@ -1,0 +1,42 @@
+{
+  "address": "Unit 195 - 6951 204 Street",
+  "city": "Langley",
+  "sqft": 1287,
+  "year": 2026,
+  "price": 848255,
+  "listPrice": 848255,
+  "fee": 254,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "assessment": 0,
+  "description": "Welcome to Cascadia by StreetSide Developments in Willoughby, featuring the first net-zero ready townhomes south of the Fraser. This corner 3 bedroom, 2.5 bathroom home offers an open-concept main floor with a large balcony, quartz countertops with an oversized island and premium LG stainless steel appliances. A spacious double garage for two cars with additional space for storage This home also offers Air Conditioning and heating for year round comfort combining comfort, style and functionality - making it an ideal choice for those who want both relaxation and room to entertain Cascadia community includes a future amenity building with party space & a gym along with 2 outdoor green spaces. Our Sales Centre is located at 6951 204 Street, open Sat to Wed 12-5pm.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "2.3 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.4 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-23",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/195-6951-204-street/home/10QqypNbWwa3LGlV?id_listing=56k97w0JqLO3KRjD",
+  "_scrapedAt": "2026-03-07T02:32:08.481Z",
+  "_rawFile": "195_6951_204_street_langley_willoughby_heights.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 39 - 6868 Burlington Avenue",
+  "city": "Burnaby",
+  "sqft": 1622,
+  "year": 2013,
+  "price": 1240000,
+  "listPrice": 1249000,
+  "fee": 311,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 3749,
+  "assessment": 1203000,
+  "description": "METRO by Mosaic Homes — a boutique rowhome collection in the heart of Metrotown offering the best & most unique floorplan in the complex. This meticulously maintained corner/end 3 Bed home shows like a designer showcase, featuring an open-concept main level w/ a chef-inspired kitchen, oversized island, upgraded appliances & quartz countertops, + generous living/dining space that flows to your private South-facing patio w/ premium landscaping & low-maintenance artificial turf. Upstairs, enjoy 3 spacious bedrooms, 2 full baths, highlighted by a serene primary retreat w/ custom cabinetry. This home is directly connected to 2 secure parking stalls w/ an additional flex/storage room for ultimate convenience. School catchment: Maywood School & Burnaby South Secondary.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Maywood Community Elementary",
+      "rating": 5,
+      "distance": "0.7 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Burnaby South Secondary",
+      "rating": 4.2,
+      "distance": "0.7 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Metrotown",
+  "soldDate": "2026-02-19",
+  "parkingType": "underground",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/burnaby-real-estate/39-6868-burlington-avenue/home/N0A9X3jOLxEYvgxV?id_listing=eQp5yOwp2KGyd0ZE",
+  "_scrapedAt": "2026-03-07T02:27:02.615Z",
+  "_rawFile": "39_6868_burlington_avenue_burnaby_metrotown.html"
+}
