@@ -35,11 +35,13 @@ const {
     generatedAt, sampleSize, modelConfidence,
     intercept, coefSqft, coefAge, coefBath, coefBedrooms,
     coefCondition, coefRainscreen,
+    coefFee, coefAssessment,
     coefAC, coefEndUnit,
     coefDoubleGarage, coefTandemGarage, coefExtraParking,
     listPriceHeat,
     areaCoefficients, areaReference,
-    stdError, tStats, isLogLinear
+    stdError, tStats, isLogLinear,
+    meanLogFee, meanLogAssessment,
 } = model;
 ---
 
@@ -74,6 +76,8 @@ const {
         coefBedrooms={coefBedrooms}
         coefCondition={coefCondition}
         coefRainscreen={coefRainscreen}
+        coefFee={coefFee}
+        coefAssessment={coefAssessment}
         coefAC={coefAC}
         coefEndUnit={coefEndUnit}
         coefDoubleGarage={coefDoubleGarage}
@@ -87,6 +91,8 @@ const {
         stdError={stdError}
         tStats={tStats}
         isLogLinear={isLogLinear}
+        meanLogFee={meanLogFee}
+        meanLogAssessment={meanLogAssessment}
     />
     
     <Charts listings={listings} model={model} />

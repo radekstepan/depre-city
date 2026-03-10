@@ -11,4 +11,10 @@ export const CALCULATOR_DEFAULTS = {
     isRainscreened: true,
     areaCoefVal: 0,
     listPrice: 889900,
+    fee: 450,
+    assessment: 0,       // 0 = not provided; enter BC assessed value to activate
+    // MHCC inputs
+    monthlyStrataFee: 450,
+    polyBReplaced: false,
+    // hvacAgeYears / appliancesAgeYears are intentionally omitted — they default to building age
 };

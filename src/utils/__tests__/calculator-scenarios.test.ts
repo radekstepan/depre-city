@@ -18,6 +18,10 @@ describe('Calculator with Real-World Scenarios', () => {
         coefBedrooms: 0.025,      // 2.5% per bedroom
         coefCondition: 0.015,     // 1.5% per condition point
         coefRainscreen: 0.08,     // 8% premium
+        coefFee: 0,               // Not used in mock (set to 0)
+        coefAssessment: 0,        // Not used in mock (set to 0)
+        meanLogFee: 0,
+        meanLogAssessment: 0,
         coefAC: 0.055,            // 5.5% premium
         coefEndUnit: 0.04,        // 4% premium
         coefDoubleGarage: 0.095,  // 9.5% premium

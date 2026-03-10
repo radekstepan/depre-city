@@ -34,6 +34,8 @@ export interface MarketModel {
     coefBedrooms: number;
     coefCondition: number;
     coefRainscreen: number;
+    coefFee: number;         // log(strata fee) — location/quality proxy
+    coefAssessment: number;  // log(BC Assessment) — market anchor
 
     // Market Heat (Derived separately, not in regression)
     listPriceHeat: number; // Avg Sold/List Ratio
@@ -58,6 +60,8 @@ export interface MarketModel {
         coefBedrooms: number;
         coefCondition: number;
         coefRainscreen: number;
+        coefFee: number;
+        coefAssessment: number;
         coefAC: number;
         coefEndUnit: number;
         coefDoubleGarage: number;
@@ -70,6 +74,8 @@ export interface MarketModel {
     modelConfidence: number; // R-squared
     stdError: number;        // Standard Error (in Log Scale)
     isLogLinear: boolean;    // Flag for UI
+    meanLogFee: number;        // Training-set mean of ln(fee) — fallback when fee not entered
+    meanLogAssessment: number; // Training-set mean of ln(assessment) — fallback when assessment not entered
 }
 
 function normalizeLocation(city: string, subArea?: string): string {
@@ -79,9 +85,11 @@ function normalizeLocation(city: string, subArea?: string): string {
 }
 
 export function generateMarketModel(data: Listing[]): MarketModel {
-    // Filter invalid data
+    // Filter invalid data — require fee and assessment for full model
     const validData = data.filter(d => {
-        const isValid = d.price > 100000 && d.sqft > 300 && d.year > 1900;
+        const isValid = d.price > 100000 && d.sqft > 300 && d.year > 1900
+            && d.fee > 0
+            && d.assessment != null && d.assessment > 0;
         return isValid;
     });
 
@@ -121,11 +129,14 @@ export function generateMarketModel(data: Listing[]): MarketModel {
         const isEnd = d.isEndUnit ? 1 : 0;
         const hasAC = d.hasAC ? 1 : 0;
 
+        const logFee = Math.log(d.fee);
+        const logAssessment = Math.log(d.assessment!);
+
         const loc = normalizeLocation(d.city, d.subArea);
         const areaDummies = distinctAreas.map(area => (loc === area ? 1 : 0));
 
         // Feature Vector Order:
-        // [0:Intercept, 1:Sqft, 2:Age, 3:Bath, 4:Bedrooms, 5:Condition, 6:Rainscreen, 7:AC, 8:End, 9:DoubleG, 10:TandemG, 11:ExtraParking, ...Areas]
+        // [0:Intercept, 1:Sqft, 2:Age, 3:Bath, 4:Bedrooms, 5:Condition, 6:Rainscreen, 7:AC, 8:End, 9:DoubleG, 10:TandemG, 11:ExtraParking, 12:logFee, 13:logAssessment, 14+:Areas]
         return [
             1,
             d.sqft,
@@ -139,6 +150,8 @@ export function generateMarketModel(data: Listing[]): MarketModel {
             isDouble,
             isTandem,
             extraParking,
+            logFee,
+            logAssessment,
             ...areaDummies
         ] as number[];
     });
@@ -159,9 +172,9 @@ export function generateMarketModel(data: Listing[]): MarketModel {
     areaTStatMap[referenceLocation] = 0;
 
     distinctAreas.forEach((area, idx) => {
-        // betas index offset is 12 (intercept + 11 features)
-        areaCoefMap[area] = betas[12 + idx];
-        areaTStatMap[area] = tStats[12 + idx];
+        // betas index offset is 14 (intercept + 11 features + logFee + logAssessment)
+        areaCoefMap[area] = betas[14 + idx];
+        areaTStatMap[area] = tStats[14 + idx];
     });
 
     // R2 Calculation (Log Scale)
@@ -180,9 +193,14 @@ export function generateMarketModel(data: Listing[]): MarketModel {
     const n = validData.length;
     const stdError = n > p ? Math.sqrt(finalRSS / (n - p)) : 0;
 
+    const meanLogFee = validData.reduce((s, d) => s + Math.log(d.fee), 0) / validData.length;
+    const meanLogAssessment = validData.reduce((s, d) => s + Math.log(d.assessment!), 0) / validData.length;
+
     console.log('Model R²:', r2.toFixed(4));
     console.log('Market Heat (Sold/List):', (listPriceHeat * 100).toFixed(2) + '%');
     console.log('Extra Parking Coef:', betas[11].toFixed(4), 't-stat:', tStats[11].toFixed(4));
+    console.log('logFee Coef:', betas[12].toFixed(4), 't-stat:', tStats[12].toFixed(4));
+    console.log('logAssessment Coef:', betas[13].toFixed(4), 't-stat:', tStats[13].toFixed(4));
 
     return {
         generatedAt: new Date().toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' }),
@@ -196,6 +214,8 @@ export function generateMarketModel(data: Listing[]): MarketModel {
         coefBedrooms: betas[4],
         coefCondition: betas[5],
         coefRainscreen: betas[6],
+        coefFee: betas[12],
+        coefAssessment: betas[13],
         coefAC: betas[7],
         coefEndUnit: betas[8],
         coefDoubleGarage: betas[9],
@@ -215,6 +235,8 @@ export function generateMarketModel(data: Listing[]): MarketModel {
             coefBedrooms: tStats[4],
             coefCondition: tStats[5],
             coefRainscreen: tStats[6],
+            coefFee: tStats[12],
+            coefAssessment: tStats[13],
             coefAC: tStats[7],
             coefEndUnit: tStats[8],
             coefDoubleGarage: tStats[9],
@@ -225,6 +247,8 @@ export function generateMarketModel(data: Listing[]): MarketModel {
 
         modelConfidence: r2,
         stdError: stdError,
-        isLogLinear: true
+        isLogLinear: true,
+        meanLogFee,
+        meanLogAssessment,
     };
 }

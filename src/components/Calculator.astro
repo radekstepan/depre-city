@@ -10,6 +10,8 @@ interface Props {
     coefBedrooms: number;
     coefCondition: number;
     coefRainscreen: number;
+    coefFee: number;
+    coefAssessment: number;
     coefAC: number;
     coefEndUnit: number;
     coefDoubleGarage: number;
@@ -27,15 +29,19 @@ interface Props {
         [key: string]: unknown;
     };
     isLogLinear: boolean;
+    meanLogFee: number;
+    meanLogAssessment: number;
 }
 
 const {
     intercept, coefSqft, coefAge, coefBath, coefBedrooms,
     coefCondition, coefRainscreen,
+    coefFee, coefAssessment,
     coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, coefExtraParking,
     listPriceHeat,
     areaCoefficients, areaReference, stdError,
-    tStats, isLogLinear
+    tStats, isLogLinear,
+    meanLogFee, meanLogAssessment,
 } = Astro.props;
 
 // For display in dropdown, we convert log coefs to approx percentages if log-linear
@@ -85,9 +91,11 @@ const parkingOptions = [
     data-model={JSON.stringify({
         intercept, coefSqft, coefAge, coefBath, coefBedrooms,
         coefCondition, coefRainscreen,
+        coefFee, coefAssessment,
         coefAC, coefEndUnit, coefDoubleGarage, coefTandemGarage, coefExtraParking,
         listPriceHeat,
-        stdError, isLogLinear
+        stdError, isLogLinear,
+        meanLogFee, meanLogAssessment,
     })}
     data-defaults={JSON.stringify(CALCULATOR_DEFAULTS)}
 >
@@ -144,6 +152,21 @@ const parkingOptions = [
                       <input type="number" id="inputListPrice" value={CALCULATOR_DEFAULTS.listPrice} step="1000" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none" placeholder="Optional">
                   </div>
 
+                  <!-- BC Assessment -->
+                  <div>
+                      <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">
+                          BC Assessment ($)
+                          <span class="ml-1 text-amber-600 normal-case font-normal">&mdash; enter for high-accuracy mode</span>
+                      </label>
+                      <input type="number" id="inputAssessment" step="1000" min="0" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none" placeholder="e.g. 920000 (optional)">
+                  </div>
+
+                  <!-- Strata Fee -->
+                  <div>
+                      <label class="block text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Monthly Strata Fee ($)</label>
+                      <input type="number" id="inputStrataFee" value={CALCULATOR_DEFAULTS.monthlyStrataFee} step="10" min="0" class="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-amber-500 outline-none" placeholder="e.g. 450">
+                  </div>
+
                  <!-- Condition & Parking -->
                  <div class="space-y-4">
                       <SearchSelect
@@ -187,7 +210,10 @@ const parkingOptions = [
             <!-- Outputs -->
             <div class="w-full md:w-5/12 bg-gray-900 text-white p-6 md:p-8 flex flex-col justify-center rounded-b-xl md:rounded-bl-none md:rounded-r-xl relative">
                 <div class="mb-8">
-                    <span class="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2">Fair Market Value</span>
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-gray-400 text-xs font-bold uppercase tracking-wider">Fair Market Value</span>
+                        <span id="accuracyBadge" class="text-[10px] font-bold uppercase tracking-wide px-2 py-0.5 rounded bg-gray-700 text-gray-400">Standard</span>
+                    </div>
                     <div class="text-4xl md:text-5xl font-serif font-bold text-white tracking-tight" id="outputPrice">$0</div>
                     
                     <!-- Predicted Close Section (Hidden if no list price) -->
@@ -255,6 +281,30 @@ const parkingOptions = [
                         <span class="text-green-400" id="valFeatures">+$0</span>
                     </div>
                 </div>
+
+                <!-- MHCC Output -->
+                <div class="space-y-3 border-t border-gray-700 pt-5 mt-5 text-sm">
+                    <p class="text-xs font-bold text-gray-400 uppercase tracking-wide mb-3">Monthly Cost Analysis</p>
+
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-400">Strata Fee</span>
+                        <span class="text-gray-300" id="mhccStrataFee">$0/mo</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-400">Hidden Carrying Cost</span>
+                        <span class="text-amber-400" id="mhccHiddenCost">+$0/mo</span>
+                    </div>
+                    <div class="flex justify-between items-center bg-gray-800/60 px-3 py-2 rounded">
+                        <span class="text-white font-semibold text-xs uppercase tracking-wide">True Monthly Cost</span>
+                        <span class="text-red-400 font-bold" id="mhccTrueCost">$0/mo</span>
+                    </div>
+
+                    <!-- CapEx Warnings -->
+                    <div id="mhccCapExContainer" class="hidden mt-3 space-y-2">
+                        <p class="text-xs font-bold text-red-400 uppercase tracking-wide">&#x26A0; Immediate CapEx Risks</p>
+                        <div id="mhccCapExList"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -262,6 +312,7 @@ const parkingOptions = [
 
 <script>
     import { predictPrice, calculatePriceRange, calculateComponentImpacts } from '../utils/calculator.js';
+    import { calculateMHCC } from '../utils/mhcc.js';
 
     document.addEventListener('DOMContentLoaded', () => {
         const calculatorSection = document.getElementById('calculator');
@@ -275,12 +326,14 @@ const parkingOptions = [
             bath: document.getElementById('inputBath'),
             beds: document.getElementById('inputBeds'),
             listPrice: document.getElementById('inputListPrice'),
+            assessment: document.getElementById('inputAssessment'),
+            strataFee: document.getElementById('inputStrataFee'),
             condition: document.getElementById('inputCondition'),
             parking: document.getElementById('inputParking'),
             parkingSpots: document.getElementById('inputParkingSpots'),
             endUnit: document.getElementById('checkEndUnit'),
             ac: document.getElementById('checkAC'),
-            rain: document.getElementById('checkRain')
+            rain: document.getElementById('checkRain'),
         };
 
         const outputs = {
@@ -296,7 +349,14 @@ const parkingOptions = [
             valCondition: document.getElementById('valCondition'),
             valParking: document.getElementById('valParking'),
             valFeatures: document.getElementById('valFeatures'),
-            valLoc: document.getElementById('valLoc')
+            valLoc: document.getElementById('valLoc'),
+            // MHCC outputs
+            mhccStrataFee: document.getElementById('mhccStrataFee'),
+            mhccHiddenCost: document.getElementById('mhccHiddenCost'),
+            mhccTrueCost: document.getElementById('mhccTrueCost'),
+            mhccCapExContainer: document.getElementById('mhccCapExContainer'),
+            mhccCapExList: document.getElementById('mhccCapExList'),
+            accuracyBadge: document.getElementById('accuracyBadge'),
         };
 
         function format(num) {
@@ -339,6 +399,8 @@ const parkingOptions = [
 
         function getInputs() {
             const listPriceValue = parseFloat(inputs.listPrice.value);
+            const assessmentValue = parseFloat(inputs.assessment.value);
+            const strataFeeValue = parseFloat(inputs.strataFee.value);
             return {
                 areaCoefVal: parseFloat(inputs.areaCoef.value) || defaults.areaCoefVal,
                 year: parseFloat(inputs.year.value) || defaults.year,
@@ -346,6 +408,8 @@ const parkingOptions = [
                 bathrooms: parseFloat(inputs.bath.value) || defaults.bathrooms,
                 bedrooms: parseFloat(inputs.beds.value) || defaults.bedrooms,
                 listPrice: listPriceValue > 0 ? listPriceValue : undefined,
+                fee: strataFeeValue > 0 ? strataFeeValue : undefined,
+                assessment: assessmentValue > 0 ? assessmentValue : undefined,
                 condition: parseInt(inputs.condition.value) || defaults.condition,
                 parkingType: inputs.parking.value || defaults.parkingType,
                 parkingSpots: parseFloat(inputs.parkingSpots.value) || defaults.parkingSpots,
@@ -367,7 +431,9 @@ const parkingOptions = [
             valCondition: 0,
             valParking: 0,
             valFeatures: 0,
-            valLoc: 0
+            valLoc: 0,
+            mhccHiddenCost: 0,
+            mhccTrueCost: 0,
         };
 
         function calculate() {
@@ -411,6 +477,45 @@ const parkingOptions = [
             updateOutput(outputs.valBeds, impacts.valBeds, 'valBeds', (val) => "+" + format(val));
             updateOutput(outputs.valParking, impacts.valParking, 'valParking', (val) => "+" + format(val));
             updateOutput(outputs.valFeatures, impacts.valFeatures, 'valFeatures', (val) => "+" + format(val));
+
+            // ── Accuracy badge ───────────────────────────────────────────
+            const hasAssessment = inputsData.assessment && inputsData.assessment > 0;
+            if (hasAssessment) {
+                outputs.accuracyBadge.textContent = 'High Accuracy';
+                outputs.accuracyBadge.className = 'text-[10px] font-bold uppercase tracking-wide px-2 py-0.5 rounded bg-amber-600/30 text-amber-400';
+            } else {
+                outputs.accuracyBadge.textContent = 'Standard';
+                outputs.accuracyBadge.className = 'text-[10px] font-bold uppercase tracking-wide px-2 py-0.5 rounded bg-gray-700 text-gray-400';
+            }
+
+            // ── MHCC Calculation ──────────────────────────────────────────
+            const strataFeeVal = parseFloat(inputs.strataFee.value) || 0;
+
+            const mhccResult = calculateMHCC({
+                yearBuilt: inputsData.year,
+                squareFootage: inputsData.sqft,
+                monthlyStrataFee: strataFeeVal,
+                isRainscreened: inputsData.isRainscreened,
+                polyBReplaced: false,
+            });
+
+            const formatMo = (val) => '$' + Math.round(val).toLocaleString('en-CA') + '/mo';
+            outputs.mhccStrataFee.textContent = formatMo(mhccResult.strataFee);
+            updateOutput(outputs.mhccHiddenCost, mhccResult.calculatedMHCC, 'mhccHiddenCost', (v) => '+' + formatMo(v));
+            updateOutput(outputs.mhccTrueCost, mhccResult.trueMonthlyCost, 'mhccTrueCost', formatMo);
+
+            if (mhccResult.immediateCapExRisks.length > 0) {
+                outputs.mhccCapExContainer.classList.remove('hidden');
+                outputs.mhccCapExList.innerHTML = mhccResult.immediateCapExRisks.map(risk => `
+                    <div class="bg-red-900/30 border border-red-700/50 rounded p-2 text-xs">
+                        <div class="font-semibold text-red-300">${risk.issue}</div>
+                        <div class="text-gray-400 mt-0.5">${risk.note}</div>
+                        <div class="text-red-400 font-mono mt-1">Est. $${risk.estimatedUpfrontCost.toLocaleString('en-CA')} upfront</div>
+                    </div>
+                `).join('');
+            } else {
+                outputs.mhccCapExContainer.classList.add('hidden');
+            }
 
             const event = new CustomEvent('deprecity:model-update', {
                 detail: {

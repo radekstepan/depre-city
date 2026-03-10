@@ -8,6 +8,8 @@ export interface CalculatorInputs {
     bathrooms: number;
     bedrooms: number;
     listPrice?: number;
+    fee?: number;        // Monthly strata fee — improves model accuracy
+    assessment?: number; // BC Assessed Value — significantly improves accuracy
     condition: number;
     parkingType: 'std' | 'tandem' | 'double';
     parkingSpots: number;
@@ -24,6 +26,8 @@ export interface ModelCoefficients {
     coefBedrooms: number;
     coefCondition: number;
     coefRainscreen: number;
+    coefFee: number;
+    coefAssessment: number;
     coefAC: number;
     coefEndUnit: number;
     coefDoubleGarage: number;
@@ -31,6 +35,8 @@ export interface ModelCoefficients {
     coefExtraParking: number;
     isLogLinear: boolean;
     stdError: number;
+    meanLogFee: number;        // Training-set mean — used as fallback
+    meanLogAssessment: number; // Training-set mean — used as fallback
 }
 
 export interface PriceRange {
@@ -75,6 +81,10 @@ export function predictPrice(
 
     if (coefficients.isLogLinear) {
         // ln(Price) = Intercept + Coefs...
+        // fee and assessment: use user value when provided, otherwise fall back to training-set mean
+        const logFee = (inputs.fee && inputs.fee > 0) ? Math.log(inputs.fee) : coefficients.meanLogFee;
+        const logAssessment = (inputs.assessment && inputs.assessment > 0) ? Math.log(inputs.assessment) : coefficients.meanLogAssessment;
+
         const logPrice = coefficients.intercept +
             (inputs.sqft * coefficients.coefSqft) +
             (age * coefficients.coefAge) +
@@ -86,11 +96,13 @@ export function predictPrice(
             (isAC * coefficients.coefAC) +
             valParkingCoef +
             (extraParking * coefficients.coefExtraParking) +
+            (logFee * coefficients.coefFee) +
+            (logAssessment * coefficients.coefAssessment) +
             inputs.areaCoefVal;
 
         return Math.exp(logPrice);
     } else {
-        // Linear fallback
+        // Linear fallback (no fee/assessment term in linear mode)
         return coefficients.intercept +
             (inputs.sqft * coefficients.coefSqft) +
             (age * coefficients.coefAge) +
@@ -117,6 +129,8 @@ export function getDefaultInputs(): CalculatorInputs {
         bathrooms: CALCULATOR_DEFAULTS.bathrooms,
         bedrooms: CALCULATOR_DEFAULTS.bedrooms,
         listPrice: CALCULATOR_DEFAULTS.listPrice,
+        fee: CALCULATOR_DEFAULTS.fee,
+        assessment: CALCULATOR_DEFAULTS.assessment,
         condition: CALCULATOR_DEFAULTS.condition,
         parkingType: CALCULATOR_DEFAULTS.parkingType as 'std' | 'tandem' | 'double',
         parkingSpots: CALCULATOR_DEFAULTS.parkingSpots,
