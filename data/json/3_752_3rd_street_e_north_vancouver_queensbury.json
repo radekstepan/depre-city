@@ -1,0 +1,42 @@
+{
+  "address": "Unit 3 - 752 3rd Street E",
+  "city": "North Vancouver",
+  "sqft": 1490,
+  "year": 2022,
+  "price": 1340000,
+  "listPrice": 1349000,
+  "fee": 577,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 1,
+  "propertyTax": 4711,
+  "assessment": 1403000,
+  "description": "Enjoy the best north shore living at Third Street – a collection of 8 contemporary townhouses in vibrant Moodyville. This stunning energy efficient home provides you w/ open concept living, designer finishes, private garage w/ EV charging & storage space.  Modern architectural elements are designed throughout, incl. Scandinavian inspired finishes & a central glass enclosed staircase. Spacious interior w/ 4 bedrooms & 4 bathrooms (1 bedroom & ensuite on lower level that can serve as an income earner). Fabulous chef’s kitchen features premium appliances - a joy to cook in & entertain from. Also features A/C, triple glazed windows, & an expansive rooftop deck that offers views of the ocean & mountains!  Open House Feb.28 2-4pm Brochure: https://bit.ly/3-752east3rd",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sutherland Secondary",
+      "rating": 5.4,
+      "distance": "2.0 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Ridgeway Elementary",
+      "rating": 5.2,
+      "distance": "0.8 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Queensbury",
+  "soldDate": "2026-02-24",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/3-752-3rd-street-e/home/XRla7gx5oz63jEvL?id_listing=JKdOYrB0lJnY54lW",
+  "_scrapedAt": "2026-03-14T19:51:45.818Z",
+  "_rawFile": "3_752_3rd_street_e_north_vancouver_queensbury.html"
+}

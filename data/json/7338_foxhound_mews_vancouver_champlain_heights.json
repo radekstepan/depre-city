@@ -1,0 +1,42 @@
+{
+  "address": "7338 Foxhound Mews",
+  "city": "Vancouver",
+  "sqft": 1679,
+  "year": 1983,
+  "price": 825000,
+  "listPrice": 839000,
+  "fee": 641,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2510,
+  "assessment": 801000,
+  "description": "KIDS GROW- APARTMENTS DON’T! This well maintained 3-bedroom, 2.5-bathroom townhome offers 1679 square feet of space on 3 levels for the growing family. The design is practical with an open plan of living room, kitchen and dining area on the main level and access to the large deck. Upstairs finds a big primary bedroom with ensuite bath, 2 more bedrooms and another full bath. The lower level is great as a family room, office or 4th bedroom and the home offers attic storage with pull downstairs. This is an END unit and is in a well maintained complex and only minutes away from Champlain square, schools, transit and the Champlain community centre. A 2 car carport and a QUIET cul de sac location make this the perfect family home!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Killarney Secondary",
+      "rating": 5.4,
+      "distance": "1.0 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Captain James Cook Elementary",
+      "rating": 5.1,
+      "distance": "0.4 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Champlain Heights",
+  "soldDate": "2026-02-24",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/7338-foxhound-mews/home/4KAX7NO49jP3eRPJ?id_listing=MWBVyZW9aoq7Kemj",
+  "_scrapedAt": "2026-03-14T19:51:15.851Z",
+  "_rawFile": "7338_foxhound_mews_vancouver_champlain_heights.html"
+}

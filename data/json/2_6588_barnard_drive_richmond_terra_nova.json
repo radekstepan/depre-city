@@ -1,0 +1,42 @@
+{
+  "address": "Unit 2 - 6588 Barnard Drive",
+  "city": "Richmond",
+  "sqft": 1364,
+  "year": 1996,
+  "price": 825000,
+  "listPrice": 899000,
+  "fee": 410,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 3302,
+  "assessment": 1004000,
+  "description": "Bright and spacious 3 levels townhouse, 9 ft. main ceiling on the main floor, 2 bedrooms and 2 full baths upstairs and one bedroom with closet downstairs. Unit has private front yard direct access to the street. Modern luxurious design with granite countertop and stainless steel appliances. Amenities include club house, gym & outdoor pool. School catchment- Spulu'kwuks Elementary and NJ Burnett Secondary School. Enjoy the super nature in this Terra Nova Natural Area, Adventure Playground, community farm, golf course and West Dyke for walking or biking.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Spul'u'kwuks Elementary",
+      "rating": 8.8,
+      "distance": "0.4 km",
+      "type": "0-7"
+    },
+    {
+      "name": "J N Burnett Secondary",
+      "rating": 7.9,
+      "distance": "1.1 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Terra Nova",
+  "soldDate": "2026-02-25",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/2-6588-barnard-drive/home/2Z5BX32ZK213Dar0?id_listing=EXrx30e6DblYOklN",
+  "_scrapedAt": "2026-03-14T19:49:53.039Z",
+  "_rawFile": "2_6588_barnard_drive_richmond_terra_nova.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "214 Brookes Street",
+  "city": "New Westminster",
+  "sqft": 1551,
+  "year": 2010,
+  "price": 928000,
+  "listPrice": 975000,
+  "fee": 0,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 4326,
+  "assessment": 1065000,
+  "description": "A NON-STRATA titled rare find in modern Queensborough Row Home offering 3 bedrooms and 3 bathrooms with a bright open layout and high ceilings. Features include a contemporary kitchen with stainless steel appliances and quartz countertops, spacious living and dining areas, and a private patio ideal for entertaining. Upper level includes generous bedrooms, including a primary with walk-in closet and ensuite. Additional highlights include air conditioning, fenced yard, bonus storage/crawl space, and parking with carport garage with EV charging and lane access. Quiet, family-friendly location steps to shops, schools, parks, transit, Queensborough Landing, and Annacis Channel waterfront, with quick access to Richmond, Surrey, Burnaby, and highways ideal for families and professionals alike.",
+  "features": [],
+  "schools": [
+    {
+      "name": "New Westminster Secondary",
+      "rating": 6.7,
+      "distance": "2.4 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Queen Elizabeth Elementary",
+      "rating": 5.7,
+      "distance": "1.7 km",
+      "type": "0-4"
+    }
+  ],
+  "subArea": "Queensborough",
+  "soldDate": "2026-02-25",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/new-westminster-real-estate/214-brookes-street/home/owJKR7PPmeO7XeLP?id_listing=MWBVyZWEk0J7Kemj",
+  "_scrapedAt": "2026-03-14T19:50:05.183Z",
+  "_rawFile": "214_brookes_street_new_westminster_queensborough.html"
+}

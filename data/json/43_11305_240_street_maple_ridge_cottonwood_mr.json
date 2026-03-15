@@ -1,0 +1,36 @@
+{
+  "address": "Unit 43 - 11305 240 Street",
+  "city": "Maple Ridge",
+  "sqft": 1455,
+  "year": 2017,
+  "price": 760000,
+  "listPrice": 768800,
+  "fee": 374,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4047,
+  "assessment": 782000,
+  "description": "Welcome to Maple Heights, a refined end-unit townhome offering 3 bedrooms and 2.5 bathrooms, designed for elevated everyday living. This beautifully appointed residence features quartz countertops, sleek laminate flooring, and premium Whirlpool stainless steel appliances. The spacious double tandem garage provides ample parking and storage, while the spa-inspired ensuite boasts dual vanities and an elegant finish. Bright and open, the layout is ideal for both entertaining and relaxing. Located within a master-planned community by Streetside Developments, Maple Heights is surrounded by scenic walking trails and is conveniently close to schools, transit, recreation, and shopping.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Garibaldi Secondary",
+      "rating": 1.6,
+      "distance": "2.2 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Cottonwood MR",
+  "soldDate": "2026-03-01",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/43-11305-240-street/home/damgL7Ad54pyZ1MW?id_listing=J6Em7b92JLdyXBeq",
+  "_scrapedAt": "2026-03-14T19:51:02.277Z",
+  "_rawFile": "43_11305_240_street_maple_ridge_cottonwood_mr.html"
+}

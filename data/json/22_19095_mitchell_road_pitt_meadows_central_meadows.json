@@ -1,0 +1,42 @@
+{
+  "address": "Unit 22 - 19095 Mitchell Road",
+  "city": "Pitt Meadows",
+  "sqft": 1874,
+  "year": 2015,
+  "price": 990000,
+  "listPrice": 1000000,
+  "fee": 336,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 5574,
+  "assessment": 992000,
+  "description": "Welcome to 19095 Mitchell Road in the heart of Pitt Meadows! This beautifully maintained 3-bedroom, 3-bathroom townhome offers over 1,870 sq ft of bright, open-concept living space and shows exceptionally well. Featuring 9' coffered ceilings, large rooms, a spacious bonus family room on the second level, and an easy-maintenance garden, this home is perfect for families and professionals alike. Large double car garage with tons of storage space. Centrally located close to all levels of schools, transit, West Coast Express, parks, trails, Golden Ears Bridge, and Osprey Village. Set in a friendly, welcoming complex in a community proudly voted the #3 best place to live in Canada. Great opportunity for first time buyers, upsizers from a condo or rightsizing from a detached. Call for a showing.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Pitt Meadows Elementary",
+      "rating": 4.3,
+      "distance": "0.2 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Pitt Meadows Secondary",
+      "rating": 3.6,
+      "distance": "0.8 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Central Meadows",
+  "soldDate": "2026-02-23",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/pitt-meadows-real-estate/22-19095-mitchell-road/home/BDO1w3WL5lOY8Jg0?id_listing=6zqW7dKzEvVy5eZE",
+  "_scrapedAt": "2026-03-14T19:51:18.043Z",
+  "_rawFile": "22_19095_mitchell_road_pitt_meadows_central_meadows.html"
+}

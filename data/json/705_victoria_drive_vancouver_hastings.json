@@ -1,0 +1,36 @@
+{
+  "address": "705 Victoria Drive",
+  "city": "Vancouver",
+  "sqft": 1305,
+  "year": 2019,
+  "price": 1235000,
+  "listPrice": 1250000,
+  "fee": 821,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 4247,
+  "assessment": 1354000,
+  "description": "Step into a world of elegance with this 3 BR, 3 Bath townhome, mere steps from the heart of Commercial Drive. Tucked on a peaceful section of Victoria Dr, this residence shines with impressive finishes: oak plank flooring, quartz counters, integrated Miele appliances, A/C, and spa-like baths. The main level provides an open concept with over-height ceilings & ample natural light. The 2nd level houses two bedrooms & laundry, while the 3rd has a spacious primary suite, huge walk-in closet, marble walk-in shower with rain head, & private retreat deck with lovely mountain views. Built in 2019, this well-run complex includes parking & storage. Incredible location - walk to everything! Parks, cafes, shops and transit.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Britannia Community Secondary",
+      "rating": 2.4,
+      "distance": "0.5 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Hastings",
+  "soldDate": "2026-02-18",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/705-victoria-drive/home/jJKdOYr6LGjY54lW?id_listing=Zaw5Yoj5vV63n961",
+  "_scrapedAt": "2026-03-14T19:50:12.385Z",
+  "_rawFile": "705_victoria_drive_vancouver_hastings.html"
+}

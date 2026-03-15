@@ -1,0 +1,42 @@
+{
+  "address": "Unit 5 - 8383 159 Street",
+  "city": "Surrey",
+  "sqft": 1637,
+  "year": 2002,
+  "price": 810000,
+  "listPrice": 849000,
+  "fee": 553,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3563,
+  "assessment": 822000,
+  "description": "Welcome home to Avalon Woods. This completely renovated 3-bedroom, 2.5-bathroom townhome will impress the most discerning buyers. Thoughtful upgrades include an open-concept gourmet kitchen, stainless steel appliances, quartz countertops, designer lighting, and wide-plank hardwood flooring throughout. This rare end unit also features a large room in basement that can be used as a rec room, office, guest room or as needed per your requirements. Double-wide garage and a generous private yard with a deck perfect for BBQ and outdoor entertaining. Enjoy an unbeatable location, within steps to the Fleetwood Community Center & Library, shopping, transit and future skytrain. Nearby amenities include Fleetwood Leisure Center, highly rated elementary and secondary schools (K–12).",
+  "features": [],
+  "schools": [
+    {
+      "name": "Walnut Road Elementary",
+      "rating": 7.8,
+      "distance": "0.7 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Fleetwood Park Secondary",
+      "rating": 7,
+      "distance": "0.8 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Fleetwood Tynehead",
+  "soldDate": "2026-02-19",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/5-8383-159-street/home/mLzQ1y5jjlj7qdeK?id_listing=amgL7Ax4g1pyZ1MW",
+  "_scrapedAt": "2026-03-14T19:48:10.497Z",
+  "_rawFile": "5_8383_159_street_surrey_fleetwood_tynehead.html"
+}

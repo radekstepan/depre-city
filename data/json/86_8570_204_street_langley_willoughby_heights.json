@@ -1,0 +1,42 @@
+{
+  "address": "Unit 86 - 8570 204 Street",
+  "city": "Langley",
+  "sqft": 1825,
+  "year": 2017,
+  "price": 962000,
+  "listPrice": 988000,
+  "fee": 434,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3463,
+  "assessment": 951000,
+  "description": "1,825 sqft 3 bed 4 bath END UNIT townhome in desirable Woodland Park by Infinity Properties. Gently used and kept clean by the original owners. Perfect layout has no wasted space. Spacious open-concept main, airy 9’ ceiling, functional kitchen with good size pantry, island with overhang seating, forced-air heating and A/C (ctrl on cell phone) for year-round comfort. Increased efficiency with Large Energy Star windows; also keeps nice and bright with tons of natural light. Walk right out to the fenced backyard right from the kitchen. Spacious rec room (4th bedroom) and full bath downstairs. Commuting is super convenient from the premier location of Willoughby: 3min drive to #1Hwy and 8min walk to Carvolth Exchange. Catchment: Willoughby Ele, Yorkson Creek Mid, and RE Mountain Sec. Must see!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "1.3 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.9 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-28",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/86-8570-204-street/home/VLaGyG2VJpJYW1ZD?id_listing=NkKJ3JJ1oEW3d4V6",
+  "_scrapedAt": "2026-03-14T19:49:55.473Z",
+  "_rawFile": "86_8570_204_street_langley_willoughby_heights.html"
+}

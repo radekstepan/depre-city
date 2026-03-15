@@ -1,0 +1,42 @@
+{
+  "address": "Unit 5 - 1550 Larkhall Crescent",
+  "city": "North Vancouver",
+  "sqft": 1837,
+  "year": 1994,
+  "price": 1653000,
+  "listPrice": 1648000,
+  "fee": 529,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 6485,
+  "assessment": 1563000,
+  "description": "Stunningly renovated townhome in sought-after Nahanee Woods. Offering 3 bdrms, 3 baths, and over 1,800 sq ft on two levels, including a spacious main-floor primary bdrm. The foyer opens to an open-concept living & dining area w/ vaulted ceilings, gas fp, & white oak stairs w/ metal & glass railings. Tile flooring w/ radiant in-floor heating spans the main level, complemented by a recent heat pump & A/C upgrade. The open kitchen features sleek white cabinetry, quartz counters, a large island, & Thermador appliances. A flex space w/ a 2nd gas fp opens to a private west-facing deck. The main-floor primary retreat incl. bay windows, WIC, & renovated 5-pce ensuite. Upstairs are 2 generous bedrooms, a 4-piece bath, and flexible landing. Quietly located near parks, shopping, recreation, & trails.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Blueridge Elementary",
+      "rating": 7.1,
+      "distance": "0.8 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Windsor Secondary",
+      "rating": 6.7,
+      "distance": "0.9 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Northlands",
+  "soldDate": "2026-03-08",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/5-1550-larkhall-crescent/home/JjAXw7QkAPpYQOzg?id_listing=MWBVyZWE6pX7Kemj",
+  "_scrapedAt": "2026-03-14T19:48:12.597Z",
+  "_rawFile": "5_1550_larkhall_crescent_north_vancouver_northlands.html"
+}

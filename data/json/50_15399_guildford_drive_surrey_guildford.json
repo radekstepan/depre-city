@@ -1,0 +1,42 @@
+{
+  "address": "Unit 50 - 15399 Guildford Drive",
+  "city": "Surrey",
+  "sqft": 1688,
+  "year": 2012,
+  "price": 817000,
+  "listPrice": 838880,
+  "fee": 360,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3790,
+  "assessment": 876000,
+  "description": "Welcome to Guildford Greens! This bright and spacious 4-bedroom corner townhouse offers an excellent open-concept layout with abundant natural light, large windows, laminate flooring, and a cozy fireplace. The gourmet kitchen features a large island, granite countertops, stainless steel appliances, and ample cabinetry, with access to a private balcony—perfect for everyday living. Upstairs includes three generously sized bedrooms, while the lower level offers a versatile rec room used as a 4th bedroom. Additional highlights include in-suite laundry, a double side-by-side garage, and very low maintenance fees in a well-managed, kids-friendly complex. Pets allowed with restrictions and rentals are permitted. Centrally located close to schools, shopping, parks, transit & mall",
+  "features": [],
+  "schools": [
+    {
+      "name": "Johnston Heights Secondary",
+      "rating": 6.4,
+      "distance": "1.5 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Harold Bishop Elementary",
+      "rating": 4.3,
+      "distance": "0.7 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Guildford",
+  "soldDate": "2026-02-13",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/50-15399-guildford-drive/home/L5VXv3lVPxxyj2q8?id_listing=NkKJ3JJ1dKN3d4V6",
+  "_scrapedAt": "2026-03-14T19:48:19.505Z",
+  "_rawFile": "50_15399_guildford_drive_surrey_guildford.html"
+}

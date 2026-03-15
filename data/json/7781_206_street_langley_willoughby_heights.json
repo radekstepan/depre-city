@@ -1,0 +1,42 @@
+{
+  "address": "7781 206 Street",
+  "city": "Langley",
+  "sqft": 2162,
+  "year": 2023,
+  "price": 1100000,
+  "listPrice": 1099900,
+  "fee": 0,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3774,
+  "assessment": 1248000,
+  "description": "Welcome to this excellent corner unit ROW HOME in Willoughby neighborhood. Good location! Short distance to Willoughby shopping center, RE Mountain Secondary school (IB program). Welcome to Westbrooke by Foxridge Homes. This 4 Bedroom row home has an open concept main floor with luxury kitchen, 3 generous bedrooms upstairs and 2 full bathrooms. Private fenced yard. No strata. OH 2-4pm on Feb 28, March 1st.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "0.5 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "0.8 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-03-01",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/7781-206-street/home/bqB176WLzNw3ZajD?id_listing=wJKR7P98ll93XeLP",
+  "_scrapedAt": "2026-03-14T19:51:30.460Z",
+  "_rawFile": "7781_206_street_langley_willoughby_heights.html"
+}

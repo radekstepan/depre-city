@@ -1,0 +1,42 @@
+{
+  "address": "Unit 211 - 3105 Dayanee Springs Boulevard",
+  "city": "Coquitlam",
+  "sqft": 1367,
+  "year": 2010,
+  "price": 960000,
+  "listPrice": 979000,
+  "fee": 316,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3388,
+  "assessment": 1002000,
+  "description": "This bright home located in a family-friendly neighbourhood with easy access to local schools, parks, shopping and transit.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Pinetree Way Elementary",
+      "rating": 7.6,
+      "distance": "0.7 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Pinetree Secondary",
+      "rating": 6.3,
+      "distance": "0.8 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Westwood Plateau",
+  "soldDate": "2026-03-01",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/211-3105-dayanee-springs-bl/home/0MWBVyZwWjK7Kemj?id_listing=nbq6y1KxxAE3o9DA",
+  "_scrapedAt": "2026-03-14T19:48:14.605Z",
+  "_rawFile": "211_3105_dayanee_springs_boulevard_coquitlam_westwood_plateau.html"
+}

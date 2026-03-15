@@ -1,0 +1,42 @@
+{
+  "address": "234 Cornell Way",
+  "city": "Port Moody",
+  "sqft": 1790,
+  "year": 1977,
+  "price": 855000,
+  "listPrice": 869000,
+  "fee": 656,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 3776,
+  "assessment": 943000,
+  "description": "This generous-sized home is tucked into a quiet Port Moody setting that offers privacy and partial Burrard Inlet views with a picturesque greenbelt backdrop. Main level features a bright kitchen with ample cupboard space and granite countertops, an open and airy living and dining room with balcony access for summer BBQs. Upper floors incl. a primary bedroom with a large walk-in closet and a private sundeck and 2 large bedrooms. Lower level inc. HUGE rec room (used as 4th bedroom + family room), flex area plus a large covered patio & fenced yard. Enjoy 700+ sqft of outdoor space, plus two side-by-side parking stalls and BONUS storage off the carport. Enjoy the indoor pool, sauna, playground and party room- just STEPS AWAY. Close to Barnet Hwy, transit, WCE, SkyTrain, marina, parks & trails.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Port Moody Secondary",
+      "rating": 7.5,
+      "distance": "1.0 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Seaview Community School",
+      "rating": 3.6,
+      "distance": "0.6 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "College Park PM",
+  "soldDate": "2026-02-11",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-moody-real-estate/234-cornell-way/home/5xLkv3VAOZ67DBNr?id_listing=aD6p780XqOn7wRQr",
+  "_scrapedAt": "2026-03-14T19:47:50.898Z",
+  "_rawFile": "234_cornell_way_port_moody_college_park_pm.html"
+}

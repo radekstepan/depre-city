@@ -1,0 +1,42 @@
+{
+  "address": "Unit 32 - 13895 64 Avenue",
+  "city": "Surrey",
+  "sqft": 1492,
+  "year": 2025,
+  "price": 830000,
+  "listPrice": 849900,
+  "fee": 369,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3574,
+  "assessment": 900000,
+  "description": "Brand-new, ultra-modern corner unit 3-bedroom + Den, 2.5-bath townhome backing onto a protected lush greenbelt. The bright, airy main level features 9'ceilings, Fisher & Paykel appliances, motorized blinds, and a kitchen made for cooking enthusiasts with a gas cooktop, quartz countertops, and ample storage in custom cabinetry. The Park Landmark features a playground surrounded by nature and private amenity building perfect for events. This unit features a spacious double garage with rough in EV. Just a short drive to Hyland Elementary and Sullivan Heights Secondary, and minutes to Newton Town Centre, shops, parks, transit, and major amenities. Open house on Mar 6,7, & 8 from 12-4pm",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sullivan Heights Secondary",
+      "rating": 5.5,
+      "distance": "1.2 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Hyland Elementary",
+      "rating": 4.1,
+      "distance": "0.5 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Sullivan Station",
+  "soldDate": "2026-02-26",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/32-13895-64-avenue/home/XeEn7X6xrp0YrPo8?id_listing=AKv53DxDqXk3MnxB",
+  "_scrapedAt": "2026-03-14T19:51:06.868Z",
+  "_rawFile": "32_13895_64_avenue_surrey_sullivan_station.html"
+}

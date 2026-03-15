@@ -1,0 +1,36 @@
+{
+  "address": "Unit 213 - 2501 161a Street",
+  "city": "Surrey",
+  "sqft": 1578,
+  "year": 2011,
+  "price": 871000,
+  "listPrice": 958000,
+  "fee": 486,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 4011,
+  "assessment": 890000,
+  "description": "Bright & spacious 2-storey end-unit townhome in prestigious Highland Park! This beautifully  3 bed, 3 bath home features hardwood flooring on the main, 9’ ceilings and large windows for abundant natural light, and a cozy gas fireplace. Chef-inspired kitchen with granite counters, high-end stainless steel appliances, gas range, and breakfast bar. Enjoy a fully fenced private patio with gas BBQ hookup—perfect for entertaining. Generous primary bedroom offers a walk-in closet and spa-inspired ensuite. Resort-style amenities include pool, hot tub, gym, yoga studio, indoor hockey rink, theatre & clubhouse. Steps to top schools, Morgan Crossing, Grandview Corners, shopping & dining.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Sunnyside Elementary",
+      "rating": 5.8,
+      "distance": "0.6 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Grandview Surrey",
+  "soldDate": "2026-02-23",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/213-2501-161a-street/home/eVbOYEpjQPB3x2P0?id_listing=XRla7gBxvk5yjEvL",
+  "_scrapedAt": "2026-03-14T19:51:24.643Z",
+  "_rawFile": "213_2501_161a_street_surrey_grandview_surrey.html"
+}

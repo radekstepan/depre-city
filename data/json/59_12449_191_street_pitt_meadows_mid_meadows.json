@@ -1,0 +1,36 @@
+{
+  "address": "Unit 59 - 12449 191 Street",
+  "city": "Pitt Meadows",
+  "sqft": 1372,
+  "year": 1996,
+  "price": 685000,
+  "listPrice": 695000,
+  "fee": 409,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 4694,
+  "assessment": 740000,
+  "description": "Welcome to this 3 bed END UNIT townhome north of the tracks, featuring a private main entrance from outside the complex and NO UPSTAIRS OR DOWNSTAIRS NEIGHBOURS, a rare and highly sought-after layout. Enjoy exceptional walkability just steps to Meadowvale Shopping Centre, West Coast Express, schools, shopping, and the Pitt Meadows Rec Centre. The open concept kitchen is bright and functional, with a dining area that opens to a BBQ patio, ideal for everyday living and entertaining. The HUGE primary bedroom has a walk-in closet, while the third bedroom on the 1st level is perfect for teenagers or a home office. Parking includes a garage plus an extra spot that fits a FULL-SIZED TRUCK. No size/breed restrictions on dogs!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Pitt Meadows Secondary",
+      "rating": 3.6,
+      "distance": "1.9 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Mid Meadows",
+  "soldDate": "2026-02-26",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/pitt-meadows-real-estate/59-12449-191-street/home/owJKR7PwAdvyXeLP?id_listing=aQmD7z6V9oA7J9Bo",
+  "_scrapedAt": "2026-03-14T19:50:52.318Z",
+  "_rawFile": "59_12449_191_street_pitt_meadows_mid_meadows.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 9 - 72 Jamieson Court",
+  "city": "New Westminster",
+  "sqft": 2188,
+  "year": 1991,
+  "price": 1165000,
+  "listPrice": 1199000,
+  "fee": 497,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4477,
+  "assessment": 1058000,
+  "description": "This is the one you've been waiting for Prestigious Duplex style sxs townhome. 3 bdrms/4 baths, 2188 SF at the top of the complex surrounded by trees. 4 separate outdoor areas to follow the sun or find the shade. Super priv patio off your P/Bed, walk out bsmt w patio down, convenient deck off the L/R area as well as another patio off the Family room. What more could you want..well maybe a huge LR w corner gas FP, an entertaining sized DR & a 2 pc bath also on this level. Upstairs is the lavish & large P/bdrm with a bright & open ensuite w large soaker tub & stand up shower. 2 guest bdrms up with full guest bath. Laundry on this floor too. Down is open concept Rec room/Gym/ area & 2 piece bath.  Double garage & parking in front.  This amazing complex is very well run & highly sought after.",
+  "features": [],
+  "schools": [
+    {
+      "name": "New Westminster Secondary",
+      "rating": 6.7,
+      "distance": "2.3 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Skwo:wech Elementary",
+      "rating": 6.5,
+      "distance": "1.2 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Fraserview NW",
+  "soldDate": "2026-02-23",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/new-westminster-real-estate/9-72-jamieson-court/home/xLkv3V9O68n7DBNr?id_listing=2Zpj39q9ark3DrK8",
+  "_scrapedAt": "2026-03-14T19:50:14.276Z",
+  "_rawFile": "9_72_jamieson_court_new_westminster_fraserview_nw.html"
+}

@@ -1,0 +1,36 @@
+{
+  "address": "Unit 2 - 23539 Gilker Hill Road",
+  "city": "Maple Ridge",
+  "sqft": 1986,
+  "year": 2019,
+  "price": 900000,
+  "listPrice": 888900,
+  "fee": 457,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4382,
+  "assessment": 860000,
+  "description": "Welcome home to 'Kanaka Hill'. Built in 2019, this enclave of boutique townhomes set on a south slope just a 3 minute walk to the highly acclaimed Kanaka Elementary School offering revolutionary year round schooling schedule. This 4 bedroom, 3.5 bathroom home is among the largest in the complex with open concept main floor featuring 9' ceilings, large island kitchen with gleaming quartz counters, stainless appliances and access to covered deck and fully fenced rear yard. Upper floor enjoys 3 large bedrooms including primary with massive walk-in closet and ensuite with dual sinks and a shower for 2. A fourth bedroom with full ensuite in the basement is ideal for extended family or house guests.  RARE 4 car parking: side by side 2 car garage plus lengthy double driveway for full size trucks.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Garibaldi Secondary",
+      "rating": 1.6,
+      "distance": "3.1 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Cottonwood MR",
+  "soldDate": "2026-02-07",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/2-23539-gilker-hill-road/home/B5bO3xXoorg3kWVP?id_listing=EXrx30rXa6gyOklN",
+  "_scrapedAt": "2026-03-14T19:50:08.158Z",
+  "_rawFile": "2_23539_gilker_hill_road_maple_ridge_cottonwood_mr.html"
+}

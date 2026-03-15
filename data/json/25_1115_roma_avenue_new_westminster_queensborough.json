@@ -1,0 +1,42 @@
+{
+  "address": "Unit 25 - 1115 Roma Avenue",
+  "city": "New Westminster",
+  "sqft": 1563,
+  "year": 2025,
+  "price": 1100000,
+  "listPrice": 1149888,
+  "fee": 225,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2000,
+  "assessment": 0,
+  "description": "SALE townhouses in Queensborough, New Westminster, offer 1564 SqFt plus a Double Garage with A/C, Radiant heat, Energy Efficient (As Per New Code), Vinyl flooring on main and Carpet in the bedrooms, branded appliances, quartz counter-tops, Hardie and shingles siding, and all the windows coverings. Have Accepted offer with Subject to buyer's Property Sale",
+  "features": [],
+  "schools": [
+    {
+      "name": "New Westminster Secondary",
+      "rating": 6.7,
+      "distance": "4.0 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Queen Elizabeth Elementary",
+      "rating": 5.7,
+      "distance": "0.4 km",
+      "type": "0-4"
+    }
+  ],
+  "subArea": "Queensborough",
+  "soldDate": "2025-09-04",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/new-westminster-real-estate/25-1115-roma-avenue/home/AKv53DD6okj3MnxB?id_listing=1DBW7RnJnkx7qlAp",
+  "_scrapedAt": "2026-03-14T19:48:39.239Z",
+  "_rawFile": "25_1115_roma_avenue_new_westminster_queensborough.html"
+}

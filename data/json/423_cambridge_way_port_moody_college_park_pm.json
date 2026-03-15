@@ -1,0 +1,42 @@
+{
+  "address": "423 Cambridge Way",
+  "city": "Port Moody",
+  "sqft": 1439,
+  "year": 1977,
+  "price": 790000,
+  "listPrice": 835500,
+  "fee": 626,
+  "bedrooms": 4,
+  "bathrooms": 2,
+  "parking": 2,
+  "propertyTax": 3589,
+  "assessment": 871300,
+  "description": "**Beautifully updated 4 bedroom, 3 level townhome in the desirable Easthill community, offering 1,519 sq.ft. of finished living space plus 807 sq.ft. of outdoor and utility areas. This home features a modern kitchen, renovated bathrooms, fresh interior paint, and brand new vinyl flooring throughout. The open concept main floor provides seamless access to a generous patio, deck, and fully fenced backyard. Upstairs includes three bright bedrooms and a refreshed bathroom with a skylight, while the lower level adds a fourth bedroom, laundry, extra storage, and an unfinished flex area. A covered carport is included, and the home is set in a safe, family friendly neighborhood close to parks, top rated schools, and excellent community amenities. Easy to show.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Port Moody Secondary",
+      "rating": 7.5,
+      "distance": "1.2 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Seaview Community School",
+      "rating": 3.6,
+      "distance": "0.7 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "College Park PM",
+  "soldDate": "2026-02-23",
+  "parkingType": "carport",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/port-moody-real-estate/423-cambridge-way/home/AKv53DD6Wzw3MnxB?id_listing=K8OgYBzVPqwYJmG2",
+  "_scrapedAt": "2026-03-14T19:51:32.860Z",
+  "_rawFile": "423_cambridge_way_port_moody_college_park_pm.html"
+}

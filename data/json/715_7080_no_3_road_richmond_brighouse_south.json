@@ -1,0 +1,42 @@
+{
+  "address": "Unit 715 - 7080 No. 3 Road",
+  "city": "Richmond",
+  "sqft": 1577,
+  "year": 2009,
+  "price": 939000,
+  "listPrice": 989000,
+  "fee": 1099,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 3801,
+  "assessment": 1167000,
+  "description": "BEST LOCATION IN RICHMOND !!! Welcome to Centro! This beautiful and well maintained 3 bedroom with 4 bathroom townhouse has a lot of great features. This SOUTH facing home offers a cozy atmosphere with an open layout and a lot of natural light. The kitchen features S/S appliances including a gas stove and quartz countertops. Come with private Gated double garage that can direct goes into your unit. Great building amenities including a fitness center, lounge, and rooftop terrace with kids playground area. Conveniently located near shopping , dining and all within walking distance. Richmond secondary school is just cross the street. Hurry! Will not last long!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Palmer Secondary",
+      "rating": 8.1,
+      "distance": "1.0 km",
+      "type": "8-12"
+    },
+    {
+      "name": "General Currie Elementary",
+      "rating": 7.1,
+      "distance": "0.5 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Brighouse South",
+  "soldDate": "2026-03-02",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/715-7080-no-3-road/home/VaD6p78b0OwYwRQr?id_listing=nbq6y12qpmB7o9DA",
+  "_scrapedAt": "2026-03-14T19:50:10.600Z",
+  "_rawFile": "715_7080_no_3_road_richmond_brighouse_south.html"
+}

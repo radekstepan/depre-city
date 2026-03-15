@@ -1,0 +1,42 @@
+{
+  "address": "4538 208 Street",
+  "city": "Langley",
+  "sqft": 2198,
+  "year": 2025,
+  "price": 1027620,
+  "listPrice": 1079000,
+  "fee": 0,
+  "bedrooms": 5,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 0,
+  "assessment": 0,
+  "description": "Rare fee-simple rowhome with NO strata fees at Oxford Mews by Leone Homes. This brand-new, move-in-ready 3-level home offers 5 bedrooms & 4 bathrooms, including a 1 bed with full bath on the ground level for the in laws. Enjoy approx. 2,198 sq ft of interior living, side-by-side double garage with EV rough-in, 10' main-floor and 12' bedroom ceilings, central A/C, gas cooktop, quartz countertops, and premium Fisher & Paykel & LG appliances. Smart home features include Google Nest thermostat & Leviton Smart Switches. 215 sq ft balcony. Vacant, easy to show & quick possession.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Uplands Elementary",
+      "rating": 4.1,
+      "distance": "0.3 km",
+      "type": "0-6"
+    },
+    {
+      "name": "Langley Secondary",
+      "rating": 1.4,
+      "distance": "2.5 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Langley City",
+  "soldDate": "2026-02-23",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/4538-208-street/home/amgL7A4QwGnyZ1MW?id_listing=bEDRYazg6Z6y1VaB",
+  "_scrapedAt": "2026-03-14T19:50:54.843Z",
+  "_rawFile": "4538_208_street_langley_langley_city.html"
+}

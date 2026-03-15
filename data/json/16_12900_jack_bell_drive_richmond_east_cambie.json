@@ -1,0 +1,42 @@
+{
+  "address": "Unit 16 - 12900 Jack Bell Drive",
+  "city": "Richmond",
+  "sqft": 1312,
+  "year": 1994,
+  "price": 915000,
+  "listPrice": 938000,
+  "fee": 347,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 2983,
+  "assessment": 898000,
+  "description": "Welcome to Malibu built by polygon. Perfect for young families and first-time home buyers, this beautifully renovated townhouse is completely move-in ready.the home features a full renovation including brand new kitchen appliances, modern cabinet, fireplace, and fully updated bathrooms. offering 3 well-sized bedrooms and 3 full bathrooms, with a garage upgraded with new epoxy-coated concrete flooring. large windows throughout provide natural light, creating a bright and welcoming living space. Excellent location-- 1 min walk to cambie secondary school, with very convenient transportation and quick access to richmond centre, vancouver, and burnaby. An ideal home for owner-coocupied living.some photos have been virtually staged.Open house on SUN (feb 22) 2-4 pm.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Kathleen McNeely Elementary",
+      "rating": 7,
+      "distance": "0.4 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Cambie Secondary",
+      "rating": 3.3,
+      "distance": "0.2 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "East Cambie",
+  "soldDate": "2026-02-22",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/16-12900-jack-bell-drive/home/DnM697kvgMOybmwe?id_listing=amgL7AxV8XLyZ1MW",
+  "_scrapedAt": "2026-03-14T19:49:40.938Z",
+  "_rawFile": "16_12900_jack_bell_drive_richmond_east_cambie.html"
+}

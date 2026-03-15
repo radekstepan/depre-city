@@ -1,0 +1,42 @@
+{
+  "address": "Unit 74 - 10199 River Drive",
+  "city": "Richmond",
+  "sqft": 1901,
+  "year": 2020,
+  "price": 1240000,
+  "listPrice": 1250000,
+  "fee": 727,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 3,
+  "propertyTax": 4963,
+  "assessment": 1461000,
+  "description": "Parc Riviera Mews – Exclusive 90-unit presale townhouse collection on River Drive in a premier waterfront community. This spacious 4-bedroom, 3.5-bathroom home offers a thoughtfully designed living space with 2 parking stalls, including 3 ensuites and a powder room. Features include European-brand kitchen appliances, engineered hardwood flooring, 9' ceilings on the main level, and centralized geothermal air conditioning for year-round comfort. Residents enjoy an exceptional lifestyle with a 4,000 sq. ft. riverside dyke, clubhouse with party room, gym, indoor pool and hot tub, and outdoor BBQ area.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Robert J Tait Elementary",
+      "rating": 5.9,
+      "distance": "0.4 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Cambie Secondary",
+      "rating": 3.3,
+      "distance": "2.7 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Bridgeport RI",
+  "soldDate": "2026-02-18",
+  "parkingType": "garage_tandem",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/74-10199-river-drive/home/damgL7AL0dnyZ1MW?id_listing=xLkv3V16P4n7DBNr",
+  "_scrapedAt": "2026-03-14T19:51:26.527Z",
+  "_rawFile": "74_10199_river_drive_richmond_bridgeport_ri.html"
+}

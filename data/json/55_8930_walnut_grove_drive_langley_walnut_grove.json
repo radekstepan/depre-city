@@ -1,0 +1,42 @@
+{
+  "address": "Unit 55 - 8930 Walnut Grove Drive",
+  "city": "Langley",
+  "sqft": 1618,
+  "year": 1995,
+  "price": 711000,
+  "listPrice": 714999,
+  "fee": 390,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 2341,
+  "assessment": 738000,
+  "description": "Welcome to Highland Ridge, a wonderful place to call home for growing families. This inviting, end unit townhome offers three spacious bedrooms upstairs plus a versatile lower-level fourth bedroom, ideal flex space for an office or guests. A bright, open-concept kitchen sits at the heart of the home, perfect for family meals and gatherings, flowing seamlessly into a cozy living room and out to a large private deck where parents can unwind or entertain. Pride of ownership shines with thoughtful updates - new ensuite bathroom, refreshed counters, & new stove. Set in a well-kept, family-friendly complex steps from schools (Walnut Grove/James Kennedy), parks, community centre, & all amenities. Come see why this special home is one your family will love for years to come.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Walnut Grove Secondary",
+      "rating": 7.3,
+      "distance": "0.2 km",
+      "type": "8-12"
+    },
+    {
+      "name": "James Kennedy Elementary",
+      "rating": 5.6,
+      "distance": "0.4 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Walnut Grove",
+  "soldDate": "2026-03-02",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/55-8930-walnut-grove-drive/home/MB5bO3xQjNpYkWVP?id_listing=NkKJ3JJ1R913d4V6",
+  "_scrapedAt": "2026-03-14T19:47:58.063Z",
+  "_rawFile": "55_8930_walnut_grove_drive_langley_walnut_grove.html"
+}

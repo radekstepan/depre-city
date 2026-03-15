@@ -1,0 +1,42 @@
+{
+  "address": "Unit 11 - 8863 216 Street",
+  "city": "Langley",
+  "sqft": 2110,
+  "year": 1991,
+  "price": 875000,
+  "listPrice": 875000,
+  "fee": 422,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3108,
+  "assessment": 935000,
+  "description": "Looking for a  renovated 4 bedroom corner townhouse with parking for 3 vehicles in Walnut grove?? Emerald Estates is a perfect spot with over 2100 square feet too! As large as a house, 2 storey with basement. Renovations include: all bathrooms, kitchen, living room, flooring and paint throughout! Gorgeous fireplace with built -ins. Furnace replaced 2022, HW tank 2025, new washer/dryer all poly b replaced with Pex.  Upper floor has 3 bedrooms, and basement has 4th bedroom and large rec room, laundry and storage.  Walkable to Topham elementary and just minutes to shopping, parks, WGSS, rec centre, pool and library. Close access to Hwy 1, Fort Langley, and Golden Ears bridge!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Walnut Grove Secondary",
+      "rating": 7.3,
+      "distance": "1.2 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Topham Elementary",
+      "rating": 7.1,
+      "distance": "0.5 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Walnut Grove",
+  "soldDate": "2026-02-27",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/11-8863-216-street/home/zVwod7v6egJ75mGN?id_listing=DO1w3W19nL6y8Jg0",
+  "_scrapedAt": "2026-03-14T19:49:45.947Z",
+  "_rawFile": "11_8863_216_street_langley_walnut_grove.html"
+}

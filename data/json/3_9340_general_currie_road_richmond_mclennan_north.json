@@ -1,0 +1,42 @@
+{
+  "address": "Unit 3 - 9340 General Currie Road",
+  "city": "Richmond",
+  "sqft": 1595,
+  "year": 2026,
+  "price": 1399000,
+  "listPrice": 1429000,
+  "fee": 579,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "assessment": 0,
+  "description": "Welcome to Parkview! These bright and modern townhouses offer high-quality finishes and thoughtful design throughout. The contemporary kitchen features sleek cabinetry, stainless steel appliances, and ample storage, making it ideal for both everyday living and entertaining. Well-appointed bathrooms showcase modern fixtures and elegant tilework. Enjoy outdoor living on your private balcony, perfect for morning coffee or unwinding in the evening. Select rear units offer peaceful views of the park, adding to the appeal. With a functional layout and stylish details, this new development blends comfort, style, and convenience, close to shopping, dining, and local amenities.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Palmer Secondary",
+      "rating": 8.1,
+      "distance": "0.8 km",
+      "type": "8-12"
+    },
+    {
+      "name": "DeBeck Elementary",
+      "rating": 7.2,
+      "distance": "0.9 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "McLennan North",
+  "soldDate": "2026-03-06",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/3-9340-general-currie-road/home/ZxwR7MwkEA2YKabB?id_listing=bEDRYazzO05y1VaB",
+  "_scrapedAt": "2026-03-14T19:48:28.755Z",
+  "_rawFile": "3_9340_general_currie_road_richmond_mclennan_north.html"
+}

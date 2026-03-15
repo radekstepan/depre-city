@@ -1,0 +1,42 @@
+{
+  "address": "Unit 109 - 2070 Curling Road",
+  "city": "North Vancouver",
+  "sqft": 1831,
+  "year": 2021,
+  "price": 1520000,
+  "listPrice": 1599000,
+  "fee": 741,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 6516,
+  "assessment": 1669000,
+  "description": "European Inspired townhome at Lions Gate Village. This home features 4 Bedrooms plus a rec room with direct access to the parkade with 2 parking stalls. This home provides ample space for the family, 3 bathrooms, spacious kitchen, feature flooring and a great large patio to BBQ and relax. Steps from the Community Centre, shopping and parks.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Carson Graham Secondary",
+      "rating": 4.1,
+      "distance": "3.1 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Norgate Community Elementary",
+      "rating": 1.4,
+      "distance": "1.1 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Pemberton NV",
+  "soldDate": "2026-03-03",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/109-2070-curling-road/home/5VXv3lXN4ep3j2q8?id_listing=aQmD7zVJwX17J9Bo",
+  "_scrapedAt": "2026-03-14T19:48:30.622Z",
+  "_rawFile": "109_2070_curling_road_north_vancouver_pemberton_nv.html"
+}

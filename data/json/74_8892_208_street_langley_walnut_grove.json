@@ -1,0 +1,42 @@
+{
+  "address": "Unit 74 - 8892 208 Street",
+  "city": "Langley",
+  "sqft": 1453,
+  "year": 1994,
+  "price": 632500,
+  "listPrice": 649000,
+  "fee": 473,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 2301,
+  "assessment": 643000,
+  "description": "Hunter's Run offers this 1453 sq ft town home with some lovely updates, making this move in ready! White kitchen features S/S appliances, quartz and has 'pass through' window to spacious dining area. Sliders lead to the covered upper deck for convenient barbequing. Living rm has cozy gas fireplace and easy care laminate. Well sized bedroom and a 4 pc bath on the main floor. Head down to another bedroom, 4 pc bath & huge laundry rm & storage. The rec room could easily be made into an additional 3rd bedroom by adding a door. Step out to the large lower patio and your private tree lined outdoor space. Some updates include Hot Water Tank, washer, fridge & more! Great location with trails leading to Walnut Grove Senior Secondary & pool! All shopping, amenities all outside your door.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Walnut Grove Secondary",
+      "rating": 7.3,
+      "distance": "0.3 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Gordon Greenwood Elementary",
+      "rating": 7.2,
+      "distance": "0.8 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Walnut Grove",
+  "soldDate": "2026-02-26",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/74-8892-208-street/home/jJKdOYrJ1xKY54lW?id_listing=eVbOYENkrJOyx2P0",
+  "_scrapedAt": "2026-03-14T19:51:51.876Z",
+  "_rawFile": "74_8892_208_street_langley_walnut_grove.html"
+}

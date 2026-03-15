@@ -1,0 +1,42 @@
+{
+  "address": "Unit 11 - 2590 Austin Avenue",
+  "city": "Coquitlam",
+  "sqft": 1240,
+  "year": 1978,
+  "price": 820000,
+  "listPrice": 819900,
+  "fee": 468,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 2846,
+  "assessment": 770100,
+  "description": "Private end unit townhome with a large fenced yard and deck siding onto tranquil greenspace. 3 bedroom, 2 bathrooms with a beautifully renovated kitchen with white cabinets, quartz counters, gas stove and S/S appliances. Warm gas F/P bright living room. Office plus 2 bedrooms upstairs. Another bedroom & laundry on main. Small, well run complex near Mundy Park, shopping, & good schools. Bonus is 700 square foot crawl space with over 6' ceilings.",
+  "features": [],
+  "schools": [
+    {
+      "name": "R.C. Macdonald Elementary",
+      "rating": 6.8,
+      "distance": "0.4 km",
+      "type": "0-5"
+    },
+    {
+      "name": "Centennial Secondary School",
+      "rating": 3.4,
+      "distance": "2.0 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Coquitlam East",
+  "soldDate": "2026-02-22",
+  "parkingType": "carport",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/coquitlam-real-estate/11-2590-austin-avenue/home/EeVbOYE6DQByx2P0?id_listing=GMnKYqx0lXd3w1Qr",
+  "_scrapedAt": "2026-03-14T19:51:22.377Z",
+  "_rawFile": "11_2590_austin_avenue_coquitlam_coquitlam_east.html"
+}

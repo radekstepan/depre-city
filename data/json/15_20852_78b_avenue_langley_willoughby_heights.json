@@ -1,0 +1,42 @@
+{
+  "address": "Unit 15 - 20852 78b Avenue",
+  "city": "Langley",
+  "sqft": 1371,
+  "year": 2018,
+  "price": 810000,
+  "listPrice": 809900,
+  "fee": 288,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2860,
+  "assessment": 847000,
+  "description": "ROOFTOP PATIO & CORNER UNIT at Boulevard in Willoughby Town Centre! Private rooftop patio with snow mountain views  — perfect for summer BBQs and relaxing evenings under the stars. This modern 3-bedroom 2.5 bathroom home features an Extra-wide living area made possible by a Side-by-Side garage, along with 10’ ceilings and oversized windows that flood the home with natural light.  Residents enjoy access to a clubhouse ideal for birthday parties, a children’s playground, and ample visitor parking. Steps to Willoughby Town Centre, with easy access to Langley and only a 5-minute drive to Highway 1. Walking distance to Richard Bulpitt Elementary, and Yorkson Creek Middle and R.E. Mountain Secondary School with IB Program — an ideal choice for families.  Must see!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Richard Bulpitt Elementary",
+      "rating": 5.8,
+      "distance": "0.2 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.4 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-23",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/15-20852-78b-avenue/home/dXawjy4MGab7rR18?id_listing=XeEn7XK4KQgyrPo8",
+  "_scrapedAt": "2026-03-14T19:47:53.397Z",
+  "_rawFile": "15_20852_78b_avenue_langley_willoughby_heights.html"
+}

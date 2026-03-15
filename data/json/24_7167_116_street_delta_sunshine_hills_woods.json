@@ -1,0 +1,42 @@
+{
+  "address": "Unit 24 - 7167 116 Street",
+  "city": "Delta",
+  "sqft": 2318,
+  "year": 2021,
+  "price": 984500,
+  "listPrice": 1025000,
+  "fee": 540,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4335,
+  "assessment": 1211000,
+  "description": "MOTIVATED SELLER & PRICED TO SELL well below Assessment! This LUXURY END UNIT home, shows like NEW. 2,318 SF of modern living w/ 4 beds, 4 baths, Open concept main floor with Large Living & Dining Area, Family Rm, HUGE Quartz Island, walk-in pantry, chef-inspired kitchen w/Gas Stove. Large, fully fenced yard, plus 2 balconies with south-facing deck with BBQ gas hookup. Upstairs has 3 generous size beds, w/Primary feat. walk-in closet, his/her sinks & massive 6 pc spa-like ensuite, Double sink in Main Bath & full laundry area. BONUS: Separate entry to INDEPENDENT LIVING AREA w/Rec Rm, Bedroom & Full Bath perfect for extended family or Nanny. Side by Side Garage + 2 on driveway, all in a cool comfortable A/C Home. Minutes away to Shops, Highways, Buses & top schools: SEAQUAM (IB). Pets OK.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Seaquam Secondary",
+      "rating": 7.6,
+      "distance": "0.7 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Heath Traditional Elementary",
+      "rating": 3.9,
+      "distance": "0.5 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Sunshine Hills Woods",
+  "soldDate": "2026-02-22",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/delta-real-estate/24-7167-116-street/home/56k97wqaxm1YKRjD?id_listing=ZxwR7MjwXEe3KabB",
+  "_scrapedAt": "2026-03-14T19:48:16.839Z",
+  "_rawFile": "24_7167_116_street_delta_sunshine_hills_woods.html"
+}

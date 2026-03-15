@@ -1,0 +1,42 @@
+{
+  "address": "Unit 23 - 11580 Burnett Street",
+  "city": "Maple Ridge",
+  "sqft": 1426,
+  "year": 1992,
+  "price": 700000,
+  "listPrice": 710000,
+  "fee": 576,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3535,
+  "assessment": 711000,
+  "description": "Updated 3-bedroom + den END UNIT townhome with over 1,400 sq.ft. on two spacious levels. Renovated with brand new PEX plumbing, new vinyl plank flooring, newer roof & skylight, plus a 3-year-old washer & dryer — this home is truly move-in ready. Enjoy a private deck directly off the main floor. The main floor has a generously sized den, with a window, offering flexibility as a 4th bedroom or ideal home office. Upstairs offers 3 bedrooms including a king-size primary with full ensuite. Features include forced air heating, programmable thermostat, retractable screen doors, ceiling fans, garburator, gas fireplace, 3’ crawl space, single garage + extra parking. Ideal location, close to schools, transit, and everyday amenities.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Thomas Haney Secondary",
+      "rating": 5.7,
+      "distance": "0.4 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Golden Ears Elementary",
+      "rating": 4.2,
+      "distance": "0.6 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "East Central",
+  "soldDate": "2026-03-02",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/maple-ridge-real-estate/23-11580-burnett-street/home/aQmD7zn59g47J9Bo?id_listing=wJKR7P9N4V93XeLP",
+  "_scrapedAt": "2026-03-14T19:48:00.614Z",
+  "_rawFile": "23_11580_burnett_street_maple_ridge_east_central.html"
+}

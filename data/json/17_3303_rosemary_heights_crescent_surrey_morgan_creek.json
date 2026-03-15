@@ -1,0 +1,42 @@
+{
+  "address": "Unit 17 - 3303 Rosemary Heights Crescent",
+  "city": "Surrey",
+  "sqft": 1842,
+  "year": 2015,
+  "price": 1025000,
+  "listPrice": 1069000,
+  "fee": 494,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3817,
+  "assessment": 1064000,
+  "description": "This quiet complex features only 20 unique townhomes nestled in the Rosemary Heights neighbourhood, offering a sense of family and warmth. This originally owned townhome features the main floor with an open-concept, bright chef’s kitchen with upgraded appliances, quartz counter tops. a cozy balcony off the kitchen overlooks a backyard onto peaceful single-family houses. Upstairs features three generously sized bedrooms. The master bedroom includes a large walk-in closet and a spa-like ensuite. The bottom floor offers a sunny, versatile flex room that opens up to the large backyard. The property includes a Double Garage with two additional spots on the private driveway and a fully fenced yard - perfect for your pets. An unbeatable location in South Surrey near schools, shopping & transit.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Rosemary Heights Elementary",
+      "rating": 7.7,
+      "distance": "0.7 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Earl Marriott Secondary",
+      "rating": 7.2,
+      "distance": "3.5 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Morgan Creek",
+  "soldDate": "2026-02-25",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/17-3303-rosemary-heights-crescent/home/GMnKYqpVxk53w1Qr?id_listing=EXrx30reomJyOklN",
+  "_scrapedAt": "2026-03-14T19:51:28.336Z",
+  "_rawFile": "17_3303_rosemary_heights_crescent_surrey_morgan_creek.html"
+}

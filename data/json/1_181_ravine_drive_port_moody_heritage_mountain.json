@@ -1,0 +1,42 @@
+{
+  "address": "Unit 1 - 181 Ravine Drive",
+  "city": "Port Moody",
+  "sqft": 2438,
+  "year": 1990,
+  "price": 1320000,
+  "listPrice": 1378000,
+  "fee": 581,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4540,
+  "assessment": 1179000,
+  "description": "EXECUTIVE, END UNIT TOWNHOME WITH A STUNNING, GREENBELT LOCATION!! Beautifully renovated, open concept home boasts privacy and serenity! Main floor features warm, walnut hardwood flooring. The incredible Chef's Kitchen offers a massive entertaining island, custom white cabinetry, quartz counters and upscale S/S appliances. From the cozy Living and Dining Area with a gas fireplace, walk out to your private patio, hot tub and incredible views of the forest! Up are 3 very generous Bedrooms. The Primary Bdrm boasts a walk-in closet, great views and a luxurious renovated ensuite! Basement has a large Bedroom/Rec Room, with no window. Perfect for a nanny suite, home office or gym. Great complex just steps to all 3 levels of schools: Heritage Mtn Elem, Eagle Mtn Middle and Heritage Woods Sec!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Heritage Woods Secondary",
+      "rating": 8,
+      "distance": "0.5 km",
+      "type": "9-12"
+    },
+    {
+      "name": "Heritage Mountain Elementary",
+      "rating": 7.9,
+      "distance": "0.3 km",
+      "type": "0-5"
+    }
+  ],
+  "subArea": "Heritage Mountain",
+  "soldDate": "2026-02-26",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/port-moody-real-estate/1-181-ravine-drive/home/gaQmD7z9OlMyJ9Bo?id_listing=0A9X3j6L58K3vgxV",
+  "_scrapedAt": "2026-03-14T19:49:50.505Z",
+  "_rawFile": "1_181_ravine_drive_port_moody_heritage_mountain.html"
+}

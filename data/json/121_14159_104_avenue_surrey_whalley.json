@@ -1,0 +1,42 @@
+{
+  "address": "Unit 121 - 14159 104 Avenue",
+  "city": "Surrey",
+  "sqft": 1180,
+  "year": 1971,
+  "price": 562000,
+  "listPrice": 599900,
+  "fee": 394,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "parking": 1,
+  "propertyTax": 2522,
+  "assessment": 613200,
+  "description": "Welcome to this spacious & cozy 3 Bedrm corner unit townhouse facing greenbelt in popular Hawthorne Park in family oriented well run strata. On main lvl, a large living rm greets you leading to ample dining rm area & NEWLY RENOVATED galley kitchen w/ new stove, quartz countertops, backsplash. A powder rm & large shoe/jacket closet & laundry closet rounds out 1st flr.  Upstrs has 3 good sized bedrms w greenbelt views, full bathrm & BRAND NEW Laminate flrs. For outdr entertainment, step into huge private fenced concrete patio/yard,perfect for kids/pets to play in. The strata has a beautiful outdr pool, playground/park setting, newer roofs. Very close to the asian grocery mart Hen Long, express bus, elem./high schools. Excellent redevelopment potential. This is the home you have been seeking!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Mary Jane Shannon Elementary",
+      "rating": 3.2,
+      "distance": "0.7 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Guildford Park Secondary",
+      "rating": 2.8,
+      "distance": "0.9 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Whalley",
+  "soldDate": "2026-02-24",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/121-14159-104th-avenue/home/xmZRW7nmKPVyEBO9?id_listing=Zaw5YoVXV223n961",
+  "_scrapedAt": "2026-03-14T19:50:03.083Z",
+  "_rawFile": "121_14159_104_avenue_surrey_whalley.html"
+}

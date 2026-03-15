@@ -1,0 +1,42 @@
+{
+  "address": "Unit 10 - 9580 Alberta Road",
+  "city": "Richmond",
+  "sqft": 1298,
+  "year": 2011,
+  "price": 1124000,
+  "listPrice": 1228000,
+  "fee": 323,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3947,
+  "assessment": 1124000,
+  "description": "This south facing Corner unit from the Parkside Estates has over 270 degree of view. Spacious Corner 4 bedroom townhouse with 3 bedroom up, and 1 bedroom down. MacNeill neighborhood Park and Garden City Park are within the same block. This small complex comprises of only 13 units, easy to look after each other which provides a safe and friendly environment. Place is well kept by these original owners and equipped with some smart devices too. Gas connected BBQ stove at the west side balcony offers you outdoor gourmet. Functional & bright kitchen. School catchment: Anderson Elementary, MacNeill Secondary just next to your house. Open house this weekend 2-4pm (Nov 29,30)",
+  "features": [],
+  "schools": [
+    {
+      "name": "Henry Anderson Elementary",
+      "rating": 8,
+      "distance": "0.1 km",
+      "type": "0-7"
+    },
+    {
+      "name": "MacNeill Secondary",
+      "rating": 3.4,
+      "distance": "0.3 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "McLennan North",
+  "soldDate": "2026-02-08",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/10-9580-alberta-road/home/0J6Em7bP8PGYXBeq?id_listing=6zqW7dK6vXVy5eZE",
+  "_scrapedAt": "2026-03-14T19:47:55.797Z",
+  "_rawFile": "10_9580_alberta_road_richmond_mclennan_north.html"
+}

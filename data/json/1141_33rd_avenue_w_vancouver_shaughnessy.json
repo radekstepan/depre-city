@@ -1,0 +1,42 @@
+{
+  "address": "1141 33rd Avenue W",
+  "city": "Vancouver",
+  "sqft": 1977,
+  "year": 2025,
+  "price": 2098000,
+  "listPrice": 2098800,
+  "fee": 365,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 0,
+  "assessment": 9378000,
+  "description": "Set in prestigious Shaughnessy, this stunning 4-bedroom townhome offers an exceptional blend of style, comfort, & functionality. Beautifully curated by Mullo Interiors & thoughtfully designed across two spacious levels, the light-filled open-concept main floor showcases wide-plank hardwood floors, over height ceilings, custom millwork, & built-in bench seating. The chef’s kitchen impresses with quartz countertops, a large island, premium Wolf appliances, & a built-in coffee maker for daily indulgence. Seamlessly connected living & dining areas are ideal for everyday living & entertaining. Upstairs, the serene primary retreat includes a spa-inspired ensuite, plus three additional bedrooms. Enjoy A/C, a private fenced yard & the convenience of a one-car garage. Ready to welcome you home.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Eric Hamber Secondary",
+      "rating": 8.4,
+      "distance": "0.5 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Shaughnessy Elementary",
+      "rating": 8,
+      "distance": "1.2 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Shaughnessy",
+  "soldDate": "2026-03-02",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/1141-33rd-avenue-w/home/BDO1w3WbOPV78Jg0?id_listing=XeEn7XK4xA0yrPo8",
+  "_scrapedAt": "2026-03-14T19:49:33.313Z",
+  "_rawFile": "1141_33rd_avenue_w_vancouver_shaughnessy.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 7 - 7298 199a Street",
+  "city": "Langley",
+  "sqft": 1749,
+  "year": 2010,
+  "price": 720000,
+  "listPrice": 734900,
+  "fee": 361,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 2693,
+  "assessment": 754000,
+  "description": "YORK. Beautifully maintained modern 3-bedroom, 3 bath townhome in a desirable family orientated neighborhood. Features include an open floor plan, 2-car tandem garage, large fully fenced, private yard, a modern kitchen with granite countertops, white cabinetry, and stainless steel appliances. A great blend of space, style, and functionality. Close to schools, shopping, restaurants and quick freeway access. The acreage north of the property will be developed some time in the near future.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "2.2 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "0.9 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-25",
+  "parkingType": "garage_tandem",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/7-7298-199a-street/home/gJRv53KGqEX3VPW4?id_listing=K8OgYBzV58XYJmG2",
+  "_scrapedAt": "2026-03-14T19:51:11.310Z",
+  "_rawFile": "7_7298_199a_street_langley_willoughby_heights.html"
+}

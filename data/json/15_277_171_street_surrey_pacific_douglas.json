@@ -1,0 +1,36 @@
+{
+  "address": "Unit 15 - 277 171 Street",
+  "city": "Surrey",
+  "sqft": 1501,
+  "year": 2014,
+  "price": 748500,
+  "listPrice": 785000,
+  "fee": 391,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 3276,
+  "assessment": 830000,
+  "description": "WELCOME to On the Course II by Dawson + Sawyer, an exclusive boutique community of 22-homes backing along The Hills at Portal Golf Course. Bright 4 bed, 3 bath home showcases timeless MODERN design and METICULOUS care, making it truly move-in ready! Discover SOARING ceilings, quartz countertops, stainless steel appliances, gas range, OVERSIZED entertainer’s island, and durable laminate flooring. OPEN concept living space blends style and functionality. Spacious patio with natural gas hookup makes outdoor entertaining effortless. SINGLE-car garage plus driveway parking. Well-managed, pet-friendly complex with clubhouse, playground, and community garden. Walk to Douglas Elementary, Dufferin Park, and Peace Arch Park. Enjoy the very best of South Surrey living in family-friendly SUMMERFIELD!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Earl Marriott Secondary",
+      "rating": 7.2,
+      "distance": "3.7 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Pacific Douglas",
+  "soldDate": "2026-03-01",
+  "parkingType": "other",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/15-277-171-street/home/amgL7A4jekEyZ1MW?id_listing=10Qqyp5qM0V7LGlV",
+  "_scrapedAt": "2026-03-14T19:49:28.138Z",
+  "_rawFile": "15_277_171_street_surrey_pacific_douglas.html"
+}

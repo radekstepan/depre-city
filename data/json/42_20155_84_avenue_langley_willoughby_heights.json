@@ -1,0 +1,42 @@
+{
+  "address": "Unit 42 - 20155 84 Avenue",
+  "city": "Langley",
+  "sqft": 2322,
+  "year": 2022,
+  "price": 1140000,
+  "listPrice": 1149900,
+  "fee": 408,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4086,
+  "assessment": 1177000,
+  "description": "The Largest and most stunning townhome layouts in Willoughby. This meticulously kept 4 bedroom, 4 bathroom + den home offers exceptional design w/ countless upgrades. Enjoy over 700 sqft rooftop patio w/ gas BBQ hookup and hot tub rough in, plus a side by side double garage (EV ready). Features include 9 ft ceilings, highly efficient radiant in floor heating, heat pump w/ A/C, and hot water on demand for year-round comfort. Laminate and tile flooring throughout. The lower level offers a spacious bedrm w/ full bath, while the main level features open concept living, large pantry, powder room, & generous den. Prime walkable location steps to parks, trails, schools including Josette Dandurand Elementary, shopping, transit, and minutes to Hwy 1. A rare opportunity in an unbeatable location",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "1.5 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "1.7 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-27",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/42-20155-84-avenue/home/mZRW7na5moJyEBO9?id_listing=eQp5yOwpE20yd0ZE",
+  "_scrapedAt": "2026-03-14T19:49:38.230Z",
+  "_rawFile": "42_20155_84_avenue_langley_willoughby_heights.html"
+}

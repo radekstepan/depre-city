@@ -1,0 +1,36 @@
+{
+  "address": "Unit 9 - 8589 Rivergrass Drive",
+  "city": "Vancouver",
+  "sqft": 1686,
+  "year": 2021,
+  "price": 1090000,
+  "listPrice": 1050000,
+  "fee": 990,
+  "bedrooms": 3,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4874,
+  "assessment": 1482000,
+  "description": "Exceptional opportunity to own a brand-new-condition corner townhouse in River district's privilege town at Avalon Park 3, enhanced with valuable owner-added upgrades including custom shelving, Silhouette blinds, folding bed at guestroom and an extra-large private storage room purchased separately by the owner. This home features an excellent floor plan with a bright, spacious living room and white toned kitchen opening to a 177 sqft patio, two upper-level bedrooms each with ensuite bathrooms, a private rooftop deck, and a lower level with an additional bedroom, a den, and ample storage. Perfectly designed for comfort, flexibility, and modern living.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Killarney Secondary",
+      "rating": 5.4,
+      "distance": "2.5 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "South Marine",
+  "soldDate": "2026-02-24",
+  "parkingType": "underground",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "rooftop",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/vancouver-real-estate/9-8589-rivergrass-drive/home/Z5BX32z25vQ3Dar0?id_listing=JKdOYrB2pJlY54lW",
+  "_scrapedAt": "2026-03-14T19:50:57.234Z",
+  "_rawFile": "9_8589_rivergrass_drive_vancouver_south_marine.html"
+}

@@ -1,0 +1,42 @@
+{
+  "address": "Unit 90 - 5900 Ferry Road",
+  "city": "Delta",
+  "sqft": 2330,
+  "year": 2000,
+  "price": 1400000,
+  "listPrice": 1459000,
+  "fee": 636,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 5364,
+  "assessment": 1607000,
+  "description": "Chesapeake Landing! Gorgeous Luxury Townhome Living with primary bedroom on the main. Unique floorplan with vaulted ceilings in both the living & great room areas. All the rooms are huge with a second primary bedroom up. Lots of updates too. Shows very well. Oversized double car garage...almost 500 sq. ft. Private west exposed front yard. Loads of street parking. Enjoy the country club lifestyle with a pool & clubhouse. Close to bus, golf, marina, & Ladner Village. Yes you can have it all!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Neilson Grove Elementary",
+      "rating": 5.1,
+      "distance": "0.5 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Delta Secondary",
+      "rating": 4.3,
+      "distance": "2.6 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Neilsen Grove",
+  "soldDate": "2026-03-04",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/delta-real-estate/90-5900-ferry-road/home/EXrx30XavJG3OklN?id_listing=Vwod7vWrpNj35mGN",
+  "_scrapedAt": "2026-03-14T19:48:21.813Z",
+  "_rawFile": "90_5900_ferry_road_delta_neilsen_grove.html"
+}

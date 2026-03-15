@@ -1,0 +1,42 @@
+{
+  "address": "Unit 125 - 8300 General Currie Road",
+  "city": "Richmond",
+  "sqft": 1535,
+  "year": 1990,
+  "price": 641000,
+  "listPrice": 699000,
+  "fee": 587,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 2545,
+  "assessment": 792000,
+  "description": "Welcome to CAMELIA GARDENS, located in the central Richmond. The two level townhome is very spacious and bright with 3 bedrooms, 1 large Den and 2.5 bathrooms. The den can easily be converted into bedroom OR office space. Steps to Schools, public transportation, restaurants, Richmond Center. 10 mins walk to Sky train. School catchment: Currie Elementary and Palmer Secondary School.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Palmer Secondary",
+      "rating": 8.1,
+      "distance": "0.6 km",
+      "type": "8-12"
+    },
+    {
+      "name": "General Currie Elementary",
+      "rating": 7.1,
+      "distance": "0.0 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Brighouse South",
+  "soldDate": "2026-02-20",
+  "parkingType": "underground",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 3,
+  "_sourceUrl": "https://housesigma.com/bc/richmond-real-estate/125-8300-general-currie-road/home/5xLkv3VjVmn3DBNr?id_listing=MWBVyZW96n27Kemj",
+  "_scrapedAt": "2026-03-14T19:51:04.502Z",
+  "_rawFile": "125_8300_general_currie_road_richmond_brighouse_south.html"
+}

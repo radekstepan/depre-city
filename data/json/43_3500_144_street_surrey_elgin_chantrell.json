@@ -1,0 +1,42 @@
+{
+  "address": "Unit 43 - 3500 144 Street",
+  "city": "Surrey",
+  "sqft": 2504,
+  "year": 2000,
+  "price": 1369500,
+  "listPrice": 1395000,
+  "fee": 512,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 5385,
+  "assessment": 1407000,
+  "description": "Elegant townhome at the quiet end of the Crescent, a prestigious gated adult community in South Surrey.  The very private, west facing sunny backyard boasts a large stamped concrete patio, and is fully fenced/gated with an automated irrigation system.  The home impresses with 18' ceilings in the formal living/dining area, and an open-concept vaulted kitchen/family room.  The main-floor oversized primary suite features a luxury ensuite and walk-in closet.  Upstairs you will find two additional large bedrooms, a loft/office and storage room.  Upgrades include new roof, skylights, electric blinds, patio doors, screens, EV charging and custom closets.  Located near walking trails, the ocean, transit and easy highway access.  This pet-friendly gem is a rare find.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Semiahmoo Trail Elementary",
+      "rating": 8.5,
+      "distance": "0.8 km",
+      "type": "0-7"
+    },
+    {
+      "name": "Elgin Park Secondary",
+      "rating": 7.6,
+      "distance": "2.9 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Elgin Chantrell",
+  "soldDate": "2026-02-22",
+  "parkingType": "garage_double",
+  "levels": 1,
+  "isEndUnit": true,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/43-3500-144-street/home/N0A9X3jVEAK3vgxV?id_listing=eQp5yOwpG41yd0ZE",
+  "_scrapedAt": "2026-03-14T19:50:00.474Z",
+  "_rawFile": "43_3500_144_street_surrey_elgin_chantrell.html"
+}

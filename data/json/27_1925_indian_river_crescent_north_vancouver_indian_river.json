@@ -1,0 +1,42 @@
+{
+  "address": "Unit 27 - 1925 Indian River Crescent",
+  "city": "North Vancouver",
+  "sqft": 1818,
+  "year": 1988,
+  "price": 1312000,
+  "listPrice": 1277000,
+  "fee": 558,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 1,
+  "propertyTax": 5172,
+  "assessment": 1243000,
+  "description": "Spacious & fully renovated 3Bdrm | 3Bath townhouse with 1818 sqft spread over only two levels. Inside you'll find stone countertops, a gas fireplace, a vaulted living room ceiling, skylights for ample natural light & a free standing soaker tub in the master bathroom to relax - something to see & experience in every space of the house. Benefit from the convenience of an attached garage & additional parking. Outside you'll enjoy two patios complemented by a grass area at the back. Ideally located next to schools, trails, Parkgate Village, golf courses & Mt. Seymour. What a place to call home! OPEN HOUSE CANCELED",
+  "features": [],
+  "schools": [
+    {
+      "name": "Seycove Secondary Community",
+      "rating": 8.2,
+      "distance": "1.0 km",
+      "type": "8-12"
+    },
+    {
+      "name": "Dorothy Lynas Elementary",
+      "rating": 6.5,
+      "distance": "0.3 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Indian River",
+  "soldDate": "2026-03-02",
+  "parkingType": "other",
+  "levels": 1,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": false,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/north-vancouver-real-estate/27-1925-indian-river-crescent/home/owJKR7PB28BYXeLP?id_listing=aD6p780NBGk7wRQr",
+  "_scrapedAt": "2026-03-14T19:48:08.197Z",
+  "_rawFile": "27_1925_indian_river_crescent_north_vancouver_indian_river.html"
+}

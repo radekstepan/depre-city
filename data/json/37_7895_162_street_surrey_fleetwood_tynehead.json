@@ -1,0 +1,42 @@
+{
+  "address": "Unit 37 - 7895 162 Street",
+  "city": "Surrey",
+  "sqft": 1669,
+  "year": 2025,
+  "price": 969900,
+  "listPrice": 969900,
+  "fee": 371,
+  "bedrooms": 3,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 0,
+  "assessment": 972000,
+  "description": "Elywnn Green This exclusive residential community of 172 three- and four-bedroom townhomes is surrounded by Fleetwood's prime greenspace. Come home to a 10-acre development designed for active families who value contemporary, stylish living enhanced by the serenity of exquisite green spaces. West coast contemporary architecture featuring dramatic roofs, cultured stone, rich wood accents and hardi-plank siding Fischer Paykel + SAMSUNG Appliances Package, Hot Water on demand. High efficiency forced air heating.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Fleetwood Park Secondary",
+      "rating": 7,
+      "distance": "1.1 km",
+      "type": "8-12"
+    },
+    {
+      "name": "William Watson Elementary",
+      "rating": 5.6,
+      "distance": "0.5 km",
+      "type": "0-7"
+    }
+  ],
+  "subArea": "Fleetwood Tynehead",
+  "soldDate": "2026-03-04",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": false,
+  "hasAC": false,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/37-7895-162-street/home/Xawjy419nX67rR18?id_listing=9w8o3mjjja2YGKjm",
+  "_scrapedAt": "2026-03-14T19:48:03.514Z",
+  "_rawFile": "37_7895_162_street_surrey_fleetwood_tynehead.html"
+}

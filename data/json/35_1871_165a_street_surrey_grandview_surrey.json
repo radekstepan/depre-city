@@ -1,0 +1,36 @@
+{
+  "address": "Unit 35 - 1871 165a Street",
+  "city": "Surrey",
+  "sqft": 2352,
+  "year": 2024,
+  "price": 1229900,
+  "listPrice": 1299900,
+  "fee": 479,
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "parking": 2,
+  "propertyTax": 4613,
+  "assessment": 1234000,
+  "description": "Move-in Ready Lottery Home with Elevator! Welcome to Fox & Aikins North, an exclusive collection of 42 sophisticated townhomes, proudly designed and built by award-winning Park Ridge Homes. This CORNER UNIT features 4 bedrooms, 3.5 baths, a spacious fenced backyard, & TWO decks. Kitchen is equipped with a 5-burner gas range, French door refrigerator, and dishwasher. Additional highlights include a heated tile ensuite, iFlow gas furnace system, Navien tankless hot water heater, plus A/C. Located in the desirable Grandview Heights area, just steps from the new Ta'talu Elementary, and walking distance to shops at MC/Grandview Corners, plus minutes to Hwy 99, White Rock Beach, and the US border. Now open by appointment only.",
+  "features": [],
+  "schools": [
+    {
+      "name": "Earl Marriott Secondary",
+      "rating": 7.2,
+      "distance": "1.6 km",
+      "type": "8-12"
+    }
+  ],
+  "subArea": "Grandview Surrey",
+  "soldDate": "2026-02-28",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "yard",
+  "condition": 5,
+  "_sourceUrl": "https://housesigma.com/bc/surrey-real-estate/35-1871-165a-street/home/NkKJ3JdXvjWyd4V6?id_listing=amgL7AxV1LlyZ1MW",
+  "_scrapedAt": "2026-03-14T19:48:40.832Z",
+  "_rawFile": "35_1871_165a_street_surrey_grandview_surrey.html"
+}

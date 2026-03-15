@@ -1,0 +1,42 @@
+{
+  "address": "Unit 56 - 19897 75a Avenue",
+  "city": "Langley",
+  "sqft": 1462,
+  "year": 2022,
+  "price": 898800,
+  "listPrice": 908800,
+  "fee": 255,
+  "bedrooms": 4,
+  "bathrooms": 3,
+  "parking": 2,
+  "propertyTax": 3205,
+  "assessment": 880000,
+  "description": "Elevate your lifestyle in this stunning, modern and highly sought-after corner unit townhome nestled in the heart of Langley’s vibrant Willoughby Heights. This bright and spacious 4-bed, 3-bath home boasts 1,462 sqft of stylish living with extra windows providing abundant natural light throughout. The open-concept main floor is perfect for entertaining and offers 9ft ceilings, a gourmet kitchen with large island, quartz countertops, premium KitchenAid appliances, and sleek cabinetry. 3 spacious bedrooms on upper level with additional bed/flex room on lower level. Enjoy year-round comfort with forced air heating, A/C, and on-demand hot water. Side-by-side double garage with EV charging and ample storage. A rare opportunity to own a modern, well-appointed corner unit in a prime location!",
+  "features": [],
+  "schools": [
+    {
+      "name": "Willoughby Elementary",
+      "rating": 6.4,
+      "distance": "1.9 km",
+      "type": "0-5"
+    },
+    {
+      "name": "R.E. Mountain Secondary",
+      "rating": 5.6,
+      "distance": "0.6 km",
+      "type": "9-12"
+    }
+  ],
+  "subArea": "Willoughby Heights",
+  "soldDate": "2026-02-27",
+  "parkingType": "garage_double",
+  "levels": 3,
+  "isEndUnit": true,
+  "hasAC": true,
+  "rainscreen": true,
+  "outdoorSpace": "balcony",
+  "condition": 4,
+  "_sourceUrl": "https://housesigma.com/bc/langley-real-estate/56-19897-75a-avenue/home/aD6p781lg043wRQr?id_listing=5VXv3l52ZbGYj2q8",
+  "_scrapedAt": "2026-03-14T19:51:20.102Z",
+  "_rawFile": "56_19897_75a_avenue_langley_willoughby_heights.html"
+}
